@@ -24,9 +24,18 @@ Entreprise **et** vie privée.
 
 | Rôle | Invocation | Domaine | Couvre |
 |---|---|---|---|
-| **Comptable** | `/comptable` | `comptabilite` | Formes juridiques, micro-entreprise, TVA, PCG et écritures, clôture et liasse, facturation, impôt sur le revenu, revenus financiers, chômage et création d'activité, paie. |
-| **Avocat** | `/avocat` | `juridique` | Activités réglementées, sociétés et objet social, contrats et CGV, international, propriété intellectuelle, travail, consommation, RGPD, logement, famille, succession, procédure. |
-| **Immigration** | `/immigration` | `juridique` | Visas et titres de séjour, renouvellement, changement de statut, autorisation de travail, étudiants, entreprendre en étant étranger, regroupement familial, refus et recours, **naturalisation**. |
+| **Comptable** | `/comptable` | `comptabilite` | L'entreprise : formes juridiques, micro-entreprise, TVA, écritures, clôture, facturation, paie, chômage et création. |
+| **Impôts** | `/impots` | `comptabilite` | Le particulier : déclaration de revenus, barème, foyer fiscal, revenus financiers et crypto, immobilier, IFI, réclamation et contrôle. |
+| **Avocat** | `/avocat` | `juridique` | Sociétés et objet social, contrats et CGV, international, propriété intellectuelle, activités réglementées, consommation, RGPD, procédure. |
+| **Travail** | `/travail` | `juridique` | Convention collective, contrat, rémunération et heures, rupture et indemnités, prud'hommes, harcèlement et discrimination. |
+| **Logement** | `/logement` | `juridique` | Bail, dépôt de garantie, congé, charges et travaux, impayés et expulsion, colocation, copropriété. |
+| **Famille** | `/famille` | `juridique` | Couple et régimes, séparation, enfants et pension, succession, donation, protection des majeurs, violences. |
+| **Immigration** | `/immigration` | `juridique` | Titres de séjour, renouvellement, changement de statut, droit au travail, famille, refus et recours, **naturalisation**. |
+
+**Un rôle n'est pas un thème** : c'est une méthode d'entrée, une posture et des règles d'arrêt
+propres. `/travail` commence par demander la convention collective, `/immigration` par chercher un
+délai qui court, `/logement` par lire la loi avant le bail. Le critère qui décide qu'un sujet mérite
+son propre rôle est écrit dans [`docs/taxonomie.md`](docs/taxonomie.md).
 
 Vous pouvez les appeler directement, ou laisser l'agent les charger quand la question s'y prête.
 
@@ -102,15 +111,23 @@ le-cabinet/
     ├── comptabilite/                    ← le DOMAINE
     │   ├── .claude-plugin/plugin.json
     │   └── skills/
-    │       └── comptable/               ← le RÔLE → /comptable
-    │           ├── SKILL.md             ← routeur et méthode
-    │           ├── references/*.md      ← un fichier par sujet
-    │           └── data/parametres.json ← les chiffres, sourcés et datés
+    │       ├── comptable/               ← le RÔLE → /comptable
+    │       │   ├── SKILL.md             ← routeur, intake, règles d'arrêt
+    │       │   ├── references/*.md      ← un fichier par sujet
+    │       │   └── data/parametres.json ← les chiffres, sourcés et datés
+    │       └── impots/                  ← /impots
     └── juridique/
         └── skills/
             ├── avocat/                  ← /avocat
+            ├── travail/                 ← /travail
+            ├── logement/                ← /logement
+            ├── famille/                 ← /famille
             └── immigration/             ← /immigration
 ```
+
+⚠️ **Aucun fichier n'est partagé entre deux rôles.** Les plugins s'installent séparément, donc un
+chemin relatif d'un rôle vers un autre casserait. Quand un sujet touche deux rôles, l'un le traite
+et l'autre **renvoie par nom de rôle** — « la fiscalité de ce sujet vit dans `impots` ».
 
 ## Contribuer
 

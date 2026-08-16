@@ -1,7 +1,7 @@
 {
   "name": "le-cabinet",
-  "description": "Deux domaines pour agents IA en droit français : comptabilité et juridique. Entreprise et vie privée. Aucun chiffre écrit de mémoire.",
-  "version": "0.1.0",
+  "description": "Sept roles pour agents IA en droit, fiscalite et administration francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
+  "version": "0.2.0",
   "owner": {
     "name": "Javad Razavi",
     "url": "https://github.com/Sjrazaviebra"
@@ -13,8 +13,8 @@
     {
       "name": "comptabilite",
       "source": "comptabilite",
-      "version": "0.1.0",
-      "description": "Comptabilité et fiscalité françaises, entreprise et particulier. Contient le rôle Comptable (/comptable).",
+      "version": "0.2.0",
+      "description": "Comptabilite, fiscalite et gestion en France. Deux roles : Comptable (/comptable) pour l entreprise - formes juridiques, micro-entreprise, TVA, ecritures, cloture, facturation, paie ; Impots (/impots) pour le particulier - declaration de revenus, bareme, revenus financiers et crypto, immobilier, IFI, reclamation et controle.",
       "author": {
         "name": "Javad Razavi"
       }
@@ -22,8 +22,8 @@
     {
       "name": "juridique",
       "source": "juridique",
-      "version": "0.1.0",
-      "description": "Droit francais, entreprise et particulier. Deux roles : Avocat (/avocat) pour les societes, contrats, activites reglementees, RGPD, travail, consommation, famille et procedure ; Immigration (/immigration) pour les visas, titres de sejour, travail, regroupement familial, recours et naturalisation.",
+      "version": "0.2.0",
+      "description": "Droit francais, entreprise et vie privee. Cinq roles : Avocat (/avocat) societes, contrats, activites reglementees, RGPD, consommation, procedure ; Travail (/travail) contrat, rupture, prud hommes ; Logement (/logement) bail, conge, impayes, copropriete ; Famille (/famille) couple, separation, enfants, succession, protection des majeurs ; Immigration (/immigration) titres de sejour, travail, famille, recours, naturalisation.",
       "author": {
         "name": "Javad Razavi"
       }
