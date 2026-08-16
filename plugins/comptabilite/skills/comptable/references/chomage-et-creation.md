@@ -69,11 +69,28 @@ financement des retraites complémentaires — **à la place** de l'allocation m
 
 ### 3. L'ACRE
 
-**Exonération de 50 % des cotisations sociales pendant les 12 premiers mois d'activité.**
+Exonération partielle des cotisations sociales personnelles pendant les **12 premiers mois**
+d'activité (maladie-maternité, retraite de base, invalidité-décès, allocations familiales).
 
-⚠️ **Changement majeur au 1ᵉʳ janvier 2026 : la demande n'est plus automatique.** Elle doit être
-déposée **auprès de l'Urssaf dans les 60 jours suivant la date d'ouverture de l'activité**. Passé
-ce délai, l'ACRE est perdue — et l'ARCE avec elle, puisqu'elle en dépend.
+**⚠️ Le taux a été divisé par deux en cours d'année 2026.** Le **décret n° 2026-69 du 6 février
+2026** ramène l'exonération de **50 % à 25 %** pour les **micro-entreprises créées ou reprises à
+compter du 1ᵉʳ juillet 2026**. Concrètement, le taux de cotisations minoré passe de 50 % à 75 % des
+taux normaux.
+
+⇒ **La date de création commande le taux :**
+
+| Micro-entreprise créée… | Exonération |
+|---|---|
+| avant le 1ᵉʳ juillet 2026 | **50 %** |
+| à compter du 1ᵉʳ juillet 2026 | **25 %** |
+
+**La demande n'est pas automatique** : elle doit être déposée **auprès de l'Urssaf au plus tard le
+60ᵉ jour suivant la date d'ouverture de l'activité**. Passé ce délai, l'ACRE est perdue — et
+l'ARCE avec elle, puisqu'elle en dépend.
+
+⚠️ Ne dites pas que « la demande n'est plus automatique depuis 2026 » : **pour les
+micro-entrepreneurs, elle ne l'a jamais été** depuis 2020. Ce qui a changé, c'est la longueur de la
+fenêtre et l'harmonisation des règles entre formes juridiques.
 
 Le demandeur ne doit pas en avoir déjà bénéficié au cours des trois années précédentes.
 

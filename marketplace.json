@@ -1,7 +1,7 @@
 {
   "name": "le-cabinet",
-  "description": "Deux skills pour agents IA en droit francais : un comptable et un avocat. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
-  "version": "0.1.0",
+  "description": "Sept roles pour agents IA en droit, fiscalite et administration francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
+  "version": "0.2.0",
   "author": "Sjrazaviebra",
   "license": "MIT",
   "skills": [
@@ -9,19 +9,43 @@
       "slug": "comptable",
       "name": "Comptable",
       "path": "plugins/comptabilite/skills/comptable/SKILL.md",
-      "description": "Comptabilite et fiscalite francaises, entreprise et particulier : formes juridiques, micro-entreprise, TVA, PCG et ecritures, cloture et liasse, facturation, impot sur le revenu, revenus financiers, chomage et creation, paie."
+      "description": "Entreprise : formes juridiques, micro-entreprise, TVA, ecritures, cloture, facturation, paie, chomage et creation."
+    },
+    {
+      "slug": "impots",
+      "name": "Impots",
+      "path": "plugins/comptabilite/skills/impots/SKILL.md",
+      "description": "Particulier : declaration de revenus, bareme, foyer fiscal, revenus financiers et crypto, immobilier, IFI, reclamation et controle."
     },
     {
       "slug": "avocat",
       "name": "Avocat",
       "path": "plugins/juridique/skills/avocat/SKILL.md",
-      "description": "Droit francais, entreprise et particulier : societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, travail, consommation, RGPD, logement, famille, succession, procedure."
+      "description": "Societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, consommation, RGPD, procedure."
+    },
+    {
+      "slug": "travail",
+      "name": "Travail",
+      "path": "plugins/juridique/skills/travail/SKILL.md",
+      "description": "Convention collective, contrat, remuneration et heures, rupture et indemnites, prud hommes, harcelement et discrimination."
+    },
+    {
+      "slug": "logement",
+      "name": "Logement",
+      "path": "plugins/juridique/skills/logement/SKILL.md",
+      "description": "Bail, depot de garantie, conge, charges et travaux, impayes et expulsion, colocation, copropriete."
+    },
+    {
+      "slug": "famille",
+      "name": "Famille",
+      "path": "plugins/juridique/skills/famille/SKILL.md",
+      "description": "Couple et regimes, separation et divorce, enfants et pension, succession, donation, protection des majeurs, violences."
     },
     {
       "slug": "immigration",
       "name": "Immigration",
       "path": "plugins/juridique/skills/immigration/SKILL.md",
-      "description": "Droit des etrangers en France : visas et titres de sejour, renouvellement, changement de statut, autorisation de travail, regroupement familial, creation d entreprise, refus et recours, naturalisation."
+      "description": "Titres de sejour, renouvellement, changement de statut, droit au travail, famille, refus et recours, naturalisation."
     }
   ],
   "language": "fr",

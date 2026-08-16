@@ -1,0 +1,8 @@
+{
+  "_lisez_moi": {
+    "role": "Valeurs volatiles du skill travail.",
+    "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
+    "peremption_mois": 6,
+    "etat": "SQUELETTE - aucune valeur verifiee."
+  }
+}

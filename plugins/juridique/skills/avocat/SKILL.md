@@ -98,8 +98,15 @@ contenu d'un fichier `À ÉCRIRE` comme une réponse.
 
 | Sujet | Fichier |
 |---|---|
-| Mise en demeure, injonction de payer, référé, médiation, prud'hommes | `references/procedure.md` |
-| Modèles à adapter (jamais à signer tels quels) | `assets/modeles/` |
+| Mise en demeure, injonction de payer, référé, médiation | `references/procedure.md` |
+
+**Ce qui vit ailleurs** — renvoyez par nom de rôle, ne traitez pas ici :
+
+- **Contrat de travail, licenciement, prud'hommes** → skill `travail`.
+- **Bail, congé, dépôt de garantie, expulsion, copropriété** → skill `logement`.
+- **Couple, séparation, enfants, succession, protection des majeurs** → skill `famille`.
+- **Titres de séjour, naturalisation** → skill `immigration`.
+- **Fiscalité** → skill `impots` pour un particulier, skill `comptable` pour une entreprise.
 
 ## Comment répondre
 

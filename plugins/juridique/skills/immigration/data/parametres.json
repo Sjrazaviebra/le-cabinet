@@ -13,7 +13,7 @@
       "diplomatie.gouv.fr"
     ],
     "sources_refusees": "Forums, groupes d'entraide, cabinets faisant du contenu. Meme justes, ils ne sont pas opposables.",
-    "etat": "SQUELETTE - aucune valeur verifiee."
+    "etat": "EN COURS - certaines valeurs sont verifiees et datees, d autres restent marquees a_verifier."
   },
   "sejour": {
     "delai_depot_renouvellement": {
@@ -26,6 +26,14 @@
       "valeur": null,
       "a_verifier": true,
       "source": "https://administration-etrangers-en-france.interieur.gouv.fr/"
+    },
+    "oqtf_delai_depart_volontaire_jours": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "Duree du delai de depart volontaire lorsqu il est accorde. Une OQTF peut etre prise SANS ce delai."
     }
   },
   "naturalisation": {
@@ -86,15 +94,51 @@
   },
   "recours": {
     "delais_recours_oqtf": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/",
-      "note": "CRITIQUE. Variables selon la forme de la mesure, parfois quelques jours. Ne JAMAIS estimer."
+      "valeur": {
+        "avec_delai_depart_cas_general": "1 mois",
+        "avec_delai_depart_assignation": "7 jours",
+        "avec_delai_depart_retention": "48 heures",
+        "sans_delai_cas_general": "1 mois",
+        "sans_delai_assignation": "7 jours",
+        "sans_delai_retention": "48 heures"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "⚠️ PAGE SOURCE DATEE DU 13/11/2024, donc de plus de 6 mois : recouper avec le document de notification, qui indique le delai applicable et fait foi. REGLE DE SECURITE : si le delai applicable n est pas certain, agir comme si c etait le PLUS COURT."
+    },
+    "oqtf_effet_suspensif": {
+      "valeur": {
+        "recours_premiere_instance": true,
+        "appel": false
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "Le recours de PREMIERE INSTANCE depose dans le delai SUSPEND l eloignement : la personne ne peut pas etre eloignee tant que le tribunal administratif n a pas statue, avec ou sans delai de depart volontaire. L APPEL, lui, n est PAS suspensif. CORRECTION 2026-08-16 : l affirmation inverse avait ete publiee - une phrase de la source portant sur l APPEL avait ete attribuee au recours de premiere instance. Erreur dangereuse dans les deux sens : elle pouvait dissuader de deposer le recours qui protege."
     },
     "delai_recours_refus_titre": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/"
+      "valeur": {
+        "gracieux": "2 mois",
+        "hierarchique": "2 mois",
+        "contentieux": "2 mois apres decision expresse",
+        "silence_administration": "4 mois apres enregistrement de la demande"
+      },
+      "a_verifier": false,
+      "source": "https://www.justice.fr/notice/idtdb2037-refus-retrait-demande-d%C3%A9livrance-renouvellement-votre-carte-s%C3%A9jour-votre-titre-s%C3%A9jour",
+      "date_verifiee": "2026-08-16",
+      "note": "Un recours gracieux ou hierarchique exerce DANS LES DEUX MOIS conserve la possibilite de saisir ensuite le juge ; exerce apres, il ne proroge plus rien. ⚠️ Un refus de titre est souvent notifie AVEC une OQTF dans le meme courrier : c est alors le delai de l OQTF qui commande."
+    },
+    "oqtf_delais_de_jugement": {
+      "valeur": {
+        "cas_general": "6 mois",
+        "assignation_a_residence": "15 jours",
+        "retention_administrative": "96 heures"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "Delais dans lesquels le tribunal administratif statue, selon la situation."
     }
   },
   "declaration_mariage": {

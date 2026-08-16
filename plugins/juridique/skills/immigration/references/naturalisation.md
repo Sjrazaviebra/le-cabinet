@@ -59,8 +59,12 @@ Dites plutôt : *« vous êtes recevable ; la décision reste discrétionnaire �
 - **Assimilation** : connaissance de l'histoire, de la culture et de la société françaises, des
   droits et devoirs attachés à la nationalité, et **adhésion aux principes et valeurs de la
   République**, vérifiée lors d'un entretien.
-- **Bonnes vie et mœurs** : une condamnation à **plus de 6 mois d'emprisonnement**, ou pour atteinte
-  aux intérêts fondamentaux de la Nation, fait obstacle — sauf réhabilitation.
+- **Bonnes vie et mœurs** : fait obstacle une condamnation à une peine **égale ou supérieure à six
+  mois d'emprisonnement, non assortie d'une mesure de sursis** — sauf réhabilitation. ⚠️ Les deux
+  membres de la phrase comptent, et dans les deux sens : **six mois ferme exactement bloquent** ;
+  **huit mois avec sursis ne bloquent pas**. Dire l'inverse dissuade quelqu'un d'une démarche à
+  laquelle il avait droit. Fait aussi obstacle une condamnation pour atteinte aux intérêts
+  fondamentaux de la Nation.
 - **Régularité fiscale** : être à jour de ses obligations déclaratives et de paiement.
 
 ### La procédure, le coût et les délais

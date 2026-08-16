@@ -34,19 +34,20 @@ finances 2025 a été abandonné)* :
 
 **Les deux dépassements n'ont pas du tout le même effet — c'est le point à retenir :**
 
-- **Dépassement du seuil de base (37 500 €)** → assujettissement à la TVA au **1ᵉʳ janvier de
-  l'année suivante**. On a le temps de s'organiser.
-- **Dépassement du seuil majoré (41 250 €)** → assujettissement **dès le premier jour du
-  dépassement**. Et le passage au régime réel s'applique **rétroactivement au 1ᵉʳ janvier de
-  l'année du dépassement**.
+- **Dépassement du seuil de base (37 500 €)** → l'entreprise perd le bénéfice de la franchise
+  **à compter du 1ᵉʳ janvier de l'année suivante**. On a le temps de s'organiser.
+- **Dépassement du seuil majoré (41 250 €)** → la franchise **cesse de s'appliquer dès le premier
+  jour du dépassement**.
 
-⚠️ **C'est la rétroactivité qui fait mal.** Toutes les factures émises depuis janvier deviennent
-des factures qui auraient dû porter la TVA. Il faut alors soit émettre des factures
-rectificatives, soit absorber la taxe sur sa marge. Un dépassement du seuil majoré non anticipé
-coûte 20 % du chiffre d'affaires de l'année.
+⚠️ **Il n'y a pas de rétroactivité au 1ᵉʳ janvier.** Les factures émises **avant** le franchissement
+restent valablement sans TVA ; ce sont les opérations réalisées **à partir de ce jour-là** qui
+doivent porter la taxe. C'est une idée reçue tenace, y compris chez des professionnels — elle vient
+d'une confusion avec le régime **simplifié** de TVA, où la sortie vaut pour l'exercice en cours.
 
-**Le réflexe à installer** : surveiller le cumul **en cours d'année**, pas à la clôture. Dès que le
-chiffre d'affaires approche 37 500 €, on prépare le passage.
+**Le réflexe qui compte reste le même** : surveiller le cumul **en cours d'année**, pas à la
+clôture. Franchir le seuil majoré un 12 mars sans s'en apercevoir, c'est facturer des mois sans TVA
+alors qu'elle était due — et devoir la sortir de sa marge, faute de pouvoir la réclamer après coup
+à des clients déjà facturés.
 
 ## ⭐ Les prestations de services à un client étranger
 
@@ -70,8 +71,9 @@ réalisation de la prestation ou l'encaissement d'un acompte.
 faire. La DES n'est pas une déclaration de TVA : elle est due même quand aucune TVA n'est
 collectée.
 
-Pour les opérations B2B internationales, le **numéro de TVA intracommunautaire** remplace le SIREN
-sur les documents.
+Pour les opérations B2B internationales, le **numéro de TVA intracommunautaire** doit figurer sur
+les documents — celui du prestataire **et** celui du client. Il **s'ajoute** au SIREN et au SIRET,
+il ne les remplace pas : une facture porte les deux.
 
 ### ⚠️ Le point à faire confirmer : franchise en base + client dans l'UE
 

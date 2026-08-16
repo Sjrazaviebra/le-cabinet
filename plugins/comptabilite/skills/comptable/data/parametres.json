@@ -17,7 +17,7 @@
       "francetravail.fr"
     ],
     "sources_refusees": "Blogs, forums, comparateurs, cabinets faisant du contenu, agrégateurs. Ils peuvent servir à trouver le texte, jamais à le citer.",
-    "etat": "SQUELETTE — aucune valeur n'a encore été vérifiée à la source. Toutes les entrées sont marquées a_verifier: true.",
+    "etat": "EN COURS - certaines valeurs sont verifiees et datees, d autres restent marquees a_verifier. Voir chaque entree.",
     "portee": "Parametres du skill `comptable` uniquement. Chaque skill embarque les siens : aucun lien symbolique, donc chaque skill est installable seul."
   },
   "micro_entreprise": {
@@ -92,7 +92,7 @@
       "a_verifier": false,
       "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21746",
       "date_verifiee": "2026-08-16",
-      "note": "Seuils 2026 inchanges : le seuil unique de 25 000 EUR prevu par la LF 2025 a ete abandonne. Depassement du seuil de BASE -> assujetti au 1er janvier suivant. Depassement du seuil MAJORE -> assujetti des le premier jour, et regime reel RETROACTIF au 1er janvier de l annee. C est la retroactivite qui coute 20 % du CA."
+      "note": "Seuils 2026 inchanges : le seuil unique de 25 000 EUR prevu par la LF 2025 a ete abandonne. Depassement du seuil de BASE -> perte de la franchise a compter du 1er JANVIER DE L ANNEE SUIVANTE. Depassement du seuil MAJORE -> la franchise cesse DES LE PREMIER JOUR DU DEPASSEMENT. CORRECTION 2026-08-16 : il n y a PAS de retroactivite au 1er janvier - les factures anterieures au franchissement restent valablement sans TVA. L affirmation inverse, publiee puis corrigee, venait d une confusion avec le regime SIMPLIFIE de TVA."
     },
     "ecart_seuil_micro_vs_tva": {
       "valeur": {
@@ -114,7 +114,7 @@
       "a_verifier": false,
       "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
       "date_verifiee": "2026-08-16",
-      "note": "Prestation a un assujetti etabli dans l UE ou hors UE : pas de TVA francaise, le lieu suit le preneur."
+      "note": "Prestation a un assujetti etabli dans l UE ou hors UE : pas de TVA francaise, le lieu suit le preneur. Le numero de TVA intracommunautaire S AJOUTE au SIREN/SIRET sur la facture, il ne les remplace pas."
     },
     "des_delai_depot_jours": {
       "valeur": 10,
@@ -176,12 +176,15 @@
       "note": "Deduction prealable de 3 % au titre du financement des retraites complementaires. Versement en deux fois : 50 % a la creation, 50 % six mois apres si activite toujours exercee et pas de CDI a temps plein. Assujettie a la CSG et a la CRDS. EXIGE d avoir obtenu l ACRE."
     },
     "acre_taux_exoneration": {
-      "valeur": 50,
+      "valeur": {
+        "creation_avant_2026_07_01": 50,
+        "creation_a_compter_2026_07_01": 25
+      },
       "unite": "% des cotisations sociales",
       "a_verifier": false,
-      "source": "https://www.urssaf.fr/accueil/exoneration-acre-createur.html",
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053449085",
       "date_verifiee": "2026-08-16",
-      "note": "Pendant les 12 premiers mois d activite."
+      "note": "Decret n° 2026-69 du 6 fevrier 2026 : l exoneration passe de 50 % a 25 % pour les micro-entreprises creees ou reprises A COMPTER DU 1er JUILLET 2026 (taux de cotisations minore porte de 50 % a 75 % des taux normaux). Duree inchangee : 12 mois. Porte sur maladie-maternite, retraite de base, invalidite-deces, allocations familiales. CORRECTION 2026-08-16 : la valeur unique de 50 % publiee auparavant etait perimee."
     },
     "acre_delai_demande_jours": {
       "valeur": 60,
@@ -189,7 +192,7 @@
       "a_verifier": false,
       "source": "https://www.urssaf.fr/accueil/exoneration-acre-createur.html",
       "date_verifiee": "2026-08-16",
-      "note": "DEPUIS LE 01/01/2026 la demande n'est plus automatique : a deposer aupres de l'Urssaf dans les 60 jours suivant la date d'ouverture de l'activite. Delai manque = ACRE perdue, et ARCE perdue avec elle. Pas deja beneficie dans les 3 annees precedentes."
+      "note": "Demande a deposer aupres de l Urssaf au plus tard le 60e jour suivant la date d ouverture de l activite. Delai manque = ACRE perdue, et ARCE perdue avec elle. Pas deja beneficie dans les 3 annees precedentes. NUANCE : pour les MICRO-ENTREPRENEURS la demande n a jamais ete automatique depuis 2020 - ce qui a change en 2026 est la longueur de la fenetre et l harmonisation entre formes juridiques."
     }
   },
   "impot_revenu": {

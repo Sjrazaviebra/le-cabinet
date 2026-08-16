@@ -1,8 +1,8 @@
 {
   "name": "juridique",
   "displayName": "Juridique",
-  "description": "Droit francais, entreprise et particulier. Deux roles : Avocat (/avocat) pour les societes, contrats, activites reglementees, RGPD, travail, consommation, famille et procedure ; Immigration (/immigration) pour les visas, titres de sejour, travail, regroupement familial, recours et naturalisation.",
-  "version": "0.1.0",
+  "description": "Droit francais, entreprise et vie privee. Cinq roles : Avocat (/avocat) societes, contrats, activites reglementees, RGPD, consommation, procedure ; Travail (/travail) contrat, rupture, prud hommes ; Logement (/logement) bail, conge, impayes, copropriete ; Famille (/famille) couple, separation, enfants, succession, protection des majeurs ; Immigration (/immigration) titres de sejour, travail, famille, recours, naturalisation.",
+  "version": "0.2.0",
   "author": {
     "name": "Javad Razavi",
     "url": "https://javadrazavi.fr"
@@ -14,12 +14,13 @@
     "droit",
     "juridique",
     "france",
-    "contrats",
-    "societes",
-    "rgpd",
+    "travail",
+    "logement",
+    "famille",
+    "succession",
     "immigration",
     "naturalisation",
-    "titre-de-sejour",
-    "visa"
+    "rgpd",
+    "contrats"
   ]
 }
