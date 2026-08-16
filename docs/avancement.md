@@ -1,6 +1,7 @@
 # Avancement
 
-**17 valeurs verifiees et datees**, 16 encore ouvertes.
+**26 valeurs verifiees et datees**, 13 encore ouvertes.
+
 Un plugin = un **domaine**, un skill = un **role**. Un domaine peut porter plusieurs roles.
 
 ## Domaine `comptabilite`
@@ -52,7 +53,7 @@ Un plugin = un **domaine**, un skill = un **role**. Un domaine peut porter plusi
 | Fichier | Etat |
 |---|---|
 | `SKILL.md` | **REDIGE** |
-| `data/parametres.json` | SQUELETTE, 7 a verifier |
+| `data/parametres.json` | **9 verifiee(s)**, 4 a verifier |
 | `references/changement-de-statut.md` | À ÉCRIRE |
 | `references/demande-et-renouvellement.md` | À ÉCRIRE |
 | `references/documents-etat-civil.md` | À ÉCRIRE |
@@ -60,19 +61,18 @@ Un plugin = un **domaine**, un skill = un **role**. Un domaine peut porter plusi
 | `references/entreprendre-en-etant-etranger.md` | À ÉCRIRE |
 | `references/etudiants.md` | À ÉCRIRE |
 | `references/famille.md` | À ÉCRIRE |
-| `references/naturalisation.md` | À ÉCRIRE |
+| `references/naturalisation.md` | **RÉDIGÉ** |
 | `references/refus-et-recours.md` | À ÉCRIRE |
 | `references/ressortissants-ue.md` | À ÉCRIRE |
 | `references/titres-de-sejour.md` | À ÉCRIRE |
 
 ## Ordre de redaction
 
-Redige : `activites-reglementees` · `chomage-et-creation` · `formes-juridiques` · `micro-entreprise` · `tva`
+Redige : `activites-reglementees` · `chomage-et-creation` · `formes-juridiques` · `micro-entreprise` · `tva` · `naturalisation`
 
 Prochains :
 
-1. `juridique/immigration/naturalisation.md` - le sujet le plus demande et le plus mal documente.
-2. `juridique/immigration/refus-et-recours.md` - DELAIS COURTS, priorite de securite.
-3. `juridique/avocat/contrats-commerciaux.md` et `propriete-intellectuelle.md`.
-4. `comptabilite/comptable/facturation.md`.
-5. Le reste, par ordre de demande.
+1. `immigration/refus-et-recours.md` - DELAIS COURTS, priorite de securite.
+2. `immigration/titres-de-sejour.md` et `demande-et-renouvellement.md`.
+3. `avocat/contrats-commerciaux.md` et `propriete-intellectuelle.md`.
+4. `comptable/facturation.md`.
