@@ -57,37 +57,44 @@ installable seul, et se copie ou se zippe sans rien casser.
 /plugin marketplace add Sjrazaviebra/le-cabinet
 ```
 
-puis installez l'un ou l'autre, ou les deux :
+puis installez le domaine voulu, ou les deux :
 
 ```
-/plugin install comptable@le-cabinet
-/plugin install avocat@le-cabinet
+/plugin install comptabilite@le-cabinet
+/plugin install juridique@le-cabinet
 ```
 
 ### À la main
 
-Copiez le dossier du skill voulu dans vos skills personnels :
+Copiez le dossier du rôle voulu dans vos skills personnels :
 
 ```bash
-cp -r plugins/comptable/skills/comptable ~/.claude/skills/
-cp -r plugins/avocat/skills/avocat ~/.claude/skills/
+cp -r plugins/comptabilite/skills/comptable ~/.claude/skills/
+cp -r plugins/juridique/skills/avocat ~/.claude/skills/
 ```
 
 `/comptable` et `/avocat` sont alors disponibles.
 
 ## Structure
 
+**Un plugin = un domaine. Un skill = un rôle.** Un domaine peut donc accueillir plusieurs rôles au
+fil du temps — un fiscaliste à côté du comptable, un notaire à côté de l'avocat — sans rien casser
+chez ceux qui l'ont déjà installé.
+
 ```
 le-cabinet/
-├── .claude-plugin/marketplace.json     ← le catalogue
+├── .claude-plugin/marketplace.json      ← le catalogue
 └── plugins/
-    ├── comptable/
+    ├── comptabilite/                    ← le DOMAINE
     │   ├── .claude-plugin/plugin.json
-    │   └── skills/comptable/
-    │       ├── SKILL.md                ← routeur et méthode
-    │       ├── references/*.md         ← un fichier par domaine
-    │       └── data/parametres.json    ← les chiffres, sourcés et datés
-    └── avocat/  (même structure)
+    │   └── skills/
+    │       └── comptable/               ← le RÔLE → /comptable
+    │           ├── SKILL.md             ← routeur et méthode
+    │           ├── references/*.md      ← un fichier par sujet
+    │           └── data/parametres.json ← les chiffres, sourcés et datés
+    └── juridique/
+        └── skills/
+            └── avocat/                  ← /avocat
 ```
 
 ## Contribuer

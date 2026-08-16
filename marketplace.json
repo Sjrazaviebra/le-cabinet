@@ -8,13 +8,13 @@
     {
       "slug": "comptable",
       "name": "Comptable",
-      "path": "plugins/comptable/skills/comptable/SKILL.md",
+      "path": "plugins/comptabilite/skills/comptable/SKILL.md",
       "description": "Comptabilite et fiscalite francaises, entreprise et particulier : formes juridiques, micro-entreprise, TVA, PCG et ecritures, cloture et liasse, facturation, impot sur le revenu, revenus financiers, chomage et creation, paie."
     },
     {
       "slug": "avocat",
       "name": "Avocat",
-      "path": "plugins/avocat/skills/avocat/SKILL.md",
+      "path": "plugins/juridique/skills/avocat/SKILL.md",
       "description": "Droit francais, entreprise et particulier : societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, travail, consommation, RGPD, logement, famille, succession, procedure."
     }
   ],

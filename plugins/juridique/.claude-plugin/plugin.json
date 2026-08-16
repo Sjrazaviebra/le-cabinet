@@ -1,7 +1,7 @@
 {
-  "name": "avocat",
-  "displayName": "Avocat",
-  "description": "Droit francais, entreprise et particulier : societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, travail, consommation, RGPD, logement, famille, succession, procedure.",
+  "name": "juridique",
+  "displayName": "Juridique",
+  "description": "Droit français, entreprise et particulier. Contient le rôle Avocat (/avocat).",
   "version": "0.1.0",
   "author": {
     "name": "Javad Razavi",

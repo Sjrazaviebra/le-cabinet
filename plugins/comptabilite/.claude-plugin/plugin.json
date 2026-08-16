@@ -1,7 +1,7 @@
 {
-  "name": "comptable",
-  "displayName": "Comptable",
-  "description": "Comptabilite et fiscalite francaises, entreprise et particulier : formes juridiques, micro-entreprise, TVA, PCG et ecritures, cloture et liasse, facturation, impot sur le revenu, revenus financiers, chomage et creation, paie.",
+  "name": "comptabilite",
+  "displayName": "Comptabilité",
+  "description": "Comptabilité et fiscalité françaises, entreprise et particulier. Contient le rôle Comptable (/comptable).",
   "version": "0.1.0",
   "author": {
     "name": "Javad Razavi",
