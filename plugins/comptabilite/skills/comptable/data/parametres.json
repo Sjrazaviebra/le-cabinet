@@ -22,29 +22,64 @@
   },
   "micro_entreprise": {
     "seuils_chiffre_affaires": {
-      "valeur": null,
+      "valeur": {
+        "commerce_hebergement_bic": 203100,
+        "services_et_professions_liberales": 83600,
+        "location_meubles_non_classes": 15000,
+        "mixte_seuil_global": 203100
+      },
       "unite": "EUR/an",
-      "a_verifier": true,
-      "source": "https://entreprendre.service-public.fr/vosdroits/F32353",
-      "note": "Distinguer vente de marchandises / prestations de services BIC / prestations BNC."
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "date_verifiee": "2026-08-16",
+      "note": "Page service-public datee du 13/05/2026. IMPORTANT : le depassement d'un seuil sur UNE seule annee ne fait pas sortir du regime ; il faut un depassement sur DEUX annees consecutives (N-1 et N-2). Ne pas confondre avec les seuils de TVA, qui sont independants."
     },
     "abattement_forfaitaire": {
-      "valeur": null,
+      "valeur": {
+        "bic_commerce_hebergement": 71,
+        "bic_prestations_services": 50,
+        "bnc_activites_liberales": 34,
+        "meubles_classes": 50,
+        "meubles_non_classes": 30,
+        "minimum_eur": 305,
+        "minimum_mixte_eur": 610
+      },
       "unite": "%",
-      "a_verifier": true,
-      "source": "https://www.impots.gouv.fr/professionnel/regime-de-la-micro-entreprise",
-      "note": "Taux différent selon BIC vente, BIC services, BNC."
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "date_verifiee": "2026-08-16",
+      "note": "Abattement FORFAITAIRE, pas un remboursement : si les charges reelles depassent l'abattement, on est impose sur de l'argent non gagne. C'est le principal declencheur de sortie du regime."
+    },
+    "versement_liberatoire_taux": {
+      "valeur": {
+        "bic_commerce": 1.0,
+        "autres_bic_prestations": 1.7,
+        "bnc": 2.2
+      },
+      "unite": "% du CA",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/le-versement-liberatoire",
+      "date_verifiee": "2026-08-16",
+      "note": "Se paie des le premier euro de CA, alors que le bareme progressif comporte une tranche a 0 %. L'option est donc DEFAVORABLE a un foyer peu impose."
+    },
+    "versement_liberatoire_conditions": {
+      "valeur": {
+        "rfr_n2_plafond_personne_seule": 29579,
+        "rfr_n2_plafond_couple_2_enfants": 88737
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "date_verifiee": "2026-08-16",
+      "note": "Revenu fiscal de reference du foyer en N-2."
     },
     "taux_cotisations_sociales": {
       "valeur": null,
       "unite": "% du CA",
       "a_verifier": true,
-      "source": "https://www.urssaf.fr/accueil/independant/creer-mon-entreprise/micro-entrepreneur.html"
-    },
-    "versement_liberatoire_conditions": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://entreprendre.service-public.fr/vosdroits/F23267"
+      "source": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
+      "date_verifiee": null,
+      "note": "NON CONFIRME : une source secondaire annonce 25,6 % pour 'autre prestation de services' au 01/01/2026, mais la page Urssaf n'a pas repondu lors de la verification du 2026-08-16. A confirmer directement."
     }
   },
   "tva": {
