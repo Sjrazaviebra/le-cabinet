@@ -47,5 +47,35 @@
       "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006069565/",
       "note": "Code de la consommation — vente à distance."
     }
+  },
+  "sanctions_penales": {
+    "exercice_illegal_services_investissement": {
+      "emprisonnement_ans": 3,
+      "amende_eur": 375000,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035043487",
+      "date_verifiee": "2026-08-16",
+      "note": "Article L573-1 CMF. Fourniture de services d'investissement a titre de profession habituelle sans agrement. Peines complementaires : privation des droits civiques, interdiction d'exercer 5 ans max, fermeture d'etablissement 5 ans max, confiscation, publication de la decision."
+    }
+  },
+  "services_investissement": {
+    "liste_L321_1": {
+      "valeur": [
+        "reception et transmission d ordres pour compte de tiers",
+        "execution d ordres pour compte de tiers",
+        "negociation pour compte propre",
+        "gestion de portefeuille pour compte de tiers",
+        "conseil en investissement",
+        "prise ferme",
+        "placement garanti",
+        "placement non garanti",
+        "exploitation d un systeme multilateral de negociation",
+        "exploitation d un systeme organise de negociation"
+      ],
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032786002",
+      "date_verifiee": "2026-08-16",
+      "note": "Article L321-1 CMF, version en vigueur au 03/01/2018. Deux conditions cumulatives : porter sur des instruments financiers (L211-1) ET etre exerce a titre de profession habituelle."
+    }
   }
 }

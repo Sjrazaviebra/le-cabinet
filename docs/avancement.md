@@ -2,7 +2,7 @@
 
 Un plugin = un **domaine**, un skill = un **role**. Un domaine peut accueillir plusieurs roles.
 
-Un fichier `A ECRIRE` porte un perimetre et ses sources officielles, mais aucun contenu :
+Un fichier marque a ecrire porte un perimetre et ses sources officielles, mais aucun contenu :
 il n induit personne en erreur, et il est pret a etre pris par un contributeur.
 
 ## Domaine `comptabilite` -> role `/comptable`
@@ -10,7 +10,7 @@ il n induit personne en erreur, et il est pret a etre pris par un contributeur.
 | Fichier | Etat |
 |---|---|
 | `plugins/comptabilite/skills/comptable/SKILL.md` | **REDIGE** |
-| `plugins/comptabilite/skills/comptable/data/parametres.json` | **SQUELETTE** - aucune valeur verifiee |
+| `plugins/comptabilite/skills/comptable/data/parametres.json` | SQUELETTE |
 | `plugins/comptabilite/skills/comptable/references/cas-plateformes-etrangeres.md` | À ÉCRIRE |
 | `plugins/comptabilite/skills/comptable/references/cas-prop-firm.md` | À ÉCRIRE |
 | `plugins/comptabilite/skills/comptable/references/chomage-et-creation.md` | **PARTIEL** |
@@ -30,8 +30,8 @@ il n induit personne en erreur, et il est pret a etre pris par un contributeur.
 | Fichier | Etat |
 |---|---|
 | `plugins/juridique/skills/avocat/SKILL.md` | **REDIGE** |
-| `plugins/juridique/skills/avocat/data/parametres.json` | **SQUELETTE** - aucune valeur verifiee |
-| `plugins/juridique/skills/avocat/references/activites-reglementees.md` | À ÉCRIRE |
+| `plugins/juridique/skills/avocat/data/parametres.json` | **2 valeur(s) VERIFIEE(S)** |
+| `plugins/juridique/skills/avocat/references/activites-reglementees.md` | **RÉDIGÉ** |
 | `plugins/juridique/skills/avocat/references/contrats-commerciaux.md` | À ÉCRIRE |
 | `plugins/juridique/skills/avocat/references/donnees-personnelles.md` | À ÉCRIRE |
 | `plugins/juridique/skills/avocat/references/droit-de-la-consommation.md` | À ÉCRIRE |
@@ -47,8 +47,8 @@ il n induit personne en erreur, et il est pret a etre pris par un contributeur.
 
 ## Ordre de redaction
 
-1. `comptabilite/.../chomage-et-creation.md` - **PARTIEL**, le cas le plus demande.
-2. `comptabilite/.../formes-juridiques.md` et `micro-entreprise.md` - la porte d entree.
-3. `juridique/.../activites-reglementees.md` - evite les erreurs les plus couteuses.
+1. ~~`juridique/.../activites-reglementees.md`~~ **REDIGE** (volet financier) - textes verifies le 2026-08-16.
+2. ~~`comptabilite/.../chomage-et-creation.md`~~ **PARTIEL** - methode ecrite, chiffres a verifier.
+3. `comptabilite/.../formes-juridiques.md` et `micro-entreprise.md` - la porte d entree.
 4. `comptabilite/.../tva.md` - des qu il y a un client etranger.
 5. Le reste, par ordre de demande.
