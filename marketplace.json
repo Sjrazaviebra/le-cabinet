@@ -16,6 +16,12 @@
       "name": "Avocat",
       "path": "plugins/juridique/skills/avocat/SKILL.md",
       "description": "Droit francais, entreprise et particulier : societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, travail, consommation, RGPD, logement, famille, succession, procedure."
+    },
+    {
+      "slug": "immigration",
+      "name": "Immigration",
+      "path": "plugins/juridique/skills/immigration/SKILL.md",
+      "description": "Droit des etrangers en France : visas et titres de sejour, renouvellement, changement de statut, autorisation de travail, regroupement familial, creation d entreprise, refus et recours, naturalisation."
     }
   ],
   "language": "fr",

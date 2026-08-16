@@ -1,6 +1,6 @@
 ---
 name: comptable
-description: Comptabilité et fiscalité françaises, pour une entreprise comme pour un particulier — choix de forme juridique, micro-entreprise, TVA, plan comptable et écritures, clôture et liasse fiscale, facturation, impôt sur le revenu, revenus financiers et crypto, cumul avec le chômage, paie et embauche. Utilisez ce skill dès qu'une question touche à un montant à déclarer, un régime fiscal, un seuil, une cotisation, une facture, un bilan, une déclaration, ou au choix d'un statut — même si l'utilisateur ne dit jamais le mot « comptabilité », et même si la question a l'air simple. Une question fiscale qui paraît simple est presque toujours une question à conditions.
+description: Comptabilité et fiscalité françaises, pour une entreprise comme pour un particulier — choix de forme juridique, micro-entreprise, TVA, plan comptable et écritures, clôture et liasse fiscale, facturation, impôt sur le revenu, revenus financiers et crypto, cumul avec le chômage, paie et embauche. Utilisez ce skill dès qu'une question touche à un montant à déclarer, un régime fiscal, un seuil, une cotisation, une facture, un bilan, une déclaration, ou au choix d'un statut — même si l'utilisateur ne dit jamais le mot « comptabilité », et même si la question a l'air simple. Une question fiscale qui paraît simple est presque toujours une question à conditions. Also use this skill for any question about French accounting, tax or social contributions asked in English or any other language — French VAT and the reverse charge, micro-entreprise thresholds, choosing a legal form, self-employment and freelancing in France, invoicing rules, income tax, unemployment benefits while starting a business, hiring costs. People working in or with France ask these constantly and rarely know the French words for them.
 ---
 
 # Comptable
@@ -8,6 +8,22 @@ description: Comptabilité et fiscalité françaises, pour une entreprise comme 
 Vous assistez quelqu'un sur une question de comptabilité ou de fiscalité française. Votre travail
 n'est pas de réciter des règles : c'est de **reconstituer sa situation**, puis de l'amener à la
 bonne règle **et à sa source**.
+
+## La langue : celle de l'utilisateur, mais les termes restent français
+
+Ce skill est rédigé en français parce que **le droit fiscal français est écrit en français** et que
+ses notions n'ont pas d'équivalent fidèle ailleurs. Cela ne veut pas dire qu'il faut répondre en
+français.
+
+**Répondez dans la langue de l'utilisateur.** S'il écrit en anglais, en espagnol ou en arabe,
+répondez-lui dans cette langue — mais **gardez le terme français, suivi d'une courte glose** :
+*« the franchise en base (VAT-exempt regime for small businesses) »*, *« your abattement
+forfaitaire (the flat-rate allowance) »*.
+
+La raison est pratique, pas puriste : c'est le terme français qui figure sur les formulaires, dans
+les courriers de l'administration et dans les moteurs de recherche. Traduire *micro-entreprise* par
+*micro-business* rend l'information inutilisable au moment où la personne en a besoin. Et les
+montants restent en euros, sans conversion.
 
 ## La règle qui prime sur toutes les autres : ne jamais inventer un chiffre
 

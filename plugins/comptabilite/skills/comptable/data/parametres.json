@@ -83,23 +83,52 @@
     }
   },
   "tva": {
-    "seuils_franchise_en_base": {
-      "valeur": null,
-      "unite": "EUR/an",
-      "a_verifier": true,
-      "source": "https://www.impots.gouv.fr/professionnel/la-franchise-en-base",
-      "note": "Seuil de base et seuil majoré ; règles de dépassement en cours d'année."
+    "franchise_seuils_prestations_services": {
+      "valeur": {
+        "seuil_base_n1": 37500,
+        "seuil_majore_annee_en_cours": 41250
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21746",
+      "date_verifiee": "2026-08-16",
+      "note": "Seuils 2026 inchanges : le seuil unique de 25 000 EUR prevu par la LF 2025 a ete abandonne. Depassement du seuil de BASE -> assujetti au 1er janvier suivant. Depassement du seuil MAJORE -> assujetti des le premier jour, et regime reel RETROACTIF au 1er janvier de l annee. C est la retroactivite qui coute 20 % du CA."
     },
-    "taux": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.impots.gouv.fr/particulier/les-taux-de-tva-en-vigueur"
+    "ecart_seuil_micro_vs_tva": {
+      "valeur": {
+        "plafond_micro_services": 83600,
+        "franchise_tva_services": 37500
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21746",
+      "date_verifiee": "2026-08-16",
+      "note": "ERREUR N°1 du regime : on devient redevable de la TVA a MOINS DE LA MOITIE du plafond de la micro. Les deux regimes sont independants."
     },
-    "prestations_b2b_hors_france": {
+    "prestations_b2b_mentions": {
+      "valeur": {
+        "client_assujetti_ue": "Autoliquidation",
+        "client_assujetti_hors_ue": "TVA non applicable - art. 259-1 du CGI",
+        "franchise_en_base_national": "TVA non applicable, art. 293 B du CGI"
+      },
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": "2026-08-16",
+      "note": "Prestation a un assujetti etabli dans l UE ou hors UE : pas de TVA francaise, le lieu suit le preneur."
+    },
+    "des_delai_depot_jours": {
+      "valeur": 10,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": "2026-08-16",
+      "note": "Declaration europeenne de services, a deposer dans les 10 jours du mois suivant l exigibilite, quand le preneur assujetti est etabli dans un autre Etat membre. Due meme si aucune TVA n est collectee."
+    },
+    "franchise_et_des_intracom": {
       "valeur": null,
       "a_verifier": true,
-      "source": "https://bofip.impots.gouv.fr/",
-      "note": "Territorialité, autoliquidation par le preneur, DES/DEB. Cas central pour un prestataire IT avec clients étrangers."
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "note": "NON CONFIRME : un assujetti en FRANCHISE EN BASE qui preste pour un professionnel etabli dans l UE doit-il obtenir un numero de TVA intracommunautaire et deposer la DES ? Le raisonnement le suggere, aucune page officielle consultee ne le dit explicitement. A faire confirmer par le SIE avant la premiere facture."
     }
   },
   "chomage_et_creation": {

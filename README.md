@@ -22,12 +22,22 @@ Entreprise **et** vie privée.
 
 ## Les deux skills
 
-| Skill | Invocation | Couvre |
-|---|---|---|
-| **Comptable** | `/comptable` | Formes juridiques, micro-entreprise, TVA, PCG et écritures, clôture et liasse, facturation, impôt sur le revenu, revenus financiers, chômage et création d'activité, paie. |
-| **Avocat** | `/avocat` | Activités réglementées, sociétés et objet social, contrats et CGV, international, propriété intellectuelle, travail, consommation, RGPD, logement, famille, succession, procédure. |
+| Rôle | Invocation | Domaine | Couvre |
+|---|---|---|---|
+| **Comptable** | `/comptable` | `comptabilite` | Formes juridiques, micro-entreprise, TVA, PCG et écritures, clôture et liasse, facturation, impôt sur le revenu, revenus financiers, chômage et création d'activité, paie. |
+| **Avocat** | `/avocat` | `juridique` | Activités réglementées, sociétés et objet social, contrats et CGV, international, propriété intellectuelle, travail, consommation, RGPD, logement, famille, succession, procédure. |
+| **Immigration** | `/immigration` | `juridique` | Visas et titres de séjour, renouvellement, changement de statut, autorisation de travail, étudiants, entreprendre en étant étranger, regroupement familial, refus et recours, **naturalisation**. |
 
 Vous pouvez les appeler directement, ou laisser l'agent les charger quand la question s'y prête.
+
+**Ces skills sont rédigés en français, mais répondent dans votre langue.** Le droit français est
+écrit en français et ses notions n'ont pas d'équivalent fidèle ailleurs — les skills gardent donc
+le terme français avec une courte glose, parce que c'est ce mot-là qui figure sur les formulaires
+et dans les courriers de l'administration.
+
+*These skills are written in French but answer in your language. French legal and tax concepts have
+no faithful equivalent elsewhere, so the French term is kept with a short gloss — that is the word
+you will actually see on the forms.*
 
 ## ★ Le parti pris : aucun chiffre n'est écrit de mémoire
 
@@ -98,7 +108,8 @@ le-cabinet/
     │           └── data/parametres.json ← les chiffres, sourcés et datés
     └── juridique/
         └── skills/
-            └── avocat/                  ← /avocat
+            ├── avocat/                  ← /avocat
+            └── immigration/             ← /immigration
 ```
 
 ## Contribuer

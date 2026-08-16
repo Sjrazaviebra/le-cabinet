@@ -1,0 +1,62 @@
+{
+  "_lisez_moi": {
+    "role": "Valeurs volatiles du skill immigration : delais, durees, seuils de ressources, conditions chiffrees.",
+    "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
+    "peremption_mois": 6,
+    "avertissement": "DOMAINE A DELAIS COURTS. Un delai de recours errone peut faire perdre un droit definitivement. En cas de doute sur un delai, ne jamais estimer : renvoyer a la source et a un avocat.",
+    "sources_admises": [
+      "legifrance.gouv.fr (CESEDA)",
+      "service-public.fr",
+      "administration-etrangers-en-france.interieur.gouv.fr",
+      "france-visas.gouv.fr",
+      "site de la prefecture competente",
+      "diplomatie.gouv.fr"
+    ],
+    "sources_refusees": "Forums, groupes d'entraide, cabinets faisant du contenu. Meme justes, ils ne sont pas opposables.",
+    "etat": "SQUELETTE - aucune valeur verifiee."
+  },
+  "sejour": {
+    "delai_depot_renouvellement": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.fr/particuliers/vosdroits/N19806",
+      "note": "Fenetre de depot avant expiration du titre."
+    },
+    "duree_validite_recepisse": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://administration-etrangers-en-france.interieur.gouv.fr/"
+    }
+  },
+  "naturalisation": {
+    "duree_residence_decret": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.fr/particuliers/vosdroits/N111",
+      "note": "Duree de residence habituelle exigee, et les cas de reduction."
+    },
+    "niveau_langue_exige": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.fr/particuliers/vosdroits/N111"
+    },
+    "anciennete_mariage_declaration": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.fr/particuliers/vosdroits/N111"
+    }
+  },
+  "recours": {
+    "delais_recours_oqtf": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/",
+      "note": "CRITIQUE. Variables selon la forme de la mesure, parfois quelques jours. Ne JAMAIS estimer."
+    },
+    "delai_recours_refus_titre": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/"
+    }
+  }
+}

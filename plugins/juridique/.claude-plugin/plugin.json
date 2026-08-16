@@ -1,7 +1,7 @@
 {
   "name": "juridique",
   "displayName": "Juridique",
-  "description": "Droit français, entreprise et particulier. Contient le rôle Avocat (/avocat).",
+  "description": "Droit francais, entreprise et particulier. Deux roles : Avocat (/avocat) pour les societes, contrats, activites reglementees, RGPD, travail, consommation, famille et procedure ; Immigration (/immigration) pour les visas, titres de sejour, travail, regroupement familial, recours et naturalisation.",
   "version": "0.1.0",
   "author": {
     "name": "Javad Razavi",
@@ -17,6 +17,9 @@
     "contrats",
     "societes",
     "rgpd",
-    "conformite"
+    "immigration",
+    "naturalisation",
+    "titre-de-sejour",
+    "visa"
   ]
 }
