@@ -25,28 +25,37 @@ personne est-elle libre, assignée à résidence, ou en rétention.
 
 ### OQTF **avec** délai de départ volontaire (30 jours)
 
-| Situation | Délai de recours | Tribunal | Délai de jugement | Recours suspensif ? |
-|---|---|---|---|---|
-| Cas général | **1 mois** | TA compétent | 6 mois | **Oui** |
-| Assignation à résidence | **7 jours** | TA du lieu d'assignation | 15 jours | **Oui** |
-| Rétention administrative | **48 heures** | TA du lieu de rétention | 96 heures | **Oui** |
+| Situation | Délai de recours | Tribunal | Délai de jugement |
+|---|---|---|---|
+| Cas général | **1 mois** | TA compétent | 6 mois |
+| Assignation à résidence | **7 jours** | TA du lieu d'assignation | 15 jours |
+| Rétention administrative | **48 heures** | TA du lieu de rétention | 96 heures |
 
 ### OQTF **sans** délai de départ volontaire
 
-| Situation | Délai de recours | Tribunal | Délai de jugement | Recours suspensif ? |
-|---|---|---|---|---|
-| Cas général | **1 mois** | TA compétent | 6 mois | **⛔ Non** |
-| Assignation à résidence | **7 jours** | TA du lieu d'assignation | 15 jours | **⛔ Non** |
-| Rétention administrative | **48 heures** | TA du lieu de rétention | 96 heures | **⛔ Non** |
+| Situation | Délai de recours | Tribunal | Délai de jugement |
+|---|---|---|---|
+| Cas général | **1 mois** | TA compétent | 6 mois |
+| Assignation à résidence | **7 jours** | TA du lieu d'assignation | 15 jours |
+| Rétention administrative | **48 heures** | TA du lieu de rétention | 96 heures |
 
-### ⛔ Le point le plus dangereux du tableau
+### ✅ Le recours de première instance EST suspensif — et c'est capital
 
-**Le recours contre une OQTF sans délai de départ volontaire NE SUSPEND PAS l'exécution de la
-mesure.** Autrement dit : déposer un recours ne protège pas de l'éloignement. La personne peut être
-éloignée pendant que son recours est pendant.
+**Un recours déposé dans le délai devant le tribunal administratif suspend l'exécution de
+l'éloignement.** La personne **ne peut pas être éloignée tant que le tribunal ne s'est pas
+prononcé**. C'est vrai avec ou sans délai de départ volontaire.
 
-C'est contre-intuitif — beaucoup croient qu'un recours « gèle » tout — et c'est précisément
-l'information qui justifie d'orienter vers un avocat **le jour même**, pas la semaine suivante.
+★ **C'est la raison la plus forte de déposer le recours, et de le déposer dans le délai.** Le
+recours n'est pas une formalité d'espoir : c'est ce qui protège matériellement contre
+l'éloignement pendant l'instruction.
+
+### ⛔ En revanche, **l'appel n'est pas suspensif**
+
+Si le tribunal administratif rejette le recours et qu'un appel est formé, **l'appel ne suspend pas
+l'exécution**. La personne peut être éloignée alors même que le juge d'appel n'a pas statué.
+
+⇒ La protection existe en première instance et **disparaît en appel**. C'est là que l'assistance
+d'un avocat devient indispensable, pas avant.
 
 ## Refus ou retrait d'un titre de séjour
 

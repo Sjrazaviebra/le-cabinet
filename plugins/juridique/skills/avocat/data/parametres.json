@@ -17,7 +17,7 @@
       "francetravail.fr"
     ],
     "sources_refusees": "Blogs, forums, comparateurs, cabinets faisant du contenu, agrégateurs. Ils peuvent servir à trouver le texte, jamais à le citer.",
-    "etat": "SQUELETTE — aucune valeur n'a encore été vérifiée à la source. Toutes les entrées sont marquées a_verifier: true.",
+    "etat": "EN COURS - certaines valeurs sont verifiees et datees, d autres restent marquees a_verifier.",
     "portee": "Parametres du skill `avocat` uniquement. Chaque skill embarque les siens : aucun lien symbolique, donc chaque skill est installable seul."
   },
   "societes": {

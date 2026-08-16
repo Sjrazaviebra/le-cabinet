@@ -13,7 +13,7 @@
       "diplomatie.gouv.fr"
     ],
     "sources_refusees": "Forums, groupes d'entraide, cabinets faisant du contenu. Meme justes, ils ne sont pas opposables.",
-    "etat": "SQUELETTE - aucune valeur verifiee."
+    "etat": "EN COURS - certaines valeurs sont verifiees et datees, d autres restent marquees a_verifier."
   },
   "sejour": {
     "delai_depot_renouvellement": {
@@ -26,6 +26,14 @@
       "valeur": null,
       "a_verifier": true,
       "source": "https://administration-etrangers-en-france.interieur.gouv.fr/"
+    },
+    "oqtf_delai_depart_volontaire_jours": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "Duree du delai de depart volontaire lorsqu il est accorde. Une OQTF peut etre prise SANS ce delai."
     }
   },
   "naturalisation": {
@@ -101,13 +109,13 @@
     },
     "oqtf_effet_suspensif": {
       "valeur": {
-        "avec_delai_depart_volontaire": true,
-        "sans_delai_depart_volontaire": false
+        "recours_premiere_instance": true,
+        "appel": false
       },
       "a_verifier": false,
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
       "date_verifiee": "2026-08-16",
-      "note": "POINT LE PLUS DANGEREUX : le recours contre une OQTF SANS delai de depart volontaire NE SUSPEND PAS l execution. La personne peut etre eloignee pendant que son recours est pendant. Contre-intuitif, et c est ce qui justifie d orienter vers un avocat le jour meme."
+      "note": "Le recours de PREMIERE INSTANCE depose dans le delai SUSPEND l eloignement : la personne ne peut pas etre eloignee tant que le tribunal administratif n a pas statue, avec ou sans delai de depart volontaire. L APPEL, lui, n est PAS suspensif. CORRECTION 2026-08-16 : l affirmation inverse avait ete publiee - une phrase de la source portant sur l APPEL avait ete attribuee au recours de premiere instance. Erreur dangereuse dans les deux sens : elle pouvait dissuader de deposer le recours qui protege."
     },
     "delai_recours_refus_titre": {
       "valeur": {
@@ -120,6 +128,17 @@
       "source": "https://www.justice.fr/notice/idtdb2037-refus-retrait-demande-d%C3%A9livrance-renouvellement-votre-carte-s%C3%A9jour-votre-titre-s%C3%A9jour",
       "date_verifiee": "2026-08-16",
       "note": "Un recours gracieux ou hierarchique exerce DANS LES DEUX MOIS conserve la possibilite de saisir ensuite le juge ; exerce apres, il ne proroge plus rien. ⚠️ Un refus de titre est souvent notifie AVEC une OQTF dans le meme courrier : c est alors le delai de l OQTF qui commande."
+    },
+    "oqtf_delais_de_jugement": {
+      "valeur": {
+        "cas_general": "6 mois",
+        "assignation_a_residence": "15 jours",
+        "retention_administrative": "96 heures"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "Delais dans lesquels le tribunal administratif statue, selon la situation."
     }
   },
   "declaration_mariage": {

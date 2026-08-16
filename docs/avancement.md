@@ -1,8 +1,10 @@
 # Avancement
 
-**29 valeurs verifiees et datees**, 11 encore ouvertes. **7 roles.**
+**31 valeurs verifiees et datees**, 11 encore ouvertes. **7 roles.**
 
-Un plugin = un **domaine**, un skill = un **role**. Le critere de decoupage est dans [taxonomie.md](taxonomie.md).
+Verifiable : `python scripts/verifier-parametres.py` (0 erreur exige).
+
+Un plugin = un **domaine**, un skill = un **role**. Critere de decoupage : [taxonomie.md](taxonomie.md).
 
 ## Domaine `comptabilite`
 
@@ -73,7 +75,7 @@ Un plugin = un **domaine**, un skill = un **role**. Le critere de decoupage est 
 | Fichier | Etat |
 |---|---|
 | `SKILL.md` | **REDIGE** |
-| `data/parametres.json` | **12 verifiee(s)**, 2 a verifier |
+| `data/parametres.json` | **14 verifiee(s)**, 2 a verifier |
 | `references/changement-de-statut.md` | À ÉCRIRE |
 | `references/demande-et-renouvellement.md` | À ÉCRIRE |
 | `references/documents-etat-civil.md` | À ÉCRIRE |
@@ -120,7 +122,7 @@ Redige : `activites-reglementees` · `chomage-et-creation` · `formes-juridiques
 
 Prochains :
 
-1. `travail/rupture.md` et `travail/conventions-collectives.md` - delais courts, plus forte demande.
+1. `travail/rupture.md` et `travail/conventions-collectives.md`.
 2. `impots/declaration-annuelle.md` - avant la saison declarative.
-3. `logement/depot-de-garantie.md` et `conge-et-fin-de-bail.md`.
+3. `logement/depot-de-garantie.md`.
 4. `immigration/titres-de-sejour.md`.

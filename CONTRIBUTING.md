@@ -15,9 +15,16 @@ personne ne le vérifie, et des décisions se construisent dessus.
 
 | Vous apportez… | Ça va dans… |
 |---|---|
-| Un raisonnement, une méthode, un arbre de décision, un piège à connaître | `<skill>/references/<sujet>.md` |
-| Un taux, un seuil, un délai, un barème | `data/parametres.json`, **et nulle part ailleurs** |
-| Un modèle de document | `avocat/assets/modeles/` |
+| Un raisonnement, une méthode, un arbre de décision, un piège à connaître | `plugins/<domaine>/skills/<rôle>/references/<sujet>.md` |
+| Un taux, un seuil, un délai, un barème | `plugins/<domaine>/skills/<rôle>/data/parametres.json` — **c'est lui qui fait autorité** |
+
+Un fichier de méthode **peut** citer une valeur, à une seule condition : que la même valeur soit
+dans le `parametres.json` de son rôle, sourcée et datée. Le script `scripts/verifier-parametres.py`
+le contrôle et sort en erreur sinon — lancez-le avant de proposer une modification.
+
+⚠️ **Aucun fichier n'est partagé entre deux rôles.** Les plugins s'installent séparément : un
+chemin relatif d'un rôle vers un autre casserait. Quand un sujet touche deux rôles, l'un le traite
+et l'autre renvoie **par nom de rôle**.
 
 ## Sources admises
 

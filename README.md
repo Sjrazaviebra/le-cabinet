@@ -4,12 +4,13 @@
 
 # le-cabinet
 
-**Deux skills pour agents IA : un comptable et un avocat, en droit français.**
+**Sept rôles pour agents IA, en droit, fiscalité et administration français.**
 Entreprise **et** vie privée.
 
-> 🚧 **En construction.** L'architecture est posée et les deux skills sont rédigés, mais les
-> fichiers de référence sont encore vides et aucune valeur chiffrée n'a été vérifiée à la source.
-> Le travail de rédaction se fait sur la branche [`dev`](../../tree/dev).
+> 🚧 **En construction.** Les sept rôles sont écrits, sept fichiers de fond sont rédigés depuis les
+> textes officiels et **29 valeurs sont vérifiées et datées** — mais la majorité des fichiers de
+> référence est encore vide. Chacun porte son état en tête : `RÉDIGÉ`, `PARTIEL` ou `À ÉCRIRE`.
+> La rédaction se fait sur la branche [`dev`](../../tree/dev).
 > Voir [`docs/avancement.md`](docs/avancement.md) pour l'état fichier par fichier.
 
 > ⚖️ **Ces skills ne remplacent ni un expert-comptable inscrit à l'Ordre, ni un avocat inscrit à
@@ -20,7 +21,7 @@ Entreprise **et** vie privée.
 
 ---
 
-## Les deux skills
+## Les sept rôles
 
 | Rôle | Invocation | Domaine | Couvre |
 |---|---|---|---|
@@ -57,12 +58,30 @@ décisions se construisent.
 
 Donc, ici :
 
-1. **Les fichiers de méthode ne contiennent aucune valeur volatile.** Ils portent le raisonnement,
-   les questions à poser, les arbres de décision, et **l'adresse officielle où lire la valeur**.
-2. **Les valeurs vivent dans `data/parametres.json`**, propre à chaque skill, chacune avec sa
-   `source` (URL officielle) et sa `date_verifiee`.
+1. **`data/parametres.json` fait autorité.** Chaque valeur y porte sa `source` (URL officielle) et
+   sa `date_verifiee`. En cas de divergence avec un fichier de méthode, **c'est le JSON qui gagne**.
+2. **Un fichier de méthode peut citer une valeur, à une condition** : que la même valeur soit dans
+   le `parametres.json` de son rôle, sourcée et datée. Un chiffre qui ne vit que dans un `.md` est
+   un chiffre que personne ne pourra plus dater — c'est par là que la dérive commence.
 3. **Le skill refuse d'affirmer une valeur périmée.** Au-delà de six mois, il le dit et renvoie à
    la source au lieu de deviner.
+4. **Et cette promesse est vérifiable, pas déclarative** :
+
+```bash
+python scripts/verifier-parametres.py
+```
+
+Le script contrôle que toute valeur marquée vérifiée porte bien source **et** date, qu'aucune source
+ne sort de la liste admise, qu'aucune valeur n'a dépassé la péremption, et que chaque nombre cité
+dans un fichier rédigé se retrouve bien dans le `parametres.json` de son rôle. Il sort en erreur
+sinon.
+
+> ⚠️ **Ce dépôt s'est déjà trompé, et le dira toujours.** Une revue adversariale du 16 août 2026 a
+> trouvé trois affirmations fausses publiées avec `a_verifier: false` : une prétendue rétroactivité
+> de la TVA, un taux d'ACRE périmé, et un effet suspensif de recours inversé. Elles ont été
+> corrigées, les notes de `parametres.json` gardent la trace de la correction, et le script
+> ci-dessus est né de cet épisode. Une promesse d'exactitude qui ne documente pas ses erreurs n'est
+> pas une promesse.
 
 Sources admises, par ordre d'autorité : **Légifrance** · **BOFiP** · **impots.gouv.fr** ·
 **urssaf.fr** · **service-public.fr** / **entreprendre.service-public.fr** · **France Travail** ·
@@ -87,22 +106,30 @@ puis installez le domaine voulu, ou les deux :
 /plugin install juridique@le-cabinet
 ```
 
+⚠️ **Les skills d'un plugin sont préfixés par le nom du plugin.** Installés ainsi, ils s'appellent
+donc `/juridique:travail`, `/comptabilite:impots`, `/juridique:immigration`… La forme courte
+`/travail` s'obtient par l'installation manuelle ci-dessous. Vous pouvez aussi laisser l'agent
+charger le bon rôle tout seul : les descriptions sont écrites pour ça, en français **et** en
+anglais.
+
 ### À la main
 
 Copiez le dossier du rôle voulu dans vos skills personnels :
 
 ```bash
-cp -r plugins/comptabilite/skills/comptable ~/.claude/skills/
-cp -r plugins/juridique/skills/avocat ~/.claude/skills/
+cp -r plugins/juridique/skills/travail ~/.claude/skills/
+cp -r plugins/comptabilite/skills/impots ~/.claude/skills/
 ```
 
-`/comptable` et `/avocat` sont alors disponibles.
+`/travail` et `/impots` sont alors disponibles.
 
 ## Structure
 
-**Un plugin = un domaine. Un skill = un rôle.** Un domaine peut donc accueillir plusieurs rôles au
-fil du temps — un fiscaliste à côté du comptable, un notaire à côté de l'avocat — sans rien casser
-chez ceux qui l'ont déjà installé.
+**Un plugin = un domaine. Un skill = un rôle.** Un domaine accueille plusieurs rôles et peut en
+recevoir d'autres sans rien casser chez ceux qui l'ont déjà installé — mais **pas n'importe
+lesquels** : le critère qui décide qu'un sujet mérite son propre rôle est écrit dans
+[`docs/taxonomie.md`](docs/taxonomie.md), et il exclut délibérément les rôles calqués sur les
+professions.
 
 ```
 le-cabinet/

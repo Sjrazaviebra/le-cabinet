@@ -1,6 +1,6 @@
 {
   "name": "le-cabinet",
-  "description": "Deux skills pour agents IA en droit francais : un comptable et un avocat. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
+  "description": "Sept roles pour agents IA en droit, fiscalite et administration francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
   "version": "0.2.0",
   "author": "Sjrazaviebra",
   "license": "MIT",

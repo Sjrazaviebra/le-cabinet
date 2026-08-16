@@ -28,16 +28,23 @@ contre quoi ?** Puis on confronte cette description brute au texte.
 C'est l'article central. Il énumère les services d'investissement portant sur les instruments
 financiers de l'article L211-1 (et les unités environnementales) :
 
-1. Réception et transmission d'ordres pour le compte de tiers
-2. Exécution d'ordres pour le compte de tiers
-3. Négociation pour compte propre
-4. **Gestion de portefeuille pour le compte de tiers**
-5. **Conseil en investissement**
-6. Prise ferme
-7. Placement garanti
-8. Placement non garanti
-9. Exploitation d'un système multilatéral de négociation
-10. Exploitation d'un système organisé de négociation
+| Numérotation du texte | Service |
+|---|---|
+| **1°** | Réception et transmission d'ordres pour le compte de tiers |
+| **2°** | Exécution d'ordres pour le compte de tiers |
+| **3°** | Négociation pour compte propre |
+| **4°** | **Gestion de portefeuille pour le compte de tiers** |
+| **5°** | **Conseil en investissement** |
+| **6-1°** | Prise ferme |
+| **6-2°** | Placement garanti |
+| **7°** | Placement non garanti |
+| **8°** | Exploitation d'un système multilatéral de négociation |
+| **9°** | Exploitation d'un système organisé de négociation |
+
+⚠️ **La numérotation n'est pas continue** : le texte passe de 5° à 6-1° et 6-2°, puis reprend à 7°.
+Citer « le 8° de L321-1 » en croyant désigner le placement non garanti désigne en réalité le
+système multilatéral de négociation. Dans un article dont tout l'enjeu est la précision de la
+qualification, la référence exacte compte autant que le contenu.
 
 *(Version en vigueur au 3 janvier 2018. Un décret précise la définition de ces services.)*
 
