@@ -1,0 +1,25 @@
+# Choisir et changer de forme juridique
+
+> **État : `À ÉCRIRE`** — ce fichier est un périmètre, pas encore un contenu.
+> Ne présentez jamais ce qui suit comme une réponse : il n'y a pas encore de réponse ici.
+
+## Ce que ce fichier doit couvrir
+
+- Comparer micro-entreprise, EI, EURL, SASU, SARL, SAS : fiscalite, cotisations, protection, credibilite.
+- Le tableau de decision : qui paie quoi, qui est protege, qui peut embaucher.
+- La bascule micro -> societe : ce qui la declenche, ce qu'elle coute, ce qu'on perd.
+- Le piege : choisir sur la simplicite de creation plutot que sur le cout a 3 ans.
+
+## Sources à utiliser
+
+Le texte fait foi. Toute valeur chiffrée tirée d'ici doit aller dans
+`data/parametres.json` avec sa source et sa date de vérification — jamais en dur ci-dessous.
+
+- <https://entreprendre.service-public.fr/vosdroits/N16977>
+- <https://bpifrance-creation.fr/>
+- <https://formalites.entreprises.gouv.fr/>
+
+## Rappel de cadrage
+
+Ce fichier alimente le skill `comptable`, qui est un outil d'**aide à la décision**.
+Il ne remplace ni un expert-comptable inscrit à l'Ordre, ni un avocat inscrit à un barreau.

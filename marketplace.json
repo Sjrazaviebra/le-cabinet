@@ -1,0 +1,19 @@
+{
+  "name": "le-cabinet",
+  "description": "Deux skills pour agents IA en droit français : un comptable et un avocat. Entreprise et vie privée. Aucun chiffre écrit de mémoire — tout est sourcé et daté.",
+  "langue": "fr",
+  "pays": "FR",
+  "licence": "MIT",
+  "plugins": [
+    {
+      "name": "comptable",
+      "description": "Comptabilité et fiscalité françaises, entreprise et particulier : formes juridiques, micro-entreprise, TVA, PCG et écritures, clôture et liasse, facturation, impôt sur le revenu, revenus financiers, chômage et création, paie.",
+      "source": "comptable/SKILL.md"
+    },
+    {
+      "name": "avocat",
+      "description": "Droit français, entreprise et particulier : sociétés et objet social, contrats et CGV, international, propriété intellectuelle, activités réglementées, travail, consommation, RGPD, logement, famille, succession, procédure.",
+      "source": "avocat/SKILL.md"
+    }
+  ]
+}
