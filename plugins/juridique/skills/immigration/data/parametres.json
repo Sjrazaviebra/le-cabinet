@@ -86,15 +86,40 @@
   },
   "recours": {
     "delais_recours_oqtf": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/",
-      "note": "CRITIQUE. Variables selon la forme de la mesure, parfois quelques jours. Ne JAMAIS estimer."
+      "valeur": {
+        "avec_delai_depart_cas_general": "1 mois",
+        "avec_delai_depart_assignation": "7 jours",
+        "avec_delai_depart_retention": "48 heures",
+        "sans_delai_cas_general": "1 mois",
+        "sans_delai_assignation": "7 jours",
+        "sans_delai_retention": "48 heures"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "⚠️ PAGE SOURCE DATEE DU 13/11/2024, donc de plus de 6 mois : recouper avec le document de notification, qui indique le delai applicable et fait foi. REGLE DE SECURITE : si le delai applicable n est pas certain, agir comme si c etait le PLUS COURT."
+    },
+    "oqtf_effet_suspensif": {
+      "valeur": {
+        "avec_delai_depart_volontaire": true,
+        "sans_delai_depart_volontaire": false
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
+      "date_verifiee": "2026-08-16",
+      "note": "POINT LE PLUS DANGEREUX : le recours contre une OQTF SANS delai de depart volontaire NE SUSPEND PAS l execution. La personne peut etre eloignee pendant que son recours est pendant. Contre-intuitif, et c est ce qui justifie d orienter vers un avocat le jour meme."
     },
     "delai_recours_refus_titre": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/"
+      "valeur": {
+        "gracieux": "2 mois",
+        "hierarchique": "2 mois",
+        "contentieux": "2 mois apres decision expresse",
+        "silence_administration": "4 mois apres enregistrement de la demande"
+      },
+      "a_verifier": false,
+      "source": "https://www.justice.fr/notice/idtdb2037-refus-retrait-demande-d%C3%A9livrance-renouvellement-votre-carte-s%C3%A9jour-votre-titre-s%C3%A9jour",
+      "date_verifiee": "2026-08-16",
+      "note": "Un recours gracieux ou hierarchique exerce DANS LES DEUX MOIS conserve la possibilite de saisir ensuite le juge ; exerce apres, il ne proroge plus rien. ⚠️ Un refus de titre est souvent notifie AVEC une OQTF dans le meme courrier : c est alors le delai de l OQTF qui commande."
     }
   },
   "declaration_mariage": {
