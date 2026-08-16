@@ -1,5 +1,7 @@
 ![le-cabinet](assets/banner.jpg)
 
+<img src="assets/logo.png" alt="le-cabinet" width="96" align="left" hspace="12">
+
 # le-cabinet
 
 **Deux skills pour agents IA : un comptable et un avocat, en droit français.**

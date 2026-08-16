@@ -69,28 +69,63 @@
   },
   "chomage_et_creation": {
     "are_maintien_formule": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocations/",
-      "note": "Mode de calcul de l'allocation mensuelle réduite en cas d'activité, et report des jours non consommés."
+      "valeur": "allocation mensuelle - 70 % des remunerations declarees au titre des assurances sociales",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": "2026-08-16"
+    },
+    "are_plafond_cumul_droits_restants": {
+      "valeur": 60,
+      "unite": "% des droits restants",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/actualites/a-laffiche/2026/are-arce-acre-creer-son-entrepri.html",
+      "date_verifiee": "2026-08-16",
+      "note": "S'applique aux contrats de travail TERMINES APRES le 01/04/2025, a la date de demarrage effectif de l'activite. Avant cette date de fin de contrat, pas de plafond de ce type."
+    },
+    "are_plafond_salaire_moyen": {
+      "valeur": "revenu d'activite + allocation <= moyenne des salaires ayant servi au calcul de l'ARE",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": "2026-08-16"
+    },
+    "are_paiement_provisoire": {
+      "valeur": 70,
+      "unite": "% de l'allocation mensuelle",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": "2026-08-16",
+      "note": "Quand les remunerations ne sont pas encore connues ; regularisation ensuite."
     },
     "are_base_de_calcul_micro": {
       "valeur": null,
       "a_verifier": true,
-      "source": "https://www.francetravail.fr/",
-      "note": "Pour un micro-entrepreneur, sur quelle assiette France Travail raisonne (CA brut ou après abattement) — point à confirmer explicitement, il change matériellement le résultat."
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": null,
+      "note": "NON CONFIRME sur page officielle. Question : les 70 % portent-ils sur le CA brut ou sur le CA apres abattement forfaitaire ? Une documentation secondaire annonce 'apres abattement' avec 71/50/34 % selon l'activite, mais ce depot n'admet pas les sources secondaires. A faire confirmer par ecrit par le conseiller."
     },
-    "arce_taux_et_conditions": {
-      "valeur": null,
-      "unite": "% du reliquat",
-      "a_verifier": true,
-      "source": "https://www.francetravail.fr/",
-      "note": "Exclut le maintien mensuel. Le taux a évolué dans le temps."
+    "arce_taux": {
+      "valeur": 60,
+      "unite": "% des droits ARE restants",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html",
+      "date_verifiee": "2026-08-16",
+      "note": "Deduction prealable de 3 % au titre du financement des retraites complementaires. Versement en deux fois : 50 % a la creation, 50 % six mois apres si activite toujours exercee et pas de CDI a temps plein. Assujettie a la CSG et a la CRDS. EXIGE d avoir obtenu l ACRE."
     },
-    "acre_conditions_et_duree": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.urssaf.fr/accueil/independant/creer-mon-entreprise/aide-creation-acre.html"
+    "acre_taux_exoneration": {
+      "valeur": 50,
+      "unite": "% des cotisations sociales",
+      "a_verifier": false,
+      "source": "https://www.urssaf.fr/accueil/exoneration-acre-createur.html",
+      "date_verifiee": "2026-08-16",
+      "note": "Pendant les 12 premiers mois d activite."
+    },
+    "acre_delai_demande_jours": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.urssaf.fr/accueil/exoneration-acre-createur.html",
+      "date_verifiee": "2026-08-16",
+      "note": "DEPUIS LE 01/01/2026 la demande n'est plus automatique : a deposer aupres de l'Urssaf dans les 60 jours suivant la date d'ouverture de l'activite. Delai manque = ACRE perdue, et ARCE perdue avec elle. Pas deja beneficie dans les 3 annees precedentes."
     }
   },
   "impot_revenu": {
