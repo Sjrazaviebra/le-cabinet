@@ -29,21 +29,59 @@
     }
   },
   "naturalisation": {
-    "duree_residence_decret": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.service-public.fr/particuliers/vosdroits/N111",
-      "note": "Duree de residence habituelle exigee, et les cas de reduction."
+    "niveau_langue_cecrl": {
+      "valeur": "B2",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051900519",
+      "date_verifiee": "2026-08-16",
+      "note": "Releve de B1 a B2 par le decret n° 2025-648 du 15 juillet 2025, ENTREE EN VIGUEUR LE 1er JANVIER 2026, pour la naturalisation, la reintegration ET la declaration a raison du mariage. PIEGE : consulter le decret de 2011 sur Legifrance affiche par defaut une version ancienne mentionnant encore B1 - regarder la date de la version en vigueur."
     },
-    "niveau_langue_exige": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.service-public.fr/particuliers/vosdroits/N111"
+    "examen_civique": {
+      "valeur": "obligatoire",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051900519",
+      "date_verifiee": "2026-08-16",
+      "note": "Entre en vigueur le 1er janvier 2026, meme decret."
     },
-    "anciennete_mariage_declaration": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.service-public.fr/particuliers/vosdroits/N111"
+    "stage_residence_ans": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2213",
+      "date_verifiee": "2026-08-16",
+      "note": "Dispense totale : refugies, personnes originaires d un pays francophone dans les conditions prevues, service militaire pour la France. Reduction a 2 ans : diplomes de l enseignement superieur francais, parcours d integration exceptionnel."
+    },
+    "age_minimum": {
+      "valeur": 18,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2213",
+      "date_verifiee": "2026-08-16",
+      "note": "Demandes acceptees des 17 ans."
+    },
+    "cout_timbre_fiscal_eur": {
+      "valeur": 255,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2213",
+      "date_verifiee": "2026-08-16",
+      "note": "127,50 EUR en Guyane."
+    },
+    "delai_reponse_administration_mois": {
+      "valeur": 18,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2213",
+      "date_verifiee": "2026-08-16",
+      "note": "A compter de la remise du recepisse de dossier complet. REDUIT A 12 MOIS pour les personnes justifiant d au moins 10 ans de residence en France."
+    },
+    "obstacle_condamnation_mois": {
+      "valeur": 6,
+      "unite": "mois d emprisonnement",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2213",
+      "date_verifiee": "2026-08-16",
+      "note": "Condamnation superieure a 6 mois, ou pour atteinte aux interets fondamentaux de la Nation, fait obstacle sauf rehabilitation."
     }
   },
   "recours": {
@@ -57,6 +95,26 @@
       "valeur": null,
       "a_verifier": true,
       "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000042774790/"
+    }
+  },
+  "declaration_mariage": {
+    "duree_communaute_vie_ans": {
+      "valeur": {
+        "cas_general": 4,
+        "cas_majore": 5
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000024197103",
+      "date_verifiee": "2026-08-16",
+      "note": "Article 21-2 du code civil. Le delai passe a 5 ans si le declarant ne justifie pas de 3 ans de residence ininterrompue et reguliere en France depuis le mariage, OU si le conjoint francais n a pas ete inscrit au registre des Francais etablis hors de France pendant la communaute de vie a l etranger."
+    },
+    "transcription_mariage_etranger": {
+      "valeur": "obligatoire et prealable",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000024197103",
+      "date_verifiee": "2026-08-16",
+      "note": "BLOCAGE N°1 de cette voie : sans transcription prealable sur les registres d etat civil francais, la declaration ne peut pas aboutir. La transcription prend elle-meme des mois."
     }
   }
 }
