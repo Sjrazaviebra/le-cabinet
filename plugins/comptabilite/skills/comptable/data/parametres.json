@@ -1,0 +1,208 @@
+{
+  "_lisez_moi": {
+    "role": "Toutes les valeurs volatiles du dépôt (taux, seuils, plafonds, barèmes, délais) vivent ICI et nulle part ailleurs. Les fichiers de méthode raisonnent, ce fichier chiffre.",
+    "regle": "Aucune valeur n'entre ici sans 'source' (URL officielle) ET 'date_verifiee' (AAAA-MM-JJ). Une entrée avec 'a_verifier': true n'est PAS une valeur : c'est une case à remplir. Le skill doit alors laisser le chiffre en blanc et renvoyer à la source.",
+    "peremption_mois": 6,
+    "sources_admises": [
+      "legifrance.gouv.fr",
+      "bofip.impots.gouv.fr",
+      "impots.gouv.fr",
+      "urssaf.fr",
+      "service-public.fr",
+      "entreprendre.service-public.fr",
+      "bpifrance-creation.fr",
+      "amf-france.org",
+      "cnil.fr",
+      "inpi.fr",
+      "francetravail.fr"
+    ],
+    "sources_refusees": "Blogs, forums, comparateurs, cabinets faisant du contenu, agrégateurs. Ils peuvent servir à trouver le texte, jamais à le citer.",
+    "etat": "SQUELETTE — aucune valeur n'a encore été vérifiée à la source. Toutes les entrées sont marquées a_verifier: true.",
+    "portee": "Parametres du skill `comptable` uniquement. Chaque skill embarque les siens : aucun lien symbolique, donc chaque skill est installable seul."
+  },
+  "micro_entreprise": {
+    "seuils_chiffre_affaires": {
+      "valeur": {
+        "commerce_hebergement_bic": 203100,
+        "services_et_professions_liberales": 83600,
+        "location_meubles_non_classes": 15000,
+        "mixte_seuil_global": 203100
+      },
+      "unite": "EUR/an",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "date_verifiee": "2026-08-16",
+      "note": "Page service-public datee du 13/05/2026. IMPORTANT : le depassement d'un seuil sur UNE seule annee ne fait pas sortir du regime ; il faut un depassement sur DEUX annees consecutives (N-1 et N-2). Ne pas confondre avec les seuils de TVA, qui sont independants."
+    },
+    "abattement_forfaitaire": {
+      "valeur": {
+        "bic_commerce_hebergement": 71,
+        "bic_prestations_services": 50,
+        "bnc_activites_liberales": 34,
+        "meubles_classes": 50,
+        "meubles_non_classes": 30,
+        "minimum_eur": 305,
+        "minimum_mixte_eur": 610
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "date_verifiee": "2026-08-16",
+      "note": "Abattement FORFAITAIRE, pas un remboursement : si les charges reelles depassent l'abattement, on est impose sur de l'argent non gagne. C'est le principal declencheur de sortie du regime."
+    },
+    "versement_liberatoire_taux": {
+      "valeur": {
+        "bic_commerce": 1.0,
+        "autres_bic_prestations": 1.7,
+        "bnc": 2.2
+      },
+      "unite": "% du CA",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/le-versement-liberatoire",
+      "date_verifiee": "2026-08-16",
+      "note": "Se paie des le premier euro de CA, alors que le bareme progressif comporte une tranche a 0 %. L'option est donc DEFAVORABLE a un foyer peu impose."
+    },
+    "versement_liberatoire_conditions": {
+      "valeur": {
+        "rfr_n2_plafond_personne_seule": 29579,
+        "rfr_n2_plafond_couple_2_enfants": 88737
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23267",
+      "date_verifiee": "2026-08-16",
+      "note": "Revenu fiscal de reference du foyer en N-2."
+    },
+    "taux_cotisations_sociales": {
+      "valeur": null,
+      "unite": "% du CA",
+      "a_verifier": true,
+      "source": "https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html",
+      "date_verifiee": null,
+      "note": "NON CONFIRME : une source secondaire annonce 25,6 % pour 'autre prestation de services' au 01/01/2026, mais la page Urssaf n'a pas repondu lors de la verification du 2026-08-16. A confirmer directement."
+    }
+  },
+  "tva": {
+    "franchise_seuils_prestations_services": {
+      "valeur": {
+        "seuil_base_n1": 37500,
+        "seuil_majore_annee_en_cours": 41250
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21746",
+      "date_verifiee": "2026-08-16",
+      "note": "Seuils 2026 inchanges : le seuil unique de 25 000 EUR prevu par la LF 2025 a ete abandonne. Depassement du seuil de BASE -> assujetti au 1er janvier suivant. Depassement du seuil MAJORE -> assujetti des le premier jour, et regime reel RETROACTIF au 1er janvier de l annee. C est la retroactivite qui coute 20 % du CA."
+    },
+    "ecart_seuil_micro_vs_tva": {
+      "valeur": {
+        "plafond_micro_services": 83600,
+        "franchise_tva_services": 37500
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21746",
+      "date_verifiee": "2026-08-16",
+      "note": "ERREUR N°1 du regime : on devient redevable de la TVA a MOINS DE LA MOITIE du plafond de la micro. Les deux regimes sont independants."
+    },
+    "prestations_b2b_mentions": {
+      "valeur": {
+        "client_assujetti_ue": "Autoliquidation",
+        "client_assujetti_hors_ue": "TVA non applicable - art. 259-1 du CGI",
+        "franchise_en_base_national": "TVA non applicable, art. 293 B du CGI"
+      },
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": "2026-08-16",
+      "note": "Prestation a un assujetti etabli dans l UE ou hors UE : pas de TVA francaise, le lieu suit le preneur."
+    },
+    "des_delai_depot_jours": {
+      "valeur": 10,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": "2026-08-16",
+      "note": "Declaration europeenne de services, a deposer dans les 10 jours du mois suivant l exigibilite, quand le preneur assujetti est etabli dans un autre Etat membre. Due meme si aucune TVA n est collectee."
+    },
+    "franchise_et_des_intracom": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "note": "NON CONFIRME : un assujetti en FRANCHISE EN BASE qui preste pour un professionnel etabli dans l UE doit-il obtenir un numero de TVA intracommunautaire et deposer la DES ? Le raisonnement le suggere, aucune page officielle consultee ne le dit explicitement. A faire confirmer par le SIE avant la premiere facture."
+    }
+  },
+  "chomage_et_creation": {
+    "are_maintien_formule": {
+      "valeur": "allocation mensuelle - 70 % des remunerations declarees au titre des assurances sociales",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": "2026-08-16"
+    },
+    "are_plafond_cumul_droits_restants": {
+      "valeur": 60,
+      "unite": "% des droits restants",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/actualites/a-laffiche/2026/are-arce-acre-creer-son-entrepri.html",
+      "date_verifiee": "2026-08-16",
+      "note": "S'applique aux contrats de travail TERMINES APRES le 01/04/2025, a la date de demarrage effectif de l'activite. Avant cette date de fin de contrat, pas de plafond de ce type."
+    },
+    "are_plafond_salaire_moyen": {
+      "valeur": "revenu d'activite + allocation <= moyenne des salaires ayant servi au calcul de l'ARE",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": "2026-08-16"
+    },
+    "are_paiement_provisoire": {
+      "valeur": 70,
+      "unite": "% de l'allocation mensuelle",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": "2026-08-16",
+      "note": "Quand les remunerations ne sont pas encore connues ; regularisation ensuite."
+    },
+    "are_base_de_calcul_micro": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio/quelle-est-ma-situation-professi/je-reprends-une-activite-ou-une/je-cree-je-reprends-une-entrepri.html",
+      "date_verifiee": null,
+      "note": "NON CONFIRME sur page officielle. Question : les 70 % portent-ils sur le CA brut ou sur le CA apres abattement forfaitaire ? Une documentation secondaire annonce 'apres abattement' avec 71/50/34 % selon l'activite, mais ce depot n'admet pas les sources secondaires. A faire confirmer par ecrit par le conseiller."
+    },
+    "arce_taux": {
+      "valeur": 60,
+      "unite": "% des droits ARE restants",
+      "a_verifier": false,
+      "source": "https://www.francetravail.fr/candidat/je-creereprends-une-entreprise/les-aides-financieres-creation-d/aide-a-la-reprise-et-a-la-creati.html",
+      "date_verifiee": "2026-08-16",
+      "note": "Deduction prealable de 3 % au titre du financement des retraites complementaires. Versement en deux fois : 50 % a la creation, 50 % six mois apres si activite toujours exercee et pas de CDI a temps plein. Assujettie a la CSG et a la CRDS. EXIGE d avoir obtenu l ACRE."
+    },
+    "acre_taux_exoneration": {
+      "valeur": 50,
+      "unite": "% des cotisations sociales",
+      "a_verifier": false,
+      "source": "https://www.urssaf.fr/accueil/exoneration-acre-createur.html",
+      "date_verifiee": "2026-08-16",
+      "note": "Pendant les 12 premiers mois d activite."
+    },
+    "acre_delai_demande_jours": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.urssaf.fr/accueil/exoneration-acre-createur.html",
+      "date_verifiee": "2026-08-16",
+      "note": "DEPUIS LE 01/01/2026 la demande n'est plus automatique : a deposer aupres de l'Urssaf dans les 60 jours suivant la date d'ouverture de l'activite. Delai manque = ACRE perdue, et ARCE perdue avec elle. Pas deja beneficie dans les 3 annees precedentes."
+    }
+  },
+  "impot_revenu": {
+    "bareme": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-calculer-mon-impot"
+    },
+    "pfu_taux_global": {
+      "valeur": null,
+      "unite": "%",
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-sont-imposes-mes-revenus-de-capitaux-mobiliers"
+    }
+  }
+}

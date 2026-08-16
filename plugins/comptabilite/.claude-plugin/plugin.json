@@ -1,0 +1,22 @@
+{
+  "name": "comptabilite",
+  "displayName": "Comptabilité",
+  "description": "Comptabilité et fiscalité françaises, entreprise et particulier. Contient le rôle Comptable (/comptable).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Javad Razavi",
+    "url": "https://javadrazavi.fr"
+  },
+  "homepage": "https://github.com/Sjrazaviebra/le-cabinet",
+  "license": "MIT",
+  "category": "productivity",
+  "tags": [
+    "comptabilite",
+    "fiscalite",
+    "france",
+    "tva",
+    "micro-entreprise",
+    "urssaf",
+    "impots"
+  ]
+}

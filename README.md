@@ -1,3 +1,7 @@
+![le-cabinet](assets/banner.jpg)
+
+<img src="assets/logo.png" alt="le-cabinet" width="96" align="left" hspace="12">
+
 # le-cabinet
 
 **Deux skills pour agents IA : un comptable et un avocat, en droit français.**
@@ -18,12 +22,22 @@ Entreprise **et** vie privée.
 
 ## Les deux skills
 
-| Skill | Invocation | Couvre |
-|---|---|---|
-| **Comptable** | `/comptable` | Formes juridiques, micro-entreprise, TVA, PCG et écritures, clôture et liasse, facturation, impôt sur le revenu, revenus financiers, chômage et création d'activité, paie. |
-| **Avocat** | `/avocat` | Activités réglementées, sociétés et objet social, contrats et CGV, international, propriété intellectuelle, travail, consommation, RGPD, logement, famille, succession, procédure. |
+| Rôle | Invocation | Domaine | Couvre |
+|---|---|---|---|
+| **Comptable** | `/comptable` | `comptabilite` | Formes juridiques, micro-entreprise, TVA, PCG et écritures, clôture et liasse, facturation, impôt sur le revenu, revenus financiers, chômage et création d'activité, paie. |
+| **Avocat** | `/avocat` | `juridique` | Activités réglementées, sociétés et objet social, contrats et CGV, international, propriété intellectuelle, travail, consommation, RGPD, logement, famille, succession, procédure. |
+| **Immigration** | `/immigration` | `juridique` | Visas et titres de séjour, renouvellement, changement de statut, autorisation de travail, étudiants, entreprendre en étant étranger, regroupement familial, refus et recours, **naturalisation**. |
 
 Vous pouvez les appeler directement, ou laisser l'agent les charger quand la question s'y prête.
+
+**Ces skills sont rédigés en français, mais répondent dans votre langue.** Le droit français est
+écrit en français et ses notions n'ont pas d'équivalent fidèle ailleurs — les skills gardent donc
+le terme français avec une courte glose, parce que c'est ce mot-là qui figure sur les formulaires
+et dans les courriers de l'administration.
+
+*These skills are written in French but answer in your language. French legal and tax concepts have
+no faithful equivalent elsewhere, so the French term is kept with a short gloss — that is the word
+you will actually see on the forms.*
 
 ## ★ Le parti pris : aucun chiffre n'est écrit de mémoire
 
@@ -57,37 +71,45 @@ installable seul, et se copie ou se zippe sans rien casser.
 /plugin marketplace add Sjrazaviebra/le-cabinet
 ```
 
-puis installez l'un ou l'autre, ou les deux :
+puis installez le domaine voulu, ou les deux :
 
 ```
-/plugin install comptable@le-cabinet
-/plugin install avocat@le-cabinet
+/plugin install comptabilite@le-cabinet
+/plugin install juridique@le-cabinet
 ```
 
 ### À la main
 
-Copiez le dossier du skill voulu dans vos skills personnels :
+Copiez le dossier du rôle voulu dans vos skills personnels :
 
 ```bash
-cp -r plugins/comptable/skills/comptable ~/.claude/skills/
-cp -r plugins/avocat/skills/avocat ~/.claude/skills/
+cp -r plugins/comptabilite/skills/comptable ~/.claude/skills/
+cp -r plugins/juridique/skills/avocat ~/.claude/skills/
 ```
 
 `/comptable` et `/avocat` sont alors disponibles.
 
 ## Structure
 
+**Un plugin = un domaine. Un skill = un rôle.** Un domaine peut donc accueillir plusieurs rôles au
+fil du temps — un fiscaliste à côté du comptable, un notaire à côté de l'avocat — sans rien casser
+chez ceux qui l'ont déjà installé.
+
 ```
 le-cabinet/
-├── .claude-plugin/marketplace.json     ← le catalogue
+├── .claude-plugin/marketplace.json      ← le catalogue
 └── plugins/
-    ├── comptable/
+    ├── comptabilite/                    ← le DOMAINE
     │   ├── .claude-plugin/plugin.json
-    │   └── skills/comptable/
-    │       ├── SKILL.md                ← routeur et méthode
-    │       ├── references/*.md         ← un fichier par domaine
-    │       └── data/parametres.json    ← les chiffres, sourcés et datés
-    └── avocat/  (même structure)
+    │   └── skills/
+    │       └── comptable/               ← le RÔLE → /comptable
+    │           ├── SKILL.md             ← routeur et méthode
+    │           ├── references/*.md      ← un fichier par sujet
+    │           └── data/parametres.json ← les chiffres, sourcés et datés
+    └── juridique/
+        └── skills/
+            ├── avocat/                  ← /avocat
+            └── immigration/             ← /immigration
 ```
 
 ## Contribuer
