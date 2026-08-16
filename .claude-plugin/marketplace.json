@@ -1,0 +1,32 @@
+{
+  "name": "le-cabinet",
+  "description": "Deux skills pour agents IA en droit francais : un comptable et un avocat. Entreprise et vie privee. Aucun chiffre ecrit de memoire.",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Javad Razavi",
+    "url": "https://github.com/Sjrazaviebra"
+  },
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "comptable",
+      "source": "comptable",
+      "description": "Comptabilite et fiscalite francaises, entreprise et particulier : formes juridiques, micro-entreprise, TVA, PCG et ecritures, cloture et liasse, facturation, impot sur le revenu, revenus financiers, chomage et creation, paie.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Javad Razavi"
+      }
+    },
+    {
+      "name": "avocat",
+      "source": "avocat",
+      "description": "Droit francais, entreprise et particulier : societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, travail, consommation, RGPD, logement, famille, succession, procedure.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Javad Razavi"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "_lisez_moi": {
+    "role": "Toutes les valeurs volatiles du dépôt (taux, seuils, plafonds, barèmes, délais) vivent ICI et nulle part ailleurs. Les fichiers de méthode raisonnent, ce fichier chiffre.",
+    "regle": "Aucune valeur n'entre ici sans 'source' (URL officielle) ET 'date_verifiee' (AAAA-MM-JJ). Une entrée avec 'a_verifier': true n'est PAS une valeur : c'est une case à remplir. Le skill doit alors laisser le chiffre en blanc et renvoyer à la source.",
+    "peremption_mois": 6,
+    "sources_admises": [
+      "legifrance.gouv.fr",
+      "bofip.impots.gouv.fr",
+      "impots.gouv.fr",
+      "urssaf.fr",
+      "service-public.fr",
+      "entreprendre.service-public.fr",
+      "bpifrance-creation.fr",
+      "amf-france.org",
+      "cnil.fr",
+      "inpi.fr",
+      "francetravail.fr"
+    ],
+    "sources_refusees": "Blogs, forums, comparateurs, cabinets faisant du contenu, agrégateurs. Ils peuvent servir à trouver le texte, jamais à le citer.",
+    "etat": "SQUELETTE — aucune valeur n'a encore été vérifiée à la source. Toutes les entrées sont marquées a_verifier: true.",
+    "portee": "Parametres du skill `avocat` uniquement. Chaque skill embarque les siens : aucun lien symbolique, donc chaque skill est installable seul."
+  },
+  "societes": {
+    "capital_minimum": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.fr/",
+      "note": "SASU, EURL, SARL, SAS."
+    },
+    "formalites_guichet_unique": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://formalites.entreprises.gouv.fr/",
+      "note": "Le guichet unique INPI a remplacé les CFE."
+    }
+  },
+  "delais_juridiques": {
+    "prescription_droit_commun": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006136976/",
+      "note": "Code civil. Distinguer les prescriptions spéciales (commerciale, consommation, travail, fiscale)."
+    },
+    "retractation_consommateur": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGITEXT000006069565/",
+      "note": "Code de la consommation — vente à distance."
+    }
+  }
+}
