@@ -9,7 +9,7 @@
 - PEA et assurance-vie selon l anciennete.
 - Actifs numeriques : cession occasionnelle ou habituelle, obligations declaratives, comptes etrangers.
 - Plus et moins-values : imputation et report.
-- LIGNE ROUGE : ce fichier traite la FISCALITE, jamais le conseil en placement. Voir /avocat, activites-reglementees.
+- LIGNE ROUGE : ce fichier traite la FISCALITE, jamais le conseil en placement. Voir /juriste, activites-reglementees.
 
 ## Sources à utiliser
 

@@ -18,7 +18,7 @@
     ],
     "sources_refusees": "Blogs, forums, comparateurs, cabinets faisant du contenu, agrégateurs. Ils peuvent servir à trouver le texte, jamais à le citer.",
     "etat": "EN COURS - certaines valeurs sont verifiees et datees, d autres restent marquees a_verifier.",
-    "portee": "Parametres du skill `avocat` uniquement. Chaque skill embarque les siens : aucun lien symbolique, donc chaque skill est installable seul."
+    "portee": "Parametres du skill `juriste` uniquement. Chaque skill embarque les siens : aucun lien symbolique, donc chaque skill est installable seul."
   },
   "societes": {
     "capital_minimum": {

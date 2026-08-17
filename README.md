@@ -8,7 +8,7 @@
 Entreprise **et** vie privée.
 
 > 🚧 **En construction.** Les sept rôles sont écrits, sept fichiers de fond sont rédigés depuis les
-> textes officiels et **29 valeurs sont vérifiées et datées** — mais la majorité des fichiers de
+> textes officiels et **31 valeurs sont vérifiées et datées** — mais la majorité des fichiers de
 > référence est encore vide. Chacun porte son état en tête : `RÉDIGÉ`, `PARTIEL` ou `À ÉCRIRE`.
 > La rédaction se fait sur la branche [`dev`](../../tree/dev).
 > Voir [`docs/avancement.md`](docs/avancement.md) pour l'état fichier par fichier.
@@ -27,7 +27,7 @@ Entreprise **et** vie privée.
 |---|---|---|---|
 | **Comptable** | `/comptable` | `comptabilite` | L'entreprise : formes juridiques, micro-entreprise, TVA, écritures, clôture, facturation, paie, chômage et création. |
 | **Impôts** | `/impots` | `comptabilite` | Le particulier : déclaration de revenus, barème, foyer fiscal, revenus financiers et crypto, immobilier, IFI, réclamation et contrôle. |
-| **Avocat** | `/avocat` | `juridique` | Sociétés et objet social, contrats et CGV, international, propriété intellectuelle, activités réglementées, consommation, RGPD, procédure. |
+| **Juriste** | `/juriste` | `juridique` | Sociétés et objet social, contrats et CGV, international, propriété intellectuelle, activités réglementées, consommation, RGPD, procédure. |
 | **Travail** | `/travail` | `juridique` | Convention collective, contrat, rémunération et heures, rupture et indemnités, prud'hommes, harcèlement et discrimination. |
 | **Logement** | `/logement` | `juridique` | Bail, dépôt de garantie, congé, charges et travaux, impayés et expulsion, colocation, copropriété. |
 | **Famille** | `/famille` | `juridique` | Couple et régimes, séparation, enfants et pension, succession, donation, protection des majeurs, violences. |
@@ -145,7 +145,7 @@ le-cabinet/
     │       └── impots/                  ← /impots
     └── juridique/
         └── skills/
-            ├── avocat/                  ← /avocat
+            ├── avocat/                  ← /juriste
             ├── travail/                 ← /travail
             ├── logement/                ← /logement
             ├── famille/                 ← /famille

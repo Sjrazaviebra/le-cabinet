@@ -23,7 +23,7 @@ Les délais chiffrés sont dans `data/parametres.json` et détaillés dans `refe
 
 ## 📕 2. La première question n'est pas le code du travail, c'est **la convention collective**
 
-C'est ce qui rend ce rôle différent de `/avocat`. Sur un préavis, une indemnité de licenciement,
+C'est ce qui rend ce rôle différent de `/juriste`. Sur un préavis, une indemnité de licenciement,
 un minimum salarial, une prime d'ancienneté ou une classification, **la convention collective prime
 très souvent sur le code du travail** — parce qu'elle est plus favorable.
 
@@ -76,7 +76,7 @@ volet cotisations. ⛔ Jamais un forum, un cabinet qui fait du contenu, ni un mo
 
 - **Le coût d'une embauche, les cotisations, le bulletin côté employeur** → skill `comptable`.
 - **Le droit au travail selon le titre de séjour, l'autorisation de travail** → skill `immigration`.
-- **La rédaction d'un contrat de prestation avec un indépendant** → skill `avocat`.
+- **La rédaction d'un contrat de prestation avec un indépendant** → skill `juriste`.
 
 ## Comment répondre
 

@@ -13,7 +13,7 @@ c'est ça qui en fait des rôles :
 
 | Rôle | Sa première question |
 |---|---|
-| `/avocat` | *Qui envers qui, et de quoi s'agit-il juridiquement ?* |
+| `/juriste` | *Qui envers qui, et de quoi s'agit-il juridiquement ?* |
 | `/immigration` | *Y a-t-il un délai qui court ?* |
 | `/travail` | *Quelle convention collective ?* |
 | `/logement` | *Que dit la loi, avant même de lire le bail ?* |
@@ -79,5 +79,5 @@ adversariale d'un contrôleur fiscal reste une bonne idée : elle deviendra un *
   y est d'**obtenir un droit**, pas de se conformer à une obligation. Sources propres (CNAV, CAF,
   MSA). C'est le premier motif d'assistance dans les maisons France Services et il n'existe
   nulle part ici.
-- **La consommation** reste un **fichier** de `/avocat` : même méthode, même posture, même issue —
+- **La consommation** reste un **fichier** de `/juriste` : même méthode, même posture, même issue —
   qualifier, mettre en demeure, saisir. Elle échoue au test 2.
