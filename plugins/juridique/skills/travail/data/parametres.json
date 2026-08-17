@@ -3,6 +3,71 @@
     "role": "Valeurs volatiles du skill travail.",
     "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
     "peremption_mois": 6,
-    "etat": "SQUELETTE - aucune valeur verifiee."
+    "etat": "EN COURS - les delais de prescription et la rupture conventionnelle sont verifies.",
+    "avertissement": "DOMAINE A DELAIS COURTS. Un delai forclos ferme la voie definitivement. Ne jamais estimer un delai : le verifier, ou renvoyer a la source.",
+    "rappel": "Les preavis, minima, indemnites et classifications dependent de la CONVENTION COLLECTIVE et n'ont donc PAS de valeur generale : ils n'ont pas leur place dans ce fichier."
+  },
+  "prescriptions": {
+    "action_sur_la_rupture_mois": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000027550102",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L1471-1, version en vigueur au 17/08/2026. Point de depart : la NOTIFICATION de la rupture."
+    },
+    "action_sur_execution_du_contrat_ans": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000027550102",
+      "date_verifiee": "2026-08-17",
+      "note": "Point de depart : le jour ou celui qui exerce l action a connu ou AURAIT DU CONNAITRE les faits."
+    },
+    "actions_exclues_de_ces_delais": {
+      "valeur": [
+        "dommage corporel survenu pendant l execution du contrat",
+        "paiement ou repetition du salaire",
+        "discrimination",
+        "harcelement moral et sexuel"
+      ],
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000027550102",
+      "date_verifiee": "2026-08-17",
+      "note": "CONSEQUENCE MAJEURE : quelqu un dont les 12 mois sont ecoules pour contester son licenciement n est pas necessairement sans recours. Ne jamais conclure 'c est trop tard' sur la seule base des 12 mois - chercher si l objet reel de la demande n est pas ailleurs."
+    }
+  },
+  "rupture_conventionnelle": {
+    "delai_retractation_jours": {
+      "valeur": 15,
+      "unite": "jours CALENDAIRES",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000019071189",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter de la signature de la convention par LES DEUX PARTIES. Retractation par lettre adressee par tout moyen attestant de sa date de reception. C est le seul moment ou l on peut encore tout arreter sans se justifier."
+    },
+    "delai_instruction_homologation_jours": {
+      "valeur": 15,
+      "unite": "jours OUVRABLES",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000019071189",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter de la reception de la demande. LE SILENCE DE L ADMINISTRATION VAUT HOMOLOGATION. ⚠️ Les deux delais de 15 jours ne se comptent PAS de la meme facon : calendaires pour la retractation, ouvrables pour l instruction."
+    },
+    "delai_recours_mois": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000019071189",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter de la date d homologation. Competence EXCLUSIVE du conseil de prud hommes, a l exclusion de tout autre recours contentieux ou administratif."
+    },
+    "caractere": {
+      "valeur": "exclusive du licenciement et de la demission ; ne peut etre imposee par aucune partie",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000019071189",
+      "date_verifiee": "2026-08-17",
+      "note": "Un salarie a qui on presente la rupture conventionnelle comme la seule issue possible doit savoir que c est faux."
+    }
   }
 }
