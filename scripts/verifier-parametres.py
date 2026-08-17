@@ -66,9 +66,17 @@ def nombres(texte):
     """
     texte = re.sub(r"```.*?```", " ", texte, flags=re.S)
     texte = re.sub(r"<https?://\S+>|https?://\S+", " ", texte)
+    # ⚠️ Deux pièges corrigés le 2026-08-17, chacun produisait de FAUSSES alertes :
+    #   1. la queue chiffrée doit contenir AU MOINS UN CHIFFRE. Sans cela, « loi n° 89-462 »
+    #      se faisait manger comme « loi n » (un espace suffisait à `[\d\s-]+`, et `[A-Z]?`
+    #      sous re.I avalait le « n »), et le 462 survivait comme une valeur non sourcée.
+    #   2. une énumération d'articles (« articles 54, 55 et 56 ») n'était consommée que
+    #      jusqu'au premier numéro ; les suivants passaient pour des valeurs.
+    NUM = r"[LRD]?[\s.-]*\d[\d\s-]*(?-i:[A-Z])?"
     texte = re.sub(
-        r"(?:article|articles|art\.?|n°|décret|loi|arrêté|ordonnance|CERFA)"
-        r"\s*[LRD]?[\.\s-]*[\d\s-]+[A-Z]?", " ", texte, flags=re.I)
+        r"(?:articles?|art\.?|n°|décrets?|lois?|arrêtés?|ordonnances?|CERFA)"
+        r"[\s.]*(?:n°)?[\s.]*" + NUM + r"(?:\s*(?:,|et|à)\s*" + NUM + r")*",
+        " ", texte, flags=re.I)
     texte = re.sub(r"\b[LRD]\d[\d-]*\b", " ", texte)
     texte = re.sub(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b", " ", texte)
     texte = re.sub(r"\b\d{1,2}\s+(?:janvier|février|mars|avril|mai|juin|juillet|"
@@ -82,6 +90,32 @@ def nombres(texte):
     return trouves
 
 
+def valeurs_json(plat):
+    """Toutes les valeurs numériques d'un parametres.json, quelle que soit leur écriture.
+
+    ⚠️ Corrigé le 2026-08-17. Le contrôle comparait des CHAÎNES : « 12,40 » écrit dans un .md
+    ne retrouvait pas `12.4` en JSON, et « 127,50 » d'une note ne retrouvait pas « 127.50 ».
+    Trois des quatre alertes restantes étaient donc de fausses alertes de notation — et une
+    fausse alerte coûte plus qu'un silence : elle apprend à ignorer le garde-fou.
+    """
+    trouves = set()
+    for brut in re.findall(r"\d[\d   ]*(?:[.,]\d+)?", plat):
+        n = re.sub(r"[   ]", "", brut).replace(",", ".").rstrip(".")
+        try:
+            trouves.add(float(n))
+        except ValueError:
+            pass
+    return trouves
+
+
+def present(n, plat, valeurs):
+    """Un nombre cité dans un .md existe-t-il dans le parametres.json de son rôle ?"""
+    try:
+        return float(n) in valeurs
+    except ValueError:
+        return n in plat
+
+
 def main():
     erreurs, alertes, verifiees, ouvertes = [], [], 0, 0
 
@@ -92,6 +126,7 @@ def main():
             continue
         bloc = json.load(open(pj, encoding="utf-8"))
         plat = json.dumps(bloc, ensure_ascii=False)
+        valeurs = valeurs_json(plat)
 
         for section, cle, val in entrees(bloc):
             ref = "%s/%s → %s.%s" % (dom, role, section, cle)
@@ -120,7 +155,7 @@ def main():
             texte = open(os.path.join(refs, f), encoding="utf-8").read()
             if "État : `À ÉCRIRE`" in texte:
                 continue
-            absents = sorted(n for n in nombres(texte) if n not in plat)
+            absents = sorted(n for n in nombres(texte) if not present(n, plat, valeurs))
             if absents:
                 alertes.append("%s/%s/%s : %d nombre(s) absent(s) du parametres.json → %s"
                                % (dom, role, f, len(absents), ", ".join(absents[:8])))
