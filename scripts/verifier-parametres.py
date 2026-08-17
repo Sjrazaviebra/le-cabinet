@@ -6,7 +6,8 @@ La promesse du dépôt n'a de valeur que si elle est vérifiable. Ce script la v
   1. toute valeur marquée comme vérifiée porte bien une `source` ET une `date_verifiee` ;
   2. aucune source n'est un domaine non admis ;
   3. aucune valeur vérifiée n'a dépassé la péremption (6 mois par défaut) ;
-  4. chaque nombre cité dans un fichier .md se retrouve dans le parametres.json du rôle.
+  4. chaque nombre cité dans un fichier .md se retrouve dans le parametres.json du rôle ;
+  5. chaque fichier de `references/` est bien routé par le `SKILL.md` de son rôle.
 
 Le point 4 est le garde-fou contre la dérive : un chiffre écrit dans un .md et nulle part
 ailleurs est exactement la faille par laquelle une valeur périmée survit.
@@ -74,10 +75,12 @@ def nombres(texte):
     #      jusqu'au premier numéro ; les suivants passaient pour des valeurs.
     NUM = r"[LRD]?[\s.\-]*\d[\d\s\-/]*(?-i:[A-Z])?"
     texte = re.sub(
-        r"(?:articles?|art\.?|n°|décrets?|lois?|arrêtés?|ordonnances?|CERFA)"
+        r"(?:articles?|art\.?|n°|décrets?|lois?|arrêtés?|ordonnances?|CERFA"
+        r"|CGI|LPF|CCH|CPC|CPCE|ANI)"
         r"[\s.]*(?:n°)?[\s.]*" + NUM + r"(?:\s*(?:,|et|à)\s*" + NUM + r")*",
         " ", texte, flags=re.I)
-    texte = re.sub(r"\b[LRD]\d[\d-]*\b", " ", texte)
+    # Reference nue, y compris « L. 3243-2 » avec point et espace (faux positif du 2026-08-17).
+    texte = re.sub(r"\b[LRD]\.?\s?\d[\d-]*\b", " ", texte)
     # Référence de texte écrite en code inline : `L227-9`, `1843-4`, `D221-5`, `726`.
     # ⚠️ Volontairement ÉTROIT : seul un contenu qui ressemble à une référence est retiré, pour
     # qu'on ne puisse pas soustraire une vraie valeur au contrôle en l'entourant de backticks.
@@ -159,6 +162,18 @@ def main():
                     erreurs.append("%s : source non admise → %s" % (ref, src))
             else:
                 ouvertes += 1
+
+        # ⛔ Un fichier que le SKILL.md ne route pas est un fichier INVISIBLE : son contenu
+        # ne sera jamais atteint, quelle que soit sa qualite. Controle ajoute le 2026-08-17
+        # apres avoir trouve 3 fichiers d impots dans ce cas - crees, remplis, inatteignables.
+        sk = os.path.join(chemin, "SKILL.md")
+        refs = os.path.join(chemin, "references")
+        if os.path.isfile(sk) and os.path.isdir(refs):
+            routage = open(sk, encoding="utf-8").read()
+            for f in sorted(os.listdir(refs)):
+                if f.endswith(".md") and f not in routage:
+                    erreurs.append("%s/%s : SKILL.md ne route pas vers %s "
+                                   "(fichier inatteignable)" % (dom, role, f))
 
         refs = os.path.join(chemin, "references")
         for f in sorted(os.listdir(refs)) if os.path.isdir(refs) else []:
