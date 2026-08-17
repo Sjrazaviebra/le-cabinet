@@ -407,6 +407,14 @@
       "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22295",
       "date_verifiee": "2026-08-17",
       "note": "Verbatim de la fiche : Le conciliateur est designe pour une duree de 4 mois maximum. Cette duree peut etre prolongee d un mois a la demande du conciliateur. Soit 5 mois au total. Voir code de commerce, article L611-6."
+    },
+    "effet_bouclier_contre_assignation": {
+      "valeur": "une conciliation en cours empeche l assignation d un creancier et la requete du ministere public en redressement judiciaire",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146111",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Trouvaille ajoutee APRES la fusion du fragment principal. Verbatim de l article L631-5 du code de commerce (version en vigueur depuis le 1er janvier 2020) : Lorsqu il n y a pas de procedure de conciliation en cours, le tribunal peut egalement etre saisi sur requete du ministere public aux fins d ouverture de la procedure de redressement judiciaire. Sous cette meme reserve, la procedure peut aussi etre ouverte sur l assignation d un creancier, quelle que soit la nature de sa creance. ⇒ ouvrir une conciliation retire au creancier isole le pouvoir de declencher une procedure publique au moment qui l arrange. Aucun nombre : n affecte pas le controle de coherence."
     }
   },
   "cessation_des_paiements": {
@@ -1746,6 +1754,256 @@
       "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226463",
       "date_verifiee": "2026-08-17",
       "note": "Article L341-49 du code de la consommation, cite en verbatim dans le fichier : « Le fait de ne pas respecter les dispositions de l article L. 314-5 est puni d une amende de 150 000 euros. » ★ La sanction du defaut de TAEG ecrit est PENALE, pas seulement civile, et elle vaut aussi pour un pret PROFESSIONNEL car L313-4 vise « tout ecrit constatant un contrat de pret » sans distinction de qualite de l emprunteur. Peines complementaires : interdictions d exercer jusqu a cinq ans. ⚠️ RESERVE DE VERSION signalee par l agent dans le fichier - a recouper."
+    }
+  },
+  "rupture_de_concours_bancaire": {
+    "preavis_minimal": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L313-12 du code monetaire et financier, version en vigueur depuis le 01/01/2014 : « Ce delai ne peut, sous peine de nullite de la rupture du concours, etre inferieur a soixante jours. » Le plancher vaut pour TOUTES les categories de credits (article D313-14-1, decret n° 2005-1743, en vigueur depuis le 31/12/2005). ⚠ Ne protege que le concours a duree INDETERMINEE et NON occasionnel."
+    },
+    "sanction_du_preavis_insuffisant": {
+      "valeur": "nullite de la rupture du concours, plus responsabilite pecuniaire de l etablissement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA trouvaille du fichier : le texte ecrit « sous peine de nullite de la rupture du concours », pas dommages-interets. Une rupture notifiee avec un preavis trop court n a pas eu lieu. Le dernier alinea ajoute la responsabilite pecuniaire PAR-DESSUS. ⇒ on ne negocie pas un delai, on conteste la rupture."
+    },
+    "conditions_de_forme": {
+      "valeur": "notification ecrite, et delai de preavis fixe lors de l octroi du concours",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000006194079",
+      "date_verifiee": "2026-08-17",
+      "note": "Sans notification ECRITE, la reduction ou l interruption est irreguliere. Le delai devait etre fixe des l octroi : s il ne l a pas ete, le plancher legal s applique."
+    },
+    "champ_d_application": {
+      "valeur": "concours a duree indeterminee, autre qu occasionnel, consenti a une entreprise",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Deux mots font sortir du texte : « duree indeterminee » et « autre qu occasionnel ». Une convention de decouvert signee pour 1 an est a duree DETERMINEE : a son terme la banque ne renouvelle pas, sans preavis a reclamer sur ce fondement. ⚠ La qualification est une question de FAIT tranchee par le juge, jamais par la banque ni par le client."
+    },
+    "dispenses_totales_de_preavis": {
+      "valeur": "comportement gravement reprehensible du beneficiaire du credit, ou situation du beneficiaire irremediablement compromise",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Verbatim : « L etablissement de credit ou la societe de financement n est pas tenu de respecter un delai de preavis, que l ouverture de credit soit a duree indeterminee ou determinee, en cas de comportement gravement reprehensible du beneficiaire du credit ou au cas ou la situation de ce dernier s avererait irremediablement compromise. » ★ La 2e porte ne suppose AUCUNE faute. ⛔ Ne jamais annoncer a quelqu un que son cas y entre : ces deux notions sont l objet meme du contentieux bancaire."
+    },
+    "acces_aux_motifs_de_la_rupture": {
+      "valeur": "communiques sur demande de l entreprise concernee uniquement ; interdits aux tiers",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La banque n a pas a motiver spontanement : les raisons se DEMANDENT, par ecrit. ⛔ Elles « ne peuvent etre demandees par un tiers, ni lui etre communiquees » : ni fournisseur, ni investisseur, ni co-associe."
+    }
+  },
+  "decouvert": {
+    "duree_usuelle_convention_de_decouvert": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026. « Elle est generalement signee pour 1 an. » ⚠ Consequence : la plupart des conventions de decouvert sont a duree DETERMINEE, donc hors du preavis de 60 jours a leur terme."
+    },
+    "decouvert_tolere": {
+      "valeur": "aucune protection propre : la tolerance peut cesser sans notification ni preavis",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Croyance fausse a demonter : « ca fait des annees que je suis a decouvert, ils ne peuvent pas me couper ». Un decouvert tolere de fait n est pas un decouvert autorise et ne devient pas un droit parce qu il dure. La qualification de concours « autre qu occasionnel » se PLAIDE, preuve dans l historique des releves. ⇒ faire ecrire la convention est l acte qui cree la protection."
+    },
+    "convention_ecrite_compte_professionnel_personne_physique": {
+      "valeur": "obligatoire, sur support papier ou autre support durable, et doit comporter les modalites d acces a la mediation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000020861890",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article L312-1-6 du code monetaire et financier, en vigueur depuis le 1er avril 2018. Un entrepreneur individuel qui n a jamais recu de convention peut la reclamer, et le chemin de recours (mediation) doit y figurer. Stipulations obligatoires precisees par arrete du ministre charge de l economie (contenu non lu ici)."
+    },
+    "convention_ecrite_compte_personne_morale": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. L article L312-1-6 ne vise que les personnes PHYSIQUES agissant pour des besoins professionnels ; L312-1-1 ne vise que les personnes physiques n agissant PAS pour des besoins professionnels. Aucun texte imposant la convention ecrite pour le compte d une SOCIETE n a ete identifie. A verifier avant d affirmer quoi que ce soit dans un sens ou dans l autre."
+    },
+    "plafonnement_des_commissions_d_intervention": {
+      "valeur": "aucun plafond legal sur un compte professionnel",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000020861890",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article L312-1-3 du code monetaire et financier, version du 23/06/2017 : les commissions d irregularites de fonctionnement sont plafonnees « pour les personnes physiques n agissant PAS pour des besoins professionnels ». L offre « clientele fragile » vise la meme categorie. ⇒ sur un compte pro, ce qui se discute n est pas un droit mais la tarification convenue."
+    }
+  },
+  "pret_professionnel": {
+    "duree_du_credit_de_campagne": {
+      "valeur": 9,
+      "unite": "mois minimum",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026. Activite cyclique ou saisonniere ; « porte sur des montants plus importants qu avec un decouvert autorise et a une duree de 9 mois ou plus »."
+    },
+    "delegation_d_assurance_emprunteur": {
+      "valeur": "droit du credit immobilier du code de la consommation ; non transposable a un pret professionnel",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222241",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Article L313-30 du code de la consommation, version du 01/06/2022, chapitre « Credit immobilier » : le preteur ne peut refuser un autre contrat d assurance de niveau de garantie equivalent, et tout refus doit etre explicite et integralement motive. Sur un pret PROFESSIONNEL la delegation se negocie, elle ne se reclame pas sur ce fondement. ★ Levier reel : l assurance entre dans le TAEG, donc faire chiffrer avec et sans."
+    },
+    "elements_negociables": {
+      "valeur": "taux, duree, differe d amortissement, frais de dossier, frais de courtage, perimetre des garanties, indemnite de remboursement anticipe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le levier le plus mal exploite n est pas le taux, c est le perimetre de la garantie : « il lui est generalement demande de donner des garanties (caution, nantissement, etc.) ». ⛔ Une caution personnelle du dirigeant efface en pratique la separation des patrimoines : voir garanties-et-caution-dirigeant.md, et voir un avocat AVANT de signer."
+    }
+  },
+  "taeg_et_taux_usure": {
+    "mention_du_taeg": {
+      "valeur": "obligatoire dans tout ecrit constatant un contrat de pret",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032228043",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L313-4 du code monetaire et financier (version du 19/07/2019) renvoie aux articles L314-1 a L314-5 du code de la consommation ; L314-5 impose la mention « dans tout ecrit constatant un contrat de pret », sans distinction de qualite de l emprunteur. ⇒ un pret professionnel sans TAEG ecrit est irregulier."
+    },
+    "amende_defaut_de_mention_du_taeg": {
+      "valeur": 150000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222593",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L341-49 du code de la consommation : « Le fait de ne pas respecter les dispositions de l article L. 314-5 est puni d une amende de 150 000 euros. » Peines complementaires d interdiction d exercer, cinq ans au plus. ⚠ Legifrance affiche cette version « en vigueur du 01/07/2016 au 20/11/2026 » : une nouvelle version est programmee, verifier la version applicable a la date utile."
+    },
+    "seuil_de_l_usure": {
+      "valeur": "taux effectif global depassant de plus du tiers le taux effectif moyen du trimestre precedent pour des operations de meme nature comportant des risques analogues",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222347",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L314-6 du code de la consommation. ⛔ Ne jamais citer un seuil chiffre de memoire : il change chaque trimestre et differe par categorie d operation."
+    },
+    "usure_prets_aux_professionnels": {
+      "valeur": "non applicable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222347",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L314-9 du code de la consommation, en vigueur depuis le 01/07/2016 : les regles d usure « ne sont pas applicables aux prets accordes a une personne physique agissant pour ses besoins professionnels ou a une personne morale se livrant a une activite industrielle, commerciale, artisanale, agricole ou professionnelle non commerciale ». ⇒ sur un pret pro, pas de taux plafond legal."
+    },
+    "usure_decouverts_en_compte_professionnels": {
+      "valeur": "applicable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000006193927",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L313-5-1 du code monetaire et financier, en vigueur depuis le 01/01/2014, reintroduit le plafond d usure « pour les decouverts en compte ». ⇒ la question utile devant un cout anormal est : est-ce un PRET ou un DECOUVERT ? La reponse decide s il existe un plafond a opposer. ⚠ Article lu sur un affichage tronque : la designation exacte des emprunteurs vises au milieu de la phrase n a pas pu etre lue mot pour mot, ouvrir l article avant de le citer dans un acte."
+    },
+    "publication_des_taux_de_l_usure": {
+      "valeur": "revision trimestrielle par la Banque de France, consultable sur banque-france.fr et sur Legifrance",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2456",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Fiche du 16/04/2025, donc de plus de six mois, et redigee pour les PARTICULIERS : a recouper. Elle sert ici uniquement a localiser la publication du taux, pas a fixer un regime professionnel. Le TAEG y integre interets, frais de dossier, frais d intermediaire, cout de l assurance obligatoire et frais de garanties."
+    }
+  },
+  "refus_de_credit": {
+    "droit_au_credit": {
+      "valeur": "inexistant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026 : « Un etablissement de credit n a pas l obligation d accorder une demande de financement. »"
+    },
+    "motivation_du_refus": {
+      "valeur": "la banque doit preciser les motifs de son refus",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : « En revanche, en cas de refus, il doit en preciser les motifs. » ⚠ La page n indique AUCUN texte fondant cette obligation : citee comme source officielle, pas comme reference legale. ⇒ demander les motifs par ecrit, c est cet ecrit qui servira en mediation du credit."
+    },
+    "droit_a_sa_notation_bancaire": {
+      "valeur": "notation et explication des elements de notation fournies sur demande, y compris a l entreprise qui SOLLICITE un pret",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000006194079",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article L313-12-1 du code monetaire et financier, en vigueur depuis le 01/01/2014. Le droit vaut pour le CANDIDAT au pret, pas seulement pour l emprunteur en cours : un refuse peut obtenir la matiere meme du refus. Demande ecrite la plus rentable apres un refus, et presque toujours ignoree. ⚠ Explications confidentielles : ni demandables par un tiers, ni communicables a un tiers."
+    },
+    "information_sur_les_alternatives_de_financement": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Aucun texte imposant a la banque d orienter l entreprise refusee vers d autres dispositifs de financement n a ete trouve sur les sources admises (recherches sur le code monetaire et financier et sur entreprendre.service-public). ⛔ Ne pas l annoncer comme un droit. Ce qui est sur : refus et rupture relevent tous deux de la mediation du credit, voir difficultes-et-mediation.md."
+    }
+  },
+  "devoir_de_mise_en_garde": {
+    "emprunteur_non_averti": {
+      "valeur": "devoir de mise en garde du a l emprunteur non averti lors de la conclusion du contrat, au regard de ses capacites financieres et des risques de l endettement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000020576240",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Cour de cassation, 1re chambre civile, 30 avril 2009, pourvoi 07-18.334. La banque « ne peut etre dispensee par la presence au cote de l emprunteur d une personne avertie, peu important qu elle soit tiers ou partie » : l argument bancaire le plus courant ne tient pas. ⚠ Trois limites : seul le NON averti est protege et un dirigeant est souvent juge averti ; appreciation au jour de l engagement ; ce n est pas un droit au credit mais un fondement de responsabilite."
+    },
+    "caution_non_avertie": {
+      "valeur": "devoir de mise en garde du a la caution non avertie si l engagement est inadapte a ses capacites financieres ou s il existe un risque d endettement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036053011",
+      "date_verifiee": "2026-08-17",
+      "note": "Cour de cassation, chambre commerciale, 15 novembre 2017, pourvoi 16-16.790. Detail du cautionnement : garanties-et-caution-dirigeant.md."
+    },
+    "limite_non_immixtion": {
+      "valeur": "la banque ne doit pas s immiscer dans les affaires de son client, sauf anomalie apparente ne pouvant echapper a un banquier normalement diligent",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000025926978",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Cour de cassation, chambre commerciale, 22 mai 2012, pourvoi 11-13.179. Les deux principes se partagent le terrain : mise en garde AU MOMENT DE L OCTROI a un profane, abstention de juger la GESTION ensuite. ⇒ la date de ce qu on reproche decide du fondement."
+    }
+  },
+  "remboursement_anticipe": {
+    "plafond_indemnite_credit_immobilier_consommation": {
+      "valeur": {
+        "plafond_en_pourcentage": 3,
+        "unite_pourcentage": "% du capital restant du avant le remboursement",
+        "plafond_en_interets": "la valeur d un semestre d interet sur le capital rembourse au taux moyen du pret"
+      },
+      "unite": "double plafond cumulatif",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032807570",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article R313-25 du code de la consommation, version du 01/07/2016 : DEUX plafonds cumulatifs, c est le plus bas qui gagne. On ne lit souvent que l un des deux. ⚠ Regime du credit immobilier du code de la consommation, pas d un pret professionnel."
+    },
+    "plafond_indemnite_pret_professionnel": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Aucun plafond legal n a ete identifie pour un pret professionnel, mais une ABSENCE ne se prouve pas en lisant un texte voisin. En pratique l indemnite est celle du contrat ⇒ point a negocier a la SIGNATURE, quand elle ne coute rien."
     }
   }
 }
