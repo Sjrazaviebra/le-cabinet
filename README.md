@@ -9,7 +9,7 @@ Entreprise **et** vie privée.
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
-> ✅ **Les sept rôles sont complets** : chacun de leurs fichiers de référence est rédigé depuis les
+> ✅ **Les neuf rôles sont complets** : chacun de leurs fichiers de référence est rédigé depuis les
 > textes officiels. Chaque fichier porte son état en tête — `RÉDIGÉ` ou `PARTIEL` — et **dit
 > lui-même ce qu'il ne couvre pas** : un fichier `PARTIEL` n'est pas un fichier inachevé qu'on
 > cache, c'est un périmètre annoncé.
@@ -22,14 +22,6 @@ Entreprise **et** vie privée.
 > La rédaction se fait sur [`dev`](../../tree/dev) ; `main` porte les jalons taggés.
 > Utilisation avec un autre agent que Claude → [`AGENTS.md`](AGENTS.md).
 >
-> 🚧 **Deux nouveaux rôles sont cadrés sur `dev` et en cours de rédaction** — issus de la taxonomie du
-> domaine comptabilité, [`docs/taxonomie-comptabilite.md`](docs/taxonomie-comptabilite.md) :
-> **`financement`** (banque et droit au compte, rupture de crédit, caution du dirigeant, trésorerie,
-> médiation du crédit, assurances obligatoires, carte des leviers fiscaux légaux) et **`patrimoine`**
-> (reconnaître une arnaque et vérifier un agrément, enveloppes et supports, frais, risque et horizon,
-> épargne réglementée, retraite, budget et surendettement).
-> Ils ne seront mergés sur `main` qu'une fois écrits — pour que la promesse de `main` reste vraie.
-
 > ⚖️ **Ces skills ne remplacent ni un expert-comptable inscrit à l'Ordre, ni un avocat inscrit à
 > un barreau.** Ce sont des outils d'**aide à la décision** : ils structurent une question, posent
 > les bonnes, et disent **où vérifier**. Pour tout acte engageant — statuts, contrat signé,
