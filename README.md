@@ -1,15 +1,23 @@
-<!-- ⚠️ EN-TETE : la banniere EST le titre, et le <h1> a ete retire volontairement.
-     Raison : GitHub dessine une bordure sous tout <h1>/<h2> et SUPPRIME les attributs style
-     des README. Un logo pose a cote du titre etait donc soit traverse par ce trait (flottant),
-     soit encadre (cellule de tableau) — verifie sur le moteur de rendu de GitHub, les deux
-     fois. La seule maitrise visuelle possible est DANS l image.
-     ⚠️ Cout assume : le README n a plus de titre de niveau 1. Le nom est porte par le texte
-     alternatif de la banniere, et le premier titre du plan est « Les neuf roles ».
-     ⛔ Ne pas remettre un logo a cote d un titre : on a fait le tour, ca ne marche pas. -->
-![le-cabinet — droit, fiscalité, entreprise et patrimoine français](assets/banner.jpg)
+<!-- ⚠️ EN-TETE : logo FLOTTE + titre en ### + ligne DESSINEE EN TEXTE.
+     Pourquoi ce montage et pas un autre, apres trois essais mesures :
+       - un titre en # ou ## porte une bordure que GitHub dessine sur TOUTE la largeur :
+         avec un logo flottant, elle le TRAVERSE. Le ### n en a pas.
+       - un <hr> ne convient pas non plus : c est un bloc, sa bordure reprend toute la
+         largeur et retraverse le logo. La seule ligne qui RESPECTE le flottant est du
+         TEXTE, parce que le texte s ecoule dans la colonne restante.
+       - un tableau donnerait un encadrement : style="border:0" est supprime par GitHub.
+     ⚠️ La longueur de la ligne est FIXE (56 caracteres) : trop longue, elle se replierait
+     sur deux rangees. Ne pas l allonger sans verifier le rendu. -->
+<img src="assets/logo.png" align="left" width="96" alt="">
+
+### le-cabinet
+
+────────────────────────────────────────────────────────
 
 **Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
+
+<br clear="left">
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
