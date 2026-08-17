@@ -4,7 +4,7 @@
 
 # le-cabinet
 
-**Sept rôles pour agents IA, en droit, fiscalité et administration français.**
+**Neuf rôles pour agents IA, en droit, fiscalité, financement et administration français.**
 Entreprise **et** vie privée.
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
@@ -38,7 +38,7 @@ Entreprise **et** vie privée.
 
 ---
 
-## Les sept rôles
+## Les neuf rôles
 
 | Rôle | Invocation | Domaine | Couvre |
 |---|---|---|---|
@@ -49,11 +49,19 @@ Entreprise **et** vie privée.
 | **Logement** | `/logement` | `juridique` | Bail, dépôt de garantie, congé, charges et travaux, impayés et expulsion, colocation, copropriété. |
 | **Famille** | `/famille` | `juridique` | Couple et régimes, séparation, enfants et pension, succession, donation, protection des majeurs, violences. |
 | **Immigration** | `/immigration` | `juridique` | Titres de séjour, renouvellement, changement de statut, droit au travail, famille, refus et recours, **naturalisation**. |
+| **Financement** | `/financement` | `comptabilite` | L'argent de l'activité : compte pro et **droit au compte**, crédit et **rupture de crédit**, **caution du dirigeant**, trésorerie, **médiation du crédit**, assurances obligatoires, carte des leviers fiscaux légaux. |
+| **Patrimoine** | `/patrimoine` | `comptabilite` | L'argent personnel : ⚠️ **reconnaître une arnaque et vérifier un agrément**, enveloppes et supports, frais, risque et horizon, épargne réglementée et garantie des dépôts, retraite, budget et **surendettement**. |
 
 **Un rôle n'est pas un thème** : c'est une méthode d'entrée, une posture et des règles d'arrêt
 propres. `/travail` commence par demander la convention collective, `/immigration` par chercher un
 délai qui court, `/logement` par lire la loi avant le bail. Le critère qui décide qu'un sujet mérite
-son propre rôle est écrit dans [`docs/taxonomie.md`](docs/taxonomie.md).
+son propre rôle est écrit dans [`docs/taxonomie.md`](docs/taxonomie.md), et le découpage du domaine
+comptabilité — y compris **deux candidats refusés et pourquoi** — dans
+[`docs/taxonomie-comptabilite.md`](docs/taxonomie-comptabilite.md).
+
+⛔ **`financement` et `patrimoine` informent, ils ne conseillent pas.** Ils n'émettent aucune
+recommandation personnalisée portant sur un instrument financier — c'est le **conseil en
+investissement**, service réglementé — et ne recommandent aucun établissement ni produit.
 
 Vous pouvez les appeler directement, ou laisser l'agent les charger quand la question s'y prête.
 

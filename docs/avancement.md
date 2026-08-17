@@ -1,6 +1,6 @@
 # Avancement
 
-**1646 valeurs vérifiées et datées**, 121 encore ouvertes. **9 rôles.**
+**1832 valeurs vérifiées et datées**, 139 encore ouvertes. **9 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -65,12 +65,12 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | squelette, 0 à vérifier |
+| `data/parametres.json` | **186 vérifiée(s)**, 18 à vérifier |
 | `references/arnaques-financieres.md` | À ÉCRIRE |
-| `references/enveloppes-et-supports.md` | À ÉCRIRE |
+| `references/enveloppes-et-supports.md` | **RÉDIGÉ** |
 | `references/epargne-reglementee-et-bancaire.md` | À ÉCRIRE |
-| `references/frais-et-performance.md` | À ÉCRIRE |
-| `references/gerer-son-argent.md` | À ÉCRIRE |
+| `references/frais-et-performance.md` | **PARTIEL** |
+| `references/gerer-son-argent.md` | **PARTIEL** |
 | `references/immobilier-et-financier.md` | À ÉCRIRE |
 | `references/retraite-et-long-terme.md` | À ÉCRIRE |
 | `references/risque-et-horizon.md` | À ÉCRIRE |
@@ -155,7 +155,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 68 fichiers : `comptable/cas-plateformes-etrangeres` · `comptable/cas-prop-firm` · `comptable/chomage-et-creation` · `comptable/cloture-et-liasse` · `comptable/comptabilite-generale` · `comptable/facturation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/paie-et-embauche` · `comptable/tva` · `famille/couple` · `famille/donation` · `famille/enfants` · `famille/protection-des-majeurs` · `famille/separation-et-divorce` · `famille/succession` · `famille/violences-intrafamiliales` · `financement/assurances-professionnelles` · `financement/credit-et-rupture` · `financement/difficultes-et-mediation` · `financement/droit-au-compte` · `financement/garanties-et-caution-dirigeant` · `financement/moyens-de-paiement` · `financement/tresorerie-et-bfr` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/actions-rsu-bspce` · `impots/assurance-vie` · `impots/declaration-annuelle` · `impots/epargne-retraite-per` · `impots/hauts-revenus-cehr-cdhr` · `impots/immobilier-fiscal` · `impots/impot-revenu` · `impots/impots-locaux-et-ifi` · `impots/reclamation-et-controle` · `impots/revenus-financiers` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/donnees-personnelles` · `juriste/droit-de-la-consommation` · `juriste/droit-des-societes` · `juriste/international` · `juriste/litiges-courants` · `juriste/procedure` · `juriste/propriete-intellectuelle` · `logement/bail-et-location` · `logement/charges-et-travaux` · `logement/colocation-et-cohabitation` · `logement/conge-et-fin-de-bail` · `logement/copropriete` · `logement/depot-de-garantie` · `logement/impayes-et-expulsion` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
+**Rédigés** — 71 fichiers : `comptable/cas-plateformes-etrangeres` · `comptable/cas-prop-firm` · `comptable/chomage-et-creation` · `comptable/cloture-et-liasse` · `comptable/comptabilite-generale` · `comptable/facturation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/paie-et-embauche` · `comptable/tva` · `famille/couple` · `famille/donation` · `famille/enfants` · `famille/protection-des-majeurs` · `famille/separation-et-divorce` · `famille/succession` · `famille/violences-intrafamiliales` · `financement/assurances-professionnelles` · `financement/credit-et-rupture` · `financement/difficultes-et-mediation` · `financement/droit-au-compte` · `financement/garanties-et-caution-dirigeant` · `financement/moyens-de-paiement` · `financement/tresorerie-et-bfr` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/actions-rsu-bspce` · `impots/assurance-vie` · `impots/declaration-annuelle` · `impots/epargne-retraite-per` · `impots/hauts-revenus-cehr-cdhr` · `impots/immobilier-fiscal` · `impots/impot-revenu` · `impots/impots-locaux-et-ifi` · `impots/reclamation-et-controle` · `impots/revenus-financiers` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/donnees-personnelles` · `juriste/droit-de-la-consommation` · `juriste/droit-des-societes` · `juriste/international` · `juriste/litiges-courants` · `juriste/procedure` · `juriste/propriete-intellectuelle` · `logement/bail-et-location` · `logement/charges-et-travaux` · `logement/colocation-et-cohabitation` · `logement/conge-et-fin-de-bail` · `logement/copropriete` · `logement/depot-de-garantie` · `logement/impayes-et-expulsion` · `patrimoine/enveloppes-et-supports` · `patrimoine/frais-et-performance` · `patrimoine/gerer-son-argent` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
 
 **Prochains** :
 
