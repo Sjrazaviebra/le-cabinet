@@ -60,5 +60,137 @@
       "date_verifiee": "2026-08-17",
       "note": "A compter du jour ou le depot aurait du etre restitue."
     }
+  },
+  "conge_du_locataire": {
+    "preavis_logement_vide": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "Reductible a 1 mois dans les cas listes. Page source mise a jour le 2026-04-16."
+    },
+    "preavis_logement_meuble": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "En TOUTE situation - il n y a pas de preavis reduit a chercher en meuble."
+    },
+    "preavis_reduit_vide": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ LE PIEGE : le motif ET son justificatif doivent figurer DANS la lettre de conge. A defaut le preavis est de 3 mois, automatiquement. Etre dans un cas de preavis reduit ne suffit pas, il faut l avoir ecrit."
+    },
+    "preavis_reduit_cas": {
+      "valeur": "zone tendue / logement social obtenu / RSA ou AAH / etat de sante incompatible / victime de violences au sein du couple ou de la famille / premier emploi / mutation professionnelle / perte d emploi / nouvel emploi consecutif a une perte d emploi",
+      "unite": "liste (logement vide uniquement)",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "Liste des cas ouvrant le preavis reduit a 1 mois."
+    },
+    "formes_valables": {
+      "valeur": "lettre recommandee avec accuse de reception / acte de commissaire de justice / remise en main propre contre signature ou recepisse",
+      "unite": "trois formes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Un simple courriel ne vaut PAS conge. La lettre recommandee electronique est valable si le destinataire y a prealablement consenti."
+    },
+    "point_de_depart_du_delai": {
+      "valeur": "date de RECEPTION pour le recommande, date de signification pour l acte de commissaire de justice, date de remise pour la main propre",
+      "unite": "regle de computation",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Compter depuis la date d ENVOI est une erreur classique. Un conge poste le 30 et recu le 5 ne fait courir le preavis qu a partir du 5."
+    },
+    "loyer_pendant_le_preavis": {
+      "valeur": "du en totalite meme si les cles sont rendues plus tot",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1168",
+      "date_verifiee": "2026-08-17",
+      "note": "SAUF si le bailleur signe un nouveau bail et que le nouveau locataire occupe le logement avant la fin du preavis. ⇒ Le locataire qui part tot a interet a FACILITER les visites : c est son propre argent."
+    }
+  },
+  "conge_du_bailleur": {
+    "preavis_logement_vide": {
+      "valeur": 6,
+      "unite": "mois avant l echeance du bail",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "Page source verifiee le 2026-06-01."
+    },
+    "preavis_logement_meuble": {
+      "valeur": 3,
+      "unite": "mois avant la fin du bail",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "Page source verifiee le 2026-06-01."
+    },
+    "motifs_autorises": {
+      "valeur": "vente du logement / reprise pour y habiter ou y loger un proche / motif legitime et serieux",
+      "unite": "trois motifs, limitativement",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ La loi ne definit PAS le motif legitime et serieux. Si le locataire conteste, c est au BAILLEUR d apporter la preuve du bien-fonde du conge."
+    },
+    "mentions_conge_pour_vente": {
+      "valeur": "motif + prix et conditions de la vente + description du logement et de ses annexes + reproduction des cinq premiers alineas de l article 15 de la loi du 6 juillet 1989",
+      "unite": "mentions obligatoires",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Un conge pour vente est aussi une OFFRE DE VENTE au locataire, qui beneficie d un droit de preemption - d ou l obligation d y faire figurer le prix."
+    },
+    "mentions_conge_pour_reprise": {
+      "valeur": "motif + identite et adresse du beneficiaire + lien de parente exact + justification du caractere reel et serieux",
+      "unite": "mentions obligatoires",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "notice_d_information": {
+      "valeur": "a joindre dans tous les cas",
+      "unite": "piece obligatoire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice relative aux obligations du bailleur et aux voies de recours et d indemnisation du locataire."
+    },
+    "sanction_mention_manquante": {
+      "valeur": "conge contestable devant le juge",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "★ C est la PREMIERE chose a verifier quand quelqu un recoit un conge : lire la lettre et compter les mentions avant de chercher un logement."
+    },
+    "protection_locataire_age_seuil": {
+      "valeur": 65,
+      "unite": "ans ou plus a la date d echeance du bail",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": "2026-08-17",
+      "note": "Cumule avec des ressources inferieures a un plafond : le conge exige alors une OFFRE DE RELOGEMENT. ⚠️ La protection tombe si le bailleur personne physique a lui-meme plus de 65 ans ou des ressources modestes."
+    },
+    "protection_locataire_age_plafond_ressources": {
+      "valeur": null,
+      "unite": "EUR par an selon zone et composition du foyer",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F929",
+      "date_verifiee": null,
+      "note": "NON VERIFIE : le plafond varie selon la zone geographique et la composition du foyer, et il est revalorise. ⛔ Ne citer aucun montant sans avoir lu le texte en vigueur."
+    }
   }
 }
