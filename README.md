@@ -14,8 +14,8 @@
 ### <img src="assets/logo.png" align="left" width="96" alt=""> le-cabinet
 
 ────────────────────────────────────────────────────────<br>
-**Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
-Entreprise **et** vie privée.
+**Neuf rôles pour agents IA — droit, fiscalité, financement, patrimoine.**<br>
+Pour l'entreprise *et* pour la vie privée.
 
 <br clear="left">
 
