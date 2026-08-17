@@ -1256,6 +1256,65 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2613",
       "date_verifiee": null,
       "note": "★ VERBATIM de la fiche  justificatifs remis par les etablissements payeurs (formulaire IFU)   ⛔ le NUMERO de formulaire de l IFU n a pas ete confirme sur une page officielle  il n est donc pas ecrit dans le fichier"
+    },
+    "formulaires": {
+      "valeur": {
+        "declaration_ensemble": "2042",
+        "declaration_complementaire": "2042 C",
+        "revenus_encaisses_etranger": "2047",
+        "plus_et_moins_values": "2074",
+        "comptes_a_l_etranger": "3916 - 3916 bis",
+        "notice_revenus_etrangers": "2041-GG"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Formulaires mobilises par l actionnariat salarie. Le calendrier et le service de correction vivent dans declaration-annuelle.md."
+    },
+    "cases": {
+      "valeur": {
+        "gain_acquisition_fraction_sous_seuil": "1TZ a 1VZ",
+        "gain_acquisition_fraction_au_dessus_du_seuil": "1TT et 1UT",
+        "gains_attribues_avant_28_09_2012": "3VD a 3VF",
+        "option_imposition_en_salaires_anciens_plans": "3VJ ou 3VK",
+        "contribution_salariale_anciens_plans": "3VN",
+        "bspce_avant_2018": "3SJ",
+        "bspce_anciennete_insuffisante": "3SK",
+        "bspce_2018_2024": "3TJ",
+        "bspce_abattement_fixe_2018_2024": "3TK",
+        "bspce_depuis_2025_gain_cession": "3TL",
+        "bspce_abattement_fixe_depuis_2025": "3TM",
+        "bspce_avantage_salarial_anciennete_suffisante": "3PC",
+        "bspce_avantage_salarial_anciennete_insuffisante": "3PE",
+        "bspce_avantage_salarial_option_salaires": "1AY ou 1BY",
+        "option_globale_bareme": "2OP",
+        "moins_value_reportable": "3VH",
+        "credit_impot_gains_actionnariat_salarie": "8VL",
+        "assiette_revenus_ouvrant_droit_credit_impot": "8PL",
+        "comptes_a_l_etranger": "8UU"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Cases relevees sur la notice 2041-NOT et la notice 2074-NOT du millesime revenus 2025. Les codes de cases BOUGENT d une annee sur l autre : verifier sur la notice du millesime concerne avant de les citer a quelqu un."
+    },
+    "hors_champ_prelevement_a_la_source": {
+      "valeur": "les gains d actionnariat salarie sont hors du champ du prelevement a la source",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2047/2026/2047_5490.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ La notice 2047-NOT classe les plus-values et gains d actionnariat salarie parmi les  revenus hors du champ du prelevement a la source . Consequence pratique : RIEN n est preleve au moment ou le gain nait, l impot tombe au solde de l annee suivante. C est ce decalage qui fabrique le piege de la valeur qui a baisse entre-temps."
+    },
+    "comptes_titres_etranger": {
+      "valeur": "declaration 3916 - 3916 bis a joindre et case 8UU a cocher",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/3916/2026/3916_5454.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Obligation declarative pour tout compte OUVERT, DETENU, UTILISE ou CLOS a l etranger, y compris sur simple procuration. Le formulaire vise le CGI art. 1649 A et une amende par compte. ⚠ La rubrique  nature du compte  du 3916 n offre que trois cases : compte bancaire, compte d actifs numeriques, contrat de capitalisation. Il n y a PAS de case  compte de titres  : la qualification du compte-titres d un broker etranger est a confirmer. Montants de l amende et detail : role comptable, cas-plateformes-etrangeres.md."
     }
   },
   "taxe_fonciere": {
@@ -2748,6 +2807,252 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2613",
       "date_verifiee": "2026-08-17",
       "note": "★★ C est l explication de la surprise CDHR. Verbatim fiche du 15/04/2026   Le prelevement forfaitaire unique est constitue de l impot sur le revenu (12,8 %)  . Un contribuable dont le revenu vient surtout de placements imposes au PFU a un impot sur le revenu proche de 12,8 % de son revenu, donc un taux moyen inferieur au plancher de 20 % ⇒ la CDHR comble l ecart. Il a deja paye, et c est PARCE QU il a paye au forfait plutot qu au bareme qu il est rattrape. Detail du PFU dans revenus-financiers.md."
+    }
+  },
+  "actions_gratuites": {
+    "periode_acquisition_minimale": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2911",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree fixee par l assemblee generale mais plancher legal de 1 an. Avant le regime issu du 08/08/2015 le plancher etait de 2 ans. Page verifiee le 01/01/2026, a recouper."
+    },
+    "cumul_acquisition_conservation_minimal": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2911",
+      "date_verifiee": "2026-08-17",
+      "note": "Le cumul periode d acquisition + periode de conservation ne peut pas etre inferieur a 2 ans. ★ C est la fin de la periode d acquisition qui declenche l imposition du gain d acquisition, pas la vente."
+    },
+    "seuil_bascule_gain_acquisition": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/mon-entreprise-ma-attribue-des-actions-gratuites-comment-sera-impose-le-gain",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Seuil de bascule du gain d acquisition. En dessous : abattement puis bareme, prelevements sociaux du patrimoine. Au dessus : traitements et salaires, CSG-CRDS d activite + contribution salariale. Le seuil s apprecie par beneficiaire et par annee."
+    },
+    "abattement_gain_acquisition": {
+      "valeur": 50,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/mon-entreprise-ma-attribue-des-actions-gratuites-comment-sera-impose-le-gain",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ La page impots.gouv.fr ecrit  abattement pour duree de detention de 50 %  alors que la notice 2041-NOT parle des  abattements applicables aux plus-values de cession de valeurs mobilieres  (cases 1TZ a 1VZ). L abattement reellement applicable depend de la DATE DE DECISION DE L AGE, pas de la date d acquisition. A confirmer au BOFiP avant tout chiffrage."
+    },
+    "abattement_fixe_dirigeant_pme": {
+      "valeur": 500000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lactionnariat-salarie",
+      "date_verifiee": "2026-08-17",
+      "note": "Abattement fixe de l article 150-0 D ter du CGI, dirigeant de PME partant a la retraite, sous conditions. Se declare en case 3TK (BSPCE 2018-2024) ou 3TM (BSPCE a compter de 2025)."
+    },
+    "taux_forfaitaires_avant_28_09_2012": {
+      "valeur": {
+        "taux_bas": 18,
+        "taux_median": 30,
+        "taux_haut": 41
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Gains de levee d options et gains d acquisition d actions gratuites ATTRIBUES AVANT le 28/09/2012 : taxables a 18, 30 ou 41 % selon le montant du gain, la date d attribution et le delai de conservation (cases 3VD a 3VF). Option possible pour l imposition en salaires (cases 3VJ ou 3VK). ★ Un vieux plan ne suit donc pas le regime actuel."
+    }
+  },
+  "prelevements_sociaux": {
+    "taux_patrimoine_jusqu_revenus_2025": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "CSG 9,2 % + CRDS 0,5 % + prelevement de solidarite 7,5 %. Taux retenu par la notice 2041-NOT pour le gain d acquisition d actions gratuites de la fraction n excedant pas 300 000 EUR, revenus 2025."
+    },
+    "taux_patrimoine_a_compter_2026": {
+      "valeur": 18.6,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ A compter du 1er janvier 2026 le taux passe a 18,6 %, sauf pour une liste de produits d epargne (assurance-vie, certains CEL-PEL, PEP) qui restent a 17,2 %. L actionnariat salarie n est pas dans cette liste d exception. C est ce qui explique que la notice revenus 2025 dise 17,2 % et les fiches mises a jour le 17/07/2026 disent 18,6 % : ce n est pas une contradiction, c est un calendrier."
+    },
+    "csg_patrimoine": {
+      "valeur": {
+        "taux_anterieur": 9.2,
+        "taux_releve": 10.6
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "La notice 2041-NOT ecrit que les prelevements sociaux  au taux de 17,2 % ou 18,6 %  sont composes de la CSG  au taux de 9,2 % ou de 10,6 % , de la CRDS a 0,5 % et du prelevement de solidarite a 7,5 %. Le relevement porte donc sur la CSG."
+    },
+    "crds": {
+      "valeur": 0.5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "CRDS, composante commune aux deux taux de prelevements sociaux du patrimoine et a la CSG-CRDS d activite."
+    },
+    "prelevement_solidarite": {
+      "valeur": 7.5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Prelevement de solidarite. ⚠ Il reste du meme par les affilies a un regime d assurance maladie de l EEE, du Royaume-Uni ou de la Suisse qui echappent a la CSG-CRDS du patrimoine (cases 8SH-8SI)."
+    },
+    "csg_crds_activite": {
+      "valeur": 9.7,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Taux global CSG + CRDS sur les revenus d ACTIVITE. C est le taux qui frappe le gain d acquisition d actions gratuites pour sa fraction excedant 300 000 EUR et le gain de levee d options attribuees a compter du 28/09/2012. Contre-intuitif : au dela du seuil le taux social BAISSE (9,7 % au lieu de 17,2-18,6 %) mais la contribution salariale de 10 % s ajoute et l abattement disparait."
+    },
+    "contribution_salariale": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Contribution salariale specifique. Actions gratuites : uniquement sur la fraction du gain superieure a 300 000 EUR. Gains de levee d options attribuees a compter du 16/10/2007 : due, case 3VN pour les attributions anterieures au 28/09/2012. Management packages : sur la fraction depassant la limite de performance."
+    },
+    "contribution_salariale_taux_majore": {
+      "valeur": null,
+      "unite": "%",
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": null,
+      "note": "⚠ La notice 2041-NOT indique que  certains gains sont soumis a une contribution salariale au taux de 10 % ou 30 % . Le taux de 30 % existe donc, mais AUCUNE des pages officielles fetchees ne dit a quels gains il s applique. Ne pas l annoncer a quelqu un sans avoir identifie le texte : trou assume."
+    },
+    "contribution_patronale": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE. La contribution PATRONALE sur les attributions gratuites d actions et sur les options existe (code de la securite sociale) mais aucune des pages impots.gouv.fr ni service-public fetchees le 2026-08-17 ne donne son taux, son assiette, ni l exoneration eventuelle des PME. Relever de l URSSAF, pas de la DGFiP. ⚠ Ne jamais chiffrer de memoire : c est un cout EMPLOYEUR, il ne change pas le net du salarie mais il explique le plafonnement de certains plans."
+    }
+  },
+  "bspce": {
+    "anciennete_bascule_taux": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Seuil d anciennete DANS LA SOCIETE. La notice precise que si vous n etes plus salarie, ce qui compte est d y avoir exerce son activite pendant au moins trois ans. Pour l avantage salarial des BSPCE a compter du 01/01/2025, l anciennete s apprecie dans la societe emettrice OU dans une de ses filiales."
+    },
+    "taux_gain_anciennete_suffisante_avant_2018": {
+      "valeur": 19,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "BSPCE attribues AVANT le 01/01/2018, anciennete de trois ans au moins : taux forfaitaire de 19 %, case 3SJ. Pas d abattement pour duree de detention."
+    },
+    "taux_gain_anciennete_suffisante_depuis_2018": {
+      "valeur": 12.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "BSPCE attribues du 01/01/2018 au 31/12/2024 : 12,8 % (gain avant abattement case 3TJ) ou bareme progressif sur option globale case 2OP. BSPCE attribues a compter du 01/01/2025 : 12,8 % sur le gain de cession (case 3TL) et 12,8 % sur l avantage salarial d exercice (ligne 3PC) si anciennete suffisante."
+    },
+    "taux_gain_anciennete_insuffisante": {
+      "valeur": 30,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2042/2026/2042_5477.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Moins de trois ans d activite dans la societe : 30 % QUELLE QUE SOIT LA DATE D ATTRIBUTION DES BONS (case 3SK), et 30 % sur l avantage salarial d exercice des BSPCE a compter du 01/01/2025 (ligne 3PE). Ecart de plus du double par rapport a 12,8 % : partir avant le troisieme anniversaire coute cher, mais c est une decision de CESSION donc hors perimetre fiscal."
+    },
+    "capitalisation_boursiere_maximale": {
+      "valeur": 150000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lactionnariat-salarie",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition societe emettrice : non cotee, ou cotee sur un marche reglemente ou organise de l Espace economique europeen avec une capitalisation boursiere inferieure a 150 millions d euros."
+    },
+    "anciennete_immatriculation_maximale": {
+      "valeur": 15,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lactionnariat-salarie",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Condition societe emettrice : immatriculee depuis MOINS de 15 ans. C est la condition qui ferme le dispositif aux entreprises murissantes : passe ce cap, plus de BSPCE possible."
+    },
+    "detention_personnes_physiques": {
+      "valeur": {
+        "capital_detenu_par_personnes_physiques": 25,
+        "personnes_morales_detenues_par_personnes_physiques": 75
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lactionnariat-salarie",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition societe emettrice : capital detenu a 25 %, de maniere CONTINUE, par des personnes physiques ou par des personnes morales elles-memes detenues a 75 % au moins par des personnes physiques. ⚠ Le mot  continue  compte : un tour de table qui casse la condition peut disqualifier le regime."
+    }
+  },
+  "stock_options": {
+    "rabais_maximal": {
+      "valeur": 20,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lactionnariat-salarie",
+      "date_verifiee": "2026-08-17",
+      "note": "Un rabais de 20 % au plus peut etre decide par la societe sur le prix de souscription ou d achat."
+    },
+    "rabais_fraction_exoneree": {
+      "valeur": 5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lactionnariat-salarie",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Exoneration d impot sur le revenu sur la fraction du rabais qui ne depasse pas 5 % de la valeur des actions. La difference, le  rabais excedentaire , est taxee comme un salaire l ANNEE DE LA LEVEE. C est donc un TROISIEME etage d imposition que personne n anticipe, en plus du gain de levee et de la plus-value de cession."
+    }
+  },
+  "moins_values": {
+    "imputation_sur_le_gain": {
+      "valeur": "imputation limitee aux gains de levee d options attribuees avant le 20/06/2007 et aux gains de cession de titres souscrits en exercice de BSPCE",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2074/2026/2074_5500.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE COEUR DU PIEGE. La notice 2074-NOT n autorise l imputation des moins-values SUR CES GAINS que dans deux cas limitativement enumeres. Le gain d acquisition d actions gratuites n en fait pas partie. ⚠ La doctrine BOFiP n a PAS pu etre consultee le 2026-08-17 (BOFiP non fetchable) : verifier avant d affirmer a quelqu un qu il n a aucun recours."
+    },
+    "report_moins_values": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2074/2026/2074_5500.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "La moins-value nette non imputee se reporte sur les plus-values et gains de meme nature des dix annees suivantes inclusivement, via la case 3VH. ⚠ Reportable, mais seulement sur des PLUS-VALUES : sans autre cession gagnante, la moins-value ne compense jamais l impot deja paye sur le gain d acquisition."
+    }
+  },
+  "plans_etrangers": {
+    "conversion_devise": {
+      "valeur": "cours du change a Paris au jour de l encaissement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2047/2026/2047_5490.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les revenus encaisses en monnaie etrangere se declarent pour leur contre-valeur en euros calculee d apres le cours du change a Paris AU JOUR DE L ENCAISSEMENT (reception en especes, inscription au credit d un compte). Ce n est donc pas un cours moyen annuel, et pour un gain d acquisition la date de reference est celle de l acquisition definitive, pas celle de la vente."
+    },
+    "credit_impot_plafond": {
+      "valeur": "impot effectivement supporte a l etranger, dans la limite des taux conventionnels, sans exceder l impot francais afferent a ce revenu",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2047/2026/2047_5490.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L impot paye hors de France n est PAS deductible du revenu : il ouvre droit a un credit d impot, double plafonne. ⚠ Si l etranger a retenu plus que le taux conventionnel, l exces ne se recupere PAS en France : il faut le reclamer a l Etat etranger selon sa propre procedure. Personne ne le dit au guichet et le delai est celui du pays source."
     }
   }
 }
