@@ -1,5 +1,7 @@
 ![le-cabinet — droit, fiscalité, entreprise et patrimoine français](assets/banner.jpg)
 
+🇫🇷 **Français** · 🇬🇧 [English](README.en.md)
+
 <!-- ⚠️ EN-TETE : banniere, puis logo FLOTTE DANS le titre ###, puis ligne DESSINEE EN TEXTE.
      Quatre impasses mesurees sur le moteur de rendu de GitHub avant d arriver la :
        - un titre en # ou ## porte une bordure dessinee sur TOUTE la largeur : avec un logo

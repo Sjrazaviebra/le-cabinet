@@ -197,7 +197,7 @@ def main():
     # reecrivant l en-tete : le gate ne l a pas vu, c est JR qui l a vu. Il verifiait les
     # valeurs et le routage, il ne regardait pas les images.
     # ⚠️ HORS de la boucle des roles : sinon il signalait la meme image neuf fois.
-    for md in [os.path.join(RACINE, f) for f in ("README.md", "AGENTS.md", "CONTRIBUTING.md")]:
+    for md in [os.path.join(RACINE, f) for f in ("README.md", "README.en.md", "AGENTS.md", "CONTRIBUTING.md")]:
         if not os.path.isfile(md):
             continue
         texte_md = open(md, encoding="utf-8").read()
