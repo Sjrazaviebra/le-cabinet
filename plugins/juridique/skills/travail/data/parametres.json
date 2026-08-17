@@ -35,6 +35,27 @@
       "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000027550102",
       "date_verifiee": "2026-08-17",
       "note": "CONSEQUENCE MAJEURE : quelqu un dont les 12 mois sont ecoules pour contester son licenciement n est pas necessairement sans recours. Ne jamais conclure 'c est trop tard' sur la seule base des 12 mois - chercher si l objet reel de la demande n est pas ailleurs."
+    },
+    "tableau_par_objet_de_demande": {
+      "valeur": {
+        "rupture_du_contrat": "12 mois",
+        "execution_du_contrat": "2 ans",
+        "salaires_impayes": "3 ans",
+        "harcelement_discrimination": "5 ans",
+        "dommages_corporels": "10 ans"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2360",
+      "date_verifiee": "2026-08-17",
+      "note": "Page service-public datee du 03/03/2026. LE DELAI DEPEND DE L OBJET DE LA DEMANDE, pas de la nature du conflit. La bonne question n est jamais 'quand etes-vous parti ?' mais 'que reclamez-vous ?' - quelqu un hors delai sur la rupture peut rester dans les delais sur le salaire, le harcelement ou la discrimination."
+    },
+    "salaire_assiette_recuperable_ans": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027566295",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L3245-1. DEUX limites de trois ans a ne pas confondre : la PRESCRIPTION (3 ans depuis le jour ou l on a connu ou aurait du connaitre les faits) et l ASSIETTE RECUPERABLE (les sommes dues au titre des 3 dernieres annees a compter de ce jour, ou des 3 annees precedant la rupture). Decouvrir dix ans d heures impayees n ouvre PAS dix ans de rappel."
     }
   },
   "rupture_conventionnelle": {
@@ -68,6 +89,29 @@
       "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000019071189",
       "date_verifiee": "2026-08-17",
       "note": "Un salarie a qui on presente la rupture conventionnelle comme la seule issue possible doit savoir que c est faux."
+    }
+  },
+  "prudhommes": {
+    "timbre_fiscal_eur": {
+      "valeur": 50,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2360",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre fiscal electronique. GRATUIT pour les beneficiaires de l aide juridictionnelle. En cas de non-paiement, un mois pour regulariser : une saisine n est pas perdue pour cela."
+    },
+    "assistance_possible": {
+      "valeur": [
+        "seul",
+        "collegue de la meme branche d activite",
+        "proche (conjoint, partenaire, concubin)",
+        "defenseur syndical (GRATUIT)",
+        "avocat (FACULTATIF)"
+      ],
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2360",
+      "date_verifiee": "2026-08-17",
+      "note": "L AVOCAT N EST PAS OBLIGATOIRE aux prud hommes. Beaucoup de salaries renoncent a agir en croyant devoir en payer un. Entre le defenseur syndical gratuit et l aide juridictionnelle, le cout n est presque jamais le vrai obstacle - mais il le devient si personne ne le dit."
     }
   }
 }

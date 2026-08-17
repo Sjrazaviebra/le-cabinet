@@ -1,6 +1,6 @@
 # Avancement
 
-**38 valeurs vérifiées et datées**, 11 encore ouvertes. **7 rôles.**
+**51 valeurs vérifiées et datées**, 9 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -62,9 +62,9 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **14 vérifiée(s)**, 2 à vérifier |
+| `data/parametres.json` | **17 vérifiée(s)**, 0 à vérifier |
 | `references/changement-de-statut.md` | À ÉCRIRE |
-| `references/demande-et-renouvellement.md` | À ÉCRIRE |
+| `references/demande-et-renouvellement.md` | **RÉDIGÉ** |
 | `references/documents-etat-civil.md` | À ÉCRIRE |
 | `references/droit-au-travail.md` | À ÉCRIRE |
 | `references/entreprendre-en-etant-etranger.md` | À ÉCRIRE |
@@ -96,13 +96,13 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | squelette, 0 à vérifier |
+| `data/parametres.json` | **6 vérifiée(s)**, 0 à vérifier |
 | `references/bail-et-location.md` | À ÉCRIRE |
 | `references/charges-et-travaux.md` | À ÉCRIRE |
 | `references/colocation-et-cohabitation.md` | À ÉCRIRE |
 | `references/conge-et-fin-de-bail.md` | À ÉCRIRE |
 | `references/copropriete.md` | À ÉCRIRE |
-| `references/depot-de-garantie.md` | À ÉCRIRE |
+| `references/depot-de-garantie.md` | **RÉDIGÉ** |
 | `references/impayes-et-expulsion.md` | À ÉCRIRE |
 
 ### Rôle `/travail`
@@ -110,18 +110,18 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **7 vérifiée(s)**, 0 à vérifier |
+| `data/parametres.json` | **11 vérifiée(s)**, 0 à vérifier |
 | `references/conges-et-absences.md` | À ÉCRIRE |
 | `references/contrat-et-embauche.md` | À ÉCRIRE |
 | `references/conventions-collectives.md` | **RÉDIGÉ** |
 | `references/harcelement-et-discrimination.md` | À ÉCRIRE |
-| `references/prudhommes.md` | À ÉCRIRE |
+| `references/prudhommes.md` | **RÉDIGÉ** |
 | `references/remuneration-et-temps.md` | À ÉCRIRE |
 | `references/rupture.md` | **PARTIEL** |
 
 ## Ordre de rédaction
 
-**Rédigés** — 9 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `travail/conventions-collectives` · `travail/rupture`
+**Rédigés** — 12 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 
