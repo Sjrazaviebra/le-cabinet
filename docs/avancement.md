@@ -34,7 +34,11 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
 | `data/parametres.json` | **4 vérifiée(s)**, 1 à vérifier |
+| `references/actions-rsu-bspce.md` | À ÉCRIRE |
+| `references/assurance-vie.md` | À ÉCRIRE |
 | `references/declaration-annuelle.md` | **RÉDIGÉ** |
+| `references/epargne-retraite-per.md` | À ÉCRIRE |
+| `references/hauts-revenus-cehr-cdhr.md` | À ÉCRIRE |
 | `references/immobilier-fiscal.md` | À ÉCRIRE |
 | `references/impot-revenu.md` | À ÉCRIRE |
 | `references/impots-locaux-et-ifi.md` | À ÉCRIRE |
