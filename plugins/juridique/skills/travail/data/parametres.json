@@ -281,5 +281,111 @@
       "date_verifiee": "2026-08-17",
       "note": "★ 2 ans, PAS 12 mois : action portant sur l EXECUTION du contrat et non sur sa rupture. Conclure trop tard sur la base des 12 mois serait une erreur."
     }
+  },
+  "harcelement_et_discrimination": {
+    "charge_de_la_preuve_amenagee": {
+      "valeur": "le salarie PRESENTE des elements de fait laissant supposer un harcelement ; il incombe alors au DEFENDEUR de prouver que les agissements ne sont pas constitutifs de harcelement et que sa decision est justifiee par des elements objectifs etrangers a tout harcelement",
+      "unite": "regle de preuve",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033019902",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE POINT DECISIF, article L1154-1 du code du travail. Le salarie n a pas a PROUVER le harcelement, il a a le rendre PLAUSIBLE. Regle la plus mal connue du sujet, celle qui fait renoncer le plus de monde a tort. ⇒ Ce qui compte est l ACCUMULATION D ELEMENTS DATES : courriels, comptes rendus, attestations, arrets de travail, visites au medecin du travail. Chaque element vaut moins que la serie. ⚠️ Ce n est PAS une presomption automatique : le juge apprecie."
+    },
+    "harcelement_moral_definition": {
+      "valeur": "propos ou comportements REPETES ayant pour objet OU POUR EFFET une degradation des conditions de travail susceptible d entrainer L UNE de ces consequences : atteinte aux droits et a la dignite, alteration de la sante physique ou mentale, menace pour l evolution professionnelle",
+      "unite": "definition legale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « L UNE » et non « toutes ». Et « avoir pour EFFET » suffit : l INTENTION DE NUIRE n a pas a etre demontree - un management qui degrade sans le vouloir entre dans la definition. Page verifiee le 2025-10-31."
+    },
+    "harcelement_moral_au_travail_peines": {
+      "valeur": {
+        "emprisonnement_ans": 2,
+        "amende_eur": 30000
+      },
+      "unite": "peines de l article 222-33-2 du code penal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029336939",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ NE PAS CONFONDRE : les pages generales presentent des peines echelonnees (1 an / 15 000 EUR, 2 ans / 30 000 EUR, 3 ans / 45 000 EUR) qui relevent du harcelement moral HORS TRAVAIL et de ses circonstances aggravantes. Pour le harcelement moral AU TRAVAIL, le texte est l article 222-33-2. La QUALIFICATION RETENUE commande la peine - point a laisser au penaliste. Version en vigueur affichee : 2014-08-06."
+    },
+    "harcelement_moral_obligations_employeur": {
+      "valeur": "informer les salaries des textes applicables + MENER UNE ENQUETE DES LE SIGNALEMENT + sanctionner l auteur + prevention et formations",
+      "unite": "obligations",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L ABSENCE D ENQUETE EST EN SOI UN MANQUEMENT : un employeur qui n a rien fait apres un signalement ECRIT s expose de ce seul fait, independamment de l issue sur le harcelement. ⇒ SIGNALER PAR ECRIT est l acte le plus utile, meme sans rien attendre de la hierarchie : il fait naitre l obligation."
+    },
+    "harcelement_sexuel_definition": {
+      "valeur": "imposer a une personne, de facon REPETEE, des propos ou comportements a connotation sexuelle ou sexiste portant atteinte a sa dignite ou creant une situation intimidante, hostile ou offensante ; EGALEMENT constitue SANS repetition en cas de pression grave exercee dans le but reel ou apparent d obtenir un acte de nature sexuelle",
+      "unite": "definition de l article 222-33 du code penal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037289662",
+      "date_verifiee": "2026-08-17",
+      "note": "★ UN SEUL FAIT PEUT SUFFIRE, contrairement a l idee recue. Version en vigueur affichee : 2018-08-06."
+    },
+    "harcelement_sexuel_peines": {
+      "valeur": {
+        "base_emprisonnement_ans": 2,
+        "base_amende_eur": 30000,
+        "aggrave_emprisonnement_ans": 3,
+        "aggrave_amende_eur": 45000
+      },
+      "unite": "peines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037289662",
+      "date_verifiee": "2026-08-17",
+      "note": "Circonstances aggravantes : abus de l autorite conferee par les fonctions, victime mineure de 15 ans, vulnerabilite apparente (age, maladie, handicap, grossesse, precarite), pluralite d auteurs, moyens numeriques, presence d un mineur. ★ « ABUS D AUTORITE » est la premiere citee et c est celle du cadre professionnel : dans une relation hierarchique, le harcelement sexuel est PAR CONSTRUCTION aggrave."
+    },
+    "discrimination_criteres": {
+      "valeur": 25,
+      "unite": "criteres prohibes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1642",
+      "date_verifiee": "2026-08-17",
+      "note": "Parmi eux : origine, sexe, situation de famille, grossesse, apparence physique, etat de sante, handicap, age, opinions politiques, activites syndicales, orientation sexuelle, identite de genre, religion. Page verifiee le 2025-10-20."
+    },
+    "discrimination_peines_secteur_prive": {
+      "valeur": {
+        "personne_physique_emprisonnement_ans": 3,
+        "personne_physique_amende_eur": 45000,
+        "personne_morale_amende_eur": 225000
+      },
+      "unite": "peines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1642",
+      "date_verifiee": "2026-08-17",
+      "note": "Peines complementaires possibles dont la PUBLICATION DU JUGEMENT DANS LA PRESSE."
+    },
+    "delais_pour_agir": {
+      "valeur": {
+        "prudhommes_ans": 5,
+        "plainte_penale_ans": 6,
+        "point_de_depart": "a compter des DERNIERS faits"
+      },
+      "unite": "delais",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1642",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CES DELAIS ECHAPPENT AUX 12 MOIS de la contestation du licenciement : quelqu un parti depuis deux ans peut croire que tout est ferme alors que cette voie reste ouverte. La question n est jamais « quand etes-vous parti ? » mais « que reprochez-vous ? ». ★ « A compter des DERNIERS faits » : dans une situation qui dure, le point de depart se DEPLACE."
+    },
+    "protection_contre_licenciement": {
+      "valeur": "les VICTIMES et les TEMOINS sont proteges contre le licenciement",
+      "unite": "protection",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA PROTECTION DU TEMOIN est decisive et presque toujours ignoree : c est elle qui permet a un collegue d attester, et sans attestation le dossier de la victime repose souvent sur sa seule parole. Le dire a la personne qui hesite a temoigner change des dossiers."
+    },
+    "interlocuteurs": {
+      "valeur": "inspection du travail (DREETS) / medecin du travail / CSE (saisine du juge en procedure acceleree) / Defenseur des droits (gratuit et confidentiel) / organisations syndicales / police ou gendarmerie / conseil de prud hommes",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LE MEDECIN DU TRAVAIL est le plus sous-utilise : independant de l employeur, tenu au secret medical, et une visite peut etre demandee A TOUT MOMENT SANS PASSER PAR LA HIERARCHIE. C est souvent la premiere trace datee de la situation."
+    }
   }
 }
