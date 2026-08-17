@@ -1,6 +1,6 @@
 # Avancement
 
-**61 valeurs vérifiées et datées**, 9 encore ouvertes. **7 rôles.**
+**68 valeurs vérifiées et datées**, 9 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -48,14 +48,14 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | squelette, 0 à vérifier |
+| `data/parametres.json` | **7 vérifiée(s)**, 0 à vérifier |
 | `references/couple.md` | À ÉCRIRE |
 | `references/donation.md` | À ÉCRIRE |
 | `references/enfants.md` | À ÉCRIRE |
 | `references/protection-des-majeurs.md` | À ÉCRIRE |
 | `references/separation-et-divorce.md` | À ÉCRIRE |
 | `references/succession.md` | À ÉCRIRE |
-| `references/violences-intrafamiliales.md` | À ÉCRIRE |
+| `references/violences-intrafamiliales.md` | **RÉDIGÉ** |
 
 ### Rôle `/immigration`
 
@@ -121,7 +121,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 14 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
+**Rédigés** — 15 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 
