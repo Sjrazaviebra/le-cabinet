@@ -569,5 +569,145 @@
       "date_verifiee": "2026-08-17",
       "note": ""
     }
+  },
+  "conges_payes": {
+    "acquisition_travail_effectif": {
+      "valeur": 2.5,
+      "unite": "jours ouvrables par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "date_verifiee": "2026-08-17",
+      "note": "Soit 30 jours ouvrables - 5 semaines - sur une annee complete. Page verifiee le 2026-04-30."
+    },
+    "acquisition_pendant_arret_maladie": {
+      "valeur": {
+        "non_professionnel_jours_par_mois": 2,
+        "origine_professionnelle_jours_par_mois": 2,
+        "plafond_annuel_jours": 24,
+        "periode_de_reference": "du 1er juin au 31 mai"
+      },
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA REGLE A CHANGE : pendant des decennies un arret pour maladie ordinaire n ouvrait AUCUN droit a conges. Ce n est plus le cas ⇒ quiconque a ete en arret long a probablement des jours qu il ignore, et l employeur ne les a pas forcement decomptes. ⚠️ Le rythme est de 2 jours, PAS 2,5 : annoncer 2,5 serait une erreur au benefice apparent du salarie, donc une erreur quand meme."
+    },
+    "report_apres_arret_mois": {
+      "valeur": 15,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE POINT DECISIF : le delai de 15 mois NE COURT QU A COMPTER DE L INFORMATION donnee par l employeur au retour du salarie, information qu il DOIT donner. ⇒ Un employeur qui n a pas informe n a PAS fait courir le delai : « vos conges sont perdus » est une affirmation A VERIFIER. Se regle souvent par un courriel, sans juge."
+    }
+  },
+  "conge_maternite": {
+    "durees_semaines": {
+      "valeur": {
+        "premier_ou_deuxieme_enfant": {
+          "prenatal": 6,
+          "postnatal": 10,
+          "total": 16
+        },
+        "troisieme_enfant_ou_plus": {
+          "prenatal": 8,
+          "postnatal": 18,
+          "total": 26
+        },
+        "jumeaux": {
+          "prenatal": 12,
+          "postnatal": 22,
+          "total": 34
+        },
+        "triples_ou_plus": {
+          "prenatal": 24,
+          "postnatal": 22,
+          "total": 46
+        }
+      },
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01."
+    },
+    "minimum_obligatoire_semaines": {
+      "valeur": {
+        "total": 8,
+        "dont_apres_accouchement": 6
+      },
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CE N EST PAS UN DROIT QU ON PEUT DECLINER, c est une INTERDICTION D EMPLOI : l employeur ne peut pas faire travailler la salariee pendant cette periode, meme avec son accord."
+    },
+    "protection_licenciement": {
+      "valeur": {
+        "pendant_le_conge": "absolue - aucun licenciement possible, y compris pendant les conges payes pris immediatement apres",
+        "apres_le_conge_semaines": 10,
+        "nature_apres": "relative - licenciement possible seulement pour faute grave ou cessation d activite"
+      },
+      "unite": "protection",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA PROTECTION NE S ARRETE PAS AU RETOUR : dix semaines de protection relative suivent. Un licenciement notifie trois semaines apres la reprise pour un motif ordinaire est NUL."
+    }
+  },
+  "conge_paternite": {
+    "decomposition": {
+      "valeur": {
+        "conge_de_naissance_jours_ouvrables": 3,
+        "premiere_periode_obligatoire_jours_calendaires": 4,
+        "solde_fractionnable_jours_calendaires": 21,
+        "solde_naissances_multiples_jours_calendaires": 28
+      },
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": "Les deux premiers blocs sont OBLIGATOIRES, la 1re periode suivant IMMEDIATEMENT le conge de naissance. Interdiction d emploi et protection pendant la periode obligatoire. Page verifiee le 2026-06-01."
+    },
+    "pourquoi_25_ou_28_jours": {
+      "valeur": {
+        "paternite_seule": 25,
+        "total_conge_de_naissance_inclus": 28,
+        "naissances_multiples_paternite_seule": 32,
+        "naissances_multiples_total": 35
+      },
+      "unite": "jours calendaires",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LES DEUX CHIFFRES CIRCULENT ET NE SE CONTREDISENT PAS : 25 = paternite seule (4 + 21), 28 = total conge de naissance inclus. ⇒ Verifier de quel PERIMETRE parle l interlocuteur (employeur, CPAM, convention). C EST LA DECOMPOSITION QUI EST FIABLE, PAS LE TOTAL : 3 + 4 + 21."
+    },
+    "delai_de_prise_du_solde_mois": {
+      "valeur": 6,
+      "unite": "mois suivant la naissance",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": "En une fois ou en 2 periodes de 5 jours minimum."
+    },
+    "prevenance_employeur_mois": {
+      "valeur": 1,
+      "unite": "mois avant les dates souhaitees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "conditions_indemnisation": {
+      "valeur": {
+        "heures_travaillees_sur_3_mois": 150,
+        "affiliation_continue_mois": 6
+      },
+      "unite": "conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    }
   }
 }

@@ -1,6 +1,6 @@
 # Avancement
 
-**200 valeurs vérifiées et datées**, 19 encore ouvertes. **7 rôles.**
+**211 valeurs vérifiées et datées**, 19 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -114,8 +114,8 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **61 vérifiée(s)**, 0 à vérifier |
-| `references/conges-et-absences.md` | À ÉCRIRE |
+| `data/parametres.json` | **72 vérifiée(s)**, 0 à vérifier |
+| `references/conges-et-absences.md` | **RÉDIGÉ** |
 | `references/contrat-et-embauche.md` | **PARTIEL** |
 | `references/conventions-collectives.md` | **RÉDIGÉ** |
 | `references/harcelement-et-discrimination.md` | **RÉDIGÉ** |
@@ -125,7 +125,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 28 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
+**Rédigés** — 29 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
 
 **Prochains** :
 
