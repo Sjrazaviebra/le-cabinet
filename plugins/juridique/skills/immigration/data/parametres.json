@@ -398,5 +398,107 @@
       "date_verifiee": "2026-08-17",
       "note": "★ Acces a des listes de metiers ELARGIES sans opposition de la situation de l emploi. A VERIFIER SYSTEMATIQUEMENT avant de conclure qu un dossier est bloque : deux personnes au meme diplome et au meme poste n ont pas le meme dossier selon leur nationalite."
     }
+  },
+  "droit_au_travail": {
+    "qui_demande_l_autorisation": {
+      "valeur": "l EMPLOYEUR, en ligne uniquement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Un candidat ne peut pas obtenir SON autorisation avant d etre recrute : la demarche n existe pas de son cote. La confirmation de depot ne permet PAS de travailler. Page verifiee le 2026-06-18."
+    },
+    "silence_prefecture_sur_autorisation": {
+      "valeur": "REFUS IMPLICITE au bout de 2 mois",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim de la page : « Si la prefecture n a pas repondu au bout de 2 mois, il s agit d un refus implicite. » ⇒ C EST L INVERSE de l homologation d une rupture conventionnelle ou le silence vaut acceptation. Une personne qui « attend toujours » depuis trois mois a ete REFUSEE et son delai de recours peut etre expire."
+    },
+    "delai_recours_contre_refus": {
+      "valeur": 2,
+      "unite": "mois a compter du refus",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "Court aussi a compter du refus IMPLICITE."
+    },
+    "verification_titre_par_employeur": {
+      "valeur": 2,
+      "unite": "jours ouvrables avant la date effective d embauche",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★ PROTECTION MECONNUE DE L EMPLOYEUR DE BONNE FOI. Verbatim : « Sans reponse dans les 2 jours ouvrables suivant la reception de la demande, l obligation de verification de l employeur est consideree comme etant accomplie. » ⇒ CONSERVER LA PREUVE DE LA DEMANDE : c est elle qui vaut decharge."
+    },
+    "titres_dispensant_d_autorisation": {
+      "valeur": "vie privee et familiale / talent / etudiant (dans la limite de 60 % du temps annuel) / recherche d emploi ou creation d entreprise / resident et resident de longue duree-UE / APS protection temporaire Ukraine / visa vacances-travail / certains contrats de moins de 3 mois en sport, culture et enseignement",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "etudiant_non_europeen_plafond_heures": {
+      "valeur": 964,
+      "unite": "heures par an, soit 60 % de la duree annuelle legale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2713",
+      "date_verifiee": "2026-08-17",
+      "note": "Sans autorisation de travail : l employeur doit seulement DECLARER l embauche a la prefecture. Au-dela, autorisation exigee AVANT le debut de l activite. Page verifiee le 2025-10-07."
+    },
+    "etudiant_sanction_depassement": {
+      "valeur": "retrait du titre de sejour et refus de renouvellement",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2713",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA SANCTION FRAPPE L ETUDIANT, PAS L EMPLOYEUR. Un employeur qui propose « quelques heures en plus, on ne compte pas » fait courir un risque qu il ne porte pas ⇒ le decompte annuel est l affaire de l etudiant."
+    },
+    "etudiant_algerien_regime": {
+      "valeur": 50,
+      "unite": "pourcentage de la duree annuelle pratiquee dans la profession ou le secteur",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2713",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ AUTRE REGIME : autorisation de travail exigee QUEL QUE SOIT le nombre d heures. Texte applicable : decret n° 2002-1500 du 20 decembre 2002. Une fois l autorisation obtenue pour un contrat d apprentissage ou de professionnalisation, le plafond peut etre depasse dans le cadre des etudes. ★ Appliquer les 964 heures a un etudiant algerien est une ERREUR DE REGIME : la question « quelle nationalite ? » precede la reponse sur les heures."
+    },
+    "sanctions_employeur_administratives_eur": {
+      "valeur": {
+        "amende_max": 21750,
+        "multiplicateur": "5000 fois le taux horaire du minimum garanti",
+        "recidive_max": 65250
+      },
+      "unite": "EUR PAR TRAVAILLEUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ « Par travailleur » change tout : trois personnes en situation irreguliere ne coutent pas une amende, elles en coutent trois."
+    },
+    "sanctions_employeur_penales": {
+      "valeur": {
+        "personne_physique_amende_eur": 30000,
+        "personne_morale_amende_eur": 150000,
+        "emprisonnement_ans_max": 5
+      },
+      "unite": "PAR ETRANGER EMPLOYE",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "S y ajoutent fermeture temporaire, exclusion des marches publics et confiscation de materiel. ⇒ Pour une petite structure, un seul recrutement mal verifie est un risque existentiel, alors que la verification prealable est gratuite et prend 2 jours ouvrables."
+    },
+    "recepisse_duree_et_travail": {
+      "valeur": {
+        "premiere_demande_mois": "4 ou 6",
+        "prorogation_exceptionnelle_mois": 3,
+        "renouvellement_ou_duplicata_mois": 3
+      },
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15763",
+      "date_verifiee": null,
+      "note": "NON RECOUPE : valeurs lues sur une page du 2023-11-17, anterieure a la peremption de 6 mois du depot. ⚠️ PAGE SOURCE DU 2023-11-17, anterieure a la peremption de 6 mois du depot : A RECOUPER. En premiere demande il autorise a travailler si la carte demandee est salarie ou travailleur temporaire (avec autorisation), RECE, vie privee et familiale (sauf exceptions), ICT detache salarie, travailleur saisonnier (avec autorisation), protection subsidiaire ou apatride, resident. En RENOUVELLEMENT il proroge les droits du titre precedent. ★ « Le recepisse permet-il de travailler ? » n a pas de reponse generale, seulement une reponse PAR TITRE DEMANDE."
+    }
   }
 }
