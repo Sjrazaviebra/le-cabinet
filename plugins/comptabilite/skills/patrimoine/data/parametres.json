@@ -1,0 +1,2708 @@
+{
+  "_lisez_moi": {
+    "role": "Valeurs volatiles du skill patrimoine.",
+    "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
+    "peremption_mois": 6,
+    "etat": "VIDE - le role vient d etre cadre, aucun fichier n est encore redige.",
+    "avertissement": "⛔ Ce role INFORME et PROTEGE, il ne recommande jamais un instrument financier a une personne : ce serait un conseil en investissement, service reglemente. Analyse de la frontiere dans docs/taxonomie-comptabilite.md. ⚠️ Les plafonds de livrets et les taux reglementes changent chaque annee."
+  },
+  "enveloppe_pea": {
+    "pea_plafond_versements": {
+      "valeur": 150000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le plafond porte sur les VERSEMENTS CUMULES, pas sur la valeur du plan. Un PEA peut valoir bien plus que son plafond sans le depasser : ce sont deux grandeurs differentes. Page service-public verifiee le 22/05/2026."
+    },
+    "pea_pme_eti_plafond_versements": {
+      "valeur": 225000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond propre au PEA PME-ETI. ⚠ Il ne s ajoute pas librement au PEA classique : voir le plafond de cumul."
+    },
+    "pea_cumul_plafond_deux_plans": {
+      "valeur": 225000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : la somme totale versee sur ces 2 plans par un meme titulaire ne peut pas depasser 225 000 EUR. ⇒ ouvrir un PEA PME-ETI n ouvre PAS un second plafond de 150 000 EUR, il ne libere que le solde."
+    },
+    "pea_jeunes_plafond_versements": {
+      "valeur": 20000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond du PEA d une personne majeure rattachee au foyer fiscal de ses parents. ★ Quand le rattachement cesse, le plan devient un PEA classique et les versements peuvent etre completes jusqu au plafond ordinaire : l anteriorite n est pas perdue."
+    },
+    "pea_seuil_retrait_cloture": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Avant ce seuil, tout retrait total ou partiel entraine la CLOTURE du plan, sauf exceptions limitees (licenciement, invalidite, retraite anticipee, liquidation judiciaire, creation ou reprise d entreprise avec remploi). Apres ce seuil, un retrait partiel ne cloture pas et de nouveaux versements redeviennent possibles."
+    },
+    "pea_part_actions_minimale_opc_eligible": {
+      "valeur": 75,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/pea-tout-savoir-sur-le-plan-depargne-en-actions",
+      "date_verifiee": "2026-08-17",
+      "note": "Part minimale d actions eligibles que doit detenir un placement collectif (fonds, sicav, ETF) pour etre loge dans un PEA. ★ C est ce qui explique qu un ETF mondial ou americain soit souvent inaccessible en PEA alors que le meme type de support existe librement en compte-titres."
+    }
+  },
+  "enveloppe_assurance_vie": {
+    "av_plafond_versements": {
+      "valeur": "aucun",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : il n y a pas de plafond maximum pour les versements sur un contrat d assurance-vie. ⚠ Absence de plafond ne veut pas dire absence de seuils FISCAUX : ceux-la vivent dans le role impots."
+    },
+    "av_delai_versement_apres_rachat": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai maximal dont dispose l assureur pour verser les sommes apres une demande de rachat. ⇒ l assurance-vie est disponible, mais elle n est pas liquide a la journee : ce n est pas un livret. Page service-public du 12/01/2026, a recouper."
+    },
+    "av_interets_retard_premiers_mois": {
+      "valeur": 9.98,
+      "unite": "%",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": null,
+      "note": "★ Taux d interet du au souscripteur si l assureur depasse le delai de versement, pour les deux premiers mois de retard. ⚠ Valeur indexee sur le taux legal, donc elle CHANGE ; lue sur une page du 12/01/2026 ⇒ marquee a verifier. L existence de la penalite compte plus que le chiffre : elle se reclame."
+    },
+    "av_interets_retard_au_dela": {
+      "valeur": 13.3,
+      "unite": "%",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": null,
+      "note": "Taux d interet de retard au-dela des deux premiers mois. ⚠ Meme reserve : indexe sur le taux legal, page du 12/01/2026."
+    },
+    "av_delai_renonciation": {
+      "valeur": 30,
+      "unite": "jours calendaires",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15268",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Delai pour renoncer apres signature, par lettre recommandee avec accuse de reception a l adresse figurant au contrat. C est le droit le plus souvent perdu faute de le connaitre. Page service-public du 21/11/2025, a recouper."
+    },
+    "av_euro_croissance_duree_garantie": {
+      "valeur": 8,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Duree de detention minimale sous laquelle le capital investi sur un fonds euro-croissance est garanti. ⇒ la garantie est CONDITIONNELLE : sortir avant, c est sortir sans garantie. Page du 12/01/2026, a recouper."
+    }
+  },
+  "enveloppe_per": {
+    "per_plafond_versements": {
+      "valeur": "aucun",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : il n y a pas de plafond pour les versements volontaires en numeraire sur le PER individuel, mais le montant pour lequel vous pouvez beneficier d un avantage fiscal est plafonne. ⇒ le plafond dont tout le monde parle est un plafond FISCAL, pas un plafond de versement. Le detail est dans le role impots."
+    },
+    "per_nombre_compartiments": {
+      "valeur": 3,
+      "unite": "compartiments",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Individuel (versements volontaires), collectif (epargne salariale), obligatoire ou categoriel (cotisations obligatoires). ★ Les regles de sortie et de deblocage ne sont PAS les memes selon le compartiment : le compartiment obligatoire reste bloque meme pour l achat de la residence principale."
+    },
+    "per_transfert_anciennete_gratuite": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : le transfert est gratuit si vous avez detenu le produit pendant au moins 5 ans."
+    },
+    "per_transfert_frais_max_avant_seuil": {
+      "valeur": 1,
+      "unite": "% de l epargne accumulee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : si vous avez detenu le produit moins de 5 ans, les frais de transfert peuvent etre factures, dans la limite de 1 % de l epargne accumulee. Plafond LEGAL : un etablissement qui facture davantage est hors des clous."
+    },
+    "per_transfert_ancien_produit_frais_max": {
+      "valeur": 5,
+      "unite": "% de l epargne accumulee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de frais pour le transfert d un ANCIEN produit d epargne retraite vers un PER, lorsque le produit est detenu depuis moins de 10 ans."
+    },
+    "per_transfert_ancien_produit_anciennete": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil d anciennete au-dela duquel le transfert d un ancien produit vers un PER n est plus assorti de ces frais."
+    },
+    "per_transfert_delai_max": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : le transfert doit se faire dans un delai maximal de 4 mois. ⚠ Un premier releve de la meme page annoncait 3 mois : chiffre NON confirme en verbatim, donc ecarte. Seul le 4 mois est retenu."
+    },
+    "per_cas_deblocage_anticipe": {
+      "valeur": {
+        "deces_conjoint_ou_partenaire_pacs": "cas de deblocage",
+        "invalidite_du_titulaire_de_ses_enfants_de_son_conjoint": "cas de deblocage",
+        "affection_grave_ou_handicap_grave_d_un_enfant_a_charge": "cas de deblocage",
+        "surendettement_du_titulaire": "cas de deblocage",
+        "expiration_des_droits_a_l_assurance_chomage_ou_cessation_de_mandat_social": "cas de deblocage",
+        "cessation_d_activite_non_salariee_apres_liquidation_judiciaire": "cas de deblocage",
+        "acquisition_de_la_residence_principale": "cas de deblocage, MAIS pas pour le compartiment obligatoire"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Liste FERMEE : hors ces cas, le PER individuel est bloque jusqu a la retraite. ⚠ Un besoin d argent ordinaire, meme grave, n y figure pas. ★ L achat de la residence principale est le seul cas non subi de la liste, et il ne joue pas sur le compartiment obligatoire."
+    }
+  },
+  "livrets_reglementes": {
+    "plafonds_de_depot": {
+      "valeur": {
+        "livret_a_particulier_eur": 22950,
+        "ldds_eur": 12000,
+        "lep_eur": 10000,
+        "livret_jeune_eur": 1600,
+        "pel_eur": 61200,
+        "cel_eur": 15300
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le plafond porte sur les DEPOTS : les interets peuvent le depasser et restent sur le livret. ⚠ Les taux ne sont pas repris ici volontairement : ils sont fixes par arrete et changent en cours d annee ⇒ voir epargne-reglementee-et-bancaire.md. Page service-public du 01/08/2026."
+    },
+    "cel_seuil_de_disponibilite": {
+      "valeur": 300,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "Sur le CEL, seuls les fonds au-dela de ce montant sont disponibles : un solde plancher doit rester sur le compte. ★ C est la seule entorse a la disponibilite immediate parmi les livrets."
+    }
+  },
+  "transferts_et_captivite": {
+    "livret_a_transfert_entre_banques": {
+      "valeur": "impossible",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2365",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : le transfert d un livret A d une banque a une autre n est plus possible depuis le 1er janvier 2012. Il faut CLOTURER puis rouvrir ailleurs. ⚠ Et comme la detention de plusieurs livrets A est interdite, l ordre des operations compte. Page service-public du 01/08/2026."
+    },
+    "pea_et_compte_titres_transfert_anteriorite": {
+      "valeur": "conservee",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/faq-pea-et-pea-pme-eti-0",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : le transfert integral des titres et especes de votre PEA d un etablissement financier a un autre ne constitue pas un retrait. Les avantages fiscaux sont donc conserves. ⚠ Conserver la fiscalite et payer des frais de transfert sont deux questions distinctes : les frais existent."
+    },
+    "assurance_vie_transfert_vers_un_autre_assureur": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "★★ POINT NON VERIFIE, et c est le plus structurant du fichier. Aucune des pages officielles fetchees (service-public F15274 et F15268, page AMF assurance-vie) ne prevoit le transfert d un contrat vers un AUTRE assureur en conservant l anteriorite : elles n en parlent pas du tout. ⛔ Ne pas ecrire qu il est impossible tant que le texte n est pas lu. A verifier dans le code des assurances et cote fiscal dans le role impots."
+    }
+  },
+  "supports_mecanique": {
+    "instruments_financiers_perimetre_l211_1": {
+      "valeur": {
+        "titres_de_capital_emis_par_les_societes_par_actions": "titre financier",
+        "titres_de_creance": "titre financier",
+        "parts_ou_actions_d_organismes_de_placement_collectif": "titre financier",
+        "contrats_financiers": "contrats a terme figurant sur une liste fixee par decret"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032469968",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L211-1 du code monetaire et financier, version en vigueur au 01/10/2016. Verbatim : les instruments financiers sont les titres financiers et les contrats financiers. ⇒ liste FERMEE. Ce qui n y figure pas (biens divers, cryptoactifs, or, diamants, parkings, cheptel) sort du regime des instruments financiers : c est exactement la zone ou vivent les arnaques ⇒ arnaques-financieres.md et role juriste, activites-reglementees.md."
+    },
+    "unites_de_compte_objet_de_la_garantie": {
+      "valeur": "le nombre d unites, pas leur valeur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : seul le nombre d unites de compte est garanti par l assureur, mais pas leur valeur. C est LA phrase a montrer a quelqu un qui croit son assurance-vie garantie. Le risque de marche est porte par l EPARGNANT. Page du 12/01/2026, a recouper."
+    },
+    "fonds_euros_objet_de_la_garantie": {
+      "valeur": "la valeur du capital verse",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15274",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : la valeur des fonds investis est garantie par l assureur. ⇒ le risque est porte par l ASSUREUR, pas par l epargnant. ⚠ Une garantie vaut ce que vaut celui qui la donne : la solvabilite de l assureur reste un aleas ⇒ voir epargne-reglementee-et-bancaire.md."
+    }
+  },
+  "livret_a": {
+    "plafond_versement": {
+      "valeur": 22950,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2365",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de VERSEMENTS pour une personne physique. Les interets capitalises peuvent porter le solde au-dela du plafond sans le violer. ⚠ Ce plafond change par arrete : a recouper a chaque usage."
+    },
+    "taux_en_vigueur": {
+      "valeur": 1.7,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054541376",
+      "date_verifiee": "2026-08-17",
+      "note": "Arrete du 28 juillet 2026 : taux applicable du 01/08/2026 au 31/01/2027. ⚠ Revise deux fois par an : PERIME des le 01/02/2027."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "livret",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2365",
+      "date_verifiee": "2026-08-17",
+      "note": "Un seul livret A par personne. Aucune condition d age, de nationalite ni de residence fiscale pour l ouvrir."
+    },
+    "amende_multi_detention": {
+      "valeur": {
+        "taux_pourcentage": 2,
+        "seuil_de_non_recouvrement_euros": 50
+      },
+      "unite": "pourcentage de l encours du livret surnumeraire, et seuil en euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019300313",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 1739 A du CGI : amende fiscale de 2 % de l encours du livret A surnumeraire, non recouvree si son montant est inferieur a 50 euros, EN PLUS de l imposition des interets indument exoneres. Version en vigueur depuis le 01/01/2009."
+    }
+  },
+  "ldds": {
+    "plafond_versement": {
+      "valeur": 12000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de versements ; les interets seuls peuvent le depasser."
+    },
+    "taux_en_vigueur": {
+      "valeur": 1.7,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054541376",
+      "date_verifiee": "2026-08-17",
+      "note": "Meme taux que le livret A, fixe par le meme arrete. Interets calcules les 1er et 16 de chaque mois."
+    },
+    "nombre_par_foyer_fiscal": {
+      "valeur": 2,
+      "unite": "livrets",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368",
+      "date_verifiee": "2026-08-17",
+      "note": "Un LDDS par personne, deux au maximum par foyer fiscal (un par epoux ou partenaire de Pacs). ⚠ Contrairement au livret A, il faut un domicile fiscal en France. Une personne fiscalement a la charge de ses parents ne peut pas en detenir."
+    },
+    "operation_et_solde_minimum": {
+      "valeur": 10,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368",
+      "date_verifiee": "2026-08-17",
+      "note": "Minimum par operation et solde plancher. Aucun frais d ouverture, de versement, de retrait ni de cloture."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "livret",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368",
+      "date_verifiee": "2026-08-17",
+      "note": "Un seul LDDS par personne."
+    }
+  },
+  "lep": {
+    "plafond_versement": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2367",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de versements du livret d epargne populaire."
+    },
+    "taux_en_vigueur": {
+      "valeur": 2.5,
+      "unite": "pourcentage annuel",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2367",
+      "date_verifiee": null,
+      "note": "⚠ Fiche service-public verifiee le 01/08/2026 : 2,50 %. MAIS l arrete du 28 juillet 2026 que nous avons lu ne fixe PAS le taux du LEP (il ne cite que livret A, LDDS, livrets travailleurs manuels, comptes speciaux mutualistes, livrets d epargne-entreprise et CEL). Le texte fixant le taux du LEP n a pas ete retrouve ⇒ valeur a recouper avant usage."
+    },
+    "versement_initial_minimum": {
+      "valeur": 30,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2367",
+      "date_verifiee": "2026-08-17",
+      "note": "Depot minimum a l ouverture."
+    },
+    "plafond_revenu_fiscal_de_reference": {
+      "valeur": {
+        "1_part": 23028,
+        "2_parts": 35326,
+        "3_parts": 47624,
+        "majoration_par_demi_part_supplementaire": 6149
+      },
+      "unite": "euros de revenu fiscal de reference, metropole",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2367",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Plafonds de RFR 2026 en metropole. La banque examine le RFR de l annee N-2 ou N-1 : un revenu qui a baisse recemment peut donc ouvrir droit au LEP alors qu on croit ne pas y avoir droit. ⚠ Ces plafonds sont revalorises chaque annee."
+    },
+    "cloture_apres_depassement": {
+      "valeur": 2,
+      "unite": "annees consecutives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2367",
+      "date_verifiee": "2026-08-17",
+      "note": "La banque verifie les revenus chaque annee. Cloture obligatoire apres deux annees consecutives de depassement du plafond de revenus : un depassement isole ne ferme donc pas le livret."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "livret",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2367",
+      "date_verifiee": "2026-08-17",
+      "note": "Un seul LEP par personne, mais chaque epoux ou partenaire de Pacs du meme foyer fiscal peut detenir le sien."
+    }
+  },
+  "livret_jeune": {
+    "age_ouverture": {
+      "valeur": {
+        "minimum": 12,
+        "maximum": 25
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
+      "date_verifiee": "2026-08-17",
+      "note": "Il faut aussi avoir sa residence habituelle en France et ne pas deja detenir un livret jeune. Fermeture automatique l annee des 25 ans du titulaire."
+    },
+    "plafond_versement": {
+      "valeur": 1600,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de versements ; une fois depasse par les seuls interets, plus aucun versement n est possible."
+    },
+    "taux_minimum": {
+      "valeur": 1.7,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Cas hybride : la banque fixe librement la remuneration mais elle NE PEUT PAS etre inferieure au taux du livret A, soit 1,7 % au 01/08/2026. C est le seul livret ou une negociation a un sens - vers le haut uniquement."
+    },
+    "retraits_selon_age": {
+      "valeur": {
+        "autorisation_du_representant_legal_avant": 16,
+        "retrait_possible_sauf_opposition_parentale_de": 16,
+        "autonomie_complete_a_partir_de": 18
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
+      "date_verifiee": "2026-08-17",
+      "note": "Avant 16 ans, autorisation du representant legal, qui peut plafonner les retraits. De 16 a 18 ans, retraits possibles sauf opposition formelle des parents."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "livret",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
+      "date_verifiee": "2026-08-17",
+      "note": "Le nombre de livret jeune est limite a 1 par personne."
+    }
+  },
+  "livret_bancaire_ordinaire": {
+    "plafond_legal": {
+      "valeur": "aucun plafond legal - la banque peut en prevoir un au contrat",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34394",
+      "date_verifiee": "2026-08-17",
+      "note": "Le compte sur livret n est pas reglemente : ni plafond legal, ni taux administre, ni exoneration."
+    },
+    "solde_et_retrait_minimum": {
+      "valeur": 10,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34394",
+      "date_verifiee": "2026-08-17",
+      "note": "Solde plancher et retrait minimum indiques par la fiche."
+    },
+    "qui_fixe_le_taux": {
+      "valeur": "la banque, librement",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34394",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : Le taux d interet du livret d epargne bancaire est fixe librement par la banque. C est la seule difference qui compte avec un livret reglemente, avec la fiscalite."
+    }
+  },
+  "livrets_boostes": {
+    "plafond_de_montant_du_taux_promotionnel": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Les sources officielles admises confirment l existence d offres commerciales temporaires a taux eleve sur de courtes periodes (super livrets), mais aucune page officielle fetchee n indique que le taux promotionnel s applique dans la limite d un MONTANT plafonne. Mecanique a documenter sur abe-infoservice.fr, inaccessible ce jour (HTTP 403)."
+    },
+    "duree_du_taux_promotionnel": {
+      "valeur": "courte periode fixee par la banque, puis retour au taux de base",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34394",
+      "date_verifiee": "2026-08-17",
+      "note": "La fiche mentionne des offres commerciales temporaires, dites super livrets, a taux eleves sur de courtes periodes. ⛔ Ne nommer aucun etablissement."
+    }
+  },
+  "compte_a_terme": {
+    "duree_de_blocage_minimum": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2372",
+      "date_verifiee": "2026-08-17",
+      "note": "La duree de blocage doit etre superieure a un mois pour que le compte soit remunere. Argent depose en une seule fois, pour un montant et une duree fixes a l avance. Page verifiee le 19/06/2026."
+    },
+    "retrait_anticipe": {
+      "valeur": "la banque applique des penalites sur les interets prevus au contrat",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2372",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim. Le bareme des penalites n est pas legal : il est CONTRACTUEL et varie d un etablissement a l autre ⇒ la clause de sortie anticipee se lit AVANT la signature, pas apres."
+    },
+    "qui_fixe_le_taux": {
+      "valeur": "la banque, librement - taux fixe, progressif ou variable",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2372",
+      "date_verifiee": "2026-08-17",
+      "note": "Interets verses de facon annuelle, semestrielle, trimestrielle ou a l echeance selon le contrat."
+    }
+  },
+  "cel": {
+    "versement_initial_minimum": {
+      "valeur": 300,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16136",
+      "date_verifiee": "2026-08-17",
+      "note": "Egal au solde minimum a conserver : descendre sous ce solde entraine la cloture."
+    },
+    "versement_minimum_ulterieur": {
+      "valeur": 75,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16136",
+      "date_verifiee": "2026-08-17",
+      "note": "Versements libres mais d au moins 75 euros."
+    },
+    "plafond_depots": {
+      "valeur": 15300,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16136",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond des depots du compte epargne logement."
+    },
+    "taux_en_vigueur": {
+      "valeur": 1.25,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000054541376",
+      "date_verifiee": "2026-08-17",
+      "note": "Arrete du 28 juillet 2026, applicable du 01/08/2026 au 31/01/2027. Interets calcules les 1er et 16 du mois."
+    },
+    "anciennete_minimum_pour_emprunter": {
+      "valeur": 18,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33923",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Deux fois plus court que le PEL : le CEL est le seul produit epargne-logement qui ouvre un droit a pret en moins de deux ans."
+    },
+    "pret_maximum": {
+      "valeur": 23000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33923",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond du pret epargne-logement issu d un CEL."
+    }
+  },
+  "pel": {
+    "versement_initial_minimum": {
+      "valeur": 225,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16140",
+      "date_verifiee": "2026-08-17",
+      "note": "Depot minimum a l ouverture. Aucune condition d age, de residence ni de nationalite. Page verifiee le 27/05/2026."
+    },
+    "versements_annuels_minimum": {
+      "valeur": 540,
+      "unite": "euros par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16140",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Obligation de versement : contrairement a un livret, cesser d alimenter un PEL n est pas neutre. Le comparatif PEL/CEL exprime la meme contrainte en versements reguliers de 45 euros par mois."
+    },
+    "plafond_depots": {
+      "valeur": 61200,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16140",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond des depots, hors interets capitalises."
+    },
+    "taux_pour_les_pel_ouverts_en_2026": {
+      "valeur": 2.0,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16140",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Taux des PEL ouverts a compter du 01/01/2026. Il est FIGE a l ouverture pour toute la vie du plan : deux PEL ouverts a deux dates differentes ne portent pas le meme taux, et ce taux ne se renegocie jamais."
+    },
+    "duree": {
+      "valeur": {
+        "minimale_ans": 4,
+        "maximale_ans": 10
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16140",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Duree minimale de quatre ans : avant ce terme, tout retrait entraine la CLOTURE du plan, avec perte du droit a pret dans ses conditions normales. Au-dela de dix ans, plus de versements possibles mais les interets continuent de courir."
+    },
+    "pret_maximum": {
+      "valeur": 92000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16142",
+      "date_verifiee": "2026-08-17",
+      "note": "Montant maximum du pret epargne-logement issu d un PEL arrive a terme."
+    },
+    "pret_duree": {
+      "valeur": {
+        "minimale_ans": 2,
+        "maximale_ans": 15
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16142",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree du pret epargne-logement, identique pour le PEL et le CEL."
+    },
+    "taux_du_pret_pour_un_pel_ouvert_en_2026": {
+      "valeur": 3.2,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16142",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le taux du PRET depend de l annee d ouverture du PEL, pas des taux du marche au moment de l emprunt. Page verifiee le 01/01/2026."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "plan",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16140",
+      "date_verifiee": "2026-08-17",
+      "note": "Un seul PEL a la fois. Cumul possible avec un CEL a condition que les deux comptes soient ouverts dans le meme etablissement bancaire."
+    }
+  },
+  "fiscalite_epargne_non_reglementee": {
+    "prelevement_forfaitaire_unique": {
+      "valeur": 30,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16136",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Taux global du PFU applique aux interets des produits NON exoneres (livret bancaire, compte a terme, PEL et CEL ouverts depuis 2018). La decomposition impot sur le revenu / prelevements sociaux et l option pour le bareme relevent du role impots, fichier revenus-financiers.md. La fiche compte a terme affiche une decomposition differente : ne pas la reprendre sans recoupement."
+    }
+  },
+  "taux_administre": {
+    "revisions_par_an": {
+      "valeur": 2,
+      "unite": "revisions par an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043114027",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Arrete du 27 janvier 2021 : la Banque de France calcule les taux les 15 janvier et 15 juillet ; les nouveaux taux s appliquent a compter du 16 du mois de publication ou du premier jour du mois suivant. ⇒ Le taux d un livret reglemente NE SE NEGOCIE PAS : il est le meme dans toutes les banques."
+    },
+    "taux_plancher_du_livret_a": {
+      "valeur": 0.5,
+      "unite": "pourcentage annuel",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043114027",
+      "date_verifiee": "2026-08-17",
+      "note": "Le taux du livret A est le plus eleve entre la moyenne arithmetique de la moyenne semestrielle de l ESTR et de l inflation francaise, et 0,5 %."
+    },
+    "majoration_du_lep_sur_le_livret_a": {
+      "valeur": 0.5,
+      "unite": "point de pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043114027",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Formule du LEP : le plus eleve entre le taux du livret A majore d un demi-point et l inflation en France. Le LEP est donc structurellement mieux remunere que le livret A - et sous-souscrit."
+    },
+    "qui_fixe": {
+      "valeur": "Banque de France pour le calcul, gouverneur pour l avis et la derogation, ministre charge de l economie par arrete",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043114027",
+      "date_verifiee": "2026-08-17",
+      "note": "La Banque de France calcule et transmet au directeur general du Tresor, qui fait proceder a la publication. En circonstances exceptionnelles, le gouverneur transmet un avis au ministre charge de l economie et les taux peuvent etre maintenus a leur niveau anterieur. Le taux publie s impose a tous les etablissements distributeurs."
+    }
+  },
+  "garantie_des_depots": {
+    "plafond_par_deposant_par_etablissement": {
+      "valeur": 100000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031396841",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Arrete du 27 octobre 2015, article 7, en vigueur au 17/08/2026 : le plafond d indemnisation par deposant est de 100 000 euros, applique au MONTANT CUMULE des comptes crediteurs d un meme deposant aupres du MEME etablissement de credit. ⇒ Multiplier les comptes dans la meme banque ne multiplie RIEN."
+    },
+    "plafond_separe_pour_l_epargne_reglementee": {
+      "valeur": 100000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031396841",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ TROUVAILLE PRINCIPALE : les livrets A, LDDS et livrets d epargne populaire font l objet d une indemnisation SEPAREE dans la limite d un plafond propre de 100 000 euros, distinct du plafond commun. Une meme banque peut donc couvrir deux enveloppes de 100 000 euros pour une meme personne."
+    },
+    "depots_exceptionnels_temporaires": {
+      "valeur": {
+        "rehaussement_plafond_euros": 500000,
+        "duree_mois": 3
+      },
+      "unite": "euros et mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031396841",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 9 : toute somme constituant un depot a caractere exceptionnel et temporaire ouvre droit a un rehaussement du plafond dans la limite de 500 000 euros pendant trois mois - vente immobiliere, succession ou donation, reparation en capital, prestation de retraite, indemnite de rupture du contrat de travail. Pour les sommes reparant un dommage corporel, le plafond est rehausse du montant de ces sommes."
+    },
+    "delai_d_indemnisation": {
+      "valeur": 7,
+      "unite": "jours ouvrables",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031396841",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 11 : sept jours ouvrables a compter de la date a laquelle le college de supervision fait le constat de l indisponibilite des depots. Le point de depart n est PAS la fermeture des guichets ni la demande du deposant."
+    },
+    "comptes_joints": {
+      "valeur": "repartis entre les cotitulaires a parts egales, sauf stipulation contractuelle prevoyant une autre cle de repartition",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031396841",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 6 : chaque cotitulaire est indemnise sur SA part et dans SON propre plafond, la part venant s ajouter a ses comptes personnels. Les comptes demembres sont indemnises entre les mains de l usufruitier, independamment de ses droits propres."
+    },
+    "marques_commerciales_et_agrement_unique": {
+      "valeur": null,
+      "unite": "sans objet",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Le plafond se compte par etablissement de credit. Savoir si deux marques commerciales d un meme groupe partagent un seul agrement - donc un seul plafond - se verifie dans le Regafi de l ACPR, site inaccessible ce jour (HTTP 403). Ne rien affirmer avant cette verification."
+    }
+  },
+  "garantie_des_titres": {
+    "plafond_instruments_financiers": {
+      "valeur": 70000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000049330539",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ MECANISME DISTINCT de la garantie des depots. Arrete du 18 mars 2024, article 7 : 70 000 euros par beneficiaire, sur le montant cumule des avoirs aupres d un meme etablissement adherent, quel que soit le nombre de comptes. ⛔ Ce plafond ne couvre PAS la perte de valeur d un titre, seulement son indisponibilite."
+    },
+    "plafond_depots_especes_lies": {
+      "valeur": 70000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000049330539",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond distinct de 70 000 euros par beneficiaire pour les depots en especes lies a un service d investissement."
+    },
+    "delai_d_indemnisation": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000049330539",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 12 : deux mois a compter de la date a laquelle le Fonds de garantie des depots et de resolution a etabli l eligibilite et le montant de la creance. Beaucoup plus long que les sept jours ouvrables de la garantie des depots."
+    }
+  },
+  "garantie_assurances_de_personnes": {
+    "plafond_general": {
+      "valeur": 70000,
+      "unite": "euros de provisions techniques",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073984/LEGISCTA000006159161",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ TROISIEME mecanisme, encore different : article R423-7 du code des assurances, version en vigueur depuis le 24/02/2004. Le fonds de garantie des assures contre la defaillance de societes d assurance de personnes reconstitue les provisions jusqu a concurrence d un montant de 70 000 euros. ⛔ L assurance-vie n est couverte NI par la garantie des depots NI par celle des titres."
+    },
+    "plafond_rentes": {
+      "valeur": 90000,
+      "unite": "euros de provisions techniques",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073984/LEGISCTA000006159161",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond porte a 90 000 euros pour les rentes d incapacite ou d invalidite et les rentes resultant de contrats d assurance en cas de deces. Le code de la mutualite retient le meme montant a son article R432-7."
+    }
+  },
+  "frais_pea": {
+    "plafond_frais_ouverture": {
+      "valeur": 10,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006169757",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-111-1 CMF, 1o, verbatim : les frais afferents a l ouverture, notamment les frais de dossier, ne peuvent exceder un montant de 10 euros. Version de l article affichee : 15/07/2021. C est un PLAFOND legal, pas un tarif de marche."
+    },
+    "plafond_tenue_de_compte_pourcentage": {
+      "valeur": 0.4,
+      "unite": "pourcentage annuel de la valeur des titres",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006169757",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-111-1 CMF, 2o : tenue de compte et garde, ou gestion du contrat si le plan prend la forme d un contrat de capitalisation. Le pourcentage s ajoute a un forfait par ligne, voir plafond_tenue_de_compte_par_ligne."
+    },
+    "plafond_tenue_de_compte_par_ligne": {
+      "valeur": {
+        "titres_cotes_ou_unite_de_compte": 5,
+        "titres_non_admis_aux_negociations": 25
+      },
+      "unite": "euros par an et par ligne",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006169757",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-111-1 CMF, 2o, verbatim : 5 euros par ligne de titres detenus ou par unite de compte, ou 25 euros pour une ligne ou pour une unite de compte correspondant a des titres qui ne sont pas admis aux negociations sur une plateforme de negociation. ★ Le plafond est donc pourcentage + forfait par ligne : multiplier les lignes coute."
+    },
+    "plafond_frais_transaction": {
+      "valeur": {
+        "voie_dematerialisee": 0.5,
+        "tout_autre_moyen": 1.2
+      },
+      "unite": "pourcentage du montant de l operation",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006169757",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-111-1 CMF, 3o, verbatim : 0,5 % du montant de l operation lorsque celle-ci est effectuee par voie dematerialisee, et 1,2 % lorsque celle-ci est effectuee par tout autre moyen. ★ Passer un ordre par telephone ou au guichet peut donc couter plus du double d un ordre en ligne."
+    },
+    "plafond_frais_transfert_et_cloture": {
+      "valeur": {
+        "par_ligne_titres_cotes": 15,
+        "par_ligne_titres_non_admis_aux_negociations": 50,
+        "plafond_global": 150
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006169757",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-111-1 CMF, 4o, verbatim : 15 euros par ligne de titres detenus transferee, montant pouvant etre porte a 50 euros pour une ligne correspondant a des titres qui ne sont pas admis aux negociations sur une plateforme de negociation ; l ensemble des frais est plafonne a 150 euros. ★★ C est ce plafond qui rend le changement d etablissement praticable sans fermer le plan."
+    },
+    "champ_des_plafonds": {
+      "valeur": "PEA et PEA destine au financement des PME et ETI uniquement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006169757",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L article D221-111-1 s ouvre par : pour l application du III de l article L. 221-32. Il ne vise que le PEA et le PEA-PME-ETI. ⚠ Nous n avons trouve AUCUN plafond equivalent pour le compte-titres ordinaire : meme courtier, meme ordre, plafonne dans un PEA, non plafonne dans un CTO."
+    },
+    "entree_en_vigueur_plafonds": {
+      "valeur": "1er juillet 2020",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/actualites-publications/actualites/plafonnement-des-frais-pour-le-pea-que-faut-il-retenir",
+      "date_verifiee": "2026-08-17",
+      "note": "AMF, page du 10/07/2020 : depuis le 1er juillet 2020, certains frais lies au PEA sont plafonnes ; issu de la loi Pacte. ⚠ Page ancienne, le texte de reference reste l article D221-111-1 CMF."
+    }
+  },
+  "frais_assurance_vie": {
+    "plafond_frais_entree_et_versement": {
+      "valeur": "5 % des primes versees sur l annee (affirme par la fiche service-public, base legale non retrouvee)",
+      "unite": "pourcentage annuel des primes versees",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15268",
+      "date_verifiee": null,
+      "note": "⚠ La fiche F15268 (page du 21/11/2025) ecrit : le montant annuel des frais a l entree et sur versement ne peut pas exceder 5 % des primes versees sur l annee. Nous avons cherche ce plafond dans les sections du code des assurances que la fiche elle-meme cite (A132-1 a A132-9-6 et R132-2 a R132-5-7) : il n y figure pas, et la fiche ne nomme aucun article. Le seul plafond au meme pourcentage trouve dans ces sections porte sur l indemnite de rachat (article R132-5-3), qui est autre chose. ⇒ NE PAS presenter ce plafond comme une protection acquise : lire le tableau des frais du contrat."
+    },
+    "categories_du_tableau_standard": {
+      "valeur": "frais d ouverture, frais de gestion, frais de versement, frais d arbitrage, frais de rachat",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15268",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Les assureurs doivent afficher les frais de leurs contrats sur leur site internet dans un tableau standard qui regroupe les frais par categorie. Les points de suspension de la fiche indiquent que la liste n est pas limitative. C est l information la plus actionnable du fichier : elle est publique, consultable AVANT tout rendez-vous."
+    },
+    "publication_annuelle_par_unite_de_compte": {
+      "valeur": "performance brute de frais de gestion, performance nette de frais de gestion, montant des frais, performance finale nette",
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15268",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L assureur precise ces elements pour CHAQUE unite de compte. ⇒ l ecart entre la ligne brute et la ligne nette EST le cout, mesure, support par support. C est le seul endroit ou le lecteur voit le prelevement au lieu de le deduire."
+    },
+    "historique_publie": {
+      "valeur": 5,
+      "unite": "annees (moyenne annualisee)",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15268",
+      "date_verifiee": "2026-08-17",
+      "note": "Depuis 2025, les donnees publiees couvrent le dernier exercice clos et la moyenne annualisee sur 5 ans. ⚠ Une moyenne annualisee n est pas une prevision, voir performances_passees."
+    },
+    "frais_negociables": {
+      "valeur": "frais de versement : non systematiques, proportionnels au montant des versements et negociables",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/assurance-vie",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF, page du 06/04/2022 : negociables. C est l AMF elle-meme qui le dit, donc la question se pose sans complexe. ⚠ Page de plus de six mois, a recouper."
+    },
+    "cumul_enveloppe_et_support": {
+      "valeur": "frais de gestion du contrat + frais de gestion sur OPC preleves par la societe de gestion",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/assurance-vie",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Deux etages qui ne figurent pas sur le meme document : l assureur facture la gestion du contrat, la societe de gestion facture la gestion du fonds. Un mandat de gestion ajoute un troisieme etage. Aucun releve ne les additionne spontanement."
+    }
+  },
+  "information_sur_les_frais": {
+    "dic_rubrique_couts": {
+      "valeur": "Que va me couter cet investissement ?",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/comparer-les-frais/placements-financiers-quelle-information-sur-les-frais",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : la rubrique Que va me couter cet investissement ? presente l impact des couts sur le rendement du placement. C est le titre exact a chercher dans le document d informations cles."
+    },
+    "dic_echelle_de_risque": {
+      "valeur": "de 1 a 7",
+      "unite": "niveau",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15268",
+      "date_verifiee": "2026-08-17",
+      "note": "Le document d information cle (DIC) permet de comparer les produits et y classe le niveau de risque de 1 a 7. ⛔ Un niveau bas n est pas une garantie de capital."
+    },
+    "information_avant_signature": {
+      "valeur": "par ecrit, suffisamment tot avant toute signature, en pourcentage et en montant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/comparer-les-frais/placements-financiers-quelle-information-sur-les-frais",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : le conseiller doit fournir a son client, par ecrit, et suffisamment tot avant toute signature, le detail des frais ; toutes ces informations sont fournies en pourcentage (%) et en montant (euros). Obligation issue de MIF 2, en vigueur depuis le 3 janvier 2018. ⇒ un refus de fournir le detail par ecrit est en soi un signal."
+    },
+    "information_periodique": {
+      "valeur": "au minimum chaque annee pendant la duree de vie de l investissement, et sur demande du client",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/comparer-les-frais/placements-financiers-quelle-information-sur-les-frais",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : si le client le demande, le detail des frais est fourni. Le droit ne s epuise pas a la souscription, il se redemande."
+    },
+    "encadre_assurance_vie": {
+      "valeur": "une page au maximum, en tete de proposition d assurance, de projet de contrat ou de notice, contenu limitatif",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031773778",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article A132-8 du code des assurances (version affichee : 01/01/2016), verbatim : l encadre mentionne a l article L. 132-5-2 est place en tete de proposition d assurance, de projet de contrat, ou de notice ; sa taille ne depasse pas une page et il contient, de facon limitative, les informations suivantes. Le texte y raisonne en montant ou pourcentage maximum. ⛔ Cet article ne fixe AUCUN plafond de frais."
+    },
+    "cumul_frais_produit_et_service": {
+      "valeur": "les frais de fonctionnement du placement collectif s ajoutent aux frais du service rendu par l intermediaire",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/les-frais-des-placements-financiers/comprendre-les-frais-des-placements-financiers",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF, page du 18/10/2023 : quand il s agit d un placement collectif, ce produit a ses propres frais de fonctionnement, qui s ajoutent aux frais lies au service rendu par l intermediaire. C est la phrase qui fonde tout le fichier."
+    },
+    "offres_sans_frais": {
+      "valeur": "ecart entre prix d achat et prix de vente, qualite d execution, frais d inactivite, frais de transfert",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/les-frais-des-placements-financiers/investir-en-bourse-sans-payer-de-frais",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ AMF, page du 15/12/2021 : derriere le zero commission, rien n est jamais gratuit ; certains appliquent une difference entre le prix d achat d une action et son prix de vente, et la qualite d execution des ordres compte egalement. ⇒ un cout peut exister sans porter le nom de frais."
+    }
+  },
+  "gestion_sous_mandat": {
+    "obligation_de_transparence_du_mandat": {
+      "valeur": "l ensemble des couts et frais directs et indirects a la charge du mandant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/mandat-de-gestion",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF (page du 27/01/2016) : le mandat doit mentionner l ensemble des couts et frais directs et indirects a la charge du mandant, et chaque annee le gestionnaire communique un recapitulatif personnalise et consolide de l ensemble des couts et charges ayant impacte la performance du portefeuille. ⚠ Page ancienne, a recouper."
+    },
+    "retrocessions_a_reverser": {
+      "valeur": "interdiction de conserver les commissions sur encours des placements collectifs depuis le 3 janvier 2018",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/mandat-de-gestion",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : le mandataire ne peut plus recevoir et conserver les commissions sur encours des placements collectifs dans lesquels le portefeuille est investi ; s il en percoit, il doit les reverser au client. ⇒ question ecrite a poser : avez-vous percu des commissions sur encours, et me les avez-vous reversees ?"
+    },
+    "suppression_commissions_de_mouvement": {
+      "valeur": {
+        "nouveaux_mandats": "1er janvier 2027",
+        "mandats_existants": "1er janvier 2028"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/actualites-publications/actualites/frais-lamf-annonce-la-suppression-des-commissions-de-mouvement-pour-la-gestion-sous-mandat",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ AMF, page du 04/04/2025. Commissions de mouvement = frais percus par le gerant ou des parties liees a l occasion d operations d achat ou de vente portant sur le portefeuille, en plus des frais d intermediation. L AMF les supprime en raison de risques inherents de conflits d interets puisque leur volume depend de la decision du beneficiaire sur le volume de transaction. ⇒ tant qu elles existent, elles sont a chercher ligne par ligne dans le releve."
+    }
+  },
+  "performances_passees": {
+    "mention_reglementaire": {
+      "valeur": "Les performances passees ne prejugent pas des performances futures",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/les-performances-passees-ne-prejugent-pas-des-performances-futures-pourquoi-cette-mention-0",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Mention obligatoire dans la communication sur les placements. ⚠ Page AMF du 13/02/2015, ancienne, a recouper. Elle explique que les epargnants accordent trop d importance aux rendements passes et que les performances passees doivent toujours etre equilibrees par une information sur les risques."
+    },
+    "duree_de_comparaison_recommandee": {
+      "valeur": "5 a 10 ans minimum",
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/les-performances-passees-ne-prejugent-pas-des-performances-futures-pourquoi-cette-mention-0",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ AMF, page du 13/02/2015 : une belle performance sur un an ne doit pas etre extrapolee ; il faut considerer des periodes plus longues correspondant a la duree recommandee du placement. ⛔ Ce n est pas une duree de detention conseillee a quiconque, c est la duree sur laquelle une performance affichee devient lisible."
+    },
+    "asymetrie_frais_rendement": {
+      "valeur": "les frais sont connus avant la signature, le rendement ne l est jamais",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/lexique-simulateurs-et-outils-pratiques/nos-simulateurs/quel-est-limpact-des-frais-sur-le-rendement-annuel-espere-de-mon-placement",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L ANGLE DU FICHIER. L AMF ecrit : lorsque vous investissez dans des produits financiers, differents types de frais peuvent vous etre factures, et les frais ont un impact non negligeable sur le rendement final. Le simulateur officiel de l AMF prend en entree le versement initial, les versements mensuels, la duree, le taux de rendement BRUT et les frais - autrement dit le rendement y est une hypothese saisie par l utilisateur, les frais une soustraction appliquee."
+    },
+    "mention_reglementaire_bis": {
+      "valeur": "Les performances passees ne prejugent pas des performances futures",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/les-performances-passees-ne-prejugent-pas-des-performances-futures-pourquoi-cette-mention",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Mention citee verbatim par l AMF, page dediee. ⚠ Page du 13/02/2015 : ancienne, a recouper. La BASE LEGALE exacte de la mention n a pas pu etre lue (voir base_legale_de_la_mention)."
+    },
+    "base_legale_de_la_mention": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Le texte europeen qui impose l avertissement (reglement delegue sur les communications a caractere promotionnel) n a PAS pu etre lu : EUR-Lex renvoie une page vide a WebFetch le 17/08/2026 et le document est tronque avant l article. ⛔ Ne pas citer de numero d article ni de paragraphe avant de l avoir lu."
+    },
+    "duree_de_lecture_des_performances": {
+      "valeur": {
+        "min": 5,
+        "max": 10
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/les-performances-passees-ne-prejugent-pas-des-performances-futures-pourquoi-cette-mention",
+      "date_verifiee": "2026-08-17",
+      "note": "L AMF conseille de regarder les performances sur des durees longues, au moins 5 a 10 ans pour les actions, et de regarder le risque EN MEME TEMPS que le rendement. ⚠ Page du 13/02/2015, a recouper."
+    },
+    "rendement_eleve_egale_risque_eleve": {
+      "valeur": "toujours",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/les-performances-passees-ne-prejugent-pas-des-performances-futures-pourquoi-cette-mention",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : un potentiel de rendement eleve s accompagne toujours d un risque eleve. Corollaire verbatim du guide AMF de mars 2023 : les produits associant rendements extraordinaires et securite absolue sont des leurres. ⇒ un rendement GARANTI eleve n est pas une bonne affaire, c est un signal d alerte : voir arnaques-financieres.md."
+    },
+    "visa_amf_n_est_pas_une_recommandation": {
+      "valeur": "pas une recommandation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2023-03/INVESTIR_VOTRE_EPARGNE_2023_DEF_0.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim guide AMF (mars 2023) : Le visa ou l agrement de l AMF ne constitue pas une recommandation de souscrire un produit, ni de participer a une operation ou de choisir un intermediaire agree plutot qu un autre. Croyance fausse tres repandue."
+    }
+  },
+  "immobilier_et_financier": {
+    "emoluments_notaire_bareme_metropole": {
+      "valeur": {
+        "tranche_0_a_6500_eur_pct": 3.87,
+        "tranche_6500_a_17000_eur_pct": 1.596,
+        "tranche_17000_a_60000_eur_pct": 1.064,
+        "au_dela_de_60000_eur_pct": 0.799
+      },
+      "unite": "pourcentage du prix, par tranche",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17701",
+      "date_verifiee": "2026-08-17",
+      "note": "Bareme applicable depuis le 1er janvier 2021, page mise a jour le 05/08/2026. ★ C est la SEULE partie des frais d acquisition qui soit un tarif public et connu d avance : la remuneration du notaire. Elle est degressive : 0,799 pour cent au dela de 60 000 EUR. ⚠ Elle ne represente PAS l essentiel des frais dits de notaire : les droits et taxes reverses au Tresor public s y ajoutent et dominent le total. TVA de 20 pour cent en sus sur les emoluments."
+    },
+    "frais_acquisition_total_pourcentage_du_prix": {
+      "valeur": null,
+      "unite": "pourcentage du prix",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17701",
+      "date_verifiee": null,
+      "note": "★ TROU ASSUME. Aucune des pages officielles consultees le 17/08/2026 (service-public F2962, F17701, R54267, ANIL frais annexes) ne publie un pourcentage TOTAL de frais d acquisition, ni pour l ancien ni pour le neuf. Le chiffre couramment cite ne vient donc pas d une source officielle verifiee ici. ⇒ ne jamais l annoncer : renvoyer au simulateur ANIL reference par service-public (R54267), qui calcule departement par departement."
+    },
+    "droits_de_mutation_taux_departemental": {
+      "valeur": null,
+      "unite": "pourcentage du prix",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2962",
+      "date_verifiee": null,
+      "note": "Les droits d enregistrement et la taxe de publicite fonciere sont collectes par le notaire et reverses au Tresor public (F2962, page du 20/06/2025). ⚠ Le taux comporte une part DEPARTEMENTALE : il varie donc selon le lieu du bien et peut changer d une annee sur l autre. Non trouve sur les pages officielles fetchees le 17/08/2026 ⇒ a lire dans le code general des impots ou via le simulateur ANIL, jamais de memoire."
+    },
+    "scpi_seuil_de_blocage_du_marche_des_parts": {
+      "valeur": {
+        "duree_ordres_de_vente_en_attente_mois": 12,
+        "part_des_parts_emises_pct": 10,
+        "delai_de_convocation_ag_extraordinaire_mois": 2
+      },
+      "unite": "mois et pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027810952",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L214-93 II du code monetaire et financier, version en vigueur depuis le 28/07/2013. VERBATIM : « Lorsque la societe de gestion constate que les ordres de vente inscrits depuis plus de douze mois sur le registre mentionne au I representent au moins 10 % des parts emises par la societe, elle en informe sans delai l Autorite des marches financiers. » et « La meme procedure est applicable au cas ou les demandes de retrait non satisfaites dans un delai de douze mois representent au moins 10 % des parts. » puis AG extraordinaire dans les deux mois pour proposer la cession partielle ou totale du patrimoine. ⇒ la loi a PREVU le cas ou l on ne peut pas sortir : la liquidite n est pas garantie."
+    },
+    "scpi_baisse_maximale_du_prix_de_la_part_proposee_a_l_ag": {
+      "valeur": 30,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027810944",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L214-95 du code monetaire et financier, version en vigueur depuis le 28/07/2013. VERBATIM : « La societe de gestion propose a l assemblee generale, apres audition du rapport des commissaires aux comptes, soit la diminution du prix de la part sous reserve que celui-ci ne soit pas diminue de plus de 30 %, soit la cession partielle ou totale du patrimoine. » ⇒ c est la sortie de crise legale quand le marche des parts est bloque, et elle se paie par le porteur."
+    },
+    "scpi_delai_de_retrait_prevu_par_les_statuts": {
+      "valeur": null,
+      "unite": "jours ou mois",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027810952",
+      "date_verifiee": null,
+      "note": "Le delai concret dans lequel une demande de retrait est servie n est pas fixe par la loi : il depend des statuts, de la note d information et de la tresorerie de la SCPI. Non verifie ici (les pages pedagogiques de l AMF n ont pas pu etre fetchees, recherche du site en JavaScript). ⇒ le lecteur doit le lire dans le document d information du produit, pas nous l inventer."
+    },
+    "opci_proportions_minimales_d_actifs": {
+      "valeur": null,
+      "unite": "pourcentage de l actif",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049876919",
+      "date_verifiee": null,
+      "note": "⚠ PIEGE VERIFIE LE 17/08/2026. Le resume automatique de la page de recherche Legifrance annoncait 60 pour cent d actifs immobiliers et 10 pour cent d actifs liquides ; la lecture de l article L214-36 lui-meme (version en vigueur depuis le 05/07/2024) montre qu il ENUMERE les actifs eligibles et ne fixe AUCUN pourcentage. Les proportions vivent dans la partie reglementaire du code monetaire et financier, non lue ici. ⇒ ne rien chiffrer sur l OPCI."
+    },
+    "plus_value_immobiliere_duree_de_detention_pour_exoneration": {
+      "valeur": {
+        "impot_sur_le_revenu_ans": 22,
+        "prelevements_sociaux_ans": 30
+      },
+      "unite": "annees de detention",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Page mise a jour le 15/04/2026. Abattement pour duree de detention : exoneration totale d impot sur le revenu a 22 ans, exoneration des prelevements sociaux a 30 ans. ★ Cite ici uniquement comme HORIZON : l immobilier locatif a une horloge de detention longue, ce qui n a pas d equivalent pour un titre financier. Le detail fiscal appartient au role impots, fichier immobilier-fiscal.md."
+    },
+    "residence_principale_exoneration_de_plus_value": {
+      "valeur": "exoneration totale",
+      "unite": "sans objet",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Vous etes totalement exonere si vous realisez une plus-value sur la vente de votre residence principale et de ses dependances. » ★ Ne pas en deduire que la residence principale est un placement : elle ne verse aucun revenu, elle economise un loyer et coute des charges. Conditions et cas particuliers = role impots, immobilier-fiscal.md."
+    },
+    "dpe_interdiction_de_louer_classes_g_et_f": {
+      "valeur": {
+        "classe_g": "1er janvier 2025",
+        "classe_f": "1er janvier 2028"
+      },
+      "unite": "date d entree en vigueur",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A17975",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 03/01/2025, donc de plus de six mois, a recouper. VERBATIM : « a compter du 1er janvier 2025, les logements etiquetes G sur le DPE sont consideres comme non decents » et « a compter du 1er janvier 2028, les logements etiquetes F sur le DPE sont consideres comme non decents ». L interdiction vise les contrats signes, renouveles ou reconduits tacitement a compter de la date. ★ Un actif immobilier peut donc cesser legalement de produire un revenu par decision reglementaire. Detail et outre-mer = role logement, bail-et-location.md."
+    },
+    "dpe_interdiction_de_louer_classe_e": {
+      "valeur": 2034,
+      "unite": "annee annoncee",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A17975",
+      "date_verifiee": null,
+      "note": "La page A17975 mentionne l echeance 2034 pour la classe E, mais ce point n a pas ete obtenu en citation verbatim comme pour G et F. ⇒ a recouper avant d etre annonce a quelqu un qui decide sur cette base."
+    },
+    "indivision_majorite_pour_les_actes_de_gestion_courante": {
+      "valeur": "2/3",
+      "unite": "fraction des droits indivis",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1296",
+      "date_verifiee": "2026-08-17",
+      "note": "Page mise a jour le 16/04/2026. VERBATIM : « La decision doit etre prise a la majorite des 2/3 des droits indivis » pour un acte de gestion courante. ★★ Mais la VENTE du bien immobilier releve des actes les plus importants : « La decision doit etre prise a l unanimite. » ⇒ un seul indivisaire bloque la vente. Sortir de sa propre part reste possible a tout moment (ceder ses droits ou demander le partage), ce qui n est pas la meme chose que faire vendre le bien."
+    }
+  },
+  "releve_de_carriere": {
+    "age_demande_correction_carriere": {
+      "valeur": 55,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/R46083",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Consulter votre releve de carriere et, a partir de 55 ans, en demander si necessaire la correction ». Le releve se CONSULTE a tout age ; c est la demande de CORRECTION par le service en ligne qui n ouvre qu a 55 ans. ⚠ Consequence : verifier tot, garder les preuves, corriger a 55 ans - ne pas attendre 55 ans pour REGARDER."
+    },
+    "age_entretien_information_retraite": {
+      "valeur": 45,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17904",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM : « Vous pouvez beneficier d un entretien a partir de 45 ans. » Droit gratuit, tres peu utilise, et disponible dix ans avant l ouverture du service de correction en ligne."
+    },
+    "delai_demande_retraite": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13941",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Vous devez faire votre demande de retraite au moins 5 mois avant la date de depart souhaitee. » Demande UNIQUE en ligne transmise a toutes les caisses de base et complementaires. ⚠ page verifiee le 01/09/2025, a recouper."
+    },
+    "pieces_justificatives_regularisation": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17904",
+      "date_verifiee": null,
+      "note": "⚠ AUCUNE liste officielle de justificatifs de regularisation n est publiee sur les pages fetchees : ni F17904, ni R46083, ni F13941 (qui renvoie a un outil personnalise « Mes justificatifs »). Ne pas inventer de liste. Le seul point source est que les bulletins de salaire se conservent jusqu a la liquidation."
+    }
+  },
+  "trimestres": {
+    "revenu_validation_un_trimestre": {
+      "valeur": {
+        "heures_smic": 150,
+        "montant_brut_euros": 1803.0
+      },
+      "unite": "euros de revenu brut soumis a cotisation par trimestre valide",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1761",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Depuis 2014, le revenu minimum qui permet de valider 1 trimestre est egal au montant du Smic horaire brut en vigueur au 1er janvier de l annee multiplie par 150 heures, soit 1 803,00 €. » ⚠ Le montant suit le Smic donc il CHANGE chaque annee : page verifiee au 01/01/2026."
+    },
+    "trimestre_independant_du_temps_travaille": {
+      "valeur": "revenu, pas duree",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1761",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « La validation d un trimestre ne depend pas de la duree effective du travail mais des revenus percus et plus exactement du montant des revenus soumis a cotisation. » ⇒ un temps plein mal paye peut valider moins qu un mi-temps bien paye, et une annee entiere de petite activite peut ne valider aucun trimestre."
+    },
+    "trimestres_max_par_an": {
+      "valeur": 4,
+      "unite": "trimestres par annee civile",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1761",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Le nombre de trimestres d assurance est limite a 4 par annee civile. » ★ Corollaire : concentrer tout son revenu sur une seule annee ne fait pas gagner de trimestres - le plafond est annuel."
+    },
+    "maladie_jours_par_trimestre": {
+      "valeur": 60,
+      "unite": "jours d indemnisation par trimestre valide",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1761",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « 1 trimestre est valide pour chaque periode d indemnisation de 60 jours » (arret maladie ou accident du travail indemnise)."
+    },
+    "maternite_jours_par_trimestre": {
+      "valeur": 90,
+      "unite": "jours d indemnisation par trimestre valide",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1761",
+      "date_verifiee": "2026-08-17",
+      "note": "Periode de maternite indemnisee. ⚠ Distinct des majorations pour enfant, qui s ajoutent."
+    },
+    "service_national_jours_par_trimestre": {
+      "valeur": 90,
+      "unite": "jours d incorporation par trimestre valide",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1761",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Service national : 1 trimestre est valide pour 90 jours d incorporation. » ★ Oubli classique du releve : aucun employeur ne l a declare, la preuve est l etat signaletique des services."
+    },
+    "conge_parental_jours_par_trimestre": {
+      "valeur": 90,
+      "unite": "jours par trimestre valide",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16336",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Les periodes passees en conge parental sont prises en compte de date a date. Un trimestre est valide a la fin de chaque periode de 90 jours. »"
+    },
+    "chomage_indemnise_jours_par_trimestre": {
+      "valeur": 50,
+      "unite": "jours de chomage par trimestre valide",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31249",
+      "date_verifiee": "2026-08-17",
+      "note": "1 trimestre pour 50 jours de chomage indemnise, consecutifs ou non, dans la limite de 4 par an. ⚠ page verifiee le 28/08/2025, a recouper."
+    },
+    "chomage_non_indemnise_premiere_periode": {
+      "valeur": {
+        "mois": 18,
+        "trimestres": 6
+      },
+      "unite": "duree maximale prise en compte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31249",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Une PREMIERE periode de chomage jamais indemnisee compte quand meme, jusqu a 18 mois soit 6 trimestres (regime applicable depuis 2011 ; 12 mois soit 4 trimestres avant). Presque personne ne le sait, et ces trimestres manquent souvent au releve. ⚠ page du 28/08/2025, a recouper."
+    },
+    "chomage_non_indemnise_apres_indemnisation": {
+      "valeur": {
+        "annees_cas_general": 1,
+        "annees_si_55_ans_et_20_ans_cotises": 5
+      },
+      "unite": "annees prises en compte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31249",
+      "date_verifiee": "2026-08-17",
+      "note": "Periode non indemnisee qui SUIT une periode indemnisee : 1 an en general, portee a 5 ans a partir de 55 ans avec au moins 20 ans de cotisation. ⚠ page du 28/08/2025, a recouper."
+    },
+    "majoration_par_enfant": {
+      "valeur": {
+        "maternite_ou_adoption": 4,
+        "education": 4,
+        "total": 8
+      },
+      "unite": "trimestres par enfant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16336",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM : « 4 trimestres sont accordes en contrepartie de l incidence sur la vie professionnelle de la maternite » et « 4 trimestres sont aussi accordes en contrepartie de l education de l enfant ». Soit 8 trimestres par enfant. ⚠ ce sont deux majorations DISTINCTES, l une peut apparaitre au releve sans l autre."
+    },
+    "majoration_pension_trois_enfants": {
+      "valeur": 10,
+      "unite": "% de majoration de la pension de base",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16336",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Si vous avez eu au moins 3 enfants, le montant de votre pension de retraite de l Assurance retraite est majore de 10 % »."
+    },
+    "minimum_trimestres_pour_pension": {
+      "valeur": 1,
+      "unite": "trimestre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21551",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM : « Pour avoir droit a une pension de retraite de l Assurance retraite, il faut avoir cotise au moins 1 trimestre en tant que salarie. » ⇒ demonte la croyance qu il faudrait un seuil de trimestres pour toucher quelque chose. ⚠ page du 28/08/2025, a recouper."
+    },
+    "seuil_remboursement_cotisations": {
+      "valeur": 9,
+      "unite": "trimestres",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21551",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « si vous avez moins de 9 trimestres d assurance retraite, vous pouvez demander le remboursement de vos cotisations retraite (salarie et employeur) actualisees au 1er janvier de l annee de votre demande ». ⚠ page du 28/08/2025, a recouper."
+    },
+    "chomage_non_indemnise_apres_indemnisation_bis": {
+      "valeur": {
+        "annees_cas_general": 1,
+        "annees_si_conditions_remplies": 5,
+        "age_requis_pour_le_cas_long": 55,
+        "annees_cotisees_requises": 20
+      },
+      "unite": "annees prises en compte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31249",
+      "date_verifiee": "2026-08-17",
+      "note": "Periode non indemnisee qui SUIT une periode indemnisee : 1 an en general, portee a 5 ans a partir de 55 ans avec au moins 20 ans de cotisation. ⚠ page du 28/08/2025, a recouper."
+    },
+    "majoration_pension_trois_enfants_bis": {
+      "valeur": {
+        "pourcentage": 10,
+        "enfants_minimum": 3
+      },
+      "unite": "% de majoration de la pension de base",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16336",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Si vous avez eu au moins 3 enfants, le montant de votre pension de retraite de l Assurance retraite est majore de 10 % »."
+    }
+  },
+  "age_et_duree": {
+    "age_legal_par_generation": {
+      "valeur": {
+        "1958_a_1960": "62 ans",
+        "1961_du_1er_janvier_au_31_aout": "62 ans",
+        "1961_du_1er_septembre_au_31_decembre": "62 ans et 3 mois",
+        "1962": "62 ans et 6 mois",
+        "du_1er_janvier_1963_au_31_mars_1965": "62 ans et 9 mois",
+        "du_1er_avril_1965_au_31_decembre_1965": "63 ans",
+        "1966": "63 ans et 3 mois",
+        "1967": "63 ans et 6 mois",
+        "1968": "63 ans et 9 mois",
+        "a_partir_du_1er_janvier_1969": "64 ans"
+      },
+      "unite": "age legal minimum de depart",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14043",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CE CALENDRIER N EST PAS CELUI DE LA REFORME DE 2023 : la LFSS 2026 (loi 2025-1403 du 30 decembre 2025) SUSPEND le relevement, d ou le palier long de 62 ans et 9 mois qui couvre 1963 jusqu a mars 1965. ⛔ Toute table memorisee avant 2026 est fausse. Page F14043 verifiee le 14/08/2026 ; table identique sur F35063."
+    },
+    "duree_assurance_requise_par_generation": {
+      "valeur": {
+        "1958_a_1960": 167,
+        "1961_du_1er_janvier_au_31_aout": 168,
+        "1961_du_1er_septembre_au_31_decembre": 169,
+        "1962": 169,
+        "du_1er_janvier_1963_au_31_mars_1965": 170,
+        "du_1er_avril_1965_au_31_decembre_1965": 171,
+        "1966_et_apres": 172
+      },
+      "unite": "trimestres requis pour le taux plein",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35063",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Table de F35063 (verifiee au 01/01/2026), colonne des ages identique a F14043. Corroboration independante : l exemple de F19643 parle d une personne « nee en avril 1965 ayant les 171 trimestres requis ». 172 trimestres = 43 ans."
+    },
+    "suspension_reforme_retraites": {
+      "valeur": {
+        "prise_d_effet": "1er septembre 2026",
+        "suspension_jusqu_en": 2028,
+        "generations_concernees": "1964 a 1968"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18825",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ « Le relevement de l age legal de depart en retraite et l augmentation de la duree d assurance » sont suspendus jusqu en 2028 (LFSS 2026, loi 2025-1403 du 30 decembre 2025), a effet du 1er septembre 2026. Les 64 ans ne s appliquent qu a partir de la generation 1969. Actualite publiee le 27/02/2026. ⚠ un dispositif suspendu peut etre repris : re-verifier avant toute decision de depart."
+    },
+    "age_taux_plein_automatique": {
+      "valeur": 67,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35063",
+      "date_verifiee": "2026-08-17",
+      "note": "★ A 67 ans le taux plein est acquis « quel que soit votre nombre de trimestres » : plus aucune decote. ⚠ MAIS taux plein n est pas montant maximum - la proratisation par les trimestres manquants s applique toujours."
+    },
+    "salaire_annuel_moyen_annees": {
+      "valeur": 25,
+      "unite": "meilleures annees retenues",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21552",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le revenu annuel moyen se calcule sur les 25 annees les plus avantageuses. ⇒ un SALAIRE mal reporte au releve coute autant qu un trimestre manquant s il tombe dans ces 25 annees. Le releve ne se relit donc pas seulement en trimestres."
+    },
+    "duree_assurance_requise_par_generation_bis": {
+      "valeur": {
+        "1958_a_1960": 167,
+        "1961_du_1er_janvier_au_31_aout": 168,
+        "1961_du_1er_septembre_au_31_decembre": 169,
+        "1962": 169,
+        "du_1er_janvier_1963_au_31_mars_1965": 170,
+        "du_1er_avril_1965_au_31_decembre_1965": 171,
+        "1966_et_apres": 172
+      },
+      "unite": "trimestres requis pour le taux plein",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35063",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Table de F35063 (verifiee au 01/01/2026), colonne des ages identique a F14043. Corroboration independante : l exemple de F19643 parle d une personne « nee en avril 1965 ayant les 171 trimestres requis »."
+    }
+  },
+  "decote_surcote": {
+    "taux_plein_base": {
+      "valeur": 50,
+      "unite": "% du revenu annuel moyen",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36464",
+      "date_verifiee": "2026-08-17",
+      "note": "Formule VERBATIM : « Salaire annuel brut moyen x 50 % x Votre nombre de trimestres valides par l Assurance retraite / Le nombre de trimestres d assurance retraite exige pour avoir une retraite a taux plein »."
+    },
+    "taux_plein_different_du_taux_maximum": {
+      "valeur": "distinction",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36464",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Vous pouvez avoir une retraite a taux plein et pour autant ne pas avoir une retraite au taux maximum possible. » Taux plein = sans decote. Le ratio trimestres valides / trimestres exiges continue de reduire le montant. ⇒ c est LA raison economique de corriger un trimestre manquant meme quand on partira a 67 ans."
+    },
+    "decote_par_trimestre_manquant": {
+      "valeur": 0.625,
+      "unite": "% de minoration du taux par trimestre manquant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19666",
+      "date_verifiee": "2026-08-17",
+      "note": "Le taux de 50 % est reduit de 0,625 point par trimestre manquant. Le nombre de trimestres manquants retenu est le PLUS PETIT des deux comptages : jusqu a 67 ans, ou jusqu a la duree requise."
+    },
+    "decote_trimestres_max": {
+      "valeur": 20,
+      "unite": "trimestres",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19666",
+      "date_verifiee": "2026-08-17",
+      "note": "La decote est plafonnee a 20 trimestres. Page verifiee au 01/01/2026."
+    },
+    "surcote_par_trimestre": {
+      "valeur": 1.25,
+      "unite": "% de majoration par trimestre civil entier supplementaire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19643",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Chaque trimestre civil entier travaille supplementaire augmente votre retraite de 1,25 %. » ⚠ Deux conditions CUMULATIVES : avoir depasse l age legal ET avoir depasse la duree requise. Seuls les trimestres CIVILS ENTIERS comptent."
+    }
+  },
+  "independants": {
+    "cipav_ca_validation_trimestres_2026": {
+      "valeur": {
+        "un_trimestre": 2792,
+        "deux_trimestres": 5584,
+        "trois_trimestres": 8376,
+        "quatre_trimestres": 11168
+      },
+      "unite": "euros de chiffre d affaires annuel",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23369",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Seuils 2026 pour un micro-entrepreneur en profession liberale affiliee a la Cipav. ⚠ C EST LE SEUL TABLEAU DE CA de la page : ne pas transposer aux activites de vente ou de prestation de services BIC, dont les seuils sont differents car le taux de cotisation differe. Page verifiee au 01/04/2026."
+    },
+    "micro_entrepreneur_ca_vente_et_bic": {
+      "valeur": null,
+      "unite": "euros de chiffre d affaires annuel",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23369",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME : les seuils de CA validant 1 a 4 trimestres pour la vente de marchandises et les prestations de services BIC n ont pas ete trouves sur une page officielle fetchee. Ne pas les recalculer soi-meme a partir du taux de cotisation : renvoyer l usager a son compte urssaf ou a son releve de carriere."
+    },
+    "ca_nul_aucun_droit": {
+      "valeur": 0,
+      "unite": "trimestre valide si chiffre d affaires nul",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23369",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Si vous ne realisez pas de chiffre d affaires, vous ne versez pas de cotisations sociales et vous n obtenez donc pas de droits a la retraite au titre de cette activite. » ⇒ une micro-entreprise ouverte plusieurs annees sans CA laisse un TROU COMPLET au releve, alors que la personne se croit couverte parce qu elle etait « en activite »."
+    },
+    "cotisation_minimale_trimestres_acquis": {
+      "valeur": 3,
+      "unite": "trimestres acquis via la cotisation minimale de retraite de base",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33841",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « En cas de revenus faibles ou deficitaires, il est possible de payer une cotisation minimale de retraite de base pour acquerir 3 trimestres. » Levier quasi inconnu de l independant a faibles revenus. ⚠ 3 et non 4 : la cotisation minimale ne fait JAMAIS une annee pleine. Page verifiee au 13/05/2026."
+    },
+    "cotisation_minimale_montant": {
+      "valeur": null,
+      "unite": "euros par an",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33841",
+      "date_verifiee": null,
+      "note": "⚠ Le montant annuel de la cotisation minimale de retraite de base n a pas pu etre repris en citation exacte de la page : non ecrit comme un fait. A recouper sur urssaf.fr avant tout chiffrage."
+    }
+  },
+  "per_mecanique": {
+    "per_nombre_de_compartiments": {
+      "valeur": 3,
+      "unite": "compartiments",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Versements volontaires du titulaire / epargne salariale et versements de l employeur / cotisations obligatoires. ⚠ Les regles de sortie ne sont pas les memes selon le compartiment - c est la vraie complexite du produit. Page verifiee au 18/06/2026."
+    },
+    "per_deblocage_residence_principale": {
+      "valeur": "possible sauf versements obligatoires",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Achat de la residence principale (mais, dans ce cas, les droits issus de versements obligatoires restent bloques). » ⇒ le motif le plus attendu du PER ne couvre PAS tout le contrat."
+    },
+    "per_versements_obligatoires_sortie_rente": {
+      "valeur": "rente uniquement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « L epargne issue des versements obligatoires dans un PER d entreprise est versee uniquement sous forme de rente. » ⇒ pas de capital possible sur ce compartiment, quelle que soit la somme."
+    },
+    "per_deblocage_invalidite_categories": {
+      "valeur": {
+        "categories": "2e ou 3e"
+      },
+      "unite": "categorie d invalidite ouvrant le deblocage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Invalidite de 2e ou 3e categorie du titulaire, de ses enfants, de son epoux ou epouse, ou de son partenaire de Pacs."
+    },
+    "per_deblocage_fin_droits_chomage_mandataire": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Cessation de la fonction de mandataire social « depuis au moins 2 ans sans contrat de travail et sans liquidation de pension dans un regime obligatoire d assurance vieillesse ». ⚠ L expiration des droits a l assurance chomage est, elle, un motif sans condition de duree."
+    },
+    "per_frais_transfert": {
+      "valeur": {
+        "plafond_pourcentage": 1,
+        "gratuit_apres_annees": 5
+      },
+      "unite": "% de l epargne accumulee / annees de detention",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM : « Le transfert est gratuit si vous avez detenu le produit pendant au moins 5 ans. Si vous avez detenu le produit moins de 5 ans, les frais de transfert peuvent vous etre factures, dans la limite de 1% de l epargne accumulee. » ⇒ un PER trop charge n est pas une prison, il est transferable ; le cout du transfert est plafonne."
+    },
+    "per_deblocage_invalidite_categories_bis": {
+      "valeur": "2e ou 3e categorie",
+      "unite": "categorie d invalidite ouvrant le deblocage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Invalidite de 2e ou 3e categorie du titulaire, de ses enfants, de son epoux ou epouse, ou de son partenaire de Pacs."
+    }
+  },
+  "rachat_de_trimestres": {
+    "rachat_trimestres_maximum": {
+      "valeur": 12,
+      "unite": "trimestres, tous motifs confondus",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15675",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Seuls 12 trimestres au total peuvent etre rachetes » (etudes superieures, annees civiles incompletes, sportif de haut niveau, mandats locaux). Page verifiee au 01/01/2026."
+    },
+    "rachat_age_conditions": {
+      "valeur": {
+        "age_minimum": 20,
+        "age_maximum": 67
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15675",
+      "date_verifiee": "2026-08-17",
+      "note": "Rachat d annees d etudes ou d annees incompletes : « au moins 20 ans et moins de 67 ans »."
+    },
+    "rachat_stages_delai": {
+      "valeur": {
+        "duree_minimale_du_stage_mois": 2,
+        "delai_pour_demander_annees": 2,
+        "limite_age": "31 decembre de l annee du 30e anniversaire"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15675",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ UN DROIT QUI SE PERD : le rachat d un stage en entreprise se demande « dans les 2 ans » suivant la fin du stage et « au plus tard le 31 decembre de l annee de votre 30e anniversaire ». Passe ce cap, il est definitivement ferme - a dire a un jeune diplome, pas a un futur retraite."
+    },
+    "rachat_stages_delai_bis": {
+      "valeur": {
+        "duree_minimale_du_stage_mois": 2,
+        "delai_pour_demander_annees": 2,
+        "age_limite": 30
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15675",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ UN DROIT QUI SE PERD : le rachat d un stage en entreprise se demande « dans les 2 ans » suivant la fin du stage et « au plus tard le 31 decembre de l annee de votre 30e anniversaire ». Passe ce cap, il est definitivement ferme - a dire a un jeune diplome, pas a un futur retraite."
+    }
+  },
+  "conservation_des_preuves": {
+    "bulletins_de_salaire": {
+      "valeur": "jusqu a la liquidation de la retraite",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A17655",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Vos bulletins de salaire doivent, pour leur part, etre conserves jusqu a ce que vous ayez fait valoir vos droits a toucher une pension aupres des differentes caisses de retraite ». ⇒ c est la piece qui permet de gagner une regularisation ; sans elle on demande a l administration de croire une declaration. Actualite publiee le 10/06/2026."
+    }
+  },
+  "expatriation": {
+    "detache_ou_expatrie": {
+      "valeur": "regimes distincts",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34071",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le DETACHE garde son contrat francais et continue de cotiser en France. L EXPATRIE releve du pays d accueil : periodes prises en compte dans l UE, l EEE, la Suisse et le Royaume-Uni, ou via convention bilaterale ; sans convention, elles ne comptent PAS sauf cotisation volontaire (CFE pour la base). ⚠ page verifiee le 01/09/2025, a recouper. Renvoyer au Cleiss."
+    },
+    "cfe_condition_cotisation_prealable": {
+      "valeur": 6,
+      "unite": "mois de cotisation prealable a l Assurance retraite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34071",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition citee pour adherer a l assurance volontaire vieillesse de la Caisse des Francais de l etranger : « avoir cotise 6 mois a l Assurance retraite avant votre depart ». ⚠ page du 01/09/2025, a recouper."
+    }
+  },
+  "horizon_de_placement": {
+    "horizon_court_terme": {
+      "valeur": 3,
+      "unite": "ans (moins de)",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/fixer-son-horizon-de-placement",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Le court terme pour une duree de moins de 3 ans, le moyen terme pour une duree allant souvent de 3 a 10 ans et le long terme pour une duree de plus de 10 ans. ⚠ Page AMF du 19/10/2018, a recouper."
+    },
+    "horizon_moyen_terme": {
+      "valeur": {
+        "min": 3,
+        "max": 10
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/fixer-son-horizon-de-placement",
+      "date_verifiee": "2026-08-17",
+      "note": "Bornes AMF du moyen terme. ★ Ce sont des reperes de vocabulaire, PAS une recommandation de duree : l horizon se deduit du projet, pas de la grille."
+    },
+    "horizon_long_terme": {
+      "valeur": 10,
+      "unite": "ans (plus de)",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/fixer-son-horizon-de-placement",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil AMF du long terme. Verbatim de la meme page : duree, disponibilite et potentiel de rendement vont de pair."
+    },
+    "duree_minimale_placement_actions": {
+      "valeur": {
+        "minimum": 5,
+        "raisonnable": 10
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/volatilite-des-placements-ce-quil-faut-savoir",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Les placements en actions doivent etre envisages a long-terme, au moins sur 5 ans, et plus raisonnablement sur 10 ans et plus. ⚠ Page du 09/09/2016, a recouper. ⛔ Ce n est pas une recommandation d investir en actions."
+    },
+    "echelle_risque_dic": {
+      "valeur": {
+        "min": 1,
+        "max": 7
+      },
+      "unite": "niveaux",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2023-03/INVESTIR_VOTRE_EPARGNE_2023_DEF_0.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim guide AMF Investir votre epargne etape par etape (mars 2023) : Le document d informations cles (DIC) presente le profil de risque et de rendement du produit sous la forme d une echelle de 1 a 7. ★ Deux produits notes pareil ne portent pas forcement les MEMES risques - l echelle agrege, elle ne detaille pas la liquidite."
+    }
+  },
+  "liquidite": {
+    "delai_epargne_immediatement_disponible": {
+      "valeur": "immediat",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/placements-que-savoir-sur-la-liquidite",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : L epargne la plus liquide est celle qui reste sur votre compte courant car il vous est tres facile de la retirer immediatement et sans frais. Page du 10/07/2024."
+    },
+    "delai_assurance_vie_et_epargne_salariale": {
+      "valeur": "quelques jours a quelques semaines",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/placements-que-savoir-sur-la-liquidite",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : il faut quelques jours a quelques semaines pour recuperer son argent. ★ Donc meme un placement repute disponible n est pas un compte courant : entre la demande et le virement il y a un delai, et une urgence ne l attend pas."
+    },
+    "delai_cession_titres_non_cotes": {
+      "valeur": "plusieurs mois",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/placements-collectifs/capital-investissement-fcpr-fcpi-fip",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Les fonds de capital-investissement investissent dans des titres de societes non cotees, qui par definition ne sont pas liquides. N etant pas negociables, leur cession necessite plusieurs mois. Page du 23/02/2023."
+    },
+    "fcpr_duree_de_vie_sans_rachat_possible": {
+      "valeur": 10,
+      "unite": "ans (voire plus)",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/placements-collectifs/capital-investissement-fcpr-fcpi-fip",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : il est impossible d obtenir le rachat de vos parts de FCPR pendant la duree de vie du fonds (qui peut aller jusqu a 10 ans, voire plus). C est LE cas ou la liquidite fait des degats : un divorce ou un licenciement n attend pas la dissolution du fonds."
+    },
+    "decote_du_vendeur_presse": {
+      "valeur": "prix inferieur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/placements-que-savoir-sur-la-liquidite",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : un vendeur presse peut etre contraint de vendre ses titres a un prix inferieur pour trouver preneur. Deuxieme facon de perdre par illiquidite : non pas ne pas pouvoir sortir, mais sortir a decote."
+    }
+  },
+  "risque": {
+    "perte_en_capital": {
+      "valeur": "tout ou partie du capital",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/placements-collectifs/trackers-etf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Vous pouvez donc perdre tout ou partie du capital investi. Page ETF du 11/06/2026 (recente)."
+    },
+    "volatilite_actions_variation_annuelle_observee": {
+      "valeur": {
+        "de": 20,
+        "a": 30
+      },
+      "unite": "pourcent par an",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/risques-et-rendements-des-placements/volatilite-des-placements-ce-quil-faut-savoir",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Avec les placements en actions, il n est pas rare de constater des baisses ou des hausses superieures a 20 ou 30 % en une annee. ⚠ Page du 09/09/2016, a recouper. Sert a rendre CONCRETE la question de la tolerance a la baisse."
+    },
+    "volatilite_actions_pays_emergents": {
+      "valeur": 20,
+      "unite": "pourcent par an (peut couramment depasser)",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/conseils-pratiques/diversifier-ses-placements",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : la volatilite d un fonds d actions de pays emergents peut couramment depasser 20 % par an. Montre que la diversification REDUIT le risque sans le supprimer. ⚠ Page du 08/07/2016, a recouper."
+    },
+    "risque_de_credit_ou_de_defaut": {
+      "valeur": "solvabilite de l emetteur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/actions-obligations/obligations/comprendre-les-obligations-avant-dinvestir",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Le risque de defaut est le risque lie a la solvabilite de l entite qui a emis les titres. Dans le cas d une defaillance de l emetteur, vous pouvez perdre une partie voire la totalite du capital investi. ★ Meme page : Un taux d interet eleve a l emission de l obligation denote un risque eleve. Page du 18/10/2018."
+    },
+    "risque_de_taux": {
+      "valeur": "sens inverse des taux",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/actions-obligations/obligations/comprendre-les-obligations-avant-dinvestir",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : La valeur d une obligation varie en sens inverse des taux d interet : elle monte si les taux baissent et vice-versa. Vous pouvez donc perdre de l argent si vous revendez votre obligation avant son echeance alors que les taux d interet ont monte. Croyance fausse a demonter : obligation ne veut pas dire capital garanti si l on revend avant l echeance."
+    },
+    "risque_de_change": {
+      "valeur": "devise etrangere",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/placements-collectifs/trackers-etf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF (ETF) : Pour les ETF cotes en devise etrangere (dollar, livre sterling, etc.), il faut prendre en compte le risque de change. Confirme sur la page obligations : Le risque de change s ajoute si vous choisissez des obligations dans une autre devise que la votre."
+    },
+    "risque_de_contrepartie": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Les pages AMF fetchees le 17/08/2026 ne DEFINISSENT pas le risque de contrepartie sous ce nom. Deux verbatims l approchent : ETF a replication synthetique - Il passe un contrat financier d echange de performance (un swap) ; CFD - chaque CFD est un contrat passe entre un intermediaire et un investisseur. A verifier sur une definition AMF dediee ou sur le lexique AMF (page en JavaScript, non fetchable ici)."
+    }
+  },
+  "epargne_de_precaution": {
+    "fonction": {
+      "valeur": "immediatement disponible pour les imprevus",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/definir-son-objectif",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : une epargne immediatement disponible pour faire face, ponctuellement, aux imprevus. Et : Avant tout, il est recommande de constituer une epargne de precaution. ⚠ Page du 19/10/2018, a recouper."
+    },
+    "repere_en_mois_de_revenus": {
+      "valeur": {
+        "min": 2,
+        "max": 3
+      },
+      "unite": "mois de revenus",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/definir-son-objectif",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Une fois cette epargne constituee (2 ou 3 mois de revenus), vous pouvez reflechir a vos projets. ⚠ C est un REPERE porte par une page AMF de 2018, pas une regle de droit ni un montant a atteindre pour tout le monde. ⛔ Ne pas le presenter comme une obligation."
+    },
+    "anteriorite_sur_les_placements": {
+      "valeur": "prealable a tout placement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2023-03/INVESTIR_VOTRE_EPARGNE_2023_DEF_0.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim guide AMF (mars 2023) : Possedez-vous une epargne disponible suffisante avant d investir en bourse (via des fonds, des actions, obligations...) ? Veillez a conserver une epargne de precaution. Sa fonction n est pas de rapporter, c est d empecher de casser un placement au pire moment."
+    }
+  },
+  "questionnaire_adequation": {
+    "informations_que_le_professionnel_doit_recueillir": {
+      "valeur": "objectifs, situation, connaissances et experience, durabilite",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim guide AMF (juillet 2023, page web MAJ 26/02/2024) : votre intermediaire doit obligatoirement s assurer que le produit ou le service qu il vous propose est adapte a votre situation financiere, a vos objectifs, a votre horizon de placement, au niveau de risque que vous pouvez prendre ainsi qu a vos connaissances et a votre experience financieres. Ces obligations s appliquent egalement si vous lui avez confie la gestion de votre portefeuille de titres."
+    },
+    "valeur_en_cas_de_litige": {
+      "valeur": "piece a decharge pour l epargnant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : En cas de litige, vous beneficiez d une meilleure protection. Par exemple, la responsabilite de votre intermediaire pourrait etre invoquee s il vous a fait souscrire des produits manifestement trop risques alors que vos reponses a ses questions vous definissaient comme adepte des placements sans risque. ⇒ Exagerer sa tolerance au risque pour acceder a un produit DETRUIT sa propre protection."
+    },
+    "consequence_du_refus_de_repondre": {
+      "valeur": "pas de conseil, investissements sous la seule responsabilite du client",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : Vous avez le droit de ne pas repondre aux questions de votre intermediaire financier. Mais si vous ne le faites pas, il ne pourra pas vous delivrer de conseil et les investissements executes a votre demande le seront sous votre seule responsabilite."
+    },
+    "execution_sans_conseil": {
+      "valeur": "aucune verification d adequation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : votre intermediaire n est pas tenu de vous poser des questions, ni sur votre objectif d investissement et votre situation financiere, ni sur vos connaissances et experience financieres. Il doit alors vous informer qu il ne verifiera pas si cet investissement vous convient. ⇒ Personne ne verifie que cela vous convient quand vous agissez de votre propre initiative sur des produits non complexes."
+    },
+    "devoir_d_alerte_produits_complexes": {
+      "valeur": "mise en garde prealable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : S il conclut que vous n avez pas les connaissances et l experience suffisantes, il doit vous mettre en garde prealablement a l execution du service demande : c est son devoir d alerte. Vous pourrez ne pas le prendre en compte en decidant d investir, mais cela relevera de votre entiere responsabilite."
+    },
+    "auto_evaluation_des_connaissances_interdite": {
+      "valeur": "interdit",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Verbatim AMF : IL NE DOIT PAS VOUS ETRE DEMANDE D EVALUER VOUS-MEME VOS CONNAISSANCES SUR UN PRODUIT, PAR EXEMPLE EN VOUS DEMANDANT SI VOUS ESTIMEZ BIEN OU MAL LE CONNAITRE. ★ Un questionnaire construit ainsi n est pas conforme : c est un signal a relever."
+    },
+    "droit_au_scenario_defavorable": {
+      "valeur": "obligation du professionnel",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim AMF : Afin de vous permettre de prendre la mesure de la perte possible lors d un placement risque, votre intermediaire financier doit envisager avec vous l evolution de vos investissements dans le cas d un scenario defavorable. C est le seul moyen de rendre la tolerance a la baisse CONCRETE - et ca se demande."
+    },
+    "mise_a_jour_des_informations": {
+      "valeur": "obligation continue",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2024-02/pourquoi-mon-banquier-me-pose-t-il-toutes-ces-questions-2024.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim AMF : Votre intermediaire est tenu de mettre regulierement ces informations a jour, notamment en cas de changement de situation (familiale, personnelle ou professionnelle). ★ Un changement de vie doit declencher une revision - c est exactement le moment ou la liquidite devient le sujet."
+    },
+    "base_legale_du_test_d_adequation": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. L obligation est etablie par le guide AMF fetche, mais l article precis du code monetaire et financier (test d adequation) n a PAS ete lu sur Legifrance le 17/08/2026 : WebSearch epuise et l URL Legifrance de l article n a pas ete trouvee sans deviner. Ne pas citer de numero d article avant verification."
+    }
+  },
+  "ou_se_renseigner": {
+    "amf_epargne_info_service": {
+      "valeur": "01 53 45 62 00",
+      "unite": "numero de telephone",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2023-03/INVESTIR_VOTRE_EPARGNE_2023_DEF_0.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Numero d AMF Epargne Info Service, verbatim dans le guide AMF de mars 2023 (prix d un appel local) et repete dans le guide de juillet 2023. Sert notamment a verifier l agrement d un interlocuteur."
+    },
+    "documents_a_exiger_avant_de_signer": {
+      "valeur": "DIC et prospectus",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/sites/institutionnel/files/private/2023-03/INVESTIR_VOTRE_EPARGNE_2023_DEF_0.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim guide AMF : Lisez-les : c est important. Si vous n avez pas obtenu ces documents, reclamez-les ! Ne cochez pas la case indiquant que vous avez recu la documentation obligatoire si ce n est pas le cas. Le DIC porte la duree de placement recommandee et l echelle de risque."
+    }
+  },
+  "surendettement": {
+    "delai_decision_recevabilite": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "3 mois a compter du DEPOT pour decider de la recevabilite. Pendant l examen le depot ne suspend rien automatiquement : on reste tenu des depenses courantes ET des credits, avec interdiction d en souscrire de nouveaux."
+    },
+    "delai_orientation_dossier": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1946",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Si la commission n a pas oriente le dossier dans les 3 mois, le taux des emprunts en cours est ramene au taux legal pour les 3 mois suivants sauf decision contraire. Aucun creancier ne le signale."
+    },
+    "duree_max_suspension_procedures_execution": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032224534/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code de la consommation L722-3, en vigueur depuis le 01/01/2018 : « Cette suspension et cette interdiction ne peuvent exceder deux ans. » La suspension court jusqu a l approbation du plan, la decision imposant les mesures ou le jugement de retablissement personnel."
+    },
+    "delai_recours_decision_recevabilite": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34642",
+      "date_verifiee": "2026-08-17",
+      "note": "15 jours apres notification, par declaration signee : le creancier conteste la recevabilite, le debiteur conteste une IRRECEVABILITE. Delai court, droit perdu si passe."
+    },
+    "delai_contestation_mesures_imposees": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1947",
+      "date_verifiee": "2026-08-17",
+      "note": "30 jours a compter de la notification, par ecrit signe adresse au secretariat de la commission. Ne pas confondre avec les 15 jours du recours sur la recevabilite."
+    },
+    "duree_max_plan_et_mesures": {
+      "valeur": 7,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1947",
+      "date_verifiee": "2026-08-17",
+      "note": "Reechelonnement sur 7 ans maximum, plan conventionnel « ne peut pas depasser 7 ans » ; exception pour les prets de la residence principale ou pour eviter sa vente. Confirme par F16982."
+    },
+    "duree_max_report_paiement": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1947",
+      "date_verifiee": "2026-08-17",
+      "note": "Report du paiement des dettes pendant 2 ans au maximum, SAUF dettes alimentaires. Mesure imposable par la commission sans accord des creanciers."
+    },
+    "duree_max_suspension_expulsion": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31604",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L expulsion n est PAS suspendue automatiquement par la recevabilite : il faut une saisine du juge (locataire, president de la commission ou representant Banque de France, formulaire cerfa 15930). Suspension jusqu a la mise en place d une mesure, 2 ans maximum. Croire que le dossier protege le logement est l erreur la plus couteuse du sujet."
+    },
+    "epaisseur_dossier_remise_guichet": {
+      "valeur": 3,
+      "unite": "cm",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "Piege materiel : au dela de 3 cm d epaisseur le dossier ne part pas par courrier, remise au guichet obligatoire."
+    },
+    "formulaire_depot_dossier": {
+      "valeur": "13594",
+      "unite": "numero cerfa",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "Formulaire cerfa 13594 a remplir et signer, avec justificatifs (identite, ressources, depenses, dettes, patrimoine) et lettre expliquant les causes. Depot en ligne par teleservice ou par courrier a la Banque de France."
+    },
+    "formulaire_suspension_expulsion": {
+      "valeur": "15930",
+      "unite": "numero cerfa",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31604",
+      "date_verifiee": "2026-08-17",
+      "note": "Formulaire cerfa 15930 pour demander au juge la suspension de l expulsion en cas d urgence. ⛔ Pour le proprietaire, la decision de suspension n est pas susceptible de recours."
+    },
+    "gratuite_procedure": {
+      "valeur": "gratuit",
+      "unite": "cout",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/N99",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « vous pouvez deposer gratuitement un dossier de surendettement ». Sans avocat, et « un travailleur social (ou assistante sociale) peut vous aider a faire votre dossier ». ⛔ Payer une societe pour monter le dossier revient a acheter ce qui est gratuit."
+    },
+    "telephone_information_banque_de_france": {
+      "valeur": {
+        "numero": "34 14",
+        "jours": "du lundi au vendredi",
+        "horaires": "de 8 h a 18 h",
+        "cout": "prix d un appel local, non surtaxe"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "Numero d information de la Banque de France sur le surendettement, tel que cite par la fiche service-public."
+    },
+    "reste_a_vivre_plancher": {
+      "valeur": "montant forfaitaire du RSA",
+      "unite": "plancher legal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032224474/2016-07-01/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Code de la consommation L731-2, en vigueur depuis le 01/07/2016 : la part des ressources necessaire aux depenses courantes du menage « ne peut etre inferieure au montant forfaitaire mentionne a l article L. 262-2 du code de l action sociale et des familles ». Elle integre logement, energie, eau, nourriture, scolarite, garde, deplacements professionnels, frais de sante. ⚠ Le montant du RSA change chaque annee : renvoyer a la source, ne jamais le citer de memoire."
+    },
+    "dettes_non_effacables": {
+      "valeur": "caution ou coobligé, alimentaire, amendes penales, dommages-interets aux victimes, pret sur gage, fraude sociale",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16978",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le retablissement personnel efface les dettes SAUF celles-la. Consequence majeure : l effacement du debiteur n efface RIEN pour la personne qui s est portee caution, elle reste tenue."
+    }
+  },
+  "ficp": {
+    "duree_inscription_incident_paiement": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Jusqu a 5 ans pour un incident de paiement caracterise, radiation anticipee si on regularise."
+    },
+    "duree_inscription_plan_ou_mesures": {
+      "valeur": {
+        "duree_ans": 7,
+        "reduite_ans": 5
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "7 ans en cas de plan conventionnel ou de mesures imposees, reductible a 5 ans si aucun nouvel incident."
+    },
+    "duree_inscription_retablissement_personnel": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "5 ans a compter de la cloture, avec ou sans liquidation judiciaire."
+    },
+    "seuils_inscription": {
+      "valeur": {
+        "echeances_consecutives_impayees": 2,
+        "retard_echeance_non_mensuelle_jours": 60,
+        "decouvert_autorise_euros": 500,
+        "delai_regularisation_decouvert_jours": 60
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Motifs d inscription. Inscription AUTOMATIQUE aussi en cas de depot d un dossier de surendettement."
+    },
+    "effet_sur_acces_au_credit": {
+      "valeur": "pas une interdiction",
+      "unite": "portee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « En principe, votre inscription au FICP ne vous interdit pas d obtenir un credit. » Le FICP n est pas une interdiction bancaire. La consultation de sa propre inscription est GRATUITE (en ligne, en agence, par courrier) : premier geste face a un refus inexplique. Contestation : organisme declarant, puis mediateur, puis CNIL."
+    }
+  },
+  "saisies_et_insaisissable": {
+    "solde_bancaire_insaisissable": {
+      "valeur": 651.69,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1437",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Le montant du SBI est fixe a 651,69 €, quelle que soit votre situation familiale. » Laisse AUTOMATIQUEMENT par la banque, sans aucune demande. Aligne sur le montant forfaitaire du RSA (decret 2025-293 du 29 mars 2025). S applique une fois par saisie, pas chaque mois. ★ Si le compte contient des sommes insaisissables superieures au SBI, c est le montant le PLUS ELEVE qui reste protege. Page du 01/04/2026."
+    },
+    "duree_blocage_compte_apres_saisie": {
+      "valeur": 15,
+      "unite": "jours ouvrables",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1850",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Durant les 15 jours ouvrables qui suivent la signification de la saisie a la banque, votre compte bancaire est bloque. » Aucune operation possible pendant cette periode. Page du 01/04/2026."
+    },
+    "delai_information_du_debiteur": {
+      "valeur": 8,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1850",
+      "date_verifiee": "2026-08-17",
+      "note": "Le commissaire de justice doit informer le debiteur de la signification de la saisie a sa banque dans les 8 jours."
+    },
+    "delai_contestation_saisie_compte": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1850",
+      "date_verifiee": "2026-08-17",
+      "note": "★ 1 mois a compter de l INFORMATION du debiteur, pas de la saisie. Par assignation devant le JUGE DE L EXECUTION, pas aupres de la banque. Les frais du commissaire de justice s ajoutent a la dette."
+    },
+    "revenus_insaisissables": {
+      "valeur": "AAH et majoration pour la vie autonome, Apa, ASS, prime d activite, RSA, indemnites en capital d accident du travail, indemnites de depart pour motif economique",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31185",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le caractere insaisissable ne disparait pas parce que la somme est arrivee sur le compte. Saisissables en revanche : salaires nets, pensions de retraite, indemnites journalieres maladie/maternite/accident du travail, allocations chomage. Page du 01/04/2026."
+    },
+    "bareme_saisie_sur_remuneration": {
+      "valeur": null,
+      "unite": "tranches annuelles",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F115",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Le bareme par tranches de la quotite saisissable et la majoration par personne a charge n ont pas pu etre lus tranche par tranche le 2026-08-17 : ils sont revalorises chaque annee. Ce qui EST verifie : depuis le 1er juillet 2025 la procedure est conduite par un commissaire de justice et non plus par le tribunal, et « la somme versee au salarie ne peut pas etre inferieure au montant du solde bancaire insaisissable (SBI) ». ⛔ Une creance alimentaire echappe aux limites : le revenu saisissable « peut etre saisi dans sa totalite »."
+    }
+  },
+  "credit_consommation": {
+    "montants_du_credit_consommation": {
+      "valeur": {
+        "minimum_euros": 200,
+        "maximum_euros": 75000
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2451",
+      "date_verifiee": "2026-08-17",
+      "note": "Perimetre du credit a la consommation, hors immobilier. Contrat obligatoirement ecrit."
+    },
+    "delai_retractation": {
+      "valeur": 14,
+      "unite": "jours calendaires",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032226164",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Code de la consommation L312-19 : « L emprunteur peut se retracter sans motifs dans un delai de quatorze jours calendaires revolus a compter du jour de l acceptation de l offre de contrat de credit. » L312-21 : un formulaire detachable est joint au contrat. ⇒ La retractation en droit de la consommation en general vit dans le role juriste, droit-de-la-consommation.md."
+    },
+    "delai_remboursement_apres_retractation": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2451",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Se retracter APRES le versement des fonds n est pas gratuit : remboursement dans les 30 jours suivant l envoi de la retractation, PLUS les interets cumules de la date de reception des fonds a celle du remboursement."
+    },
+    "seuil_offre_credit_amortissable_obligatoire": {
+      "valeur": 1000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2471",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Si le montant du credit renouvelable est superieur a 1 000 €, le preteur doit vous proposer egalement une offre de credit amortissable. » Droit a la COMPARAISON, presque jamais mis en avant en caisse. F2436 le confirme. ★ Sur une carte de credit de magasin, « le paiement comptant doit etre le mode de paiement propose en priorite » : l affichage du credit par defaut est signalable a la DGCCRF."
+    },
+    "duree_max_remboursement_credit_renouvelable": {
+      "valeur": {
+        "seuil_euros": 3000,
+        "duree_jusqu_au_seuil_mois": 36,
+        "duree_au_dela_mois": 60
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2436",
+      "date_verifiee": "2026-08-17",
+      "note": "36 mois maximum jusqu a 3 000 €, 60 mois au-dela. Une part minimale du capital doit etre remboursee a CHAQUE echeance, et un releve mensuel doit indiquer le capital restant du et la reserve disponible. Page du 05/12/2025."
+    },
+    "reconduction_credit_renouvelable": {
+      "valeur": {
+        "duree_contrat_ans": 1,
+        "preavis_information_preteur_mois": 3,
+        "delai_pour_refuser_la_reconduction_jours": 20,
+        "inutilisation_declenchant_accord_signe_mois": 12
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2436",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les 12 mois d inutilisation sont une porte de sortie GRATUITE : passe ce delai le preteur doit obtenir un accord signe pour continuer. Refus de reconduction : au plus tard 20 jours calendaires avant l entree en vigueur du nouveau contrat."
+    },
+    "indemnite_max_defaillance": {
+      "valeur": 8,
+      "unite": "pourcent du solde restant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34972",
+      "date_verifiee": "2026-08-17",
+      "note": "En cas de decheance du terme le preteur peut exiger le capital restant du immediatement ; l indemnite est plafonnee a 8 % du solde restant. Page du 05/12/2025."
+    },
+    "duree_max_delai_de_grace_judiciaire": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34972",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Mesure la plus oubliee, et elle existe AVANT le surendettement : le tribunal peut ordonner « une suspension ou reduction des mensualites pouvant aller jusqu a 2 ans ». Pendant cette periode aucune penalite ne s applique et les garanties ne peuvent pas etre saisies."
+    },
+    "indemnite_remboursement_anticipe": {
+      "valeur": {
+        "seuil_euros_sur_12_mois": 10000,
+        "plafond_pourcent_si_moins_d_un_an_restant": 0.5,
+        "plafond_pourcent_si_plus_d_un_an_restant": 1
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2451",
+      "date_verifiee": "2026-08-17",
+      "note": "Au dela de 10 000 € rembourses par anticipation sur 12 mois, le preteur peut reclamer une indemnite plafonnee a 0,5 % si l echeance finale est a moins d un an, 1 % au-dela."
+    },
+    "obligations_du_preteur": {
+      "valeur": "fiche d information precontractuelle normalisee, verification de la solvabilite, consultation des fichiers Banque de France, TAEG inferieur au taux d usure, information annuelle du capital restant du",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2440",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : la banque « est obligee de vous proposer un taux annuel effectif global (TAEG), qui ne depasse pas le taux de l usure » ; elle « consulte egalement les fichiers de la Banque de France pour verifier que vous n etes pas inscrit pour plusieurs incidents de paiements ». ⚠ Les valeurs du taux d usure ne sont PAS reprises : elles changent chaque trimestre et dependent du montant emprunte. Page du 01/07/2026."
+    },
+    "taeg_seul_chiffre_comparable": {
+      "valeur": "interets, frais de dossier, commissions d intermediaire, assurance obligatoire, frais de garantie",
+      "unite": "composantes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2456",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le TAEG est le SEUL chiffre comparable entre deux offres. ⛔ Comparer des mensualites ne compare rien : une mensualite basse s obtient en allongeant la duree. Un TAEG omis ou mal calcule peut conduire le juge a reduire ou supprimer les interets."
+    }
+  },
+  "banque_et_client_en_surendettement": {
+    "plafond_frais_incident_automatique": {
+      "valeur": 25,
+      "unite": "euros par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Plafonnement AUTOMATIQUE des frais d incident pour la personne en situation de surendettement : rien a demander. Des frais au-dela sont a reclamer (reclamation, puis mediateur bancaire : role financement)."
+    },
+    "offre_specifique_clientele_fragile": {
+      "valeur": {
+        "prix_maximum_euros_par_mois": 3,
+        "plafond_frais_euros_par_mois": 20,
+        "plafond_frais_euros_par_an": 200
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "Offre specifique facturee 3 € par mois au maximum : les frais d incident sont alors plafonnes a 20 € par mois et 200 € par an. Contenu minimal : tenue de compte, carte a autorisation systematique, versements et retraits, virements, cheques de banque, acces a distance, alertes de solde, RIB."
+    },
+    "delai_proposition_entretien": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "La banque doit informer PAR ECRIT des nouvelles conditions de fonctionnement du compte et proposer un entretien dans les 6 semaines. ★ Elle ne peut pas fermer le compte sur lequel les revenus sont verses au seul motif du surendettement, pendant toute la procedure."
+    }
+  },
+  "interlocuteurs_gratuits": {
+    "points_conseil_budget_nombre": {
+      "valeur": 500,
+      "unite": "structures",
+      "a_verifier": true,
+      "source": "https://solidarites.gouv.fr/point-conseil-budget-pcb",
+      "date_verifiee": null,
+      "note": "⚠ A RECOUPER. Environ 500 PCB annonces, mais la page date du 09/02/2023 (publiee le 04/06/2020) et n est PAS sur un domaine habituel du depot : elle a ete atteinte depuis le lien de la fiche service-public sur le depot de dossier. Ce qui est cite : « service gratuit labellise par l Etat, pour prevenir le surendettement », « ouverts a tous », conseils « confidentiels, gratuits et personnalises ». ⚠ L annuaire et l URL doivent etre reverifies avant d etre donnes."
+    },
+    "ou_rencontrer_un_travailleur_social": {
+      "valeur": "point conseil budget, CCAS, CAF, mairie, office HLM, services sociaux du departement",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Vous pouvez rencontrer un travailleur social dans un point conseil budget, au CCAS, a la CAF, a la mairie, dans votre office HLM, dans les services sociaux du departement. » ⛔ Tout cela est gratuit."
+    }
+  },
+  "budget_et_epargne_de_precaution": {
+    "regle_chiffree_de_repartition": {
+      "valeur": null,
+      "unite": "aucune",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ TROU ASSUME ET VOLONTAIRE. Aucune regle chiffree de repartition du budget n est ecrite, parce qu AUCUNE source officielle francaise n a pu etre lue le 2026-08-17 : banque-france.fr, mesquestionsdargent.fr, abe-infoservice.fr et economie.gouv.fr ont refuse l acces au serveur. ⛔ Ne pas ecrire « 50/30/20 » : aucune source officielle ne le porte. Ce qui est enonce dans le fichier est de la METHODE sans chiffre : charges fixes / variables / annuelles, et l epargne prelevee AVANT la depense par virement programme le jour du revenu."
+    }
+  },
+  "verification_agrement": {
+    "registre_regafi_refassu": {
+      "valeur": "https://www.regafi.fr/",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://acpr.banque-france.fr/fr/professionnels/vos-outils-et-services/consulter-les-registres/registre-des-agents-financiers-et-des-organismes-dassurance",
+      "date_verifiee": "2026-08-17",
+      "note": "REGAFI (banque, credit, paiement, monnaie electronique) et REFASSU (assurance), tenus par l ACPR, mis a jour QUOTIDIENNEMENT. refassu.fr redirige vers le meme portail. Page ACPR du 27/07/2026."
+    },
+    "registre_orias": {
+      "valeur": "https://www.orias.fr/",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.orias.fr/home/showAdvancedSearch",
+      "date_verifiee": "2026-08-17",
+      "note": "Intermediaires : CIF, ALPSI, COA, MIA, IOBSP (COBSP/MOBSP/MOBSPL/MIOBSP), CIP, IFP. ★ Le moteur distingue le statut Inscrit et Radie : une fiche peut exister ET etre radiee. Recherche avancee : /home/showAdvancedSearch."
+    },
+    "base_geco_amf": {
+      "valeur": "https://geco.amf-france.org/Bio/?formId=GECO",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/faire-les-verifications",
+      "date_verifiee": "2026-08-17",
+      "note": "Base AMF des produits d epargne collective et des societes de gestion : verifier un fonds, une SICAV, une societe de gestion."
+    },
+    "listes_blanches_amf": {
+      "valeur": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches",
+      "date_verifiee": "2026-08-17",
+      "note": "Biens divers, prestataires de services sur crypto-actifs (PSCA), plateformes de financement participatif (PSFP). ⚠ L AMF precise que les enregistrements/agrements ne constituent pas une incitation a investir et que ces offres restent par nature tres risquees. La liste PSFP n est pas mise a jour en temps reel : recouper avec le registre ESMA."
+    },
+    "registres_europeens": {
+      "valeur": {
+        "esma_psfp": "https://registers.esma.europa.eu/publication/searchRegister?core=esma_registers_upreg",
+        "eba_banque": "https://euclid.eba.europa.eu/register/",
+        "eiopa_assurance": "https://register.eiopa.europa.eu/registers/register-of-insurance-undertakings"
+      },
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://acpr.banque-france.fr/fr/professionnels/vos-outils-et-services/consulter-les-registres/registre-des-agents-financiers-et-des-organismes-dassurance",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Passeport europeen (LE/LPS) : un acteur agree dans un autre Etat de l EEE peut exercer en France. Absence du registre francais n est donc PAS a elle seule la preuve d une illegalite ; l ACPR conseille vivement de consulter le registre du pays d origine."
+    },
+    "regle_de_lecture_fiche": {
+      "valeur": "denomination sociale + nom commercial + adresse strictement identiques",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://acpr.banque-france.fr/fr/professionnels/vos-outils-et-services/consulter-les-registres/registre-des-agents-financiers-et-des-organismes-dassurance",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim ACPR : les informations du registre doivent etre STRICTEMENT IDENTIQUES a celles de l etablissement recherche. Verifier aussi les activites autorisees : un agrement ne vaut que pour ce qu il couvre."
+    },
+    "contre_appel_au_siege": {
+      "valeur": "contre-appel au siege sur le numero du registre ou du site officiel",
+      "unite": "geste",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/trading-crypto-actifs-les-differents-types-darnaques-financieres",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim ABE : la verification ne peut se limiter a la consultation unique de registres, il faut effectuer un contre appel au siege pour verifier que la personne qui vous a contacte y travaille bien. ⛔ Jamais sur le numero fourni par l interlocuteur : les escrocs affichent le vrai numero de l etablissement usurpe. Page du 03/03/2025, a recouper."
+    }
+  },
+  "listes_noires": {
+    "nombre_de_listes_acpr_amf": {
+      "valeur": 6,
+      "unite": "listes",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/liste-noire",
+      "date_verifiee": "2026-08-17",
+      "note": "Six listes noires communes ACPR + AMF : credits/livrets/paiements/assurances · Forex · crypto-actifs · produits derives sur crypto-actifs · options binaires · biens divers. Recherche possible par URL, adresse mail ou denomination."
+    },
+    "absence_ne_vaut_pas_autorisation": {
+      "valeur": "l absence d un nom ne vaut jamais autorisation",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/faire-les-verifications",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : ce n est pas parce qu un site est absent de la liste noire qu il est forcement autorise, cette liste est non exhaustive. Et : si la societe ne figure pas sur les listes noires, vous devez tout de meme verifier qu elle dispose des autorisations necessaires."
+    },
+    "frequence_mise_a_jour": {
+      "valeur": "mise a jour reguliere, listes non exhaustives",
+      "unite": "frequence",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-noires-et-mises-en-garde",
+      "date_verifiee": "2026-08-17",
+      "note": "Le tableau AMF portait des entrees datees du 17/08/2026 le jour de la verification. Verbatim AMF : ce tableau et ces listes sont mis a jour regulierement mais ne peuvent etre exhaustifs. REGAFI, lui, est mis a jour quotidiennement."
+    },
+    "ou_consulter": {
+      "valeur": {
+        "abe_liste_commune": "https://www.abe-infoservice.fr/fr/liste-noire",
+        "amf_listes_et_mises_en_garde": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-noires-et-mises-en-garde",
+        "acpr_alertes_arnaques": "https://acpr.banque-france.fr/fr/particuliers/vos-moyens-daction/consulter-les-alertes-arnaques",
+        "amf_test_arnaque": "https://protectepargne.amf-france.org/verifier/suis-je-victime-dune-arnaque"
+      },
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/",
+      "date_verifiee": "2026-08-17",
+      "note": "ABE Info Service est le site commun a l ACPR, l AMF et la Banque de France. ⛔ Ne jamais recopier de nom de societe dans le depot : les listes sont vivantes."
+    }
+  },
+  "faux_livret_epargne": {
+    "rendement_annonce_typique": {
+      "valeur": {
+        "min": 4,
+        "max": 8
+      },
+      "unite": "% par an, annonce comme garanti",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/attention-aux-offres-de-livret-depargne-frauduleuses",
+      "date_verifiee": "2026-08-17",
+      "note": "Fourchette observee par l ACPR dans les fausses offres de livrets, presentees comme sans risque et comme une alternative au Livret A."
+    },
+    "aucune_garantie_par_les_autorites": {
+      "valeur": "l ACPR et la Banque de France ne garantissent aucun produit ni placement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/attention-aux-offres-de-livret-depargne-frauduleuses",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim ABE. ⇒ Toute mention d une garantie par une autorite publique est a elle seule la preuve de l arnaque. Ne pas confondre avec la garantie des depots bancaires, mecanisme distinct et plafonne."
+    },
+    "numero_enregistrement_biens_divers": {
+      "valeur": "numero d enregistrement AMF obligatoire sur le document d information",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/epargne/autres-placements-risque/autres-placements-atypiques-les-verifications-faire",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les offres de biens divers doivent etre enregistrees aupres de l AMF AVANT tout demarchage ou publicite, et le numero doit figurer sur le document d information. Pas de numero = offre non autorisee. Critere : bien tangible identifiable que l on n achete pas directement, en contrepartie d un rendement."
+    }
+  },
+  "delais_contestation_paiement": {
+    "operation_non_autorisee_ue_eee": {
+      "valeur": 13,
+      "unite": "mois a compter de la date de debit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai de contestation d une operation non autorisee ou mal executee quand le compte du beneficiaire est dans l UE ou l EEE. Beaucoup de victimes se croient forcloses au bout de quelques jours. Regime complet dans moyens-de-paiement.md du role financement. Page du 29/07/2026."
+    },
+    "operation_non_autorisee_hors_ue_eee": {
+      "valeur": {
+        "delai": 70,
+        "delai_maximal_contractuel": 120
+      },
+      "unite": "jours a compter de la date de debit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "Hors UE/EEE : 70 jours, portes a 120 jours au maximum si le contrat le prevoit."
+    },
+    "montant_superieur_a_celui_autorise": {
+      "valeur": 8,
+      "unite": "semaines a compter de la date de debit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "Cas ou le montant debite depasse celui que le payeur avait autorise."
+    }
+  },
+  "sanctions_penales": {
+    "escroquerie_base": {
+      "valeur": {
+        "emprisonnement_ans": 5,
+        "amende_euros": 375000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code penal art. 313-1, version en vigueur au 17/08/2026. ★ La TENTATIVE est punie des memes peines (art. 313-3) : il n est pas necessaire d avoir perdu de l argent pour porter plainte."
+    },
+    "escroquerie_aggravee": {
+      "valeur": {
+        "emprisonnement_ans": 7,
+        "amende_euros": 750000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 313-2 : usurpation d une autorite publique, vulnerabilite apparente de la victime, fausse collecte, etc."
+    },
+    "escroquerie_bande_organisee": {
+      "valeur": {
+        "emprisonnement_ans": 10,
+        "amende_euros": 1000000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 313-2. Le meme article prevoit un quantum criminel pour l escroquerie aux allocations en bande organisee, non repris dans le fichier."
+    },
+    "usurpation_identite": {
+      "valeur": {
+        "emprisonnement_ans": 1,
+        "amende_euros": 15000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34800",
+      "date_verifiee": "2026-08-17",
+      "note": "Qualification qui s ajoute souvent a l escroquerie quand le faux conseiller se presente sous le nom d une banque agreee. Page du 10/04/2026. ⚠ L articulation des qualifications releve du penaliste."
+    },
+    "abus_de_faiblesse_base": {
+      "valeur": {
+        "emprisonnement_ans": 3,
+        "amende_euros": 375000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "Personnes protegees : mineurs, personnes agees, malades, handicapees, femmes enceintes, personnes en etat de sujetion psychologique. Page du 03/10/2024, a recouper."
+    },
+    "abus_de_faiblesse_sujetion": {
+      "valeur": {
+        "emprisonnement_ans": 5,
+        "amende_euros": 750000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "Dirigeant d un groupement exercant une sujetion psychologique ou physique."
+    },
+    "abus_de_faiblesse_bande_organisee": {
+      "valeur": {
+        "emprisonnement_ans": 7,
+        "amende_euros": 1000000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "Commis en bande organisee."
+    }
+  },
+  "prescription_et_nullite": {
+    "prescription_plainte_delit": {
+      "valeur": 6,
+      "unite": "ans a compter du jour de l infraction",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1435",
+      "date_verifiee": "2026-08-17",
+      "note": "Delits = 6 ans (contraventions 1 an, crimes 20 ans, non reprises dans le fichier). L escroquerie et l abus de faiblesse sont des delits. Page du 08/07/2026."
+    },
+    "nullite_contrat_abus_de_faiblesse": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Voie civile distincte de la plainte : demander la NULLITE du contrat, ce qui vise l acte et pas seulement l auteur. Pour un mineur le delai part de la majorite, pour un majeur protege du jugement de protection."
+    }
+  },
+  "demarchage_telephonique": {
+    "interdiction_de_principe": {
+      "valeur": "interdit par principe, tous secteurs, depuis le 11 aout 2026",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : a partir du 11 aout, le demarchage telephonique est interdit par principe, pour les entreprises de tous les secteurs d activite. Deux exceptions : appel portant sur un contrat deja conclu, ou accord prealable. ⇒ Un appel non sollicite proposant un placement est deja en infraction AVANT tout examen du produit. Article publie le 21/07/2026, mis a jour le 11/08/2026. Loi 2025-594 du 30/06/2025, decret 2026-662 du 23/07/2026."
+    },
+    "duree_maximale_du_consentement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : cette duree ne peut pas depasser, quoi qu il en soit, un an. Pas de reconduction automatique, revocable a tout moment, y compris oralement."
+    },
+    "plages_horaires_autorisees": {
+      "valeur": {
+        "jours": "du lundi au vendredi",
+        "matin_debut_heures": 10,
+        "matin_fin_heures": 13,
+        "apres_midi_debut_heures": 14,
+        "apres_midi_fin_heures": 20
+      },
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : le demarchage telephonique est permis uniquement du lundi au vendredi, de 10 heures a 13 heures et de 14 heures a 20 heures."
+    },
+    "fin_de_bloctel": {
+      "valeur": "Bloctel cesse d exister a compter du 11 aout 2026",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Ne plus renvoyer vers Bloctel. Le signalement passe par Signal Conso : https://signal.conso.gouv.fr/fr"
+    },
+    "services_financiers_a_distance_signature": {
+      "valeur": "engagement du consommateur seulement apres signature de l offre ecrite",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18754",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ PAS ENCORE EN VIGUEUR : entree en vigueur annoncee au 1er janvier 2027. Verbatim : le consommateur n est engage par cette offre qu apres l avoir signee sur papier ou tout autre support durable. Le reste du dispositif de vente a distance de services financiers s applique depuis le 19/06/2026. Ordonnance 2026-2 et decret 2026-3 du 05/01/2026."
+    },
+    "demarchage_bancaire_et_financier_l341_1": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE ICI : l article L341-1 du code monetaire et financier (definition du demarchage bancaire et financier), les interdits de demarchage sur certains produits et les sanctions n ont pas ete lus article par article. Le sujet appartient au role juriste, fichier activites-reglementees.md. Un trou assume vaut mieux qu une affirmation de memoire."
+    }
+  },
+  "signalement_et_aide": {
+    "amf_epargne_info_service": {
+      "valeur": {
+        "telephone": "01 53 45 62 00",
+        "jours": "du lundi au vendredi",
+        "debut_heures": 9,
+        "fin": "12 h 30"
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/lamf-et-vous/epargne-info-service",
+      "date_verifiee": "2026-08-17",
+      "note": "Produits financiers, marches, arnaques a l investissement. ⛔ Verbatim : l AMF ne pourra jamais vous delivrer un conseil en investissement. ★ Verbatim : l AMF ne contacte pas de sa propre initiative les epargnants par telephone ou messagerie privee. Signalement en ligne : https://www.amf-france.org/fr/signaler-une-arnaque-ou-une-anomalie"
+    },
+    "abe_infoservice_acpr": {
+      "valeur": {
+        "telephone": "34 14",
+        "telephone_etranger_outre_mer": "(+33) 01 73 03 34 04",
+        "jours": "du lundi au vendredi",
+        "debut_heures": 8,
+        "fin_heures": 18
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/qui-sommes-nous/nous-contacter",
+      "date_verifiee": "2026-08-17",
+      "note": "34 14 au prix d un appel local. Banque, credit, livrets, moyens de paiement, assurance : c est le bon guichet quand l AMF n est pas competente. Signaler une escroquerie financiere fait partie des motifs de saisine. Saisine ecrite possible via le portail des demandes en ligne de la Banque de France."
+    },
+    "info_escroqueries": {
+      "valeur": {
+        "telephone": "0 805 805 817",
+        "jours": "du lundi au vendredi",
+        "debut_heures": 9,
+        "fin": "18 h 30"
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1520",
+      "date_verifiee": "2026-08-17",
+      "note": "Service et appel gratuits. Numero confirme deux fois : fiche service-public Escroquerie et page ABE sur les faux livrets."
+    },
+    "aide_aux_victimes": {
+      "valeur": {
+        "telephone": "116 006",
+        "jours": "tous les jours de l annee",
+        "debut_heures": 9,
+        "fin_heures": 20
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1520",
+      "date_verifiee": "2026-08-17",
+      "note": "Appel gratuit. Utile aussi pour un proche : un tiers neutre est mieux entendu que la famille."
+    },
+    "plainte_en_ligne": {
+      "valeur": "https://www.masecurite.interieur.gouv.fr/fr/demarches-en-ligne/plainte-en-ligne",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/attention-aux-offres-de-livret-depargne-frauduleuses",
+      "date_verifiee": "2026-08-17",
+      "note": "Voie recommandee par l ACPR dans les meilleurs delais. Teleservice THESEE pour les escroqueries commises sur internet ; annuaire des commissariats : https://www.masecurite.interieur.gouv.fr/fr/trouver-un-commissariat-une-gendarmerie"
+    },
+    "signal_conso": {
+      "valeur": "https://signal.conso.gouv.fr/fr",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "Plateforme DGCCRF de signalement du demarchage abusif, qui remplace Bloctel."
+    }
+  }
+}

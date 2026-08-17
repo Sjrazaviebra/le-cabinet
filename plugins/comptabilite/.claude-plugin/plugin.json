@@ -1,8 +1,8 @@
 {
   "name": "comptabilite",
   "displayName": "Comptabilité",
-  "description": "Comptabilite, fiscalite et gestion en France. Deux roles : Comptable (/comptable) pour l entreprise - formes juridiques, micro-entreprise, TVA, ecritures, cloture, facturation, paie ; Impots (/impots) pour le particulier - declaration de revenus, bareme, revenus financiers et crypto, immobilier, IFI, reclamation et controle.",
-  "version": "0.2.0",
+  "description": "Comptabilite, fiscalite, financement et epargne en France. Quatre roles : Comptable (/comptable) pour l entreprise ; Impots (/impots) pour le particulier ; Financement (/financement) pour l argent de l activite - banque et droit au compte, credit et rupture de credit, caution du dirigeant, tresorerie, mediation du credit, assurances obligatoires, carte des leviers fiscaux legaux ; Patrimoine (/patrimoine) pour l argent personnel - reconnaitre une arnaque et verifier un agrement, enveloppes et supports, frais, risque et horizon, epargne reglementee, retraite, budget et surendettement. ⛔ Ces deux derniers INFORMENT : ils n emettent aucune recommandation personnalisee sur un instrument financier, service reglemente.",
+  "version": "0.4.0",
   "author": {
     "name": "Javad Razavi",
     "url": "https://javadrazavi.fr"
@@ -18,6 +18,14 @@
     "tva",
     "micro-entreprise",
     "urssaf",
-    "declaration-revenus"
+    "declaration-revenus",
+    "financement",
+    "banque",
+    "credit",
+    "tresorerie",
+    "patrimoine",
+    "epargne",
+    "arnaques",
+    "amf"
   ]
 }

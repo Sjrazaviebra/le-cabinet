@@ -26,6 +26,14 @@ frontmatter YAML est inoffensif : les autres outils l'ignorent.
 | `logement` | un **bail** : entrée, charges, congé, dépôt de garantie, impayés, copropriété |
 | `famille` | le **couple et la filiation** : union, séparation, enfants, succession, protection |
 | `immigration` | le **séjour** : titres, travail, famille, recours, naturalisation |
+| `financement` | l'**argent de l'activité** : compte pro et droit au compte, crédit et rupture de crédit, caution du dirigeant, trésorerie, médiation du crédit, assurances obligatoires |
+| `patrimoine` | l'**argent personnel** : arnaques et vérification d'un agrément, enveloppes et supports, frais, risque et horizon, épargne réglementée, retraite, budget et surendettement |
+
+⛔ **Deux règles à conserver pour `financement` et `patrimoine`, sous peine de faire commettre à votre
+agent une infraction** : ils **informent** et **expliquent**, ils n'émettent **aucune recommandation
+personnalisée portant sur un instrument financier** — c'est le conseil en investissement, service
+réglementé. Et ils ne recommandent **aucun établissement, produit ou prestataire**. L'analyse de la
+frontière est dans [`docs/taxonomie-comptabilite.md`](docs/taxonomie-comptabilite.md).
 
 **Un rôle n'est pas un thème** : c'est une méthode d'entrée, une posture et des règles d'arrêt. Le
 critère qui décide qu'un sujet mérite son propre rôle est dans [`docs/taxonomie.md`](docs/taxonomie.md).

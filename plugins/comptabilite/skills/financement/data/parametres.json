@@ -1,0 +1,2009 @@
+{
+  "_lisez_moi": {
+    "role": "Valeurs volatiles du skill financement.",
+    "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
+    "peremption_mois": 6,
+    "etat": "VIDE - le role vient d etre cadre, aucun fichier n est encore redige.",
+    "avertissement": "⛔ Ce role ne recommande AUCUN placement : le conseil en investissement est une activite reglementee (L321-1, L541-1 ; sanction L573-1 : 3 ans d emprisonnement et 375 000 EUR). Voir le role juriste, activites-reglementees.md."
+  },
+  "assurances_obligatoires": {
+    "sanction_defaut_assurance_construction": {
+      "valeur": {
+        "emprisonnement_mois": 6,
+        "amende_euros": 75000
+      },
+      "unite": "mois d emprisonnement et euros d amende",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006796023",
+      "date_verifiee": "2026-08-17",
+      "note": "Code des assurances L243-3 verbatim   Quiconque contrevient aux dispositions des articles L 241-1 a L 242-1 du present code sera puni d un emprisonnement de six mois et d une amende de 75 000 euros ou de l une de ces deux peines seulement   ★★ ce n est pas une amende administrative c est un DELIT   ⚠ n est pas applicable a la personne physique qui construit un logement pour l occuper elle meme ou le faire occuper par son conjoint ses ascendants ses descendants ou ceux de son conjoint"
+    },
+    "sanction_defaut_assurance_vehicule": {
+      "valeur": {
+        "amende_maximale_euros": 3750,
+        "amende_forfaitaire_reduite_euros": 500,
+        "suspension_permis_maximale_ans": 3
+      },
+      "unite": "euros et annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2628",
+      "date_verifiee": "2026-08-17",
+      "note": "Code de la route L324-1 et L324-2   fiche du 10/04/2026   l obligation porte sur TOUT vehicule terrestre a moteur destine a circuler meme s il ne circule pas ou reste au garage   peines complementaires possibles   travaux d interet general jours amende suspension ou annulation du permis immobilisation ou confiscation du vehicule   ⚠ un vehicule prive utilise pour l activite doit etre declare comme tel a l assureur sinon on retombe sur la fausse declaration de risque"
+    },
+    "sanction_defaut_assurance_association_sportive": {
+      "valeur": {
+        "emprisonnement_mois": 6,
+        "amende_euros": 7500
+      },
+      "unite": "mois d emprisonnement et euros d amende",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006547686",
+      "date_verifiee": "2026-08-17",
+      "note": "Code du sport L321-2 verbatim   Le fait pour le responsable d une association sportive de ne pas souscrire les garanties d assurance dans les conditions prevues a l article L 321-1 est puni de six mois d emprisonnement et d une amende de 7 500 euros   ★★ la sanction vise LE RESPONSABLE personne physique pas seulement la structure"
+    },
+    "participation_employeur_complementaire_sante": {
+      "valeur": 50,
+      "unite": "pourcentage minimum de la cotisation",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37365",
+      "date_verifiee": "2026-08-17",
+      "note": "Des qu il y a un salarie la complementaire sante collective est obligatoire et l employeur en finance au moins la moitie   fiche du 07/07/2026   le detail paie et exonerations vit dans le role comptable"
+    },
+    "sanction_defaut_assurance_professionnel_de_sante": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23668",
+      "date_verifiee": null,
+      "note": "L OBLIGATION est confirmee   un professionnel de sante doit souscrire une assurance de responsabilite civile medicale   mais AUCUNE page officielle fetchee ne donne le montant de la sanction penale du defaut d assurance   ⛔ ne jamais avancer de chiffre ici   renvoyer au code de la sante publique et a l ordre professionnel"
+    }
+  },
+  "garantie_decennale": {
+    "duree_de_la_garantie": {
+      "valeur": 10,
+      "unite": "ans a compter de la reception des travaux",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F2034",
+      "date_verifiee": "2026-08-17",
+      "note": "Fiche du 10/04/2026   le delai demarre le LENDEMAIN de la signature du proces verbal de reception des travaux   ★ pas de reception signee   pas de point de depart clair   ⚠ le contrat doit etre en vigueur A L OUVERTURE DU CHANTIER  L241-1 impose de le justifier a ce moment la"
+    },
+    "travaux_couverts": {
+      "valeur": "seuls les travaux declares dans le contrat",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F2034",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ verbatim de la fiche   Seuls les travaux declares dans le contrat d assurance du constructeur sont couverts   c est LE piege operationnel   une attestation decennale valable ne dit rien de l activite reellement exercee sur le chantier   ⚠ les sous traitants sont exclus du champ d application de la garantie decennale"
+    }
+  },
+  "declaration_du_risque": {
+    "fausse_declaration_intentionnelle": {
+      "valeur": "nullite du contrat et primes acquises a l assureur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792058",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L113-8   le contrat est nul en cas de reticence ou de fausse declaration intentionnelle quand elle change l objet du risque ou en diminue l opinion pour l assureur ALORS MEME QUE le risque omis a ete SANS INFLUENCE sur le sinistre   Les primes payees demeurent alors acquises a l assureur qui a droit au paiement de toutes les primes echues a titre de dommages et interets   ⇒ on a paye des annees et on n est pas assure"
+    },
+    "declaration_inexacte_de_bonne_foi": {
+      "valeur": "reduction de l indemnite en proportion des primes  regle proportionnelle de prime",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792066",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L113-9   pas de nullite   si la constatation n a lieu qu APRES un sinistre l indemnite est reduite en proportion du taux des primes payees par rapport au taux des primes qui auraient ete dues si les risques avaient ete completement et exactement declares   ⇒ l assureur paie mais une fraction   la mauvaise foi doit etre ETABLIE par l assureur"
+    },
+    "delai_declaration_aggravation_du_risque": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035731302",
+      "date_verifiee": "2026-08-17",
+      "note": "Code des assurances L113-2 alinea 3   declarer par lettre recommandee ou envoi recommande electronique les circonstances nouvelles qui aggravent le risque ou en creent de nouveaux dans les 15 jours a partir du moment ou on en a eu connaissance   ★ changement d activite nouvelle machine nouveau local nouveau salarie nouveau chantier   c est la porte d entree de la fausse declaration en cours de contrat"
+    },
+    "delai_resiliation_par_assureur_apres_declaration_inexacte": {
+      "valeur": 10,
+      "unite": "jours apres notification",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792066",
+      "date_verifiee": "2026-08-17",
+      "note": "L113-9   si l inexactitude est constatee AVANT tout sinistre l assureur peut soit maintenir le contrat avec une prime augmentee acceptee par l assure soit resilier 10 jours apres notification par lettre recommandee en restituant la portion de prime   ★ declarer soi meme avant le sinistre coute une surprime   le taire coute l indemnite"
+    },
+    "delai_reponse_a_une_proposition_de_nouvelle_prime": {
+      "valeur": 30,
+      "unite": "jours a compter de la proposition",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792030",
+      "date_verifiee": "2026-08-17",
+      "note": "Code des assurances L113-4 aggravation du risque en cours de contrat   sans reponse ou en cas de refus expres dans les 30 jours l assureur peut resilier   ⚠ mais seulement s il a informe l assure de cette faculte en caracteres apparents dans la lettre de proposition   ★ l assureur qui a ete informe et a continue a encaisser les primes ne peut plus se prevaloir de l aggravation"
+    }
+  },
+  "delais": {
+    "declaration_de_sinistre": {
+      "valeur": {
+        "delai_minimal_general_jours_ouvres": 5,
+        "delai_minimal_vol_jours_ouvres": 2,
+        "delai_mortalite_du_betail_heures": 24
+      },
+      "unite": "jours ouvres et heures",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035731302",
+      "date_verifiee": "2026-08-17",
+      "note": "Code des assurances L113-2 alinea 4   le delai est fixe par le CONTRAT mais il ne peut pas etre inferieur a ces minimums legaux   ★★ la decheance pour declaration tardive ne peut etre opposee que si l ASSUREUR ETABLIT que le retard lui a cause un prejudice et jamais si le retard vient d un cas fortuit ou de force majeure   ⇒ une declaration en retard n est pas automatiquement perdue"
+    },
+    "prescription_action_contre_assureur": {
+      "valeur": {
+        "delai_general_ans": 2,
+        "secheresse_rehydratation_catnat_ans": 5,
+        "assurance_vie_beneficiaire_distinct_ans": 10,
+        "delai_maximal_beneficiaires_apres_deces_ans": 30
+      },
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044607740",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L114-1 verbatim   Toutes actions derivant d un contrat d assurance sont prescrites par deux ans a compter de l evenement qui y donne naissance   c est TRES court et c est le delai que personne ne connait   L114-3 interdit aux parties meme d un commun accord de modifier cette duree ou d ajouter des causes de suspension ou d interruption"
+    },
+    "interruption_de_la_prescription": {
+      "valeur": "lettre recommandee ou envoi recommande electronique  designation d experts  action en justice",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035731305",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L114-2   la prescription est interrompue par une des causes ordinaires et par la designation d experts a la suite d un sinistre   et par l envoi d une lettre recommandee ou d un envoi recommande electronique avec accuse de reception entre les parties   ⇒ un simple recommande remet le compteur a zero   c est l acte le moins couteux du dossier"
+    },
+    "mention_obligatoire_du_delai_dans_le_contrat": {
+      "valeur": "prescription inopposable si la mention manque",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F862",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ verbatim service public   Si ces mentions sont absentes ou insuffisantes l assureur ne peut pas vous opposer la prescription   le contrat doit indiquer le delai son point de depart et les moyens de l interrompre   fiche du 28/01/2026 a recouper   ⇒ premier reflexe quand un assureur invoque la prescription   relire le contrat"
+    },
+    "declaration_sinistre_catastrophe_naturelle": {
+      "valeur": 30,
+      "unite": "jours apres la publication de l arrete",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38603",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim   au plus tard 30 jours apres la publication de l arrete de reconnaissance de l etat de catastrophe naturelle   ⚠ fiche du 19/12/2024 donc de plus de six mois a recouper avant usage"
+    }
+  },
+  "multirisque_et_perte_exploitation": {
+    "franchise_legale_perte_exploitation_catnat": {
+      "valeur": {
+        "interruption_jours_ouvres": 3,
+        "montant_plancher_euros": 1140
+      },
+      "unite": "jours ouvres ou euros  le plus eleve des deux",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38603",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim   En cas de perte d exploitation l assure conserve a sa charge les frais correspondant au montant le plus eleve entre soit une interruption ou une reduction de l activite pendant 3 jours ouvres soit 1 140 euros   ⚠ ne vaut que pour le regime catastrophe naturelle   fiche du 19/12/2024 a recouper"
+    },
+    "franchise_legale_biens_professionnels_catnat": {
+      "valeur": {
+        "pourcentage_des_dommages_directs": 10,
+        "montant_minimal_euros": 1140
+      },
+      "unite": "pourcentage et euros",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38603",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim   Pour les biens a usage professionnel detenus par une entreprise hors vehicules terrestres a moteur le montant de la franchise est egal a 10 pour cent du montant des dommages materiels directs avec un montant minimal de 1 140 euros   ⚠ fiche du 19/12/2024 a recouper"
+    },
+    "garantie_catastrophe_naturelle_reputee_incluse": {
+      "valeur": "incluse d office dans les contrats dommages aux biens et pertes d exploitation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38603",
+      "date_verifiee": "2026-08-17",
+      "note": "★ verbatim   Ces contrats sont toujours consideres meme s ils mentionnent une disposition contraire inclure ces garanties   ⇒ une clause du contrat qui exclut la catastrophe naturelle est sans effet   ⚠ mais la garantie ne se declenche qu apres publication de l arrete"
+    },
+    "assurance_homme_cle": {
+      "valeur": "compensation des pertes d exploitation liees a l indisponibilite du dirigeant ou d un collaborateur essentiel",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37365",
+      "date_verifiee": "2026-08-17",
+      "note": "Facultative   couvre l incapacite permanente ou temporaire de la personne sans laquelle l activite s arrete   fiche du 07/07/2026   ⛔ ce fichier ne dit pas quel niveau de capital retenir  ce serait du conseil"
+    }
+  },
+  "responsabilite_civile_professionnelle": {
+    "faute_couverte_et_faute_exclue": {
+      "valeur": "faute simple couverte  faute intentionnelle ou dolosive jamais couverte",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006791984",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L113-1 verbatim   Les pertes et les dommages occasionnes par des cas fortuits ou causes par la faute de l assure sont a la charge de l assureur SAUF EXCLUSION FORMELLE ET LIMITEE contenue dans la police   Toutefois l assureur ne repond pas des pertes et dommages provenant d une faute intentionnelle ou dolosive de l assure   ⇒ une exclusion vague ou generale n est pas opposable"
+    },
+    "exclusion_dommages_immateriels_non_consecutifs": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE sur source officielle   la distinction dommages materiels  dommages immateriels consecutifs  dommages immateriels NON consecutifs est une categorie de marche pas une categorie legale   aucune page officielle fetchee ne la definit   ⇒ la seule grille juridique utilisable est L113-1  l exclusion doit etre formelle et limitee pour etre opposable   a lire dans les conditions generales du contrat"
+    }
+  },
+  "protection_juridique": {
+    "libre_choix_de_l_avocat": {
+      "valeur": "libre choix garanti et clause contraire sans effet",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792825",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L127-3   l assure a la liberte de choisir son avocat   Aucune clause du contrat ne doit porter atteinte dans les limites de la garantie au libre choix   et surtout   L assureur ne peut proposer le nom d un avocat a l assure SANS DEMANDE ECRITE de sa part   ⇒ l avocat maison propose spontanement est irregulier"
+    },
+    "actes_anterieurs_a_la_declaration": {
+      "valeur": "pas de decheance mais pas de prise en charge sauf urgence justifiee",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792792",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Code des assurances L127-2-2   les consultations ou actes de procedure realises avant la declaration du sinistre ne peuvent justifier la decheance de la garantie et toute clause contraire est reputee non ecrite   MAIS ils ne sont pas pris en charge sauf urgence justifiee   ⇒ declarer AVANT de consulter"
+    },
+    "desaccord_avec_assureur": {
+      "valeur": "tierce personne designee d un commun accord ou par le president du tribunal judiciaire  frais a la charge de l assureur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054141083",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code des assurances L127-4 version en vigueur au 28/05/2026   les frais de cette procedure sont a la charge de l assureur   et si l assure engage seul une procedure et obtient MIEUX que ce que proposait l assureur celui ci l indemnise de ses frais dans la limite de la garantie   le delai de recours contentieux est interrompu pendant ce temps"
+    },
+    "definition_du_sinistre": {
+      "valeur": "le refus oppose a une reclamation dont l assure est l auteur ou le destinataire",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792775",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Code des assurances L127-2-1   le sinistre n est pas le litige  c est LE REFUS   ⇒ il faut avoir reclame et s etre fait dire non pour que la garantie s ouvre   sans reclamation ecrite prealable pas de sinistre"
+    },
+    "contrat_ou_chapitre_distinct": {
+      "valeur": "contrat distinct ou chapitre distinct avec indication de la prime correspondante",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006792755",
+      "date_verifiee": "2026-08-17",
+      "note": "Code des assurances L127-2   ★ utile en pratique   cela permet de savoir COMBIEN on paie pour la protection juridique et de verifier si on ne la paie pas deja deux fois via la multirisque et la carte bancaire"
+    }
+  },
+  "assurance_emprunteur": {
+    "garanties_et_exclusions": {
+      "valeur": "deces  perte totale et irreversible d autonomie  invalidite permanente  incapacite temporaire de travail",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21128",
+      "date_verifiee": "2026-08-17",
+      "note": "Exclusions classiques citees verbatim par la fiche   blessures volontaires de l assure  metier a risque  pratique de sports dangereux  maladie due a l alcool ou aux stupefiants   ⚠ fiche du 02/05/2024 donc de plus de six mois a recouper   ⚠ fiche ecrite pour le pret IMMOBILIER   les specificites du pret PROFESSIONNEL et de son articulation avec la caution du dirigeant ne sont pas verifiees ici  voir garanties-et-caution-dirigeant.md"
+    }
+  },
+  "mediation_du_credit": {
+    "taux_de_reussite": {
+      "valeur": null,
+      "unite": "pourcentage",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Les deux pages officielles de la Mediation du credit consultees le 17/08/2026 ne publient aucun chiffre (ni nombre de dossiers, ni taux de reussite, ni encours debloques). Le site mediateur-credit.banque-france.fr refuse la lecture automatisee (HTTP 403). Ne JAMAIS avancer un taux de reussite sans l avoir lu sur une publication de la Banque de France."
+    },
+    "assistance_telephonique": {
+      "valeur": 3414,
+      "unite": "numero de telephone",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Numero de l assistance telephonique de la Mediation du credit, confirme sur banque-france.fr ET sur entreprendre.service-public.gouv.fr (fiches R49514 et F38670). Sert aussi a se faire mettre en relation avec un Tiers de confiance benevole."
+    },
+    "delai_admission_dossier": {
+      "valeur": 48,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Dans les 48 heures suivant la saisine, le mediateur vous contacte, verifie la recevabilite de votre demande et, si votre dossier est complet et eligible, accepte votre dossier en mediation et definit un plan d action avec vous."
+    },
+    "delai_reponse_etablissements": {
+      "valeur": 5,
+      "unite": "jours ouvres",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Les etablissements financiers sont informes de l ouverture de la mediation et disposent de cinq jours ouvres pour revoir leurs positions. Ce delai peut etre prolonge d autant pour concertation avec les societes delivrant des garanties."
+    },
+    "concours_bancaires_pendant_la_mediation": {
+      "valeur": "maintenus",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : Pendant la duree de la mediation, les concours bancaires existants sont maintenus. C est LA raison de saisir tot : repousser la saisine empeche de profiter de cette protection."
+    },
+    "preavis_denonciation_decouvert_saisine": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : En cas de denonciation d un decouvert : vous devez saisir la Mediation du credit avant la fin du delai de preavis (60 jours apres la date de denonciation). Un decouvert a hauteur du montant utilise en entree de mediation sera autorise pendant la duree des discussions. ⚠ Delai qui fait perdre le droit s il est laisse passer. Duree du preavis a recouper avec la convention de compte : voir credit-et-rupture.md."
+    },
+    "reponse_banque_demande_de_credit": {
+      "valeur": 15,
+      "unite": "jours ouvres",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : les banques se sont engagees a donner une reponse a toute demande de financement sous 15 jours ouvres a partir du moment ou le dossier est complet. Sans reponse au-dela de ce delai, vous pouvez saisir la Mediation du credit. Le silence de la banque est donc un motif de saisine."
+    },
+    "assureur_credit_effet_reduction_garantie": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Sauf cas exceptionnels, les reductions ou resiliations de lignes de garantie par un assureur ne sont effectives que dans un delai d un mois apres l information de ses assures (fournisseurs). Il faut s inscrire aux portails d information de l assureur pour en etre informe cote acheteur."
+    },
+    "assureur_credit_information_motifs": {
+      "valeur": 48,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : L assureur-credit donne a tout acheteur abonne a son portail qui le demande, toute information utile sur les raisons d une resiliation ou d une reduction de garanties, dans un delai maximum de 48 heures."
+    },
+    "mediateurs_territoriaux": {
+      "valeur": 105,
+      "unite": "mediateurs",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : ce dispositif est conduit sur tout le territoire metropolitain et en outre-mer par les 105 mediateurs du credit territoriaux. Donc un interlocuteur departemental, pas un guichet national."
+    },
+    "tiers_de_confiance_benevoles": {
+      "valeur": 500,
+      "unite": "conseillers (plus de)",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : un reseau de plus de 500 conseillers benevoles tiers de confiance. Ils interviennent GRATUITEMENT avant la saisine, aident a monter le dossier, et accompagnent aux reunions. On les obtient en appelant le 3414. On ne peut en choisir qu un seul."
+    },
+    "pge_seuil_saisine_directe": {
+      "valeur": 50000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.banque-france.fr/fr/a-votre-service/entreprises/saisir-mediation-credit",
+      "date_verifiee": "2026-08-17",
+      "note": "Restructuration de pret garanti par l Etat : jusqu a 50 000 euros la saisine est directe avec attestation d un expert-comptable ou commissaire aux comptes ET justificatif que la banque a oriente vers la mediation. Au-dela, passer d abord par le conseiller departemental a la sortie de crise."
+    }
+  },
+  "mandat_ad_hoc": {
+    "duree_usuelle": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22290",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree indiquee par la fiche officielle, renouvelable ; il n existe PAS de duree maximale legale, contrairement a la conciliation. Fiche a jour au 01/01/2025."
+    }
+  },
+  "conciliation": {
+    "cessation_paiements_tolere": {
+      "valeur": 45,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22295",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim de la fiche : L entreprise n est pas en situation de cessation des paiements ou se trouve en cessation des paiements depuis moins de 45 jours. Combine a l article L631-4 du code de commerce, cela veut dire que demander une conciliation DANS les 45 jours remplace l obligation de declarer la cessation des paiements."
+    },
+    "duree_mission_conciliateur": {
+      "valeur": {
+        "initiale_mois": 4,
+        "prolongation_mois": 1,
+        "total_max_mois": 5
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22295",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim de la fiche : Le conciliateur est designe pour une duree de 4 mois maximum. Cette duree peut etre prolongee d un mois a la demande du conciliateur. Soit 5 mois au total. Voir code de commerce, article L611-6."
+    },
+    "effet_bouclier_contre_assignation": {
+      "valeur": "une conciliation en cours empeche l assignation d un creancier et la requete du ministere public en redressement judiciaire",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146111",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Trouvaille ajoutee APRES la fusion du fragment principal. Verbatim de l article L631-5 du code de commerce (version en vigueur depuis le 1er janvier 2020) : Lorsqu il n y a pas de procedure de conciliation en cours, le tribunal peut egalement etre saisi sur requete du ministere public aux fins d ouverture de la procedure de redressement judiciaire. Sous cette meme reserve, la procedure peut aussi etre ouverte sur l assignation d un creancier, quelle que soit la nature de sa creance. ⇒ ouvrir une conciliation retire au creancier isole le pouvoir de declencher une procedure publique au moment qui l arrange. Aucun nombre : n affecte pas le controle de coherence."
+    }
+  },
+  "cessation_des_paiements": {
+    "delai_declaration": {
+      "valeur": 45,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146111",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim de l article L631-4 du code de commerce (version en vigueur depuis le 1er juillet 2014) : L ouverture d une procedure de redressement judiciaire doit etre demandee par le debiteur au plus tard dans les quarante-cinq jours qui suivent la cessation des paiements s il n a pas, dans ce delai, demande l ouverture d une procedure de conciliation. ⚠ Le depassement engage la responsabilite personnelle du dirigeant : renvoi au role juriste, droit-des-societes.md."
+    },
+    "report_date_cessation": {
+      "valeur": 18,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146111",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim de l article L631-8 du code de commerce : Elle peut etre reportee une ou plusieurs fois, sans pouvoir etre anterieure de plus de dix-huit mois a la date du jugement d ouverture de la procedure. ⇒ la periode suspecte peut donc remonter jusqu a 18 mois en arriere et exposer des paiements deja faits."
+    },
+    "interdiction_de_gerer_duree_max": {
+      "valeur": 15,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22352",
+      "date_verifiee": "2026-08-17",
+      "note": "Le tribunal peut prononcer une interdiction de gerer, notamment si le dirigeant a volontairement tarde a declarer la cessation des paiements. Base : code de commerce, article L653-8. Fiche a jour au 01/01/2025. Detail de la responsabilite du dirigeant : role juriste, droit-des-societes.md."
+    },
+    "nullite_actes_a_titre_gratuit_anterieurs": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146112",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim de l article L632-1 II du code de commerce (version en vigueur depuis le 15 mai 2022) : Le tribunal peut, en outre, annuler les actes a titre gratuit vises au 1 du I et la declaration visee au 13 faits dans les six mois precedant la date de cessation des paiements."
+    },
+    "banqueroute_peines": {
+      "valeur": {
+        "emprisonnement_ans": 5,
+        "amende_euros": 75000
+      },
+      "unite": "ans et euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006161373",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Verbatim de l article L654-3 du code de commerce : La banqueroute est punie de cinq ans d emprisonnement et de 75 000 euros d amende. Le 1 de L654-2 vise notamment le fait d avoir employe des moyens ruineux pour se procurer des fonds dans l intention d eviter ou de retarder l ouverture de la procedure. Qualification penale : affaire d avocat, pas de reponse automatique."
+    }
+  },
+  "procedures_collectives": {
+    "duree_max_plan": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22311",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree maximale du plan de sauvegarde comme du plan de redressement : une duree qui ne peut pas exceder 10 ans (fiches F22311 et F37434, a jour au 01/01/2025). ⚠ La duree de la periode d observation n a PAS ete verifiee de facon fiable : les deux fiches donnent des chiffres differents, elle n est donc pas ecrite dans le .md."
+    }
+  },
+  "ccsf": {
+    "delai_reponse": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38326",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : La commission a 2 mois a compter de la reception du dossier pour donner sa reponse. Saisine gratuite et confidentielle, aucune publication au tribunal de commerce. Page a jour au 22/07/2026. Annuaire des CCSF : lannuaire.service-public.fr/navigation/ccsf."
+    }
+  },
+  "urssaf_delai_de_paiement": {
+    "duree_max": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38100",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Le delai de paiement accorde ne peut pas depasser 12 mois. Conditions imperatives : avoir verse la totalite de la part salariale des cotisations sociales et avoir effectue ses declarations sociales. Page a jour au 15/07/2026."
+    },
+    "delai_reponse_en_ligne": {
+      "valeur": 48,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38100",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Demande via l espace en ligne de l entreprise : reponse en 48 heures. C est le canal a privilegier quand une echeance approche."
+    },
+    "delai_reponse_courrier_telephone": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38100",
+      "date_verifiee": "2026-08-17",
+      "note": "Demande par telephone ou courrier : reponse en 15 jours. Soit environ sept fois plus lent que le canal en ligne."
+    },
+    "demande_avant_echeance_obligatoire": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Aucune page officielle lue le 17/08/2026 n affirme que la demande de delai Urssaf doit imperativement etre faite AVANT la date d echeance. La page urssaf.fr dediee n a pas repondu (ECONNRESET). Ce qui EST verifie et qui se joue avant l echeance : le depot de la declaration et le paiement de la part salariale. Ne pas presenter le reste comme une regle."
+    }
+  },
+  "fisc_delai_de_paiement": {
+    "interlocuteur_et_garanties": {
+      "valeur": "service des impots des entreprises (SIE) dont depend la societe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38095",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ La fiche indique que l entreprise doit proposer des garanties pour assurer le paiement des dettes fiscales et que, faute de garanties, le dirigeant doit se porter caution ; un refus peut entrainer le rejet. ⇒ un etalement fiscal peut donc couter une caution personnelle : lire garanties-et-caution-dirigeant.md AVANT de signer. Sont exclus du delai : le prelevement a la source, les acomptes d IR et de CFE, les droits d enregistrement, et les interets de retard de recouvrement. Page a jour au 27/11/2024, a recouper."
+    }
+  },
+  "interlocuteurs_gratuits": {
+    "codefi_seuil_effectif": {
+      "valeur": 400,
+      "unite": "salaries (moins de)",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38629",
+      "date_verifiee": "2026-08-17",
+      "note": "Le CODEFI est une instance locale interministerielle placee sous l autorite du prefet, pour les entreprises de moins de 400 salaries. Le commissaire aux restructurations (CRP) couvre le meme perimetre mais est prioritairement focalise sur les entreprises industrielles. Page a jour au 27/11/2024, a recouper."
+    },
+    "associations_aide_aux_dirigeants": {
+      "valeur": {
+        "apesa": "apesa-france.com",
+        "second_souffle": "secondsouffle.org",
+        "rebonds": "60000rebonds.com"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38670",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Associations d aide aux dirigeants listees par la page officielle (soutien psychologique et rebond). L association 60 000 rebonds porte un nombre dans son nom : l entree existe aussi pour que le controle de coherence des nombres ne le prenne pas pour une valeur non sourcee. Les CIP recoivent gratuitement et en toute confidentialite (cip-national.fr)."
+    }
+  },
+  "rendez_vous_prevention_tribunal": {
+    "delai_convocation_par_le_president": {
+      "valeur": 1,
+      "unite": "mois (au moins)",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38108",
+      "date_verifiee": "2026-08-17",
+      "note": "Le president du tribunal peut convoquer le dirigeant de sa propre initiative par lettre recommandee avec AR, au moins un mois avant l entretien. L entretien est gratuit, anonyme et confidentiel ; il peut aussi etre demande spontanement (prevention@tribunal-de-commerce.fr ou Tribunal digital). Base : code de commerce, article L611-2. Page a jour au 17/06/2026."
+    }
+  },
+  "ouverture_de_compte": {
+    "silence_de_la_banque_vaut_refus": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21118",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le silence de la banque pendant 15 jours VAUT REFUS et ouvre donc le droit au compte : il n y a pas besoin d un refus explicite pour saisir la Banque de France. Meme delai indique pour delivrer l attestation de refus. ⚠ Le code (L312-1 III) dit  systematiquement  gratuitement et sans delai  : les 15 jours sont la limite exterieure  pas un delai de confort."
+    },
+    "delai_ouverture_compte_personne_physique_non_pro": {
+      "valeur": 6,
+      "unite": "jours ouvres",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044605348",
+      "date_verifiee": "2026-08-17",
+      "note": "L312-1 II  version en vigueur au 27/12/2021 : quand la banque ACCEPTE  elle doit ouvrir le compte au plus tard 6 jours ouvres apres reception de l ensemble des pieces. ★ Ne vaut que pour une personne physique n agissant PAS pour des besoins professionnels. ⛔ Aucun delai legal equivalent pour un compte professionnel ni pour une personne morale."
+    },
+    "anciennete_maximale_extrait_immatriculation": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21118",
+      "date_verifiee": "2026-08-17",
+      "note": "Extrait K bis ou extrait RNE original de moins de 3 mois exige dans le dossier de droit au compte d une societe. Meme anciennete a l article R561-5-1 pour la verification d identite d une personne morale."
+    }
+  },
+  "droit_au_compte": {
+    "delai_designation_par_la_banque_de_france": {
+      "valeur": 1,
+      "unite": "jour ouvre",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044605348",
+      "date_verifiee": "2026-08-17",
+      "note": "L312-1 III verbatim :  dans un delai d un jour ouvre a compter de la reception des pieces requises definies par arrete . ★ OUVRE  donc hors samedi  dimanche et jours feries : un dossier depose un vendredi soir ne produit sa designation que le lundi."
+    },
+    "delai_designation_variante_en_heures": {
+      "valeur": 24,
+      "unite": "heures",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21118",
+      "date_verifiee": null,
+      "note": "⚠ La page entreprendre annonce 24 heures la ou le code dit  un jour ouvre . Ce n est pas la meme chose en fin de semaine. Le code prevaut : retenir 1 jour ouvre."
+    },
+    "delai_notification_des_pieces_par_la_banque_designee": {
+      "valeur": 3,
+      "unite": "jours ouvres",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045350430",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-7 : la banque designee notifie sous 3 jours ouvres la liste des pieces necessaires. C est cette notification qui declenche le compte a rebours de la caducite."
+    },
+    "delai_ouverture_du_compte_par_la_banque_designee": {
+      "valeur": 3,
+      "unite": "jours ouvres",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044605348",
+      "date_verifiee": "2026-08-17",
+      "note": "L312-1 III verbatim :  Ils procedent a l ouverture du compte de depot dans les trois jours ouvres a compter de la reception de l ensemble des pieces qui lui sont necessaires a cet effet . ⚠ Le point de depart est la reception des PIECES  pas la designation : une piece manquante suspend tout."
+    },
+    "caducite_de_la_designation": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046290934",
+      "date_verifiee": "2026-08-17",
+      "note": "★ R312-7-1 verbatim :  La designation d un etablissement de credit par la Banque de France devient  a defaut de toute reponse du demandeur a la notification qui lui est faite en application de l article R. 312-7  caduque dans un delai de six mois . ⇒ un droit qui se perd par simple silence."
+    },
+    "autorisation_de_decouvert": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21118",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Verbatim :  aucune autorisation de decouvert ne peut etre accordee dans le cadre du droit au compte . Le droit au compte donne un compte qui fonctionne  pas du credit."
+    }
+  },
+  "services_bancaires_de_base": {
+    "nombre_de_services": {
+      "valeur": 12,
+      "unite": "services",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21118",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Liste fermee de l article D312-5-1 (les prestations 1 a 8 de D312-5 + depots et retraits d especes au guichet + carte a autorisation systematique + 2 cheques de banque par mois + operations de caisse). Personne ne la connait au guichet : elle se demande  elle ne se propose pas."
+    },
+    "tarif": {
+      "valeur": "gratuit",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045350416",
+      "date_verifiee": "2026-08-17",
+      "note": "★ D312-8 verbatim : le titulaire  peut beneficier des services bancaires mentionnes a l article D. 312-5-1 SANS CONTREPARTIE CONTRIBUTIVE DE SA PART . Le code ne dit pas  gratuit   il dit cela  et c est la formule a opposer a une facturation."
+    },
+    "cheques_de_banque_par_mois": {
+      "valeur": 2,
+      "unite": "formules par mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033688459",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Ce sont 2 CHEQUES DE BANQUE par mois  ou moyens equivalents  pas un chequier. Le droit au compte ne donne jamais de chequier."
+    },
+    "changement_adresse_par_an": {
+      "valeur": 1,
+      "unite": "par an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036769238",
+      "date_verifiee": "2026-08-17",
+      "note": "D312-5 2 : un changement d adresse par an compris dans les prestations de base."
+    }
+  },
+  "cloture": {
+    "preavis_cloture_compte_ouvert_au_titre_du_droit_au_compte": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044605348",
+      "date_verifiee": "2026-08-17",
+      "note": "L312-1 IV verbatim :  Un delai minimum de deux mois de preavis est octroye au titulaire du compte  sauf dans les cas mentionnes au 1 et au 2 . ⇒ operations soupconnees illegales ou informations inexactes = fermeture SANS preavis. Vaut aussi pour une personne morale."
+    },
+    "preavis_45_jours_page_entreprendre": {
+      "valeur": 45,
+      "unite": "jours",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F21118",
+      "date_verifiee": null,
+      "note": "⚠⚠ DIVERGENCE. La page entreprendre du 07/10/2025 ecrit que la banque doit prevenir l entreprise 45 jours a l avance. Le code (L312-1 IV  en vigueur depuis le 27/12/2021) fixe un MINIMUM de deux mois. 45 jours est donc SOUS le plancher legal. Le texte fait foi : ne pas accepter 45 jours sans verifier."
+    },
+    "preavis_cloture_compte_de_depot_personne_physique_non_pro": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038614561",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L312-1-1 :  L etablissement de credit resilie une convention de compte de depot conclue pour une duree indeterminee moyennant un preavis d au moins deux mois . ⚠ Champ limite aux personnes physiques n agissant PAS pour des besoins professionnels  et la banque n a PAS a motiver (service-public F2413)."
+    },
+    "preavis_cloture_compte_professionnel": {
+      "valeur": null,
+      "unite": "jours",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "★★ TROU ASSUME. Aucun delai legal trouve. L312-1-6 ne regle que l existence d une convention ecrite pour les personnes physiques agissant pour des besoins professionnels et renvoie les stipulations a un arrete  il ne fixe aucun preavis. Les personnes morales ne sont meme pas visees. ⇒ le preavis d un compte pro est CONTRACTUEL : il se lit dans la convention de compte. A completer par l arrete du ministre de l economie et par la jurisprudence sur la rupture abusive."
+    },
+    "frais_de_cloture": {
+      "valeur": "gratuite",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035731544",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L312-1-7 I verbatim :  La cloture de tout compte de depot ou compte sur livret appartenant a une personne physique ou morale est gratuite . Vaut donc AUSSI pour un compte de societe : des frais de cloture factures sont a contester."
+    }
+  },
+  "compte_professionnel": {
+    "obligation_selon_la_forme_juridique": {
+      "valeur": {
+        "societe_avec_capital_social": "compte obligatoire pour deposer le capital  compte provisoire puis compte definitif",
+        "societe_apres_immatriculation": "la loi n impose PAS de conserver un compte bancaire professionnel",
+        "entreprise_individuelle_commerciale": "obligation d ouvrir UN compte dans un etablissement de credit (L123-24 code de commerce)  pas forcement un compte professionnel",
+        "entreprise_individuelle_autres_activites": "compte dedie facultatif",
+        "micro_entrepreneur": "compte DEDIE au dela d un seuil de chiffre d affaires  voir le role comptable  comptabilite-generale.md"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37369",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le mot  professionnel  n est presque jamais dans la loi : l obligation porte sur l existence d un compte  pas sur l achat d un produit bancaire  professionnel  facture. Seuil du micro-entrepreneur volontairement non repete ici : il appartient au role comptable."
+    },
+    "denomination_obligatoire_du_compte_de_l_entrepreneur_individuel": {
+      "valeur": "denomination incorporant le nom precede ou suivi de  entrepreneur individuel  ou  EI ",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045697814",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ R526-27 code de commerce verbatim :  Chaque compte bancaire dedie a son activite professionnelle ouvert par l entrepreneur individuel doit contenir la denomination dans son intitule . Regle quasi inconnue  en vigueur depuis le 15/05/2022  et elle touche la separation des patrimoines de l EI."
+    }
+  },
+  "vigilance_et_refus": {
+    "primaute_de_la_lutte_anti_blanchiment_sur_le_droit_au_compte": {
+      "valeur": "le droit au compte s exerce sous reserve du chapitre Ier du titre VI du livre V",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044605348",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L312-1 II verbatim :  Sous reserve du respect des dispositions du chapitre Ier du titre VI du livre V  l etablissement procede a l ouverture du compte . Ce chapitre est celui de la lutte anti-blanchiment ⇒ la vigilance PRIME sur le droit au compte. Et L312-1 IV 6 permet la fermeture quand l etablissement est dans une situation prevue a l article L561-8."
+    },
+    "elements_que_la_banque_doit_recueillir": {
+      "valeur": "personne physique : nom  prenoms  date et lieu de naissance ; personne morale : forme juridique  denomination  numero d immatriculation  adresse du siege social et du lieu de direction effective",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041592220",
+      "date_verifiee": "2026-08-17",
+      "note": "R561-5 code monetaire et financier. ★ La liste des elements et les modes de verification (R561-5-1) sont ENCADRES : la banque ne pose pas des questions au hasard  elle applique un texte. C est l argument utile face a une demande qui parait intrusive."
+    }
+  },
+  "cautionnement_dirigeant": {
+    "reforme_suretes_entree_en_vigueur": {
+      "valeur": "2022-01-01",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071230",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Ordonnance n 2021-1192 du 15 septembre 2021. Chaque article utilise ici a ete ouvert un par un sur Legifrance : tous portent Version en vigueur depuis le 01/01/2022. ⛔ Ne jamais recopier une formule de mention trouvee en ligne : les formules sacramentelles qui circulent sont anterieures a cette reforme."
+    },
+    "reforme_application_actes_anterieurs": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME LE PLUS LOURD DU FICHIER : quelle loi regit un cautionnement signe AVANT le 01/01/2022 ? L article transitoire de l ordonnance n a pas pu etre lu, Legifrance /loda/ renvoie 403 et /jorf/id/ renvoie la page d accueil. ⛔ Ne pas presumer que les regles nouvelles s appliquent a un acte ancien : c est la premiere question a poser a un avocat."
+    },
+    "mention_obligatoire_sanction": {
+      "valeur": "nullite de l engagement",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071230",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2297 verbatim : A peine de nullite de son engagement, la caution personne physique appose elle-meme la mention qu elle s engage en qualite de caution a payer au creancier ce que lui doit le debiteur en cas de defaillance de celui-ci, dans la limite d un montant en principal et accessoires exprime en toutes lettres et en chiffres. En cas de difference, le cautionnement vaut pour la somme ecrite en toutes lettres. ⇒ NULLITE, pas inopposabilite. ⚠ Le texte dit appose elle-meme, il n emploie PAS le mot manuscrite et ne prevoit PAS d exception pour acte notarie ou contresigne par avocat, contrairement a ce qu indique la fiche F36541 du 13/02/2023 : divergence a recouper, le texte fait foi, ecrire la mention a la main satisfait les deux lectures."
+    },
+    "mention_renonciation_benefices": {
+      "valeur": "la caution conserve les benefices de discussion et de division",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071230",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2297 alinea 2 verbatim : Si la caution est privee des benefices de discussion ou de division, elle reconnait dans cette mention ne pouvoir exiger du creancier qu il poursuive d abord le debiteur ou qu il divise ses poursuites entre les cautions. A defaut, elle conserve le droit de se prevaloir de ces benefices. ⇒ Premier reflexe de lecture d un acte : si la mention est muette, la caution garde le droit d exiger que la banque poursuive d abord la societe (art. 2305) et divise ses poursuites (art. 2306). Alinea 3 : passer par un mandataire ne contourne rien."
+    },
+    "proportionnalite_sanction": {
+      "valeur": "reduction au montant a hauteur duquel la caution pouvait s engager a la date de conclusion",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071221",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2300 verbatim : Si le cautionnement souscrit par une personne physique envers un creancier professionnel etait, lors de sa conclusion, manifestement disproportionne aux revenus et au patrimoine de la caution, il est reduit au montant a hauteur duquel elle pouvait s engager a cette date. ⇒ La sanction est une REDUCTION, pas un effacement : ne pas promettre l annulation. ⚠ La comparaison se fait au JOUR DE LA SIGNATURE ⇒ reunir des maintenant avis d imposition, releves et encours de cette epoque. Ne joue qu entre une personne physique et un creancier professionnel."
+    },
+    "devoir_de_mise_en_garde_sanction": {
+      "valeur": "decheance du droit du creancier a hauteur du prejudice subi par la caution",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071224",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2299 verbatim : Le creancier professionnel est tenu de mettre en garde la caution personne physique lorsque l engagement du debiteur principal est inadapte aux capacites financieres de ce dernier. A defaut, le creancier est dechu de son droit contre la caution a hauteur du prejudice subi par celle-ci. ⇒ CONTRE-INTUITIF : le test porte sur les capacites de la SOCIETE, pas sur celles de la caution. Grief distinct et cumulable avec l art. 2300. Prejudice a chiffrer et prouver."
+    },
+    "information_annuelle_date_limite": {
+      "valeur": "31 mars",
+      "unite": "date limite annuelle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071269",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 2302 : le creancier professionnel doit, avant le 31 mars de chaque annee et A SES FRAIS, faire connaitre a toute caution personne physique le montant du principal, des interets et autres accessoires restant dus au 31 decembre precedent. Alinea 2 sous la MEME sanction : rappeler le terme de l engagement ou, si duree indeterminee, la faculte de resiliation et ses conditions ⇒ une lettre qui ne donne que le solde est incomplete. Alinea 3 : s applique aussi a une personne morale caution envers un etablissement de credit."
+    },
+    "information_annuelle_sanction": {
+      "valeur": "decheance de la garantie des interets et penalites echus depuis la precedente information",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071269",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La decheance ne porte JAMAIS sur le principal : le capital reste du. Mais sur une dette ancienne jamais suivie de lettre, les interets et penalites ecartes peuvent representer une part considerable de la somme reclamee. ★ De plus, sur la periode non couverte, les paiements du debiteur s imputent PRIORITAIREMENT sur le principal. ⇒ Les lettres annuelles sont des pieces : leur absence est un moyen de defense, et c est au creancier de prouver l envoi."
+    },
+    "information_defaillance_delai": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071266",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2303 verbatim : le creancier professionnel doit informer toute caution personne physique de la defaillance du debiteur des le premier incident de paiement non regularise dans le mois de l exigibilite, a peine de decheance de la garantie des interets et penalites echus entre la date de cet incident et celle de l information. ⇒ C est l article du silence : la bonne question n est pas combien je dois mais a quelle date est survenu le premier incident non regularise et quand m en avez-vous informe."
+    },
+    "resiliation_duree_indeterminee": {
+      "valeur": "resiliation a tout moment sous reserve du preavis contractuel ou d un delai raisonnable",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136563/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 2315 verbatim : Lorsqu un cautionnement de dettes futures est a duree indeterminee, la caution peut y mettre fin a tout moment, sous reserve de respecter le delai de preavis contractuellement prevu ou, a defaut, un delai raisonnable. ⇒ Le fichier ne peut pas chiffrer le delai raisonnable : il depend du contrat et du juge."
+    },
+    "dettes_anterieures_apres_resiliation": {
+      "valeur": "la caution reste tenue des dettes nees anterieurement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136563/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2316 verbatim : Lorsqu un cautionnement de dettes futures prend fin, la caution reste tenue des dettes nees anterieurement, sauf clause contraire. ⇒ Resilier arrete l hemorragie, cela ne recoud pas la plaie, et chaque mois de retard ajoute des dettes nees anterieurement. ★★ Aucune des causes d extinction des art. 2313 a 2320 n est la cession des parts ni la demission du dirigeant ⇒ vendre la societe sans obtenir la mainlevee laisse le vendeur garant des dettes du repreneur."
+    },
+    "caution_solde_compte_courant_prescription": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136563/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 2319 verbatim : La caution du solde d un compte courant ou de depot ne peut plus etre poursuivie cinq ans apres la fin du cautionnement. ⇒ Decisif pour un dirigeant qui a cautionne le decouvert de sa societe."
+    },
+    "heritiers_perimetre": {
+      "valeur": "dettes nees avant le deces uniquement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136563/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 2317 verbatim : Les heritiers de la caution ne sont tenus que des dettes nees avant le deces. Toute clause contraire est reputee non ecrite. ⇒ Une clause d acte bancaire qui pretendrait le contraire ne vaut rien."
+    },
+    "delai_de_reflexion": {
+      "valeur": "aucun dans les articles 2288 a 2320 du code civil",
+      "unite": "delai",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136563/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Absence constatee a la lecture integrale du chapitre Du cautionnement : ni delai de reflexion ni delai de retractation au profit de la caution, alors que la renonciation a la separation des patrimoines de l entrepreneur individuel en comporte un. ⚠ Reserve : un cautionnement adosse a un credit a la consommation ou immobilier releve EN OUTRE du code de la consommation, non verifie sur ce point."
+    },
+    "conjoint_communaute_assiette": {
+      "valeur": "biens propres et revenus de l epoux qui signe, sauf consentement expres de l autre",
+      "unite": "assiette",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006181836/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 1415 verbatim (version en vigueur depuis le 01/07/1986) : Chacun des epoux ne peut engager que ses biens propres et ses revenus, par un cautionnement ou un emprunt, a moins que ceux-ci n aient ete contractes avec le consentement expres de l autre conjoint qui, dans ce cas, n engage pas ses biens propres. ⇒ EXCEPTION protectrice au principe de l art. 1413 (les dettes se poursuivent sur tous les biens communs). ⚠ Le consentement expres du conjoint fait basculer les BIENS COMMUNS dans l assiette : la signature pour accord n est pas une formalite. ⛔ Le conjoint qui se porte caution lui-meme sort de l art. 1415 et engage ses propres biens. ⚠ Verifie le 2026-08-17 : couple.md du role famille traite 1413 et 1414 mais PAS 1415."
+    },
+    "deux_cautions_a_ne_pas_confondre": {
+      "valeur": "caution du dirigeant envers une banque et garant d un bail d habitation",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044071230",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le pont entre les deux est l article 2297 : la loi du 6 juillet 1989, art. 22-1, impose au garant d un bail d apposer la mention prevue par l article 2297 du code civil ⇒ meme texte de mention. ★ bail-et-location.md du role logement avait laisse l art. 2297 en a_verifier faute d avoir pu le fetcher : le verbatim est ici, et il n y a AUCUNE contradiction entre les deux fichiers. ⛔ Ne rien transposer d autre : le bail a ses regles propres (nullite en cas de cumul avec une assurance loyers impayes, regime de duree). ⚠ Les art. 2299 et 2300 ne visent qu un creancier professionnel : savoir si un bailleur particulier en est un n est pas tranche."
+    }
+  },
+  "garanties_alternatives": {
+    "nantissement_parts_sociales_inscription_duree": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37848",
+      "date_verifiee": "2026-08-17",
+      "note": "Inscription au registre des suretes mobilieres valable 5 ans, renouvelable. Le constituant garde la possession des parts et ses droits d associe. En cas de defaut : pacte commissoire, attribution judiciaire en paiement, ou vente forcee aux encheres. ⇒ Ce qui est expose est LES PARTS, pas tout le patrimoine ; ⚠ mais perdre les parts c est perdre la societe. Page du 22/03/2024, a recouper."
+    },
+    "nantissement_fonds_de_commerce_inscription_duree": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37936",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le fonds de commerce est un actif de l ENTREPRISE : la garantie ne touche pas le patrimoine personnel, difference structurante avec la caution. Assiette par defaut : enseigne, nom commercial, droit au bail, clientele et achalandage ; le reste (materiel, brevets, marques) seulement si stipule. Verbatim : le creancier ne peut pas demander a ce que le fonds de commerce lui soit donne en paiement. Inscription valable 10 ans, renouvelable. En societe, autorisation des associes requise. Page du 27/05/2024, a recouper."
+    },
+    "garantie_publique_effet_sur_la_caution": {
+      "valeur": "elle garantit le preteur, elle n eteint pas l engagement de la caution",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F35930",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Fait officiel cite tel quel : un dispositif Bpifrance (contrat de developpement transmission) est accorde sans demande de garantie, ni caution personnelle ⇒ des financements sans caution personnelle EXISTENT, donc la banque exige toujours une caution n est pas une verite generale. ⛔ Aucune recommandation de produit : le role fait du droit et du risque. ⚠ Une garantie publique beneficie au PRETEUR ; l obligation de la caution nait de son propre contrat (art. 2288) et ne s eteint que par les causes des art. 2313 et suivants. Page du 05/12/2024, a recouper."
+    }
+  },
+  "entrepreneur_individuel": {
+    "renonciation_separation_patrimoines_delai_reflexion": {
+      "valeur": {
+        "delai_de_reflexion": 7,
+        "delai_reduit_possible": 3
+      },
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F36354",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Contraste decisif : la renonciation a la separation des patrimoines au profit d un creancier professionnel comporte un delai de reflexion de 7 jours, reductible a 3 jours ; le cautionnement du code civil n en comporte AUCUN. La fiche liste aussi, parmi les cas ou le patrimoine personnel redevient saisissable, les suretes conventionnelles sur des biens personnels ⇒ le statut protege par defaut, la signature defait le defaut. Page du 20/01/2026."
+    }
+  },
+  "surendettement_de_la_caution": {
+    "dette_de_cautionnement_recevable": {
+      "valeur": "recevable",
+      "unite": "eligibilite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ La fiche range parmi les dettes recevables celles liees au fait que vous vous etes porte caution d un particulier, ou caution d une entreprise individuelle, ou caution d une societe. Conditions citees : etre une personne physique, etre dans l impossibilite de payer ses dettes personnelles ou professionnelles, etre de bonne foi. Commission de surendettement des particuliers, administree par la Banque de France, procedure GRATUITE. Page du 07/01/2025, a recouper."
+    },
+    "dirigeant_en_fonction": {
+      "valeur": null,
+      "unite": "eligibilite",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ Selon la meme fiche F134, un dirigeant de societe ne peut PAS deposer (il releve des procedures collectives), et l entrepreneur individuel doit avoir fait radier son entreprise et n avoir que des dettes personnelles. La fiche ne fournit pas de citation litterale sur ce point ⇒ a confirmer aupres de la commission, la demarche est gratuite. ★ Consequence de calendrier : la dette de caution est recevable mais la qualite de dirigeant en fonction ferme la porte ⇒ voir un professionnel AVANT de demissionner ou de radier."
+    }
+  },
+  "acces_aux_sources": {
+    "legifrance_loda_statut_http": {
+      "valeur": 403,
+      "unite": "code HTTP",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/LEGIARTI000044045546",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Note d outillage pour les prochains agents : les URL Legifrance en /loda/ renvoient 403 depuis ce harnais, et /jorf/id/ avec un identifiant errone renvoie silencieusement la page d accueil (piege : ne jamais conclure qu un texte n existe pas). Les URL en /codes/article_lc/ et /codes/section_lc/ fonctionnent. C est ce blocage qui laisse l article transitoire de l ordonnance 2021-1192 non verifie."
+    }
+  },
+  "contestation_operation_non_autorisee": {
+    "delai_signalement_forclusion": {
+      "valeur": 13,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035430562",
+      "date_verifiee": "2026-08-17",
+      "note": "L133-24 CMF, delai a compter de la date de DEBIT, sous peine de FORCLUSION (le droit est perdu, pas seulement affaibli). ★★ Le 2e alinea autorise les parties a convenir d un delai DISTINCT sauf pour une personne physique agissant pour des besoins non professionnels : sur un compte PRO la convention de compte peut donc raccourcir les 13 mois. A lire dans la convention avant de compter sur ce delai."
+    },
+    "delai_signalement_hors_eee": {
+      "valeur": 70,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20752",
+      "date_verifiee": "2026-08-17",
+      "note": "Operation effectuee hors Espace economique europeen. ⚠ Bien plus court que les 13 mois de l EEE."
+    },
+    "delai_hors_eee_prolongation_contractuelle_max": {
+      "valeur": 120,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10486",
+      "date_verifiee": "2026-08-17",
+      "note": "Le delai hors EEE peut etre prolonge par contrat sans depasser cette limite."
+    },
+    "franchise_avant_opposition": {
+      "valeur": 50,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000020860778",
+      "date_verifiee": "2026-08-17",
+      "note": "L133-19 CMF : plafond des pertes supportees par le payeur AVANT l opposition. ★ Aucune franchise si l operation a eu lieu sans les donnees de securite personnalisees, par detournement a l insu du payeur, par contrefacon alors que le payeur avait sa carte, ou SANS AUTHENTIFICATION FORTE exigee par la banque. Apres opposition : L133-20, aucune consequence financiere sauf agissement frauduleux du payeur."
+    },
+    "delai_remboursement_par_la_banque": {
+      "valeur": 1,
+      "unite": "jour ouvrable",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000020861595",
+      "date_verifiee": "2026-08-17",
+      "note": "L133-18 CMF : remboursement immediat et au plus tard a la fin du premier jour ouvrable suivant. ⚠ La fiche service-public F10486 annonce 10 jours ouvres pour un achat a distance : c est le regime de L133-25 (operation AUTORISEE), pas celui d une operation non autorisee. Le texte du code fait foi."
+    },
+    "penalite_retard_remboursement": {
+      "valeur": {
+        "majoration_immediate_points": 5,
+        "au_dela_de_jours_1": 7,
+        "majoration_points_2": 10,
+        "au_dela_de_jours_2": 30,
+        "majoration_points_3": 15
+      },
+      "unite": "points ajoutes au taux legal / jours de retard",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000020861595",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L133-18 CMF : penalites AUTOMATIQUES a la charge de la banque qui ne rembourse pas dans le delai. Argument concret a poser par ecrit, presque jamais invoque au guichet."
+    },
+    "delai_demande_remboursement_montant_indetermine": {
+      "valeur": 8,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000020861571",
+      "date_verifiee": "2026-08-17",
+      "note": "L133-25 CMF : operation AUTORISEE dont le montant n etait pas specifie et depasse ce que le payeur pouvait raisonnablement anticiper. Delai a compter du debit."
+    },
+    "delai_reponse_banque_montant_indetermine": {
+      "valeur": 10,
+      "unite": "jours ouvrables",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000020861571",
+      "date_verifiee": "2026-08-17",
+      "note": "L133-25 CMF : la banque rembourse OU justifie son refus dans ce delai. Un silence n est pas un refus valable."
+    },
+    "derogation_contractuelle_compte_professionnel": {
+      "valeur": "L133-1-1, L133-7 (2 derniers alineas), L133-8, L133-19, L133-20, L133-22, L133-23, L133-25, L133-25-1, L133-25-2, L133-26 (I et III)",
+      "unite": "articles auxquels il peut etre deroge par contrat",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037294418",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L133-2 CMF : la derogation par contrat est possible SAUF pour une personne physique agissant pour des besoins NON professionnels. Donc sur un compte PRO la franchise de 50 EUR, l exoneration apres opposition et LA CHARGE DE LA PREUVE (L133-23) peuvent etre ecartees par la convention de compte. ⚠ L133-18 et L133-24 ne figurent PAS dans cette liste : le delai de remboursement et ses penalites restent dus."
+    }
+  },
+  "cheque_sans_provision": {
+    "delai_indicatif_avertissement_avant_rejet": {
+      "valeur": 7,
+      "unite": "jours",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1930",
+      "date_verifiee": null,
+      "note": "La banque adresse un avertissement demandant d alimenter le compte generalement sous ce delai. ⚠ La page ecrit generalement : ce n est pas un delai legal, il depend de la banque. Valeur indicative, a ne pas opposer comme un droit."
+    },
+    "duree_interdiction_emettre_des_cheques": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31388",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L interdiction porte sur TOUS les comptes personnels du titulaire, y compris dans les AUTRES banques. Levee anticipee possible apres regularisation complete."
+    },
+    "delai_radiation_fcc_apres_regularisation": {
+      "valeur": 2,
+      "unite": "jours ouvres",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2411",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel la banque doit demander la radiation a la Banque de France apres justification de la regularisation. ★ C est la banque qui doit agir : le silence de la banque, pas la duree legale, est la cause la plus courante d une inscription qui traine."
+    },
+    "duree_blocage_provision": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1930",
+      "date_verifiee": "2026-08-17",
+      "note": "Somme bloquee par courrier a la banque pour regulariser : elle redevient disponible apres ce delai si elle n a pas ete utilisee."
+    },
+    "sanction_emission_malgre_interdiction": {
+      "valeur": {
+        "amende_max_eur": 375000,
+        "emprisonnement_max_ans": 5
+      },
+      "unite": "EUR / ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31388",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Emettre un cheque malgre l interdiction est un delit. Restitution obligatoire de tous les chequiers."
+    },
+    "frais_rejet_cheque_seuil_montant": {
+      "valeur": 50,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18777",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil du montant du cheque qui commande le plafond de frais. Page du 30/09/2024, a recouper."
+    },
+    "frais_rejet_cheque_plafond_petit_montant": {
+      "valeur": 30,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18777",
+      "date_verifiee": "2026-08-17",
+      "note": "Cheque d un montant inferieur ou egal au seuil. Page du 30/09/2024, a recouper."
+    },
+    "frais_rejet_cheque_plafond_grand_montant": {
+      "valeur": 50,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18777",
+      "date_verifiee": "2026-08-17",
+      "note": "Cheque d un montant superieur au seuil. Page du 30/09/2024, a recouper."
+    },
+    "certificat_non_paiement_seuil_cheque": {
+      "valeur": 15,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1537",
+      "date_verifiee": "2026-08-17",
+      "note": "Cote BENEFICIAIRE. Au-dessus de ce montant la banque du debiteur delivre GRATUITEMENT un certificat de non-paiement. Page du 28/01/2025."
+    },
+    "certificat_non_paiement_delai": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1537",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai apres lequel le cheque impaye ouvre droit au certificat. Remis d office si le second encaissement est rejete, sinon a demander PAR ECRIT."
+    },
+    "delai_paiement_apres_signification": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1537",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Delai laisse au debiteur apres signification du certificat par commissaire de justice. Passe ce delai : saisie possible SANS proces. Frais a la charge du debiteur."
+    },
+    "validite_cheque": {
+      "valeur": {
+        "annees": 1,
+        "jours": 8
+      },
+      "unite": "an et jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2402",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree de validite a partir de la date inscrite sur le cheque. Au-dela le beneficiaire ne peut plus l encaisser."
+    }
+  },
+  "prelevement": {
+    "delai_contestation_prelevement_autorise": {
+      "valeur": 8,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20752",
+      "date_verifiee": "2026-08-17",
+      "note": "Prelevement SEPA AUTORISE mais conteste : delai a compter de la date du debit. Page du 30/09/2024, a recouper."
+    },
+    "delai_remboursement_prelevement_autorise": {
+      "valeur": 10,
+      "unite": "jours ouvrables",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20752",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Remboursement SANS avoir a se justifier dans ce delai (droit au remboursement inconditionnel, L133-25-1). Le litige avec le creancier reste entier : le remboursement bancaire n efface pas la dette."
+    },
+    "duree_validite_mandat_sans_usage": {
+      "valeur": 36,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20752",
+      "date_verifiee": "2026-08-17",
+      "note": "Un mandat sans aucun ordre presente pendant cette duree ne peut plus etre utilise."
+    },
+    "delai_revocation_avant_debit": {
+      "valeur": 1,
+      "unite": "jour ouvrable",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000020861629/",
+      "date_verifiee": "2026-08-17",
+      "note": "L133-8 CMF : en cas de prelevement le payeur conserve le droit de revocation jusqu a la fin du jour ouvrable precedant le debit convenu. ★ C est la seule fenetre ou l argent ne part pas du tout."
+    },
+    "frais_rejet_prelevement_ou_virement_plafond": {
+      "valeur": 20,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18777",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les frais ne peuvent depasser NI ce plafond NI le montant de l ordre rejete : un prelevement de 12 EUR rejete ne peut pas couter plus de 12 EUR. Page du 30/09/2024, a recouper."
+    }
+  },
+  "frais_incident": {
+    "commission_intervention_par_operation": {
+      "valeur": 8,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028091604",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-4-1 CMF, plafond par operation et PAR COMPTE. Version en vigueur depuis le 01/01/2014 : montant inchange depuis, a recouper avant de l annoncer."
+    },
+    "commission_intervention_par_mois": {
+      "valeur": 80,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028091604",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-4-1 CMF, plafond mensuel par compte. ★ Le plafond est PAR COMPTE : plusieurs comptes = plusieurs plafonds."
+    },
+    "commission_intervention_fragilite_par_operation": {
+      "valeur": 4,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033688443",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-4-2 CMF : plafond applicable aux souscripteurs de l offre client fragile et aux beneficiaires des services bancaires de base du droit au compte."
+    },
+    "commission_intervention_fragilite_par_mois": {
+      "valeur": 20,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033688443",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-4-2 CMF, plafond mensuel."
+    },
+    "plafond_global_fragilite_hors_offre_par_mois": {
+      "valeur": 25,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Plafonnement AUTOMATIQUE : il s applique sans avoir souscrit l offre specifique et sans demande. Page du 03/01/2025, a recouper."
+    },
+    "plafond_global_offre_specifique_par_mois": {
+      "valeur": 20,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond mensuel pour les souscripteurs de l offre specifique client fragile. Page du 03/01/2025, a recouper."
+    },
+    "plafond_global_offre_specifique_par_an": {
+      "valeur": 200,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond annuel pour les souscripteurs de l offre specifique. Page du 03/01/2025, a recouper."
+    },
+    "nombre_frais_incident_plafonnes": {
+      "valeur": 9,
+      "unite": "categories de frais",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "Nombre de categories de frais d incident visees par le plafonnement des clients fragiles. La liste complete des frais d incident figure a R312-1-2 CMF (quatorze postes)."
+    },
+    "prix_max_offre_client_fragile": {
+      "valeur": 3,
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Prix maximum de l offre specifique que la banque DOIT proposer. Elle ne la propose presque jamais spontanement : il faut la demander par ecrit. Page du 03/01/2025, a recouper."
+    },
+    "fragilite_seuil_incidents_par_mois": {
+      "valeur": 5,
+      "unite": "incidents ou irregularites",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042136154",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-4-3 CMF : nombre d irregularites de fonctionnement ou d incidents de paiement au cours d un meme mois a partir duquel la fragilite est appreciee."
+    },
+    "fragilite_duree_constat": {
+      "valeur": 3,
+      "unite": "mois consecutifs",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042136154",
+      "date_verifiee": "2026-08-17",
+      "note": "R312-4-3 CMF : duree de constat, et duree MINIMALE du classement en situation de fragilite. Vaut aussi pour l inscription au fichier Banque de France d un cheque impaye ou d un retrait de carte."
+    },
+    "preavis_modification_tarifaire": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F848",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Le silence pendant ce delai vaut ACCEPTATION du nouveau tarif. Contester par ecrit avant l echeance est la seule facon de ne pas etre lie. Page du 24/10/2024, a recouper."
+    },
+    "amende_defaut_information_tarifaire": {
+      "valeur": 1500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F848",
+      "date_verifiee": "2026-08-17",
+      "note": "Sanction du manquement de la banque a son obligation d information tarifaire. Page du 24/10/2024, a recouper."
+    }
+  },
+  "virement": {
+    "delai_execution_usuel": {
+      "valeur": {
+        "min_heures": 24,
+        "max_heures": 48
+      },
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Ordre de grandeur donne par la fiche, PAS un delai legal maximum. Un ordre passe pres de la fin du jour ouvrable est repute recu le jour ouvrable suivant."
+    },
+    "frais_recuperation_fonds_iban_errone": {
+      "valeur": "possible si la convention de compte le prevoit",
+      "unite": "frais de recouvrement",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037294405",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L133-21 CMF : un ordre execute conformement a l IBAN fourni est repute DUMENT execute ; si l IBAN est inexact la banque n est PAS responsable. Elle doit seulement s efforcer de recuperer les fonds, et peut facturer ce recouvrement. En cas d echec elle fournit les informations permettant d agir en JUSTICE contre le beneficiaire."
+    },
+    "tarification_virement_instantane": {
+      "valeur": "identique au virement classique",
+      "unite": "regle de tarification",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Une tarification identique doit etre appliquee entre virements classiques et instantanes. Une surfacturation du virement instantane est contestable."
+    },
+    "duree_execution_virement_instantane": {
+      "valeur": null,
+      "unite": "secondes",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. La fiche F2384 dit seulement que les fonds sont disponibles immediatement, sans chiffre. Le delai maximal en secondes vient du reglement UE sur les paiements instantanes, dont le texte n a pas pu etre recupere (eur-lex renvoie une page vide). Ne pas annoncer de chiffre."
+    }
+  },
+  "encaissement_commercant": {
+    "seuil_signature_recu_carte": {
+      "valeur": 1500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22929",
+      "date_verifiee": "2026-08-17",
+      "note": "Au-dela de ce montant la signature du recu est obligatoire. Page du 04/08/2023, a recouper."
+    },
+    "plafond_especes_resident": {
+      "valeur": 1000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22929",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de paiement en especes pour un particulier resident fiscal en France, sauf si c est le seul moyen de paiement disponible. Page du 04/08/2023, a recouper."
+    },
+    "plafond_especes_non_resident": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22929",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond pour un touriste etranger reglant des depenses personnelles. Page du 04/08/2023, a recouper."
+    },
+    "amende_refus_especes_injustifie": {
+      "valeur": 150,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22929",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Refuser les especes n est pas libre, contrairement a la carte et au cheque. Page du 04/08/2023, a recouper."
+    },
+    "amende_defaut_affichage_refus": {
+      "valeur": {
+        "entrepreneur_individuel": 3000,
+        "societe": 15000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22929",
+      "date_verifiee": "2026-08-17",
+      "note": "Refuser la carte ou le cheque, ou imposer un montant minimum, est licite MAIS suppose une information claire par affichage et dans les CGV. Page du 04/08/2023, a recouper."
+    },
+    "amende_surfacturation_moyen_de_paiement": {
+      "valeur": {
+        "entrepreneur_individuel": 75000,
+        "societe": 375000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22929",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ ★ Facturer un supplement parce que le client paie par carte est interdit et lourdement sanctionne : la commission monetique ne peut pas etre repercutee sur le client."
+    },
+    "commission_monetique_commercant": {
+      "valeur": null,
+      "unite": "pourcentage de la transaction",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE et volontairement non chiffre. Les commissions d acquisition et la location de terminal sont CONTRACTUELLES et negociees : aucune source officielle n en fixe le niveau. ⛔ Ne recommander aucun prestataire. Plateformes etrangeres : voir le role comptable, cas-plateformes-etrangeres.md."
+    }
+  },
+  "fichiers_incidents": {
+    "ficp_seuil_mensualites_impayees": {
+      "valeur": 2,
+      "unite": "mensualites consecutives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil de declaration au FICP pour un credit a echeances mensuelles."
+    },
+    "ficp_seuil_jours_echeance_non_mensuelle": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil pour une echeance non mensuelle impayee."
+    },
+    "ficp_duree_incident_credit": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree MAXIMALE. ★ Radiation anticipee des la regularisation : la duree n est pas une peine fixe, elle tombe avec le paiement."
+    },
+    "ficp_duree_surendettement": {
+      "valeur": 7,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Plan conventionnel de redressement ou mesures imposees par la commission."
+    },
+    "ficp_sortie_anticipee_surendettement": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Sortie anticipee possible si aucun nouvel incident : la duree de sept ans n est pas automatique."
+    },
+    "fcc_duree_cheque_sans_provision": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2411",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree maximale d inscription au Fichier central des cheques pour cheque sans provision non regularise."
+    },
+    "fcc_duree_retrait_carte": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2411",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree maximale d inscription pour retrait de carte bancaire pour usage abusif."
+    },
+    "fnci_duree_opposition_perte_vol": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21131",
+      "date_verifiee": "2026-08-17",
+      "note": "Fichier national des cheques irreguliers : duree d inscription d une opposition pour perte ou vol. Le FNCI ne contient PAS les noms, seulement des coordonnees bancaires."
+    },
+    "fnci_duree_compte_clos": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21131",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree d inscription d un compte clos au FNCI, a compter de la cloture."
+    },
+    "droit_acces_fichiers": {
+      "valeur": "gratuit",
+      "unite": "cout du droit d acces",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2411",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Consultation GRATUITE de son inscription FCC, FICP et FNCI : en ligne sur l espace Banque de France, sur place avec une piece d identite, ou par courrier. ⛔ Aucun intermediaire payant n est necessaire."
+    }
+  },
+  "fraude": {
+    "escroquerie_peine_base": {
+      "valeur": {
+        "emprisonnement_ans": 5,
+        "amende_eur": 375000
+      },
+      "unite": "ans / EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1520",
+      "date_verifiee": "2026-08-17",
+      "note": "Articles 313-1 a 313-3 du code penal. La fraude au president et la fraude au faux fournisseur relevent de l escroquerie. Page du 28/05/2025."
+    },
+    "escroquerie_peine_aggravee": {
+      "valeur": {
+        "emprisonnement_ans": 7,
+        "amende_eur": 750000
+      },
+      "unite": "ans / EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1520",
+      "date_verifiee": "2026-08-17",
+      "note": "Notamment en cas d usurpation de la qualite d agent public ou de victime vulnerable. Page du 28/05/2025."
+    },
+    "fraude_president_frequence": {
+      "valeur": null,
+      "unite": "part des sinistres",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Aucune statistique officielle n a pu etre recuperee : economie.gouv.fr et banque-france.fr renvoient 403 sur leurs pages de recherche, et service-public n a pas de fiche dediee a la fraude au faux ordre de virement. ⛔ Ne chiffrer ni la frequence ni le cout moyen."
+    }
+  },
+  "bfr_et_equilibre_financier": {
+    "formule_bfr": {
+      "valeur": "Stock + Creances clients - Dettes fournisseurs",
+      "unite": "formule",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38186",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/03/2026, verbatim : « Besoin en fonds de roulement (BFR) = Stock + Creances clients - Dettes fournisseurs » et « Si le BFR est positif, cela signifie que l entreprise a besoin de tresorerie pour financer le decalage entre les decaissements et les encaissements ». ★★ Le BFR grossit AVEC le chiffre d affaires : plus on vend, plus on avance d argent aux clients ⇒ une entreprise RENTABLE et en croissance peut mourir de tresorerie. ★ BFR negatif = les clients paient avant les fournisseurs, le cycle se finance lui-meme."
+    },
+    "formule_fonds_de_roulement": {
+      "valeur": "Capitaux propres + Dettes - Actifs immobilises",
+      "unite": "formule",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38186",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/03/2026, verbatim : « Fonds de roulement (FR) = Capitaux propres + Dettes - Actifs immobilises ». ⚠ Ne pas confondre avec le BFR : le FR mesure les ressources durables disponibles, le BFR mesure ce que le cycle d exploitation immobilise. Un FR positif qui ne couvre pas le BFR laisse une tresorerie negative."
+    },
+    "horizon_budget_previsionnel": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F35965",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 26/12/2025, verbatim : « Vous devez construire ce budget sur les 3 annees a venir. » Le previsionnel financier comporte 4 tableaux : compte de resultat, bilan, plan de financement, budget ou plan de tresorerie."
+    },
+    "periodicite_suivi_des_ecarts": {
+      "valeur": "hebdomadaire ou mensuelle",
+      "unite": "periodicite",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F36048",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 19/01/2026 : pour une entreprise nouvellement creee, l analyse des ecarts entre prevu et realise est suggeree « hebdomadairement ou mensuellement ». ★ La maille du plan de tresorerie n est pas le mois comptable mais la SEMAINE quand la marge de manoeuvre est courte : une rupture de tresorerie se joue sur quelques jours autour d une echeance."
+    }
+  },
+  "financement_du_poste_client": {
+    "affacturage_delai_obtention_des_fonds": {
+      "valeur": {
+        "minimum": 24,
+        "maximum": 48
+      },
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37403",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 12/09/2023 (⚠ plus de six mois, a recouper). Tableau comparatif de la fiche : obtention des fonds en 24 a 48 heures pour l affacturage, des l emission de la facture pour la mobilisation de creance, rapide pour l escompte."
+    },
+    "affacturage_cout": {
+      "valeur": null,
+      "unite": "pourcentage du montant cede",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37403",
+      "date_verifiee": null,
+      "note": "⚠ AUCUN CHIFFRE OFFICIEL. La fiche dit seulement, verbatim : « Il est couteux pour l entreprise » et « en cedant ses factures a une societe de financement, celle-ci recupere une partie de la somme dont le client est redevable. Le pourcentage varie en fonction de la societe d affacturage. » ⛔ Ne pas reprendre les fourchettes des sites commerciaux : elles ne sont pas sourcees par l administration. Le cout se demande au prestataire, par ecrit, commission par commission."
+    },
+    "affacturage_perimetre": {
+      "valeur": "creances sur clients professionnels uniquement (BtoB)",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37403",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 12/09/2023 : cession de « toutes les creances qu elle detient sur ses clients professionnels », activites « entre professionnels (Business to Business ou BtoB) ». Le factor doit avoir « l agrement de societe de financement ». ⚠ La fiche affiche l avertissement « La page que vous consultez ne concerne pas les micro-entrepreneurs » ⇒ ne pas presenter l affacturage a un micro-entrepreneur comme un outil documente pour lui."
+    },
+    "escompte_perimetre": {
+      "valeur": "effets de commerce uniquement (lettre de change, billet a ordre)",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38443",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 27/11/2024, verbatim : « Les creances pouvant etre escomptees sont les effets de commerce. » ★ Consequence decisive : une facture ordinaire ne s escompte PAS. Sans lettre de change ni billet a ordre accepte par le client, l escompte est hors de portee, il faut passer par l affacturage ou la mobilisation de creance. Code de commerce, articles L511-1 a L512-8. ⚠ La fiche affiche « La page que vous consultez ne concerne pas les micro-entrepreneurs »."
+    },
+    "escompte_cout": {
+      "valeur": null,
+      "unite": "composantes du cout",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38443",
+      "date_verifiee": null,
+      "note": "⚠ AUCUN CHIFFRE OFFICIEL. Verbatim : « Le cout de l escompte varie en fonction des etablissements de credit. Il correspond aux elements suivants : Frais de dossier, Interets d escompte, Frais ou commissions. » ⇒ Trois lignes a faire chiffrer separement avant de comparer deux offres."
+    },
+    "mobilisation_creance_cout": {
+      "valeur": 10,
+      "unite": "% du montant HT des creances cedees",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38332",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 27/11/2024 (⚠ plus de six mois, a recouper), verbatim : « En general, la mobilisation de creance coute autour de 10 % du montant HT des creances cedees. » ★★ C est le SEUL cout chiffre par une source officielle parmi les quatre outils du poste client : il sert de point de comparaison, pas de tarif garanti. Frais de dossier, interets et commissions inclus. Articles L313-23 a L313-34 du code monetaire et financier (cession Dailly)."
+    },
+    "repartition_du_risque_impaye": {
+      "valeur": "affacturage : le factor · mobilisation de creance : l entreprise · escompte : l entreprise",
+      "unite": "qui supporte le risque",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37403",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA question a poser n est pas « combien ca coute » mais « qui garde le risque et qui parle au client ». Tableau comparatif de la fiche affacturage : risque d impaye sur le factor en affacturage, sur l entreprise en mobilisation de creance et en escompte ; gestion du poste clients acquise par le factor en affacturage, conservee par l entreprise dans les deux autres. Escompte, verbatim : « c est a l entreprise qui a realise l escompte de payer le montant de l effet de commerce escompte a la banque ». Mobilisation, verbatim : « Le risque d impaye pese donc sur l entreprise qui a mobilise ses creances. » ⇒ Deux outils de cout voisin n achetent pas la meme chose."
+    },
+    "information_du_client_debiteur": {
+      "valeur": "mobilisation notifiee : notification par l etablissement · mobilisation simple : information par l entreprise · affacturage : le factor se fait payer directement",
+      "unite": "visibilite pour le client",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38332",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim mobilisation : « Cession notifiee : l etablissement de credit ou la societe de financement adresse une notification au client debiteur » et « L entreprise qui cede ou nantit des creances garde la gestion de sa relation client ». Affacturage : le factor est subroge et « c est a lui de se faire payer les creances cedees aupres des clients professionnels » ⇒ le client s en apercoit. ⚠ La fiche affacturage cite en inconvenient une degradation possible des relations clients. ⛔ Aucune source officielle trouvee sur l affacturage dit confidentiel ou non notifie : ne pas l affirmer."
+    },
+    "assurance_credit_cout": {
+      "valeur": null,
+      "unite": "prime",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37403",
+      "date_verifiee": null,
+      "note": "⚠ AUCUNE FICHE OFFICIELLE DEDIEE trouvee sur entreprendre.service-public.gouv.fr pour l assurance-credit comme produit autonome (recherche effectuee le 17/08/2026 sur « assurance-credit » et « assurance impayes clients »). La seule mention officielle relevee est indirecte : la fiche affacturage indique que le factor se protege par « une assurance credit et/ou d un fonds de garantie ». ⇒ Mecanisme decrit sans aucun chiffre ; ni prime, ni taux de couverture, ni franchise ne doivent etre avances."
+    }
+  },
+  "credits_bancaires_court_terme": {
+    "duree_convention_de_decouvert": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026, verbatim : la convention de decouvert « est generalement signee pour 1 an » et « convient pour un besoin ponctuel mais recurrent ». ⚠ Un decouvert n est donc pas une ressource stable : il se renegocie, et il se denonce ⇒ renvoi credit-et-rupture.md du meme role pour le preavis."
+    },
+    "duree_credit_de_campagne": {
+      "valeur": 9,
+      "unite": "mois minimum",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026, verbatim : le credit de campagne, destine aux activites cycliques ou saisonnieres, « porte sur des montants plus importants qu avec un decouvert autorise et a une duree de 9 mois ou plus ». ★ Outil peu connu des petites structures saisonnieres, qui empilent des decouverts la ou un credit de campagne correspond au besoin."
+    },
+    "facilite_de_caisse_duree": {
+      "valeur": "ponctuelle",
+      "unite": "duree",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026, verbatim : la facilite de caisse « ne peut etre accordee que pour une duree ponctuelle », pour « un besoin ponctuel et passager de financement ». ⚠ Difference avec le decouvert : le decouvert couvre un besoin ponctuel mais RECURRENT. Utiliser une facilite de caisse en permanence, c est financer du structurel avec du provisoire."
+    }
+  },
+  "credit_inter_entreprises": {
+    "duree_maximale_pret_inter_entreprises": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22988",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 12/08/2024 (⚠ plus de six mois, a recouper), verbatim : « La duree du pret inter-entreprises ne peut pas depasser 2 ans. » Articles L511-6 et R511-2-1-1 a R511-2-1-3 du code monetaire et financier."
+    },
+    "conditions_pret_inter_entreprises": {
+      "valeur": "societe commerciale, comptes certifies par un commissaire aux comptes, prets a titre accessoire, lien economique avec l emprunteur",
+      "unite": "conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22988",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : « L entreprise preteuse a ses comptes certifies par un commissaire aux comptes » et « L entreprise preteuse ne consent des prets qu a titre accessoire (elle ne doit pas en faire une activite habituelle) ». ★★ Consequence : preter de la tresorerie a une entreprise partenaire n est pas libre. L exigence de comptes certifies met le pret inter-entreprises hors de portee de la quasi-totalite des TPE ⇒ le vrai credit inter-entreprises d une petite structure n est pas un pret, c est le DELAI accorde ou subi sur les factures."
+    },
+    "declaration_pret_inter_entreprises": {
+      "valeur": {
+        "formulaire": "2062",
+        "delai_declaration_mois": 1
+      },
+      "unite": "formalite",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22988",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : « chacun de ces contrats doit etre declare aupres du service des impots (SIE), via le formulaire n° 2062 dans un delai d 1 mois a compter de sa conclusion ». ⚠ Formalite oubliee dans la plupart des avances entre societes amies, y compris quand le pret lui-meme etait licite."
+    }
+  },
+  "acomptes_et_avances": {
+    "tva_exigible_sur_acompte": {
+      "valeur": "exigible des l encaissement, a concurrence du montant encaisse",
+      "unite": "regle d exigibilite",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006163045",
+      "date_verifiee": "2026-08-17",
+      "note": "Code general des impots, article 269, version en vigueur au 01/01/2023, verbatim : « Toutefois, en cas de versement prealable d un acompte, la taxe devient exigible au moment de son encaissement, a concurrence du montant encaisse. » ★★ Un acompte encaisse n est donc PAS integralement de la tresorerie disponible : la TVA correspondante est deja due, avant meme la livraison ou l achevement. La fiche F31412 (page du 01/01/2023, a recouper) ajoute verbatim : « Une facture d acompte de service entraine toujours l exigibilite de la TVA pour le fournisseur. » ⇒ Detail du regime et des echeances : role comptable, tva.md."
+    },
+    "marche_public_seuil_avance_obligatoire": {
+      "valeur": 50000,
+      "unite": "EUR HT",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23386",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 25/06/2026, verbatim : « L avance est obligatoire pour les marches de l Etat et des collectivites territoriales lorsque les 2 conditions suivantes sont reunies : Le montant initial du marche est superieur a 50 000 EUR HT. Le delai d execution du marche est superieur a 2 mois. » ★★ C est un DROIT, pas une faveur a negocier - et presque personne ne le reclame. Article R2191-3 du code de la commande publique."
+    },
+    "marche_public_duree_execution_avance": {
+      "valeur": 2,
+      "unite": "mois (delai d execution minimal)",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23386",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 25/06/2026 : seconde condition cumulative de l avance obligatoire, le delai d execution du marche doit etre superieur a cette duree."
+    },
+    "marche_public_taux_minimal_avance_pme": {
+      "valeur": {
+        "marches_de_l_etat": 30,
+        "etablissements_publics_administratifs_de_l_etat": 10,
+        "collectivites_territoriales": 10
+      },
+      "unite": "% minimum, titulaire PME",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23386",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 25/06/2026, verbatim : « 30 % pour les marches publics passes par l Etat », « 10 % pour les marches publics passes par les etablissements publics administratifs de l Etat », « 10 % pour les marches publics passes par les collectivites territoriales ». ⚠ Une lecture de la page faisait apparaitre une condition supplementaire liee aux depenses de fonctionnement de la collectivite, qui n a PAS pu etre confirmee mot pour mot : verifier le taux applicable sur la fiche avant de l annoncer a un titulaire."
+    },
+    "marche_public_fourchette_avance": {
+      "valeur": {
+        "minimum": 5,
+        "maximum": 30,
+        "seuil_duree_marche_mois": 12
+      },
+      "unite": "% du montant initial TTC",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23386",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 25/06/2026, tableau des modalites de calcul : duree du marche inferieure ou egale a 12 mois, « entre 5 % et 30 % du montant initial du marche TTC » ; duree superieure, « entre 5 % et 30 % d une somme egale a 12 fois le montant initial TTC du marche divise par la duree en mois ». ⚠ L avance se REMBOURSE (article R2191-11) : elle decale la tresorerie, elle ne l augmente pas definitivement."
+    },
+    "marche_public_periodicite_acomptes": {
+      "valeur": 3,
+      "unite": "mois maximum",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23386",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 25/06/2026, verbatim : « Les acomptes doivent etre verses tous les 3 mois au maximum ». Articles R2191-20 a R2191-22 du code de la commande publique."
+    },
+    "marche_public_periodicite_acomptes_pme": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23386",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 25/06/2026, verbatim : « Cette periodicite est ramenee a 1 mois dans les cas suivants » - PME et artisans en marches de travaux, et sur demande en marches de fournitures ou de services. ★ Un titulaire PME qui attend la fin du chantier pour facturer se prive d un acompte mensuel auquel il a droit."
+    },
+    "clause_acompte_effet": {
+      "valeur": "l acompte engage definitivement les deux parties",
+      "unite": "effet juridique",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38525",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026, verbatim : « Clause d acompte et d arrhes : une fois qu un acompte ou des arrhes ont ete verses, il n est plus possible de se defaire du contrat ». ★ L acompte n est donc pas seulement de la tresorerie : c est un verrou d engagement, et c est pour cela qu il est le levier le moins couteux - il ne cede aucune creance et ne coute aucune commission. ⚠ Acompte et arrhes n ont pas le meme regime de restitution : detail cote role juriste."
+    }
+  },
+  "quand_la_tresorerie_manque": {
+    "delai_de_grace_judiciaire": {
+      "valeur": 2,
+      "unite": "ans maximum",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38483",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 27/11/2024 (⚠ plus de six mois, a recouper), verbatim : « L entreprise qui a ete assignee en paiement peut demander au juge un delai supplementaire de 2 ans ». ⚠ La fiche precise que ce delai de grace ne s applique pas aux effets de commerce ni aux dettes fiscales et sociales ⇒ pour ces dernieres il existe des demandes d etalement propres (Urssaf, administration fiscale, CCSF) : voir difficultes-et-mediation.md du meme role. ★ Toutes ces voies se demandent AVANT l echeance : demander tot coute moins que subir tard."
+    }
+  },
+  "credit_professionnel": {
+    "amende_defaut_de_taeg_ecrit_eur": {
+      "valeur": 150000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226463",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L341-49 du code de la consommation, cite en verbatim dans le fichier : « Le fait de ne pas respecter les dispositions de l article L. 314-5 est puni d une amende de 150 000 euros. » ★ La sanction du defaut de TAEG ecrit est PENALE, pas seulement civile, et elle vaut aussi pour un pret PROFESSIONNEL car L313-4 vise « tout ecrit constatant un contrat de pret » sans distinction de qualite de l emprunteur. Peines complementaires : interdictions d exercer jusqu a cinq ans. ⚠️ RESERVE DE VERSION signalee par l agent dans le fichier - a recouper."
+    }
+  },
+  "rupture_de_concours_bancaire": {
+    "preavis_minimal": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L313-12 du code monetaire et financier, version en vigueur depuis le 01/01/2014 : « Ce delai ne peut, sous peine de nullite de la rupture du concours, etre inferieur a soixante jours. » Le plancher vaut pour TOUTES les categories de credits (article D313-14-1, decret n° 2005-1743, en vigueur depuis le 31/12/2005). ⚠ Ne protege que le concours a duree INDETERMINEE et NON occasionnel."
+    },
+    "sanction_du_preavis_insuffisant": {
+      "valeur": "nullite de la rupture du concours, plus responsabilite pecuniaire de l etablissement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA trouvaille du fichier : le texte ecrit « sous peine de nullite de la rupture du concours », pas dommages-interets. Une rupture notifiee avec un preavis trop court n a pas eu lieu. Le dernier alinea ajoute la responsabilite pecuniaire PAR-DESSUS. ⇒ on ne negocie pas un delai, on conteste la rupture."
+    },
+    "conditions_de_forme": {
+      "valeur": "notification ecrite, et delai de preavis fixe lors de l octroi du concours",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000006194079",
+      "date_verifiee": "2026-08-17",
+      "note": "Sans notification ECRITE, la reduction ou l interruption est irreguliere. Le delai devait etre fixe des l octroi : s il ne l a pas ete, le plancher legal s applique."
+    },
+    "champ_d_application": {
+      "valeur": "concours a duree indeterminee, autre qu occasionnel, consenti a une entreprise",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Deux mots font sortir du texte : « duree indeterminee » et « autre qu occasionnel ». Une convention de decouvert signee pour 1 an est a duree DETERMINEE : a son terme la banque ne renouvelle pas, sans preavis a reclamer sur ce fondement. ⚠ La qualification est une question de FAIT tranchee par le juge, jamais par la banque ni par le client."
+    },
+    "dispenses_totales_de_preavis": {
+      "valeur": "comportement gravement reprehensible du beneficiaire du credit, ou situation du beneficiaire irremediablement compromise",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Verbatim : « L etablissement de credit ou la societe de financement n est pas tenu de respecter un delai de preavis, que l ouverture de credit soit a duree indeterminee ou determinee, en cas de comportement gravement reprehensible du beneficiaire du credit ou au cas ou la situation de ce dernier s avererait irremediablement compromise. » ★ La 2e porte ne suppose AUCUNE faute. ⛔ Ne jamais annoncer a quelqu un que son cas y entre : ces deux notions sont l objet meme du contentieux bancaire."
+    },
+    "acces_aux_motifs_de_la_rupture": {
+      "valeur": "communiques sur demande de l entreprise concernee uniquement ; interdits aux tiers",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La banque n a pas a motiver spontanement : les raisons se DEMANDENT, par ecrit. ⛔ Elles « ne peuvent etre demandees par un tiers, ni lui etre communiquees » : ni fournisseur, ni investisseur, ni co-associe."
+    }
+  },
+  "decouvert": {
+    "duree_usuelle_convention_de_decouvert": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026. « Elle est generalement signee pour 1 an. » ⚠ Consequence : la plupart des conventions de decouvert sont a duree DETERMINEE, donc hors du preavis de 60 jours a leur terme."
+    },
+    "decouvert_tolere": {
+      "valeur": "aucune protection propre : la tolerance peut cesser sans notification ni preavis",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027643288",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Croyance fausse a demonter : « ca fait des annees que je suis a decouvert, ils ne peuvent pas me couper ». Un decouvert tolere de fait n est pas un decouvert autorise et ne devient pas un droit parce qu il dure. La qualification de concours « autre qu occasionnel » se PLAIDE, preuve dans l historique des releves. ⇒ faire ecrire la convention est l acte qui cree la protection."
+    },
+    "convention_ecrite_compte_professionnel_personne_physique": {
+      "valeur": "obligatoire, sur support papier ou autre support durable, et doit comporter les modalites d acces a la mediation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000020861890",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article L312-1-6 du code monetaire et financier, en vigueur depuis le 1er avril 2018. Un entrepreneur individuel qui n a jamais recu de convention peut la reclamer, et le chemin de recours (mediation) doit y figurer. Stipulations obligatoires precisees par arrete du ministre charge de l economie (contenu non lu ici)."
+    },
+    "convention_ecrite_compte_personne_morale": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. L article L312-1-6 ne vise que les personnes PHYSIQUES agissant pour des besoins professionnels ; L312-1-1 ne vise que les personnes physiques n agissant PAS pour des besoins professionnels. Aucun texte imposant la convention ecrite pour le compte d une SOCIETE n a ete identifie. A verifier avant d affirmer quoi que ce soit dans un sens ou dans l autre."
+    },
+    "plafonnement_des_commissions_d_intervention": {
+      "valeur": "aucun plafond legal sur un compte professionnel",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000020861890",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article L312-1-3 du code monetaire et financier, version du 23/06/2017 : les commissions d irregularites de fonctionnement sont plafonnees « pour les personnes physiques n agissant PAS pour des besoins professionnels ». L offre « clientele fragile » vise la meme categorie. ⇒ sur un compte pro, ce qui se discute n est pas un droit mais la tarification convenue."
+    }
+  },
+  "pret_professionnel": {
+    "duree_du_credit_de_campagne": {
+      "valeur": 9,
+      "unite": "mois minimum",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026. Activite cyclique ou saisonniere ; « porte sur des montants plus importants qu avec un decouvert autorise et a une duree de 9 mois ou plus »."
+    },
+    "delegation_d_assurance_emprunteur": {
+      "valeur": "droit du credit immobilier du code de la consommation ; non transposable a un pret professionnel",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222241",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Article L313-30 du code de la consommation, version du 01/06/2022, chapitre « Credit immobilier » : le preteur ne peut refuser un autre contrat d assurance de niveau de garantie equivalent, et tout refus doit etre explicite et integralement motive. Sur un pret PROFESSIONNEL la delegation se negocie, elle ne se reclame pas sur ce fondement. ★ Levier reel : l assurance entre dans le TAEG, donc faire chiffrer avec et sans."
+    },
+    "elements_negociables": {
+      "valeur": "taux, duree, differe d amortissement, frais de dossier, frais de courtage, perimetre des garanties, indemnite de remboursement anticipe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le levier le plus mal exploite n est pas le taux, c est le perimetre de la garantie : « il lui est generalement demande de donner des garanties (caution, nantissement, etc.) ». ⛔ Une caution personnelle du dirigeant efface en pratique la separation des patrimoines : voir garanties-et-caution-dirigeant.md, et voir un avocat AVANT de signer."
+    }
+  },
+  "taeg_et_taux_usure": {
+    "mention_du_taeg": {
+      "valeur": "obligatoire dans tout ecrit constatant un contrat de pret",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032228043",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L313-4 du code monetaire et financier (version du 19/07/2019) renvoie aux articles L314-1 a L314-5 du code de la consommation ; L314-5 impose la mention « dans tout ecrit constatant un contrat de pret », sans distinction de qualite de l emprunteur. ⇒ un pret professionnel sans TAEG ecrit est irregulier."
+    },
+    "amende_defaut_de_mention_du_taeg": {
+      "valeur": 150000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222593",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L341-49 du code de la consommation : « Le fait de ne pas respecter les dispositions de l article L. 314-5 est puni d une amende de 150 000 euros. » Peines complementaires d interdiction d exercer, cinq ans au plus. ⚠ Legifrance affiche cette version « en vigueur du 01/07/2016 au 20/11/2026 » : une nouvelle version est programmee, verifier la version applicable a la date utile."
+    },
+    "seuil_de_l_usure": {
+      "valeur": "taux effectif global depassant de plus du tiers le taux effectif moyen du trimestre precedent pour des operations de meme nature comportant des risques analogues",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222347",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L314-6 du code de la consommation. ⛔ Ne jamais citer un seuil chiffre de memoire : il change chaque trimestre et differe par categorie d operation."
+    },
+    "usure_prets_aux_professionnels": {
+      "valeur": "non applicable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222347",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L314-9 du code de la consommation, en vigueur depuis le 01/07/2016 : les regles d usure « ne sont pas applicables aux prets accordes a une personne physique agissant pour ses besoins professionnels ou a une personne morale se livrant a une activite industrielle, commerciale, artisanale, agricole ou professionnelle non commerciale ». ⇒ sur un pret pro, pas de taux plafond legal."
+    },
+    "usure_decouverts_en_compte_professionnels": {
+      "valeur": "applicable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000006193927",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article L313-5-1 du code monetaire et financier, en vigueur depuis le 01/01/2014, reintroduit le plafond d usure « pour les decouverts en compte ». ⇒ la question utile devant un cout anormal est : est-ce un PRET ou un DECOUVERT ? La reponse decide s il existe un plafond a opposer. ⚠ Article lu sur un affichage tronque : la designation exacte des emprunteurs vises au milieu de la phrase n a pas pu etre lue mot pour mot, ouvrir l article avant de le citer dans un acte."
+    },
+    "publication_des_taux_de_l_usure": {
+      "valeur": "revision trimestrielle par la Banque de France, consultable sur banque-france.fr et sur Legifrance",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2456",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Fiche du 16/04/2025, donc de plus de six mois, et redigee pour les PARTICULIERS : a recouper. Elle sert ici uniquement a localiser la publication du taux, pas a fixer un regime professionnel. Le TAEG y integre interets, frais de dossier, frais d intermediaire, cout de l assurance obligatoire et frais de garanties."
+    }
+  },
+  "refus_de_credit": {
+    "droit_au_credit": {
+      "valeur": "inexistant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 08/07/2026 : « Un etablissement de credit n a pas l obligation d accorder une demande de financement. »"
+    },
+    "motivation_du_refus": {
+      "valeur": "la banque doit preciser les motifs de son refus",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F22316",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : « En revanche, en cas de refus, il doit en preciser les motifs. » ⚠ La page n indique AUCUN texte fondant cette obligation : citee comme source officielle, pas comme reference legale. ⇒ demander les motifs par ecrit, c est cet ecrit qui servira en mediation du credit."
+    },
+    "droit_a_sa_notation_bancaire": {
+      "valeur": "notation et explication des elements de notation fournies sur demande, y compris a l entreprise qui SOLLICITE un pret",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000006194079",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article L313-12-1 du code monetaire et financier, en vigueur depuis le 01/01/2014. Le droit vaut pour le CANDIDAT au pret, pas seulement pour l emprunteur en cours : un refuse peut obtenir la matiere meme du refus. Demande ecrite la plus rentable apres un refus, et presque toujours ignoree. ⚠ Explications confidentielles : ni demandables par un tiers, ni communicables a un tiers."
+    },
+    "information_sur_les_alternatives_de_financement": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Aucun texte imposant a la banque d orienter l entreprise refusee vers d autres dispositifs de financement n a ete trouve sur les sources admises (recherches sur le code monetaire et financier et sur entreprendre.service-public). ⛔ Ne pas l annoncer comme un droit. Ce qui est sur : refus et rupture relevent tous deux de la mediation du credit, voir difficultes-et-mediation.md."
+    }
+  },
+  "devoir_de_mise_en_garde": {
+    "emprunteur_non_averti": {
+      "valeur": "devoir de mise en garde du a l emprunteur non averti lors de la conclusion du contrat, au regard de ses capacites financieres et des risques de l endettement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000020576240",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Cour de cassation, 1re chambre civile, 30 avril 2009, pourvoi 07-18.334. La banque « ne peut etre dispensee par la presence au cote de l emprunteur d une personne avertie, peu important qu elle soit tiers ou partie » : l argument bancaire le plus courant ne tient pas. ⚠ Trois limites : seul le NON averti est protege et un dirigeant est souvent juge averti ; appreciation au jour de l engagement ; ce n est pas un droit au credit mais un fondement de responsabilite."
+    },
+    "caution_non_avertie": {
+      "valeur": "devoir de mise en garde du a la caution non avertie si l engagement est inadapte a ses capacites financieres ou s il existe un risque d endettement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000036053011",
+      "date_verifiee": "2026-08-17",
+      "note": "Cour de cassation, chambre commerciale, 15 novembre 2017, pourvoi 16-16.790. Detail du cautionnement : garanties-et-caution-dirigeant.md."
+    },
+    "limite_non_immixtion": {
+      "valeur": "la banque ne doit pas s immiscer dans les affaires de son client, sauf anomalie apparente ne pouvant echapper a un banquier normalement diligent",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000025926978",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Cour de cassation, chambre commerciale, 22 mai 2012, pourvoi 11-13.179. Les deux principes se partagent le terrain : mise en garde AU MOMENT DE L OCTROI a un profane, abstention de juger la GESTION ensuite. ⇒ la date de ce qu on reproche decide du fondement."
+    }
+  },
+  "remboursement_anticipe": {
+    "plafond_indemnite_credit_immobilier_consommation": {
+      "valeur": {
+        "plafond_en_pourcentage": 3,
+        "unite_pourcentage": "% du capital restant du avant le remboursement",
+        "plafond_en_interets": "la valeur d un semestre d interet sur le capital rembourse au taux moyen du pret"
+      },
+      "unite": "double plafond cumulatif",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032807570",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article R313-25 du code de la consommation, version du 01/07/2016 : DEUX plafonds cumulatifs, c est le plus bas qui gagne. On ne lit souvent que l un des deux. ⚠ Regime du credit immobilier du code de la consommation, pas d un pret professionnel."
+    },
+    "plafond_indemnite_pret_professionnel": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Aucun plafond legal n a ete identifie pour un pret professionnel, mais une ABSENCE ne se prouve pas en lisant un texte voisin. En pratique l indemnite est celle du contrat ⇒ point a negocier a la SIGNATURE, quand elle ne coute rien."
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# --- Artefacts Python des scripts du dépôt ---
+# Créés dès qu'un script est importé plutôt qu'exécuté (ce qui arrive quand on teste le gate).
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Fichiers de travail temporaires ---
+*.tmp
+*.bak
+*.orig
+*.rej
+*~
+
+# --- Bruit des systèmes de fichiers ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Réglages d'éditeur, propres à une machine ---
+.idea/
+.vscode/
+*.swp
+
+# ⚠️ CE QUI N'EST PAS IGNORÉ, ET C'EST VOLONTAIRE
+#   docs/avancement.md  — GÉNÉRÉ, mais publié : le README promet que les compteurs vivent là,
+#                         et la CI vérifie qu'il est à jour. L'ignorer casserait les deux.
+#   docs/taxonomie.md   — le critère de découpage des rôles. C'est la contribution de fond du
+#                         dépôt : le cacher ne laisserait que le contenu, qui est copiable.
+# ⛔ Rappel : .gitignore N'EFFACE RIEN de l'historique. Pour rendre un fichier déjà poussé
+#    réellement privé, il faut réécrire l'historique (git filter-repo) et forcer le push.
+#    Les notes de travail n'ont donc jamais leur place dans ce dépôt : elles vivent ailleurs.
