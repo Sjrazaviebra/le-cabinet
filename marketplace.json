@@ -1,7 +1,7 @@
 {
   "name": "le-cabinet",
-  "description": "Sept roles pour agents IA en droit, fiscalite et administration francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
-  "version": "0.2.0",
+  "description": "Neuf roles pour agents IA en droit, fiscalite, financement et patrimoine francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source, date, et verifie par une CI.",
+  "version": "1.10.0",
   "author": "Sjrazaviebra",
   "license": "MIT",
   "skills": [
@@ -9,25 +9,43 @@
       "slug": "comptable",
       "name": "Comptable",
       "path": "plugins/comptabilite/skills/comptable/SKILL.md",
-      "description": "Entreprise : formes juridiques, micro-entreprise, TVA, ecritures, cloture, facturation, paie, chomage et creation."
+      "description": "Entreprise : formes juridiques, micro-entreprise, TVA, comptabilite, cloture, facturation, paie, chomage et creation."
+    },
+    {
+      "slug": "financement",
+      "name": "Financement",
+      "path": "plugins/comptabilite/skills/financement/SKILL.md",
+      "description": "Argent de l activite : compte pro et droit au compte, credit et rupture de credit, caution du dirigeant, tresorerie, mediation du credit, assurances obligatoires, leviers fiscaux legaux."
     },
     {
       "slug": "impots",
       "name": "Impots",
       "path": "plugins/comptabilite/skills/impots/SKILL.md",
-      "description": "Particulier : declaration de revenus, bareme, foyer fiscal, revenus financiers et crypto, immobilier, IFI, reclamation et controle."
+      "description": "Particulier : declaration de revenus, bareme, foyer fiscal, placements et crypto, immobilier, IFI, reclamation et controle."
+    },
+    {
+      "slug": "patrimoine",
+      "name": "Patrimoine",
+      "path": "plugins/comptabilite/skills/patrimoine/SKILL.md",
+      "description": "Argent personnel : reconnaitre une arnaque et verifier un agrement, enveloppes et supports, frais, risque et horizon, epargne reglementee, retraite, budget et surendettement."
+    },
+    {
+      "slug": "famille",
+      "name": "Famille",
+      "path": "plugins/juridique/skills/famille/SKILL.md",
+      "description": "Couple et regimes, separation, enfants et pension, succession, donation, protection des majeurs, violences."
+    },
+    {
+      "slug": "immigration",
+      "name": "Immigration",
+      "path": "plugins/juridique/skills/immigration/SKILL.md",
+      "description": "Titres de sejour, renouvellement, changement de statut, droit au travail, famille, refus et recours, naturalisation."
     },
     {
       "slug": "juriste",
       "name": "Juriste",
       "path": "plugins/juridique/skills/juriste/SKILL.md",
-      "description": "Societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, consommation, RGPD, procedure."
-    },
-    {
-      "slug": "travail",
-      "name": "Travail",
-      "path": "plugins/juridique/skills/travail/SKILL.md",
-      "description": "Convention collective, contrat, remuneration et heures, rupture et indemnites, prud hommes, harcelement et discrimination."
+      "description": "Societes, contrats et CGV, international, propriete intellectuelle, activites reglementees, consommation, RGPD, procedure."
     },
     {
       "slug": "logement",
@@ -36,16 +54,10 @@
       "description": "Bail, depot de garantie, conge, charges et travaux, impayes et expulsion, colocation, copropriete."
     },
     {
-      "slug": "famille",
-      "name": "Famille",
-      "path": "plugins/juridique/skills/famille/SKILL.md",
-      "description": "Couple et regimes, separation et divorce, enfants et pension, succession, donation, protection des majeurs, violences."
-    },
-    {
-      "slug": "immigration",
-      "name": "Immigration",
-      "path": "plugins/juridique/skills/immigration/SKILL.md",
-      "description": "Titres de sejour, renouvellement, changement de statut, droit au travail, famille, refus et recours, naturalisation."
+      "slug": "travail",
+      "name": "Travail",
+      "path": "plugins/juridique/skills/travail/SKILL.md",
+      "description": "Convention collective, contrat, remuneration et heures, rupture et indemnites, prud hommes, harcelement et discrimination."
     }
   ],
   "language": "fr",

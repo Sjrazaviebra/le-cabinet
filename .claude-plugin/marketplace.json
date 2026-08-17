@@ -1,7 +1,7 @@
 {
   "name": "le-cabinet",
-  "description": "Sept roles pour agents IA en droit, fiscalite et administration francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source et date.",
-  "version": "0.2.0",
+  "description": "Neuf roles pour agents IA en droit, fiscalite, financement et patrimoine francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source, date, et verifie par une CI.",
+  "version": "1.10.0",
   "owner": {
     "name": "Javad Razavi",
     "url": "https://github.com/Sjrazaviebra"
@@ -13,8 +13,8 @@
     {
       "name": "comptabilite",
       "source": "comptabilite",
-      "version": "0.2.0",
-      "description": "Comptabilite, fiscalite et gestion en France. Deux roles : Comptable (/comptable) pour l entreprise - formes juridiques, micro-entreprise, TVA, ecritures, cloture, facturation, paie ; Impots (/impots) pour le particulier - declaration de revenus, bareme, revenus financiers et crypto, immobilier, IFI, reclamation et controle.",
+      "version": "1.10.0",
+      "description": "Comptabilite, fiscalite, financement et epargne en France. 4 roles : Comptable (/comptable) entreprise : formes juridiques, micro-entreprise, tva, comptabilite, cloture, facturation, paie, chomage et creation. ; Financement (/financement) argent de l activite : compte pro et droit au compte, credit et rupture de credit, caution du dirigeant, tresorerie, mediation du credit, assurances obligatoires, leviers fiscaux legaux. ; Impots (/impots) particulier : declaration de revenus, bareme, foyer fiscal, placements et crypto, immobilier, ifi, reclamation et controle. ; Patrimoine (/patrimoine) argent personnel : reconnaitre une arnaque et verifier un agrement, enveloppes et supports, frais, risque et horizon, epargne reglementee, retraite, budget et surendettement..",
       "author": {
         "name": "Javad Razavi"
       }
@@ -22,8 +22,8 @@
     {
       "name": "juridique",
       "source": "juridique",
-      "version": "0.2.0",
-      "description": "Droit francais, entreprise et vie privee. Cinq roles : Juriste (/juriste) societes, contrats, activites reglementees, RGPD, consommation, procedure ; Travail (/travail) contrat, rupture, prud hommes ; Logement (/logement) bail, conge, impayes, copropriete ; Famille (/famille) couple, separation, enfants, succession, protection des majeurs ; Immigration (/immigration) titres de sejour, travail, famille, recours, naturalisation.",
+      "version": "1.10.0",
+      "description": "Droit francais, entreprise et vie privee. 5 roles : Famille (/famille) couple et regimes, separation, enfants et pension, succession, donation, protection des majeurs, violences. ; Immigration (/immigration) titres de sejour, renouvellement, changement de statut, droit au travail, famille, refus et recours, naturalisation. ; Juriste (/juriste) societes, contrats et cgv, international, propriete intellectuelle, activites reglementees, consommation, rgpd, procedure. ; Logement (/logement) bail, depot de garantie, conge, charges et travaux, impayes et expulsion, colocation, copropriete. ; Travail (/travail) convention collective, contrat, remuneration et heures, rupture et indemnites, prud hommes, harcelement et discrimination..",
       "author": {
         "name": "Javad Razavi"
       }

@@ -7,7 +7,9 @@ La promesse du dépôt n'a de valeur que si elle est vérifiable. Ce script la v
   2. aucune source n'est un domaine non admis ;
   3. aucune valeur vérifiée n'a dépassé la péremption (6 mois par défaut) ;
   4. chaque nombre cité dans un fichier .md se retrouve dans le parametres.json du rôle ;
-  5. chaque fichier de `references/` est bien routé par le `SKILL.md` de son rôle.
+  5. chaque fichier de `references/` est bien routé par le `SKILL.md` de son rôle ;
+  6. chaque image citée par un `.md` de la racine existe bien sur le disque ;
+  7. chaque rôle du dépôt est déclaré dans `marketplace.json` — donc installable.
 
 Le point 4 est le garde-fou contre la dérive : un chiffre écrit dans un .md et nulle part
 ailleurs est exactement la faille par laquelle une valeur périmée survit.
@@ -188,6 +190,42 @@ def main():
             if absents:
                 alertes.append("%s/%s/%s : %d nombre(s) absent(s) du parametres.json → %s"
                                % (dom, role, f, len(absents), ", ".join(absents[:8])))
+
+
+    # ⛔ Une image citee par un .md et absente du disque est un carre casse en public.
+    # Controle ajoute le 2026-08-17 apres que J AI SUPPRIME la banniere du README en
+    # reecrivant l en-tete : le gate ne l a pas vu, c est JR qui l a vu. Il verifiait les
+    # valeurs et le routage, il ne regardait pas les images.
+    # ⚠️ HORS de la boucle des roles : sinon il signalait la meme image neuf fois.
+    for md in [os.path.join(RACINE, f) for f in ("README.md", "AGENTS.md", "CONTRIBUTING.md")]:
+        if not os.path.isfile(md):
+            continue
+        texte_md = open(md, encoding="utf-8").read()
+        images = (re.findall(r"!\[[^\]]*\]\(([^)]+)\)", texte_md)
+                  + re.findall(r"<img[^>]+src=[\"']([^\"']+)[\"']", texte_md))
+        for chemin_img in images:
+            if chemin_img.startswith("http"):
+                continue
+            if not os.path.exists(os.path.join(RACINE, chemin_img.split("#")[0])):
+                erreurs.append("%s : image introuvable -> %s"
+                               % (os.path.basename(md), chemin_img))
+
+    # ⛔ Un role absent des manifestes est un role QU ON NE PEUT PAS INSTALLER.
+    # Controle ajoute le 2026-08-17 : les deux manifestes annoncaient encore SEPT roles et
+    # ne listaient ni financement ni patrimoine. Meme mode d echec que le routage des
+    # SKILL.md - le fichier existe, mais rien ne mene a lui.
+    roles_reels = set()
+    for dom, role, chemin in roles():
+        if os.path.isfile(os.path.join(chemin, "SKILL.md")):
+            roles_reels.add(role)
+    mkt = os.path.join(RACINE, "marketplace.json")
+    if os.path.isfile(mkt):
+        declares = {s.get("slug") for s in json.load(open(mkt, encoding="utf-8")).get("skills", [])}
+        for absent in sorted(roles_reels - declares):
+            erreurs.append("marketplace.json : le role %s existe mais n est pas declare "
+                           "(donc pas installable)" % absent)
+        for fantome in sorted(declares - roles_reels):
+            erreurs.append("marketplace.json : le role %s est declare mais n existe pas" % fantome)
 
     print("  %d valeurs vérifiées · %d ouvertes" % (verifiees, ouvertes))
     for a in alertes:

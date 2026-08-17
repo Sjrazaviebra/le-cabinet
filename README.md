@@ -11,7 +11,7 @@
        - supprimer le titre marche, mais le README perd son plan.
      ⚠️ Longueur de la ligne FIXE (56 caracteres) : plus longue, elle se replie sur deux rangees.
      ⛔ Verifier a l ecran avant de toucher a ce bloc. -->
-### <img src="assets/logo.png" align="left" width="96" alt=""> le-cabinet
+### <img src="assets/logo.png" align="left" width="124" alt=""> le-cabinet
 
 ────────────────────────────────────────────────────────<br>
 **Neuf rôles pour agents IA — droit, fiscalité, financement, patrimoine.**<br>
