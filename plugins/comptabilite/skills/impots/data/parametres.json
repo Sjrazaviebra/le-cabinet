@@ -61,5 +61,45 @@
       "date_verifiee": "2026-08-17",
       "note": "Le 2042-RICI est l annexe LA PLUS OUBLIEE, et c est celle qui fait baisser l impot. A la question 'comment payer moins', la premiere reponse utile n est pas un montage mais : avez-vous rempli le RICI ?"
     }
+  },
+  "impot_revenu": {
+    "bareme_revenus_2025": {
+      "valeur": {
+        "tranche_0_pourcentage": "jusqu a 11600 EUR",
+        "tranche_11_pourcentage": "de 11601 a 29579 EUR",
+        "tranche_30_pourcentage": "de 29580 a 84577 EUR",
+        "tranche_41_pourcentage": "de 84578 a 181917 EUR",
+        "tranche_45_pourcentage": "au-dela de 181917 EUR"
+      },
+      "unite": "EUR de revenu imposable PAR PART",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "date_verifiee": "2026-08-17",
+      "note": "Bareme des revenus 2025, imposition 2026. Page verifiee le 2026-04-15. ⚠️ REVISE CHAQUE ANNEE : verifier le millesime avant usage."
+    },
+    "tmi_vs_taux_moyen": {
+      "valeur": "le bareme est progressif PAR TRANCHES : seule la fraction du revenu qui depasse une borne est imposee au taux superieur",
+      "unite": "mecanisme",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA CROYANCE FAUSSE LA PLUS REPANDUE DE LA FISCALITE FRANCAISE : « si je passe a 30 %, tout mon revenu est taxe a 30 % ». FAUX. Passer une borne ne reimpose JAMAIS ce qui est en dessous. Le TAUX MOYEN est toujours plus bas que le TMI. Cette confusion fait refuser des augmentations, des heures supplementaires et des missions. ⇒ LE TMI SERT A DECIDER (un versement PER, une charge deductible, un revenu marginal), LE TAUX MOYEN A COMPRENDRE CE QU ON PAIE."
+    },
+    "quotient_familial_mecanisme": {
+      "valeur": "le revenu imposable est divise par le nombre de parts, l impot est calcule sur ce quotient puis remultiplie",
+      "unite": "mecanisme",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Ce n est PAS un abattement : diviser avant d appliquer un bareme progressif fait tomber le revenu par part dans des tranches plus basses. C est de la que vient l avantage familial."
+    },
+    "plafonnement_quotient_familial": {
+      "valeur": 1807,
+      "unite": "EUR - ASSIETTE NON CONFIRMEE",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "date_verifiee": null,
+      "note": "⚠️ NON CONFIRME : le montant de 1807 EUR a bien ete lu sur la page, mais l ASSIETTE exacte - par DEMI-PART ou par ENFANT - n a pas ete confirmee, et la page le presentait comme « par enfant ». ⛔ NE PAS ANNONCER comme un chiffre acquis : c est le genre de valeur qu on croit connaitre et qu on enonce de travers. A recouper sur impots.gouv.fr ou au BOFiP."
+    }
   }
 }

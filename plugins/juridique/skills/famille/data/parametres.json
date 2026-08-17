@@ -77,5 +77,2450 @@
       "date_verifiee": "2026-08-17",
       "note": "Notamment lorsque l auteur est en fuite ou qu une demande d ordonnance de protection est en cours devant le JAF. ⚠️ Le TGD ne se demande PAS au juge mais au procureur, souvent via une association ou un avocat - ne pas confondre les deux circuits."
     }
+  },
+  "couple_formalites": {
+    "age_minimum_mariage_et_pacs": {
+      "valeur": 18,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F930",
+      "date_verifiee": "2026-08-17",
+      "note": "Majorite exigee pour le mariage comme pour le PACS (article 515-1 du code civil parle de deux personnes physiques majeures). Le mariage d un mineur reste possible a titre exceptionnel avec dispense du procureur et consentement des parents ; le PACS d un mineur, non."
+    },
+    "publication_des_bans": {
+      "valeur": 10,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F930",
+      "date_verifiee": "2026-08-17",
+      "note": "Affichage en mairie. Le mariage ne peut pas etre celebre avant le dixieme jour qui suit la publication. ⚠ C est le delai incompressible qui surprend ceux qui veulent une date rapprochee."
+    },
+    "validite_de_la_publication": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F930",
+      "date_verifiee": "2026-08-17",
+      "note": "Le mariage doit etre celebre dans l annee qui suit l expiration du delai de publication. Passe ce delai, il faut republier les bans."
+    },
+    "residence_continue_pour_choisir_la_commune": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F930",
+      "date_verifiee": "2026-08-17",
+      "note": "Le lien durable avec la commune de celebration peut resulter d une residence continue d au moins un mois. Le justificatif de domicile demande doit lui aussi etre anterieur d au moins un mois."
+    },
+    "cout_du_pacs": {
+      "valeur": {
+        "mairie": "gratuit",
+        "consulat": "gratuit",
+        "notaire": "payant, tarif non publie sur la fiche"
+      },
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1618",
+      "date_verifiee": null,
+      "note": "La fiche indique mairie et consulat gratuits, notaire payant, SANS donner de montant. ⚠ Le tarif notarial d enregistrement d un PACS n a pas pu etre chiffre sur une source admise : ne pas avancer de chiffre."
+    }
+  },
+  "regimes_matrimoniaux": {
+    "regime_par_defaut": {
+      "valeur": "communaute reduite aux acquets",
+      "unite": "regime",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136353/",
+      "date_verifiee": "2026-08-17",
+      "note": "Articles 1393 et 1394 du code civil : a defaut de stipulations speciales les regles de la communaute forment le droit commun, et si l acte de mariage mentionne qu il n a pas ete fait de contrat les epoux sont reputes maries sous le regime de droit commun a l egard des tiers. ⇒ Ne pas choisir EST un choix."
+    },
+    "moment_de_signature_du_contrat": {
+      "valeur": "avant la celebration",
+      "unite": "moment",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136353/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1395 : les conventions matrimoniales doivent etre redigees AVANT la celebration et ne prennent effet qu au jour de celle-ci. Apres le mariage, ce n est plus un contrat de mariage mais un changement de regime (article 1397)."
+    },
+    "emolument_notaire_contrat_de_mariage": {
+      "valeur": {
+        "seuil": 30800,
+        "emolument_fixe_hors_taxes": 188.68
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F948",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim de la fiche : jusqu a 30 800 euros de biens mentionnes, l emolument du notaire est fixe a 188,68 euros hors taxes ; au-dela il devient proportionnel. ⚠ Ce n est PAS le cout total : s y ajoutent droit d enregistrement, copie authentique, taxes et publicite, non chiffres sur la fiche."
+    },
+    "bareme_proportionnel_au_dela_du_seuil": {
+      "valeur": null,
+      "unite": "pourcentage par tranche",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F948",
+      "date_verifiee": null,
+      "note": "La fiche annonce un emolument proportionnel au-dela de 30 800 euros mais ne publie pas les tranches. ⛔ Ne jamais estimer : faire chiffrer par le notaire."
+    },
+    "frais_annexes_contrat_de_mariage": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F948",
+      "date_verifiee": null,
+      "note": "Droit d enregistrement, copies authentiques, taxes, frais de publicite : cites par la fiche, jamais chiffres. Idem pour le cout de l avis aux creanciers lors d un changement de regime."
+    },
+    "changement_de_regime_delai_opposition": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038584427",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1397 : les enfants majeurs de chaque epoux et les anciennes parties au contrat sont informes personnellement et disposent de trois mois pour s opposer ; les creanciers, trois mois apres la publication de l avis. ★ Depuis la version en vigueur du 24 mai 2019 il n y a PLUS de delai d attente de deux ans apres le mariage, et l homologation par le juge n intervient QU EN CAS d opposition."
+    },
+    "changement_de_regime_opposabilite_aux_tiers": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038584427",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1397 : le changement prend effet entre les parties a la date de l acte, mais a l egard des tiers seulement trois mois apres la mention en marge de l acte de mariage. ★ Un changement de regime ne met donc pas a l abri d une dette deja nee : les creanciers non opposants peuvent en outre l attaquer pour fraude."
+    }
+  },
+  "solidarite_des_dettes": {
+    "mariage_perimetre_de_la_solidarite": {
+      "valeur": "entretien du menage ou education des enfants",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028748098",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 220 : toute dette contractee par l un pour l entretien du menage ou l education des enfants oblige l autre SOLIDAIREMENT. ★★ L article 220 figure au chapitre des devoirs et droits respectifs des epoux, pas au chapitre des regimes matrimoniaux : il s applique QUEL QUE SOIT le regime, separation de biens comprise. Exclusions : depenses manifestement excessives, achats a temperament et emprunts non consentis par les deux, sauf sommes modestes de la vie courante."
+    },
+    "pacs_perimetre_de_la_solidarite": {
+      "valeur": "besoins de la vie courante",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028748096",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 515-4 : solidarite pour les dettes contractees par l un d eux pour les besoins de la vie courante, memes exclusions que l article 220. ★ Le perimetre est PLUS ETROIT qu en mariage : l education des enfants n y figure pas."
+    },
+    "concubinage_solidarite": {
+      "valeur": "aucune",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F904",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : vous n etes pas solidaire des dettes contractees par votre concubin, les dettes restent personnelles sauf engagement expres. ⚠ Le revers : co-emprunteur ou caution sur un pret immobilier, c est un engagement expres et la separation n y change rien."
+    },
+    "communaute_saisie_des_biens_communs": {
+      "valeur": "tous les biens communs sont saisissables",
+      "unite": "assiette",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150275/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 1413 : le paiement des dettes dont chaque epoux est tenu, POUR QUELQUE CAUSE QUE CE SOIT, pendant la communaute, peut TOUJOURS etre poursuivi sur les biens communs. Autrement dit une dette professionnelle contractee seul par un epoux atteint l epargne et l immobilier communs. C est le point decisif pour le conjoint d entrepreneur."
+    },
+    "protection_des_gains_et_salaires_du_conjoint": {
+      "valeur": "insaisissables hors dettes menageres",
+      "unite": "assiette",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150275/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 1414 : les gains et salaires d un epoux ne peuvent etre saisis par les creanciers de son conjoint que si l obligation a ete contractee pour l entretien du menage ou l education des enfants, conformement a l article 220. C est le seul verrou automatique dont dispose le conjoint d un entrepreneur en communaute."
+    },
+    "solidarite_fiscale": {
+      "valeur": "mariage et PACS solidaires, concubinage non",
+      "unite": "perimetre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35937",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : vous etes solidaires pour le paiement de votre impot sur le revenu des lors que vous etes soumis a imposition commune ; solidaires aussi de la taxe d habitation sur residence secondaire si vous vivez sous le meme toit. Pour le concubin : vous n etes pas solidaire du paiement de l impot du par votre concubin (fiche F904). ★ Une decharge de responsabilite solidaire est possible apres rupture de la vie commune. Detail fiscal ⇒ role impots."
+    },
+    "decharge_de_responsabilite_solidaire_delai": {
+      "valeur": null,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35937",
+      "date_verifiee": null,
+      "note": "La fiche donne les trois conditions (rupture de la vie commune, disproportion marquee entre la dette et la situation financiere, respect des obligations fiscales depuis la rupture) et l interlocuteur (direction departementale des finances publiques) mais AUCUN delai. ⚠ Ne pas affirmer qu il n y en a pas : verifier au role impots."
+    }
+  },
+  "logement_du_couple": {
+    "protection_du_logement_familial_mariage": {
+      "valeur": "consentement des deux epoux exige",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006422766",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 215 alinea 3 : les epoux ne peuvent l un sans l autre disposer des droits par lesquels est assure le logement de la famille, ni des meubles meublants dont il est garni. Vaut meme si le logement appartient a un seul epoux et quel que soit le regime : un epoux proprietaire ne peut PAS vendre seul."
+    },
+    "nullite_de_l_acte_sur_le_logement_familial": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006422766",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 215 : l action en nullite est ouverte dans l annee a partir du jour ou l epoux a eu connaissance de l acte, sans pouvoir jamais etre intentee plus d un an apres la dissolution du regime matrimonial. ⚠ Double plafond : le second peut fermer l action avant le premier."
+    },
+    "protection_du_logement_pacs_et_concubinage": {
+      "valeur": "aucune",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le chapitre du PACS (articles 515-1 a 515-7-1) ne contient AUCUN equivalent de l article 215 alinea 3, verifie sur Legifrance. La fiche comparative confirme : si un seul est proprietaire, l autre est considere comme un occupant a titre gratuit, en PACS comme en concubinage. ⇒ Le partenaire proprietaire peut vendre seul."
+    },
+    "cotitularite_du_bail": {
+      "valeur": "automatique en mariage, sur demande conjointe en PACS, exclue en concubinage",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028806626/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 1751 : le bail d habitation est repute appartenir aux deux epoux quel que soit leur regime, nonobstant toute convention contraire ET MEME SI LE BAIL A ETE CONCLU AVANT LE MARIAGE ; pour les partenaires de PACS, seulement DES LORS QU ILS EN FONT LA DEMANDE CONJOINTEMENT. Un droit qui se perd faute de le demander."
+    },
+    "jouissance_gratuite_du_logement_apres_deces": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431113",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 763 : jouissance gratuite du logement principal pendant une annee, de plein droit ; loyers rembourses par la succession si le logement etait loue. Alinea 3 : ces droits sont reputes EFFETS DIRECTS DU MARIAGE et non droits successoraux, et l article est D ORDRE PUBLIC ⇒ un testament ne peut pas le retirer. L article 515-6 permet au partenaire pacse survivant de s en prevaloir."
+    },
+    "droit_viager_au_logement_delai_pour_l_exercer": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165519/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 765-1 : le conjoint dispose d un an a partir du deces pour manifester sa volonte de beneficier des droits d habitation et d usage viagers. Passe ce delai le droit est perdu. ⚠ Et article 764 : le defunt peut en priver le conjoint, mais uniquement par testament AUTHENTIQUE (forme de l article 971) ; un testament olographe ne suffit pas."
+    },
+    "transfert_du_bail_au_concubin_survivant": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2562",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : a la date du deces, il vivait depuis au moins 1 an avec le concubin qui a signe le bail. ⚠ Seule porte ouverte au concubin non signataire, et elle exige de prouver un concubinage notoire d au moins un an. Page du 09/04/2025, a recouper. Detail bail ⇒ role logement."
+    }
+  },
+  "impots_et_droits_sociaux": {
+    "imposition_des_revenus": {
+      "valeur": "commune pour le mariage et le PACS, separee pour le concubinage",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim mariage et PACS : vous faites une declaration commune, vous etes imposes en commun. Concubinage : vous declarez separement vos revenus. ⚠ L imposition commune n est pas toujours favorable : elle penalise deux revenus proches et prive du statut de parent isole. Calcul ⇒ role impots."
+    },
+    "option_declarations_separees_annee_de_l_union": {
+      "valeur": "possible l annee du mariage ou du PACS",
+      "unite": "option",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F388",
+      "date_verifiee": null,
+      "note": "★ Verbatim : pour vos revenus de l annee de votre mariage ou de votre Pacs, vous avez une seule declaration a faire pour vous 2 ; toutefois, vous pouvez choisir de conserver 2 declarations distinctes. ⚠ La fiche ne dit PAS si ce choix est irrevocable : ce point reste a verifier au role impots avant de conseiller quoi que ce soit."
+    },
+    "delai_pour_declarer_le_changement_de_situation": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F388",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le changement de situation familiale doit etre declare a l administration fiscale dans les 60 jours qui suivent l evenement. Delai peu connu et facile a manquer dans les semaines qui suivent un mariage ou un PACS. Page du 15/01/2026."
+    },
+    "conge_employeur_salarie": {
+      "valeur": 4,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : vous pouvez beneficier d un conge de 4 jours au moins, pour un mariage COMME pour un PACS. Rien pour le concubinage. Minimum legal, une convention collective peut faire mieux. Page du 11/07/2025, a recouper."
+    },
+    "conge_fonctionnaire": {
+      "valeur": 5,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "Conge de 5 jours pour mariage ou PACS dans la fonction publique. Page du 11/07/2025, a recouper."
+    },
+    "pension_de_reversion": {
+      "valeur": "mariage uniquement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim PACS et concubinage : vous n avez pas droit a une pension de reversion en cas de deces de votre partenaire / de votre concubin. Mariage : vous pouvez avoir droit a une pension de reversion, sous certaines conditions. C est l ecart le plus lourd et le plus tardif : il ne se decouvre qu au deces, quand il n est plus reparable."
+    }
+  },
+  "succession_et_transmission": {
+    "conjoint_droits_legaux": {
+      "valeur": {
+        "avec_enfants_tous_communs": "choix entre l usufruit de la totalite et le quart en pleine propriete",
+        "avec_enfant_non_commun": "le quart en pleine propriete",
+        "sans_descendant_pere_et_mere_vivants": "la moitie, les parents un quart chacun",
+        "sans_descendant_ni_pere_ni_mere": "toute la succession"
+      },
+      "unite": "quote-part",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150139/",
+      "date_verifiee": "2026-08-17",
+      "note": "Articles 756, 757, 757-1 et 757-2 du code civil. Article 757-1 : quand le pere ou la mere est predecede, la part qui lui serait revenue echoit au conjoint survivant. ⚠ Article 757-3 : les biens recus par succession ou donation des ascendants peuvent revenir pour moitie aux freres et soeurs du defunt."
+    },
+    "partenaire_pacse_heritier": {
+      "valeur": "non heritier, testament indispensable",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136536/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le chapitre du PACS ne cree aucun droit successoral et seul le CONJOINT figure parmi les successibles aux articles 756 et suivants. La fiche comparative recommande testament ou donation pour proteger le partenaire. ⇒ Le piege : l exoneration de droits de succession entre pacses fait croire qu on herite. On est exonere de l impot sur ce qu on ne recoit pas."
+    },
+    "concubin_heritier": {
+      "valeur": "aucun droit",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F904",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : vous n avez aucun droit sur l heritage de votre concubin en cas de deces. Un testament est necessaire, et meme avec testament la fiscalite reste dissuasive."
+    },
+    "exoneration_conjoint_et_pacse": {
+      "valeur": "exoneration totale de droits de succession",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : il n y a pas de droits de succession entre epoux ; il n y a pas de droits de succession entre partenaires pacses. Pour le pacse l exoneration ne joue que sur ce qu il recoit par testament. Bareme detaille ⇒ role impots."
+    },
+    "taux_droits_succession_et_donation_concubin": {
+      "valeur": 60,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F904",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Taux applique entre concubins, en succession comme en donation. Verbatim donation : vous n avez droit a aucun abattement, vous devez payer des droits fiscaux au taux de 60 %. ⇒ Leguer son logement a son concubin peut l obliger a le vendre pour payer l impot. Bareme ⇒ role impots."
+    },
+    "abattement_par_defaut_en_succession": {
+      "valeur": 1594,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F904",
+      "date_verifiee": "2026-08-17",
+      "note": "Abattement applique a la part du concubin avant le taux de 60 %. Montant residuel : il ne protege rien sur un patrimoine immobilier. ⇒ role impots."
+    },
+    "abattement_donation_epoux_et_pacses": {
+      "valeur": 80724,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "Abattement sur les DONATIONS entre epoux et entre partenaires pacses. ⛔ Ne pas le confondre avec la succession, ou epoux et pacses sont totalement exoneres. Aucun abattement equivalent entre concubins. Page du 11/07/2025, a recouper ⇒ role impots."
+    }
+  },
+  "concubinage_preuve": {
+    "certificat_de_concubinage": {
+      "valeur": "aucune valeur juridique",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1433",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : le certificat de concubinage est delivre par la mairie, mais elle n est pas obligee de le faire ; le certificat de concubinage n a aucune valeur juridique. A defaut, declaration sur l honneur signee par les deux. ⇒ Ce papier rassure et ne prouve rien : ce sont les factures, le bail, les attestations qui font la preuve du concubinage notoire. Page du 24/10/2025."
+    },
+    "rupture_du_lien": {
+      "valeur": {
+        "mariage": "divorce ou separation de corps, procedure obligatoire",
+        "pacs": "declaration conjointe ou signification unilaterale a l autre partenaire",
+        "concubinage": "libre et immediate, sans formalite"
+      },
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136536/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 515-7 : le partenaire qui decide de mettre fin au PACS le fait SIGNIFIER a l autre ; la dissolution prend effet entre les partenaires a la date de son ENREGISTREMENT. Aucun accord requis, aucun juge, aucune prestation compensatoire. C est l asymetrie de sortie la plus mal comprise du PACS. Consequences de la rupture ⇒ separation-et-divorce.md"
+    }
+  },
+  "rappel_fiscal": {
+    "delai_rappel_fiscal": {
+      "valeur": 15,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/1767-PGP.html",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE mecanisme central. Art 784 CGI. Le delai se decompte de quantieme a quantieme a partir du jour ou la donation a acquis DATE CERTAINE : notarie = signature de l acte ; sous seing prive = enregistrement ; don manuel = enregistrement de la declaration. Il ne reconstitue pas seulement l abattement : il replace aussi la nouvelle transmission dans les TRANCHES LES PLUS ELEVEES du bareme. Page BOFiP du 11/07/2023, a recouper."
+    },
+    "prescription_action_reduction_delai_deces": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165578/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 921 code civil, version en vigueur depuis le 01/11/2021. Delai de l action en reduction pour atteinte a la reserve, a compter de l ouverture de la succession."
+    },
+    "prescription_action_reduction_delai_connaissance": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165578/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 921 code civil. Delai alternatif a compter du jour ou les heritiers ont eu CONNAISSANCE de l atteinte a leur reserve. ★ il peut prolonger le delai au-dela des cinq ans."
+    },
+    "prescription_action_reduction_plafond": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165578/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 921 code civil : le delai ne peut JAMAIS exceder dix ans a compter du deces. ⚠ une donation reste donc contestable bien apres qu elle a ete percue comme reglee."
+    }
+  },
+  "don_manuel": {
+    "delai_declaration_apres_revelation": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2694-PGP.html/identifiant=BOI-ENR-DMTG-20-10-20-10-20130403",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le delai court a compter de la REVELATION du don a l administration, pas de la remise du bien. Consequence : un don manuel jamais revele n a pas de date certaine, donc aucune horloge de 15 ans ne tourne. Le declarer n est pas une formalite, c est ce qui DEMARRE le compteur. Page BOFiP du 28/01/2014, a recouper."
+    },
+    "majoration_defaut_declaration_en_ligne_taux": {
+      "valeur": 0.2,
+      "unite": "% des droits dus",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1265",
+      "date_verifiee": "2026-08-17",
+      "note": "Sanction du non-respect de l obligation de declaration et de paiement EN LIGNE, obligatoire depuis le 01/01/2026. Ce n est pas la sanction du defaut de declaration lui-meme."
+    },
+    "majoration_defaut_declaration_en_ligne_minimum": {
+      "valeur": 60,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1265",
+      "date_verifiee": "2026-08-17",
+      "note": "Plancher de la majoration de 0,2 %. Page verifiee le 01/01/2026."
+    }
+  },
+  "abattements_donation": {
+    "enfant": {
+      "valeur": 100000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "Par parent, par enfant, reconstitue tous les 15 ans. Page verifiee le 13/05/2026."
+    },
+    "enfant_les_deux_parents": {
+      "valeur": 200000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/que-puis-je-donner-mes-enfants-petits-enfants-sans-avoir-payer-de-droits",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L abattement s apprecie par COUPLE donateur-donataire : un couple transmet le double a chaque enfant. Beaucoup ne comptent qu une fois. Page du 13/07/2026."
+    },
+    "petit_enfant": {
+      "valeur": 31865,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 790 B CGI. ⚠ ne pas confondre avec l abattement de succession du petit-enfant, tres inferieur : voir succession.md."
+    },
+    "arriere_petit_enfant": {
+      "valeur": 5310,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 790 D CGI."
+    },
+    "epoux_ou_partenaire_pacs": {
+      "valeur": 80724,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Cet abattement ne sert QU EN DONATION : au deces, la transmission entre epoux et entre partenaires pacses est exoneree de droits. Donner de son vivant a son conjoint peut donc creer un impot que le deces n aurait pas cree."
+    },
+    "frere_ou_soeur": {
+      "valeur": 15932,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 779 II CGI."
+    },
+    "neveu_ou_niece": {
+      "valeur": 7967,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 779 V CGI."
+    },
+    "personne_handicapee": {
+      "valeur": 159325,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14203",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art 779 II CGI. Il se CUMULE avec l abattement du lien de parente au lieu de le remplacer (BOI-ENR-DMTG-20-30-20-20, version du 19/03/2024 : il se cumule le cas echeant). C est l abattement le plus souvent perdu faute d etre demande."
+    },
+    "tarif_des_droits": {
+      "valeur": "identique au tarif des droits de succession",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/1767-PGP.html",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les donations sont soumises aux droits de mutation AU MEME TARIF que les successions. Ce sont les ABATTEMENTS qui different, pas le bareme. Bareme complet dans succession.md, ne pas le dupliquer ici."
+    }
+  },
+  "don_familial_sommes_argent": {
+    "montant_exonere": {
+      "valeur": 31865,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 790 G CGI. ★★ Il se CUMULE avec l abattement de l art 779 ET il n est PAS rappele fiscalement s il a ete declare : les dons exoneres ne seront pas pris en compte pour la liquidation des droits dus a raison des mutations posterieures entre les memes personnes. C est le seul etage vraiment gratuit."
+    },
+    "periodicite": {
+      "valeur": 15,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "Applicable tous les quinze ans entre un meme donateur et un meme donataire. Version BOFiP du 04/09/2025."
+    },
+    "age_maximum_donateur": {
+      "valeur": 80,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le donateur doit avoir MOINS de quatre-vingts ans au jour de la transmission. C est une condition qui EXPIRE : passe cet anniversaire, l exoneration est perdue definitivement, elle ne se rattrape pas."
+    },
+    "age_minimum_donataire": {
+      "valeur": 18,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "Le donataire doit etre majeur, soit age de 18 ans revolus, ou emancipe, au jour de la transmission. ⚠ un don a un petit-enfant mineur ne rentre pas dans ce dispositif."
+    },
+    "delai_declaration": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ PIEGE : ici le delai court dans le mois qui suit la DATE DU DON, pas la revelation comme pour le don manuel ordinaire. L exoneration est conditionnee a l enregistrement ou a la declaration."
+    }
+  },
+  "exoneration_temporaire_logement": {
+    "plafond_par_donateur": {
+      "valeur": 100000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 790 A bis CGI, cree par la loi de finances pour 2025. Dons de sommes d argent affectes a l acquisition d un immeuble neuf ou en l etat futur d achevement, ou a des travaux de renovation energetique de l habitation principale. Enfant, petit-enfant, arriere-petit-enfant, ou a defaut de descendance neveu ou niece."
+    },
+    "plafond_global_par_donataire": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ FENETRE QUI SE FERME : dons effectues entre le 15/02/2025 et le 31/12/2026 seulement. C est la donnee la plus perissable de ce fichier ⇒ a revalider avant toute reponse."
+    },
+    "delai_affectation": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "La somme doit etre affectee au plus tard le dernier jour du sixieme mois suivant le versement. ⚠ donner avant d avoir le projet fait perdre l exoneration."
+    },
+    "duree_conservation": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/3362-PGP.html/identifiant=BOI-ENR-DMTG-20-20-20-20250904",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Affectation exclusive et continue a la residence principale du donataire et/ou a la location pendant cinq ans a compter de l acquisition ou de l achevement. Une vente dans ce delai remet l exoneration en cause. Seule la fraction NON exoneree est soumise au rappel de l art 784."
+    }
+  },
+  "retour_a_la_succession": {
+    "evaluation_donation_simple": {
+      "valeur": "valeur du bien au jour du partage de la succession, d apres son etat a l epoque de la donation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34128",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art 922 code civil (version en vigueur depuis le 01/01/2007) et service-public F34128 verifiee le 15/10/2024. Une donation simple d un bien qui prend de la valeur revient GONFLEE dans la masse de calcul de la reserve : le donataire peut devoir indemniser les autres heritiers. C est ce que personne n explique au moment de donner."
+    },
+    "evaluation_donation_partage": {
+      "valeur": "valeur du bien au jour de la donation-partage",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006435332",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art 1078 code civil (en vigueur depuis le 01/01/2007) : les valeurs sont FIGEES, mais seulement si tous les heritiers reservataires vivants ou representes au deces ont recu un lot ET l ont expressement accepte, ET qu il n a pas ete prevu de reserve d usufruit portant sur une somme d argent. Oublier un enfant fait tomber le gel. La donation-partage n est pas rapportable civilement (F34128)."
+    },
+    "ordre_de_reduction": {
+      "valeur": "en commencant par la derniere donation, puis en remontant, apres epuisement des legs",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165578/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art 923 code civil : les legs sont reduits d abord, puis les donations de la PLUS RECENTE a la plus ancienne. Donner tot protege donc mieux le donataire que donner tard. Art 924 : la reduction se paie en VALEUR (indemnite de reduction), le bien n est pas repris ; art 924-1 : le gratifie peut choisir de la faire en nature s il possede encore le bien."
+    }
+  },
+  "donation_entre_epoux": {
+    "cout_acte_notarie": {
+      "valeur": 135.84,
+      "unite": "EUR TTC",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2767",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Emolument annonce pour l etablissement de l acte de donation au dernier vivant. Page verifiee le 18/12/2024, a recouper. Cout tres faible au regard de l effet : c est l acte le plus rentable du domaine, et il est librement revocable."
+    }
+  },
+  "assurance_vie": {
+    "abattements_transmission": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE ICI. Aucune fiche service-public traitant du regime successoral et fiscal de l assurance-vie n a pu etre trouvee via la recherche du site le 2026-08-17, et le budget de recherche etait epuise. Les abattements par beneficiaire et le seuil d age des versements vivent dans le role impots ⇒ ne jamais citer de montant depuis ce fichier."
+    }
+  },
+  "usufruit_bareme": {
+    "bareme_article_669_cgi": {
+      "valeur": {
+        "moins_de_21_ans_revolus": {
+          "usufruit_pct": 90,
+          "nue_propriete_pct": 10
+        },
+        "moins_de_31_ans_revolus": {
+          "usufruit_pct": 80,
+          "nue_propriete_pct": 20
+        },
+        "moins_de_41_ans_revolus": {
+          "usufruit_pct": 70,
+          "nue_propriete_pct": 30
+        },
+        "moins_de_51_ans_revolus": {
+          "usufruit_pct": 60,
+          "nue_propriete_pct": 40
+        },
+        "moins_de_61_ans_revolus": {
+          "usufruit_pct": 50,
+          "nue_propriete_pct": 50
+        },
+        "moins_de_71_ans_revolus": {
+          "usufruit_pct": 40,
+          "nue_propriete_pct": 60
+        },
+        "moins_de_81_ans_revolus": {
+          "usufruit_pct": 30,
+          "nue_propriete_pct": 70
+        },
+        "moins_de_91_ans_revolus": {
+          "usufruit_pct": 20,
+          "nue_propriete_pct": 80
+        },
+        "plus_de_91_ans_revolus": {
+          "usufruit_pct": 10,
+          "nue_propriete_pct": 90
+        }
+      },
+      "unite": "% de la valeur en pleine propriete",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006310173/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Bareme legal, non negociable, fonction de l age de l usufruitier AU JOUR DE LA DONATION. Les seuils sont par tranche de dix ans ⇒ franchir un anniversaire cle fait perdre dix points de nue-propriete taxable. Version Legifrance en vigueur affichee depuis le 31/12/2003, reprise a l identique par BOI-ENR-DMTG-10-40-10-50 du 23/12/2013. Recoupement : service-public F10203 du 01/01/2026 indique une nue-propriete de 60 % a 68 ans, coherent avec la tranche moins de 71 ans revolus."
+    },
+    "usufruit_duree_fixe": {
+      "valeur": {
+        "taux_par_periode_pct": 23,
+        "duree_periode_annees": 10
+      },
+      "unite": "% de la pleine propriete par periode",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006310173/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art 669 II CGI : l usufruit constitue pour une duree fixe est estime a 23 % de la valeur de la propriete entiere pour chaque periode de dix ans, sans fraction et sans egard a l age de l usufruitier, sans pouvoir exceder la valeur de l usufruit viager. ⚠ le bareme par age ne vaut QUE pour l usufruit viager (service-public, simulateur verifie le 14/10/2025)."
+    }
+  },
+  "certificat_medical_circonstancie": {
+    "cout_ttc": {
+      "valeur": 192,
+      "unite": "euros TTC",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21667",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Piece OBLIGATOIRE a peine d irrecevabilite de la requete (code civil art. 431). Non rembourse par la CPAM. A la charge du majeur a proteger sauf ressources insuffisantes ou decision contraire du juge. ⛔ Le medecin traitant ne peut PAS l etablir : il faut un medecin inscrit sur la liste du procureur, liste disponible au greffe du juge des tutelles."
+    },
+    "cout_hors_taxe": {
+      "valeur": 160,
+      "unite": "euros HT",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3165",
+      "date_verifiee": "2026-08-17",
+      "note": "Meme tarif, exprime hors taxe. Les frais de deplacement du medecin sont facturables en plus."
+    },
+    "indemnite_refus_examen": {
+      "valeur": 30,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21667",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Indemnite forfaitaire versee au medecin quand la personne refuse l examen. ⇒ le refus ne bloque PAS la procedure : le medecin delivre un certificat de carence, qui figure dans les pieces admises de la requete."
+    }
+  },
+  "duree_des_mesures": {
+    "sauvegarde_justice_duree_initiale": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2075",
+      "date_verifiee": "2026-08-17",
+      "note": "Mesure de courte duree, pour un besoin temporaire ou urgent. Renouvelable une seule fois."
+    },
+    "sauvegarde_justice_duree_maximale": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2075",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Plafond absolu. Au-dela il faut basculer sur curatelle, tutelle ou habilitation familiale, ou tout s arrete."
+    },
+    "sauvegarde_delai_contester_un_acte": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2075",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai pour faire annuler ou reduire un acte inutile, desequilibre ou disproportionne passe pendant la sauvegarde, SANS avoir a prouver l alteration des facultes. C est le vrai interet de la sauvegarde de justice."
+    },
+    "curatelle_tutelle_duree_maximale": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165753/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 441 : le juge fixe la duree sans qu elle puisse exceder cinq ans. ★ Nul n est tenu de conserver la charge au-dela de cinq ans, sauf le conjoint, le partenaire de Pacs, les enfants et les mandataires judiciaires."
+    },
+    "curatelle_tutelle_duree_derogatoire": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165753/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 441 : duree plus longue possible par decision specialement motivee et sur avis conforme d un medecin inscrit sur la liste du procureur, quand l alteration n est manifestement pas susceptible d amelioration."
+    },
+    "renouvellement_duree_maximale": {
+      "valeur": 20,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030253939",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 442 : plafond du renouvellement pour une duree plus longue, meme condition d avis conforme. Vaut aussi pour l habilitation familiale (art. 494-6)."
+    },
+    "habilitation_familiale_duree_maximale": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33367",
+      "date_verifiee": "2026-08-17",
+      "note": "La duree de la mesure ne peut pas exceder dix ans. Renouvelable, jusqu a vingt ans si l etat ne peut pas s ameliorer (code civil art. 494-6)."
+    },
+    "masp_duree_minimale": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1336",
+      "date_verifiee": "2026-08-17",
+      "note": "Plancher du contrat d accompagnement social personnalise, conclu avec le departement."
+    },
+    "masp_duree_initiale_maximale": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1336",
+      "date_verifiee": "2026-08-17",
+      "note": "Contrat de six mois a deux ans, renouvelable."
+    },
+    "masp_duree_cumulee_maximale": {
+      "valeur": 4,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1336",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond cumule de la Masp."
+    },
+    "maj_duree_maximale": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1336",
+      "date_verifiee": "2026-08-17",
+      "note": "Mesure d accompagnement judiciaire, renouvelable une fois, soit quatre ans au plus. ★ Elle n est possible QUE si la Masp a echoue."
+    },
+    "maj_duree_cumulee_maximale": {
+      "valeur": 4,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1336",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond cumule de la Maj. ⚠ Le total possible de mesures successives Masp puis Maj n a pas ete verifie ligne a ligne : ne pas l annoncer."
+    }
+  },
+  "procedure_devant_le_juge": {
+    "delai_pour_statuer_caducite": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2120",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ La decision du juge doit intervenir dans l annee du depot de la demande, sinon la demande est CADUQUE. ⇒ un dossier oublie meurt tout seul et le certificat medical de 192 euros est perdu : relancer le greffe par ecrit avant l echeance."
+    },
+    "acte_naissance_anciennete_maximale": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/R50473",
+      "date_verifiee": "2026-08-17",
+      "note": "Copie integrale de l acte de naissance de moins de trois mois a joindre a la requete cerfa 15891*03."
+    },
+    "delai_appel": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2094",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai a compter de la NOTIFICATION, par declaration au greffe ou lettre recommandee avec avis de reception. Qui peut faire appel depend du sens de la decision : si la mesure est refusee, seul le demandeur ; si elle est prononcee, la personne protegee, ses parents ou allies."
+    },
+    "cout_procedure": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3165",
+      "date_verifiee": "2026-08-17",
+      "note": "La mise en place d une mesure de protection est gratuite et l avocat n est pas obligatoire. ⇒ le seul cout d entree reste le certificat medical."
+    }
+  },
+  "obligations_du_tuteur": {
+    "inventaire_meubles_corporels": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038311125",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 503 : inventaire transmis au juge dans les trois mois de l ouverture de la tutelle pour les biens meubles corporels."
+    },
+    "inventaire_autres_biens": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038311125",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Meme article, avec le budget previsionnel. Sanction reelle : pas d inventaire ou inventaire inexact ⇒ la personne protegee et ses heritiers peuvent prouver la consistance des biens par TOUS MOYENS ; et en cas de retard le juge fait faire l inventaire aux frais du tuteur."
+    },
+    "compte_gestion_age_remise_copie": {
+      "valeur": 16,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136534/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 510 : copie du compte et des pieces justificatives remise chaque annee a la personne protegee des seize ans. ⇒ un majeur sous tutelle a DROIT a son compte de gestion chaque annee."
+    },
+    "comptes_remis_fin_de_mission": {
+      "valeur": 5,
+      "unite": "comptes de gestion",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136534/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 514 : a la fin de sa mission le tuteur remet copie des cinq derniers comptes de gestion a la personne qui prend la suite."
+    },
+    "delai_remise_fin_de_mission": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136534/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 514 : delai de remise du compte final et des cinq derniers comptes."
+    }
+  },
+  "cout_de_la_mesure": {
+    "mesure_exercee_par_un_proche": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3165",
+      "date_verifiee": "2026-08-17",
+      "note": "La mesure exercee par un proche est BENEVOLE. Le juge peut exceptionnellement autoriser le versement d une indemnite, a la charge de la personne protegee."
+    },
+    "bareme_participation_mandataire_judiciaire": {
+      "valeur": {
+        "tranche_1": "de 0 a 12 499 euros de ressources annuelles : 0 %",
+        "tranche_2": "de 12 499 a 22 404,20 euros : 10 %, soit au plus 991 euros par an",
+        "tranche_3": "de 22 404,20 a 56 010,50 euros : 23 %, soit au plus 7 729 euros par an",
+        "tranche_4": "de 56 010,50 a 134 425,20 euros : 3 %, soit au plus 2 352 euros par an",
+        "cumul_maximum": "11 072 euros par an"
+      },
+      "unite": "euros par an et pourcentage par tranche",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3165",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Quand la mesure est confiee a un mandataire judiciaire a la protection des majeurs, elle est PAYANTE et prelevee sur les ressources de la personne protegee, par tranches cumulatives. Gratuite si les ressources sont inferieures ou egales au montant annuel de l AAH : la collectivite publique prend alors le relais. ⚠ La page mentionne aussi un plafond de remuneration exprime differemment du cumul du tableau : ne pas citer ce second chiffre sans le recouper."
+    },
+    "controle_des_comptes_par_un_professionnel": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3165",
+      "date_verifiee": null,
+      "note": "⚠ Quand le juge confie la verification des comptes a un professionnel qualifie, elle est remuneree selon un bareme lie aux ressources et au patrimoine, avec un cas d exoneration. Les valeurs lues etaient trop incertaines pour etre reproduites : a relire directement sur la fiche F3165."
+    }
+  },
+  "mandat_de_protection_future": {
+    "enregistrement_acte_sous_signature_privee": {
+      "valeur": 125,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16670",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Droit d enregistrement du mandat sous signature privee aupres du service des impots du domicile du mandant, pour lui donner date certaine. S ajoutent les honoraires libres de l avocat quand le contreseing est requis."
+    },
+    "activation_certificat_medical": {
+      "valeur": 192,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16670",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le mandat ne produit AUCUN effet avant d etre active : certificat medical circonstancie d un medecin inscrit sur la liste du procureur, puis presentation au greffe du tribunal judiciaire qui vise le mandat. Un mandat signe et range dans un tiroir ne protege personne."
+    }
+  },
+  "mandat_a_effet_posthume": {
+    "duree_de_principe": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16271",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Ne pas confondre avec le mandat de protection future : le mandat a effet posthume ne protege pas le vivant, il fait administrer la SUCCESSION dans l interet d un heritier. Acte notarie obligatoire, accepte par le mandataire du vivant du mandant."
+    },
+    "duree_derogatoire": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16271",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree possible quand l age, l absence de capacite juridique des heritiers ou la necessite de gerer des biens professionnels le justifient. Prolongation possible par le juge, a la demande du mandataire ou d un heritier."
+    }
+  },
+  "divorce_consentement_mutuel": {
+    "delai_reflexion_convention": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136145/",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ A PEINE DE NULLITE (art. 229-4 c. civ.). Le delai de 15 jours court a compter de la RECEPTION du projet de convention envoye par l avocat en lettre recommandee avec avis de reception, pas de son envoi. Signer un jour trop tot annule le divorce entier. Le notaire controle ce delai."
+    },
+    "delai_depot_notaire": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10567",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel le notaire depose la convention au rang de ses minutes apres reception des documents. Page service-public du 04/02/2025."
+    },
+    "cout_depot_convention_notaire": {
+      "valeur": {
+        "hors_taxe_eur": 41.2,
+        "ttc_eur": 49.44
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10567",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le depot de la convention chez le notaire coute 41,20 EUR hors taxe soit 49,44 EUR TTC : c est le seul cout OBLIGATOIRE de l acte. ⚠ Le vrai cout est ailleurs : DEUX avocats distincts sont obligatoires dans cette voie, plus les emoluments du notaire si l etat liquidatif porte sur un immeuble, plus le droit de partage. Page service-public du 04/02/2025."
+    },
+    "nombre_avocats_obligatoire": {
+      "valeur": {
+        "voie_sans_juge": 2,
+        "voie_judiciaire_minimum": 1
+      },
+      "unite": "avocats",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10567",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CONTRE-INTUITIF. Voie sans juge : « Chaque epoux doit choisir son avocat. Il n est pas possible d avoir un seul avocat pour les 2 epoux. » Voie judiciaire : « Vous pouvez choisir chacun votre avocat ou un avocat commun. » ⇒ la procedure dite simplifiee est la plus chere en honoraires."
+    },
+    "delai_reflexion_convention_bis": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136145/",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ A PEINE DE NULLITE (art. 229-4 c. civ.). Le delai de 15 jours court a compter de la RECEPTION du projet de convention envoye par l avocat en lettre recommandee avec avis de reception, pas de son envoi. Signer un jour trop tot annule le divorce entier. Le notaire controle ce delai."
+    },
+    "delai_depot_notaire_bis": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10567",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel le notaire depose la convention au rang de ses minutes apres reception des documents. Page service-public du 04/02/2025."
+    },
+    "cout_depot_convention_notaire_bis": {
+      "valeur": {
+        "hors_taxe_eur": 41.2,
+        "ttc_eur": 49.44
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10567",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le depot de la convention chez le notaire coute 41,20 EUR hors taxe soit 49,44 EUR TTC : c est le seul cout OBLIGATOIRE de l acte. ⚠ Le vrai cout est ailleurs : DEUX avocats distincts sont obligatoires dans cette voie, plus les emoluments du notaire si l etat liquidatif porte sur un immeuble, plus le droit de partage. Page service-public du 04/02/2025."
+    },
+    "nombre_avocats_obligatoire_bis": {
+      "valeur": {
+        "voie_sans_juge": 2,
+        "voie_judiciaire_minimum": 1
+      },
+      "unite": "avocats",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10567",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CONTRE-INTUITIF. Voie sans juge : « Chaque epoux doit choisir son avocat. Il n est pas possible d avoir un seul avocat pour les 2 epoux. » Voie judiciaire : « Vous pouvez choisir chacun votre avocat ou un avocat commun. » ⇒ la procedure dite simplifiee est la plus chere en honoraires."
+    }
+  },
+  "divorce_contentieux": {
+    "alteration_duree_separation": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136145/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 238 c. civ., version en vigueur depuis le 01/01/2021 : un an de vie separee « lors de la demande en divorce ». MAIS deux exceptions retirent la condition d attente : si le demandeur introduit l instance SANS indiquer les motifs, le delai « est apprecie au prononce du divorce » ; et si deux demandes en divorce sont concurremment presentees, le divorce est prononce pour alteration « sans que le delai d un an ne soit exige ». ⇒ « il faut avoir attendu un an pour deposer » est FAUX."
+    },
+    "anciennete_max_acte_acceptation": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10569",
+      "date_verifiee": "2026-08-17",
+      "note": "Anciennete maximale de l acte d acceptation du principe de la rupture signe AVANT l introduction de la demande. ⛔ L acceptation est IRREVOCABLE, meme par la voie de l appel (art. 233 c. civ.). Page service-public du 01/03/2026."
+    },
+    "timbre_fiscal_assignation": {
+      "valeur": 50,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35837",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre fiscal du a l introduction de la demande par l epoux demandeur. Dispense possible en cas d aide juridictionnelle. Page service-public du 01/03/2026."
+    },
+    "delai_defendeur_prendre_avocat": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35837",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Delai laisse au defendeur pour constituer avocat apres l assignation. Ne pas le faire ne bloque pas la procedure : elle continue sans lui, et les mesures provisoires se decident quand meme. Page service-public du 01/03/2026."
+    },
+    "delai_appel_jugement_divorce": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35837",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai d appel a compter de la SIGNIFICATION du jugement. Le divorce dissout le mariage a la date a laquelle la decision « prend force de chose jugee » (art. 260 c. civ.). ⛔ L acceptation du principe de la rupture, elle, ne se retracte pas meme en appel."
+    },
+    "date_effet_divorce_quant_aux_biens": {
+      "valeur": "date de la demande en divorce",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006117751/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 262-1 c. civ., version en vigueur depuis le 01/01/2021. Pour l acceptation du principe de la rupture, l alteration definitive et la faute, les effets patrimoniaux remontent « a la date de la demande en divorce ». ⇒ deposer la demande ARRETE l horloge patrimoniale : ce que chacun gagne, epargne ou emprunte ensuite lui est personnel. Report possible a la date de cessation de cohabitation et de collaboration, mais « cette demande ne peut etre formee qu a l occasion de l action en divorce » : apres, c est ferme."
+    },
+    "alteration_duree_separation_bis": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136145/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 238 c. civ., version en vigueur depuis le 01/01/2021 : un an de vie separee « lors de la demande en divorce ». MAIS deux exceptions retirent la condition d attente : si le demandeur introduit l instance SANS indiquer les motifs, le delai « est apprecie au prononce du divorce » ; et si deux demandes en divorce sont concurremment presentees, le divorce est prononce pour alteration « sans que le delai d un an ne soit exige ». ⇒ « il faut avoir attendu un an pour deposer » est FAUX."
+    },
+    "anciennete_max_acte_acceptation_bis": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10569",
+      "date_verifiee": "2026-08-17",
+      "note": "Anciennete maximale de l acte d acceptation du principe de la rupture signe AVANT l introduction de la demande. ⛔ L acceptation est IRREVOCABLE, meme par la voie de l appel (art. 233 c. civ.). Page service-public du 01/03/2026."
+    },
+    "timbre_fiscal_assignation_bis": {
+      "valeur": 50,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35837",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre fiscal du a l introduction de la demande par l epoux demandeur. Dispense possible en cas d aide juridictionnelle. Page service-public du 01/03/2026."
+    },
+    "delai_defendeur_prendre_avocat_bis": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35837",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Delai laisse au defendeur pour constituer avocat apres l assignation. Ne pas le faire ne bloque pas la procedure : elle continue sans lui, et les mesures provisoires se decident quand meme. Page service-public du 01/03/2026."
+    },
+    "delai_appel_jugement_divorce_bis": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35837",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai d appel a compter de la SIGNIFICATION du jugement. Le divorce dissout le mariage a la date a laquelle la decision « prend force de chose jugee » (art. 260 c. civ.). ⛔ L acceptation du principe de la rupture, elle, ne se retracte pas meme en appel."
+    },
+    "date_effet_divorce_quant_aux_biens_bis": {
+      "valeur": "date de la demande en divorce",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006117751/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 262-1 c. civ., version en vigueur depuis le 01/01/2021. Pour l acceptation du principe de la rupture, l alteration definitive et la faute, les effets patrimoniaux remontent « a la date de la demande en divorce ». ⇒ deposer la demande ARRETE l horloge patrimoniale : ce que chacun gagne, epargne ou emprunte ensuite lui est personnel. Report possible a la date de cessation de cohabitation et de collaboration, mais « cette demande ne peut etre formee qu a l occasion de l action en divorce » : apres, c est ferme."
+    }
+  },
+  "prestation_compensatoire": {
+    "duree_max_versements_echelonnes": {
+      "valeur": 8,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165474",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 275 c. civ. : quand le debiteur ne peut pas verser le capital en une fois, le juge fixe des versements periodiques indexes « dans la limite de huit annees ». Duree superieure possible a titre exceptionnel. Le debiteur peut se liberer du solde a tout moment. ⚠ Le capital verse EN UNE FOIS n est pas revisable ; seule la rente est revisable, suspendable ou supprimable (art. 276-3)."
+    },
+    "caractere_forfaitaire": {
+      "valeur": "forfaitaire",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165474",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 270 c. civ. : « Cette prestation a un caractere forfaitaire. Elle prend la forme d un capital dont le montant est fixe par le juge. » ⇒ ce n est PAS une pension : elle ne suit pas l evolution des revenus. Le juge peut la refuser par equite, notamment si le divorce est prononce aux torts exclusifs du demandeur."
+    },
+    "fiscalite_capital_verse_rapidement": {
+      "valeur": {
+        "delai_mois": 12,
+        "taux_reduction_pourcent": 25,
+        "plafond_versements_eur": 30500,
+        "reduction_maximale_eur": 7625
+      },
+      "unite": "euros et pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F446",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le CHOIX DE LA MODALITE change l impot des DEUX ex-epoux. Capital verse en une seule fois dans les 12 mois suivant le jugement devenu definitif : reduction d impot « de 25 % avec un maximum de 7 625 EUR », versements « retenue dans la limite de 30 500 EUR », et la somme n est PAS imposable chez celui qui la recoit. Etale sur plus de 12 mois ou en rente : deductible du revenu du debiteur mais IMPOSABLE chez le creancier. ⇒ negocier un montant net sans avoir chiffre l impot est une erreur courante. Page service-public du 20/02/2026."
+    },
+    "provision_pour_frais_instance": {
+      "valeur": "fixee par le juge",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042193461",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Droit tres peu connu. Art. 255 6° c. civ. : le juge peut « Fixer la pension alimentaire et la provision pour frais d instance que l un des epoux devra verser a son conjoint ». ⇒ l epoux sans ressources peut faire financer sa propre procedure par l autre. Cumulable avec l aide juridictionnelle. Aucun bareme : montant apprecie par le juge."
+    },
+    "duree_max_versements_echelonnes_bis": {
+      "valeur": 8,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165474",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 275 c. civ. : quand le debiteur ne peut pas verser le capital en une fois, le juge fixe des versements periodiques indexes « dans la limite de huit annees ». Duree superieure possible a titre exceptionnel. Le debiteur peut se liberer du solde a tout moment. ⚠ Le capital verse EN UNE FOIS n est pas revisable ; seule la rente est revisable, suspendable ou supprimable (art. 276-3)."
+    },
+    "caractere_forfaitaire_bis": {
+      "valeur": "forfaitaire",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165474",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 270 c. civ. : « Cette prestation a un caractere forfaitaire. Elle prend la forme d un capital dont le montant est fixe par le juge. » ⇒ ce n est PAS une pension : elle ne suit pas l evolution des revenus. Le juge peut la refuser par equite, notamment si le divorce est prononce aux torts exclusifs du demandeur."
+    },
+    "fiscalite_capital_verse_rapidement_bis": {
+      "valeur": {
+        "delai_mois": 12,
+        "taux_reduction_pourcent": 25,
+        "plafond_versements_eur": 30500,
+        "reduction_maximale_eur": 7625
+      },
+      "unite": "euros et pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F446",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le CHOIX DE LA MODALITE change l impot des DEUX ex-epoux. Capital verse en une seule fois dans les 12 mois suivant le jugement devenu definitif : reduction d impot « de 25 % avec un maximum de 7 625 EUR », versements « retenue dans la limite de 30 500 EUR », et la somme n est PAS imposable chez celui qui la recoit. Etale sur plus de 12 mois ou en rente : deductible du revenu du debiteur mais IMPOSABLE chez le creancier. ⇒ negocier un montant net sans avoir chiffre l impot est une erreur courante. Page service-public du 20/02/2026."
+    },
+    "provision_pour_frais_instance_bis": {
+      "valeur": "fixee par le juge",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042193461",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Droit tres peu connu. Art. 255 6° c. civ. : le juge peut « Fixer la pension alimentaire et la provision pour frais d instance que l un des epoux devra verser a son conjoint ». ⇒ l epoux sans ressources peut faire financer sa propre procedure par l autre. Cumulable avec l aide juridictionnelle. Aucun bareme : montant apprecie par le juge."
+    }
+  },
+  "logement_et_mesures_provisoires": {
+    "audience_orientation_mesures_provisoires": {
+      "valeur": "des le debut de la procedure",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165746/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 254 c. civ. : le juge tient cette audience « des le debut de la procedure, sauf si les parties ou la partie seule constituee y renoncent ». ⛔ LE PIEGE EST DANS L EXCEPTION : y renoncer, c est traverser toute la procedure sans pension, sans attribution du logement et sans provision pour frais. On y renonce parfois pour « aller plus vite »."
+    },
+    "jouissance_logement_gratuite_jusqu_a_la_demande": {
+      "valeur": "date de la demande en divorce",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006117751/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 262-1, dernier alinea : « La jouissance du logement conjugal par un seul des epoux conserve un caractere gratuit jusqu a la demande en divorce, sauf decision contraire du juge. » ⇒ l indemnite d occupation ne peut pas courir AVANT la demande, mais elle peut courir apres. Celui qui reste dans le logement a interet a savoir que l horloge demarre au depot ; celui qui part a interet a deposer."
+    },
+    "indemnite_occupation": {
+      "valeur": "fixee ou constatee par le juge",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042193461",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 255 4° c. civ. : le juge peut « Attribuer a l un d eux la jouissance du logement et du mobilier du menage ou partager entre eux cette jouissance, en precisant son caractere gratuit ou non et, le cas echeant, en constatant l accord des epoux sur le montant d une indemnite d occupation ». ⚠ Si le juge dit « non gratuit » sans chiffrer, la dette existe et se liquide plus tard : elle peut representer plusieurs annees."
+    },
+    "mediation_familiale_exclusion_violences": {
+      "valeur": "exclue si violences alleguees ou emprise manifeste",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042193461",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Art. 255 1° et 2° c. civ. : le juge ne peut ni proposer une mediation ni enjoindre de rencontrer un mediateur « si des violences sont alleguees par l un des epoux sur l autre epoux ou sur l enfant, ou sauf emprise manifeste de l un des epoux sur son conjoint ». ★ Il suffit que les violences soient ALLEGUEES. Voir references/violences-intrafamiliales.md."
+    },
+    "audience_orientation_mesures_provisoires_bis": {
+      "valeur": "des le debut de la procedure",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165746/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 254 c. civ. : le juge tient cette audience « des le debut de la procedure, sauf si les parties ou la partie seule constituee y renoncent ». ⛔ LE PIEGE EST DANS L EXCEPTION : y renoncer, c est traverser toute la procedure sans pension, sans attribution du logement et sans provision pour frais. On y renonce parfois pour « aller plus vite »."
+    },
+    "jouissance_logement_gratuite_jusqu_a_la_demande_bis": {
+      "valeur": "date de la demande en divorce",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006117751/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 262-1, dernier alinea : « La jouissance du logement conjugal par un seul des epoux conserve un caractere gratuit jusqu a la demande en divorce, sauf decision contraire du juge. » ⇒ l indemnite d occupation ne peut pas courir AVANT la demande, mais elle peut courir apres. Celui qui reste dans le logement a interet a savoir que l horloge demarre au depot ; celui qui part a interet a deposer."
+    },
+    "indemnite_occupation_bis": {
+      "valeur": "fixee ou constatee par le juge",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042193461",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 255 4° c. civ. : le juge peut « Attribuer a l un d eux la jouissance du logement et du mobilier du menage ou partager entre eux cette jouissance, en precisant son caractere gratuit ou non et, le cas echeant, en constatant l accord des epoux sur le montant d une indemnite d occupation ». ⚠ Si le juge dit « non gratuit » sans chiffrer, la dette existe et se liquide plus tard : elle peut representer plusieurs annees."
+    },
+    "bail_forfaitaire_logement_ex_epoux": {
+      "valeur": "jusqu a la majorite du plus jeune des enfants communs",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36328",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Peu connu. Le juge aux affaires familiales « peut accorder un bail » a l epoux qui n est PAS proprietaire du logement, pouvant durer « jusqu a la majorite du plus jeune des enfants communs ». ⇒ ne pas etre proprietaire ne signifie pas devoir partir. Page service-public du 22/07/2025."
+    },
+    "mediation_familiale_valeur_accord": {
+      "valeur": "force executoire d un jugement apres homologation",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34355",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « L accord de mediation homologue a la meme force executoire qu un jugement. » ⇒ un accord non homologue ne s execute pas tout seul. « Seul l entretien d information est gratuit » ; en mediation conventionnee CAF « la remuneration est calculee a partir d un bareme proportionnel a vos revenus », frais partages par moitie sauf accord contraire. Le juge « peut meme vous ordonner de rencontrer, dans un delai determine, un mediateur ». Page service-public du 01/10/2025."
+    },
+    "mediation_amende_civile_refus": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. La page F34355 mentionne une amende civile en cas de refus de rencontrer le mediateur alors que le juge l a ordonne, mais le montant plafond n a pas ete confirme sur Legifrance : ne pas l ecrire comme un fait. A recouper sur le code de procedure civile avant tout usage."
+    },
+    "mediation_familiale_exclusion_violences_bis": {
+      "valeur": "exclue si violences alleguees ou emprise manifeste",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042193461",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Art. 255 1° et 2° c. civ. : le juge ne peut ni proposer une mediation ni enjoindre de rencontrer un mediateur « si des violences sont alleguees par l un des epoux sur l autre epoux ou sur l enfant, ou sauf emprise manifeste de l un des epoux sur son conjoint ». ★ Il suffit que les violences soient ALLEGUEES. Confirme par service-public F34355 : « La mediation familiale n est pas possible si des violences ont ete commises par l un des parents. » Voir references/violences-intrafamiliales.md."
+    }
+  },
+  "liquidation_et_indivision": {
+    "droit_de_partage": {
+      "valeur": 1.1,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F903",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux applique a l actif net partage lors de la liquidation du regime matrimonial : « taxe de publicite fonciere de 1,10 % avec un minimum de perception de 25 EUR ». Confirme par le BOFiP BOI-ENR-PTG-10-10 : pour les partages consecutifs a une separation de corps, un divorce ou une rupture de PACS, le taux est passe a 1,80 % au 01/01/2021 puis 1,10 % au 01/01/2022, contre 2,5 % en droit commun. ⚠ Un droit fixe pour les tres petits actifs est parfois evoque : NON VERIFIE ici, ne pas l affirmer. Page service-public du 05/08/2025."
+    },
+    "delai_etat_liquidatif_notaire": {
+      "valeur": 1,
+      "unite": "an renouvelable une fois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F903",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel le notaire commis dresse l etat liquidatif : « Dans le delai d 1 an (renouvelable une fois), le notaire dresse un etat liquidatif ». ⚠ A ne pas confondre avec un delai pour partager : la page indique qu aucun delai n est fixe pour le partage lui-meme. Page service-public du 05/08/2025."
+    },
+    "notaire_obligatoire_immobilier": {
+      "valeur": "obligatoire des qu il y a un bien immobilier commun ou indivis",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F903",
+      "date_verifiee": "2026-08-17",
+      "note": "« Si les epoux possedent un bien immobilier commun ou en indivision », le partage passe par acte notarie. Vaut aussi dans le divorce sans juge : l etat liquidatif doit alors etre en forme authentique (art. 229-3 5° c. civ.). ★ L attribution preferentielle permet a un epoux de demander que le logement lui soit attribue."
+    },
+    "droit_de_partage_bis": {
+      "valeur": 1.1,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F903",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux applique a l actif net partage lors de la liquidation du regime matrimonial : « taxe de publicite fonciere de 1,10 % avec un minimum de perception de 25 EUR ». Confirme par le BOFiP BOI-ENR-PTG-10-10 : pour les partages consecutifs a une separation de corps, un divorce ou une rupture de PACS, le taux est passe a 1,80 % au 01/01/2021 puis 1,10 % au 01/01/2022, contre 2,5 % en droit commun. ⚠ Un droit fixe pour les tres petits actifs est parfois evoque : NON VERIFIE ici, ne pas l affirmer. Page service-public du 05/08/2025."
+    },
+    "delai_etat_liquidatif_notaire_bis": {
+      "valeur": 1,
+      "unite": "an renouvelable une fois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F903",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel le notaire commis dresse l etat liquidatif : « Dans le delai d 1 an (renouvelable une fois), le notaire dresse un etat liquidatif ». ⚠ A ne pas confondre avec un delai pour partager : la page indique qu aucun delai n est fixe pour le partage lui-meme. Page service-public du 05/08/2025."
+    },
+    "notaire_obligatoire_immobilier_bis": {
+      "valeur": "obligatoire des qu il y a un bien immobilier commun ou indivis",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F903",
+      "date_verifiee": "2026-08-17",
+      "note": "« Si les epoux possedent un bien immobilier commun ou en indivision », le partage passe par acte notarie. Vaut aussi dans le divorce sans juge : l etat liquidatif doit alors etre en forme authentique (art. 229-3 5° c. civ.). ★ L attribution preferentielle permet a un epoux de demander que le logement lui soit attribue."
+    }
+  },
+  "separation_de_corps": {
+    "delai_conversion_en_divorce": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136157/",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Art. 306 c. civ. : le jugement de separation de corps « est converti de plein droit en jugement de divorce quand la separation de corps a dure deux ans ». Confirme par service-public F980 du 01/03/2026 : « Le divorce peut etre demande s il s est ecoule 2 ans apres le jugement de separation de corps », sans ce delai en cas de demande conjointe. ⇒ la separation de corps ne protege pas indefiniment : au bout de deux ans, l autre peut l imposer en divorce."
+    },
+    "effets_conserves": {
+      "valeur": "devoir de secours et droits successoraux maintenus, separation de biens imposee",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136157/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ C est la seule voie qui garde la protection du mariage. Art. 299 : « La separation de corps ne dissout pas le mariage mais elle met fin au devoir de cohabitation. » Art. 303 : « La separation de corps laisse subsister le devoir de secours. » Art. 301 : l epoux survivant « conserve les droits que la loi accorde au conjoint survivant ». Art. 302 : « La separation de corps entraine toujours separation de biens. » ⇒ utile a l epoux age, malade ou sans ressources, et a celui qui perdrait une couverture."
+    },
+    "delai_conversion_en_divorce_bis": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136157/",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Art. 306 c. civ. : le jugement de separation de corps « est converti de plein droit en jugement de divorce quand la separation de corps a dure deux ans ». Confirme par service-public F980 du 01/03/2026 : « Le divorce peut etre demande s il s est ecoule 2 ans apres le jugement de separation de corps », sans ce delai en cas de demande conjointe. ⇒ la separation de corps ne protege pas indefiniment : au bout de deux ans, l autre peut l imposer en divorce."
+    },
+    "effets_conserves_bis": {
+      "valeur": "devoir de secours et droits successoraux maintenus, separation de biens imposee",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136157/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ C est la seule voie qui garde la protection du mariage. Art. 299 : « La separation de corps ne dissout pas le mariage mais elle met fin au devoir de cohabitation. » Art. 303 : « La separation de corps laisse subsister le devoir de secours. » Art. 301 : l epoux survivant « conserve les droits que la loi accorde au conjoint survivant ». Art. 302 : « La separation de corps entraine toujours separation de biens. » ⇒ utile a l epoux age, malade ou sans ressources, et a celui qui perdrait une couverture."
+    }
+  },
+  "pacs_et_concubinage": {
+    "pacs_dissolution_unilaterale": {
+      "valeur": "signification par commissaire de justice, effet a l enregistrement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033460726",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 515-7 c. civ. : « Le partenaire qui decide de mettre fin au pacte civil de solidarite le fait signifier a l autre. » Aucun juge, aucun motif, aucun delai, aucun consentement de l autre. La dissolution prend effet entre partenaires « a la date de son enregistrement » et est opposable aux tiers « a partir du jour ou les formalites de publicite ont ete accomplies ». ⇒ un PACS se defait en quelques jours, un mariage en plusieurs mois."
+    },
+    "pacs_absence_prestation_compensatoire": {
+      "valeur": "aucune prestation compensatoire, aucun devoir de secours apres rupture",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033460726",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L ECART QUE PERSONNE NE MESURE. Art. 515-7 : « Les partenaires procedent eux-memes a la liquidation des droits et obligations resultant pour eux du pacte. A defaut d accord, le juge statue sur les consequences patrimoniales de la rupture, sans prejudice de la reparation du dommage eventuellement subi. » Le juge ne fait que liquider et, le cas echeant, indemniser un dommage : il n existe NI prestation compensatoire NI devoir de secours. ⇒ pour la separation, le PACS est du cote du concubinage, pas du mariage. Les creances entre partenaires s evaluent selon l art. 1469 et se compensent avec les avantages tires de la vie commune."
+    },
+    "concubinage_rupture_libre": {
+      "valeur": "rupture libre, sans formalite ni indemnite de principe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18766",
+      "date_verifiee": "2026-08-17",
+      "note": "« L union libre implique la rupture libre. Chacun de vous 2 peut, a tout moment, reprendre sa liberte. » Aucune prestation compensatoire, aucun devoir de secours, aucun partage automatique. ★ Les seuls leviers restants : enrichissement injustifie si l un a travaille sans remuneration pour l autre, societe creee de fait, faute dans les circonstances de la rupture. La pension alimentaire pour les ENFANTS est due dans les trois statuts a l identique. Page service-public du 14/11/2025."
+    },
+    "pacs_solidarite_dettes_vie_courante": {
+      "valeur": "solidarite envers les tiers pour les dettes de la vie courante",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006136536/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 515-4 al. 2 c. civ. : « Les partenaires sont tenus solidairement a l egard des tiers des dettes contractees par l un d eux pour les besoins de la vie courante. Toutefois, cette solidarite n a pas lieu pour les depenses manifestement excessives. » Ni pour les achats a temperament ni pour les emprunts non consentis par les deux, sauf sommes modestes de la vie courante. ⚠ La solidarite SURVIT a la rupture pour les dettes nees avant elle : dissoudre le PACS n efface pas ce qui a ete contracte. Voir references/couple.md."
+    },
+    "trois_statuts_ecart_de_protection": {
+      "valeur": {
+        "concubinage": "aucune obligation, rupture libre, aucun partage, aucune vocation successorale",
+        "pacs": "aide materielle et solidarite vie courante, rupture unilaterale, aucune prestation compensatoire, aucune vocation successorale legale",
+        "mariage": "devoir de secours, prestation compensatoire, logement attribue par le juge, conjoint survivant heritier"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE POINT QUE PERSONNE NE MESURE AVANT DE SE SEPARER. Regime des biens par defaut : communaute legale pour le mariage, separation de biens pour le PACS ET le concubinage. Dettes : pas de solidarite en concubinage, solidarite limitee a la vie courante en PACS, plus large en mariage. Succession : ni le concubin ni le partenaire de PACS n heritent de plein droit et n ont droit a une pension de reversion. ⇒ pour la SEPARATION, le PACS est du cote du concubinage. Page service-public du 11/07/2025."
+    },
+    "pacs_dissolution_unilaterale_bis": {
+      "valeur": "signification par commissaire de justice, effet a l enregistrement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033460726",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 515-7 c. civ. : « Le partenaire qui decide de mettre fin au pacte civil de solidarite le fait signifier a l autre. » Aucun juge, aucun motif, aucun delai, aucun consentement de l autre. La dissolution prend effet entre partenaires « a la date de son enregistrement » et est opposable aux tiers « a partir du jour ou les formalites de publicite ont ete accomplies ». ⇒ un PACS se defait en quelques jours, un mariage en plusieurs mois."
+    },
+    "pacs_absence_prestation_compensatoire_bis": {
+      "valeur": "aucune prestation compensatoire, aucun devoir de secours apres rupture",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033460726",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L ECART QUE PERSONNE NE MESURE. Art. 515-7 : « Les partenaires procedent eux-memes a la liquidation des droits et obligations resultant pour eux du pacte. A defaut d accord, le juge statue sur les consequences patrimoniales de la rupture, sans prejudice de la reparation du dommage eventuellement subi. » Le juge ne fait que liquider et, le cas echeant, indemniser un dommage : il n existe NI prestation compensatoire NI devoir de secours. ⇒ pour la separation, le PACS est du cote du concubinage, pas du mariage. Les creances entre partenaires s evaluent selon l art. 1469 et se compensent avec les avantages tires de la vie commune."
+    },
+    "concubinage_rupture_libre_bis": {
+      "valeur": "rupture libre, sans formalite ni indemnite de principe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18766",
+      "date_verifiee": "2026-08-17",
+      "note": "« L union libre implique la rupture libre. Chacun de vous 2 peut, a tout moment, reprendre sa liberte. » Aucune prestation compensatoire, aucun devoir de secours, aucun partage automatique. ★ Les seuls leviers restants : enrichissement injustifie si l un a travaille sans remuneration pour l autre, societe creee de fait, faute dans les circonstances de la rupture. La pension alimentaire pour les ENFANTS est due dans les trois statuts a l identique. Page service-public du 14/11/2025."
+    },
+    "pacs_solidarite_dettes_vie_courante_bis": {
+      "valeur": "solidarite envers les tiers pour les dettes de la vie courante",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006136536/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 515-4 al. 2 c. civ. : « Les partenaires sont tenus solidairement a l egard des tiers des dettes contractees par l un d eux pour les besoins de la vie courante. Toutefois, cette solidarite n a pas lieu pour les depenses manifestement excessives. » Ni pour les achats a temperament ni pour les emprunts non consentis par les deux, sauf sommes modestes de la vie courante. ⚠ La solidarite SURVIT a la rupture pour les dettes nees avant elle : dissoudre le PACS n efface pas ce qui a ete contracte. Voir references/couple.md."
+    },
+    "trois_statuts_ecart_de_protection_bis": {
+      "valeur": {
+        "concubinage": "aucune obligation, rupture libre, aucun partage, aucune vocation successorale",
+        "pacs": "aide materielle et solidarite vie courante, rupture unilaterale, aucune prestation compensatoire, aucune vocation successorale legale",
+        "mariage": "devoir de secours, prestation compensatoire, logement attribue par le juge, conjoint survivant heritier"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14485",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE POINT QUE PERSONNE NE MESURE AVANT DE SE SEPARER. Regime des biens par defaut : communaute legale pour le mariage, separation de biens pour le PACS ET le concubinage. Dettes : pas de solidarite en concubinage, solidarite limitee a la vie courante en PACS, plus large en mariage. Succession : ni le concubin ni le partenaire de PACS n heritent de plein droit et n ont droit a une pension de reversion. ⇒ pour la SEPARATION, le PACS est du cote du concubinage. Page service-public du 11/07/2025."
+    }
+  },
+  "devolution_legale": {
+    "ordres_d_heritiers": {
+      "valeur": 4,
+      "unite": "ordres",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2529",
+      "date_verifiee": "2026-08-17",
+      "note": "1 enfants et descendants 2 pere mere freres soeurs et leurs descendants 3 autres ascendants 4 autres collateraux. ★ Chaque ordre EXCLUT le suivant : un frere n herite de rien s il existe un enfant, meme un seul."
+    },
+    "degre_de_parente_charniere_fiscale": {
+      "valeur": 4,
+      "unite": "degre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Charniere du bareme fiscal : jusqu au 4e degre inclus un taux, au dela un autre. Voir droits_de_succession."
+    },
+    "conjoint_avec_enfants": {
+      "valeur": {
+        "option_1": "usufruit de la totalite des biens existants",
+        "option_2": "propriete du 1/4 des biens",
+        "enfants_non_communs": "propriete du 1/4 seulement, pas de choix"
+      },
+      "unite": "part successorale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431087",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 757. ★★ Le CHOIX n existe que si TOUS les enfants sont issus des deux epoux. Un seul enfant d une autre union et le conjoint est cantonne au 1/4 en pleine propriete : c est la difference la plus lourde et la plus ignoree des familles recomposees."
+    },
+    "conjoint_avec_pere_et_mere": {
+      "valeur": {
+        "conjoint": "1/2",
+        "pere": "1/4",
+        "mere": "1/4",
+        "si_un_parent_predecede": "sa part echoit au conjoint"
+      },
+      "unite": "part successorale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431219",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 757-1. Sans descendant, les parents du defunt reprennent la moitie : le conjoint n herite PAS de tout."
+    },
+    "conjoint_sans_descendant_sans_pere_mere": {
+      "valeur": "toute la succession",
+      "unite": "part successorale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165517/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 757-2. ⚠ Sauf le droit de retour des freres et soeurs, voir l entree suivante."
+    },
+    "droit_de_retour_freres_soeurs": {
+      "valeur": "1/2",
+      "unite": "part des biens de famille retrouves en nature",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006165517/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 757-3. ★★ Demonte la croyance la plus repandue : sans enfant ni parent, le conjoint NE prend PAS tout. Les biens recus des ascendants du defunt et encore la en nature vont pour moitie aux freres et soeurs. La maison de famille est exactement le cas visee."
+    },
+    "droit_de_retour_legal_des_parents": {
+      "valeur": {
+        "total": "1/2 de la succession",
+        "par_parent": "1/4"
+      },
+      "unite": "part de la succession de l enfant decede",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16276",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Un parent qui a donne un bien a son enfant le reprend si l enfant meurt SANS descendant, dans la limite de 1/4 par parent. Si le bien a ete vendu, il recupere sa valeur en argent dans la limite de l actif successoral. Page du 20/01/2025, a recouper."
+    }
+  },
+  "reserve_hereditaire": {
+    "un_enfant": {
+      "valeur": {
+        "reserve": "1/2",
+        "quotite_disponible": "1/2"
+      },
+      "unite": "part du patrimoine",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982288",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 913, version en vigueur depuis le 01/11/2021. Le texte fixe la QUOTITE DISPONIBLE, la reserve est le complement."
+    },
+    "deux_enfants": {
+      "valeur": {
+        "reserve": "2/3",
+        "quotite_disponible": "1/3"
+      },
+      "unite": "part du patrimoine",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982288",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 913."
+    },
+    "trois_enfants_ou_plus": {
+      "valeur": {
+        "reserve": "3/4",
+        "quotite_disponible": "1/4"
+      },
+      "unite": "part du patrimoine",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982288",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 913. ★ La reserve PLAFONNE a 3/4 : elle n augmente plus au 4e enfant."
+    },
+    "conjoint_sans_descendant": {
+      "valeur": {
+        "reserve": "1/4",
+        "quotite_disponible": "3/4"
+      },
+      "unite": "part du patrimoine",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006433720",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 914-1. Le conjoint n est heritier reservataire QUE s il n y a aucun descendant. ⛔ Les parents du defunt ne sont plus reservataires depuis 2006."
+    },
+    "enfant_renoncant_compte_dans_le_nombre": {
+      "valeur": "non, sauf representation ou rapport d une liberalite",
+      "unite": "regle de calcul",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982288",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 913 al. 2. ★ Consequence pratique : la renonciation d un enfant sans descendant AUGMENTE la quotite disponible, donc la marge du testament."
+    }
+  },
+  "option_successorale": {
+    "delai_avant_de_pouvoir_etre_somme": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150534/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 771, version en vigueur au 17/08/2026. Delai de tranquillite : personne ne peut forcer le choix avant. Passe ce delai, un creancier, un coheritier, un heritier de rang subsequent ou l Etat peut sommer par acte extrajudiciaire."
+    },
+    "delai_apres_sommation": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150534/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 772. ★★ LE PIEGE MAJEUR : a defaut d avoir pris parti, l heritier est repute ACCEPTANT PUR ET SIMPLE, donc tenu des dettes sur son patrimoine personnel. Le silence ne vaut pas renonciation, il vaut acceptation."
+    },
+    "prescription_de_l_option": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150534/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 780. Sans sommation, l heritier qui n a pas pris parti est repute RENONCANT. ⚠ Regle inverse de celle de la sommation. La prescription ne court pas tant que l heritier a des motifs legitimes d ignorer l ouverture de la succession."
+    },
+    "delai_revocation_d_une_renonciation": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1199",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Page du 03/04/2025, a recouper. La renonciation n est PAS definitive : revocable dans les 10 ans de l ouverture, a condition qu aucun autre heritier ni l Etat n ait accepte entre temps. Beaucoup croient l inverse."
+    },
+    "delai_depot_inventaire_actif_net": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150144/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 790, version en vigueur au 17/08/2026. ★★ Delai qui fait perdre la protection : inventaire non depose dans le delai et l heritier est repute acceptant PUR ET SIMPLE. La declaration seule ne protege pas, c est l inventaire qui protege."
+    },
+    "delai_declaration_des_creances": {
+      "valeur": 15,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150144/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 792. A compter de la publicite nationale de la declaration. Les creances non assorties de suretes non declarees sont ETEINTES. ★ C est l interet cache de l acceptation a concurrence de l actif net : elle purge les dettes inconnues."
+    },
+    "delai_decharge_dette_ignoree": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431550",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 786 al. 3. ★★ La seule porte de sortie apres une acceptation pure et simple : demander la decharge d une dette qu on avait des motifs legitimes d ignorer et qui obererait gravement le patrimoine personnel. 5 mois a compter de la CONNAISSANCE de la dette, pas du deces. Passe ce delai la porte est fermee."
+    },
+    "renoncant_et_frais_funeraires": {
+      "valeur": "tenu a proportion de ses moyens",
+      "unite": "obligation residuelle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136273/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 806. ★★ Renoncer n exonere PAS des frais funeraires d un ascendant ou d un descendant. C est la seule dette qui survit a la renonciation, et personne ne le dit au guichet."
+    }
+  },
+  "conjoint_survivant": {
+    "delai_option_usufruit_ou_quart": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431260",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 758-3. Le delai ne court qu apres une INVITATION ECRITE d un heritier. Silence = repute avoir opte pour l USUFRUIT. ★ Ce defaut favorise le conjoint age et desavantage le conjoint jeune, pour qui le 1/4 en pleine propriete est souvent preferable."
+    },
+    "jouissance_gratuite_du_logement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1725",
+      "date_verifiee": "2026-08-17",
+      "note": "Droit temporaire au logement, automatique, a compter du deces. Page du 27/01/2026."
+    },
+    "delai_demande_droit_viager_au_logement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431307",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 765-1. ★★ Le droit viager d habitation n est PAS automatique : il faut manifester sa volonte dans l annee du deces. Rester dans le logement ne suffit pas a l exercer. Un an de silence et le droit est perdu a vie."
+    },
+    "privation_du_droit_viager_par_le_defunt": {
+      "valeur": "possible uniquement par testament authentique",
+      "unite": "condition de forme",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006431120",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 764 al. 1, qui renvoie aux conditions de l article 971. ★ Un testament olographe NE peut PAS priver le conjoint du droit viager : il faut le notaire. Point de controle immediat quand un heritier brandit un testament manuscrit."
+    },
+    "delai_reclamation_pension_alimentaire": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150139/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code civil art. 767. ★ La succession doit une pension au conjoint DANS LE BESOIN. Delai d un an a partir du deces, ou du moment ou les heritiers cessent d acquitter les prestations qu ils versaient auparavant. Droit distinct de la part successorale, souvent ignore quand le conjoint a opte pour l usufruit et manque de liquidites."
+    }
+  },
+  "testament": {
+    "age_minimum_pour_tester": {
+      "valeur": 16,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F770",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 18/12/2024, a recouper. Mineur de plus de 16 ans admis a tester."
+    },
+    "quotite_leguable_par_un_mineur": {
+      "valeur": "1/2",
+      "unite": "part des biens",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F770",
+      "date_verifiee": "2026-08-17",
+      "note": "Entre 16 et 18 ans, sauf mineur emancipe. Page du 18/12/2024, a recouper."
+    },
+    "temoins_testament_authentique": {
+      "valeur": 2,
+      "unite": "temoins",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F770",
+      "date_verifiee": "2026-08-17",
+      "note": "Ou un second notaire. ⛔ Les temoins ne peuvent etre ni les parents, ni les legataires, ni les clercs du notaire. Page du 18/12/2024, a recouper."
+    }
+  },
+  "indivision": {
+    "majorite_actes_de_gestion": {
+      "valeur": "2/3",
+      "unite": "part des droits indivis",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1296",
+      "date_verifiee": "2026-08-17",
+      "note": "Gestion courante, renouvellement de baux, vente de meubles pour payer les dettes. ⛔ La vente d un IMMEUBLE indivis reste a l UNANIMITE : un seul heritier bloque la vente de la maison."
+    },
+    "delai_preemption_des_coindivisaires": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1296",
+      "date_verifiee": "2026-08-17",
+      "note": "Apres notification du projet de cession par commissaire de justice. Page du 16/04/2026."
+    },
+    "duree_convention_d_indivision": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1296",
+      "date_verifiee": "2026-08-17",
+      "note": "Renouvelable. Organise l indivision au lieu de la subir. Page du 16/04/2026."
+    },
+    "maintien_judiciaire_de_l_indivision": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1296",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree maximale. ⚠ Seule exception au droit de provoquer le partage a tout moment. Page du 16/04/2026."
+    },
+    "delai_action_en_nullite_de_la_cession": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1296",
+      "date_verifiee": "2026-08-17",
+      "note": "Cession faite sans respecter la notification aux coindivisaires. Page du 16/04/2026."
+    }
+  },
+  "notaire": {
+    "seuil_acte_de_notoriete": {
+      "valeur": 5965,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1295",
+      "date_verifiee": "2026-08-17",
+      "note": "Notaire OBLIGATOIRE si la succession atteint ce montant, ou comprend un bien immobilier, ou s il existe un testament ou une donation entre epoux. En dessous, une attestation signee par tous les heritiers suffit pour debloquer les comptes dans cette limite."
+    },
+    "cout_acte_de_notoriete": {
+      "valeur": {
+        "HT": 57.69,
+        "TTC": 69.23
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12697",
+      "date_verifiee": "2026-08-17",
+      "note": "Emolument tarife. ⚠ Des frais de formalites et d enregistrement s ajoutent. Page du 01/01/2026."
+    }
+  },
+  "droits_de_succession": {
+    "abattement_enfant": {
+      "valeur": 100000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Par enfant et par parent decede. Page du 09/02/2026. Renvoyer au role impots pour la declaration et le calcul."
+    },
+    "abattement_ascendant": {
+      "valeur": 100000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Pere, mere, grand-parent heritant de leur descendant. Page du 09/02/2026."
+    },
+    "abattement_petit_enfant": {
+      "valeur": 1594,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Quand son propre parent est VIVANT. Si le parent est predecede le petit-enfant vient par representation et prend l abattement de 100 000 EUR de la souche. Ecart considerable pour un meme lien apparent."
+    },
+    "abattement_defaut": {
+      "valeur": 1594,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Abattement residuel a defaut de tout autre. S applique aussi a l arriere-petit-enfant dont parent et grand-parent sont vivants. Page du 09/02/2026."
+    },
+    "abattement_frere_soeur": {
+      "valeur": 15932,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Quand l exoneration totale n est pas acquise. Page du 09/02/2026."
+    },
+    "abattement_neveu_niece": {
+      "valeur": 7967,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/02/2026."
+    },
+    "abattement_handicap": {
+      "valeur": 159325,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ SUPPLEMENTAIRE, il se CUMULE avec l abattement de lien de parente. Un enfant handicape cumule donc 100 000 EUR et 159 325 EUR. Abattement le plus souvent oublie."
+    },
+    "exoneration_conjoint_et_pacs": {
+      "valeur": "exoneration totale de droits de succession",
+      "unite": "regime",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Conjoint marie ET partenaire de PACS sont exoneres. ⛔ Mais le partenaire de PACS n est PAS heritier legal : sans testament il ne recoit RIEN. Exoneration fiscale et vocation successorale sont deux questions distinctes."
+    },
+    "exoneration_frere_soeur_conditions": {
+      "valeur": {
+        "cohabitation_avant_le_deces": 5,
+        "age_minimum": 50,
+        "unite_cohabitation": "ans",
+        "unite_age": "ans"
+      },
+      "unite": "conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Cumulatives : domicilie avec le defunt les 5 annees precedant le deces, celibataire veuf divorce ou separe, et age de plus de 50 ans ou infirme. Page du 09/02/2026."
+    },
+    "bareme_ligne_directe": {
+      "valeur": {
+        "jusqu_a_8072": "5 %",
+        "de_8073_a_12109": "10 %",
+        "de_12110_a_15932": "15 %",
+        "de_15933_a_552324": "20 %",
+        "de_552325_a_902838": "30 %",
+        "de_902839_a_1805677": "40 %",
+        "plus_de_1805677": "45 %"
+      },
+      "unite": "EUR de part taxable et taux",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Bareme progressif applique APRES abattement. ★ La tranche a 20 % couvre presque tout : de 15 933 a 552 324 EUR. En pratique un heritage moyen en ligne directe se taxe autour de 20 %. Page du 09/02/2026."
+    },
+    "bareme_freres_soeurs": {
+      "valeur": {
+        "inferieure_a_24430": "35 %",
+        "superieure_a_24430": "45 %"
+      },
+      "unite": "EUR de part taxable et taux",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Pas de progressivite douce : on demarre a 35 %. Page du 09/02/2026."
+    },
+    "taux_parents_jusqu_au_4e_degre": {
+      "valeur": 55,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux unique, sans tranches : neveux, nieces, oncles, tantes, cousins germains. Page du 09/02/2026."
+    },
+    "taux_au_dela_du_4e_degre_ou_non_parents": {
+      "valeur": 60,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14198",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Leguer a un ami, un concubin ou un cousin eloigne : l Etat prend 60 % apres un abattement de 1 594 EUR. C est le chiffre qui change le plus de testaments quand on le connait avant de signer."
+    }
+  },
+  "declaration_de_succession": {
+    "delai_deces_en_france_metropolitaine": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/1770-PGP.html/identifiant=BOI-ENR-DMTG-10-60-50-20141030",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 641 du CGI. A compter du jour du deces. ⚠ Document BOFiP du 30/10/2014, ancien : a recouper avant de s en servir dans un dossier."
+    },
+    "delai_autres_cas": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F80",
+      "date_verifiee": "2026-08-17",
+      "note": "Deces survenu hors de France metropolitaine. Page du 29/01/2025, a recouper."
+    },
+    "delai_reunion_mayotte_eloigne": {
+      "valeur": 24,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/1770-PGP.html/identifiant=BOI-ENR-DMTG-10-60-50-20141030",
+      "date_verifiee": "2026-08-17",
+      "note": "La Reunion et Mayotte, quand le deces a lieu ailleurs qu en Europe, en Afrique, a Madagascar, a Maurice ou aux Comores. Document du 30/10/2014, a recouper."
+    },
+    "delai_immeuble_sans_titre_publie": {
+      "valeur": 24,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/1770-PGP.html/identifiant=BOI-ENR-DMTG-10-60-50-20141030",
+      "date_verifiee": "2026-08-17",
+      "note": "Successions comprenant des immeubles dont le droit de propriete n a pas ete publie avant le deces, sous condition de publication des attestations notariees dans ce delai. Document du 30/10/2014, a recouper."
+    },
+    "dispense_ligne_directe_conjoint_pacs": {
+      "valeur": 50000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F80",
+      "date_verifiee": "2026-08-17",
+      "note": "Dispense de declaration si l actif brut successoral est inferieur a ce montant et qu il n y a pas eu de donation anterieure non declaree. Page du 29/01/2025, a recouper."
+    },
+    "dispense_autres_heritiers": {
+      "valeur": 3000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F80",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil de dispense pour les autres beneficiaires. Page du 29/01/2025, a recouper."
+    },
+    "interet_de_retard_mensuel": {
+      "valeur": 0.2,
+      "unite": "% par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F80",
+      "date_verifiee": "2026-08-17",
+      "note": "Court des le 1er jour suivant l expiration du delai legal, sans mise en demeure. Page du 29/01/2025, a recouper."
+    },
+    "interet_de_retard_annuel": {
+      "valeur": 2.4,
+      "unite": "% par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F80",
+      "date_verifiee": "2026-08-17",
+      "note": "Equivalent annuel de l interet mensuel. Page du 29/01/2025, a recouper."
+    },
+    "majoration_10_pct": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2174-PGP.html/identifiant=BOI-CF-INF-10-20-10-20170308",
+      "date_verifiee": "2026-08-17",
+      "note": "En l absence de mise en demeure ou en cas de depot dans les 30 jours suivant sa reception. Document du 08/03/2017, a recouper."
+    },
+    "majoration_10_pct_point_de_depart_succession": {
+      "valeur": 7,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2174-PGP.html/identifiant=BOI-CF-INF-10-20-10-20170308",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Regle propre aux successions : la majoration de 10 % n est applicable qu a partir du 1er jour du 7e mois suivant l expiration du delai de depot. Il existe donc une fenetre de retard sans majoration, ou seul l interet de retard court."
+    },
+    "majoration_10_pct_a_partir_du_mois": {
+      "valeur": 13,
+      "unite": "e mois apres le deces",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F80",
+      "date_verifiee": "2026-08-17",
+      "note": "Lecture calendaire de la meme regle : 6 mois de delai plus 6 mois de tolerance. Les deux sources concordent. Page du 29/01/2025, a recouper."
+    },
+    "delai_mise_en_demeure_regime_general": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2174-PGP.html/identifiant=BOI-CF-INF-10-20-10-20170308",
+      "date_verifiee": "2026-08-17",
+      "note": "Depasse, la majoration passe de 10 % a 40 %. Document du 08/03/2017, a recouper."
+    },
+    "delai_mise_en_demeure_succession": {
+      "valeur": 90,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2174-PGP.html/identifiant=BOI-CF-INF-10-20-10-20170308",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai specifique accorde aux heritiers mis en demeure avant application de la majoration de 40 %. Document du 08/03/2017, a recouper."
+    },
+    "majoration_40_pct": {
+      "valeur": 40,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2174-PGP.html/identifiant=BOI-CF-INF-10-20-10-20170308",
+      "date_verifiee": "2026-08-17",
+      "note": "Declaration non deposee dans le delai suivant la reception d une mise en demeure. Document du 08/03/2017, a recouper."
+    },
+    "majoration_80_pct": {
+      "valeur": 80,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/2174-PGP.html/identifiant=BOI-CF-INF-10-20-10-20170308",
+      "date_verifiee": "2026-08-17",
+      "note": "Decouverte d une activite occulte, sans mise en demeure prealable. Rare en succession mais la page service-public annonce une fourchette de majoration allant jusqu a ce taux. Document du 08/03/2017, a recouper."
+    }
+  },
+  "famille_filiation_etablissement": {
+    "presomption_paternite_ecartee_naissance_apres_demande_de_divorce": {
+      "valeur": 300,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15393",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption de paternite du mari est ECARTEE si l enfant nait plus de 300 jours apres la demande de divorce ou le depot de la convention chez le notaire  Page verifiee le 08/07/2026  ★ la presomption peut etre RETABLIE par la possession d etat ou en justice  donc un pere marie a qui l on refuse l inscription n est pas sans recours"
+    },
+    "presomption_paternite_ecartee_naissance_apres_reconciliation": {
+      "valeur": 180,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15393",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption est aussi ecartee si l enfant nait MOINS de 180 jours apres un rejet definitif de la demande de divorce ou une reconciliation  Page verifiee le 08/07/2026  Autres cas d exclusion  mere qui ne mentionne pas le mariage a la declaration de naissance  enfant deja reconnu par un autre homme avant la naissance"
+    },
+    "reconnaissance_cout_devant_notaire": {
+      "valeur": 75.46,
+      "unite": "EUR HT",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F887",
+      "date_verifiee": "2026-08-17",
+      "note": "★ En MAIRIE la reconnaissance est GRATUITE  n importe quelle mairie  avant la naissance a la declaration de naissance ou apres  Chez un notaire elle coute 75,46 EUR HT  ⚠ page du 27/01/2026 donc plus de 6 mois  a recouper  ⛔ pour un couple non marie la reconnaissance par le pere est OBLIGATOIRE pour etablir la filiation  pas de reconnaissance = pas de filiation = pas de pension"
+    },
+    "reconnaissance_tardive_delai_perte_exercice_autorite_parentale": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043895534",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 372 alinea 2 en vigueur depuis le 04/08/2021  reconnaitre son enfant PLUS D UN AN apres la naissance alors que la filiation est deja etablie a l egard de l autre parent  celui-ci reste SEUL investi de l exercice de l autorite parentale  La filiation est bien etablie  nom pension succession  mais pas l EXERCICE  ⚠ personne ne le dit au guichet  Sortie prevue par le meme article  declaration conjointe au directeur des services de greffe judiciaires du tribunal judiciaire  sans juge et sans avocat  ou decision du juge aux affaires familiales si l autre parent refuse"
+    },
+    "presomption_paternite_ecartee_naissance_apres_demande_de_divorce_bis": {
+      "valeur": 300,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15393",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption de paternite du mari est ECARTEE si l enfant nait plus de 300 jours apres la demande de divorce ou le depot de la convention chez le notaire  Page verifiee le 08/07/2026  ★ la presomption peut etre RETABLIE par la possession d etat ou en justice  donc un pere marie qui se voit refuser l inscription n est pas sans recours"
+    },
+    "acte_de_notoriete_delai_de_demande": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15395",
+      "date_verifiee": "2026-08-17",
+      "note": "Constatation de la possession d etat par acte de notoriete devant notaire  demande dans les 5 ans a compter de la cessation de la possession d etat ou du deces du parent pretendu  ⚠ date de mise a jour de la page non relevee  a recouper  ★ c est la voie quand la vie de famille a existe mais qu aucun titre n a jamais ete etabli"
+    },
+    "acte_de_notoriete_nombre_minimal_de_temoins": {
+      "valeur": 3,
+      "unite": "temoins",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15395",
+      "date_verifiee": "2026-08-17",
+      "note": "Le notaire recueille au moins 3 temoignages plus des pieces  photos documents medicaux justificatifs d achats  La possession d etat doit etre constante continue et non equivoque  vie de famille reelle  participation a l entretien et a l education  lien reconnu par l entourage"
+    }
+  },
+  "famille_autorite_parentale": {
+    "amende_civile_maximale": {
+      "valeur": 10000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041595401/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 373-2-6 dernier alinea en vigueur depuis le 21/02/2024  amende civile d un montant qui ne peut exceder 10 000 EUR contre le parent qui fait deliberement obstacle de facon GRAVE OU RENOUVELEE a l execution d un des titres de l article 373-2-2 I 1° a 6°  Levier reel quand la plainte penale parait disproportionnee ou trop lente  Le meme montant est indique par service-public F34355 comme sanction du non-respect d une injonction de rencontrer un mediateur familial  ★ le meme article permet aussi une ASTREINTE meme d office  y compris greffee sur une decision rendue par UN AUTRE JUGE ou sur un simple accord parental"
+    }
+  },
+  "famille_pension_impayee": {
+    "abandon_de_famille_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-3 du code penal version en vigueur depuis le 01/03/2022  15 000 euros d amende  assortis de deux ans d emprisonnement apres plus de deux mois sans s acquitter INTEGRALEMENT  Meme montant d amende que la non-representation d enfant de l article 227-5  ⚠ ce sont deux infractions DISTINCTES  aucun des textes ne fait de l impaye une excuse de la non-representation ni l inverse  ⇒ deux torts ne s annulent pas  ils s additionnent"
+    },
+    "ifpa_frais_de_gestion_recouvrement_amiable": {
+      "valeur": 7.5,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Frais de gestion de 7,5 pourcent en cas d impaye traite en recouvrement amiable par l Aripa  a la charge du debiteur defaillant  pas du creancier  Le service d intermediation lui-meme est gratuit pour les deux parents  Page du 01/04/2026"
+    },
+    "asf_montant_mensuel_par_enfant": {
+      "valeur": 200.78,
+      "unite": "EUR par mois et par enfant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Allocation de soutien familial  200,78 EUR par mois et par enfant  montants au 01/04/2026  Meme valeur que le SEUIL  si l autre parent verse une pension INFERIEURE a 200,78 EUR l ASF differentielle comble la difference  sauf si cette difference est inferieure a 15 EUR  ★ la Caf ou la MSA peut agir A VOTRE PLACE ET POUR VOTRE COMPTE pour recuperer la pension  ⚠ montant a re-verifier chaque annee au 1er avril"
+    },
+    "abandon_de_famille_duree_de_non_paiement": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 227-3 du code penal version en vigueur depuis le 01/03/2022  en demeurant PLUS DE DEUX MOIS sans s acquitter INTEGRALEMENT de cette obligation  Deux mois  pas six  pas un an  ⚠ integralement compte  payer une partie ne fait pas disparaitre le delit  ★ le delit vise aussi les titres NON judiciaires  article 373-2-2 I 2° a 6°  convention homologuee  convention de divorce par consentement mutuel  acte notarie  convention validee par la Caf  accord de mediation revetu de la formule executoire  ⇒ pas besoin d un jugement pour porter plainte  ★★ 2e alinea  le non-paiement entre les mains de l organisme assurant l intermediation est puni des MEMES peines"
+    },
+    "abandon_de_famille_emprisonnement": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-3 du code penal  deux ans d emprisonnement  ⚠ s applique aussi au parent qui cesse de payer le jour de la majorite de l enfant alors qu un titre executoire court toujours  article 371-2 alinea 2  l obligation ne cesse PAS de plein droit a la majorite  ⛔ une decision de justice ne se corrige pas en arretant de l executer  il faut faire MODIFIER le titre"
+    },
+    "abandon_de_famille_amende_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-3 du code penal  15 000 euros d amende  Meme montant que la non-representation d enfant de l article 227-5  ⚠ ce sont deux infractions DISTINCTES  aucun des textes ne fait de l impaye une excuse de la non-representation ni l inverse  ⇒ deux torts ne s annulent pas  ils s additionnent"
+    },
+    "organisation_frauduleuse_insolvabilite_emprisonnement": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "Cas aggrave signale par service-public  organisation frauduleuse d insolvabilite  3 ans d emprisonnement  ⚠ la qualification retenue commande la peine  point a laisser au penaliste et non a trancher dans une reponse  Page du 30/01/2026 donc plus de 6 mois  a recouper"
+    },
+    "organisation_frauduleuse_insolvabilite_amende": {
+      "valeur": 45000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "Cas aggrave signale par service-public  organisation frauduleuse d insolvabilite  45 000 EUR d amende  ⚠ qualification a laisser au penaliste  Page du 30/01/2026  a recouper"
+    },
+    "arrieres_recuperables_duree_generale": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "Les arrieres de pension sont recuperables jusqu a 5 ans en arriere  ★ inclut les REVALORISATIONS ANNUELLES non appliquees  qui sont une dette comme le reste et que presque personne ne reclame  Page du 30/01/2026  a recouper"
+    },
+    "paiement_direct_arrieres_duree": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "★ ⚠ La procedure de paiement direct par commissaire de justice ne porte que sur les 6 DERNIERS MOIS d arrieres  c est la voie la plus rapide et la plus COURTE  la confondre avec un recouvrement general fait perdre les arrieres plus anciens  ⇒ il faut la CUMULER avec une autre voie  intermediation Aripa  saisie  recouvrement public par le Tresor apres echec des autres procedures  et non s en contenter"
+    },
+    "ifpa_cout_pour_les_parents": {
+      "valeur": 0,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L intermediation financiere des pensions alimentaires est GRATUITE pour les 2 parents  aucun frais de mise en place  Aripa geree par la Caf ou la MSA  ★★ LA PHRASE DECISIVE  la demarche est possible MEME SANS L ACCORD DE L AUTRE PARENT  le reflexe il faudra bien qu il signe quelque chose est FAUX  IFPA systematique quand un titre executoire fixe une pension  loi du 23/12/2021  ecartee seulement si les 2 parents la refusent  ⛔ IMPOSEE en cas de violences intrafamiliales  Page du 01/04/2026"
+    },
+    "ifpa_arrieres_recouvrables": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "L intervention de l Aripa va jusqu au recouvrement des arrieres des 5 ans qui precedent la mise en place de l intermediation  ⚠ EXCLUSIONS de l IFPA  pension versee DIRECTEMENT A L ENFANT  pension due a ses propres parents  devoir de secours entre epoux  ★ consequence contre-intuitive  faire verser la pension d un enfant majeur entre ses mains article 373-2-5 fait SORTIR la creance du dispositif  plus digne mais moins protecteur  a arbitrer consciemment"
+    },
+    "ifpa_delai_premier_versement": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Premier versement au plus tard 60 jours apres reception des informations  ensuite reversement au creancier le lendemain de la reception du paiement du debiteur  ★ autre avantage jamais mis en avant  quand l IFPA est en place la Caf applique la REVALORISATION ANNUELLE automatiquement  alors qu autrement c est au debiteur de la calculer spontanement"
+    },
+    "ifpa_frais_de_gestion_recouvrement_amiable_bis": {
+      "valeur": 7.5,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Frais de gestion de 7,5 pourcent en cas d impaye traite en recouvrement amiable  a la charge du debiteur defaillant  pas du creancier  Page du 01/04/2026"
+    },
+    "ifpa_frais_de_gestion_recouvrement_force": {
+      "valeur": 10,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Frais de gestion de 10 pourcent en recouvrement force  a la charge du debiteur defaillant  Moyens du recouvrement force  paiement direct aupres de l employeur de la banque d une caisse de retraite ou de France Travail  recouvrement public par l administration fiscale notamment pour les debiteurs independants"
+    },
+    "asf_montant_mensuel_par_enfant_bis": {
+      "valeur": 200.78,
+      "unite": "EUR par mois et par enfant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Allocation de soutien familial  200,78 EUR par mois et par enfant  montants au 01/04/2026  Meme valeur que le SEUIL  si l autre parent verse une pension INFERIEURE a 200,78 EUR l ASF differentielle comble la difference  ★ la Caf ou la MSA peut agir A VOTRE PLACE ET POUR VOTRE COMPTE pour recuperer la pension  ⚠ montant a re-verifier chaque annee au 1er avril"
+    },
+    "asf_seuil_de_non_versement_du_differentiel": {
+      "valeur": 15,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "Si la difference entre la pension versee et le montant de l ASF est inferieure a 15 EUR l ASF differentielle n est PAS versee  Piege a connaitre avant de promettre un complement"
+    },
+    "asf_duree_minimale_de_non_participation": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition  au moins un enfant a charge pour lequel l autre parent ne participe plus a l entretien depuis au moins 1 mois  Il faut aussi vivre seul et resider en France  ★ un seul mois suffit  beaucoup de gens attendent des annees en croyant qu il faut un long historique"
+    },
+    "asf_delai_pour_engager_une_action": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ ★ CONTREPARTIE DE L ASF  quand aucune pension n est fixee le beneficiaire a 4 mois pour engager une action devant le juge aux affaires familiales afin de faire fixer ou reviser la pension  ⛔ delai decouvert trop tard dans la pratique  le DIRE AVANT  L ASF n est pas un cadeau sans obligation"
+    }
+  },
+  "famille_atteintes_penales_autorite_parentale": {
+    "defaut_notification_changement_domicile_amende": {
+      "valeur": 7500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-6 du code penal  7 500 EUR d amende et six mois d emprisonnement pour defaut de notification d un changement de domicile  ⚠ cote civil l article 373-2 exige une information prealable et EN TEMPS UTILE  ⛔ CROYANCE FAUSSE A DEMONTER  il n existe AUCUN preavis chiffre  ni un mois ni deux ni quinze jours  ce qui compte est la PREUVE d avoir informe  un ecrit date  ⛔ exception  cet alinea ne s applique pas au parent autorise a dissimuler son domicile dans le cadre d une ordonnance de protection requise contre l autre parent"
+    },
+    "non_representation_enfant_emprisonnement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-5 du code penal verbatim  Le fait de refuser INDUMENT de representer un enfant mineur a la personne qui a le droit de le reclamer est puni d un an d emprisonnement  ⚠ retenir l enfant parce que la pension n est pas versee expose a ce texte SANS effacer la dette"
+    },
+    "non_representation_enfant_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-5 du code penal  15 000 EUR d amende"
+    },
+    "soustraction_enfant_par_ascendant_emprisonnement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-7 du code penal  soustraction d un enfant mineur des mains de ceux qui exercent l autorite parentale par un ASCENDANT  un an d emprisonnement"
+    },
+    "soustraction_enfant_par_ascendant_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-7 du code penal  15 000 EUR d amende  La tentative est punie des memes peines  article 227-11"
+    },
+    "soustraction_aggravee_emprisonnement": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 227-9 du code penal  les faits des articles 227-5 et 227-7 passent a trois ans d emprisonnement si l enfant est retenu au-dela de cinq jours sans qu on sache ou il se trouve OU s il est retenu indument HORS DU TERRITOIRE DE LA REPUBLIQUE  ⇒ hors de France aggrave IMMEDIATEMENT sans condition de duree  un non-retour de vacances a l etranger n est pas la meme infraction qu un non-retour de week-end  on passe de 1 an a 3 ans"
+    },
+    "soustraction_aggravee_amende": {
+      "valeur": 45000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-9 du code penal  45 000 EUR d amende dans les cas aggraves  Article 227-10  memes peines lorsque l auteur a ete dechu de l autorite parentale"
+    },
+    "soustraction_aggravee_duree_de_retention": {
+      "valeur": 5,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-9 1°  enfant mineur retenu AU-DELA DE CINQ JOURS sans que les detenteurs du droit de le reclamer sachent ou il se trouve  ⚠ ce seuil ne s applique PAS au cas hors du territoire qui est aggrave sans condition de duree"
+    },
+    "soustraction_par_non_ascendant_emprisonnement": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-8 du code penal  soustraction d un enfant mineur par une personne AUTRE qu un ascendant  cinq ans d emprisonnement  ⇒ la peine est bien plus lourde que pour un ascendant"
+    },
+    "soustraction_par_non_ascendant_amende": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-8 du code penal  75 000 EUR d amende  La tentative est punie des memes peines  article 227-11"
+    },
+    "defaut_notification_changement_domicile_emprisonnement": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 227-6 du code penal  defaut de notification d un changement de domicile  six mois d emprisonnement  Pendant PENAL de l obligation civile de l article 373-2  presque personne ne le connait  ⇒ dire que le silence de l autre parent sur son demenagement est une INFRACTION et pas seulement une incorrection change la facon d agir"
+    },
+    "defaut_notification_changement_domicile_amende_bis": {
+      "valeur": 7500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-6 du code penal  7 500 EUR d amende  ⚠ cote civil l article 373-2 exige une information prealable et EN TEMPS UTILE  ⛔ CROYANCE FAUSSE A DEMONTER  il n existe AUCUN preavis chiffre  ni un mois ni deux ni quinze jours  ce qui compte est la PREUVE d avoir informe  un ecrit date  ⛔ exception  cet alinea ne s applique pas au parent autorise a dissimuler son domicile dans le cadre d une ordonnance de protection requise contre l autre parent"
+    }
+  },
+  "famille_filiation_contestation": {
+    "possession_etat_duree_rendant_filiation_incontestable": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150526/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 333 alinea 2 verbatim  Nul a l exception du ministere public ne peut contester la filiation lorsque la possession d etat conforme au titre a dure au moins cinq ans depuis la naissance ou la reconnaissance  ⇒ celui qui a eleve l enfant cinq ans ne peut plus etre delie de cette paternite  et le pere biologique ne peut plus rien reclamer  ⛔ le temps qui passe VERROUILLE  c est la regle qui surprend le plus"
+    },
+    "contestation_delai_avec_possession_etat": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 333 alinea 1  possession d etat conforme au titre depuis moins de 5 ans  seuls peuvent agir l enfant l un des parents ou celui qui se pretend le parent veritable  prescription de 5 ans a compter du jour ou la possession d etat a CESSE ou du deces du parent dont le lien est conteste  ★ le point de depart n est pas la naissance"
+    },
+    "contestation_delai_sans_possession_etat": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Articles 334 et 321  a defaut de possession d etat conforme au titre l action est ouverte a TOUTE PERSONNE QUI Y A INTERET  y compris un heritier  dans le delai de l article 321  dix ans a compter du jour ou la personne a ete privee de l etat qu elle reclame ou a commence a jouir de l etat qui lui est conteste  ★ a l egard de l enfant ce delai est SUSPENDU pendant sa minorite"
+    },
+    "contestation_par_enfant_age_limite_avec_possession_etat": {
+      "valeur": 23,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F940",
+      "date_verifiee": "2026-08-17",
+      "note": "L enfant qui conteste sa filiation dans un cas a possession d etat de moins de 5 ans peut agir jusqu a ses 23 ans  ⚠ page du 25/03/2025 donc plus de 6 mois  a recouper  Tribunal judiciaire et ⛔ AVOCAT OBLIGATOIRE  contrairement a la saisine du JAF sur l autorite parentale ou la pension"
+    },
+    "contestation_par_enfant_age_limite_sans_possession_etat": {
+      "valeur": 28,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F940",
+      "date_verifiee": "2026-08-17",
+      "note": "Sans possession d etat conforme au titre l enfant peut agir jusqu a ses 28 ans  dix ans apres sa majorite  effet de la suspension du delai pendant la minorite  ⚠ page du 25/03/2025  a recouper"
+    },
+    "contestation_filiation_etablie_par_acte_de_notoriete": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 335  la filiation etablie par la possession d etat constatee par un acte de notoriete peut etre contestee par toute personne qui y a interet en rapportant la preuve contraire dans le delai de dix ans a compter de la DELIVRANCE DE L ACTE  ⚠ point de depart different des autres cas"
+    },
+    "constatation_judiciaire_possession_etat_delai": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 330  la possession d etat peut etre constatee a la demande de toute personne qui y a interet dans le delai de dix ans a compter de sa cessation ou du deces du parent pretendu  ★ voie judiciaire alternative a l acte de notoriete  delai plus long  10 ans contre 5 ans"
+    }
+  },
+  "famille_contribution_entretien_education": {
+    "bareme_indicatif_minimum_vital_laisse_au_debiteur": {
+      "valeur": null,
+      "unite": "EUR par mois",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE  la table de reference des pensions alimentaires est hebergee sur justice.fr qui n a pas pu etre atteint  echec de verification du certificat TLS  trois tentatives sur https://www.justice.fr/simulateurs/pension-alimentaire/bareme  et AUCUNE page service-public ne reproduit la table  ⛔ ne pas deviner cette valeur  ★ ce qui EST verifie  service-public R45945 du 12/12/2025  Il s agit d une simple estimation  Seul le juge s il est saisi peut prononcer le montant definitif  donc le bareme n oblige ni le juge ni les parents"
+    },
+    "bareme_indicatif_pourcentages_par_enfant_et_mode_de_residence": {
+      "valeur": null,
+      "unite": "pourcentage du revenu du debiteur",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE  pourcentages appliques au revenu du parent debiteur selon le nombre d enfants et le mode de residence  visite reduite  classique  alternee  ainsi que l annee de la table  Meme cause  justice.fr injoignable  ⚠ c est la premiere question que les gens posent  donc le trou le plus utile a combler  ⛔ ne jamais citer ces pourcentages de memoire"
+    }
+  },
+  "famille_sortie_du_territoire": {
+    "ost_duree_de_validite": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1774",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Opposition a sortie du territoire  La mesure d OST est valable 15 jours maximum  Vous ne pouvez pas demander la prolongation de la mesure  ⇒ c est un PONT de 15 jours pas une protection  le jour ou l on depose une OST on saisit le JAF pour une INTERDICTION de sortie du territoire  article 373-2-6  qui empeche l enfant de quitter la France sans l autorisation des DEUX parents et s inscrit au fichier des personnes recherchees  ⛔ croire qu on est protege et attendre est l erreur qui coute l enfant  ★ une autorisation de sortie du territoire AST ne sert a rien contre une OST ou une IST  l interdiction prime  ⚠ page du 29/04/2025 donc plus de 6 mois  a recouper"
+    }
+  },
+  "famille_mediation_familiale": {
+    "mediation_judiciaire_duree_maximale": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34355",
+      "date_verifiee": "2026-08-17",
+      "note": "Mediation judiciaire  5 mois maximum  ★ la mediation familiale N EST PAS OBLIGATOIRE avant de saisir le juge  L entretien d information est GRATUIT  les entretiens suivants sont a tarif libre ou a tarif conventionne proportionnel aux revenus dans les associations agreees par la Caf  Un accord HOMOLOGUE a la meme force executoire qu un jugement  ⚠ page du 01/10/2025 donc plus de 6 mois  a recouper"
+    },
+    "mediation_judiciaire_renouvellement": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34355",
+      "date_verifiee": "2026-08-17",
+      "note": "Renouvelable une fois pour 3 mois  ⛔ INTERDIT  la mediation est ECARTEE si des violences sont alleguees par un parent sur l autre ou sur l enfant  et en cas d EMPRISE MANIFESTE d un parent sur l autre  article 373-2-10 du code civil  ⇒ proposer une mediation dans une situation d emprise est une faute d orientation  pas une maladresse  voir violences-intrafamiliales.md"
+    }
   }
 }

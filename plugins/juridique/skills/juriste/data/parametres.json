@@ -184,5 +184,2569 @@
       "date_verifiee": "2026-08-17",
       "note": "Article L131-3 CPI. Une clause du type « le prestataire cede tous ses droits sur les livrables » ne remplit AUCUNE de ces conditions - c est la formule la plus repandue dans les contrats de prestation informatique et la plus exposee. Elle coupe dans les deux sens : le client croit avoir acquis des droits qu il n a peut-etre pas, le prestataire croit s etre depouille et en detient peut-etre encore. ⚠️ Le DROIT MORAL n est pas cessible : on peut amenager son exercice, pas l acheter."
     }
+  },
+  "rgpd_bases_legales": {
+    "nombre_bases_legales": {
+      "valeur": 6,
+      "unite": "bases",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 6 paragraphe 1 du RGPD  a) consentement b) execution d un contrat c) obligation legale d) interets vitaux e) mission d interet public f) interets legitimes  Le consentement n est qu une base sur six et c est la plus fragile car il est retirable a tout moment article 7 paragraphe 3  La paie la facturation et la comptabilite relevent de b) et c) pas du consentement  Tout fonder sur le consentement est l erreur la plus repandue"
+    },
+    "nombre_bases_legales_bis": {
+      "valeur": 6,
+      "unite": "bases",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 6 paragraphe 1 du RGPD a) consentement b) execution d un contrat c) obligation legale d) interets vitaux e) mission d interet public f) interets legitimes Le consentement n est qu une base sur six et c est la plus fragile car il est retirable a tout moment article 7 paragraphe 3 La paie la facturation et la comptabilite relevent de b) et c) pas du consentement Tout fonder sur le consentement est l erreur la plus repandue"
+    }
+  },
+  "rgpd_droits_des_personnes": {
+    "delai_reponse_demande_de_droit": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 12 paragraphe 3  dans les meilleurs delais et en tout etat de cause dans un delai d un mois a compter de la reception de la demande  Le point de depart est la RECEPTION pas la qualification interne de la demande"
+    },
+    "prolongation_delai_reponse": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 12 paragraphe 3  prolongation possible compte tenu de la complexite et du nombre de demandes  MAIS elle doit etre annoncee a la personne avec ses motifs dans le premier mois  non annoncee dans le premier mois elle est perdue et le retard devient un manquement"
+    },
+    "delai_information_donnees_non_collectees_aupres_de_la_personne": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 14 paragraphe 3 point a)  dans un delai raisonnable apres avoir obtenu les donnees mais ne depassant pas un mois  Concerne typiquement les fichiers de prospection achetes ou les donnees venant d un partenaire"
+    },
+    "cout_exercice_des_droits": {
+      "valeur": 0,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 12 paragraphe 5  aucun paiement n est exige  et l article 15 paragraphe 3 impose de fournir une COPIE des donnees  Facturer un droit d acces est un manquement  seules les demandes manifestement infondees ou excessives notamment repetitives peuvent etre facturees ou refusees"
+    },
+    "delai_reponse_demande_de_droit_bis": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 12 paragraphe 3 dans les meilleurs delais et en tout etat de cause dans un delai d un mois a compter de la reception de la demande Le point de depart est la RECEPTION pas la qualification interne de la demande"
+    },
+    "prolongation_delai_reponse_bis": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 12 paragraphe 3 prolongation possible compte tenu de la complexite et du nombre de demandes MAIS elle doit etre annoncee a la personne avec ses motifs dans le premier mois non annoncee dans le premier mois elle est perdue et le retard devient un manquement"
+    },
+    "delai_information_donnees_non_collectees_aupres_de_la_personne_bis": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 14 paragraphe 3 point a) dans un delai raisonnable apres avoir obtenu les donnees mais ne depassant pas un mois Concerne typiquement les fichiers de prospection achetes ou les donnees venant d un partenaire"
+    },
+    "cout_exercice_des_droits_bis": {
+      "valeur": 0,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 12 paragraphe 5 aucun paiement n est exige et l article 15 paragraphe 3 impose de fournir une COPIE des donnees Facturer un droit d acces est un manquement seules les demandes manifestement infondees ou excessives notamment repetitives peuvent etre facturees ou refusees"
+    }
+  },
+  "rgpd_registre_des_traitements": {
+    "seuil_dispense_registre": {
+      "valeur": 250,
+      "unite": "employes",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 30 paragraphe 5  dispense pour une entreprise de moins de 250 employes SAUF si le traitement comporte un risque OU s il n est pas occasionnel OU s il porte sur des donnees sensibles ou penales  Les trois exceptions sont alternatives  La CNIL ecrit que en pratique cette derogation est limitee a des cas tres particuliers de traitements mis en oeuvre de maniere occasionnelle et non routiniere et cite la paie et la gestion clients prospects comme NON occasionnelles  ⇒ en pratique la dispense ne joue presque jamais"
+    },
+    "seuil_dispense_registre_bis": {
+      "valeur": 250,
+      "unite": "employes",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 30 paragraphe 5 dispense pour une entreprise de moins de 250 employes SAUF si le traitement comporte un risque OU s il n est pas occasionnel OU s il porte sur des donnees sensibles ou penales Les trois exceptions sont alternatives La CNIL ecrit que en pratique cette derogation est limitee a des cas tres particuliers de traitements mis en oeuvre de maniere occasionnelle et non routiniere et cite la paie et la gestion clients prospects comme NON occasionnelles -> en pratique la dispense ne joue presque jamais"
+    }
+  },
+  "rgpd_violation_de_donnees": {
+    "delai_notification_cnil": {
+      "valeur": 72,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 33 paragraphe 1  dans les meilleurs delais et si possible 72 heures au plus tard apres en avoir PRIS CONNAISSANCE  Le delai court des la connaissance pas des la fin de l enquete  La CNIL admet une notification initiale puis une notification complementaire  Si le delai est depasse il faut motiver le retard  Le sous-traitant lui notifie au responsable dans les meilleurs delais article 33 paragraphe 2 sans delai chiffre"
+    },
+    "delai_notification_cnil_bis": {
+      "valeur": 72,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 33 paragraphe 1 dans les meilleurs delais et si possible 72 heures au plus tard apres en avoir PRIS CONNAISSANCE Le delai court des la connaissance pas des la fin de l enquete La CNIL admet une notification initiale puis une notification complementaire Si le delai est depasse il faut motiver le retard Le sous-traitant lui notifie au responsable dans les meilleurs delais article 33 paragraphe 2 sans delai chiffre"
+    }
+  },
+  "rgpd_sanctions": {
+    "amende_administrative_niveau_1_plafond": {
+      "valeur": 10000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 83 paragraphe 4  manquements aux obligations du responsable et du sous-traitant articles 25 a 39 dont le registre la securite l analyse d impact et le contrat de sous-traitance"
+    },
+    "amende_administrative_niveau_1_pourcentage_ca": {
+      "valeur": 2,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Pourcentage du chiffre d affaires annuel mondial total de l exercice precedent  le montant le plus eleve entre le plafond en euros et le pourcentage est retenu"
+    },
+    "amende_administrative_niveau_2_plafond": {
+      "valeur": 20000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 83 paragraphe 5  principes de base et consentement articles 5 6 7 et 9  droits des personnes articles 12 a 22  transferts hors UE articles 44 a 49  non-respect d une injonction de la CNIL"
+    },
+    "amende_administrative_niveau_2_pourcentage_ca": {
+      "valeur": 4,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le texte dit le montant le plus eleve etant retenu  Donc pour une petite structure le plafond applicable est le montant FIXE en euros et non un pourcentage d un petit chiffre d affaires  La croyance inverse je risque 4 pourcent de mon CA donc presque rien est fausse"
+    },
+    "procedure_simplifiee_amende_plafond": {
+      "valeur": 20000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 22-1 de la loi 78-17 version en vigueur au 28 mai 2026  procedure simplifiee ou un membre unique de la formation restreinte statue seul  ★ C est le risque REEL d une petite structure  pas les millions du RGPD"
+    },
+    "procedure_simplifiee_astreinte_plafond": {
+      "valeur": 100,
+      "unite": "EUR par jour",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Astreinte par jour de retard a compter de la date fixee par la decision  s ajoute a l amende"
+    },
+    "procedure_simplifiee_seuil_ca": {
+      "valeur": 50000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Chiffre d affaires annuel mondial total de l exercice precedent au-dela duquel les plafonds de la procedure simplifiee sont majores"
+    },
+    "procedure_simplifiee_amende_majoree": {
+      "valeur": 100000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond majore de la procedure simplifiee au-dela du seuil de chiffre d affaires"
+    },
+    "procedure_simplifiee_astreinte_majoree": {
+      "valeur": 500,
+      "unite": "EUR par jour",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Astreinte majoree de la procedure simplifiee au-dela du seuil de chiffre d affaires"
+    },
+    "sanction_penale_emprisonnement": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": "2026-08-17",
+      "note": "Peine commune aux articles 226-16 a 226-22-1 du code penal  absence de mesures des articles 24 25 30 et 32 du RGPD article 226-17  defaut de notification d une violation article 226-17-1  collecte deloyale article 226-18  detournement de finalite article 226-21  transfert illicite hors UE article 226-22-1"
+    },
+    "sanction_penale_amende_personne_physique": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037825504",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 226-17 du code penal version en vigueur au 1er juin 2019  vise expressement les articles 24 25 30 et 32 du RGPD  ★★ ne pas tenir de registre article 30 est donc un delit et pas seulement un manquement administratif"
+    },
+    "multiplicateur_amende_personne_morale": {
+      "valeur": 5,
+      "unite": "multiplicateur",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417334",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 131-38 du code penal  le taux maximum de l amende applicable aux personnes morales est egal au quintuple de celui prevu pour les personnes physiques  Renvoi depuis l article 226-24 pour les infractions de la section fichiers et traitements"
+    },
+    "sanction_penale_amende_personne_morale": {
+      "valeur": 1500000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417334",
+      "date_verifiee": "2026-08-17",
+      "note": "Valeur CALCULEE  quintuple de 300000 EUR par application de l article 131-38 renvoye par l article 226-24  Le montant n est pas ecrit tel quel dans le code  il resulte des deux textes"
+    },
+    "entrave_cnil_emprisonnement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 226-22-2 du code penal  entrave a l action de la CNIL  refuser ou retarder un controle est une infraction distincte du manquement de fond"
+    },
+    "divulgation_par_negligence_amende_article_226_22_alinea_2": {
+      "valeur": null,
+      "unite": "EUR",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": null,
+      "note": "TROU ASSUME  le second alinea de l article 226-22 punit la divulgation commise par imprudence ou negligence avec une peine PLUS FAIBLE que le premier alinea  je n ai pas obtenu son texte verbatim  l outil de lecture a refuse la reproduction integrale  ⛔ ne pas citer de chiffre sur cette infraction avant d avoir lu l article sur Legifrance"
+    },
+    "entrave_cnil_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 226-22-2 du code penal  quintuple pour une personne morale par renvoi de l article 226-24 a l article 131-38"
+    },
+    "amende_administrative_niveau_1_plafond_bis": {
+      "valeur": 10000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 83 paragraphe 4 manquements aux obligations du responsable et du sous-traitant articles 25 a 39 dont le registre la securite l analyse d impact et le contrat de sous-traitance"
+    },
+    "amende_administrative_niveau_1_pourcentage_ca_bis": {
+      "valeur": 2,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Pourcentage du chiffre d affaires annuel mondial total de l exercice precedent le montant le plus eleve entre le plafond en euros et le pourcentage est retenu"
+    },
+    "amende_administrative_niveau_2_plafond_bis": {
+      "valeur": 20000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 83 paragraphe 5 principes de base et consentement articles 5 6 7 et 9 droits des personnes articles 12 a 22 transferts hors UE articles 44 a 49 non-respect d une injonction de la CNIL"
+    },
+    "amende_administrative_niveau_2_pourcentage_ca_bis": {
+      "valeur": 4,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre8",
+      "date_verifiee": "2026-08-17",
+      "note": "Le texte dit le montant le plus eleve etant retenu Donc pour une petite structure le plafond applicable est le montant FIXE en euros et non un pourcentage d un petit chiffre d affaires La croyance inverse je risque 4 pourcent de mon CA donc presque rien est fausse"
+    },
+    "procedure_simplifiee_amende_plafond_bis": {
+      "valeur": 20000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 22-1 de la loi 78-17 version en vigueur au 28 mai 2026 procedure simplifiee ou un membre unique de la formation restreinte statue seul C est le risque REEL d une petite structure pas les millions du RGPD"
+    },
+    "procedure_simplifiee_astreinte_plafond_bis": {
+      "valeur": 100,
+      "unite": "EUR par jour",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Astreinte par jour de retard a compter de la date fixee par la decision s ajoute a l amende"
+    },
+    "procedure_simplifiee_seuil_ca_bis": {
+      "valeur": 50000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Chiffre d affaires annuel mondial total de l exercice precedent au-dela duquel les plafonds de la procedure simplifiee sont majores"
+    },
+    "procedure_simplifiee_amende_majoree_bis": {
+      "valeur": 100000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond majore de la procedure simplifiee au-dela du seuil de chiffre d affaires"
+    },
+    "procedure_simplifiee_astreinte_majoree_bis": {
+      "valeur": 500,
+      "unite": "EUR par jour",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000045069532",
+      "date_verifiee": "2026-08-17",
+      "note": "Astreinte majoree de la procedure simplifiee au-dela du seuil de chiffre d affaires"
+    },
+    "sanction_penale_emprisonnement_bis": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": "2026-08-17",
+      "note": "Peine commune aux articles 226-16 a 226-22-1 du code penal absence de mesures des articles 24 25 30 et 32 du RGPD article 226-17 defaut de notification d une violation article 226-17-1 collecte deloyale article 226-18 detournement de finalite article 226-21 transfert illicite hors UE article 226-22-1"
+    },
+    "sanction_penale_amende_personne_physique_bis": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037825504",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 226-17 du code penal version en vigueur au 1er juin 2019 vise expressement les articles 24 25 30 et 32 du RGPD ne pas tenir de registre article 30 est donc un delit et pas seulement un manquement administratif"
+    },
+    "multiplicateur_amende_personne_morale_bis": {
+      "valeur": 5,
+      "unite": "multiplicateur",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417334",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 131-38 du code penal le taux maximum de l amende applicable aux personnes morales est egal au quintuple de celui prevu pour les personnes physiques Renvoi depuis l article 226-24 pour les infractions de la section fichiers et traitements"
+    },
+    "sanction_penale_amende_personne_morale_bis": {
+      "valeur": 1500000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417334",
+      "date_verifiee": "2026-08-17",
+      "note": "Valeur CALCULEE quintuple de 300000 EUR par application de l article 131-38 renvoye par l article 226-24 Le montant n est pas ecrit tel quel dans le code il resulte des deux textes"
+    },
+    "entrave_cnil_emprisonnement_bis": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 226-22-2 du code penal entrave a l action de la CNIL refuser ou retarder un controle est une infraction distincte du manquement de fond"
+    },
+    "divulgation_par_negligence_amende_article_226_22_alinea_2_bis": {
+      "valeur": null,
+      "unite": "EUR",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": null,
+      "note": "TROU ASSUME le second alinea de l article 226-22 punit la divulgation commise par imprudence ou negligence avec une peine PLUS FAIBLE que le premier alinea je n ai pas obtenu son texte verbatim l outil de lecture a refuse la reproduction integrale ne pas citer de chiffre sur cette infraction avant d avoir lu l article sur Legifrance"
+    },
+    "entrave_cnil_amende_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165313/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 226-22-2 du code penal quintuple pour une personne morale par renvoi de l article 226-24 a l article 131-38"
+    }
+  },
+  "rgpd_cookies_et_traceurs": {
+    "duree_vie_traceurs_mesure_audience": {
+      "valeur": 13,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition CNIL pour qu un outil de mesure d audience soit EXEMPTE de consentement  page mise a jour le 04/07/2025  autres conditions cumulatives  finalite strictement limitee a la mesure d audience  statistiques anonymes  pas de recoupement avec d autres traitements  pas de suivi global de la navigation  ⚠ un fournisseur qui reutilise les donnees pour son propre compte sort de l exemption"
+    },
+    "duree_conservation_donnees_mesure_audience": {
+      "valeur": 25,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree maximale de conservation des donnees collectees par un traceur de mesure d audience exempte de consentement  page CNIL du 04/07/2025"
+    },
+    "duree_conservation_choix_utilisateur": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/FAQ",
+      "date_verifiee": "2026-08-17",
+      "note": "Bonne pratique CNIL  page mise a jour le 29/04/2026  conserver le choix de l utilisateur pendant six mois  ⚠ le REFUS doit etre conserve aussi longtemps que l acceptation  redemander a chaque visite apres un refus est un manquement"
+    },
+    "duree_vie_traceurs_mesure_audience_bis": {
+      "valeur": 13,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition CNIL pour qu un outil de mesure d audience soit EXEMPTE de consentement page mise a jour le 04/07/2025 autres conditions cumulatives finalite strictement limitee a la mesure d audience statistiques anonymes pas de recoupement avec d autres traitements pas de suivi global de la navigation un fournisseur qui reutilise les donnees pour son propre compte sort de l exemption"
+    },
+    "duree_conservation_donnees_mesure_audience_bis": {
+      "valeur": 25,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree maximale de conservation des donnees collectees par un traceur de mesure d audience exempte de consentement page CNIL du 04/07/2025"
+    },
+    "duree_conservation_choix_utilisateur_bis": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/FAQ",
+      "date_verifiee": "2026-08-17",
+      "note": "Bonne pratique CNIL page mise a jour le 29/04/2026 conserver le choix de l utilisateur pendant six mois le REFUS doit etre conserve aussi longtemps que l acceptation redemander a chaque visite apres un refus est un manquement"
+    }
+  },
+  "rgpd_transferts_hors_ue": {
+    "condition_transfert_etats_unis": {
+      "valeur": "certification au Data Privacy Framework et inscription sur la liste du Departement du Commerce",
+      "unite": "condition",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/adequation-des-etats-unis-les-premieres-questions-reponses",
+      "date_verifiee": "2026-08-17",
+      "note": "Decision d adequation de la Commission du 10 juillet 2023  page CNIL mise a jour le 17/07/2024 a recouper  ★★ l adequation ne couvre PAS toutes les entreprises americaines  seuls les transferts vers les entites CERTIFIEES dispensent des outils de l article 46  il faut verifier avant le transfert que le destinataire ses filiales et les categories de donnees figurent sur la liste  a defaut il faut des clauses contractuelles types et une analyse d impact des transferts"
+    },
+    "condition_transfert_etats_unis_bis": {
+      "valeur": "certification au Data Privacy Framework et inscription sur la liste du Departement du Commerce",
+      "unite": "condition",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/adequation-des-etats-unis-les-premieres-questions-reponses",
+      "date_verifiee": "2026-08-17",
+      "note": "Decision d adequation de la Commission du 10 juillet 2023 page CNIL mise a jour le 17/07/2024 a recouper l adequation ne couvre PAS toutes les entreprises americaines seuls les transferts vers les entites CERTIFIEES dispensent des outils de l article 46 il faut verifier avant le transfert que le destinataire ses filiales et les categories de donnees figurent sur la liste a defaut il faut des clauses contractuelles types et une analyse d impact des transferts"
+    }
+  },
+  "rgpd_durees_de_conservation": {
+    "prospection_clients_apres_fin_de_relation": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/questions-reponses-sur-les-referentiels-relatifs-la-gestion-des-activites-commerciales-et-des",
+      "date_verifiee": "2026-08-17",
+      "note": "Referentiel CNIL gestion des activites commerciales  page du 28/01/2022 a recouper  duree pendant la relation commerciale puis trois ans a compter de sa fin  ⚠ duree de PROSPECTION seulement  les pieces comptables et sociales ont leurs propres durees legales plus longues qui ne sont pas dans ce fichier"
+    },
+    "prospection_prospects_apres_collecte_ou_dernier_contact": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/questions-reponses-sur-les-referentiels-relatifs-la-gestion-des-activites-commerciales-et-des",
+      "date_verifiee": "2026-08-17",
+      "note": "Trois ans a compter de la collecte ou du dernier contact VENANT du prospect  un mail d ouverture envoye par l entreprise ne remet pas le compteur a zero  au terme du delai on peut redemander l accord et sans reponse positive et explicite les donnees doivent etre supprimees ou archivees"
+    },
+    "prospection_clients_apres_fin_de_relation_bis": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/questions-reponses-sur-les-referentiels-relatifs-la-gestion-des-activites-commerciales-et-des",
+      "date_verifiee": "2026-08-17",
+      "note": "Referentiel CNIL gestion des activites commerciales page du 28/01/2022 a recouper duree pendant la relation commerciale puis trois ans a compter de sa fin duree de PROSPECTION seulement les pieces comptables et sociales ont leurs propres durees legales plus longues qui ne sont pas dans ce fichier"
+    },
+    "prospection_prospects_apres_collecte_ou_dernier_contact_bis": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.cnil.fr/fr/questions-reponses-sur-les-referentiels-relatifs-la-gestion-des-activites-commerciales-et-des",
+      "date_verifiee": "2026-08-17",
+      "note": "Trois ans a compter de la collecte ou du dernier contact VENANT du prospect un mail d ouverture envoye par l entreprise ne remet pas le compteur a zero au terme du delai on peut redemander l accord et sans reponse positive et explicite les donnees doivent etre supprimees ou archivees"
+    }
+  },
+  "information_precontractuelle": {
+    "rubriques_obligatoires_l111_1": {
+      "valeur": 6,
+      "unite": "rubriques",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142438",
+      "date_verifiee": "2026-08-17",
+      "note": "Socle applicable a TOUTE vente a un consommateur, y compris en boutique : caracteristiques essentielles, prix, date de livraison, identite du professionnel, garanties legales et commerciales, possibilite de recourir a un mediateur. Version en vigueur depuis le 01/10/2021."
+    },
+    "rubriques_obligatoires_l221_5_distance": {
+      "valeur": 11,
+      "unite": "rubriques",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563141",
+      "date_verifiee": "2026-08-17",
+      "note": "Liste renforcee pour la vente a distance et hors etablissement. Version en vigueur depuis le 19/06/2026. Ajoute notamment le formulaire type de retractation (7e), les frais de renvoi (8e), l information sur l absence de droit de retractation (10e) et le prix personnalise par prise de decision automatisee (11e)."
+    },
+    "amende_manquement_information_l131_1_personne_physique": {
+      "valeur": 3000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563118",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond. Vise les manquements aux 1er a 4e et 6e de L111-1 et aux articles L111-2 et L111-3. Version en vigueur depuis le 28/05/2022."
+    },
+    "amende_manquement_information_l131_1_personne_morale": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563118",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale."
+    },
+    "amende_manquement_information_distance_l242_10_personne_physique": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "PIEGE : la MEME omission d information coute 5 fois plus cher a distance qu en boutique, parce que le texte applicable devient L242-10 et non L131-1. Version en vigueur depuis le 28/05/2022."
+    },
+    "amende_manquement_information_distance_l242_10_personne_morale": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale, manquement aux obligations d information de la vente a distance."
+    },
+    "emprisonnement_absence_mentions_legales_site": {
+      "valeur": 1,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23455",
+      "date_verifiee": "2026-08-17",
+      "note": "Chiffre donne par service-public (page verifiee le 19/06/2026) et repete par la fiche mentions obligatoires. RESERVE : je n ai PAS retrouve l article penal exact qui porte cette peine ; l article 19 de la LCEN enonce l obligation mais ne contient pas la sanction, il renvoie aux agents de la DGCCRF."
+    },
+    "amende_absence_mentions_legales_site_personne_physique": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23455",
+      "date_verifiee": "2026-08-17",
+      "note": "Meme reserve que pour la peine d emprisonnement : valeur corroboree par deux pages service-public, base legale article par article non confirmee."
+    },
+    "amende_absence_mentions_legales_site_personne_morale": {
+      "valeur": 375000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23455",
+      "date_verifiee": "2026-08-17",
+      "note": "Quintuple du plafond personne physique, coherent avec le mecanisme general des peines applicables aux personnes morales. Base legale article par article non confirmee."
+    },
+    "rubriques_obligatoires_l111_1_bis": {
+      "valeur": 6,
+      "unite": "rubriques",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142438",
+      "date_verifiee": "2026-08-17",
+      "note": "Socle applicable a TOUTE vente a un consommateur, y compris en boutique : caracteristiques essentielles, prix, date de livraison, identite du professionnel, garanties legales et commerciales, possibilite de recourir a un mediateur. Version en vigueur depuis le 01/10/2021."
+    },
+    "rubriques_obligatoires_l221_5_distance_bis": {
+      "valeur": 11,
+      "unite": "rubriques",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563141",
+      "date_verifiee": "2026-08-17",
+      "note": "Liste renforcee pour la vente a distance et hors etablissement. Version en vigueur depuis le 19/06/2026. Ajoute notamment le formulaire type de retractation, les frais de renvoi, l information sur l ABSENCE de droit de retractation, et le prix personnalise par prise de decision automatisee."
+    },
+    "amende_manquement_information_l131_1_personne_physique_bis": {
+      "valeur": 3000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563118",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond. Vise les manquements aux 1er a 4e et 6e de L111-1 et aux articles L111-2 et L111-3. Version en vigueur depuis le 28/05/2022."
+    },
+    "amende_manquement_information_l131_1_personne_morale_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563118",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale."
+    },
+    "amende_manquement_information_distance_l242_10_personne_physique_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ PIEGE : la MEME omission d information coute cinq fois plus cher a distance qu en boutique, parce que le texte applicable devient L242-10 et non L131-1. Version en vigueur depuis le 28/05/2022."
+    },
+    "amende_manquement_information_distance_l242_10_personne_morale_bis": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale, manquement aux obligations d information de la vente a distance."
+    },
+    "sanction_absence_mentions_legales_site": {
+      "valeur": null,
+      "unite": "EUR",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Les fiches service-public annoncent pour la MEME obligation des montants incompatibles : 1 an d emprisonnement et 75 000 EUR pour l entrepreneur individuel, 375 000 EUR pour la societe, les deux pages datant du 31/07/2023 et renvoyant a l article 6 de la LCEN. Or j ai lu l article 6 dans sa version en vigueur depuis le 17/02/2024 : il ne contient AUCUNE sanction visant le manquement aux obligations d identification des editeurs, et ses peines portent sur le tabac, le signalement des contenus illicites et la conservation des donnees, pour 1 an et 250 000 EUR. L article 19 de la LCEN, qui est le texte pertinent pour un VENDEUR, enonce l obligation mais ne porte pas de peine : il renvoie a la constatation par les agents de la DGCCRF. ⇒ Le chiffre qui circule n est pas rattachable au texte actuel. En pratique l identite et les coordonnees du vendeur sont de toute facon exigees par L111-1 et L221-5, dont les sanctions sont verifiees."
+    }
+  },
+  "droit_de_retractation": {
+    "delai_standard": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226842/",
+      "date_verifiee": "2026-08-17",
+      "note": "Contrats a distance, demarchage telephonique et hors etablissement. Point de depart : conclusion du contrat pour les SERVICES, reception du bien pour les VENTES. Commande livree en plusieurs fois : le delai court a compter du DERNIER bien. Version en vigueur depuis le 01/07/2016."
+    },
+    "prolongation_defaut_information": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563199",
+      "date_verifiee": "2026-08-17",
+      "note": "LA SANCTION LA PLUS BRUTALE DU SUJET : si l information sur le droit de retractation n a pas ete fournie, le delai est prolonge de 12 mois a compter de l expiration du delai initial. Un manquement de forme transforme 14 jours en plus d un an. Version en vigueur depuis le 28/05/2022."
+    },
+    "delai_apres_information_tardive": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563199",
+      "date_verifiee": "2026-08-17",
+      "note": "Si le professionnel fournit l information pendant la prolongation, le delai expire 14 jours apres reception de l information. Regulariser meme tard referme donc la fenetre."
+    },
+    "delai_renvoi_du_bien": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221365/",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai laisse au consommateur pour renvoyer le bien, a compter de la communication de sa decision de se retracter."
+    },
+    "delai_remboursement": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226828",
+      "date_verifiee": "2026-08-17",
+      "note": "Totalite des sommes versees, FRAIS DE LIVRAISON INCLUS, au plus tard 14 jours apres avoir ete informe de la retractation. Le professionnel peut differer jusqu a recuperation du bien ou preuve d expedition. Version en vigueur depuis le 01/07/2016."
+    },
+    "nombre_exceptions_l221_28": {
+      "valeur": 13,
+      "unite": "categories",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563170",
+      "date_verifiee": "2026-08-17",
+      "note": "Liste FERMEE. Les exceptions numerique (13e) et service pleinement execute (1er) ne jouent QUE si trois formalites cumulatives ont ete accomplies : consentement expres prealable, reconnaissance de la perte du droit, confirmation par le professionnel. Sans elles, le droit de retractation subsiste. Version en vigueur depuis le 28/05/2022."
+    },
+    "boissons_alcoolisees_livraison_differee": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563170",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil de la 7e exception : boissons alcoolisees dont la livraison est differee au-dela de 30 jours et dont la valeur depend de fluctuations du marche."
+    },
+    "majoration_retard_remboursement": {
+      "valeur": {
+        "jusqu_a_10_jours": "taux d interet legal",
+        "de_10_a_20_jours": 5,
+        "de_20_a_30_jours": 10,
+        "de_30_a_60_jours": 20,
+        "de_60_a_90_jours": 50,
+        "par_mois_supplementaire": 5
+      },
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032226386/",
+      "date_verifiee": "2026-08-17",
+      "note": "Majoration DE PLEIN DROIT, sans juge et sans mise en demeure. Plafonnee au prix du produit, puis retour au taux d interet legal. Trois mois de retard sur un remboursement coutent la moitie du prix en plus. Version en vigueur depuis le 01/07/2016."
+    },
+    "amende_manquement_retractation_l242_13_personne_physique": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative pour tout manquement aux articles encadrant l exercice du droit de retractation. Couvre aussi l absence de la nouvelle fonctionnalite de retractation en ligne, puisque celle-ci figure a L221-21. Version en vigueur depuis le 28/05/2022."
+    },
+    "amende_manquement_retractation_l242_13_personne_morale": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale."
+    },
+    "delai_standard_bis": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226842/",
+      "date_verifiee": "2026-08-17",
+      "note": "Contrats a distance, demarchage telephonique et hors etablissement. Point de depart : conclusion du contrat pour les SERVICES, reception du bien pour les VENTES. Commande livree en plusieurs fois : le delai court a compter du DERNIER bien ou lot. Livraison reguliere pendant une periode definie : a compter du PREMIER bien. Version en vigueur depuis le 01/07/2016."
+    },
+    "prolongation_defaut_information_bis": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563199",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA SANCTION LA PLUS BRUTALE DU SUJET : si l information sur le droit de retractation n a pas ete fournie, le delai est prolonge de 12 mois a compter de l expiration du delai initial. Un manquement de FORME transforme 14 jours en plus d un an de retractabilite. Version en vigueur depuis le 28/05/2022."
+    },
+    "delai_apres_information_tardive_bis": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563199",
+      "date_verifiee": "2026-08-17",
+      "note": "Si le professionnel fournit l information PENDANT la prolongation, le delai expire 14 jours apres reception de l information. Regulariser meme tard referme donc la fenetre : c est le geste correctif le plus rentable du sujet."
+    },
+    "delai_renvoi_du_bien_bis": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221365/",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai laisse au consommateur pour renvoyer ou restituer le bien, a compter de la communication de sa decision de se retracter."
+    },
+    "delai_remboursement_bis": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226828",
+      "date_verifiee": "2026-08-17",
+      "note": "Totalite des sommes versees, FRAIS DE LIVRAISON INCLUS, au plus tard 14 jours apres avoir ete informe de la retractation. Le professionnel peut differer jusqu a recuperation du bien ou preuve d expedition. Meme moyen de paiement que la transaction initiale. Version en vigueur depuis le 01/07/2016."
+    },
+    "nombre_exceptions_l221_28_bis": {
+      "valeur": 13,
+      "unite": "categories",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563170",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Liste FERMEE. Les exceptions contenu numerique et service pleinement execute ne jouent QUE si trois formalites cumulatives ont ete accomplies : consentement expres prealable, reconnaissance par le client de la perte de son droit, confirmation par le professionnel sur support durable. Sans elles, le droit de retractation SUBSISTE malgre l execution. Version en vigueur depuis le 28/05/2022."
+    },
+    "boissons_alcoolisees_livraison_differee_bis": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044563170",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil de l exception boissons alcoolisees : livraison differee au-dela de 30 jours ET valeur dependant de fluctuations du marche echappant au controle du professionnel."
+    },
+    "majoration_retard_remboursement_bis": {
+      "valeur": {
+        "jusqu_a_10_jours": "taux d interet legal",
+        "de_10_a_20_jours": 5,
+        "de_20_a_30_jours": 10,
+        "de_30_a_60_jours": 20,
+        "de_60_a_90_jours": 50,
+        "par_mois_supplementaire": 5
+      },
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032226386/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Majoration DE PLEIN DROIT : ni juge, ni mise en demeure. Plafonnee au prix du produit, puis retour au taux d interet legal. Trois mois de retard sur un remboursement coutent la moitie du prix en plus. Version en vigueur depuis le 01/07/2016."
+    },
+    "amende_manquement_retractation_l242_13_personne_physique_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative pour tout manquement aux articles encadrant l exercice du droit de retractation et ses effets. Couvre L221-21, donc aussi l absence de la nouvelle fonctionnalite de retractation en ligne. Version en vigueur depuis le 28/05/2022."
+    },
+    "amende_manquement_retractation_l242_13_personne_morale_bis": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221825/",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale. Montant corrobore par la fiche e-commerce service-public verifiee le 19/06/2026 pour l absence de fonctionnalite de retractation en ligne."
+    }
+  },
+  "garantie_legale_de_conformite": {
+    "duree": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142579",
+      "date_verifiee": "2026-08-17",
+      "note": "Le vendeur repond des defauts de conformite qui apparaissent dans un delai de 2 ans a compter de la delivrance. Non negociable a la baisse : c est un plancher legal, pas une garantie commerciale. Version en vigueur depuis le 01/10/2021."
+    },
+    "presomption_anteriorite_bien_neuf": {
+      "valeur": 24,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044152587",
+      "date_verifiee": "2026-08-17",
+      "note": "POINT DECISIF : pendant 24 mois, c est au VENDEUR de prouver que le defaut n existait pas a la delivrance, pas au client de prouver qu il existait. La charge de la preuve est inversee. Version en vigueur depuis le 01/10/2021."
+    },
+    "presomption_anteriorite_bien_occasion": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044152587",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption tombe a 12 mois pour l occasion, mais la garantie legale elle-meme reste de 2 ans."
+    },
+    "delai_maximal_mise_en_conformite": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000044130449/",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai raisonnable qui ne peut etre superieur a 30 jours suivant la demande du consommateur. C est le SAV lent qui fait basculer un dossier, pas le defaut lui-meme. Version en vigueur depuis le 01/10/2021."
+    },
+    "extension_apres_reparation": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000044130449/",
+      "date_verifiee": "2026-08-17",
+      "note": "Tout bien repare dans le cadre de la garantie legale beneficie d une extension de 6 mois. Et un REMPLACEMENT fait courir un NOUVEAU delai de garantie legale attache au bien remplace : remplacer plutot que reparer remet le compteur a zero."
+    },
+    "amende_civile_obstacle_garantie": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560110",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende CIVILE contre le vendeur qui fait obstacle de MAUVAISE FOI a la mise en oeuvre de la garantie legale. Peut etre demandee par la DGCCRF, une association de consommateurs, le ministere public OU le consommateur lui-meme. Publication de la decision possible. Version en vigueur depuis le 03/05/2025."
+    },
+    "amende_civile_obstacle_garantie_plafond_ca": {
+      "valeur": 10,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560110",
+      "date_verifiee": "2026-08-17",
+      "note": "Le plafond peut etre porte a 10 pour cent du chiffre d affaires moyen annuel, de maniere proportionnee aux avantages tires des pratiques."
+    },
+    "exercices_pris_en_compte_pour_le_ca": {
+      "valeur": 3,
+      "unite": "exercices",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560110",
+      "date_verifiee": "2026-08-17",
+      "note": "Le chiffre d affaires moyen annuel se calcule sur les 3 derniers chiffres d affaires annuels connus a la date de la decision. Meme regle pour les autres amendes assises sur le chiffre d affaires."
+    },
+    "duree_bis": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142579",
+      "date_verifiee": "2026-08-17",
+      "note": "Le vendeur repond des defauts de conformite qui apparaissent dans un delai de 2 ans a compter de la delivrance. C est un plancher legal, pas une garantie commerciale : aucune clause ne peut le reduire. Version en vigueur depuis le 01/10/2021."
+    },
+    "presomption_anteriorite_bien_neuf_bis": {
+      "valeur": 24,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044152587",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ POINT DECISIF : pendant 24 mois, c est au VENDEUR de prouver que le defaut n existait pas a la delivrance. La charge de la preuve est inversee. Le vendeur qui repond au client de prouver l anteriorite du defaut se trompe de camp. Version en vigueur depuis le 01/10/2021."
+    },
+    "presomption_anteriorite_bien_occasion_bis": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044152587",
+      "date_verifiee": "2026-08-17",
+      "note": "La PRESOMPTION tombe a 12 mois pour l occasion, mais la GARANTIE elle-meme reste de 2 ans : ne pas confondre les deux delais."
+    },
+    "delai_maximal_mise_en_conformite_bis": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000044130449/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai raisonnable qui ne peut etre superieur a 30 jours suivant la demande du consommateur, et la mise en conformite a lieu SANS AUCUN FRAIS pour lui. C est le SAV lent qui fait basculer un dossier, pas le defaut. Le consommateur CHOISIT entre reparation et remplacement, le vendeur ne peut refuser ce choix que si la solution est impossible ou d un cout disproportionne. Version en vigueur depuis le 01/10/2021."
+    },
+    "extension_apres_reparation_bis": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000044130449/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Tout bien REPARE dans le cadre de la garantie legale beneficie d une extension de 6 mois. Et un REMPLACEMENT fait courir un NOUVEAU delai de garantie legale attache au bien remplace : remplacer plutot que reparer remet le compteur a zero. Consequence contre-intuitive : accepter le remplacement demande par le client peut couter plus cher que reparer."
+    },
+    "amende_civile_obstacle_garantie_bis": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560110",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Amende CIVILE contre le vendeur qui fait obstacle de MAUVAISE FOI a la mise en oeuvre de la garantie legale. Peut etre demandee par la DGCCRF, une association de consommateurs, le ministere public OU le consommateur lui-meme. La juridiction peut ordonner la publication de sa decision. Version en vigueur depuis le 03/05/2025."
+    },
+    "amende_civile_obstacle_garantie_plafond_ca_bis": {
+      "valeur": 10,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560110",
+      "date_verifiee": "2026-08-17",
+      "note": "Le plafond peut etre porte a 10 pour cent du chiffre d affaires moyen annuel, de maniere proportionnee aux avantages tires des pratiques en cause."
+    },
+    "exercices_pris_en_compte_pour_le_ca_bis": {
+      "valeur": 3,
+      "unite": "exercices",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560110",
+      "date_verifiee": "2026-08-17",
+      "note": "Le chiffre d affaires moyen annuel se calcule sur les 3 derniers chiffres d affaires annuels connus a la date de la decision. Meme mecanique pour les autres amendes assises sur le chiffre d affaires."
+    }
+  },
+  "vices_caches": {
+    "delai_action": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020466328",
+      "date_verifiee": "2026-08-17",
+      "note": "Action en garantie des vices caches : 2 ans a compter de la DECOUVERTE du vice, pas de la vente. Cette garantie se cumule avec la garantie legale de conformite, elle ne la remplace pas."
+    },
+    "delai_butoir": {
+      "valeur": 20,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000047878948",
+      "date_verifiee": "2026-08-17",
+      "note": "Cour de cassation, chambre mixte, 21 juillet 2023 : les 2 ans courent depuis la decouverte SANS pouvoir depasser le delai butoir de 20 ans a compter du jour de la naissance du droit, c est-a-dire le jour de la vente. Consequence pour le vendeur : son exposition n est pas illimitee, mais elle est tres longue."
+    },
+    "delai_action_bis": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020466328",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Action en garantie des vices caches : 2 ans a compter de la DECOUVERTE du vice, pas de la vente. Cette garantie du code civil se CUMULE avec la garantie legale de conformite, elle ne la remplace pas : la fin des 2 ans de conformite ne clot pas l exposition du vendeur."
+    },
+    "delai_butoir_bis": {
+      "valeur": 20,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000047878948",
+      "date_verifiee": "2026-08-17",
+      "note": "Cour de cassation, chambre mixte, 21 juillet 2023 : l action doit etre formee dans le delai de 2 ans a compter de la decouverte du vice sans pouvoir depasser le delai butoir de 20 ans a compter du jour de la naissance du droit, soit le jour de la vente. Pour le vendeur : l exposition n est pas illimitee, mais elle est tres longue."
+    }
+  },
+  "vente_a_distance_et_livraison": {
+    "delai_livraison_par_defaut": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142498",
+      "date_verifiee": "2026-08-17",
+      "note": "A defaut d indication ou d accord sur la date, le professionnel delivre sans retard injustifie et au plus tard 30 jours apres la conclusion du contrat. Ne rien annoncer ne cree donc pas de liberte, cela declenche le delai par defaut. Version en vigueur depuis le 01/10/2021."
+    },
+    "delai_remboursement_apres_resolution": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221247/",
+      "date_verifiee": "2026-08-17",
+      "note": "Apres resolution pour defaut de livraison, remboursement de la totalite des sommes versees au plus tard 14 jours suivant la denonciation du contrat. Le transfert du risque de perte ou d endommagement n a lieu qu a la prise de possession PHYSIQUE par le consommateur : un colis perdu par le transporteur choisi par le vendeur reste a la charge du vendeur."
+    },
+    "delai_livraison_par_defaut_bis": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044142498",
+      "date_verifiee": "2026-08-17",
+      "note": "★ A defaut d indication ou d accord sur la date, le professionnel delivre sans retard injustifie et au plus tard 30 jours apres la conclusion du contrat. Ne rien annoncer ne cree donc pas de liberte : cela declenche le delai par defaut. Version en vigueur depuis le 01/10/2021."
+    },
+    "delai_remboursement_apres_resolution_bis": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032221247/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Apres resolution pour defaut de livraison, remboursement de la totalite des sommes versees au plus tard 14 jours suivant la denonciation du contrat. Et le transfert du risque de perte ou d endommagement n a lieu qu a la prise de possession PHYSIQUE par le consommateur : un colis perdu par le transporteur choisi par le vendeur reste a la charge du VENDEUR. Le risque ne bascule sur le client que s il a lui-meme choisi un transporteur autre que celui propose. Version en vigueur depuis le 01/10/2021."
+    }
+  },
+  "clauses_abusives": {
+    "nombre_clauses_noires_r212_1": {
+      "valeur": 12,
+      "unite": "clauses",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032807196",
+      "date_verifiee": "2026-08-17",
+      "note": "Clauses irrefragablement presumees abusives, donc INTERDITES : aucune justification n est recevable. Comprennent notamment la modification unilaterale du prix ou de la duree, le droit exclusif d interpreter le contrat, la suppression du droit a reparation, et le renversement de la charge de la preuve au detriment du consommateur. Version en vigueur depuis le 01/07/2016."
+    },
+    "nombre_clauses_grises_r212_2": {
+      "valeur": 10,
+      "unite": "clauses",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032807198",
+      "date_verifiee": "2026-08-17",
+      "note": "Clauses presumees abusives SAUF preuve contraire apportee par le professionnel. La presomption est refutable, mais c est bien au vendeur de la renverser. Version en vigueur depuis le 01/07/2016. RESERVE : j ai verifie le nombre et la phrase introductive, pas le detail des 10 items."
+    },
+    "amende_civile_l241_1_1_personne_physique": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende civile contre le professionnel qui CONTINUE d utiliser, dans des contrats identiques, une clause deja jugee abusive par une decision definitive a son egard. La premiere condamnation n est donc pas la derniere etape : ne pas corriger les CGV apres coup cree une infraction autonome. Version en vigueur depuis le 03/05/2025."
+    },
+    "amende_civile_l241_1_1_personne_morale": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende civile, plafond, personne morale."
+    },
+    "amende_civile_l241_1_1_plafond_ca_transfrontalier": {
+      "valeur": 4,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Porte a 4 pour cent du chiffre d affaires moyen annuel en cas d infraction de grande ampleur a l echelle de l Union europeenne, sur demande d assistance mutuelle."
+    },
+    "amende_civile_l241_1_1_plafond_forfaitaire": {
+      "valeur": 2000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de substitution a defaut d information disponible pour calculer l amende sur le fondement du chiffre d affaires."
+    },
+    "nombre_clauses_noires_r212_1_bis": {
+      "valeur": 12,
+      "unite": "clauses",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032807196",
+      "date_verifiee": "2026-08-17",
+      "note": "Clauses irrefragablement presumees abusives, donc INTERDITES : aucune justification n est recevable. Comprennent la modification unilaterale du prix ou de la duree, le droit exclusif d interpreter le contrat, la suppression du droit a reparation, et le renversement de la charge de la preuve au detriment du consommateur. Version en vigueur depuis le 01/07/2016."
+    },
+    "nombre_clauses_grises_r212_2_bis": {
+      "valeur": 10,
+      "unite": "clauses",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032807198",
+      "date_verifiee": "2026-08-17",
+      "note": "Clauses presumees abusives SAUF preuve contraire apportee par le professionnel : la presomption est refutable, mais c est bien au vendeur de la renverser. Version en vigueur depuis le 01/07/2016. RESERVE : nombre et phrase introductive verifies, detail des 10 items non relu article par article."
+    },
+    "amende_civile_l241_1_1_personne_physique_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Amende civile contre le professionnel qui CONTINUE d utiliser, dans des contrats identiques, une clause deja jugee abusive par une decision definitive a son egard. La premiere condamnation n est donc pas la fin : ne pas corriger les CGV ensuite cree une infraction autonome. Version en vigueur depuis le 03/05/2025."
+    },
+    "amende_civile_l241_1_1_personne_morale_bis": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende civile, plafond, personne morale."
+    },
+    "amende_civile_l241_1_1_plafond_ca_transfrontalier_bis": {
+      "valeur": 4,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Porte a 4 pour cent du chiffre d affaires moyen annuel en cas d infraction de grande ampleur a l echelle de l Union europeenne, sur demande d assistance mutuelle entre autorites nationales."
+    },
+    "amende_civile_l241_1_1_plafond_forfaitaire_bis": {
+      "valeur": 2000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051560125",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de substitution a defaut d information disponible pour calculer l amende sur le fondement du chiffre d affaires."
+    }
+  },
+  "mediation_de_la_consommation": {
+    "cout_pour_le_consommateur": {
+      "valeur": 0,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032224805",
+      "date_verifiee": "2026-08-17",
+      "note": "Tout consommateur a le droit de recourir GRATUITEMENT a un mediateur de la consommation, et le professionnel doit lui GARANTIR ce recours effectif. C est donc le professionnel qui paie le dispositif. Obligation independante de la taille de l entreprise et du secteur. Version en vigueur depuis le 01/07/2016."
+    },
+    "amende_defaut_information_mediateur_personne_physique": {
+      "valeur": 3000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032224624",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative pour defaut de communication des coordonnees du mediateur competent. Attention : le texte sanctionne le defaut d INFORMATION, mais l obligation de fond est d avoir un mediateur. Version en vigueur depuis le 01/07/2016."
+    },
+    "amende_defaut_information_mediateur_personne_morale": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032224624",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale."
+    },
+    "cout_pour_le_consommateur_bis": {
+      "valeur": 0,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032224805",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Tout consommateur a le droit de recourir GRATUITEMENT a un mediateur de la consommation, et le professionnel GARANTIT ce recours effectif. C est donc le professionnel qui paie le dispositif. Obligation independante de la taille de l entreprise et du secteur. Version en vigueur depuis le 01/07/2016."
+    },
+    "amende_defaut_information_mediateur_personne_physique_bis": {
+      "valeur": 3000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032224624",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative pour defaut de communication des coordonnees du mediateur competent. Le texte sanctionne le defaut d INFORMATION ; l obligation de fond, elle, est d avoir adhere a un dispositif. Version en vigueur depuis le 01/07/2016."
+    },
+    "amende_defaut_information_mediateur_personne_morale_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032224624",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende administrative, plafond, personne morale. Montant corrobore par la fiche mediation de service-public, page du 27/10/2023, a recouper."
+    }
+  },
+  "pratiques_commerciales_trompeuses": {
+    "emprisonnement": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Peine de base du delit de pratique commerciale trompeuse. Version en vigueur depuis le 12/05/2024."
+    },
+    "amende": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende de base. Le delit est PENAL, pas administratif : il expose le dirigeant personnellement."
+    },
+    "plafond_ca": {
+      "valeur": 10,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "L amende peut etre portee a 10 pour cent du chiffre d affaires moyen annuel, de maniere proportionnee aux avantages tires du delit."
+    },
+    "plafond_depenses_publicitaires": {
+      "valeur": 50,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Alternative au plafond de chiffre d affaires : 50 pour cent des depenses engagees pour la realisation de la publicite ou de la pratique."
+    },
+    "plafond_allegations_environnementales": {
+      "valeur": 80,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux porte a 80 pour cent lorsque la pratique trompeuse repose sur des allegations en matiere ENVIRONNEMENTALE. Le greenwashing est traite plus severement que le mensonge ordinaire."
+    },
+    "emprisonnement_en_ligne": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "AGGRAVATION MAJEURE ET PEU CONNUE : lorsque l infraction est commise par l utilisation d un service de communication au public EN LIGNE ou par un support numerique, les peines passent a 5 ans. Un site marchand est donc structurellement dans le cas aggrave."
+    },
+    "amende_en_ligne": {
+      "valeur": 750000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende aggravee lorsque l infraction est commise en ligne ou par support numerique ou electronique."
+    },
+    "emprisonnement_bis": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Peine de base du delit de pratique commerciale trompeuse. Version en vigueur depuis le 12/05/2024."
+    },
+    "amende_bis": {
+      "valeur": 300000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende de base. Le delit est PENAL, pas administratif : il expose le dirigeant personnellement, contrairement aux amendes administratives de la DGCCRF."
+    },
+    "plafond_ca_bis": {
+      "valeur": 10,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "L amende peut etre portee a 10 pour cent du chiffre d affaires moyen annuel, de maniere proportionnee aux avantages tires du delit."
+    },
+    "plafond_depenses_publicitaires_bis": {
+      "valeur": 50,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Alternative au plafond de chiffre d affaires : 50 pour cent des depenses engagees pour la realisation de la publicite ou de la pratique."
+    },
+    "plafond_allegations_environnementales_bis": {
+      "valeur": 80,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Taux porte a 80 pour cent lorsque la pratique trompeuse repose sur des allegations en matiere ENVIRONNEMENTALE. Le greenwashing est traite plus severement que le mensonge commercial ordinaire."
+    },
+    "emprisonnement_en_ligne_bis": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ AGGRAVATION MAJEURE ET PEU CONNUE : lorsque l infraction est commise par l utilisation d un service de communication au public EN LIGNE ou par un support numerique ou electronique, les peines passent a 5 ans. Un site marchand est donc structurellement dans le cas aggrave."
+    },
+    "amende_en_ligne_bis": {
+      "valeur": 750000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049532070",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende aggravee lorsque l infraction est commise en ligne ou par support numerique ou electronique."
+    }
+  },
+  "competence_juridictions": {
+    "seuil_tribunal_de_proximite": {
+      "valeur": 10000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2289",
+      "date_verifiee": "2026-08-17",
+      "note": "Demandes inferieures ou egales a ce montant hors competence exclusive du tribunal judiciaire. Page service-public mise a jour le 2026-07-08."
+    },
+    "seuil_dispense_avocat_tribunal_judiciaire": {
+      "valeur": 10000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039726277",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 761 CPC version en vigueur depuis le 2025-09-01. Le seuil ne joue PAS dans les matieres de competence exclusive du tribunal judiciaire ou l avocat reste obligatoire quel que soit le montant."
+    },
+    "seuil_dispense_avocat_tribunal_de_commerce": {
+      "valeur": 10000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006117253/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 853 CPC version en vigueur au 2026-08-17. Hors dispense l avocat est obligatoire. Le representant non avocat doit justifier d un pouvoir special."
+    }
+  },
+  "prescriptions": {
+    "droit_commun_civil": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017112",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2224 code civil version en vigueur depuis le 2008-06-19. Point de depart le jour ou le titulaire a connu ou aurait du connaitre les faits lui permettant d exercer son droit."
+    },
+    "obligations_commerciales": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027725867",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L110-4 I code de commerce version en vigueur depuis le 2013-06-17. Sauf prescriptions speciales plus courtes."
+    },
+    "action_professionnel_contre_consommateur": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226897",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L218-2 code de la consommation version en vigueur depuis le 2016-07-01. Delai le plus court et le plus ignore par les independants qui facturent des particuliers."
+    },
+    "dommage_corporel": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2226 code civil. Point de depart la date de la CONSOLIDATION du dommage initial ou aggrave et non la date du fait dommageable."
+    },
+    "dommage_corporel_aggrave": {
+      "valeur": 20,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2226 alinea 2 code civil. Tortures actes de barbarie violences ou agressions sexuelles commises contre un mineur."
+    },
+    "actions_reelles_immobilieres": {
+      "valeur": 30,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2227 code civil. Le droit de propriete lui-meme est imprescriptible."
+    },
+    "delai_butoir": {
+      "valeur": 20,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2232 code civil. Plafond absolu a compter du jour de la naissance du droit malgre report du point de depart suspension ou interruption."
+    },
+    "amenagement_conventionnel_minimum": {
+      "valeur": 1,
+      "unite": "annee",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2254 code civil. Interdit entre professionnel et consommateur par l article L218-2 du code de la consommation et exclu pour les actions en paiement periodique."
+    },
+    "amenagement_conventionnel_maximum": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2254 code civil. Meme exclusion que pour le minimum."
+    }
+  },
+  "suspension_interruption": {
+    "duree_minimale_reprise_apres_suspension": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": "2026-08-17",
+      "note": "Articles 2238 et 2239 code civil. Duree minimale qui recommence a courir apres la fin de la mediation ou de la conciliation ou apres execution de la mesure d instruction ordonnee avant tout proces."
+    },
+    "mise_en_demeure_interrompt_la_prescription": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006118187/",
+      "date_verifiee": null,
+      "note": "La mise en demeure ne figure pas parmi les causes d interruption enumerees aux articles 2240 a 2246 du code civil. Aucune page officielle consultee ne l enonce dans ces termes. Des textes speciaux prevoient leurs propres causes d interruption notamment en assurance. A verifier sur le texte special applicable avant toute affirmation."
+    }
+  },
+  "tentative_amiable_prealable": {
+    "seuil_demande": {
+      "valeur": 5000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 750-1 CPC version en vigueur depuis le 2023-05-13. Tentative de conciliation mediation ou procedure participative obligatoire a peine d irrecevabilite que le juge peut prononcer d office."
+    },
+    "delai_indisponibilite_conciliateur_ouvrant_dispense": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": null,
+      "note": "Motif legitime de dispense tire de l indisponibilite des conciliateurs de justice. Chiffre non obtenu en verbatim malgre deux lectures de la page Legifrance. A relire sur le texte avant de s en servir puisque c est lui qui justifie de passer outre l obligation."
+    }
+  },
+  "injonction_de_payer": {
+    "delai_signification_ordonnance": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053497783",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1411 CPC version en vigueur depuis le 2026-04-01 modifiee par le decret 2026-96 du 16 fevrier 2026. Passe la l ordonnance est non avenue. ATTENTION la page service-public annonce l entree en vigueur tantot au 1er avril 2026 tantot au 1er septembre 2026. Lire les dispositions transitoires du decret pour une ordonnance rendue autour de la bascule."
+    },
+    "delai_signification_ordonnance_ancien": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053497783/2026-03-31",
+      "date_verifiee": "2026-08-17",
+      "note": "Version de l article 1411 CPC en vigueur au 31 mars 2026. Utile pour une ordonnance ancienne."
+    },
+    "delai_opposition_debiteur": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006149784/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1416 CPC. Si la signification n a pas ete faite a personne l opposition reste recevable un mois apres le premier acte signifie a personne ou apres la premiere mesure d execution rendant les biens indisponibles."
+    },
+    "seuil_procedure_simplifiee_recouvrement": {
+      "valeur": 5000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": "2026-08-17",
+      "note": "Procedure simplifiee par commissaire de justice sur accord du debiteur. La page ne montre pas de date de mise a jour lisible."
+    },
+    "frais_commissaire_de_justice": {
+      "valeur": null,
+      "unite": "EUR",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "Montants tarifes non retenus faute de lecture fiable de la page. Un tarif invente ferait plus de degats qu un blanc. A chiffrer sur le tarif officiel des commissaires de justice."
+    },
+    "frais_greffe_tribunal_de_commerce_euros": {
+      "valeur": 33.47,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "Creance commerciale hors Alsace Moselle. Page service public verifiee le 6 fevrier 2026 soit plus de six mois : a recontroler."
+    },
+    "frais_greffe_tribunal_judiciaire_euros": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "La requete est gratuite devant le tribunal judiciaire. Page verifiee le 6 fevrier 2026 soit plus de six mois : a recontroler."
+    },
+    "frais_greffe_tribunal_de_commerce_euros_bis": {
+      "valeur": 33.47,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "Creance commerciale hors Alsace Moselle. Page verifiee le 6 fevrier 2026 soit plus de six mois : a recontroler."
+    },
+    "delai_signification_ordonnance_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006149784/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1411 du code de procedure civile, version en vigueur depuis le 1er avril 2026 : l ordonnance est non avenue si elle n a pas ete signifiee dans les trois mois de sa date. VALEUR RETENUE, le texte fait foi."
+    },
+    "delai_signification_ordonnance_valeur_perimee_fiche_service_public_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "NE PAS UTILISER. Valeur annoncee par la fiche service public verifiee le 6 fevrier 2026, anterieure a la version de l article 1411 entree en vigueur le 1er avril 2026 qui dit trois mois. Conservee ici pour signaler la contradiction."
+    },
+    "delai_opposition_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006412571",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1416 du code de procedure civile, version en vigueur depuis le 1er janvier 1982. Si la signification n a pas ete faite a personne le delai ne court qu a compter du premier acte signifie a personne ou de la premiere mesure d execution rendant les biens indisponibles."
+    },
+    "delai_opposition_suspensif_execution": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006149784/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1422 du code de procedure civile, version en vigueur depuis le 1er avril 2026 : quelles que soient les modalites de la signification le delai d opposition est suspensif d execution, et l opposition formee dans ce delai l est aussi."
+    }
+  },
+  "voies_de_recours": {
+    "appel_matiere_contentieuse": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410858",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 538 CPC. Le delai court a compter de la notification du jugement article 528 CPC et il court meme contre celui qui notifie."
+    },
+    "recours_matiere_gracieuse": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410858",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 538 CPC deuxieme membre de phrase."
+    },
+    "pourvoi_en_cassation": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410964",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 612 CPC sauf disposition contraire. Exige un avocat au Conseil d Etat et a la Cour de cassation article 973 CPC ce qui se prepare en avance."
+    },
+    "recours_devant_le_tribunal_administratif": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039807005",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R421-1 code de justice administrative version en vigueur depuis le 2020-01-01. A compter de la notification ou de la publication de la decision attaquee. Horloge totalement differente du civil."
+    },
+    "peremption_du_droit_de_recours_faute_de_notification": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006135894/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 528-1 CPC. Si le jugement n a pas ete notifie dans ce delai depuis son prononce la partie qui a comparu n est plus recevable a exercer un recours a titre principal."
+    }
+  },
+  "aide_juridictionnelle": {
+    "rfr_plafond_aide_totale_personne_seule": {
+      "valeur": 12957,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Revenu fiscal de reference annuel pour une personne seule. Page service-public mise a jour le 2026-06-12. Les plafonds augmentent avec les personnes a charge donc ne jamais conclure sur ce seul chiffre."
+    },
+    "taux_aide_totale": {
+      "valeur": 100,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge integrale sous le plafond de l aide totale."
+    },
+    "rfr_borne_basse_aide_partielle_55": {
+      "valeur": 12958,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Debut de la tranche a taux de prise en charge de 55 pourcent pour une personne seule."
+    },
+    "rfr_borne_haute_aide_partielle_55": {
+      "valeur": 15316,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Fin de la tranche a 55 pourcent pour une personne seule."
+    },
+    "taux_aide_partielle_haut": {
+      "valeur": 55,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux de prise en charge de la tranche intermediaire."
+    },
+    "rfr_borne_basse_aide_partielle_25": {
+      "valeur": 15317,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Debut de la tranche a 25 pourcent pour une personne seule."
+    },
+    "rfr_borne_haute_aide_partielle_25": {
+      "valeur": 19433,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond au-dela duquel aucune aide n est accordee a une personne seule."
+    },
+    "taux_aide_partielle_bas": {
+      "valeur": 25,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux de prise en charge de la derniere tranche."
+    },
+    "plafond_patrimoine_mobilier_personne_seule": {
+      "valeur": 12957,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Depasser un seul des deux plafonds de patrimoine ferme l aide totale comme partielle quel que soit le revenu."
+    },
+    "plafond_patrimoine_immobilier_personne_seule": {
+      "valeur": 38866,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Hors residence principale. Critere eliminatoire comme le patrimoine mobilier."
+    },
+    "plafond_rfr_aide_totale_personne_seule_euros": {
+      "valeur": 12957,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Revenu fiscal de reference, personne seule, bareme 2026. Page verifiee le 12 juin 2026."
+    },
+    "taux_aide_totale_pourcent": {
+      "valeur": 100,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge integrale en aide totale."
+    },
+    "borne_basse_aide_partielle_55_euros": {
+      "valeur": 12958,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Debut de la tranche a cinquante cinq pour cent, personne seule, bareme 2026."
+    },
+    "borne_haute_aide_partielle_55_euros": {
+      "valeur": 15316,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Fin de la tranche a cinquante cinq pour cent, personne seule, bareme 2026."
+    },
+    "taux_aide_partielle_haute_pourcent": {
+      "valeur": 55,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge pour la premiere tranche d aide partielle."
+    },
+    "borne_basse_aide_partielle_25_euros": {
+      "valeur": 15317,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Debut de la tranche a vingt cinq pour cent, personne seule, bareme 2026."
+    },
+    "borne_haute_aide_partielle_25_euros": {
+      "valeur": 19433,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond d admission a l aide juridictionnelle partielle, personne seule, bareme 2026."
+    },
+    "taux_aide_partielle_basse_pourcent": {
+      "valeur": 25,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge pour la seconde tranche d aide partielle."
+    },
+    "plafond_patrimoine_mobilier_personne_seule_euros": {
+      "valeur": 12957,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de patrimoine mobilier, personne seule, bareme 2026."
+    },
+    "plafond_patrimoine_immobilier_personne_seule_euros": {
+      "valeur": 38866,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de patrimoine immobilier hors residence principale, personne seule, bareme 2026."
+    },
+    "droit_de_plaidoirie_non_couvert_euros": {
+      "valeur": 13,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Le droit de plaidoirie reste du malgre l aide juridictionnelle, comme les honoraires d expert et les sommes auxquelles on est condamne."
+    },
+    "correctifs_par_personne_a_charge_euros": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "NON RELEVE. Les seuils sont corriges selon la composition du foyer mais le montant par personne a charge n a pas ete verifie. Passer par le simulateur officiel."
+    }
+  },
+  "societes_assemblees_et_comptes": {
+    "delai_approbation_comptes_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048535091",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-26 alinea 1, version en vigueur au 01/01/2025 : approbation dans le delai de six mois a compter de la cloture de l exercice. Meme delai pour l associe unique d EURL (L223-31) et de SASU (L227-9)."
+    },
+    "delai_convocation_assemblee_sarl_jours": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036665390",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R223-20, version en vigueur au 01/04/2018 : quinze jours au moins avant la reunion, par lettre recommandee."
+    },
+    "delai_convocation_assemblee_sarl_reduit_jours": {
+      "valeur": 8,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036665390",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R223-20 : delai reduit a huit jours lorsque l assemblee est convoquee en raison du deces du gerant unique, par le commissaire aux comptes ou un associe."
+    },
+    "duree_conservation_registre_decisions_ans": {
+      "valeur": null,
+      "unite": "ans",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37383",
+      "date_verifiee": null,
+      "note": "TROU ASSUME. Une page service-public sur la SASU annonce six ans de conservation du registre des decisions, mais aucun texte fetche ne fixe cette duree. Valeur laissee nulle jusqu a verification du texte."
+    }
+  },
+  "societes_depot_des_comptes": {
+    "delai_depot_apres_approbation_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048535223",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L232-22 I, version en vigueur au 01/01/2025, pour les SARL. Meme delai pour les societes par actions a l article L232-23. Attention : L232-21 ne concerne PAS les SARL mais les societes en nom collectif."
+    },
+    "delai_depot_apres_approbation_voie_electronique_mois": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048535223",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L232-22 I : dans les deux mois suivant l approbation lorsque le depot est effectue par voie electronique."
+    },
+    "amende_defaut_depot_euros": {
+      "valeur": 1500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417259/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R247-3 du code de commerce renvoie au 5e de l article 131-13 du code penal : 1 500 euros au plus pour les contraventions de la 5e classe."
+    },
+    "amende_defaut_depot_recidive_euros": {
+      "valeur": 3000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006417259/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 131-13 5e du code penal : montant qui peut etre porte a 3 000 euros en cas de recidive lorsque le reglement le prevoit."
+    },
+    "classe_contravention_defaut_depot": {
+      "valeur": 5,
+      "unite": "classe de contravention",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006265627",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R247-3, version en vigueur au 27/03/2007 : contravention de la cinquieme classe. Le risque reel n est pas l amende mais l injonction sous astreinte de l article L611-2 II et l entree dans le dispositif de detection des difficultes."
+    }
+  },
+  "societes_confidentialite_des_comptes": {
+    "micro_entreprise_total_bilan_euros": {
+      "valeur": 450000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 11/06/2025, a recouper avec l article D123-200 du code de commerce. Micro-entreprise : ne pas depasser deux des trois seuils. Option de l article L232-25 : les comptes annuels ne sont pas rendus publics."
+    },
+    "micro_entreprise_chiffre_affaires_euros": {
+      "valeur": 900000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 11/06/2025, a recouper. Seuil de chiffre d affaires de la micro-entreprise au sens comptable de l article L123-16-1, sans lien avec les seuils du regime fiscal micro."
+    },
+    "micro_entreprise_salaries": {
+      "valeur": 10,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 11/06/2025, a recouper. Nombre moyen de salaries de la micro-entreprise au sens comptable."
+    },
+    "petite_entreprise_total_bilan_euros": {
+      "valeur": 7500000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 11/06/2025, a recouper. Petite entreprise au sens de L123-16 : seule option ouverte, soustraire le compte de resultat a la publicite."
+    },
+    "petite_entreprise_chiffre_affaires_euros": {
+      "valeur": 15000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 11/06/2025, a recouper. Une societe appartenant a un groupe au sens de L233-16 ne peut pas user de cette faculte."
+    },
+    "petite_entreprise_salaries": {
+      "valeur": 50,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 11/06/2025, a recouper. La declaration de confidentialite doit etre faite AU MOMENT du depot, elle ne se rattrape pas ensuite."
+    }
+  },
+  "societes_commissaire_aux_comptes": {
+    "seuil_total_bilan_euros": {
+      "valeur": 5000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049216674",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-5, version en vigueur au 01/03/2024 issue du decret 2024-152 du 28/02/2024. Designation obligatoire si deux des trois seuils sont depasses a la cloture."
+    },
+    "seuil_chiffre_affaires_ht_euros": {
+      "valeur": 10000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049216674",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-5, version au 01/03/2024 : montant hors taxe du chiffre d affaires fixe a 10 000 000 euros."
+    },
+    "seuil_nombre_moyen_salaries": {
+      "valeur": 50,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049216674",
+      "date_verifiee": "2026-08-17",
+      "note": "Article D221-5, version au 01/03/2024 : nombre moyen de salaries fixe a cinquante. Renvoi pour les SAS a l article L227-9-1."
+    },
+    "ancien_seuil_total_bilan_euros": {
+      "valeur": 4000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038505937",
+      "date_verifiee": "2026-08-17",
+      "note": "PERIME. Seuil du decret 2019-514 du 24/05/2019, remplace depuis le 01/03/2024. Encore largement cite en ligne : ne jamais le reprendre comme valeur courante."
+    },
+    "ancien_seuil_chiffre_affaires_ht_euros": {
+      "valeur": 8000000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038505937",
+      "date_verifiee": "2026-08-17",
+      "note": "PERIME. Seuil du decret 2019-514 du 24/05/2019, remplace depuis le 01/03/2024."
+    }
+  },
+  "societes_dirigeant": {
+    "prescription_action_responsabilite_ans": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223149",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-23, version en vigueur au 21/09/2000 : trois ans a compter du fait dommageable ou, s il a ete dissimule, de sa revelation."
+    },
+    "prescription_action_responsabilite_crime_ans": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223149",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-23 : lorsque le fait est qualifie crime, l action se prescrit par dix ans."
+    },
+    "prescription_insuffisance_actif_ans": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045178209",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L651-2, version au 15/05/2022 : trois ans a compter du jugement qui prononce la liquidation judiciaire. Point decisif du meme article : en cas de simple negligence du dirigeant, la responsabilite pour insuffisance d actif ne peut PAS etre engagee."
+    },
+    "seuil_associe_conventions_reglementees_sas_pourcent": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034584108",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L227-10, version au 06/05/2017 : conventions avec un actionnaire disposant d une fraction des droits de vote superieure a 10 pour cent. En SASU, il est seulement fait mention de la convention au registre des decisions."
+    }
+  },
+  "societes_capital_et_pertes": {
+    "delai_decision_perte_moitie_capital_mois": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047292166",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-42 alinea 1, version au 11/03/2023 : les associes decident dans les quatre mois qui suivent l approbation des comptes ayant fait apparaitre la perte s il y a lieu a dissolution anticipee."
+    },
+    "nombre_exercices_reconstitution_capitaux_propres": {
+      "valeur": 2,
+      "unite": "exercices",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047292166",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-42 alinea 2 : au plus tard a la cloture du deuxieme exercice suivant celui de la constatation des pertes, reconstituer les capitaux propres ou reduire le capital."
+    },
+    "delai_regularisation_accorde_par_tribunal_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047292166",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-42 dernier alinea : le tribunal peut accorder un delai maximal de six mois pour regulariser et ne peut prononcer la dissolution si la regularisation a eu lieu au jour ou il statue."
+    }
+  },
+  "societes_cession_parts_et_actions": {
+    "delai_reponse_agrement_sarl_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223059/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-14 alinea 2, version au 27/03/2004 : si la societe n a pas fait connaitre sa decision dans le delai de trois mois, le consentement a la cession est repute acquis."
+    },
+    "delai_rachat_apres_refus_agrement_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223059/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-14 alinea 3 : apres refus, les associes ont trois mois pour acquerir ou faire acquerir les parts, prix fixe selon l article 1843-4 du code civil, frais d expertise a la charge de la societe."
+    },
+    "prolongation_max_delai_rachat_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223059/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-14 alinea 3 : a la demande du gerant, le delai peut etre prolonge par decision de justice sans exceder six mois."
+    },
+    "delai_paiement_max_rachat_par_societe_ans": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223059/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-14 alinea 4 : delai de paiement n excedant pas deux ans, accorde sur justification par decision de justice, sommes dues portant interet au taux legal commercial."
+    },
+    "duree_minimale_detention_parts_ans": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006223059/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L223-14 alinea 6 : le cedant ne peut se prevaloir des alineas 3 et 5 s il ne detient ses parts depuis au moins deux ans, sauf succession, liquidation de communaute ou donation au conjoint, ascendant ou descendant."
+    },
+    "duree_max_inalienabilite_actions_sas_ans": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146048/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L227-13 : les statuts peuvent prevoir l inalienabilite des actions pour une duree n excedant pas dix ans. Cette clause est la seule, avec celle de L227-17, a exiger l unanimite (L227-19)."
+    },
+    "delai_cession_ou_annulation_actions_rachetees_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000005634379/LEGISCTA000006146048/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L227-18 : lorsque les actions sont rachetees par la societe, celle-ci est tenue de les ceder dans un delai de six mois ou de les annuler."
+    },
+    "droit_enregistrement_parts_sociales_pourcent": {
+      "valeur": 3,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044978804",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 726 I 1 bis du CGI, version au 01/01/2024 : cessions de parts sociales dans les societes dont le capital n est pas divise en actions, donc SARL et EURL."
+    },
+    "abattement_cession_parts_sociales_euros": {
+      "valeur": 23000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044978804",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 726 I 1 bis du CGI : abattement egal au rapport entre la somme de 23 000 euros et le nombre total de parts sociales de la societe, applique a la valeur de chaque part."
+    },
+    "droit_enregistrement_actions_pourcent": {
+      "valeur": 0.1,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044978804",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 726 I 1 du CGI : cessions d actions de societes par actions, donc SAS, SASU et SA. Ecart de 1 a 30 avec le taux des parts sociales : le cout se paie a la sortie, pas a la creation."
+    },
+    "droit_enregistrement_preponderance_immobiliere_pourcent": {
+      "valeur": 5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044978804",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 726 I 2 du CGI : cessions de participations dans des personnes morales a preponderance immobiliere, quelle que soit la forme sociale."
+    }
+  },
+  "societes_formalites_greffe": {
+    "delai_inscription_modificative_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006256603/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R123-66, version en vigueur au 01/01/2023 : inscription modificative dans le mois de tout fait ou acte, via le guichet unique. Concerne dirigeant, siege, objet, capital, denomination."
+    }
+  },
+  "societes_dissolution": {
+    "delai_regularisation_reunion_parts_une_seule_main_ans": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444165",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1844-5 alinea 1 du code civil, version au 16/05/2001 : la reunion de toutes les parts en une seule main n entraine pas dissolution de plein droit ; tout interesse peut la demander si la situation n est pas regularisee dans le delai d un an."
+    },
+    "delai_supplementaire_accorde_par_tribunal_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444165",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1844-5 alinea 1 : le tribunal peut accorder un delai maximal de six mois pour regulariser et ne peut prononcer la dissolution si la regularisation a eu lieu."
+    },
+    "delai_opposition_creanciers_jours": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444165",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1844-5 alinea 3 : transmission universelle du patrimoine sans liquidation, opposition des creanciers dans les trente jours de la publication. PIEGE : l alinea 4 exclut ce mecanisme quand l associe unique est une personne physique, qui doit donc liquider."
+    }
+  },
+  "recouvrement_europeen": {
+    "plafond_procedure_petits_litiges": {
+      "valeur": 5000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/42/FR/small_claims",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim portail e-Justice : la procedure europeenne de reglement des petits litiges vise a simplifier et a accelerer le reglement des litiges transfrontieres dont le montant ne depasse pas 5 000 EUR. Reglement CE 861/2007, version consolidee du 14 juillet 2017. Avocat non obligatoire si une audience est organisee."
+    },
+    "delai_opposition_injonction_payer_europeenne": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/41/FR/european_payment_order",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim portail e-Justice : il dispose d un delai de 30 jours pour s opposer a l injonction de payer europeenne. En l absence d opposition l injonction devient immediatement executoire. Reglement CE 1896/2006. Aucun plafond de montant n est indique sur la page."
+    },
+    "delai_transmission_demande_au_defendeur_petits_litiges": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/42/FR/small_claims",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel la juridiction transmet copie de la demande au defendeur, a compter de sa reception. Chiffre releve sur la page e-Justice consacree a la procedure."
+    },
+    "delai_reponse_defendeur_petits_litiges": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/42/FR/small_claims",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai laisse au defendeur pour repondre a la demande dans la procedure europeenne de reglement des petits litiges."
+    },
+    "delai_transmission_reponse_au_demandeur_petits_litiges": {
+      "valeur": 14,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/42/FR/small_claims",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel la juridiction transmet au demandeur la reponse du defendeur."
+    },
+    "delai_decision_apres_reponse_petits_litiges": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/42/FR/small_claims",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai dans lequel la juridiction rend sa decision apres reception de la reponse du defendeur. La juridiction peut aussi demander des informations complementaires ou tenir une audience, ce qui allonge le calendrier reel."
+    },
+    "nombre_formulaires_titre_executoire_europeen": {
+      "valeur": 6,
+      "unite": "formulaires",
+      "a_verifier": false,
+      "source": "https://e-justice.europa.eu/376/FR/european_enforcement_order",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim portail e-Justice : le reglement prevoit six formulaires standard. Reglement CE 805/2004 du 21 avril 2004, creances incontestees, applique entre tous les Etats membres a l exception du Danemark."
+    },
+    "exclusion_danemark_injonction_payer_et_petits_litiges": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://e-justice.europa.eu/41/FR/european_payment_order",
+      "date_verifiee": null,
+      "note": "Le Danemark apparait dans la liste des pays sans contenu associe, ce qui suggere une exclusion, mais AUCUNE phrase de la page ne l ecrit. Non affirme. Seule l exclusion du Danemark pour le titre executoire europeen est ecrite noir sur blanc."
+    }
+  },
+  "tva_international": {
+    "delai_depot_declaration_europeenne_services": {
+      "valeur": 10,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim impots.gouv.fr : une declaration europeenne de services DES doit etre transmise dans les dix jours du mois qui suit l exigibilite de la TVA. Page mise a jour en fevrier 2025. Le detail releve du role comptable."
+    },
+    "seuil_guichet_unique_tva_services_electroniques_b2c": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-aux-non-assujettis",
+      "date_verifiee": null,
+      "note": "La page consultee ne donne que la regle generale : prestataire en France et preneur non assujetti en France ou dans un Etat membre, lieu de taxation France. Le regime particulier des services fournis par voie electronique a des particuliers de l Union, son seuil et son guichet unique, N ONT PAS ete verifies. Piege majeur pour un independant du numerique, a instruire avec le role comptable avant la premiere vente."
+    }
+  },
+  "fiscalite_internationale": {
+    "criteres_residence_fiscale_france": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/",
+      "date_verifiee": null,
+      "note": "NON VERIFIE. Les pages visees sur impots.gouv.fr sont revenues introuvables et le budget de recherche de la session etait epuise. Le critere se lit a l article 4 B du code general des impots, article NON RELU ici. Renvoi ferme au role impots pour un particulier et au role comptable pour une entreprise."
+    },
+    "risque_etablissement_stable": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/",
+      "date_verifiee": null,
+      "note": "NON VERIFIE. Cite dans le fichier comme sujet a instruire et non comme regle. Travailler durablement depuis un autre pays peut y creer une obligation fiscale : a confirmer avec le role comptable."
+    }
+  },
+  "detachement_ue": {
+    "duree_max_detachement_ue_eee_suisse": {
+      "valeur": 24,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3155",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim service-public : la duree du detachement dans un pays de l Union europeenne, de l Espace economique europeen et en Suisse ne doit pas, en principe, depasser 24 mois. ATTENTION la page est verifiee le 22 mai 2024, donc au-dela du seuil de fraicheur du skill : a recontroler. Le document A1 attestation concernant la legislation applicable est demande par l employeur avant le depart."
+    }
+  },
+  "loi_applicable_et_competence": {
+    "contenu_reglement_rome_i": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://eur-lex.europa.eu/",
+      "date_verifiee": null,
+      "note": "NON VERIFIE. EUR-Lex refuse l acces automatise, challenge anti-robot sur toutes les formes d URL testees, et aucune page admise consultee n enonce le contenu du reglement CE 593/2008 Rome I. Ni la liberte de choix, ni la loi applicable a defaut pour une prestation de services, ni les contrats de consommation, ni les lois de police ne sont attestes. ALERTE : la page France du portail e-Justice ecrit un numero ERRONE, 568/2007, la ou Rome I est le 593/2008."
+    },
+    "libelle_articles_bruxelles_i_bis_clause_juridiction_et_consommateur": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://eur-lex.europa.eu/",
+      "date_verifiee": null,
+      "note": "NON VERIFIE pour le libelle. Seul le MECANISME est atteste par le portail e-Justice : en regle generale une personne doit etre poursuivie dans l Etat ou elle est domiciliee, et des regles specifiques existent pour proteger des groupes tels que les consommateurs, les salaries et les assures. Le miroir francais est verifie mot pour mot aux articles R631-3 et L232-1 du code de la consommation."
+    },
+    "mention_facture_preneur_assujetti_hors_ue": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": null,
+      "note": "La mention autoliquidation pour un preneur assujetti etabli dans l Union est attestee. La mention exacte a porter pour un preneur assujetti etabli HORS Union n a ete relevee qu en reformulation, pas en citation exacte : a confirmer avec le role comptable."
+    }
+  },
+  "interet_legal": {
+    "taux_simple_creancier_particulier_pourcent": {
+      "valeur": 6.84,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026, page service public verifiee le 1er juillet 2026. Le taux depend de la qualite du CREANCIER et change chaque semestre."
+    },
+    "taux_simple_autres_cas_pourcent": {
+      "valeur": 2.75,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Cas ou le creancier n est pas un particulier. Change chaque semestre."
+    },
+    "taux_majore_creancier_particulier_pourcent": {
+      "valeur": 11.67,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela de deux mois suivant la date d application du jugement."
+    },
+    "taux_majore_autres_cas_pourcent": {
+      "valeur": 7.62,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela de deux mois suivant la date d application du jugement."
+    },
+    "taux_simple_creancier_particulier_pourcent_bis": {
+      "valeur": 6.84,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026, page verifiee le 1er juillet 2026. Le taux depend de la qualite du CREANCIER et change chaque semestre."
+    },
+    "taux_majore_creancier_particulier_pourcent_bis": {
+      "valeur": 11.67,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela du delai suivant une decision de justice."
+    },
+    "taux_majore_autres_cas_pourcent_bis": {
+      "valeur": 7.62,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela du delai suivant une decision de justice."
+    },
+    "majoration_points": {
+      "valeur": 5,
+      "unite": "points",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Depuis 2015 le taux majore correspond au taux d interet legal simple augmente de cinq points."
+    },
+    "delai_avant_majoration_apres_jugement_mois": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Interets simples sur les deux premiers mois suivant la date d application du jugement puis interets majores au dela."
+    }
+  },
+  "cout_procedure": {
+    "timbre_fiscal_appel_euros": {
+      "valeur": 225,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre fiscal du en appel, contre cinquante euros en premiere instance. Page service public verifiee le 10 avril 2026."
+    },
+    "timbre_fiscal_premiere_instance_euros": {
+      "valeur": 50,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Contribution due pour les procedures engagees a compter du 1er mars 2026, condition de recevabilite. Page verifiee le 10 avril 2026. Non due par le beneficiaire de l aide juridictionnelle ni pour une injonction de payer."
+    },
+    "timbre_fiscal_appel_euros_bis": {
+      "valeur": 225,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre du en appel. Page verifiee le 10 avril 2026."
+    },
+    "validite_timbre_mois": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Valable douze mois a compter de la date d achat. Achat uniquement en ligne."
+    },
+    "delai_remboursement_timbre_mois": {
+      "valeur": 18,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Remboursement possible dix huit mois a compter de la date d achat si le timbre n a pas ete utilise."
+    },
+    "frais_execution_forcee_a_la_charge_du_debiteur": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028747701",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-8 du code des procedures civiles d execution, version en vigueur depuis le 19 mars 2014. Exception des droits proportionnels de recouvrement ou d encaissement mis partiellement a la charge des creanciers."
+    },
+    "frais_recouvrement_sans_titre_a_la_charge_du_creancier": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028747701",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-8 : les frais de recouvrement entrepris sans titre executoire restent a la charge du creancier et toute stipulation contraire est reputee non ecrite. La ligne de partage est le titre."
+    },
+    "tarif_commissaire_de_justice_euros": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "NON VERIFIE. Tarif reglemente de la signification, de l assignation et des actes d execution non releve dans cette passe. Ne pas avancer de montant."
+    },
+    "honoraires_avocat_euros": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "NON CHIFFRABLE. Honoraires libres, aucun bareme officiel a citer."
+    }
+  },
+  "prescription": {
+    "delai_droit_commun_annees": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017112",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2224 du code civil, version en vigueur depuis le 19 juin 2008. Point de depart au jour ou le titulaire du droit a connu ou aurait du connaitre les faits."
+    },
+    "delai_professionnel_contre_consommateur_annees": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226897",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L218-2 du code de la consommation, version en vigueur depuis le 1er juillet 2016. Contre intuitif : le professionnel a MOINS de temps que le droit commun."
+    },
+    "reprise_minimale_apres_mediation_ou_conciliation_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032042671",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2238 du code civil, version en vigueur depuis le 1er octobre 2016. La mediation ou la conciliation suspend la prescription et le delai reprend pour une duree qui ne peut etre inferieure a six mois."
+    },
+    "mise_en_demeure_interrompt_la_prescription": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136436/",
+      "date_verifiee": "2026-08-17",
+      "note": "Les causes d interruption sont limitativement enumerees aux articles 2240 a 2246 du code civil : reconnaissance du debiteur, demande en justice meme en refere, mesure conservatoire ou acte d execution forcee. Ni mise en demeure ni lettre recommandee n y figurent."
+    },
+    "duree_execution_titre_executoire_annees": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025025648",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-4 du code des procedures civiles d execution, version en vigueur depuis le 1er juin 2012. Vaut pour les titres des 1 a 3 de l article L111-3."
+    }
+  },
+  "mise_en_demeure": {
+    "forme_imposee": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000032035271/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1344 du code civil, version en vigueur depuis le 1er octobre 2016 : sommation ou acte portant interpellation suffisante, ou seule exigibilite si le contrat le prevoit. Le recommande avec avis de reception est une preuve de date, pas une condition de validite."
+    },
+    "declenche_interet_moratoire_sans_preuve_de_prejudice": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000032035271/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1344-1 du code civil, version en vigueur depuis le 1er octobre 2016. L article 1344-2 met en outre les risques de la chose a livrer a la charge du debiteur."
+    }
+  },
+  "amiable_obligatoire": {
+    "seuil_tentative_amiable_prealable_euros": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 750-1 du code de procedure civile, version en vigueur depuis le 13 mai 2023, applicable aux instances introduites a compter du 1er octobre 2023. Somme n excedant pas cinq mille euros. Sanction : irrecevabilite que le juge peut prononcer d office."
+    },
+    "trouble_anormal_de_voisinage_soumis_sans_condition_de_montant": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 750-1 vise le trouble anormal de voisinage sans plafond de montant, a la difference des demandes en paiement."
+    },
+    "dispense_indisponibilite_conciliateur_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Motif legitime si l indisponibilite des conciliateurs de justice conduit a une premiere reunion dans un delai superieur a trois mois a compter de la saisine."
+    }
+  },
+  "conciliation_mediation": {
+    "cout_conciliateur_de_justice_euros": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1736",
+      "date_verifiee": null,
+      "note": "Le recours au conciliateur de justice est gratuit. Page service-public verifiee le 1er septembre 2025 soit pres d un an : a recontroler."
+    },
+    "mediateur_civil_payant": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1822",
+      "date_verifiee": null,
+      "note": "Le recours a un mediateur est payant. Frais repartis a parts egales entre les parties a defaut d accord, le juge pouvant corriger. Page verifiee le 1er septembre 2025 : a recontroler."
+    },
+    "duree_initiale_mission_judiciaire_mois": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1822",
+      "date_verifiee": null,
+      "note": "Duree maximale initiale de la mediation ou de la conciliation ordonnee par un juge. Pages verifiees le 1er septembre 2025 : a recontroler."
+    },
+    "prolongation_mission_judiciaire_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1822",
+      "date_verifiee": null,
+      "note": "Prolongation possible une fois. Pages verifiees le 1er septembre 2025 : a recontroler."
+    },
+    "accord_amiable_peut_devenir_titre_executoire": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036891163",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-3 du code des procedures civiles d execution, version en vigueur depuis le 25 avril 2026 : accords auxquels une juridiction a confere force executoire, extraits de proces verbaux de conciliation signes par le juge et les parties, transactions et accords de mediation contresignes par avocats et revetus de la formule executoire."
+    }
+  },
+  "procedure_simplifiee_petites_creances": {
+    "plafond_creance_euros": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039624858",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R125-1 du code des procedures civiles d execution, version en vigueur depuis le 1er janvier 2020 : le montant en principal et interets ne doit pas exceder cinq mille euros."
+    },
+    "duree_procedure_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038310700",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L125-1 du code des procedures civiles d execution, version en vigueur depuis le 25 avril 2026. Se deroule dans un delai d un mois a compter de l envoi du courrier du commissaire de justice."
+    },
+    "frais_a_la_charge_exclusive_du_creancier": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038310700",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L125-1 : les frais de toute nature qu occasionne la procedure sont a la charge exclusive du creancier. La procedure exige l accord du debiteur, lequel suspend la prescription."
+    }
+  },
+  "refere": {
+    "urgence_exigee_pour_refere_provision": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38405",
+      "date_verifiee": null,
+      "note": "Il n est pas necessaire de justifier d une situation d urgence mais la creance ne doit pas etre serieusement contestable et son montant doit etre determine. Page verifiee le 27 novembre 2024 : a recontroler."
+    },
+    "refere_interrompt_la_prescription": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017098",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2241 du code civil, version en vigueur depuis le 19 juin 2008 : la demande en justice meme en refere interrompt le delai de prescription ainsi que le delai de forclusion."
+    }
+  },
+  "competence_juridictionnelle": {
+    "seuil_avocat_obligatoire_euros": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1378",
+      "date_verifiee": "2026-08-17",
+      "note": "Avocat obligatoire au dela de dix mille euros. Page verifiee le 1er mars 2026. Meme seuil confirme par la fiche injonction de payer et la fiche refere provision."
+    },
+    "seuil_tribunal_de_proximite_euros": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20851",
+      "date_verifiee": "2026-08-17",
+      "note": "Litiges d un montant inferieur ou egal a dix mille euros hors matieres specialisees. Page verifiee le 1er mars 2026."
+    },
+    "seuil_saisine_par_requete_euros": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20851",
+      "date_verifiee": "2026-08-17",
+      "note": "Requete pour les demandes inferieures ou egales a cinq mille euros, assignation au dela. Page verifiee le 1er mars 2026. Ne pas confondre avec le seuil de dix mille euros de l avocat obligatoire."
+    }
+  },
+  "titre_executoire": {
+    "liste_limitative": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036891163",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-3 du code des procedures civiles d execution, version en vigueur depuis le 25 avril 2026 : Seuls constituent des titres executoires. Une reconnaissance de dette signee ou un courriel d aveu sont des preuves, pas des titres."
+    },
+    "acte_notarie_vaut_titre_executoire": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036891163",
+      "date_verifiee": "2026-08-17",
+      "note": "Les actes notaries revetus de la formule executoire figurent dans la liste de l article L111-3 : un titre s obtient sans juge."
+    },
+    "solvabilite_du_debiteur_garantie_par_un_texte": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028747701",
+      "date_verifiee": "2026-08-17",
+      "note": "Aucun des textes consultes ne garantit l existence d un bien ou d un revenu saisissable. Gagner et etre paye sont deux procedures distinctes."
+    }
   }
 }

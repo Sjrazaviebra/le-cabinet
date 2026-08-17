@@ -1,0 +1,50 @@
+name: gate
+
+# La promesse de ce dépôt — aucune valeur sans source officielle ni date de vérification —
+# n'a de valeur que si elle est VÉRIFIÉE À CHAQUE PUSH. Sans ce workflow, le contrôle
+# dépendait de quelqu'un qui pense à lancer le script. Il ne dépend plus de personne.
+#
+# ⚠️ La péremption se mesure au jour où le job tourne : un dépôt laissé six mois sans
+# relecture se met donc à signaler ses propres valeurs vieillies, même sans nouveau commit.
+# C'est voulu. Le cron ci-dessous existe précisément pour que ce signal arrive tout seul.
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+  schedule:
+    # Tous les lundis à 6 h UTC : fait remonter les valeurs périmées sans attendre un commit.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  parametres:
+    name: valeurs sourcées et datées
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tableau d'avancement régénéré
+        # Le tableau de bord est GÉNÉRÉ, donc il ne peut pas mentir. S'il bouge ici, c'est
+        # qu'un commit l'a laissé désynchronisé.
+        run: python scripts/generer-avancement.py
+
+      - name: Le tableau d'avancement était-il à jour ?
+        run: |
+          if ! git diff --quiet -- docs/avancement.md; then
+            echo "::error::docs/avancement.md n'etait pas a jour. Lancez scripts/generer-avancement.py avant de committer."
+            git --no-pager diff -- docs/avancement.md
+            exit 1
+          fi
+          echo "docs/avancement.md est a jour."
+
+      - name: Gate des paramètres
+        # Code de sortie 1 dès la première ERREUR : valeur dite vérifiée sans source ou sans
+        # date, source hors des domaines officiels admis, ou nombre cité dans un .md qui
+        # n'existe dans aucun parametres.json.
+        run: python scripts/verifier-parametres.py

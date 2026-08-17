@@ -192,5 +192,1904 @@
       "date_verifiee": null,
       "note": "NON VERIFIE : le plafond varie selon la zone geographique et la composition du foyer, et il est revalorise. ⛔ Ne citer aucun montant sans avoir lu le texte en vigueur."
     }
+  },
+  "colocation": {
+    "solidarite_extinction_apres_conge": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 8-1 VI loi 89-462, en vigueur depuis le 01/07/2021. DELAI MAXIMUM apres la DATE D EFFET du conge (= fin du preavis), pas apres l envoi. La solidarite tombe PLUS TOT si un nouveau colocataire figure au bail. Sans remplacant, le partant ET SA CAUTION paient jusqu a 6 mois de loyer d un logement qu ils n habitent plus. ⇒ le partant a un interet financier direct a trouver son remplacant."
+    },
+    "solidarite_extinction_evenement_alternatif": {
+      "valeur": "un nouveau colocataire figure au bail",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ le seul moyen d arreter la solidarite AVANT les 6 mois. Il faut que le remplacant soit AU BAIL (avenant signe), pas seulement dans le logement. Un accord verbal entre colocataires ne libere personne face au bailleur."
+    },
+    "solidarite_sans_clause": {
+      "valeur": "chaque colocataire et sa caution ne doivent que leur part de loyer et de charges",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34661",
+      "date_verifiee": "2026-08-17",
+      "note": "★ la clause de solidarite n est PAS automatique : elle doit figurer au bail. Premier reflexe = relire le bail avant de payer la part d un autre. Page service-public du 21/03/2025."
+    },
+    "surface_et_volume_minimaux_locaux_privatifs_baux_multiples": {
+      "valeur": {
+        "surface_m2": 9,
+        "volume_m3": 20
+      },
+      "unite": "m2 et m3",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "art. 8-1 II loi 89-462, par derogation aux art. L126-17 et L126-21 CCH. Ne s applique qu aux colocations en BAUX MULTIPLES, qui valent division du logement. Une chambre plus petite rend le bail attaquable."
+    },
+    "loyer_cumule_plafond_baux_multiples": {
+      "valeur": "somme des loyers percus de tous les colocataires inferieure ou egale au loyer applicable au logement entier",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ art. 8-1 II loi 89-462, par renvoi aux art. 17 et 25-9. C est l anti-abus de la colocation en baux individuels : decouper un logement ne permet pas d en augmenter le rendement. Le trop-percu est reclamable."
+    },
+    "depot_de_garantie_part_du_colocataire_partant": {
+      "valeur": "aucune restitution par le bailleur au colocataire partant",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34661",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ bail unique : le depot est indivisible et reste au bailleur jusqu a la fin du bail. Le partant ne peut que s adresser a ses colocataires a l amiable. ⇒ regler la part du depot AVANT de rendre les cles, par ecrit. Voir depot-de-garantie.md pour les delais et la penalite."
+    },
+    "apl_par_colocataire": {
+      "valeur": "une aide par colocataire, calculee sur la part de loyer versee par chacun",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ condition implicite mais decisive : figurer au contrat de bail. Un occupant hors bail ne percoit rien, meme s il paie sa part. Page APL du 01/07/2026."
+    }
+  },
+  "cotitularite_couple": {
+    "cotitularite_epoux": {
+      "valeur": "de plein droit, sans signature, meme si le bail est anterieur au mariage",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028806626/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 1751 code civil : le droit au bail est repute appartenir aux DEUX epoux, quel que soit le regime matrimonial et NONOBSTANT TOUTE CONVENTION CONTRAIRE. Aucune demande a faire."
+    },
+    "cotitularite_partenaires_pacses": {
+      "valeur": "seulement sur demande conjointe des deux partenaires",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028806626/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA fausse croyance a demonter : art. 1751 code civil traite le PACS AUTREMENT du mariage. Sans demande conjointe, le partenaire non signataire n a aucun droit sur le bail. Demande par lettre recommandee, le bailleur ne peut pas refuser."
+    },
+    "colocation_exclut_les_couples": {
+      "valeur": "location consentie exclusivement a des epoux ou a des partenaires pacses au moment de la conclusion initiale du contrat",
+      "unite": "exclusion legale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 8-1 I loi 89-462 : un couple marie ou pacse N EST PAS une colocation ⇒ l extinction de solidarite a 6 mois NE S APPLIQUE PAS. C est le piege le plus couteux du fichier : celui qui part croit etre libere en 6 mois et reste tenu jusqu au divorce."
+    },
+    "fin_solidarite_epoux": {
+      "valeur": "mention du divorce sur les actes d etat civil",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1159",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ l epoux parti reste solidairement tenu du loyer et des charges jusqu a ce que le divorce soit note sur l acte d etat civil, ou jusqu au conge de celui qui reste. Duree potentielle : des annees. Page du 09/04/2025."
+    },
+    "fin_solidarite_partenaire_pacse": {
+      "valeur": "dissolution du PACS ou depart de l autre partenaire",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2565",
+      "date_verifiee": "2026-08-17",
+      "note": "pendant toute la duree du PACS les deux partenaires sont solidairement obliges de payer loyer et charges, meme si l un a quitte le logement. Page du 09/04/2025."
+    },
+    "condamnation_penale_anciennete_maximale_violences": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000509310",
+      "date_verifiee": "2026-08-17",
+      "note": "★ art. 8-2 loi 89-462 : la copie de condamnation penale doit avoir ete RENDUE DEPUIS MOINS DE 6 MOIS pour couper la solidarite. L ordonnance de protection du JAF n a pas cette condition d anciennete mais doit avoir ete notifiee a l autre membre du couple."
+    },
+    "fin_solidarite_violences_point_de_depart": {
+      "valeur": "lendemain de la premiere presentation de la lettre recommandee au domicile du bailleur",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000509310",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 8-2 loi 89-462 : la solidarite de la victime ET de sa caution cesse pour les dettes NEES A COMPTER de cette date. Ce n est pas la date des violences ni celle de l ordonnance : c est la date de PRESENTATION du courrier. ⇒ envoyer la LRAR sans attendre."
+    },
+    "notification_du_bailleur_aux_deux_epoux": {
+      "valeur": "chaque courrier doit etre adresse a chacun des epoux pour etre valide",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1159",
+      "date_verifiee": "2026-08-17",
+      "note": "★ un conge adresse a un seul epoux est inopposable a l autre. ⚠ exception : si le bailleur ignorait le mariage au moment de l envoi, le courrier devient automatiquement opposable a l epoux non destinataire ⇒ informer le bailleur du mariage, par ecrit, est ce qui active la protection."
+    }
+  },
+  "sous_location": {
+    "autorisation_du_bailleur": {
+      "valeur": "accord ecrit obligatoire, portant aussi sur le prix du loyer",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806569",
+      "date_verifiee": "2026-08-17",
+      "note": "art. 8 loi 89-462, en vigueur depuis le 27/03/2014. L accord doit couvrir DEUX choses : le fait de sous-louer et le montant. Un accord sur le principe seul ne suffit pas."
+    },
+    "plafond_du_loyer_de_sous_location": {
+      "valeur": "prix au metre carre de surface habitable inferieur ou egal a celui paye par le locataire principal",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806569",
+      "date_verifiee": "2026-08-17",
+      "note": "★ le plafond est AU METRE CARRE, pas au logement : sous-louer une chambre au prix du studio entier depasse le plafond. Interdit donc de se faire une marge."
+    },
+    "sanction_sous_location_non_autorisee": {
+      "valeur": "resiliation du bail du locataire et du bail de sous-location, condamnation a verser au bailleur le montant des sous-loyers percus, dommages et interets",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2449",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ le locataire ne perd pas seulement son bail : il rend les sous-loyers ENCAISSES au bailleur. L operation devient perdante a 100 %. Page du 24/07/2025."
+    },
+    "situation_du_sous_locataire_a_la_fin_du_bail_principal": {
+      "valeur": "aucun droit a l encontre du bailleur ni aucun titre d occupation",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806569",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ art. 8 loi 89-462 : les autres dispositions de la loi de 1989 ne sont PAS applicables au contrat de sous-location. Le sous-locataire n a donc ni preavis protege, ni droit au maintien : il est expulsable sans titre."
+    },
+    "apl_sous_locataire_age_maximum": {
+      "valeur": 30,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "date_verifiee": "2026-08-17",
+      "note": "★ un sous-locataire DECLARE au proprietaire peut percevoir l APL, mais seulement s il a moins de 30 ans ou s il est heberge chez un accueillant familial. C est un droit ignore, et il exige que la sous-location soit declaree."
+    },
+    "sous_location_logement_social": {
+      "valeur": "la sous-location d un logement social EN ENTIER est interdite",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36010/1_0?idFicheParent=F2449",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ interdiction verbatim, page du 24/07/2025. Sanction : le bailleur peut demander au tribunal la resiliation du bail du locataire ET de celui du sous-locataire. ⚠ des exceptions PARTIELLES existent (personne agee ou handicapee, cohabitation intergenerationnelle solidaire, personne de moins de 30 ans) mais leurs conditions exactes au CCH ne sont PAS verifiees ici : ne rien affirmer sur une exception sans lire le texte."
+    }
+  },
+  "hebergement_a_titre_gratuit": {
+    "fausse_attestation_peine": {
+      "valeur": {
+        "emprisonnement_ans": 1,
+        "amende_euros": 15000
+      },
+      "unite": "ans et euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037398925/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ art. 441-7 code penal, en vigueur depuis le 12/09/2018. Vise TROIS faits : etablir une attestation inexacte, la falsifier, ET EN FAIRE USAGE. L heberge qui produit une attestation de complaisance est punissable au meme titre que l hebergeur qui la signe."
+    },
+    "fausse_attestation_peine_aggravee": {
+      "valeur": {
+        "emprisonnement_ans": 3,
+        "amende_euros": 45000
+      },
+      "unite": "ans et euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037398925/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 441-7 al. 2 code penal : peines triplees notamment lorsque l infraction est commise EN VUE D OBTENIR UN TITRE DE SEJOUR ou une protection contre l eloignement, ou de porter prejudice au Tresor public. ⇒ c est exactement l usage le plus frequent de l attestation d hebergement. Renvoyer au role immigration."
+    },
+    "apl_personne_hebergee": {
+      "valeur": "aucune aide au logement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "date_verifiee": "2026-08-17",
+      "note": "la liste des beneficiaires de l APL ne comprend que locataire, colocataire et sous-locataire declare. Une personne hebergee a titre gratuit ne paie pas de loyer et n ouvre aucun droit."
+    }
+  },
+  "location_courte_duree_residence_principale": {
+    "duree_minimale_occupation_residence_principale": {
+      "valeur": 8,
+      "unite": "mois par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "logement occupe au moins 8 mois par an, sauf obligation professionnelle, raison de sante ou force majeure. En dessous, ce n est plus une residence principale et le regime bien plus lourd de la residence secondaire s applique. Page du 21/05/2026."
+    },
+    "plafond_jours_location_par_annee_civile": {
+      "valeur": {
+        "minimum": 90,
+        "maximum": 120
+      },
+      "unite": "jours par annee civile",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "★ le plafond n est plus uniforme : selon la commune il varie entre 90 et 120 jours. ⇒ ne jamais annoncer 120 jours sans avoir verifie la deliberation de la commune."
+    },
+    "duree_maximale_meme_client": {
+      "valeur": 90,
+      "unite": "jours consecutifs par annee civile",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "un meme client ne peut pas totaliser plus de 90 jours consecutifs de location par annee civile. Limite distincte du plafond annuel global : les deux se cumulent."
+    },
+    "amende_depassement_nombre_de_jours": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "★ amende CIVILE, prononcee par le juge a la demande de la commune. Elle s ajoute a la resiliation du bail encourue par un locataire qui a sous-loue sans accord."
+    },
+    "amende_defaut_de_declaration": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "amende civile pouvant aller jusqu a 5000 euros lorsque la declaration en mairie est obligatoire et n a pas ete faite."
+    },
+    "accord_du_proprietaire_si_locataire": {
+      "valeur": "accord ecrit du proprietaire obligatoire",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ un locataire qui met sa residence principale en meuble de tourisme fait de la SOUS-LOCATION : sans accord ecrit du bailleur il cumule les sanctions de l art. 8 loi 89-462 et l amende civile de la commune."
+    }
+  },
+  "commandement_de_payer": {
+    "delai_pour_payer": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 I de la loi du 6 juillet 1989 : la clause resolutoire ne produit effet que six semaines apres un commandement de payer demeure infructueux. ★★ C etait deux mois avant la loi du 27 juillet 2023 : toute documentation qui dit encore deux mois est perimee et fait perdre deux semaines de reaction. Le delai figure a peine de nullite dans l acte."
+    },
+    "signification_a_la_caution": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 I : quand un cautionnement garantit le bail, le commandement est signifie a la caution dans les quinze jours suivant sa signification au locataire. ⚠ A defaut la caution n est pas tenue aux penalites ni aux interets de retard : c est un moyen de defense du garant."
+    },
+    "seuil_signalement_ccapex_bailleur_particulier": {
+      "valeur": {
+        "mois_impayes_consecutifs": 2,
+        "dette_en_mois_de_loyer_hors_charges": 2
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 I : pour les impayes de deux mois sans interruption ou une dette egale a deux fois le loyer mensuel hors charges, le commissaire de justice signale le commandement a la CCAPEX quand le bailleur est une personne physique ou une societe civile familiale. ★ Le signalement est automatique : le locataire est deja connu du dispositif de prevention sans avoir rien fait."
+    },
+    "diagnostic_social_anciennete_max_avant_audience": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19035",
+      "date_verifiee": "2026-08-17",
+      "note": "Si aucun diagnostic social et financier datant de moins de six semaines n existe un mois avant l audience, un nouvel entretien est propose. ★ Le diagnostic est desormais realise des le stade du commandement de payer pour les bailleurs particuliers et SCI familiales."
+    },
+    "diagnostic_social_delai_avant_audience": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19035",
+      "date_verifiee": "2026-08-17",
+      "note": "Point de controle situe un mois avant l audience. ⚠ Le professionnel peut realiser le diagnostic a partir des informations dont il dispose meme si le locataire ne participe pas a l entretien : ne pas repondre ne bloque rien, cela prive seulement le locataire de sa voix."
+    }
+  },
+  "assignation_et_audience": {
+    "seuil_conciliation_ou_mediation_obligatoire": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31272",
+      "date_verifiee": "2026-08-17",
+      "note": "Lorsque le desaccord porte sur un montant ne depassant pas 5 000 euros, la tentative de conciliation est obligatoire avant de saisir le juge. ★ En dessous de ce seuil, une saisine directe du juge est attaquable : c est un moyen que le locataire peut soulever."
+    },
+    "saisine_ccapex_prealable_bailleur_personne_morale": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 II : les bailleurs personnes morales autres qu une societe civile familiale ne peuvent faire delivrer l assignation, sous peine d irrecevabilite, avant l expiration d un delai de deux mois suivant la saisine de la CCAPEX. ★★ Cette obligation ne pese PAS sur un bailleur particulier : la defense du locataire depend donc de l identite du bailleur."
+    },
+    "notification_assignation_au_prefet": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 III : a peine d irrecevabilite de la demande, l assignation est notifiee par le commissaire de justice au representant de l Etat dans le departement au moins six semaines avant l audience. ★ Irrecevabilite : c est une nullite de procedure a verifier systematiquement."
+    },
+    "delai_minimum_entre_assignation_et_audience": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31272",
+      "date_verifiee": "2026-08-17",
+      "note": "L audience a lieu au moins six semaines apres le jour ou le locataire a recu l assignation. ★★ C est la fenetre decisive : le juge ne peut accorder des delais de paiement que si le loyer courant a ete repris integralement AVANT l audience."
+    }
+  },
+  "delais_accordes_par_le_juge": {
+    "delais_de_paiement_maximum": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 V : le juge peut accorder des delais de paiement dans la limite de trois annees, a la double condition que le locataire soit en situation de regler sa dette et qu il ait repris le versement integral du loyer courant avant la date de l audience. ★★ La condition de reprise du loyer courant est le point le plus decisif de tout le dossier."
+    },
+    "suspension_clause_resolutoire_retablissement_personnel": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 VIII : en cas de retablissement personnel impose par la commission de surendettement ou prononce par le juge, le juge suspend les effets de la clause de resiliation de plein droit pendant un delai de deux ans. ★ Si le locataire paie regulierement pendant ces deux ans, la clause est reputee ne pas avoir joue : le bail survit."
+    },
+    "delai_supplementaire_resaisine_surendettement": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 VI 2 : en cas de suspension d exigibilite imposee par la commission de surendettement, un delai de trois mois supplementaires est accorde pour resaisir la commission. ⚠ Delai a ne pas laisser passer : la suspension ne se poursuit que s il y a resaisine."
+    },
+    "delai_de_grace_minimum": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900060",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-4 du code des procedures civiles d execution, version en vigueur depuis le 29 juillet 2023 : la duree des delais de l article L412-3 ne peut en aucun cas etre inferieure a un mois."
+    },
+    "delai_de_grace_maximum": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900060",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-4 : ni superieure a un an. ⚠ Ce plafond a ete abaisse par la loi du 27 juillet 2023 ; les documents anterieurs annoncent une duree beaucoup plus longue. ⛔ Ces delais ne s appliquent pas si le juge retient la mauvaise foi de l occupant, ni en cas d entree par manoeuvres, menaces, voies de fait ou contrainte."
+    },
+    "prorogation_exceptionnelle_durete": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000025024948/LEGISCTA000025026026/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-2 : lorsque l expulsion aurait des consequences d une exceptionnelle durete, notamment du fait de la periode de l annee ou des circonstances atmospheriques, le delai de l article L412-1 peut etre proroge par le juge pour une duree n excedant pas trois mois. ★ Levier distinct du delai de grace et cumulable avec lui."
+    }
+  },
+  "expulsion": {
+    "delai_commandement_de_quitter_les_lieux": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900004",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-1 : si l expulsion porte sur un lieu habite, elle ne peut avoir lieu qu a l expiration d un delai de deux mois qui suit le commandement. ⚠ Le juge peut reduire ou supprimer ce delai, notamment s il constate la mauvaise foi de la personne expulsee : le delai n est PAS automatique."
+    },
+    "prescription_dette_locative": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31267",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai de trois ans pour reclamer un impaye de loyers ou de charges. ★★ Une dette locative plus ancienne n est plus reclamable : le decompte joint au commandement de payer doit etre verifie ligne par ligne. Page du 10/04/2025, a recouper."
+    }
+  },
+  "treve_hivernale": {
+    "dates": {
+      "valeur": {
+        "debut": "1er novembre",
+        "fin": "31 mars de l annee suivante"
+      },
+      "unite": "periode",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900053",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-6 : il est sursis a toute mesure d expulsion non executee a la date du 1er novembre de chaque annee jusqu au 31 mars de l annee suivante. ★★ Elle suspend l EXECUTION, pas la PROCEDURE : commandement de payer, assignation, audience, jugement et commandement de quitter les lieux continuent pendant la treve, et l expulsion devient effective des le 31 mars passe. ⛔ Ne s applique pas si le relogement est assure dans des conditions suffisantes, ni en cas d introduction sans droit ni titre dans le domicile d autrui par manoeuvres, menaces, voies de fait ou contrainte, ni a l expulsion d un conjoint violent ordonnee par le juge aux affaires familiales."
+    }
+  },
+  "sanctions": {
+    "amende_maintien_apres_decision_expulsion": {
+      "valeur": 7500,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A16854",
+      "date_verifiee": "2026-08-17",
+      "note": "Loi du 27 juillet 2023 : un locataire qui reste plus de deux mois dans le logement apres une decision d expulsion definitive peut etre condamne a 7 500 euros d amende. ★★ La sanction ne s applique PAS pendant la treve hivernale ni si le locataire beneficie d une decision de sursis a expulsion : rester n est pas un delit tant qu on est protege. Page du 18/10/2023, a recouper ; l article du code penal n a pas pu etre lu directement."
+    },
+    "amende_bailleur_defaut_signalement_caf": {
+      "valeur": 8010,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Le bailleur risque une amende de 8 010 euros s il ne signale pas l impaye de loyer a la Caf ou a la MSA. ★ Chiffre confirme sur deux fiches officielles. Page du 01/01/2026, a recouper car le montant est susceptible d etre revalorise."
+    }
+  },
+  "aide_au_logement": {
+    "delai_signalement_impaye_caf": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Des que l impaye est etabli, le bailleur a deux mois pour le signaler a la Caf ou a la MSA. ★★ Le signalement ne coupe PAS l aide au logement du locataire : c est la croyance fausse la plus repandue, et elle pousse les deux parties a ne rien declarer."
+    },
+    "seuil_impaye_actuel": {
+      "valeur": 2,
+      "unite": "fois le loyer mensuel et les charges",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Impaye etabli a partir d une dette au moins egale a deux fois le montant mensuel du loyer et des charges : montant NET quand l aide est versee au bailleur, montant BRUT quand elle est versee au locataire. Page du 01/01/2026, a recouper."
+    },
+    "seuil_impaye_a_compter_du_1er_janvier_2027": {
+      "valeur": {
+        "dette_cumulee_euros": 450,
+        "mois_de_defaut_de_paiement": 3
+      },
+      "unite": "mixte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18832",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter du 1er janvier 2027, l impaye est etabli des que la dette cumulee de loyer et de charges depasse 450 euros OU des trois mois de defaut de paiement meme sous ce montant. ★ Le declenchement devient beaucoup plus precoce : l accompagnement social arrive plus tot."
+    },
+    "delai_plan_apurement_bailleur": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "La Caf ou la MSA peut demander au bailleur d etablir un plan d apurement de la dette dans un delai maximal de six mois. ★ L aide au logement est MAINTENUE si le plan est respecte et si le loyer courant est repris ; elle est suspendue en cas de mauvaise execution du plan."
+    },
+    "delai_plan_apurement_refus_tiers_payant": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai reduit a deux mois lorsque l aide est versee au locataire et que le bailleur a refuse le tiers-payant. ⚠ Refuser le versement direct raccourcit le delai contre soi-meme."
+    },
+    "delai_fsl_plan_apurement": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Le fonds de solidarite pour le logement dispose d un delai de trois mois pour etablir un plan d apurement. Page du 01/01/2026, a recouper."
+    }
+  },
+  "interlocuteurs": {
+    "numero_sos_loyers_impayes": {
+      "valeur": "0 805 160 075",
+      "unite": "telephone",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31272",
+      "date_verifiee": "2026-08-17",
+      "note": "SOS loyers impayes, du lundi au vendredi. Numero lu sur la fiche service-public verifiee le 06/08/2026. ⛔ Ne jamais citer un autre numero non fetche."
+    }
+  },
+  "cote_bailleur": {
+    "visale_delai_declaration_impaye": {
+      "valeur": {
+        "mise_en_demeure_jours": 15,
+        "declaration_jours": 30
+      },
+      "unite": "jours",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33453",
+      "date_verifiee": null,
+      "note": "⚠ DIVERGENCE entre deux pages officielles : la fiche Visale indique une mise en demeure dans les quinze jours qui suivent l impaye, la fiche sur les impayes de loyer indique une declaration dans les trente jours. ★ Dans les deux cas le delai est tres court et son depassement fait perdre la garantie : a recouper directement aupres d Action Logement avant de s y fier."
+    },
+    "cumul_caution_et_assurance_loyers_impayes": {
+      "valeur": "interdit sauf locataire etudiant ou apprenti",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31267",
+      "date_verifiee": "2026-08-17",
+      "note": "Le proprietaire qui a deja une assurance privee contre les risques locatifs peut demander une caution seulement si son locataire est etudiant ou apprenti. ★★ Un bailleur qui cumule assurance loyers impayes et garant hors ce cas expose son cautionnement. Page du 10/04/2025, a recouper."
+    }
+  },
+  "bail_et_location_valeurs_complement": {
+    "honoraires_plafond_zone_tres_tendue": {
+      "valeur": "12,10",
+      "unite": "euros par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "12.10 euros par m2 depuis le 1er janvier 2026   ★ les montants ronds encore cites partout sont PERIMES   plafonds revises chaque annee"
+    },
+    "honoraires_plafond_zone_tendue": {
+      "valeur": "10,09",
+      "unite": "euros par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "10.09 euros par m2   la part du locataire ne peut depasser NI la moitie des frais factures NI ce plafond"
+    },
+    "honoraires_plafond_etat_des_lieux_entree": {
+      "valeur": "3,03",
+      "unite": "euros TTC par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "3.03 euros TTC par m2   ⛔ l etat des lieux de SORTIE amiable et contradictoire n est jamais facturable au locataire"
+    },
+    "honoraires_revision_annuelle_2026": {
+      "valeur": "0,87",
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18576",
+      "date_verifiee": "2026-08-17",
+      "note": "0.87 pour cent de hausse au 1er janvier 2026   arrete du 17 juillet 2025   ⇒ redater ces plafonds avant tout usage"
+    },
+    "decence_hauteur_sous_plafond_minimale": {
+      "valeur": "2,20",
+      "unite": "m",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "2.20 m   critere ALTERNATIF   9 m2 avec 2.20 m de hauteur OU BIEN 20 m3 de volume habitable"
+    },
+    "dpe_amende_diagnostiqueur_non_certifie": {
+      "valeur": 1500,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "1 500 euros   DPE non etabli par un diagnostiqueur certifie"
+    },
+    "dpe_amende_diagnostiqueur_non_certifie_recidive": {
+      "valeur": 3000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "3 000 euros en cas de recidive   meme montant que l amende maximale pour fausse information dans une annonce par une personne physique et que l amende de l article 22-2 pour une piece justificative non autorisee"
+    },
+    "dpe_exemption_surface_batiment_independant": {
+      "valeur": 50,
+      "unite": "m2",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "batiments independants de moins de 50 m2   exemptes de DPE   ainsi que les monuments historiques classes"
+    },
+    "loyer_travaux_amelioration_seuil_declenchant": {
+      "valeur": 50,
+      "unite": "% de la derniere annee de loyer",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1310",
+      "date_verifiee": "2026-08-17",
+      "note": "50 pour cent de la derniere annee de loyer   ouvre une hausse a la relocation plafonnee a 15 pour cent du cout TTC des travaux   meme chiffre que le plafond de hausse pour loyer manifestement sous evalue   50 pour cent de la difference"
+    }
+  },
+  "duree_du_bail": {
+    "bail_vide_bailleur_personne_physique": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F920",
+      "date_verifiee": "2026-08-17",
+      "note": "duree d ordre public   un bail plus court n est pas nul mais REQUALIFIE a 3 ans   joue donc en faveur du locataire"
+    },
+    "bail_vide_bailleur_personne_morale": {
+      "valeur": 6,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F920",
+      "date_verifiee": "2026-08-17",
+      "note": "une clause de renouvellement automatique pour moins de 6 ans quand le bailleur est une personne morale est reputee non ecrite"
+    },
+    "bail_vide_duree_reduite_minimum": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F920",
+      "date_verifiee": "2026-08-17",
+      "note": "★ seule derogation a 3 ou 6 ans   reprise annoncee pour raison familiale ou professionnelle   le motif doit figurer au bail"
+    },
+    "bail_meuble": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35109/1_0?idFicheParent=F920",
+      "date_verifiee": "2026-08-17",
+      "note": "renouvellement automatique au terme si aucune partie ne donne conge"
+    },
+    "bail_etudiant_meuble": {
+      "valeur": 9,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35109/1_0?idFicheParent=F920",
+      "date_verifiee": "2026-08-17",
+      "note": "★ NI renouvelable NI a denoncer   le bail prend fin seul a son terme   aucune des deux parties n a de conge a envoyer"
+    },
+    "bail_mobilite_duree_minimale": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34759",
+      "date_verifiee": "2026-08-17",
+      "note": "reserve a une liste fermee de situations   formation   etudes superieures   apprentissage   stage   service civique   mutation   mission temporaire"
+    },
+    "bail_mobilite_duree_maximale": {
+      "valeur": 10,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34759",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ ni renouvelable ni reconductible   et ⛔ depot de garantie INTERDIT   preavis du locataire 1 mois"
+    },
+    "bail_mobilite_avenants_maximum": {
+      "valeur": 1,
+      "unite": "avenant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34759",
+      "date_verifiee": "2026-08-17",
+      "note": "la duree peut etre modifiee 1 fois par avenant   plafond global de 10 mois inchange"
+    },
+    "bail_mobilite_preavis_locataire": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34759",
+      "date_verifiee": "2026-08-17",
+      "note": "lettre recommandee   acte de commissaire de justice ou remise en main propre   voir conge-et-fin-de-bail.md"
+    }
+  },
+  "clauses_reputees_non_ecrites": {
+    "travaux_duree_ouvrant_droit_a_indemnite": {
+      "valeur": 21,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1686",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ une clause interdisant au locataire de demander une indemnite quand les travaux durent plus de 21 jours est reputee non ecrite"
+    },
+    "visites_duree_maximale_jours_ouvrables": {
+      "valeur": 2,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1686",
+      "date_verifiee": "2026-08-17",
+      "note": "★ frequent dans les baux d agence   une clause prevoyant des visites les jours feries ou de plus de 2 heures les jours ouvrables ne s applique pas"
+    }
+  },
+  "pieces_justificatives_candidat": {
+    "amende_personne_physique": {
+      "valeur": 3000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806691/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "3 000 euros maximum   amende ADMINISTRATIVE prononcee par le representant de l Etat dans le departement   ⇒ le bon interlocuteur est la prefecture   pas le juge"
+    },
+    "amende_personne_morale": {
+      "valeur": 15000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806691/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "15 000 euros maximum pour une agence ou une societe   article 22-2 de la loi du 6 juillet 1989"
+    },
+    "quittances_de_loyer_exigibles": {
+      "valeur": 3,
+      "unite": "dernieres quittances",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031444493/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ la liste du decret 2015-1437 est FERMEE   service-public   le bailleur a interdiction d en exiger d autres   ⇒ la question n est pas si un document est interdit mais s il est SUR la liste"
+    },
+    "bulletins_de_salaire_exigibles": {
+      "valeur": 3,
+      "unite": "derniers bulletins",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000031444493/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "annexe 1 du decret   version en vigueur au 1er janvier 2023   idem pour la caution en annexe 2"
+    }
+  },
+  "cautionnement": {
+    "sci_familiale_degre_de_parente": {
+      "valeur": 4,
+      "unite": "degre de parente",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36488/1",
+      "date_verifiee": "2026-08-17",
+      "note": "l interdiction de cumuler assurance loyers impayes et caution ne joue pas pour les societes civiles constituees exclusivement entre parents et allies jusqu au 4e degre"
+    },
+    "cumul_assurance_et_caution": {
+      "valeur": "interdit a peine de nullite",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000044073458/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ article 22-1 version en vigueur au 1er janvier 2022   exceptions   etudiant ou apprenti   et SCI familiale   ⇒ premiere question a poser au bailleur qui exige un garant   avez-vous une assurance loyers impayes"
+    },
+    "mention_article_2297_code_civil": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000044073458/2026-08-17",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE   l article 22-1 renvoie a l article 2297 du code civil pour la mention de la caution mais cet article n a pas pu etre fetche   ⛔ ne recopier aucun modele en ligne   ils reproduisent la formule manuscrite d avant la reforme des suretes du 15 septembre 2021"
+    }
+  },
+  "encadrement_des_loyers": {
+    "duree_inoccupation_liberant_le_loyer": {
+      "valeur": 18,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1310",
+      "date_verifiee": "2026-08-17",
+      "note": "en zone tendue le loyer de relocation ne peut pas depasser celui du precedent locataire sauf inoccupation de plus de 18 mois"
+    },
+    "travaux_amelioration_seuil_declenchant": {
+      "valeur": 50,
+      "unite": "% de la derniere annee de loyer",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1310",
+      "date_verifiee": "2026-08-17",
+      "note": "montant de travaux au moins egal a 50 % de la derniere annee de loyer   ouvre une hausse plafonnee"
+    },
+    "travaux_amelioration_hausse_maximale": {
+      "valeur": 15,
+      "unite": "% du cout TTC des travaux",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1310",
+      "date_verifiee": "2026-08-17",
+      "note": "plafond de la hausse a la relocation apres travaux d amelioration"
+    },
+    "travaux_importants_delai_de_realisation": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1310",
+      "date_verifiee": "2026-08-17",
+      "note": "travaux d un montant au moins egal a la derniere annee de loyer realises depuis moins de 6 mois   le loyer redevient libre"
+    },
+    "loyer_sous_evalue_hausse_maximale": {
+      "valeur": 50,
+      "unite": "% de la difference",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1310",
+      "date_verifiee": "2026-08-17",
+      "note": "difference entre le loyer de marche et le dernier loyer applique   ⛔ inapplicable a un logement classe F ou G   loyer gele"
+    },
+    "delai_contestation_complement_de_loyer": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "⏱ delai court a compter de la SIGNATURE du bail   saisine de la commission departementale de conciliation   se perime sans bruit"
+    },
+    "delai_action_diminution_avant_echeance": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "demande ecrite au bailleur par lettre recommandee ou acte de commissaire de justice au moins 5 mois avant l echeance du bail"
+    },
+    "delai_saisine_conciliation_avant_echeance": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "commission departementale de conciliation au plus tard 4 mois avant l echeance   puis juge des contentieux de la protection avant l echeance"
+    },
+    "amende_depassement_personne_physique": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "5 000 euros maximum   prononcee par la prefecture en cas de non respect de l encadrement du NIVEAU des loyers"
+    },
+    "amende_depassement_personne_morale": {
+      "valeur": 15000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "15 000 euros maximum   communes concernees   Paris   Est Ensemble   Plaine Commune   Bordeaux   Grenoble   Lille   Hellemmes   Lomme   Lyon   Villeurbanne   Montpellier   Pays Basque"
+    },
+    "gel_du_loyer_logements_f_et_g": {
+      "valeur": {
+        "revision_en_cours_de_bail_metropole": "interdite depuis le 24 aout 2022",
+        "revision_outre_mer": "interdite depuis le 1er juillet 2024",
+        "hausse_a_la_relocation": "interdite depuis le 24 aout 2022",
+        "reevaluation_au_renouvellement": "interdite depuis le 22 aout 2024"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ s applique sur TOUT le territoire   pas seulement en zone tendue ni dans les seules villes encadrees   c est le dispositif dont un locataire hors ville n entend jamais parler"
+    },
+    "complement_de_loyer_exclusions": {
+      "valeur": "sanitaires sur palier, humidite, DPE classe F ou G, fenetres defectueuses, vis-a-vis insuffisant, infiltrations, problemes electriques, mauvaise exposition",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1314",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ un logement classe F ou G ne peut PAS porter de complement de loyer   verification la plus rapide pour un locataire encadre   lire la classe DPE en premiere page du bail"
+    }
+  },
+  "honoraires_agence": {
+    "plafond_zone_tres_tendue": {
+      "valeur": 12.1,
+      "unite": "euros par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "12,10 euros par m2 depuis le 1er janvier 2026   ★ les montants ronds encore cites partout sont PERIMES"
+    },
+    "plafond_zone_tendue": {
+      "valeur": 10.09,
+      "unite": "euros par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "10,09 euros par m2   la part du locataire ne peut depasser NI la moitie des frais factures NI ce plafond"
+    },
+    "plafond_reste_du_territoire": {
+      "valeur": 8.07,
+      "unite": "euros par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "8,07 euros par m2   assiette = la surface habitable declaree au bail   une surface gonflee gonfle la facture"
+    },
+    "plafond_etat_des_lieux_entree": {
+      "valeur": 3.03,
+      "unite": "euros TTC par m2 de surface habitable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F375",
+      "date_verifiee": "2026-08-17",
+      "note": "3,03 euros TTC par m2   ⛔ l etat des lieux de SORTIE amiable et contradictoire n est jamais facturable au locataire"
+    },
+    "revision_annuelle_des_plafonds_2026": {
+      "valeur": 0.87,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18576",
+      "date_verifiee": "2026-08-17",
+      "note": "★ hausse de 0,87 % au 1er janvier 2026   arrete du 17 juillet 2025   ⇒ ces plafonds sont revises CHAQUE ANNEE   les redater avant tout usage"
+    }
+  },
+  "logement_decent": {
+    "piece_principale_nombre_minimal": {
+      "valeur": 1,
+      "unite": "piece principale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "le logement doit comporter au moins 1 piece principale remplissant l un des deux criteres alternatifs de surface ou de volume"
+    },
+    "surface_habitable_minimale": {
+      "valeur": 9,
+      "unite": "m2",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "★ critere ALTERNATIF   9 m2 AVEC 2,20 m de hauteur   OU BIEN 20 m3 de volume habitable   erreur de lecture la plus frequente dans les deux sens"
+    },
+    "hauteur_sous_plafond_minimale": {
+      "valeur": 2.2,
+      "unite": "m",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "2,20 m   une chambre mansardee sous 2,20 m n est pas indecente si le volume habitable atteint 20 m3"
+    },
+    "volume_habitable_alternatif": {
+      "valeur": 20,
+      "unite": "m3",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "voie alternative aux 9 m2 et 2,20 m"
+    },
+    "delai_avant_saisine_du_juge": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ apres 2 mois sans reponse a la mise en demeure   juge des contentieux de la protection   SEUL le juge peut reduire ou suspendre le loyer   retenir son loyer soi-meme = impaye"
+    },
+    "diagnostic_electricite_gaz_anciennete_installation": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F920",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE   la condition d anciennete de l installation rendant obligatoire l etat de l installation interieure d electricite et de gaz n a pas pu etre confirmee   ⛔ ne citer aucun seuil d annees"
+    },
+    "hauteur_sous_plafond_minimale_bis": {
+      "valeur": 2.2,
+      "unite": "m",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "Critere alternatif au volume habitable, voir surface_minimale_piece_principale."
+    },
+    "surface_minimale_piece_principale": {
+      "valeur": 9,
+      "unite": "m2",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "France metropolitaine, page du 21/03/2025 : au moins une piece principale de 9 m2 avec hauteur sous plafond d au moins 2,20 m, OU un volume habitable d au moins 20 m3."
+    },
+    "volume_habitable_minimal": {
+      "valeur": 20,
+      "unite": "m3",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "Critere alternatif a la surface et a la hauteur sous plafond."
+    },
+    "seuil_consommation_2023_2024": {
+      "valeur": 450,
+      "unite": "kWh/m2/an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "Seuil applicable en 2023 et 2024, remplace ensuite par le calendrier de classes DPE. Conserve car des litiges portent encore sur cette periode."
+    },
+    "calendrier_performance_energetique": {
+      "valeur": {
+        "de_2025_a_2027": "classes A a F",
+        "de_2028_a_2033": "classes A a E",
+        "a_partir_de_2034": "classes A a D"
+      },
+      "unite": "classe DPE",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Un logement classe G est INDECENT depuis le 1er janvier 2025 : l article 6 loi 1989 (version 01/01/2025) renvoie a un niveau de performance minimal au sens de l article L. 173-1-1 du code de la construction. La decence n est plus seulement humidite et securite, c est aussi une classe de DPE ⇒ un locataire en G peut exiger des travaux sur ce seul fondement. Outre-mer : calendrier decale."
+    },
+    "delai_apres_mise_en_demeure_avant_saisine_du_juge": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 21/03/2025, verbatim : apres un delai de 2 mois, si la mise en demeure est restee sans reponse ou si le desaccord persiste, le locataire peut saisir le juge des contentieux de la protection. Le juge peut determiner les travaux, fixer un delai, reduire le loyer ou suspendre son paiement avec consignation."
+    },
+    "interdiction_de_cesser_de_payer_le_loyer": {
+      "valeur": "interdit",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ Verbatim : le locataire ne doit en aucun cas cesser de payer tout ou partie de son loyer au motif que le logement n est pas conforme. La suspension existe mais c est le JUGE qui la prononce, ou l arrete d insalubrite qui la produit. Prise de sa propre initiative elle ouvre une procedure d impaye et fait perdre un dossier gagnable ⇒ le recommande, pas le non-paiement."
+    }
+  },
+  "dpe_interdiction_de_louer": {
+    "calendrier_metropole": {
+      "valeur": {
+        "1er janvier 2025": "classes A a F   la classe G est interdite",
+        "1er janvier 2028": "classes A a E   la classe F est interdite",
+        "1er janvier 2034": "classes A a D   la classe E est interdite"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037670751/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ verifie sur le TEXTE   version de l article 6 demandee au 2026-08-17   version servie en vigueur depuis le 1er janvier 2025   dernier modificateur loi 2021-1104 article 160 ⇒ aucune modification posterieure"
+    },
+    "calendrier_outre_mer": {
+      "valeur": {
+        "1er janvier 2028": "classes A a F   la classe G est interdite",
+        "1er janvier 2031": "classes A a E   la classe F est interdite"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037670751/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "Guadeloupe   Martinique   Guyane   La Reunion   Mayotte   decalage de 3 ans sur la metropole"
+    },
+    "seuil_consommation_2023_2024": {
+      "valeur": 450,
+      "unite": "kWh/m2/an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2042",
+      "date_verifiee": "2026-08-17",
+      "note": "critere applicable avant le basculement en classes   utile pour un litige portant sur 2023 ou 2024"
+    },
+    "champ_d_application": {
+      "valeur": "contrats signes, renouveles ou reconduits tacitement a compter de la date",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A17975",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ un bail ancien n est PAS hors d atteinte   il entre dans le champ a sa prochaine reconduction tacite qui est automatique   ⚠ page du 03/01/2025   a recouper   recoupee ici avec l article 6 sur Legifrance"
+    },
+    "mecanisme_de_la_sanction": {
+      "valeur": "logement repute non decent",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037670751/2026-08-17",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ ce n est PAS une interdiction administrative sanctionnee par une amende   c est une INDECENCE que le LOCATAIRE doit actionner   mise en demeure puis juge   ⛔ n annule pas le bail et n autorise pas a retenir le loyer"
+    },
+    "validite_du_dpe": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ les DPE realises entre janvier 2018 et juin 2021 ont perdu leur validite le 1er janvier 2025   ★ sans DPE valide le bailleur ne peut ni justifier un complement de loyer ni ecarter le gel du loyer"
+    },
+    "amende_dpe_non_certifie": {
+      "valeur": 1500,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "1 500 euros   DPE non etabli par un diagnostiqueur certifie"
+    },
+    "amende_dpe_non_certifie_recidive": {
+      "valeur": 3000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "3 000 euros en cas de recidive"
+    },
+    "amende_fausse_information_annonce_personne_physique": {
+      "valeur": 3000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "3 000 euros maximum   mention obligatoire en majuscules dans l annonce   logement a consommation energetique excessive pour un F ou un G"
+    },
+    "amende_fausse_information_annonce_personne_morale": {
+      "valeur": 15000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "15 000 euros maximum pour une agence"
+    },
+    "exemption_occupation_annuelle": {
+      "valeur": 4,
+      "unite": "mois par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "logements destines a etre occupes moins de 4 mois par an   exemptes de DPE"
+    },
+    "exemption_surface_batiment_independant": {
+      "valeur": 50,
+      "unite": "m2",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16096",
+      "date_verifiee": "2026-08-17",
+      "note": "batiments independants de moins de 50 m2   et monuments historiques classes"
+    }
+  },
+  "permis_de_louer": {
+    "delai_de_reponse_de_la_mairie": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34210",
+      "date_verifiee": "2026-08-17",
+      "note": "a compter de l accuse de reception   sans reponse l autorisation est consideree comme ACCORDEE   ⚠ page du 05/11/2024   a recouper"
+    },
+    "amende_defaut_autorisation_ou_declaration": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34210",
+      "date_verifiee": "2026-08-17",
+      "note": "5 000 euros maximum   louer sans avoir demande l autorisation ou sans declaration de mise en location"
+    },
+    "amende_recidive_ou_refus_non_respecte": {
+      "valeur": 15000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34210",
+      "date_verifiee": "2026-08-17",
+      "note": "★ 15 000 euros   MAIS verbatim   tout ceci est sans consequence sur le bail signe par le locataire   ⛔ ne jamais dire a un locataire qu il est libere parce que le bailleur n a pas le permis de louer"
+    }
+  },
+  "economies_energie": {
+    "plafond_de_la_contribution": {
+      "valeur": 50,
+      "unite": "% de l economie d energie estimee",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977449/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 23-1 loi du 6 juillet 1989, version en vigueur depuis le 25 aout 2021, verbatim : son montant, fixe et non revisable, ne peut etre superieur a la moitie du montant de l economie d energie estimee. Modalites de calcul : decret n° 2009-1439 du 23 novembre 2009. ⚠ une contribution qui augmente au fil des ans est contestable, le montant est non revisable."
+    },
+    "duree_maximale_de_la_contribution": {
+      "valeur": 15,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977449/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 23-1 loi 1989 (version 25/08/2021), verbatim : cette participation, limitee au maximum a quinze ans, est inscrite sur l avis d echeance et portee sur la quittance. Montant FIXE et NON REVISABLE ⇒ une ligne qui augmente au fil des ans est contestable."
+    },
+    "plafond_de_la_contribution_bis": {
+      "valeur": 50,
+      "unite": "% de l economie d energie estimee",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977449/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 23-1 loi 1989 : le montant ne peut etre superieur a la moitie du montant de l economie d energie estimee. Modalites de calcul : decret n° 2009-1439 du 23 novembre 2009."
+    },
+    "conditions_cumulatives": {
+      "valeur": "benefice direct pour le locataire, justification fournie, ensemble de travaux realise, logement classe A a E apres travaux",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977449/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 23-1 loi 1989 : quatre conditions cumulatives, chacune est un motif de contestation. ⇒ une contribution reclamee sur un logement reste en F ou G n est PAS exigible."
+    }
+  },
+  "logement_insalubre": {
+    "astreinte_journaliere_maximale": {
+      "valeur": 1000,
+      "unite": "euros par jour de retard",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16158",
+      "date_verifiee": null,
+      "note": "⚠ a_verifier : la seule page officielle fetchee date du 12/07/2024, soit plus de six mois, et je n ai PAS pu confirmer le montant sur les articles L. 511-1 et suivants du code de la construction et de l habitation. Astreinte maximale annoncee par la page, a recouper avant de la citer a quelqu un. S ajoutent l execution d office des travaux aux frais du proprietaire et d eventuelles poursuites penales."
+    },
+    "suspension_du_loyer_par_arrete": {
+      "valeur": "premier jour du mois suivant la notification de l arrete, jusqu au premier jour du mois suivant la mainlevee",
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16158",
+      "date_verifiee": null,
+      "note": "★★ Le loyer cesse d etre du SANS passer par le juge, a la difference de l indecence. C est la raison pour laquelle le signalement au prefet, au service communal d hygiene et de sante ou a l ARS n est pas une demarche accessoire. ⚠ a_verifier car la page source date du 12/07/2024, soit plus de six mois : a recouper sur les articles L. 511-1 et suivants du code de la construction et de l habitation."
+    },
+    "indemnite_de_relogement_interdiction_definitive": {
+      "valeur": 3,
+      "unite": "mois de nouveau loyer",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16158",
+      "date_verifiee": null,
+      "note": "Interdiction definitive d habiter : le proprietaire doit assurer le relogement plus une indemnite equivalant a trois mois du nouveau loyer. Interdiction temporaire : hebergement decent a la charge du proprietaire. ⚠ page du 12/07/2024, a recouper."
+    },
+    "astreinte_journaliere_maximale_bis": {
+      "valeur": 1000,
+      "unite": "euros par jour de retard",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16158",
+      "date_verifiee": null,
+      "note": "⚠ page du 12/07/2024, a recouper avant de citer le montant. S ajoutent l execution d office des travaux aux frais du proprietaire et d eventuelles poursuites penales."
+    }
+  },
+  "prescription_bail": {
+    "actions_derivant_du_bail": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028777184/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 7-1 loi 6 juillet 1989, version en vigueur depuis le 27 mars 2014 : toutes actions derivant d un contrat de bail sont prescrites par trois ans a compter du jour ou le titulaire d un droit a connu ou aurait du connaitre les faits lui permettant de l exercer. Vaut dans les DEUX sens : rappel de charges par le bailleur ET trop-percu reclame par le locataire. C est LE point qui tranche la plupart des litiges de regularisation : un rappel portant sur plus de trois ans n est pas exigible."
+    },
+    "point_depart_troppercu_en_copropriete": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F479",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Page du 10/04/2025 : lorsque le logement est situe dans une copropriete, le delai de 3 ans debute a la date de la REGULARISATION des charges, et non a la date de paiement. Favorable au locataire, la fenetre s ouvre plus tard qu on ne le croit."
+    },
+    "revision_annuelle_du_loyer_par_le_bailleur": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028777184/",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Article 7-1 alinea 2 : l action en revision du loyer par le bailleur est prescrite un an apres la date convenue dans le bail. service-public F479 (10/04/2025) : lorsque le delai d un an est ecoule, la revision non appliquee est PERDUE pour le proprietaire. Un bailleur qui rattrape plusieurs annees d indexation d un coup reclame ce qu il a perdu."
+    },
+    "indemnisation_logement_indecent": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000054218405",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Cour de cassation, arret du 4 juin 2026 : le locataire peut poursuivre l execution forcee en nature de l obligation de delivrance d un logement decent TANT QUE LE MANQUEMENT PERDURE, mais n obtient reparation que sur une periode de trois ans precedant sa demande en justice. Deux horloges : les travaux restent exigibles indefiniment, l indemnisation est plafonnee a trois ans ⇒ chaque mois d attente est un mois d indemnisation perdu."
+    }
+  },
+  "charges_recuperables": {
+    "liste_fixee_par_decret": {
+      "valeur": "decret n° 87-713 du 26 aout 1987, liste en annexe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006491955",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 23 loi 1989 (version 01/07/2021) : les charges sont exigibles SUR JUSTIFICATION en contrepartie de services rendus, de l entretien courant et des menues reparations sur les elements d usage commun, et des impositions dont le locataire profite directement ; la liste est fixee par decret en Conseil d Etat. L annexe ne vise que l entretien courant et les menues reparations ⇒ remplacement d equipement, gros travaux et mise aux normes sortent structurellement de la liste. ⚠ RESERVE : aucun texte fetche ne dit expressement qu une clause du bail prevoyant une charge hors liste est reputee non ecrite ⇒ dire la depense n est pas exigible, pas la clause est nulle."
+    },
+    "controle_technique_ascenseur_non_recuperable": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F947",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Page du 15/04/2025, verbatim : le controle technique a realiser tous les 5 ans n est pas une charge recuperable. Il apparait pourtant souvent dans les decomptes d ascenseur ⇒ ligne a chercher dans un decompte contexte."
+    },
+    "frais_de_relance_et_de_procedure": {
+      "valeur": 0,
+      "unite": "euros recuperables",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000509310/LEGISCTA000006093010/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 4 p) loi 1989 : est reputee NON ECRITE la clause qui fait supporter au locataire des frais de relance ou d expedition de la quittance ainsi que les frais de procedure. ⇒ lettre de rappel, recommande de mise en demeure, frais de dossier ou de gestion d impaye facturees au locataire : sans effet."
+    }
+  },
+  "regularisation_des_charges": {
+    "frequence_minimale": {
+      "valeur": 1,
+      "unite": "fois par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F947",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 15/04/2025 : les charges doivent etre regularisees au moins 1 fois par an en comparant le total des provisions demandees et les depenses effectives."
+    },
+    "delai_communication_du_decompte": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041587263/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 23 loi 1989, verbatim : un mois avant cette regularisation, le bailleur en communique au locataire le decompte par nature de charges. Pas de decompte = somme non justifiee."
+    },
+    "duree_mise_a_disposition_des_justificatifs": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041587263/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 23 loi 1989, verbatim : durant six mois a compter de l envoi de ce decompte, les pieces justificatives sont tenues, dans des conditions normales, a la disposition des locataires. PIEGE DE CALENDRIER : le locataire n a que six mois pour verifier alors que le bailleur garde trois ans pour reclamer ⇒ demander les justificatifs par ecrit DES RECEPTION du decompte."
+    },
+    "paiement_par_douzieme_si_regularisation_tardive": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041587263/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 23 loi 1989, verbatim : lorsque la regularisation des charges n a pas ete effectuee avant le terme de l annee civile suivant l annee de leur exigibilite, le paiement par le locataire est effectue par douzieme, S IL EN FAIT LA DEMANDE. Non automatique : personne ne le proposera au locataire."
+    }
+  },
+  "reparations_locatives": {
+    "liste_fixee_par_decret": {
+      "valeur": "decret n° 87-712 du 26 aout 1987",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31697",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 7 d) loi 1989 (version 15/06/2025) : le locataire prend a sa charge l entretien courant, les menues reparations et l ensemble des reparations locatives definies par decret, SAUF si elles sont occasionnees par vetuste, malfacon, vice de construction, cas fortuit ou force majeure. ⚠ L annexe du decret n a PAS ete verifiee ligne par ligne dans cette passe : a completer, c est elle qui tranche chaque facture."
+    },
+    "exceptions_a_la_charge_du_bailleur": {
+      "valeur": "vetuste, malfacon, vice de construction, cas fortuit, force majeure",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834730/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 7 d) loi 1989. La vetuste n est pas une excuse a plaider, c est une exception ECRITE dans la loi : le meme objet est a la charge de l un ou de l autre selon la CAUSE. service-public F31697 (21/05/2025) : si la vetuste des canalisations provoque une fuite d eau, le locataire doit avertir le proprietaire, a qui il revient de faire les reparations. Grilles de vetuste : decret n° 2016-382 du 30 mars 2016, opposables sur demande du locataire chez un bailleur social."
+    }
+  },
+  "travaux_du_bailleur": {
+    "diminution_de_loyer_si_travaux_longs": {
+      "valeur": 21,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028806598",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 1724 code civil (version 27/03/2014), rendu applicable par l article 7 e) loi 1989 : si ces reparations durent plus de vingt et un jours, le prix du bail sera diminue a proportion du temps ET de la partie de la chose louee dont il aura ete prive. Confirme par service-public F31699 (28/05/2025). Diminution de droit, doublement proportionnelle, mais jamais spontanee ⇒ se reclame par ecrit et chiffree. Si les travaux rendent inhabitable ce qui est necessaire au logement, le locataire peut faire resilier le bail."
+    },
+    "notification_prealable": {
+      "valeur": "remise en main propre ou lettre recommandee avec avis de reception",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834730/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 7 e) loi 1989 : avant le debut des travaux, le locataire est informe de leur nature et des modalites d execution par une notification de travaux. ⛔ Aucuns travaux les samedis, dimanches et jours feries sans accord expres du locataire. Le juge peut interdire ou interrompre des travaux abusifs ou vexatoires, non conformes a la notification, ou rendant le local impossible ou dangereux a utiliser."
+    },
+    "majoration_de_loyer_apres_travaux_amelioration": {
+      "valeur": "accord requis : clause expresse du bail ou avenant signe",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1311",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Page du 08/08/2025, article 17-1 loi 1989 : le loyer peut etre majore en cours de bail en cas de travaux d AMELIORATION faits aux frais du proprietaire, le montant etant convenu par clause du bail ou par avenant. ⇒ pas de majoration unilaterale. DISTINCTION DECISIVE : les travaux de maintien en etat, d entretien normal et ceux necessaires a la decence sont des obligations de l article 6 et ne peuvent pas etre transformes en hausse de loyer. Remplacer un equipement hors service n est pas ameliorer."
+    }
+  },
+  "conciliation": {
+    "competence_de_la_commission_departementale": {
+      "valeur": "charges locatives et reparations inclus, recours facultatif et gratuit",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1216",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 03/05/2024 : la CDC couvre notamment les charges locatives et les reparations, en logement prive comme social, et intervient gratuitement. ⛔ Le locataire doit continuer a payer loyer et charges pendant la procedure."
+    },
+    "delai_de_l_avis": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1216",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : la CDC remet ou envoie ce document au proprietaire et au locataire par lettre simple, au maximum dans les 2 mois qui suivent la saisine. En cas de desaccord, un avis est redige puis le juge peut etre saisi."
+    }
+  },
+  "copropriete_assemblee_generale": {
+    "convocation_delai_minimum": {
+      "valeur": 21,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042078632",
+      "date_verifiee": "2026-08-17",
+      "note": "Decret 67-223 art. 9 : sauf urgence, la convocation est notifiee au moins 21 jours avant la reunion, a moins que le reglement de copropriete n ait prevu un delai plus long. ⚠ jours calendaires, pas ouvres. Un delai plus court est une cause de nullite de l assemblee, mais elle doit etre soulevee dans les 2 mois."
+    },
+    "vote_par_correspondance_reception": {
+      "valeur": 3,
+      "unite": "jours francs avant la reunion",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2619",
+      "date_verifiee": "2026-08-17",
+      "note": "Le formulaire doit etre receptionne par le syndic au plus tard 3 jours francs avant la date de la reunion. Page du 16/03/2026."
+    },
+    "pouvoirs_maximum_par_mandataire": {
+      "valeur": 3,
+      "unite": "delegations",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313531",
+      "date_verifiee": "2026-08-17",
+      "note": "Loi 65-557 art. 22. ⛔ Ne peuvent recevoir de mandat ni presider l assemblee : le syndic, son conjoint, partenaire de PACS ou concubin, leurs ascendants et descendants, leurs preposes."
+    },
+    "pouvoirs_plafond_voix_mandataire": {
+      "valeur": 10,
+      "unite": "pourcent des voix du syndicat",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2619",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La limite de 3 delegations ne s applique pas lorsque le total des voix du mandataire (les siennes plus celles de ses mandants) ne depasse pas 10 pourcent des voix du syndicat. C est ce qui permet de rassembler beaucoup de petits lots sur une meme personne."
+    },
+    "pieces_justificatives_duree_consultation": {
+      "valeur": 1,
+      "unite": "jour ouvre minimum",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038702079",
+      "date_verifiee": "2026-08-17",
+      "note": "Decret 67-223 art. 9-1 : duree appropriee a la dimension de la copropriete, d au moins un jour ouvre, entre la convocation et l assemblee. Le lieu et les horaires figurent dans la convocation. Copies possibles aux frais du demandeur."
+    },
+    "notification_voie_electronique": {
+      "valeur": "voie electronique valable sans accord prealable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000880200/LEGISCTA000006092805/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Loi 65-557 art. 42-1, version en vigueur depuis le 11/04/2024 : les notifications et mises en demeure sont valablement faites par voie electronique ; c est au coproprietaire de DEMANDER le papier, a tout moment et par tout moyen. Combine au delai de contestation de 2 mois qui part de la notification, c est le piege central du sujet."
+    },
+    "budget_previsionnel_delai_vote": {
+      "valeur": 6,
+      "unite": "mois apres la cloture de l exercice",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20586",
+      "date_verifiee": "2026-08-17",
+      "note": "Le vote du budget doit avoir lieu dans les 6 mois a compter du dernier jour de l exercice comptable precedent. Vote a la majorite simple. Page du 04/08/2026."
+    }
+  },
+  "copropriete_majorites": {
+    "majorite_simple_article_24": {
+      "valeur": "majorite des voix exprimees des coproprietaires presents, representes ou ayant vote par correspondance",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051749514",
+      "date_verifiee": "2026-08-17",
+      "note": "Version en vigueur depuis le 18/06/2025. ★ Les abstentions ne comptent pas : elles ne sont pas des voix exprimees. C est la majorite de droit commun ; travaux de conservation, salubrite, accessibilite, bornes de recharge, energie solaire, adaptation du reglement a la loi."
+    },
+    "majorite_absolue_article_25": {
+      "valeur": "majorite des voix de TOUS les coproprietaires",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313590",
+      "date_verifiee": "2026-08-17",
+      "note": "Version en vigueur depuis le 18/06/2025. Les absents comptent comme des NON de fait. Designation et revocation du syndic et du conseil syndical, autorisation de travaux privatifs affectant les parties communes, travaux d economie d energie, tous travaux d amelioration."
+    },
+    "passerelle_article_25_1_seuil": {
+      "valeur": "1/3 des voix de tous les coproprietaires",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049398359",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 25-1, version du 11/04/2024 : si le projet n atteint pas la majorite absolue mais recueille au moins le tiers des voix de tous les coproprietaires, la MEME assemblee revote immediatement a la majorite de l art. 24. ⇒ il faut exiger ce second vote en seance, sinon il est perdu."
+    },
+    "passerelle_article_25_1_travaux_energie": {
+      "valeur": 3,
+      "unite": "mois pour convoquer une nouvelle assemblee",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000049398359",
+      "date_verifiee": "2026-08-17",
+      "note": "Travaux du f de l art. 25 (economies d energie, reduction des gaz a effet de serre) : si le projet n a pas atteint le tiers des voix, une nouvelle assemblee convoquee dans les 3 mois sur un projet IDENTIQUE peut statuer a la majorite de l art. 24."
+    },
+    "double_majorite_article_26": {
+      "valeur": "majorite des membres du syndicat representant au moins les deux tiers des voix",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050623612",
+      "date_verifiee": "2026-08-17",
+      "note": "Version en vigueur depuis le 21/11/2024. ★ DEUX compteurs a la fois : une majorite en TETES et deux tiers en TANTIEMES. Acquisitions et actes de disposition, modification du reglement quant a la jouissance, l usage et l administration des parties communes, suppression du poste de concierge, interdiction de la location touristique des lots d habitation."
+    },
+    "passerelle_article_26_second_vote": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2137",
+      "date_verifiee": null,
+      "note": "⚠ DIVERGENCE ASSUMEE. service-public (page du 06/05/2026) decrit un second vote a la majorite de l art. 25 lorsque le projet a recueilli l approbation de la moitie des coproprietaires representant au moins un tiers des voix. Je n ai PAS retrouve cet alinea dans le texte de l art. 26 fetche sur Legifrance. A recouper sur le texte avant de s en servir en seance."
+    },
+    "unanimite": {
+      "valeur": "alienation des parties communes necessaires a la destination de l immeuble ; modification du reglement relative a la destination de l immeuble",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000050623612",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 26 dernier alinea. Et surtout, alinea precedent : l assemblee ne peut, A QUELQUE MAJORITE QUE CE SOIT, imposer a un coproprietaire une modification de la destination de ses parties privatives ou des modalites de leur jouissance telles qu elles resultent du reglement. ⇒ certaines resolutions ne sont pas seulement mal votees, elles sont hors du pouvoir de l assemblee."
+    },
+    "voix_coproprietaire_majoritaire": {
+      "valeur": "voix reduites a la somme des voix des autres coproprietaires",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313531",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 22 : le coproprietaire qui detient plus de la moitie des tantiemes voit ses voix ramenees a la somme de celles des autres. Il ne peut donc jamais voter seul contre tous."
+    }
+  },
+  "copropriete_contestation_decision": {
+    "delai_contestation_assemblee": {
+      "valeur": 2,
+      "unite": "mois a compter de la notification du proces-verbal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039329680",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 42 : A PEINE DE DECHEANCE. Passe ce delai la decision, meme illegale, devient inattaquable. Le point de depart est la NOTIFICATION du proces-verbal, pas la tenue de l assemblee ni la reception d un appel de fonds."
+    },
+    "delai_notification_proces_verbal": {
+      "valeur": 1,
+      "unite": "mois a compter de la tenue de l assemblee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2636",
+      "date_verifiee": "2026-08-17",
+      "note": "Le syndic notifie les decisions dans le mois. ⇒ le delai de contestation peut donc s eteindre environ 3 mois apres l assemblee. Page du 18/02/2026."
+    },
+    "qualite_pour_contester": {
+      "valeur": "coproprietaires opposants ou defaillants",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039329680",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 42 : seuls les OPPOSANTS et les DEFAILLANTS (absents non representes) peuvent agir. Celui qui a vote POUR ne figure pas dans la liste. ⇒ voter contre, et verifier que le proces-verbal mentionne bien son nom parmi les opposants, est la condition du recours. ⚠ le sort du coproprietaire PRESENT qui s abstient n est pas tranche par le texte : a verifier avant de conseiller l abstention."
+    },
+    "suspension_execution_travaux": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039329680",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 42 : sauf urgence, l execution par le syndic des travaux decides en application des art. 25 et 26 est SUSPENDUE jusqu a l expiration du delai de 2 mois. Un syndic qui lance les travaux avant est en faute."
+    },
+    "mentions_obligatoires_proces_verbal": {
+      "valeur": "noms et nombre de voix des opposants, des abstentionnistes et des defaillants",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2636",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le proces-verbal porte aussi le resultat de chaque vote, les reserves formulees sur la regularite des decisions et les incidents techniques de communication electronique. C est la piece qui prouve la qualite pour agir. Page du 18/02/2026."
+    },
+    "vote_correspondance_resolution_amendee": {
+      "valeur": "assimile a un coproprietaire defaillant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000880200/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 17-1 A : si la resolution objet du vote par correspondance est amendee en cours d assemblee, le votant par correspondance ayant vote FAVORABLEMENT est assimile a un defaillant pour cette resolution. Double effet : la voix favorable est perdue, mais la qualite de defaillant ouvre le recours de l art. 42."
+    }
+  },
+  "copropriete_charges_et_tantiemes": {
+    "cle_repartition_charges_generales": {
+      "valeur": "proportionnellement aux valeurs relatives des parties privatives (tantiemes)",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977284",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 10 al. 2, version du 01/01/2023 : conservation, entretien et administration des parties communes, et cotisation au fonds de travaux."
+    },
+    "cle_repartition_charges_speciales": {
+      "valeur": "en fonction de l utilite objective du service ou de l equipement pour chaque lot",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977284",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 10 al. 1 : services collectifs et elements d equipement commun. UTILITE OBJECTIVE, pas usage reel : un rez-de-chaussee peut devoir l ascenseur pour une part reduite mais pas nulle si l ascenseur dessert des caves. Ne s applique que si la charge n est pas individualisee."
+    },
+    "vote_reserve_aux_coproprietaires_concernes": {
+      "valeur": "voix proportionnelles a la participation aux depenses",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977284",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 10 al. 4 : quand le reglement met une depense a la seule charge de certains coproprietaires, il peut prevoir qu eux seuls votent sur cette depense, avec un nombre de voix proportionnel a leur participation. Levier meconnu dans les copropietes a batiments multiples."
+    },
+    "action_revision_repartition_delai": {
+      "valeur": 5,
+      "unite": "ans a compter de la publication du reglement au fichier immobilier",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006471582",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 12. ⚠ Le point de depart est la publication du REGLEMENT, pas l achat du lot : dans un immeuble ancien ce delai est presque toujours expire."
+    },
+    "action_revision_seuil": {
+      "valeur": "plus d un quart d ecart",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006471582",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 12 : la part du lot doit etre superieure de plus d un quart, ou celle d un autre coproprietaire inferieure de plus d un quart, a ce qui resulterait d une repartition conforme a l art. 10. Un ecart modere ne suffit pas."
+    },
+    "action_revision_apres_premiere_vente": {
+      "valeur": 2,
+      "unite": "ans a compter de la premiere mutation a titre onereux du lot",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2590",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Seconde fenetre, distincte des 5 ans : le proprietaire d un lot peut agir avant l expiration d un delai de 2 ans a partir de la 1re vente de ce lot intervenue apres la publication du reglement. Page du 18/02/2026."
+    },
+    "action_nullite_clause_illicite": {
+      "valeur": "aucun delai",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2590",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim service-public : « Cette action n est pas limitee dans le temps. Elle peut ainsi intervenir a tout moment. » ⇒ deux recours a ne jamais confondre : REVISER une repartition licite mais desequilibree (5 ans, ou 2 ans apres la premiere vente) contre FAIRE ECARTER une cle illegale (a tout moment). Croire que tout est ferme apres 5 ans est l erreur la plus couteuse du sujet."
+    },
+    "appels_de_fonds_periodicite": {
+      "valeur": 4,
+      "unite": "appels par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20586",
+      "date_verifiee": "2026-08-17",
+      "note": "Provision exigible le premier jour de chaque trimestre, ou le premier jour de la periode fixee par l assemblee generale. Les travaux hors budget previsionnel font l objet d appels de fonds specifiques votes separement. Page du 04/08/2026."
+    },
+    "tantiemes_expression": {
+      "valeur": "millemes ou dix-milliemes",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35451",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Calcules d apres la superficie du lot, sa consistance et sa situation (etage, vue, ensoleillement, orientation). ⚠ ne pas confondre tantiemes de COPROPRIETE (les voix) et tantiemes de CHARGES : ce sont deux grilles distinctes. Page du 11/05/2026."
+    }
+  },
+  "copropriete_travaux": {
+    "autorisation_travaux_privatifs": {
+      "valeur": "majorite des voix de tous les coproprietaires (art. 25 b)",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313590",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 25 b : autorisation donnee a certains coproprietaires d effectuer A LEURS FRAIS des travaux affectant les parties communes ou l aspect exterieur de l immeuble. ⚠ percer une facade, poser une climatisation, ouvrir une fenetre de toit, changer les menuiseries visibles : c est l aspect exterieur, donc l assemblee."
+    },
+    "notification_avant_acces_parties_privatives": {
+      "valeur": 8,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313535",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 9, version du 18/06/2025 : les travaux supposant un acces aux parties privatives doivent etre notifies aux coproprietaires concernes au moins 8 jours avant leur debut, sauf imperatif de securite ou de conservation des biens."
+    },
+    "indemnisation_prejudice_travaux": {
+      "valeur": "a la charge du syndicat, repartie en proportion de la participation aux couts des travaux",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313535",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 9 III : indemnite pour diminution durable de valeur, trouble de jouissance grave meme temporaire, ou degradations. En cas de privation TOTALE temporaire de jouissance du lot, l assemblee accorde une indemnite PROVISIONNELLE, donc sans attendre la fin du chantier."
+    },
+    "travaux_interet_collectif_sur_parties_privatives": {
+      "valeur": "opposition impossible si l affectation, la consistance ou la jouissance ne sont pas alterees durablement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313535",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Art. 9 II. Contrepartie utile : lorsqu il existe une autre solution n affectant pas la partie privative, les travaux ne peuvent etre imposes que si les circonstances le justifient. C est l argument a opposer, pas le refus pur et simple."
+    },
+    "changement_destination_en_habitation": {
+      "valeur": "approbation de l assemblee a la majorite de l art. 24",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313535",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 9 I al. 2, version du 18/06/2025 : transformer en logement des parties privatives a usage autre que d habitation, hors locaux commerciaux, lorsque cela contrevient a la destination de l immeuble."
+    },
+    "restriction_reglement_de_copropriete": {
+      "valeur": "aucune restriction hors celles justifiees par la destination de l immeuble",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000880200/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 8 : le reglement ne peut imposer aucune restriction aux droits des coproprietaires en dehors de celles justifiees par la destination de l immeuble, telle qu elle resulte des actes, de ses caracteres ou de sa situation. ⇒ face a une interdiction du reglement, la premiere question est : quel rapport avec la destination de l immeuble ?"
+    }
+  },
+  "copropriete_syndic": {
+    "duree_mandat_maximum": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042078751",
+      "date_verifiee": "2026-08-17",
+      "note": "Decret 67-223 art. 28, version du 04/07/2020 : la duree des fonctions du syndic ne peut exceder trois annees ; renouvellement possible pour les memes durees. Il n y a pas de reconduction tacite : sans vote, la copropriete se retrouve sans syndic."
+    },
+    "duree_mandat_lien_avec_le_constructeur": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000042078751",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Decret 67-223 art. 28 : pendant les delais de l art. 1792-4-1 du code civil, la duree tombe a UN AN lorsque le syndic, son conjoint, leurs employeurs, preposes, parents ou allies jusqu au deuxieme degre ont participe, meme indirectement, a la construction de l immeuble. Levier direct contre le syndic pose par le promoteur dans un immeuble neuf."
+    },
+    "mise_en_concurrence_periodicite": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313574",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 21 : le conseil syndical met en concurrence plusieurs projets de contrat de syndic avant l assemblee appelee a designer le syndic, MAIS le texte precise que cette formalite n est pas prescrite a peine d irregularite de la decision de designation. ⇒ l absence de mise en concurrence n annule PAS la designation : croire le contraire fait perdre le temps du recours. Une dispense peut etre votee a la majorite de l art. 25, la demande devant etre inscrite a l ordre du jour de l assemblee precedente."
+    },
+    "designation_majorite": {
+      "valeur": "majorite absolue de l art. 25, puis second vote a la majorite de l art. 24",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1548",
+      "date_verifiee": "2026-08-17",
+      "note": "L assemblee vote successivement sur chaque candidature. Page du 04/08/2026."
+    },
+    "revocation_en_cours_de_mandat": {
+      "valeur": "majorite absolue, question inscrite a l ordre du jour, motif legitime exige",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31671",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Resiliation sans motif legitime, c est-a-dire non justifiee par une inexecution suffisamment grave : le syndic peut agir en justice et obtenir une indemnisation correspondant aux honoraires qu il aurait percus jusqu a la fin normale de son contrat. ⇒ un syndic simplement mauvais se remplace a l ECHEANCE, pas en cours de mandat. ⚠ page du 06/05/2025, plus de 6 mois : a recouper."
+    },
+    "consultation_des_pieces_justificatives": {
+      "valeur": "droit de consulter les pieces justificatives des charges avant l assemblee",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038702079",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Decret 67-223 art. 9-1 : entre la convocation et l assemblee, un jour ouvre minimum, lieu et horaires indiques dans la convocation ; le coproprietaire peut se faire assister d un membre du conseil syndical et prendre des copies a ses frais. Le locataire peut etre autorise a consulter les pieces des charges recuperables."
+    },
+    "penalites_retard_communication_documents": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Un mecanisme de penalites par jour de retard imputees sur les honoraires du syndic en cas de non-communication de documents a un coproprietaire existe, mais je n ai pas pu isoler l article ni le montant sur une page officielle fetchee. A etablir avant toute affirmation."
+    }
+  },
+  "copropriete_conseil_syndical": {
+    "duree_mandat_membres": {
+      "valeur": 3,
+      "unite": "ans maximum",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2610",
+      "date_verifiee": "2026-08-17",
+      "note": "Membres elus a la majorite absolue de l art. 25 ; si un candidat obtient au moins un tiers des voix, second vote a la majorite simple. ⚠ page du 28/05/2025, plus de 6 mois : a recouper."
+    },
+    "renonciation_a_instituer": {
+      "valeur": "double majorite de l art. 26",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2610",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le conseil syndical est obligatoire par principe ; y renoncer exige la double majorite, et la renonciation est revocable a la majorite absolue. ⚠ sans conseil syndical, la mise en concurrence du contrat de syndic n est plus obligatoire : renoncer au conseil, c est desarmer la copropriete face au syndic. Page du 28/05/2025, a recouper."
+    },
+    "droit_de_communication": {
+      "valeur": "consultation de tous les documents de gestion du syndic et copies libres",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2610",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Un membre du conseil syndical a un acces aux pieces bien plus large qu un coproprietaire isole. ⇒ pour quelqu un qui veut controler son syndic, entrer au conseil syndical est le levier le plus direct. Page du 28/05/2025, a recouper."
+    },
+    "seuil_consultation_obligatoire_marches": {
+      "valeur": "montant fixe par l assemblee a la majorite de l art. 25",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313574",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 21 : l assemblee arrete un montant des marches et contrats a partir duquel la consultation du conseil syndical est obligatoire. ⚠ si l assemblee ne l a jamais fixe, le syndic n a aucun seuil a respecter : c est une resolution a demander a l ordre du jour."
+    }
+  },
+  "copropriete_fonds_de_travaux": {
+    "constitution_delai_apres_reception": {
+      "valeur": 10,
+      "unite": "ans a compter de la reception des travaux de construction",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043967792",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 14-2-1, version du 01/01/2023 : obligatoire dans les immeubles a destination totale ou partielle d habitation."
+    },
+    "cotisation_minimale_sans_plan": {
+      "valeur": 5,
+      "unite": "pourcent du budget previsionnel",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34026",
+      "date_verifiee": "2026-08-17",
+      "note": "Plancher legal en l absence de plan pluriannuel de travaux adopte. Page du 09/06/2026."
+    },
+    "cotisation_minimale_avec_plan": {
+      "valeur": {
+        "part_des_travaux_du_plan": 2.5,
+        "part_du_budget_previsionnel": 5
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34026",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les deux planchers se cumulent : au moins 2,5 pourcent du montant des travaux prevus dans le plan adopte ET au moins 5 pourcent du budget previsionnel. C est le plus eleve des deux qui commande l appel. Montant superieur possible a la majorite absolue. Page du 09/06/2026."
+    },
+    "suspension_des_cotisations": {
+      "valeur": 50,
+      "unite": "pourcent du montant des travaux du plan",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043967792",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 14-2-1 II : l assemblee vote sur la suspension des cotisations lorsque le fonds excede le budget previsionnel, ou depasse la moitie du montant des travaux du plan lorsqu un plan existe."
+    },
+    "non_remboursement_a_la_vente": {
+      "valeur": "aucun remboursement au vendeur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043967792",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 14-2-1 III : les sommes versees entrent definitivement dans le patrimoine du syndicat et ne sont pas remboursees lors de la cession du lot. ⇒ le vendeur perd sa mise : le fonds de travaux constitue est un argument de PRIX face a l acquereur, pas une creance a reclamer au syndic."
+    }
+  },
+  "copropriete_impayes": {
+    "mise_en_demeure_delai_decheance_du_terme": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043977271",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Art. 19-2, version du 01/01/2023, verbatim : « apres mise en demeure restee infructueuse passe un delai de trente jours, les autres provisions non encore echues (...) ainsi que les sommes restant dues (...) deviennent immediatement exigibles ». ⇒ un seul trimestre impaye peut faire tomber l annee entiere. Applicable aussi aux cotisations du fonds de travaux."
+    },
+    "garantie_du_syndicat": {
+      "valeur": "hypotheque legale speciale sur le lot du debiteur",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2603",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Ce n est plus un privilege immobilier special : le texte de l art. 19 emploie desormais hypotheque legale. Elle donne au syndicat un droit de preference en cas de vente du lot. Page du 02/03/2026."
+    },
+    "hypotheque_delai_inscription": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000039313565",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 19, verbatim : « Aucune inscription ou inscription complementaire ne peut etre requise pour des creances exigibles depuis plus de cinq ans. »"
+    },
+    "prescription_charges_impayees": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2603",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les charges impayees peuvent etre reclamees pendant 5 ans au maximum ; au-dela la dette est prescrite. Argument a soulever face a un rappel de charges anciennes retrouve dans un decompte. Page du 02/03/2026."
+    },
+    "frais_de_mise_en_demeure": {
+      "valeur": "a la charge du coproprietaire defaillant",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2603",
+      "date_verifiee": "2026-08-17",
+      "note": "Les frais de mise en demeure engages par le syndic sont supportes par le seul debiteur, pas par la copropriete. Page du 02/03/2026."
+    }
+  },
+  "copropriete_dpe_et_plan_de_travaux": {
+    "ppt_age_de_l_immeuble": {
+      "valeur": 15,
+      "unite": "ans depuis la reception",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36760",
+      "date_verifiee": "2026-08-17",
+      "note": "Projet de plan pluriannuel de travaux obligatoire en principe pour tous les immeubles a destination totale ou partielle d habitation dont la reception remonte a plus de 15 ans. Page du 08/06/2026."
+    },
+    "ppt_obligatoire_depuis": {
+      "valeur": "1er janvier 2025",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36760",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ La page ne reproduit PAS le calendrier echelonne par nombre de lots souvent cite ailleurs : elle indique une obligation generale depuis cette date. J ai donc retenu la date, pas l echelonnement. Page du 08/06/2026."
+    },
+    "ppt_duree_et_actualisation": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000880200/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 14-2 : echeancier des travaux pour les dix prochaines annees, plan actualise tous les dix ans."
+    },
+    "ppt_majorites": {
+      "valeur": "elaboration du projet a la majorite simple, adoption du plan a la majorite absolue",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36760",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Deux votes distincts, et c est le second qui engage l argent : une fois le plan adopte, la cotisation minimale au fonds de travaux se calcule aussi sur le montant des travaux du plan. Page du 08/06/2026."
+    },
+    "dpe_collectif_calendrier": {
+      "valeur": {
+        "plus_de_200_lots": "1er janvier 2024",
+        "de_50_a_200_lots": "1er janvier 2025",
+        "au_plus_50_lots": "1er janvier 2026"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F37504",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Concerne les immeubles dont le permis de construire a ete depose avant le 1er janvier 2013. Outre-mer repousse a 2028. ⚠ page du 01/01/2026, plus de 6 mois : sujet mouvant, a recouper avant d annoncer une date."
+    },
+    "dpe_collectif_validite": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F37504",
+      "date_verifiee": "2026-08-17",
+      "note": "Renouvellement inutile si un diagnostic realise apres le 1er juillet 2021 classe l immeuble en A, B ou C. Page du 01/01/2026, a recouper."
+    },
+    "dpe_collectif_sanction": {
+      "valeur": "aucune sanction prevue par la loi",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F37504",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Contre-intuitif : l obligation existe mais la loi ne prevoit pas de sanction si la question a bien ete inscrite et debattue en assemblee. La responsabilite du syndic peut en revanche etre engagee si des coproprietaires demontrent un prejudice. ⇒ ne pas menacer d une amende qui n existe pas. Page du 01/01/2026, a recouper."
+    }
   }
 }

@@ -20,7 +20,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PEREMPTION_JOURS = 183
-AUJOURD_HUI = datetime.date(2026, 8, 16)  # ⚠️ à passer en date.today() une fois en CI
+AUJOURD_HUI = datetime.date.today()  # la péremption doit se mesurer au jour où le gate tourne
 
 DOMAINES_ADMIS = (
     "legifrance.gouv.fr", "bofip.impots.gouv.fr", "impots.gouv.fr", "urssaf.fr",
@@ -72,13 +72,23 @@ def nombres(texte):
     #      sous re.I avalait le « n »), et le 462 survivait comme une valeur non sourcée.
     #   2. une énumération d'articles (« articles 54, 55 et 56 ») n'était consommée que
     #      jusqu'au premier numéro ; les suivants passaient pour des valeurs.
-    NUM = r"[LRD]?[\s.-]*\d[\d\s-]*(?-i:[A-Z])?"
+    NUM = r"[LRD]?[\s.\-]*\d[\d\s\-/]*(?-i:[A-Z])?"
     texte = re.sub(
         r"(?:articles?|art\.?|n°|décrets?|lois?|arrêtés?|ordonnances?|CERFA)"
         r"[\s.]*(?:n°)?[\s.]*" + NUM + r"(?:\s*(?:,|et|à)\s*" + NUM + r")*",
         " ", texte, flags=re.I)
     texte = re.sub(r"\b[LRD]\d[\d-]*\b", " ", texte)
+    # Référence de texte écrite en code inline : `L227-9`, `1843-4`, `D221-5`, `726`.
+    # ⚠️ Volontairement ÉTROIT : seul un contenu qui ressemble à une référence est retiré, pour
+    # qu'on ne puisse pas soustraire une vraie valeur au contrôle en l'entourant de backticks.
+    texte = re.sub(r"`\s*(?:art\.?\s*)?[LRDA]?\d[\d.\-]*\s*`", " ", texte)
+    # Numérotation européenne d'un règlement ou d'une directive : 2016/679.
+    texte = re.sub(r"\b\d{4}/\d{1,4}\b", " ", texte)
     texte = re.sub(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b", " ", texte)
+    # Numéro de téléphone français : 10 chiffres commençant par 0, quel que soit le séparateur.
+    # ⚠️ Un numéro reste une valeur À SOURCER — il vit dans le JSON comme les autres — mais il ne
+    # doit pas être découpé en morceaux par le contrôle (« 0-805-160-075 » → « 805 » et « 075 »).
+    texte = re.sub(r"\b0[\s.\-]*(?:\d[\s.\-]*){9}", " ", texte)
     texte = re.sub(r"\b\d{1,2}\s+(?:janvier|février|mars|avril|mai|juin|juillet|"
                    r"août|septembre|octobre|novembre|décembre)\b", " ", texte, flags=re.I)
     trouves = set()
