@@ -20,7 +20,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PEREMPTION_JOURS = 183
-AUJOURD_HUI = datetime.date(2026, 8, 16)  # ⚠️ à passer en date.today() une fois en CI
+AUJOURD_HUI = datetime.date.today()  # la péremption doit se mesurer au jour où le gate tourne
 
 DOMAINES_ADMIS = (
     "legifrance.gouv.fr", "bofip.impots.gouv.fr", "impots.gouv.fr", "urssaf.fr",
