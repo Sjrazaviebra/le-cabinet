@@ -3,6 +3,63 @@
     "role": "Valeurs volatiles du skill impots.",
     "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
     "peremption_mois": 6,
-    "etat": "SQUELETTE - aucune valeur verifiee."
+    "etat": "EN COURS - le calendrier et la correction sont verifies.",
+    "avertissement": "DOMAINE A MILLESIME : baremes, plafonds et DATES changent CHAQUE ANNEE, parfois retroactivement. Toute valeur porte donc son annee dans sa cle ou sa note. Ne jamais actualiser au juge : relire la source."
+  },
+  "declaration_2026_revenus_2025": {
+    "dates_limites": {
+      "valeur": {
+        "papier": "19 mai 2026 a minuit",
+        "en_ligne_dep_01_a_19_et_non_residents": "21 mai 2026 a 23h59",
+        "en_ligne_dep_20_a_54": "28 mai 2026 a 23h59",
+        "en_ligne_dep_55_a_974_et_976": "4 juin 2026 a 23h59"
+      },
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026",
+      "date_verifiee": "2026-08-17",
+      "note": "La date depend du DEPARTEMENT DE RESIDENCE, pas du lieu de travail. ⚠️ La date PAPIER est ANTERIEURE a toutes les dates en ligne - contre-intuitif, et ca piege ceux qui hesitent entre les deux modes. Formulaires papier expedies courant avril aux declarants papier de l annee precedente."
+    },
+    "service_correction_en_ligne": {
+      "valeur": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026",
+      "date_verifiee": null,
+      "note": "⚠️ DEUX SOURCES OFFICIELLES SE CONTREDISENT sur la fenetre de correction des revenus 2025 : la page des modalites annonce 'mi-aout 2026 jusque mi-decembre 2026', une actualite service-public annonce 'du 29 juillet au 30 novembre 2026'. La fenetre est OUVERTE en aout 2026, mais la date de cloture doit etre lue sur impots.gouv.fr. Ne pas trancher entre deux sources officielles divergentes."
+    },
+    "correction_champs_exclus": {
+      "valeur": [
+        "changement de situation familiale (mariage, PACS, rupture de PACS, divorce, deces)",
+        "mise a jour de l etat civil",
+        "designation d un tiers de confiance",
+        "changement d adresse",
+        "ajout ou modification de l adresse d un etudiant"
+      ],
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/je-veux-corriger-la-declaration-que-jai-deja-deposee-comment-proceder",
+      "date_verifiee": "2026-08-17",
+      "note": "LE SERVICE DE CORRECTION TRAITE LES CHIFFRES, PAS L ETAT CIVIL. Pour ces cas il faut une reclamation ou la messagerie securisee. Beaucoup de gens croient leur correction faite alors qu elle portait precisement sur ce que le service refuse."
+    },
+    "declaration_automatique_conditions": {
+      "valeur": [
+        "la declaration preremplie contient TOUS les revenus et charges",
+        "aucun changement de situation signale (adresse, situation familiale, creation d un prelevement a la source)"
+      ],
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026",
+      "date_verifiee": "2026-08-17",
+      "note": "Dite aussi declaration TACITE. NON OBLIGATOIRE : on peut continuer a declarer et corriger comme avant, et les eligibles peuvent la corriger pendant toute la periode declarative jusqu a leur date limite departementale. ⚠️ NE JAMAIS la presenter comme 'rien a faire' : elle signifie que le SILENCE VAUT ACCEPTATION du calcul de l administration. Si un revenu manque ou une reduction n a pas ete demandee, personne ne le corrigera."
+    },
+    "formulaires": {
+      "valeur": {
+        "2042": "declaration principale",
+        "2042-C": "declaration complementaire",
+        "2042-C-PRO": "revenus des professions non salariees",
+        "2042-RICI": "reductions et credits d impot les plus courants"
+      },
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026",
+      "date_verifiee": "2026-08-17",
+      "note": "Le 2042-RICI est l annexe LA PLUS OUBLIEE, et c est celle qui fait baisser l impot. A la question 'comment payer moins', la premiere reponse utile n est pas un montage mais : avez-vous rempli le RICI ?"
+    }
   }
 }
