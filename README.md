@@ -1,21 +1,14 @@
 ![le-cabinet](assets/banner.jpg)
 
-<!-- ⚠️ En-tête en tableau, et c est volontaire : GitHub dessine une bordure sur toute la
-     largeur sous un <h1>. Avec un logo flotte a gauche et plus haut que la ligne de texte,
-     ce trait TRAVERSAIT le logo. La cellule confine la bordure au titre. -->
-<table>
-<tr>
-<td width="112" valign="middle"><img src="assets/logo.png" alt="le-cabinet" width="96"></td>
-<td valign="middle">
-
-# le-cabinet
+<!-- ⚠️ Le logo est EN LIGNE dans le titre, et c est volontaire.
+     Cause du bug precedent : un logo `align="left"` est FLOTTE, donc sorti du flux — la
+     bordure que GitHub dessine sous un <h1> restait a hauteur de texte et TRAVERSAIT la
+     plaque. En ligne, la bordure passe SOUS le logo. Un tableau reglait le trait mais
+     ajoutait un encadrement (GitHub borde les cellules) : ne pas y revenir. -->
+# <img src="assets/logo.png" alt="" width="60"> le-cabinet
 
 **Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
-
-</td>
-</tr>
-</table>
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
