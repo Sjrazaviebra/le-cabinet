@@ -3,6 +3,62 @@
     "role": "Valeurs volatiles du skill logement.",
     "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
     "peremption_mois": 6,
-    "etat": "SQUELETTE - aucune valeur verifiee."
+    "etat": "EN COURS - le depot de garantie est verifie.",
+    "rappel": "La loi du 6 juillet 1989 est tres largement d ORDRE PUBLIC : une clause contraire est reputee non ecrite, meme signee. Verifier la loi AVANT de lire le bail."
+  },
+  "depot_de_garantie": {
+    "plafond_mois_de_loyer": {
+      "valeur": {
+        "logement_vide": 1,
+        "logement_meuble": 2
+      },
+      "unite": "mois de loyer HORS CHARGES",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31269",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond d ORDRE PUBLIC : une clause exigeant davantage est reputee non ecrite, le trop-verse est reclamable. Se calcule sur le loyer NU - l appliquer au loyer charges comprises depasse le maximum legal."
+    },
+    "delai_restitution": {
+      "valeur": {
+        "etats_des_lieux_conformes": "1 mois",
+        "degradations_constatees": "2 mois"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31269",
+      "date_verifiee": "2026-08-17",
+      "note": "Point de depart dans les deux cas : LA REMISE DES CLES. C est l etat des lieux de sortie qui decide du delai applicable."
+    },
+    "penalite_retard_pourcentage": {
+      "valeur": 10,
+      "unite": "% du loyer mensuel hors charges par periode mensuelle commencee",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806696/",
+      "date_verifiee": "2026-08-17",
+      "note": "PERIODE COMMENCEE : un jour de retard sur un nouveau mois declenche la majoration entiere, non proratisee. ⚠️ PIEGE : la majoration N EST PAS DUE si le defaut de restitution vient de ce que le locataire n a pas communique l adresse de son nouveau domicile. D ou le reflexe : transmettre sa nouvelle adresse PAR ECRIT avec preuve de date, en partant."
+    },
+    "provision_immeuble_collectif_pourcentage": {
+      "valeur": 20,
+      "unite": "% du depot de garantie",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806696/",
+      "date_verifiee": "2026-08-17",
+      "note": "En immeuble collectif seulement, jusqu a l arrete annuel des comptes de la copropriete. Regularisation dans le MOIS suivant l approbation definitive des comptes. Deux abus frequents : conserver plus de 20 %, ou ne jamais regulariser."
+    },
+    "seuil_demarche_amiable_prealable_eur": {
+      "valeur": 5000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31269",
+      "date_verifiee": "2026-08-17",
+      "note": "En dessous de 5 000 EUR reclames, une demarche amiable prealable est OBLIGATOIRE avant de saisir le juge (conciliateur, mediation, commission departementale de conciliation). A partir de 5 000 EUR, le juge peut etre saisi directement."
+    },
+    "prescription_ans": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31269",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter du jour ou le depot aurait du etre restitue."
+    }
   }
 }
