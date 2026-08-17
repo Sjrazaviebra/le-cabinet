@@ -1,20 +1,15 @@
-![le-cabinet](assets/banner.jpg)
-
-<table>
-<tr>
-<td width="96" valign="top" style="border: 0;">
-<img src="assets/logo.png" width="96" height="96" alt="">
-</td>
-<td valign="top" style="border: 0;">
-
-# le-cabinet
+<!-- ⚠️ EN-TETE : la banniere EST le titre, et le <h1> a ete retire volontairement.
+     Raison : GitHub dessine une bordure sous tout <h1>/<h2> et SUPPRIME les attributs style
+     des README. Un logo pose a cote du titre etait donc soit traverse par ce trait (flottant),
+     soit encadre (cellule de tableau) — verifie sur le moteur de rendu de GitHub, les deux
+     fois. La seule maitrise visuelle possible est DANS l image.
+     ⚠️ Cout assume : le README n a plus de titre de niveau 1. Le nom est porte par le texte
+     alternatif de la banniere, et le premier titre du plan est « Les neuf roles ».
+     ⛔ Ne pas remettre un logo a cote d un titre : on a fait le tour, ca ne marche pas. -->
+![le-cabinet — droit, fiscalité, entreprise et patrimoine français](assets/banner.jpg)
 
 **Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
-
-</td>
-</tr>
-</table>
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 

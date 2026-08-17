@@ -29,3 +29,8 @@ desktop.ini
 # ⛔ Rappel : .gitignore N'EFFACE RIEN de l'historique. Pour rendre un fichier déjà poussé
 #    réellement privé, il faut réécrire l'historique (git filter-repo) et forcer le push.
 #    Les notes de travail n'ont donc jamais leur place dans ce dépôt : elles vivent ailleurs.
+
+# --- Sorties brutes des generateurs d images ---
+# Ne doivent jamais partir en public sous leur nom de generation.
+Gemini_Generated_Image_*
+*_Generated_Image_*
