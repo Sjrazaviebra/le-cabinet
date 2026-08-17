@@ -34,6 +34,10 @@ DOMAINES_ADMIS = (
     "france-visas.gouv.fr", "diplomatie.gouv.fr", "anil.org", "code.travail.gouv.fr",
     "travail-emploi.gouv.fr", "economie.gouv.fr", "ameli.fr", "defenseurdesdroits.fr",
     "arretonslesviolences.gouv.fr", "e-justice.europa.eu", "formalites.entreprises.gouv.fr",
+    # Domaines des roles financement et patrimoine (ajoutes le 2026-08-17) : la mediation du
+    # credit, le Regafi et la pedagogie investisseurs de l AMF vivent la.
+    "banque-france.fr", "mediateur-credit.banque-france.fr", "abe-infoservice.fr",
+    "orias.fr", "info-retraite.fr", "bpifrance.fr", "eur-lex.europa.eu",
 )
 
 # nombres qu'on ne cherche pas dans le JSON : années, numéros d'article, énumérations
@@ -77,7 +81,7 @@ def nombres(texte):
     texte = re.sub(
         r"(?:articles?|art\.?|n°|décrets?|lois?|arrêtés?|ordonnances?|CERFA"
         r"|CGI|LPF|CCH|CPC|CPCE|ANI)"
-        r"[\s.]*(?:n°)?[\s.]*" + NUM + r"(?:\s*(?:,|et|à)\s*" + NUM + r")*",
+        r"[\s.*_]*(?:n°)?[\s.*_]*" + NUM + r"(?:[\s*_]*(?:,|et|à)[\s*_]*" + NUM + r")*",
         " ", texte, flags=re.I)
     # Reference nue, y compris « L. 3243-2 » avec point et espace (faux positif du 2026-08-17).
     texte = re.sub(r"\b[LRD]\.?\s?\d[\d-]*\b", " ", texte)
