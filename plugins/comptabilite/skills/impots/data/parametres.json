@@ -2147,5 +2147,607 @@
       "date_verifiee": "2026-08-17",
       "note": "★ verbatim : « vous pouvez utiliser les conclusions de ce controle si l administration change de position par la suite ». Demander un controle est donc une facon d obtenir de la securite. Page du 22/06/2021, ancienne : a recouper."
     }
+  },
+  "assurance_vie_rachats": {
+    "seuil_anciennete_8_ans": {
+      "valeur": 8,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041464342/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ 8 ans = duree DU CONTRAT depuis sa souscription, pas anciennete du versement. CGI 125-0 A : 7,5 % lorsque la duree du contrat a ete egale ou superieure a huit ans pour les contrats souscrits a compter du 1er janvier 1990. Un versement fait hier sur un contrat de 12 ans est deja dans le regime des plus de 8 ans."
+    },
+    "seuil_anciennete_4_ans": {
+      "valeur": 4,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lassurance-vie-et-le-pea-0",
+      "date_verifiee": "2026-08-17",
+      "note": "Palier intermediaire qui ne concerne QUE les primes versees avant le 27 septembre 2017 : 35 % avant la fin de la 4e annee, 15 % entre la 4e et la 8e annee. Page impots.gouv.fr du 08/04/2026."
+    },
+    "duree_6_ans_contrats_1983_1989": {
+      "valeur": 6,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041464342/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Pour les contrats souscrits entre le 1er janvier 1983 et le 31 decembre 1989 le seuil du taux reduit est de SIX ans, pas huit. CGI 125-0 A verbatim : 7,5 % lorsque la duree du contrat a ete egale ou superieure a six ans pour les bons ou contrats souscrits entre le 1er janvier 1983 et le 31 decembre 1989 et a huit ans pour les contrats souscrits a compter du 1er janvier 1990."
+    },
+    "assiette_rachat_partiel": {
+      "valeur": "montant du rachat partiel - [total des primes versees a la date du rachat partiel x (montant du rachat partiel / valeur de rachat totale a la date du rachat partiel)]",
+      "unite": "formule",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/3951-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Seule la part de PRODUITS est imposable, jamais le capital. Formule verbatim BOI-RPPM-RCM-20-10-20-50 § 80 (doc du 30/06/2022). Consequence : un rachat partiel n est JAMAIS impose sur son montant total - croyance inverse tres repandue."
+    }
+  },
+  "assurance_vie_taux_impot": {
+    "taux_35_avant_4_ans": {
+      "valeur": 35,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lassurance-vie-et-le-pea-0",
+      "date_verifiee": "2026-08-17",
+      "note": "Prelevement forfaitaire liberatoire, primes versees AVANT le 27 septembre 2017, rachat avant la fin de la 4e annee. Verbatim impots.gouv.fr : 35 % lorsque le retrait a lieu avant la fin de la 4e annee."
+    },
+    "taux_15_entre_4_et_8_ans": {
+      "valeur": 15,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/lassurance-vie-et-le-pea-0",
+      "date_verifiee": "2026-08-17",
+      "note": "Prelevement forfaitaire liberatoire, primes versees AVANT le 27 septembre 2017, rachat entre la 4e et la 8e annee. Verbatim : 15 % lorsque le retrait a lieu entre la 4e et la 8e annee."
+    },
+    "taux_7_5_apres_8_ans": {
+      "valeur": 7.5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "date_verifiee": "2026-08-17",
+      "note": "Contrat de plus de 8 ans. Primes anterieures au 27/09/2017 : prelevement forfaitaire LIBERATOIRE de 7,5 %. Primes du 27/09/2017 ou apres : 7,5 % pour les interets correspondant aux primes n excedant pas 150 000 EUR. Fiche verifiee le 15/04/2026."
+    },
+    "taux_12_8": {
+      "valeur": 12.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "date_verifiee": "2026-08-17",
+      "note": "Primes versees a compter du 27 septembre 2017 : 12,8 % si le contrat a moins de 8 ans, et 12,8 % au-dela du seuil de 150 000 EUR si le contrat a plus de 8 ans. Preleve d abord comme prelevement forfaitaire NON liberatoire (acompte) puis regularise a la declaration ; l excedent eventuel est restitue."
+    },
+    "seuil_150000_encours": {
+      "valeur": 150000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/11224-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le seuil porte sur les PRIMES VERSEES, pas sur la valeur du contrat ni sur les gains. Verbatim BOI-RPPM-RCM-20-15 : primes versees a compter du 27 septembre 2017 et qui, au 31 decembre de l annee qui precede le fait generateur de l imposition des produits concernes, n ont pas deja fait l objet d un remboursement en capital. Apprecie sur l ENSEMBLE des contrats du contribuable (verbatim F22414 : Le montant de 150 000 EUR est calcule pour l ensemble de vos contrats d assurance vie, si vous en detenez plusieurs). Doc BOFiP du 21/06/2021."
+    },
+    "prorata_7_5_au_dela_150000": {
+      "valeur": "produits x (150 000 EUR - primes anterieures au 27/09/2017 non remboursees) / primes versees a compter du 27/09/2017 non remboursees",
+      "unite": "formule",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/11224-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Fraction des produits qui reste au taux de 7,5 % quand les primes depassent le seuil. Formule verbatim BOI-RPPM-RCM-20-15 § 190. Les primes anterieures au 27/09/2017 CONSOMMENT le seuil : ce n est pas un seuil reserve aux versements recents."
+    }
+  },
+  "assurance_vie_abattement_annuel": {
+    "abattement_personne_seule": {
+      "valeur": 4600,
+      "unite": "EUR par an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041464342/",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim CGI 125-0 A : il est opere, pour l ensemble des bons ou contrats detenus par un meme contribuable, un abattement annuel de 4 600 EUR pour les contribuables celibataires, veufs ou divorces. ⚠ Porte sur les PRODUITS, seulement apres 8 ans, une fois par an, tous contrats confondus."
+    },
+    "abattement_couple": {
+      "valeur": 9200,
+      "unite": "EUR par an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041464342/",
+      "date_verifiee": "2026-08-17",
+      "note": "9 200 EUR pour les contribuables maries soumis a imposition commune. F22414 precise aussi maries ou pacses soumis a imposition commune."
+    },
+    "ordre_imputation": {
+      "valeur": "primes versees jusqu au 26 septembre 2017 d abord, puis primes versees a compter du 27 septembre 2017",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/3951-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L abattement s impute PRIORITAIREMENT sur les produits des primes anciennes. BOI-RPPM-RCM-20-10-20-50 I-C-1. L ordre n est pas neutre quand les deux regimes coexistent sur le meme contrat."
+    },
+    "abattement_hors_prelevements_sociaux": {
+      "valeur": "l abattement ne reduit pas l assiette des prelevements sociaux",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/3951-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim BOI-RPPM-RCM-20-10-20-50 : Il n est pas tenu compte de cet abattement pour la determination des prelevements sociaux. C est la moitie de l explication du faux apres 8 ans c est exonere."
+    }
+  },
+  "assurance_vie_prelevements_sociaux": {
+    "taux_global_assurance_vie": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim F22414 : Les gains tires d un contrat d assurance-vie sont TOUJOURS soumis aux prelevements sociaux (CSG, CRDS) au taux de 17,2 %. Dus meme quand l impot ne l est pas : abattement de 4 600/9 200 EUR, exoneration pour licenciement ou invalidite. Fiche F2329 verifiee le 30/06/2026."
+    },
+    "csg_assurance_vie": {
+      "valeur": 9.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "Composante CSG du taux de 17,2 % applicable a l assurance-vie en 2026."
+    },
+    "crds": {
+      "valeur": 0.5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "Composante CRDS."
+    },
+    "prelevement_de_solidarite": {
+      "valeur": 7.5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "Composante prelevement de solidarite. ⚠ Ne pas confondre avec le taux d IMPOT de 7,5 % apres 8 ans : meme chiffre, nature differente."
+    },
+    "taux_cas_general_produits_placement_2026": {
+      "valeur": 18.6,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Taux 2026 du cas general des produits de placement (CSG 10,6 + CRDS 0,5 + solidarite 7,5). ⚠ NE S APPLIQUE PAS a l assurance-vie, qui garde 9,2 % de CSG soit 17,2 % au total selon le tableau Assurance vie de la fiche F2329 verifiee le 30/06/2026. Piege d actualite : appliquer 18,6 % a un rachat serait faux. A recouper au prochain millesime."
+    },
+    "csg_cas_general_2026": {
+      "valeur": 10.6,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "Taux de CSG du cas general des produits de placement en 2026. La fiche indique qu il ne s applique pas a l assurance-vie."
+    }
+  },
+  "assurance_vie_dispense_acompte": {
+    "rfr_personne_seule": {
+      "valeur": 25000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Dispense du prelevement forfaitaire NON liberatoire (12,8 % ou 7,5 %) si le revenu fiscal de reference de l avant-derniere annee est inferieur a 25 000 EUR pour une personne seule. Droit qui se perd faute d etre demande a temps."
+    },
+    "rfr_couple": {
+      "valeur": 50000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "date_verifiee": "2026-08-17",
+      "note": "Meme dispense, seuil de revenu fiscal de reference pour un couple."
+    },
+    "date_limite_demande": {
+      "valeur": "30 novembre de l annee precedant celle du paiement",
+      "unite": "date limite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ La demande se fait AUPRES DE L ASSUREUR et AVANT le rachat. Passe le 30 novembre, l acompte est preleve et il faut attendre la declaration pour se faire restituer. Fiche verifiee le 15/04/2026."
+    }
+  },
+  "assurance_vie_exonerations": {
+    "evenements_exonerants": {
+      "valeur": "licenciement, mise a la retraite anticipee, invalidite de deuxieme ou troisieme categorie, liquidation judiciaire",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041464342/",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim CGI 125-0 A : Les produits en cause sont exoneres, quelle que soit la duree du contrat, lorsque celui-ci se denoue par le versement d une rente viagere ou que ce denouement resulte du licenciement du beneficiaire des produits ou de sa mise a la retraite anticipee ou de son invalidite ou de CELLE DE SON CONJOINT. ★ L evenement peut donc frapper le conjoint ou le partenaire de Pacs et pas seulement le titulaire (F22414 : Epoux ou partenaire de Pacs du souscripteur)."
+    },
+    "delai_pour_racheter": {
+      "valeur": "avant la fin de l annee qui suit celle de l evenement",
+      "unite": "delai",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22414",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ ★★ L exoneration se PERD si le rachat est fait trop tard. Verbatim F22414 : avant la fin de l annee qui suit celle du licenciement (idem retraite anticipee, reconnaissance d invalidite, liquidation judiciaire). Et l exoneration ne vise que l IMPOT : les prelevements sociaux de 17,2 % restent dus."
+    }
+  },
+  "assurance_vie_succession_avant_70_ans": {
+    "abattement_par_beneficiaire": {
+      "valeur": 152500,
+      "unite": "EUR par beneficiaire",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Primes versees AVANT le 70e anniversaire de l assure, contrat souscrit a compter du 20/11/1991. Verbatim notice 2705-A-NOT-SD (10-2025) : Exoneration a hauteur de 152 500 EUR ... L abattement de 152 500 EUR est applicable PAR BENEFICIAIRE. Regime de l article 990 I du CGI, distinct des droits de succession."
+    },
+    "taux_20": {
+      "valeur": 20,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim notice 2705-A-NOT-SD : 20 % sur la fraction de la part taxable de chaque beneficiaire inferieure ou egale a 700 000 EUR (regime applicable a compter du 01/07/2014)."
+    },
+    "taux_31_25": {
+      "valeur": 31.25,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim notice 2705-A-NOT-SD : 31,25 % au-dela de 700 000 EUR."
+    },
+    "seuil_700000": {
+      "valeur": 700000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le seuil s apprecie sur la PART TAXABLE DE CHAQUE BENEFICIAIRE, donc apres l abattement de 152 500 EUR et beneficiaire par beneficiaire - pas sur le capital global du contrat. Notice du 10/2025, a recouper."
+    },
+    "contrats_avant_20_11_1991": {
+      "valeur": "exoneration totale des primes versees jusqu au 12 octobre 1998 inclus, quel que soit l age de l assure",
+      "unite": "regime",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Pour un contrat souscrit AVANT le 20/11/1991 et non modifie substantiellement, la notice 2705-A-NOT-SD indique Exoneration pour les primes versees jusqu au 12 octobre 1998 inclus, QUEL QUE SOIT L AGE DE L ASSURE : le seuil des 70 ans ne s y applique pas et aucune declaration 2705-A n est a deposer. ★ Et la seule prorogation de la duree du contrat ne peut pas etre analysee comme une modification substantielle."
+    }
+  },
+  "assurance_vie_succession_apres_70_ans": {
+    "abattement_global": {
+      "valeur": 30500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 757 B du CGI. Verbatim notice 2705-A-NOT-SD : L abattement de 30 500 EUR est GLOBAL et s applique a l ensemble des contrats souscrits par le defunt. L abattement en fonction du lien de parente entre le defunt et le beneficiaire peut S AJOUTER a l abattement de 30 500 EUR. ⚠ A partager entre tous les beneficiaires, contrairement aux 152 500 EUR qui sont par beneficiaire."
+    },
+    "age_pivot": {
+      "valeur": 70,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L age s apprecie a la date de CHAQUE VERSEMENT, pas au deces : un meme contrat peut relever des deux regimes. ⚠ Exception PER : pour un plan d epargne retraite non denoue, la notice retient l age de l assure AU JOUR DU DECES, pas a la date des versements - voir epargne-retraite-per.md."
+    },
+    "assiette_limitee_aux_primes": {
+      "valeur": "seule la fraction des PRIMES versees apres 70 ans excedant 30 500 EUR est soumise aux droits de mutation par deces",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Ce sont les PRIMES qui sont taxees, pas le capital verse : les produits attaches aux primes versees apres 70 ans echappent aux droits de succession. Et verbatim : Dans l hypothese ou les capitaux a verser par l organisme d assurance au titre des primes versees apres le 70e anniversaire de l assure sont INFERIEURS a ces primes, l assiette des droits est limitee a ces capitaux."
+    }
+  },
+  "assurance_vie_conjoint_pacs": {
+    "exoneration_conjoint_partenaire": {
+      "valeur": "exoneration totale du prelevement de l article 990 I et des droits de mutation par deces",
+      "unite": "regime",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-beneficiaire-dune-assurance-vie-comment-sont-imposees",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim impots.gouv.fr : Le conjoint survivant et le partenaire lie au defunt par un PACS sont exoneres de ce prelevement, comme pour les droits de succession lorsque le deces est survenu apres le 22 aout 2007. ⚠ Page publiee le 12/07/2016 et modifiee le 04/07/2022 : plus de 6 mois, a recouper. Le concubin n est PAS concerne."
+    },
+    "dispense_declaration_conjoint_pacs": {
+      "valeur": "dispense de declaration 2705-A pour les avoirs verses par un organisme d assurance a compter du 1er janvier 2018 au conjoint survivant ou au partenaire de Pacs domicilie en France",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Ne pas confondre les deux : l exoneration de FOND vient de la loi du 22 aout 2007, la dispense de FORMALITE vaut pour les avoirs verses a compter du 1er janvier 2018 et suppose le domicile en France."
+    }
+  },
+  "assurance_vie_declaration_deces": {
+    "formulaire": {
+      "valeur": "2705-A",
+      "unite": "formulaire",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Declaration partielle de succession - assurance-vie, a deposer au service charge de l enregistrement du dernier domicile du defunt. ⚠ Un formulaire PAR ORGANISME D ASSURANCE, deposes en meme temps."
+    },
+    "delai_depot_metropole": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim notice 2705-A-NOT-SD : la declaration partielle de succession-assurance-vie doit etre deposee dans les 6 mois suivant le deces si celui-ci est survenu en France metropolitaine. Un retard peut donner lieu au paiement de penalites."
+    },
+    "delais_outre_mer": {
+      "valeur": {
+        "guadeloupe_martinique_guyane_reunion_mayotte_deces_dans_le_departement": 6,
+        "autres_cas": 12,
+        "reunion_ou_mayotte_deces_hors_zone_listee": 24
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Delais speciaux de la notice 2705-A-NOT-SD. Le delai de 24 mois vise La Reunion et Mayotte quand le deces est survenu ailleurs qu a Madagascar, aux Comores ou a l Ile Maurice, en Europe ou en Afrique."
+    },
+    "certificat_obligatoire_pour_debloquer": {
+      "valeur": "le certificat d acquittement ou de non-exigibilite delivre sur le formulaire 2705-A doit etre presente a l assureur pour obtenir le versement du capital",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim notice : Vous devez obligatoirement presenter ce certificat a l organisme d assurance afin d obtenir le versement du capital qui vous est du ... Des lors, l organisme d assurance NE PEUT PAS REFUSER le debloquage des fonds lorsque le beneficiaire presente le formulaire 2705-A complete par l administration. C est l argument opposable a un assureur qui bloque."
+    },
+    "dispense_certificat_ligne_directe": {
+      "valeur": 7600,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/formulaires/2705-sd/2025/2705-sd_4290.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Dispense de certificat quand les sommes dues par les assureurs n excedent pas 7 600 EUR et reviennent a des successibles en ligne directe n ayant pas a l etranger leur domicile. Subordonnee a une DEMANDE ECRITE du beneficiaire attestant que l ensemble des indemnites n excede pas 7 600 EUR."
+    }
+  },
+  "cehr_contribution_exceptionnelle_hauts_revenus": {
+    "seuil_personne_seule": {
+      "valeur": 250000,
+      "unite": "EUR de revenu fiscal de reference",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31130",
+      "date_verifiee": "2026-08-17",
+      "note": "Celibataire veuf separe ou divorce. Millesimes revenus 2025 et 2026. Article 223 sexies du CGI, version en vigueur depuis le 01/01/2018 (verifie sur Legifrance). ★ Verbatim de la fiche   Ces seuils d imposition n augmentent pas si vous avez une ou plusieurs personnes a charge   ⇒ le quotient familial ne joue AUCUN role sur le seuil de la CEHR."
+    },
+    "seuil_couple_imposition_commune": {
+      "valeur": 500000,
+      "unite": "EUR de revenu fiscal de reference",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31130",
+      "date_verifiee": "2026-08-17",
+      "note": "Maries ou pacses soumis a imposition commune. Exactement le double du seuil individuel ⇒ pas de penalite ni de prime au mariage sur ce point."
+    },
+    "taux_premiere_tranche": {
+      "valeur": 3,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036427364",
+      "date_verifiee": "2026-08-17",
+      "note": "S applique a la fraction de RFR de 250 001 a 500 000 EUR (personne seule) ou de 500 001 a 1 000 000 EUR (couple). Taux marginal sur une FRACTION, jamais sur la totalite du RFR."
+    },
+    "taux_seconde_tranche": {
+      "valeur": 4,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036427364",
+      "date_verifiee": "2026-08-17",
+      "note": "Fraction de RFR superieure a 500 000 EUR (personne seule) ou a 1 000 000 EUR (couple)."
+    },
+    "borne_haute_premiere_tranche_couple": {
+      "valeur": 1000000,
+      "unite": "EUR de revenu fiscal de reference",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036427364",
+      "date_verifiee": "2026-08-17",
+      "note": "Limite entre le taux de 3 % et le taux de 4 % pour un couple soumis a imposition commune."
+    },
+    "lissage_coefficient_de_declenchement": {
+      "valeur": 1.5,
+      "unite": "multiple de la moyenne des RFR des deux annees precedentes",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/7804-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim BOFiP BOI-IR-CHR   le revenu fiscal de reference de l annee d imposition doit etre superieur ou egal a une fois et demie la moyenne des revenus fiscaux de reference des deux annees precedentes  . Ecrit  une fois et demie  dans le texte."
+    },
+    "lissage_diviseur_et_multiplicateur": {
+      "valeur": 2,
+      "unite": "sans unite",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/bofip/7804-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "Formule BOFiP   Base = [(RFR N) - (Moy RFR N-1/N-2)] / 2 + (Moy RFR N-1/N-2)  puis  Cotisation = (Bareme CHR x Base) x 2 . La fraction excedentaire est divisee par deux, la cotisation supplementaire est multipliee par deux."
+    },
+    "lissage_nombre_annees_de_reference": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036427364",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Condition bloquante   le RFR de CHACUNE des deux annees precedentes doit etre inferieur ou egal au seuil (250 000 ou 500 000 EUR). ⇒ le lissage ne sert QU AU pic isole   quelqu un deja au-dessus du seuil l annee precedente en est exclu. Troisieme condition   avoir ete passible de l IR ces deux annees pour plus de la moitie de ses revenus. ⚠ Le lissage se DEMANDE au centre des finances publiques, il n est pas automatique."
+    },
+    "acompte": {
+      "valeur": "aucun acompte   recouvree avec l impot sur le revenu",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31130",
+      "date_verifiee": "2026-08-17",
+      "note": "Il n existe AUCUN acompte de CEHR. Elle est declaree controlee et recouvree comme l impot sur le revenu (article 223 sexies I 2) et son montant figure sur l avis d impot sur le revenu. ⇒ ne pas confondre avec l acompte de CDHR de decembre."
+    }
+  },
+  "revenu_fiscal_de_reference": {
+    "abattement_dividendes_reintegre": {
+      "valeur": 40,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13216",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le RFR n est PAS le revenu imposable   il part du revenu net imposable puis y REAJOUTE certains revenus exoneres, certains revenus soumis a prelevement liberatoire, certains abattements dont l abattement de 40 % sur les dividendes, certaines charges deduites du revenu global dont les cotisations et primes d epargne retraite, et les plus-values immobilieres taxables. ⇒ une deduction qui baisse l impot ne baisse pas forcement le RFR. ⚠ La liste exacte est fixee par l article 1417 IV 1 du CGI   a recouper pour un cas precis."
+    }
+  },
+  "cdhr_contribution_differentielle_hauts_revenus": {
+    "taux_minimal_d_imposition": {
+      "valeur": 20,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim FAQ impots.gouv.fr   la contribution differentielle sur les hauts revenus (CDHR) assure une imposition minimale de 20 % des plus hauts revenus  . Ce n est pas une tranche de plus mais un PLANCHER   la contribution comble l ecart."
+    },
+    "seuil_personne_seule": {
+      "valeur": 250000,
+      "unite": "EUR de RFR retraite",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Meme chiffre que la CEHR mais PAS la meme assiette   ⚠ verbatim FAQ   le RFR a prendre en compte pour la CDHR et la CEHR n est pas le meme  . Il faut aussi etre resident fiscal francais et avoir un taux moyen d imposition inferieur a 20 %."
+    },
+    "seuil_couple_imposition_commune": {
+      "valeur": 500000,
+      "unite": "EUR de RFR retraite",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Contribuables soumis a une imposition commune."
+    },
+    "decote_borne_haute_personne_seule": {
+      "valeur": 330000,
+      "unite": "EUR de RFR retraite",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim FAQ   un mecanisme de decote est prevu lorsque le revenu fiscal annuel est inferieur a 330 000 EUR pour une personne seule, et a 660 000 EUR pour un couple  . ★ C est le lissage d entree dans le dispositif   au seuil la contribution est annulee, elle monte progressivement jusqu a la borne haute. Millesime revenus 2025, confirme par l article 10 de la loi de finances pour 2025."
+    },
+    "decote_borne_haute_couple": {
+      "valeur": 660000,
+      "unite": "EUR de RFR retraite",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Couples maries ou pacses. Millesime revenus 2025."
+    },
+    "decote_coefficient": {
+      "valeur": 82.5,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Formule officielle du schema explicatif   Decote = RFR retraite x 20 % - [82,5 % [RFR retraite - abattement]]  avec abattement de 250 000 EUR (personne seule) ou 500 000 EUR (couple). Les bornes sont calibrees pour que la decote soit totale au seuil et nulle a la borne haute."
+    },
+    "majoration_forfaitaire_par_personne_a_charge": {
+      "valeur": 1500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "S ajoute au SECOND terme de la difference, celui qui est deduit ⇒ la majoration reduit la contribution. ★ Contraste avec la CEHR, dont les seuils ignorent totalement les personnes a charge. Millesime revenus 2025."
+    },
+    "majoration_forfaitaire_imposition_commune": {
+      "valeur": 12500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Pour les contribuables soumis a imposition commune, dans le second terme deduit. Millesime revenus 2025."
+    },
+    "acompte_pourcentage": {
+      "valeur": 95,
+      "unite": "% du montant estime par le contribuable",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "⏱ Le contribuable estime LUI MEME sa contribution et verse 95 % en decembre, avant meme de declarer ses revenus. Un simulateur officiel est adapte pour ce calcul."
+    },
+    "acompte_calendrier": {
+      "valeur": "du 1er au 15 decembre de l annee des revenus",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31130",
+      "date_verifiee": "2026-08-17",
+      "note": "⏱ Revenus 2025   acompte verse entre le 1er et le 15 decembre 2025, complement possible jusqu au 24 decembre 2025 inclus. Revenus 2026   declaration et acompte entre le 1er et le 15 decembre 2026 (fiche service-public du 15/04/2026 et article 2 de la loi de finances pour 2026). ⇒ echeance vivante   c est la seule action a calendrier court de tout le fichier."
+    },
+    "majoration_en_cas_de_defaut_ou_d_insuffisance": {
+      "valeur": 20,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim FAQ   Des penalites prenant la forme d une majoration de 20 % sont prevues   en cas de defaut ou de retard de paiement, et lorsque l acompte verse s avere inferieur de plus de 20 % a 95 % du montant de la contribution reellement due. ★★ Le risque est ASYMETRIQUE   sous-estimer est sanctionne, l excedent est simplement regularise a la taxation. ⇒ mieux vaut estimer haut."
+    },
+    "tolerance_sur_l_insuffisance_d_acompte": {
+      "valeur": 20,
+      "unite": "% d ecart tolere sous les 95 % dus",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "La majoration se declenche seulement si l acompte verse est inferieur de plus de 20 % a 95 % de la contribution reellement due. Situation appreciee a l issue de la campagne declarative du printemps suivant."
+    },
+    "seuil_de_non_paiement_de_l_acompte": {
+      "valeur": 5,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "Si le montant a payer est nul ou inferieur a 5 EUR, un message s affiche et la declaration est historisee. Si la simulation donne zero, aucune declaration d acompte n est exigee."
+    },
+    "revenus_exceptionnels_fraction_retenue": {
+      "valeur": "1/4",
+      "unite": "fraction du montant",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/sites/default/files/media/1_metier/1_particulier/EV/1_declarer/111_cdhr/faq_cdhr.pdf",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE mecanisme utile pour une cession ou une indemnite. Verbatim FAQ   les revenus exceptionnels qui par leur nature ne sont pas susceptibles d etre recueillis annuellement et dont le montant depasse la moyenne des revenus nets des trois dernieres annees sont retenus pour le quart de leur montant dans le calcul de l assiette de la CDHR. Le schema precise que l impot se rapportant a ces revenus est lui aussi retenu pour le quart de son montant. ⚠ Il faut utiliser les rubriques dediees du parcours en ligne, sinon rien ne s applique."
+    },
+    "condition_de_fin_du_dispositif": {
+      "valeur": 3,
+      "unite": "% du produit interieur brut (deficit public)",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31130",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ La CDHR n a PAS de date de fin, elle a une condition de fin. Verbatim fiche service-public du 15/04/2026   Cette contribution doit s appliquer jusqu a l imposition des revenus de l annee pour laquelle sera constate un deficit du budget national inferieur a 3 % du produit interieur brut (PIB)  . Confirme par l article 2 IV A de la loi de finances pour 2026. ⇒ personne ne peut dire d avance quel sera le dernier millesime concerne."
+    },
+    "millesimes_en_vigueur": {
+      "valeur": "revenus 2025 et revenus 2026",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31130",
+      "date_verifiee": "2026-08-17",
+      "note": "Creee par l article 10 de la loi de finances pour 2025 (article 224 du CGI) et applicable a la seule imposition des revenus 2025 dans le texte d origine   verbatim Legifrance   Les I et II du present article sont applicables a l imposition des revenus de l annee 2025  . Prorogee et modifiee par l article 2 de la loi de finances pour 2026. Verbatim fiche du 15/04/2026   Elle s applique pour l imposition des revenus de 2025 et de 2026  ."
+    }
+  },
+  "cdhr_parametres_millesime_2026_non_confirmes": {
+    "assiette_rfr_retraite_2026": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155",
+      "date_verifiee": null,
+      "note": "⚠ L article 2 de la loi de finances pour 2026 MODIFIE le II de l article 224 du CGI, c est a dire la definition du revenu retraite qui sert d assiette. Le detail des retraitements n a pas pu etre lu sur la page Legifrance de la loi. ⛔ Ne pas reutiliser le schema des retraitements de la FAQ de decembre 2025 pour les revenus 2026 sans verification."
+    },
+    "bornes_de_decote_2026": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155",
+      "date_verifiee": null,
+      "note": "Non confirmees pour le millesime revenus 2026. Les valeurs de 330 000 et 660 000 EUR sont etablies pour les revenus 2025 seulement."
+    },
+    "majorations_forfaitaires_2026": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155",
+      "date_verifiee": null,
+      "note": "Non confirmees pour le millesime revenus 2026. Les montants de 1 500 et 12 500 EUR sont etablis pour les revenus 2025 seulement."
+    },
+    "doctrine_bofip_cdhr": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://bofip.impots.gouv.fr/",
+      "date_verifiee": null,
+      "note": "Aucun document BOFiP consacre a la CDHR n a ete trouve lors de la verification du 2026-08-17. La doctrine opposable manque donc, alors qu elle existe pour la CEHR (BOI-IR-CHR)."
+    }
+  },
+  "articulation_avec_le_prelevement_forfaitaire_unique": {
+    "taux_ir_du_pfu": {
+      "valeur": 12.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2613",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ C est l explication de la surprise CDHR. Verbatim fiche du 15/04/2026   Le prelevement forfaitaire unique est constitue de l impot sur le revenu (12,8 %)  . Un contribuable dont le revenu vient surtout de placements imposes au PFU a un impot sur le revenu proche de 12,8 % de son revenu, donc un taux moyen inferieur au plancher de 20 % ⇒ la CDHR comble l ecart. Il a deja paye, et c est PARCE QU il a paye au forfait plutot qu au bareme qu il est rattrape. Detail du PFU dans revenus-financiers.md."
+    }
   }
 }
