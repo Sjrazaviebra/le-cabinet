@@ -1,11 +1,16 @@
 ![le-cabinet](assets/banner.jpg)
 
-<!-- ⚠️ Le logo est EN LIGNE dans le titre, et c est volontaire.
-     Cause du bug precedent : un logo `align="left"` est FLOTTE, donc sorti du flux — la
-     bordure que GitHub dessine sous un <h1> restait a hauteur de texte et TRAVERSAIT la
-     plaque. En ligne, la bordure passe SOUS le logo. Un tableau reglait le trait mais
-     ajoutait un encadrement (GitHub borde les cellules) : ne pas y revenir. -->
-# <img src="assets/logo.png" alt="" width="60"> le-cabinet
+<!-- ⚠️ Le logo est EN LIGNE dans le titre, et c est volontaire. Trois rendus possibles sur
+     GitHub, et un seul est propre :
+       1. logo FLOTTE (align="left") -> la bordure que GitHub dessine sous un <h1> reste a
+          hauteur de texte et TRAVERSE la plaque. Rejete.
+       2. logo dans une CELLULE de tableau -> le trait est confine, mais GitHub borde les
+          cellules et l en-tete se retrouve ENCADRE. On ne peut pas l enlever : les attributs
+          `style` sont supprimes par le bac a sable de GitHub. Rejete.
+       3. logo EN LIGNE dans le <h1> -> il est dans le flux, la boite du titre grandit, et la
+          bordure passe SOUS le logo. Retenu.
+     ⛔ Ne pas "simplifier" en remettant un flottant ou un tableau. -->
+# <img src="assets/logo.png" alt="" width="84"> le-cabinet
 
 **Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
