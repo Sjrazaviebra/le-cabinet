@@ -769,5 +769,47 @@
       "date_verifiee": null,
       "note": "★ LE SEUIL QUI CHANGE LA NATURE DU DROIT : avant 5 ans le sejour est adosse a une ACTIVITE, apres il est AUTONOME - plus aucune verification d activite. ⇒ Qui approche des 5 ans doit pouvoir PROUVER LA CONTINUITE de sa residence. ⚠️ Page source du 2025-06-11 : a recouper."
     }
+  },
+  "etat_civil": {
+    "sens_de_circulation": {
+      "valeur": "acte ETRANGER produit en France = legalisation (sauf dispense) ; acte FRANCAIS produit a l etranger = legalisation ou apostille selon le pays",
+      "unite": "regle de lecture",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L APOSTILLE APPARTIENT AU SECOND CAS. « Comment apostiller mon acte de naissance etranger » est une question mal posee : l apostille se demande dans le pays qui a ETABLI l acte. Poser la question du sens de circulation evite des semaines d erreur de guichet."
+    },
+    "legalisation_acte_etranger": {
+      "valeur": "double legalisation : pre-legalisation par l autorite etrangere, puis legalisation par l ambassadeur ou le chef de poste consulaire francais",
+      "unite": "procedure",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": null,
+      "note": "★ « Double » = deux guichets, deux delais, deux pays. Qui decouvre cette etape trois semaines avant un rendez-vous en prefecture est deja en retard ⇒ premiere chose a anticiper dans un dossier reposant sur des actes etrangers. Page du 2025-10-30, a recouper."
+    },
+    "dispenses_de_legalisation": {
+      "valeur": "certains pays par convention internationale ; les documents de l Union europeenne se presentent sans formalite",
+      "unite": "regle",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": null,
+      "note": "⛔ NE JAMAIS conclure « il faut legaliser » ni « c est dispense » sans consulter le TABLEAU RECAPITULATIF PAR PAYS du ministere de l Europe et des Affaires etrangeres."
+    },
+    "traduction": {
+      "valeur": "traduction en francais par un traducteur habilite, AVANT les demarches de legalisation",
+      "unite": "regle",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": null,
+      "note": "Exception : pas de traduction necessaire pour un EXTRAIT PLURILINGUE d acte de naissance ou de mariage dont l une des langues est le francais, pour un majeur. ★ Demander l extrait plurilingue a l etat civil etranger, quand il existe, supprime une traduction payante et un delai - personne ne le propose spontanement."
+    },
+    "apostille_actes_francais_autorite_competente": {
+      "valeur": "les NOTAIRES depuis le 2025-05-01, via 15 conseils regionaux ou chambres interdepartementales, en remplacement des procureurs generaux des 33 cours d appel",
+      "unite": "autorite competente",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/A18240",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ TOUT GUIDE ANTERIEUR A MAI 2025 ENVOIE AU MAUVAIS GUICHET. Type d information qui rend un dossier faux sans qu aucune regle de fond n ait change - raison d etre du datage des sources dans ce depot."
+    }
   }
 }

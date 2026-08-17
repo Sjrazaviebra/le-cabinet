@@ -100,6 +100,13 @@ comme une réponse.
 |---|---|
 | Regroupement familial, conjoint de Français, PACS, enfants | `references/famille.md` |
 
+★★ **Si la personne dit que son titre dépend de son conjoint et qu'il y a des violences, allez
+directement dans `references/famille.md`, section « la protection des victimes de violences ».**
+Une carte de résident est prévue au bénéfice d'une ordonnance de protection, et **le préfet ne peut
+pas la refuser pour rupture de la vie commune**. Beaucoup de gens restent dans un domicile dangereux
+en croyant l'inverse : c'est l'information la plus utile de tout ce skill. La procédure de protection
+elle-même relève du rôle **`famille`**, et le **3919** passe avant toute démarche administrative.
+
 ### ⭐ Devenir français
 
 | Sujet | Fichier |
