@@ -3,6 +3,79 @@
     "role": "Valeurs volatiles du skill famille.",
     "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
     "peremption_mois": 6,
-    "etat": "SQUELETTE - aucune valeur verifiee."
+    "etat": "EN COURS - le volet violences est verifie.",
+    "avertissement": "Les NUMEROS D URGENCE de ce fichier sont critiques : un numero faux serait pire qu absent. Ils ont ete releves sur arretonslesviolences.gouv.fr. Toute modification exige une nouvelle verification a la source, jamais de memoire."
+  },
+  "urgence": {
+    "numeros": {
+      "valeur": {
+        "police_gendarmerie": "17",
+        "urgence_europeenne": "112",
+        "samu": "15",
+        "pompiers": "18",
+        "114": "appel ou SMS, 24h/24, personnes sourdes, malentendantes ou empechees de parler"
+      },
+      "a_verifier": false,
+      "source": "https://arretonslesviolences.gouv.fr/besoin-d-aide/violences-au-sein-du-couple",
+      "date_verifiee": "2026-08-17",
+      "note": "Tous gratuits, joignables depuis un fixe ou un mobile MEME BLOQUE et SANS CREDIT."
+    },
+    "ecoute_3919": {
+      "valeur": {
+        "numero": "3919",
+        "nom": "Violences Femmes Info",
+        "horaires": "24h/24, 7j/7",
+        "gratuit": true,
+        "anonyme": true,
+        "public": "victimes, entourage ET professionnels"
+      },
+      "a_verifier": false,
+      "source": "https://arretonslesviolences.gouv.fr/besoin-d-aide/violences-au-sein-du-couple",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ CE N EST PAS UN NUMERO D URGENCE. En cas de danger immediat : 17 ou 112. Le 3919 ecoute, informe et oriente vers les associations locales."
+    },
+    "plateforme_signalement_en_ligne": {
+      "valeur": "https://www.service-public.fr/cmi",
+      "a_verifier": false,
+      "source": "https://arretonslesviolences.gouv.fr/besoin-d-aide/violences-au-sein-du-couple",
+      "date_verifiee": "2026-08-17",
+      "note": "24h/24, tchat en TEMPS REEL avec des policiers ou gendarmes formes aux violences, capable de DECLENCHER UNE INTERVENTION IMMEDIATE. Deux fonctions de securite a mentionner systematiquement : bouton de sortie rapide, et effacement de l historique du tchat de l appareil - c est ce qui la rend utilisable quand on n est pas seul chez soi. Accessible aux Francais residant a l etranger."
+    }
+  },
+  "ordonnance_de_protection": {
+    "delais": {
+      "valeur": {
+        "ordonnance_provisoire_de_protection_immediate": "24 heures, SANS audience",
+        "ordonnance_de_protection": "6 jours maximum a compter de la fixation de la date d audience"
+      },
+      "a_verifier": false,
+      "source": "https://www.justice.fr/themes/ordonnance-protection",
+      "date_verifiee": "2026-08-17",
+      "note": "LA VOIE DES 24 HEURES EST PEU CONNUE et ne suppose pas d audience : elle exige des violences ET un danger grave et immediat vraisemblables. Quelqu un en danger grave n a pas a attendre une audience. Juge competent : juge aux affaires familiales. Requete par formulaire Cerfa n° 15458, ou par l intermediaire d un commissaire de justice."
+    },
+    "duree_maximale_mesures_mois": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.justice.fr/themes/ordonnance-protection",
+      "date_verifiee": "2026-08-17"
+    },
+    "sanction_non_respect": {
+      "valeur": {
+        "emprisonnement_ans": 3,
+        "amende_eur": 45000
+      },
+      "a_verifier": false,
+      "source": "https://www.justice.fr/themes/ordonnance-protection",
+      "date_verifiee": "2026-08-17",
+      "note": "Le non-respect des mesures est un DELIT autonome. Une ordonnance n est pas une declaration d intention : la violer se signale immediatement au 17."
+    },
+    "telephone_grave_danger": {
+      "valeur": "attribue par le PROCUREUR DE LA REPUBLIQUE",
+      "a_verifier": false,
+      "source": "https://www.justice.fr/themes/ordonnance-protection",
+      "date_verifiee": "2026-08-17",
+      "note": "Notamment lorsque l auteur est en fuite ou qu une demande d ordonnance de protection est en cours devant le JAF. ⚠️ Le TGD ne se demande PAS au juge mais au procureur, souvent via une association ou un avocat - ne pas confondre les deux circuits."
+    }
   }
 }
