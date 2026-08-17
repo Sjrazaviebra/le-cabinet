@@ -39,6 +39,8 @@ DOMAINES_ADMIS = (
     # Domaines des roles financement et patrimoine (ajoutes le 2026-08-17) : la mediation du
     # credit, le Regafi et la pedagogie investisseurs de l AMF vivent la.
     "banque-france.fr", "mediateur-credit.banque-france.fr", "abe-infoservice.fr",
+    # Portail d education financiere de la Banque de France - officiel.
+    "mesquestionsdargent.fr",
     "orias.fr", "info-retraite.fr", "bpifrance.fr", "eur-lex.europa.eu",
 )
 

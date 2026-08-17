@@ -2704,5 +2704,66 @@
       "date_verifiee": "2026-08-17",
       "note": "Plateforme DGCCRF de signalement du demarchage abusif, qui remplace Bloctel."
     }
+  },
+  "inflation": {
+    "variation_annuelle_ipc_derniere_mesure": {
+      "valeur": 2.2,
+      "unite": "pourcent sur un an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A15404",
+      "date_verifiee": "2026-08-17",
+      "note": "Indice des prix a la consommation (IPC), calcule et publie chaque mois par l INSEE, indicateur officiel de mesure de l inflation en France. Chiffre d avril 2026, sur un an, lu sur une page mise a jour le 21/05/2026. ⚠ C est un instantane mensuel : ne JAMAIS le reutiliser sans relire la source. ★★ Son usage ici est un repere : rendement reel = rendement nominal moins inflation. Un placement peut afficher un rendement positif et faire perdre du pouvoir d achat, et aucun document ne le signale."
+    }
+  },
+  "risque_et_rendement": {
+    "echelle_rendement_risque_dic": {
+      "valeur": {
+        "minimum": 1,
+        "maximum": 7
+      },
+      "unite": "niveaux de l echelle du document d informations cles",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/savoir-bien-investir/cadrer-son-projet/rendement-et-risque-deux-inseparables-0",
+      "date_verifiee": "2026-08-17",
+      "note": "Pour les fonds et Sicav, le DIC porte selon l AMF un score de rendement / risque de 1 (le moins risque, potentiel de rendement le plus faible) a 7 (le plus risque, potentiel le plus eleve). ★ Le nom du score contient les DEUX mots : c est un seul curseur pour les deux grandeurs, pas une echelle de danger a minimiser. Un produit presente comme tres peu risque ET tres rentable serait a deux endroits a la fois. ⇒ exiger le DIC ; un interlocuteur qui le contourne renseigne sur lui-meme. ⚠ Page du 19/10/2018, a recouper."
+    }
+  },
+  "actions": {
+    "duree_detention_indicative_portefeuille_direct": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/actions-obligations/actions/investir-en-actions-cotees-en-bourse",
+      "date_verifiee": "2026-08-17",
+      "note": "L AMF evoque une detention d au moins 5 ans pour un portefeuille d actions gere activement en direct, et rappelle qu a court terme la probabilite d essuyer une perte est importante. ⛔ Ce n est PAS une recommandation d investir ni une duree reglementaire : c est un ordre de grandeur d horizon. ⚠ Page du 18/10/2018, a recouper. Le traitement de l horizon vit dans risque-et-horizon.md."
+    }
+  },
+  "capitalisation_des_interets": {
+    "condition_juridique_capitalisation_dette_code_civil": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "★★ En droit francais, la capitalisation des interets d une DETTE n est pas automatique : elle suppose une stipulation du contrat ou une decision. L article du code civil qui l organise n a PAS ete relu dans cette session — Legifrance n a pas ete consulte sur ce point, et l identifiant de l article n a pas ete devine (⛔ regle du depot : ne jamais deviner un identifiant Legifrance). ⇒ Ne rien affirmer du mecanisme JURIDIQUE tant que ce point n est pas verifie ; il releve du role juriste. La mecanique ECONOMIQUE, elle, est certaine et suffit au fichier : un interet non paye devient du capital du, et ce capital produit a son tour des interets."
+    }
+  },
+  "acces_aux_sources": {
+    "code_http_page_introuvable_moteur_et_lexique_amf": {
+      "valeur": 404,
+      "unite": "code HTTP",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/lexique-simulateurs-et-outils-pratiques/lexique",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Constate le 2026-08-17 : la page lexique de l AMF et son moteur de recherche interne (recherche-globale) renvoient page introuvable. ★ Ce qui marche en revanche : partir d une page connue de l espace epargnants et lire la liste de ses sous-pages, qui donne les URL exactes. Les definitions cherchees dans le lexique se retrouvent dans le glossaire de la page rendement-et-risque-des-placements-en-actions."
+    },
+    "code_http_refus_acces_automatise_education_financiere": {
+      "valeur": 403,
+      "unite": "code HTTP",
+      "a_verifier": false,
+      "source": "https://www.mesquestionsdargent.fr/",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Constate le 2026-08-17 : le portail d education financiere de la Banque de France, banque-france.fr et abe-infoservice.fr (accueil et rubrique epargne) refusent l acces automatise. ⇒ La pedagogie de la Banque de France n a PAS pu etre relue ; notions-financieres.md repose sur l AMF et service-public.gouv.fr. ⛔ Ne pas conclure de ce refus que l information n existe pas."
+    }
   }
 }

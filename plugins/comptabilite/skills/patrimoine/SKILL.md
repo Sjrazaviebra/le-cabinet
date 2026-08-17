@@ -80,6 +80,7 @@ périmètres, pas encore du contenu.** Ne présentez jamais un fichier `À ÉCRI
 | Sujet | Fichier |
 |---|---|
 | ⚠️ **Reconnaître une arnaque, vérifier un agrément, listes noires** | `references/arnaques-financieres.md` |
+| ⭐ **Notions financières** — intérêt composé, inflation, rendement, risque | `references/notions-financieres.md` |
 | Enveloppes et supports : la mécanique | `references/enveloppes-et-supports.md` |
 | **Les frais** — le seul paramètre certain d'un placement | `references/frais-et-performance.md` |
 | Risque, horizon, liquidité, diversification | `references/risque-et-horizon.md` |
