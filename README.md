@@ -1,11 +1,21 @@
 ![le-cabinet](assets/banner.jpg)
 
-<img src="assets/logo.png" alt="le-cabinet" width="96" align="left" hspace="12">
+<!-- ⚠️ En-tête en tableau, et c est volontaire : GitHub dessine une bordure sur toute la
+     largeur sous un <h1>. Avec un logo flotte a gauche et plus haut que la ligne de texte,
+     ce trait TRAVERSAIT le logo. La cellule confine la bordure au titre. -->
+<table>
+<tr>
+<td width="112" valign="middle"><img src="assets/logo.png" alt="le-cabinet" width="96"></td>
+<td valign="middle">
 
 # le-cabinet
 
-**Neuf rôles pour agents IA, en droit, fiscalité, financement et administration français.**
+**Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
+
+</td>
+</tr>
+</table>
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
