@@ -28,7 +28,7 @@ vendre / j'ai déménagé / le logement est vide depuis mars », **la première 
 |---|---|
 | **Redevable** | « propriétaire ou usufruitier d'un bien immobilier bâti [...] **au 1er janvier de l'année d'imposition** » |
 | **Base** | « La base d'imposition de la TFPB est égale à **la moitié de la valeur locative cadastrale** » — soit un abattement de **50 %** pour frais |
-| **Avis** | adressé « **en septembre** chaque année », donc **huit mois après** la date qui détermine le redevable |
+| **Avis** | adressé « **en septembre** chaque année », donc **bien après** la date qui détermine le redevable |
 | **Retard de paiement** | majoration de **10 %** |
 | **Paiement en ligne** | obligatoire au-delà de **300 €** |
 
@@ -99,7 +99,7 @@ ligne TEOM reste due, et c'est la source de malentendu la plus banale du sujet.
 ★ **Et dans l'autre sens, la TEOM est la seule des deux qui se récupère sur le locataire.** La « taxe
 ou redevance d'enlèvement des ordures ménagères » figure dans la liste des charges récupérables du
 décret 87-713, logement vide comme meublé. ⛔ **La taxe foncière, elle, n'y figure pas** : la
-refacturer au locataire d'un bail d'habidation relevant de ce décret est hors du texte. → droit du
+refacturer au locataire d'un bail d'habitation relevant de ce décret est hors du texte. → droit du
 bail : skill `logement`. *(page du 15/04/2025, à recouper)*
 
 ## Taxe d'habitation : ce qui en subsiste

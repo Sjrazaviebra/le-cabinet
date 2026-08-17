@@ -1,6 +1,6 @@
 # Avancement
 
-**1313 valeurs vérifiées et datées**, 95 encore ouvertes. **7 rôles.**
+**1342 valeurs vérifiées et datées**, 96 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -16,7 +16,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **143 vérifiée(s)**, 25 à vérifier |
+| `data/parametres.json` | **172 vérifiée(s)**, 26 à vérifier |
 | `references/cas-plateformes-etrangeres.md` | **PARTIEL** |
 | `references/cas-prop-firm.md` | **PARTIEL** |
 | `references/chomage-et-creation.md` | **RÉDIGÉ** |
