@@ -1,6 +1,6 @@
 # Avancement
 
-**161 valeurs vérifiées et datées**, 12 encore ouvertes. **7 rôles.**
+**168 valeurs vérifiées et datées**, 16 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -66,17 +66,17 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **71 vérifiée(s)**, 1 à vérifier |
+| `data/parametres.json` | **78 vérifiée(s)**, 5 à vérifier |
 | `references/changement-de-statut.md` | **RÉDIGÉ** |
 | `references/demande-et-renouvellement.md` | **RÉDIGÉ** |
 | `references/documents-etat-civil.md` | À ÉCRIRE |
 | `references/droit-au-travail.md` | **RÉDIGÉ** |
-| `references/entreprendre-en-etant-etranger.md` | À ÉCRIRE |
+| `references/entreprendre-en-etant-etranger.md` | **RÉDIGÉ** |
 | `references/etudiants.md` | **RÉDIGÉ** |
 | `references/famille.md` | **RÉDIGÉ** |
 | `references/naturalisation.md` | **RÉDIGÉ** |
 | `references/refus-et-recours.md` | **RÉDIGÉ** |
-| `references/ressortissants-ue.md` | À ÉCRIRE |
+| `references/ressortissants-ue.md` | **PARTIEL** |
 | `references/titres-de-sejour.md` | **RÉDIGÉ** |
 
 ### Rôle `/juriste`
@@ -125,7 +125,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 23 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/droit-au-travail` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
+**Rédigés** — 25 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 

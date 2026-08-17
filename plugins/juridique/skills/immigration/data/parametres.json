@@ -666,5 +666,108 @@
       "date_verifiee": "2026-08-17",
       "note": "Violences Femmes Info. Gratuit, anonyme, 24h/24. ⚠️ NUMERO CRITIQUE : un numero faux serait pire qu absent. Egalement source dans le role famille, verifie sur arretonslesviolences.gouv.fr."
     }
+  },
+  "entrepreneur_profession_liberale": {
+    "duree_premiere_carte": {
+      "valeur": 1,
+      "unite": "an au maximum",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01."
+    },
+    "duree_pluriannuelle": {
+      "valeur": 4,
+      "unite": "ans, apres la premiere annee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "moyens_existence_exiges_eur": {
+      "valeur": 1867.02,
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "★ A LIRE DANS LE BON SENS : ce ne sont pas les encaissements de l entreprise mais les MOYENS D EXISTENCE qu elle procure. Un chiffre d affaires eleve absorbe par les charges ne remplit pas la condition. ⚠️ Montant revisable."
+    },
+    "condition_qualifications": {
+      "valeur": "l activite doit correspondre aux qualifications ou a l experience professionnelle",
+      "unite": "condition de fond",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CONDITION OUBLIEE ET BLOQUANTE : un projet rentable mais etranger au parcours de la personne se heurte a un refus qui n a rien a voir avec sa qualite economique. La coherence du dossier est un CRITERE JURIDIQUE, pas une question de presentation."
+    },
+    "couts_eur": {
+      "valeur": {
+        "premiere_demande_total": 350,
+        "premiere_demande_timbre": 50,
+        "premiere_demande_taxe": 300,
+        "renouvellement_temporaire_total": 250,
+        "renouvellement_temporaire_taxe": 200,
+        "renouvellement_pluriannuelle_total": 350
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "depot": {
+      "valeur": "prefecture ou sous-prefecture du domicile, dans les 2 mois precedant l expiration du titre en cours",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "Si la demande change la MENTION du titre, c est un changement de statut : voir changement_de_statut."
+    },
+    "micro_entreprise_et_titre": {
+      "valeur": "la micro-entreprise est un REGIME, pas un titre : elle ne rend pas une activite autorisee si le titre ne l autorise pas",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Confusion la plus frequente du sujet, parce que l inscription en ligne est facile. Piece exigee comme pour une societe : promesse de bail ou contrat de domiciliation."
+    }
+  },
+  "ressortissants_ue": {
+    "titre_de_sejour_obligatoire": {
+      "valeur": "NON - la carte de sejour n est pas obligatoire pour un ressortissant UE/EEE/Suisse ; elle peut etre demandee pour ATTESTER du droit au sejour",
+      "unite": "regle",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "★★ Demander un titre de sejour a un candidat europeen n est pas une precaution, c est une exigence SANS BASE : le document qui prouve son droit au travail est sa PIECE D IDENTITE. ⚠️ PAGE SOURCE DU 2025-06-11, au-dela de la peremption de 6 mois : a recouper."
+    },
+    "conditions_sejour_plus_de_3_mois": {
+      "valeur": "citoyennete UE/EEE/Suisse + residence habituelle en France + activite professionnelle salariee ou independante",
+      "unite": "trois conditions cumulatives",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "⚠️ Page source du 2025-06-11 : a recouper."
+    },
+    "durees_cartes_si_demandees": {
+      "valeur": {
+        "cdi_ans": 5,
+        "cdd": "duree du contrat + 6 mois, maximum 5 ans",
+        "independant": "duree de l activite prevue + 6 mois, maximum 5 ans"
+      },
+      "unite": "duree",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "⚠️ Page source du 2025-06-11 : a recouper."
+    },
+    "sejour_permanent": {
+      "valeur": 10,
+      "unite": "ans apres 5 ans de residence reguliere et continue",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "★ LE SEUIL QUI CHANGE LA NATURE DU DROIT : avant 5 ans le sejour est adosse a une ACTIVITE, apres il est AUTONOME - plus aucune verification d activite. ⇒ Qui approche des 5 ans doit pouvoir PROUVER LA CONTINUITE de sa residence. ⚠️ Page source du 2025-06-11 : a recouper."
+    }
   }
 }
