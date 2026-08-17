@@ -500,5 +500,79 @@
       "date_verifiee": null,
       "note": "NON RECOUPE : valeurs lues sur une page du 2023-11-17, anterieure a la peremption de 6 mois du depot. ⚠️ PAGE SOURCE DU 2023-11-17, anterieure a la peremption de 6 mois du depot : A RECOUPER. En premiere demande il autorise a travailler si la carte demandee est salarie ou travailleur temporaire (avec autorisation), RECE, vie privee et familiale (sauf exceptions), ICT detache salarie, travailleur saisonnier (avec autorisation), protection subsidiaire ou apatride, resident. En RENOUVELLEMENT il proroge les droits du titre precedent. ★ « Le recepisse permet-il de travailler ? » n a pas de reponse generale, seulement une reponse PAR TITRE DEMANDE."
     }
+  },
+  "etudiants": {
+    "ressources_mensuelles_exigees_eur": {
+      "valeur": 877.5,
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Ne s applique pas a qui a reussi le concours d entree d un etablissement partenaire de l Etat. ⚠️ Montant revisable - a reverifier. Page verifiee le 2026-08-01."
+    },
+    "vls_ts_etudiant_duree": {
+      "valeur": "4 mois a 1 an",
+      "unite": "duree",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Delivre par le consulat. A valider en ligne dans les 3 mois suivant l arrivee, avec une taxe de 150 EUR."
+    },
+    "vls_ts_etudiant_taxe_validation_eur": {
+      "valeur": 150,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Payee lors de la validation en ligne du VLS-TS."
+    },
+    "carte_temporaire_cout_eur": {
+      "valeur": {
+        "taxe": 100,
+        "droit_de_timbre": 100,
+        "total": 200
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ ANOMALIE A CONNAITRE : la carte temporaire d UN AN coute PLUS CHER que la pluriannuelle. Un etudiant eligible a la pluriannuelle qui reprend une temporaire par habitude paie plus, pour moins, et refait la demarche chaque annee."
+    },
+    "carte_pluriannuelle_cout_eur": {
+      "valeur": {
+        "taxe": 100,
+        "droit_de_timbre": 50,
+        "total": 150
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree = celle du cycle d etudes restant, souvent 2 a 4 ans. ⇒ PREMIERE QUESTION a un etudiant en renouvellement : es-tu eligible a la pluriannuelle ?"
+    },
+    "depot_tardif_surcout_eur": {
+      "valeur": 180,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Droit de visa de regularisation qui s ajoute en cas de depot tardif. ★ Le retard a un PRIX AFFICHE, independamment du risque de rupture de regularite du sejour."
+    },
+    "conditions_cumulatives": {
+      "valeur": "inscription dans un etablissement + ressources de 877,50 EUR par mois + caractere reel et serieux des etudes",
+      "unite": "trois conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ « Reel et serieux » est la condition qui fait REFUSER les renouvellements, et ce n est pas une question de notes : c est la PROGRESSION qui est regardee. Redoubler deux fois le meme niveau ou changer de filiere chaque annee sans avancer se voit dans le dossier ⇒ la reponse utile porte sur la trajectoire, pas sur les pieces."
+    },
+    "renouvellement_canal": {
+      "valeur": "exclusivement en ligne apres la premiere annee",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Service ANEF."
+    }
   }
 }
