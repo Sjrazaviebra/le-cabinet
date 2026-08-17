@@ -16,14 +16,16 @@
 
 **Si oui, cette section passe avant tout le reste. Le temps joue contre vous.**
 
-| Ordre | Le geste |
-|---|---|
-| 1 | **Couper le contact.** Ne verser plus rien, sous aucun motif — « frais de déblocage », « taxe », « caution », « dernier versement pour récupérer le reste » |
-| 2 | **Appeler la banque immédiatement** pour tenter de bloquer ou rappeler le virement, et faire opposition |
-| 3 | **Contester par écrit** l'opération non autorisée → délais ci-dessous |
-| 4 | **Porter plainte** — en ligne, au commissariat, ou par courrier au procureur |
-| 5 | **Signaler à l'autorité compétente** — AMF ou ACPR selon le produit, voir plus bas |
-| 6 | **Tout conserver** : courriels, SMS, captures d'écran, relevés, numéros appelants, IBAN utilisé |
+**Dans cet ordre :**
+
+1. **Couper le contact.** Ne verser plus rien, sous aucun motif — « frais de déblocage », « taxe »,
+   « caution », « dernier versement pour récupérer le reste ».
+2. **Appeler la banque immédiatement** pour tenter de bloquer ou rappeler le virement, et faire
+   opposition.
+3. **Contester par écrit** l'opération non autorisée → délais ci-dessous.
+4. **Porter plainte** — en ligne, au commissariat, ou par courrier au procureur.
+5. **Signaler à l'autorité compétente** — AMF ou ACPR selon le produit, voir plus bas.
+6. **Tout conserver** : courriels, SMS, captures d'écran, relevés, numéros appelants, IBAN utilisé.
 
 ⏱️ **Les délais de contestation d'une opération de paiement non autorisée** (fiche service-public du
 29/07/2026) :
@@ -170,7 +172,7 @@ sûr → `risque-et-horizon.md`.
 
 ## Les schémas récurrents, décrits pour être reconnus
 
-### 1. L'usurpation d'un établissement agréé, et le faux conseiller qui rappelle
+### L'usurpation d'un établissement agréé, et le faux conseiller qui rappelle
 
 Le schéma le plus répandu, parce que c'est celui qui contourne la vérification. L'ABE Info Service
 décrit la mécanique côté bancaire : pour contourner l'authentification forte, *« les escrocs
@@ -193,7 +195,7 @@ bancaires (RIB, carte de paiement…). Si quelqu'un le fait, il vous ment ! »* 
 contacte pas de sa propre initiative les épargnants par téléphone ou messagerie privée et ne mène pas
 de campagne téléphonique de sensibilisation aux arnaques »*.
 
-### 2. Le faux livret à rendement garanti
+### Le faux livret à rendement garanti
 
 Proposé *« par démarchage (téléphone, courriel), sur Internet ou les réseaux sociaux »*, y compris via
 des bannières publicitaires *« sur les sites de grands médias »*. Selon l'ABE, ces fausses offres
@@ -209,7 +211,7 @@ bancaires, est un mécanisme différent, plafonné et limité → `epargne-regle
 Autre marqueur donné par l'ABE : on vous demande, pour « ouvrir » le livret, de communiquer vos données
 personnelles **et** de faire un premier versement par virement.
 
-### 3. Le trading en ligne, le Forex et les cryptoactifs
+### Le trading en ligne, le Forex et les cryptoactifs
 
 L'ABE : *« Certaines publicités sur internet font croire que l'on peut devenir "trader" en quelques
 jours ou quelques semaines »*, et *« dans la majorité des cas, l'investisseur finit par perdre tout son
@@ -221,7 +223,7 @@ illégaux »*. Pour les crypto-actifs, la liste blanche de l'AMF est le point de
 voie n'est pas la plainte mais la réclamation. **Ne pas confondre les deux fait perdre du temps aux
 deux.**
 
-### 4. Les placements atypiques (« biens divers »)
+### Les placements atypiques (« biens divers »)
 
 L'ABE en donne la liste vécue : *« les énergies renouvelables, les œuvres d'art, les timbres, les
 métaux précieux, le bois, les huiles précieuses, les chambres d'EHPAD ou encore les diamants »*, et
@@ -242,7 +244,7 @@ suite à cette proposition. »*
 ⚠️ Deuxième réserve propre à ces placements, que la publicité n'aborde jamais : *« La revente d'un
 produit atypique peut s'avérer très difficile. »*
 
-### 5. La pyramide, le Ponzi et le parrainage
+### La pyramide, le Ponzi et le parrainage
 
 L'ABE : *« Ce système d'arnaque, très ancien, repose sur le versement d'intérêts payés aux premiers
 investisseurs avec l'argent des nouveaux arrivants »*, *« sans aucun réel investissement derrière »*.
@@ -253,7 +255,7 @@ réseaux sociaux : elles leur proposent des formations au trading sur le Forex o
 et les incitent à recruter de nouvelles personnes dans leur entourage. »* ⇒ **Quand la rémunération
 vient du recrutement et non du produit, la pyramide est là**, quel que soit le vocabulaire employé.
 
-### 6. Le faux ordre de virement, après piratage de la messagerie
+### Le faux ordre de virement, après piratage de la messagerie
 
 Schéma décrit par l'ABE : l'accès à votre boîte mail donne à l'escroc votre carnet d'adresses et
 l'historique de vos échanges. Il s'intéresse alors *« à vos opérations en cours ou à venir :
@@ -269,7 +271,7 @@ partis à vos contacts sans vous, paramètres modifiés à votre insu.
 connu.** Un changement de coordonnées bancaires annoncé par courriel en cours de transaction est un
 signal d'alerte à lui seul.
 
-### 7. « L'arnaque dans l'arnaque » — le faux récupérateur de fonds
+### « L'arnaque dans l'arnaque » — le faux récupérateur de fonds
 
 ★★ **Celui-là fait une deuxième victime de la première, et il faut le dire à qui vient de perdre de
 l'argent.** L'ABE : *« Beaucoup d'épargnants ayant déjà perdu de l'argent sur des plateformes de

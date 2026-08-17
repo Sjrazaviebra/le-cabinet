@@ -331,6 +331,14 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368",
       "date_verifiee": "2026-08-17",
       "note": "Minimum par operation et solde plancher. Aucun frais d ouverture, de versement, de retrait ni de cloture."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "livret",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2368",
+      "date_verifiee": "2026-08-17",
+      "note": "Un seul LDDS par personne."
     }
   },
   "lep": {
@@ -427,6 +435,14 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
       "date_verifiee": "2026-08-17",
       "note": "Avant 16 ans, autorisation du representant legal, qui peut plafonner les retraits. De 16 a 18 ans, retraits possibles sauf opposition formelle des parents."
+    },
+    "nombre_par_personne": {
+      "valeur": 1,
+      "unite": "livret",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2904",
+      "date_verifiee": "2026-08-17",
+      "note": "Le nombre de livret jeune est limite a 1 par personne."
     }
   },
   "livret_bancaire_ordinaire": {
@@ -1316,6 +1332,30 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21551",
       "date_verifiee": "2026-08-17",
       "note": "VERBATIM : « si vous avez moins de 9 trimestres d assurance retraite, vous pouvez demander le remboursement de vos cotisations retraite (salarie et employeur) actualisees au 1er janvier de l annee de votre demande ». ⚠ page du 28/08/2025, a recouper."
+    },
+    "chomage_non_indemnise_apres_indemnisation_bis": {
+      "valeur": {
+        "annees_cas_general": 1,
+        "annees_si_conditions_remplies": 5,
+        "age_requis_pour_le_cas_long": 55,
+        "annees_cotisees_requises": 20
+      },
+      "unite": "annees prises en compte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31249",
+      "date_verifiee": "2026-08-17",
+      "note": "Periode non indemnisee qui SUIT une periode indemnisee : 1 an en general, portee a 5 ans a partir de 55 ans avec au moins 20 ans de cotisation. ⚠ page du 28/08/2025, a recouper."
+    },
+    "majoration_pension_trois_enfants_bis": {
+      "valeur": {
+        "pourcentage": 10,
+        "enfants_minimum": 3
+      },
+      "unite": "% de majoration de la pension de base",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16336",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Si vous avez eu au moins 3 enfants, le montant de votre pension de retraite de l Assurance retraite est majore de 10 % »."
     }
   },
   "age_et_duree": {
@@ -1381,6 +1421,22 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21552",
       "date_verifiee": "2026-08-17",
       "note": "★ Le revenu annuel moyen se calcule sur les 25 annees les plus avantageuses. ⇒ un SALAIRE mal reporte au releve coute autant qu un trimestre manquant s il tombe dans ces 25 annees. Le releve ne se relit donc pas seulement en trimestres."
+    },
+    "duree_assurance_requise_par_generation_bis": {
+      "valeur": {
+        "1958_a_1960": 167,
+        "1961_du_1er_janvier_au_31_aout": 168,
+        "1961_du_1er_septembre_au_31_decembre": 169,
+        "1962": 169,
+        "du_1er_janvier_1963_au_31_mars_1965": 170,
+        "du_1er_avril_1965_au_31_decembre_1965": 171,
+        "1966_et_apres": 172
+      },
+      "unite": "trimestres requis pour le taux plein",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35063",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Table de F35063 (verifiee au 01/01/2026), colonne des ages identique a F14043. Corroboration independante : l exemple de F19643 parle d une personne « nee en avril 1965 ayant les 171 trimestres requis »."
     }
   },
   "decote_surcote": {
@@ -1525,6 +1581,14 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
       "date_verifiee": "2026-08-17",
       "note": "★ VERBATIM : « Le transfert est gratuit si vous avez detenu le produit pendant au moins 5 ans. Si vous avez detenu le produit moins de 5 ans, les frais de transfert peuvent vous etre factures, dans la limite de 1% de l epargne accumulee. » ⇒ un PER trop charge n est pas une prison, il est transferable ; le cout du transfert est plafonne."
+    },
+    "per_deblocage_invalidite_categories_bis": {
+      "valeur": "2e ou 3e categorie",
+      "unite": "categorie d invalidite ouvrant le deblocage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Invalidite de 2e ou 3e categorie du titulaire, de ses enfants, de son epoux ou epouse, ou de son partenaire de Pacs."
     }
   },
   "rachat_de_trimestres": {
@@ -1552,6 +1616,18 @@
         "duree_minimale_du_stage_mois": 2,
         "delai_pour_demander_annees": 2,
         "limite_age": "31 decembre de l annee du 30e anniversaire"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15675",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ UN DROIT QUI SE PERD : le rachat d un stage en entreprise se demande « dans les 2 ans » suivant la fin du stage et « au plus tard le 31 decembre de l annee de votre 30e anniversaire ». Passe ce cap, il est definitivement ferme - a dire a un jeune diplome, pas a un futur retraite."
+    },
+    "rachat_stages_delai_bis": {
+      "valeur": {
+        "duree_minimale_du_stage_mois": 2,
+        "delai_pour_demander_annees": 2,
+        "age_limite": 30
       },
       "unite": null,
       "a_verifier": false,
@@ -1861,6 +1937,772 @@
       "source": "https://www.amf-france.org/sites/institutionnel/files/private/2023-03/INVESTIR_VOTRE_EPARGNE_2023_DEF_0.pdf",
       "date_verifiee": "2026-08-17",
       "note": "★ Verbatim guide AMF : Lisez-les : c est important. Si vous n avez pas obtenu ces documents, reclamez-les ! Ne cochez pas la case indiquant que vous avez recu la documentation obligatoire si ce n est pas le cas. Le DIC porte la duree de placement recommandee et l echelle de risque."
+    }
+  },
+  "surendettement": {
+    "delai_decision_recevabilite": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "3 mois a compter du DEPOT pour decider de la recevabilite. Pendant l examen le depot ne suspend rien automatiquement : on reste tenu des depenses courantes ET des credits, avec interdiction d en souscrire de nouveaux."
+    },
+    "delai_orientation_dossier": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1946",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Si la commission n a pas oriente le dossier dans les 3 mois, le taux des emprunts en cours est ramene au taux legal pour les 3 mois suivants sauf decision contraire. Aucun creancier ne le signale."
+    },
+    "duree_max_suspension_procedures_execution": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032224534/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Code de la consommation L722-3, en vigueur depuis le 01/01/2018 : « Cette suspension et cette interdiction ne peuvent exceder deux ans. » La suspension court jusqu a l approbation du plan, la decision imposant les mesures ou le jugement de retablissement personnel."
+    },
+    "delai_recours_decision_recevabilite": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34642",
+      "date_verifiee": "2026-08-17",
+      "note": "15 jours apres notification, par declaration signee : le creancier conteste la recevabilite, le debiteur conteste une IRRECEVABILITE. Delai court, droit perdu si passe."
+    },
+    "delai_contestation_mesures_imposees": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1947",
+      "date_verifiee": "2026-08-17",
+      "note": "30 jours a compter de la notification, par ecrit signe adresse au secretariat de la commission. Ne pas confondre avec les 15 jours du recours sur la recevabilite."
+    },
+    "duree_max_plan_et_mesures": {
+      "valeur": 7,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1947",
+      "date_verifiee": "2026-08-17",
+      "note": "Reechelonnement sur 7 ans maximum, plan conventionnel « ne peut pas depasser 7 ans » ; exception pour les prets de la residence principale ou pour eviter sa vente. Confirme par F16982."
+    },
+    "duree_max_report_paiement": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1947",
+      "date_verifiee": "2026-08-17",
+      "note": "Report du paiement des dettes pendant 2 ans au maximum, SAUF dettes alimentaires. Mesure imposable par la commission sans accord des creanciers."
+    },
+    "duree_max_suspension_expulsion": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31604",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L expulsion n est PAS suspendue automatiquement par la recevabilite : il faut une saisine du juge (locataire, president de la commission ou representant Banque de France, formulaire cerfa 15930). Suspension jusqu a la mise en place d une mesure, 2 ans maximum. Croire que le dossier protege le logement est l erreur la plus couteuse du sujet."
+    },
+    "epaisseur_dossier_remise_guichet": {
+      "valeur": 3,
+      "unite": "cm",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "Piege materiel : au dela de 3 cm d epaisseur le dossier ne part pas par courrier, remise au guichet obligatoire."
+    },
+    "formulaire_depot_dossier": {
+      "valeur": "13594",
+      "unite": "numero cerfa",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "Formulaire cerfa 13594 a remplir et signer, avec justificatifs (identite, ressources, depenses, dettes, patrimoine) et lettre expliquant les causes. Depot en ligne par teleservice ou par courrier a la Banque de France."
+    },
+    "formulaire_suspension_expulsion": {
+      "valeur": "15930",
+      "unite": "numero cerfa",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31604",
+      "date_verifiee": "2026-08-17",
+      "note": "Formulaire cerfa 15930 pour demander au juge la suspension de l expulsion en cas d urgence. ⛔ Pour le proprietaire, la decision de suspension n est pas susceptible de recours."
+    },
+    "gratuite_procedure": {
+      "valeur": "gratuit",
+      "unite": "cout",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/N99",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « vous pouvez deposer gratuitement un dossier de surendettement ». Sans avocat, et « un travailleur social (ou assistante sociale) peut vous aider a faire votre dossier ». ⛔ Payer une societe pour monter le dossier revient a acheter ce qui est gratuit."
+    },
+    "telephone_information_banque_de_france": {
+      "valeur": {
+        "numero": "34 14",
+        "jours": "du lundi au vendredi",
+        "horaires": "de 8 h a 18 h",
+        "cout": "prix d un appel local, non surtaxe"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "Numero d information de la Banque de France sur le surendettement, tel que cite par la fiche service-public."
+    },
+    "reste_a_vivre_plancher": {
+      "valeur": "montant forfaitaire du RSA",
+      "unite": "plancher legal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032224474/2016-07-01/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Code de la consommation L731-2, en vigueur depuis le 01/07/2016 : la part des ressources necessaire aux depenses courantes du menage « ne peut etre inferieure au montant forfaitaire mentionne a l article L. 262-2 du code de l action sociale et des familles ». Elle integre logement, energie, eau, nourriture, scolarite, garde, deplacements professionnels, frais de sante. ⚠ Le montant du RSA change chaque annee : renvoyer a la source, ne jamais le citer de memoire."
+    },
+    "dettes_non_effacables": {
+      "valeur": "caution ou coobligé, alimentaire, amendes penales, dommages-interets aux victimes, pret sur gage, fraude sociale",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16978",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le retablissement personnel efface les dettes SAUF celles-la. Consequence majeure : l effacement du debiteur n efface RIEN pour la personne qui s est portee caution, elle reste tenue."
+    }
+  },
+  "ficp": {
+    "duree_inscription_incident_paiement": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Jusqu a 5 ans pour un incident de paiement caracterise, radiation anticipee si on regularise."
+    },
+    "duree_inscription_plan_ou_mesures": {
+      "valeur": {
+        "duree_ans": 7,
+        "reduite_ans": 5
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "7 ans en cas de plan conventionnel ou de mesures imposees, reductible a 5 ans si aucun nouvel incident."
+    },
+    "duree_inscription_retablissement_personnel": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "5 ans a compter de la cloture, avec ou sans liquidation judiciaire."
+    },
+    "seuils_inscription": {
+      "valeur": {
+        "echeances_consecutives_impayees": 2,
+        "retard_echeance_non_mensuelle_jours": 60,
+        "decouvert_autorise_euros": 500,
+        "delai_regularisation_decouvert_jours": 60
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "Motifs d inscription. Inscription AUTOMATIQUE aussi en cas de depot d un dossier de surendettement."
+    },
+    "effet_sur_acces_au_credit": {
+      "valeur": "pas une interdiction",
+      "unite": "portee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17608",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « En principe, votre inscription au FICP ne vous interdit pas d obtenir un credit. » Le FICP n est pas une interdiction bancaire. La consultation de sa propre inscription est GRATUITE (en ligne, en agence, par courrier) : premier geste face a un refus inexplique. Contestation : organisme declarant, puis mediateur, puis CNIL."
+    }
+  },
+  "saisies_et_insaisissable": {
+    "solde_bancaire_insaisissable": {
+      "valeur": 651.69,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1437",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Le montant du SBI est fixe a 651,69 €, quelle que soit votre situation familiale. » Laisse AUTOMATIQUEMENT par la banque, sans aucune demande. Aligne sur le montant forfaitaire du RSA (decret 2025-293 du 29 mars 2025). S applique une fois par saisie, pas chaque mois. ★ Si le compte contient des sommes insaisissables superieures au SBI, c est le montant le PLUS ELEVE qui reste protege. Page du 01/04/2026."
+    },
+    "duree_blocage_compte_apres_saisie": {
+      "valeur": 15,
+      "unite": "jours ouvrables",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1850",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Durant les 15 jours ouvrables qui suivent la signification de la saisie a la banque, votre compte bancaire est bloque. » Aucune operation possible pendant cette periode. Page du 01/04/2026."
+    },
+    "delai_information_du_debiteur": {
+      "valeur": 8,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1850",
+      "date_verifiee": "2026-08-17",
+      "note": "Le commissaire de justice doit informer le debiteur de la signification de la saisie a sa banque dans les 8 jours."
+    },
+    "delai_contestation_saisie_compte": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1850",
+      "date_verifiee": "2026-08-17",
+      "note": "★ 1 mois a compter de l INFORMATION du debiteur, pas de la saisie. Par assignation devant le JUGE DE L EXECUTION, pas aupres de la banque. Les frais du commissaire de justice s ajoutent a la dette."
+    },
+    "revenus_insaisissables": {
+      "valeur": "AAH et majoration pour la vie autonome, Apa, ASS, prime d activite, RSA, indemnites en capital d accident du travail, indemnites de depart pour motif economique",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31185",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le caractere insaisissable ne disparait pas parce que la somme est arrivee sur le compte. Saisissables en revanche : salaires nets, pensions de retraite, indemnites journalieres maladie/maternite/accident du travail, allocations chomage. Page du 01/04/2026."
+    },
+    "bareme_saisie_sur_remuneration": {
+      "valeur": null,
+      "unite": "tranches annuelles",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F115",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. Le bareme par tranches de la quotite saisissable et la majoration par personne a charge n ont pas pu etre lus tranche par tranche le 2026-08-17 : ils sont revalorises chaque annee. Ce qui EST verifie : depuis le 1er juillet 2025 la procedure est conduite par un commissaire de justice et non plus par le tribunal, et « la somme versee au salarie ne peut pas etre inferieure au montant du solde bancaire insaisissable (SBI) ». ⛔ Une creance alimentaire echappe aux limites : le revenu saisissable « peut etre saisi dans sa totalite »."
+    }
+  },
+  "credit_consommation": {
+    "montants_du_credit_consommation": {
+      "valeur": {
+        "minimum_euros": 200,
+        "maximum_euros": 75000
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2451",
+      "date_verifiee": "2026-08-17",
+      "note": "Perimetre du credit a la consommation, hors immobilier. Contrat obligatoirement ecrit."
+    },
+    "delai_retractation": {
+      "valeur": 14,
+      "unite": "jours calendaires",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000032226164",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Code de la consommation L312-19 : « L emprunteur peut se retracter sans motifs dans un delai de quatorze jours calendaires revolus a compter du jour de l acceptation de l offre de contrat de credit. » L312-21 : un formulaire detachable est joint au contrat. ⇒ La retractation en droit de la consommation en general vit dans le role juriste, droit-de-la-consommation.md."
+    },
+    "delai_remboursement_apres_retractation": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2451",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Se retracter APRES le versement des fonds n est pas gratuit : remboursement dans les 30 jours suivant l envoi de la retractation, PLUS les interets cumules de la date de reception des fonds a celle du remboursement."
+    },
+    "seuil_offre_credit_amortissable_obligatoire": {
+      "valeur": 1000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2471",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM : « Si le montant du credit renouvelable est superieur a 1 000 €, le preteur doit vous proposer egalement une offre de credit amortissable. » Droit a la COMPARAISON, presque jamais mis en avant en caisse. F2436 le confirme. ★ Sur une carte de credit de magasin, « le paiement comptant doit etre le mode de paiement propose en priorite » : l affichage du credit par defaut est signalable a la DGCCRF."
+    },
+    "duree_max_remboursement_credit_renouvelable": {
+      "valeur": {
+        "seuil_euros": 3000,
+        "duree_jusqu_au_seuil_mois": 36,
+        "duree_au_dela_mois": 60
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2436",
+      "date_verifiee": "2026-08-17",
+      "note": "36 mois maximum jusqu a 3 000 €, 60 mois au-dela. Une part minimale du capital doit etre remboursee a CHAQUE echeance, et un releve mensuel doit indiquer le capital restant du et la reserve disponible. Page du 05/12/2025."
+    },
+    "reconduction_credit_renouvelable": {
+      "valeur": {
+        "duree_contrat_ans": 1,
+        "preavis_information_preteur_mois": 3,
+        "delai_pour_refuser_la_reconduction_jours": 20,
+        "inutilisation_declenchant_accord_signe_mois": 12
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2436",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les 12 mois d inutilisation sont une porte de sortie GRATUITE : passe ce delai le preteur doit obtenir un accord signe pour continuer. Refus de reconduction : au plus tard 20 jours calendaires avant l entree en vigueur du nouveau contrat."
+    },
+    "indemnite_max_defaillance": {
+      "valeur": 8,
+      "unite": "pourcent du solde restant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34972",
+      "date_verifiee": "2026-08-17",
+      "note": "En cas de decheance du terme le preteur peut exiger le capital restant du immediatement ; l indemnite est plafonnee a 8 % du solde restant. Page du 05/12/2025."
+    },
+    "duree_max_delai_de_grace_judiciaire": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34972",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Mesure la plus oubliee, et elle existe AVANT le surendettement : le tribunal peut ordonner « une suspension ou reduction des mensualites pouvant aller jusqu a 2 ans ». Pendant cette periode aucune penalite ne s applique et les garanties ne peuvent pas etre saisies."
+    },
+    "indemnite_remboursement_anticipe": {
+      "valeur": {
+        "seuil_euros_sur_12_mois": 10000,
+        "plafond_pourcent_si_moins_d_un_an_restant": 0.5,
+        "plafond_pourcent_si_plus_d_un_an_restant": 1
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2451",
+      "date_verifiee": "2026-08-17",
+      "note": "Au dela de 10 000 € rembourses par anticipation sur 12 mois, le preteur peut reclamer une indemnite plafonnee a 0,5 % si l echeance finale est a moins d un an, 1 % au-dela."
+    },
+    "obligations_du_preteur": {
+      "valeur": "fiche d information precontractuelle normalisee, verification de la solvabilite, consultation des fichiers Banque de France, TAEG inferieur au taux d usure, information annuelle du capital restant du",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2440",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : la banque « est obligee de vous proposer un taux annuel effectif global (TAEG), qui ne depasse pas le taux de l usure » ; elle « consulte egalement les fichiers de la Banque de France pour verifier que vous n etes pas inscrit pour plusieurs incidents de paiements ». ⚠ Les valeurs du taux d usure ne sont PAS reprises : elles changent chaque trimestre et dependent du montant emprunte. Page du 01/07/2026."
+    },
+    "taeg_seul_chiffre_comparable": {
+      "valeur": "interets, frais de dossier, commissions d intermediaire, assurance obligatoire, frais de garantie",
+      "unite": "composantes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2456",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le TAEG est le SEUL chiffre comparable entre deux offres. ⛔ Comparer des mensualites ne compare rien : une mensualite basse s obtient en allongeant la duree. Un TAEG omis ou mal calcule peut conduire le juge a reduire ou supprimer les interets."
+    }
+  },
+  "banque_et_client_en_surendettement": {
+    "plafond_frais_incident_automatique": {
+      "valeur": 25,
+      "unite": "euros par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Plafonnement AUTOMATIQUE des frais d incident pour la personne en situation de surendettement : rien a demander. Des frais au-dela sont a reclamer (reclamation, puis mediateur bancaire : role financement)."
+    },
+    "offre_specifique_clientele_fragile": {
+      "valeur": {
+        "prix_maximum_euros_par_mois": 3,
+        "plafond_frais_euros_par_mois": 20,
+        "plafond_frais_euros_par_an": 200
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "Offre specifique facturee 3 € par mois au maximum : les frais d incident sont alors plafonnes a 20 € par mois et 200 € par an. Contenu minimal : tenue de compte, carte a autorisation systematique, versements et retraits, virements, cheques de banque, acces a distance, alertes de solde, RIB."
+    },
+    "delai_proposition_entretien": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22131",
+      "date_verifiee": "2026-08-17",
+      "note": "La banque doit informer PAR ECRIT des nouvelles conditions de fonctionnement du compte et proposer un entretien dans les 6 semaines. ★ Elle ne peut pas fermer le compte sur lequel les revenus sont verses au seul motif du surendettement, pendant toute la procedure."
+    }
+  },
+  "interlocuteurs_gratuits": {
+    "points_conseil_budget_nombre": {
+      "valeur": 500,
+      "unite": "structures",
+      "a_verifier": true,
+      "source": "https://solidarites.gouv.fr/point-conseil-budget-pcb",
+      "date_verifiee": null,
+      "note": "⚠ A RECOUPER. Environ 500 PCB annonces, mais la page date du 09/02/2023 (publiee le 04/06/2020) et n est PAS sur un domaine habituel du depot : elle a ete atteinte depuis le lien de la fiche service-public sur le depot de dossier. Ce qui est cite : « service gratuit labellise par l Etat, pour prevenir le surendettement », « ouverts a tous », conseils « confidentiels, gratuits et personnalises ». ⚠ L annuaire et l URL doivent etre reverifies avant d etre donnes."
+    },
+    "ou_rencontrer_un_travailleur_social": {
+      "valeur": "point conseil budget, CCAS, CAF, mairie, office HLM, services sociaux du departement",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F134",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : « Vous pouvez rencontrer un travailleur social dans un point conseil budget, au CCAS, a la CAF, a la mairie, dans votre office HLM, dans les services sociaux du departement. » ⛔ Tout cela est gratuit."
+    }
+  },
+  "budget_et_epargne_de_precaution": {
+    "regle_chiffree_de_repartition": {
+      "valeur": null,
+      "unite": "aucune",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ TROU ASSUME ET VOLONTAIRE. Aucune regle chiffree de repartition du budget n est ecrite, parce qu AUCUNE source officielle francaise n a pu etre lue le 2026-08-17 : banque-france.fr, mesquestionsdargent.fr, abe-infoservice.fr et economie.gouv.fr ont refuse l acces au serveur. ⛔ Ne pas ecrire « 50/30/20 » : aucune source officielle ne le porte. Ce qui est enonce dans le fichier est de la METHODE sans chiffre : charges fixes / variables / annuelles, et l epargne prelevee AVANT la depense par virement programme le jour du revenu."
+    }
+  },
+  "verification_agrement": {
+    "registre_regafi_refassu": {
+      "valeur": "https://www.regafi.fr/",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://acpr.banque-france.fr/fr/professionnels/vos-outils-et-services/consulter-les-registres/registre-des-agents-financiers-et-des-organismes-dassurance",
+      "date_verifiee": "2026-08-17",
+      "note": "REGAFI (banque, credit, paiement, monnaie electronique) et REFASSU (assurance), tenus par l ACPR, mis a jour QUOTIDIENNEMENT. refassu.fr redirige vers le meme portail. Page ACPR du 27/07/2026."
+    },
+    "registre_orias": {
+      "valeur": "https://www.orias.fr/",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.orias.fr/home/showAdvancedSearch",
+      "date_verifiee": "2026-08-17",
+      "note": "Intermediaires : CIF, ALPSI, COA, MIA, IOBSP (COBSP/MOBSP/MOBSPL/MIOBSP), CIP, IFP. ★ Le moteur distingue le statut Inscrit et Radie : une fiche peut exister ET etre radiee. Recherche avancee : /home/showAdvancedSearch."
+    },
+    "base_geco_amf": {
+      "valeur": "https://geco.amf-france.org/Bio/?formId=GECO",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/faire-les-verifications",
+      "date_verifiee": "2026-08-17",
+      "note": "Base AMF des produits d epargne collective et des societes de gestion : verifier un fonds, une SICAV, une societe de gestion."
+    },
+    "listes_blanches_amf": {
+      "valeur": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-blanches",
+      "date_verifiee": "2026-08-17",
+      "note": "Biens divers, prestataires de services sur crypto-actifs (PSCA), plateformes de financement participatif (PSFP). ⚠ L AMF precise que les enregistrements/agrements ne constituent pas une incitation a investir et que ces offres restent par nature tres risquees. La liste PSFP n est pas mise a jour en temps reel : recouper avec le registre ESMA."
+    },
+    "registres_europeens": {
+      "valeur": {
+        "esma_psfp": "https://registers.esma.europa.eu/publication/searchRegister?core=esma_registers_upreg",
+        "eba_banque": "https://euclid.eba.europa.eu/register/",
+        "eiopa_assurance": "https://register.eiopa.europa.eu/registers/register-of-insurance-undertakings"
+      },
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://acpr.banque-france.fr/fr/professionnels/vos-outils-et-services/consulter-les-registres/registre-des-agents-financiers-et-des-organismes-dassurance",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Passeport europeen (LE/LPS) : un acteur agree dans un autre Etat de l EEE peut exercer en France. Absence du registre francais n est donc PAS a elle seule la preuve d une illegalite ; l ACPR conseille vivement de consulter le registre du pays d origine."
+    },
+    "regle_de_lecture_fiche": {
+      "valeur": "denomination sociale + nom commercial + adresse strictement identiques",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://acpr.banque-france.fr/fr/professionnels/vos-outils-et-services/consulter-les-registres/registre-des-agents-financiers-et-des-organismes-dassurance",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim ACPR : les informations du registre doivent etre STRICTEMENT IDENTIQUES a celles de l etablissement recherche. Verifier aussi les activites autorisees : un agrement ne vaut que pour ce qu il couvre."
+    },
+    "contre_appel_au_siege": {
+      "valeur": "contre-appel au siege sur le numero du registre ou du site officiel",
+      "unite": "geste",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/trading-crypto-actifs-les-differents-types-darnaques-financieres",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim ABE : la verification ne peut se limiter a la consultation unique de registres, il faut effectuer un contre appel au siege pour verifier que la personne qui vous a contacte y travaille bien. ⛔ Jamais sur le numero fourni par l interlocuteur : les escrocs affichent le vrai numero de l etablissement usurpe. Page du 03/03/2025, a recouper."
+    }
+  },
+  "listes_noires": {
+    "nombre_de_listes_acpr_amf": {
+      "valeur": 6,
+      "unite": "listes",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/liste-noire",
+      "date_verifiee": "2026-08-17",
+      "note": "Six listes noires communes ACPR + AMF : credits/livrets/paiements/assurances · Forex · crypto-actifs · produits derives sur crypto-actifs · options binaires · biens divers. Recherche possible par URL, adresse mail ou denomination."
+    },
+    "absence_ne_vaut_pas_autorisation": {
+      "valeur": "l absence d un nom ne vaut jamais autorisation",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/faire-les-verifications",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim AMF : ce n est pas parce qu un site est absent de la liste noire qu il est forcement autorise, cette liste est non exhaustive. Et : si la societe ne figure pas sur les listes noires, vous devez tout de meme verifier qu elle dispose des autorisations necessaires."
+    },
+    "frequence_mise_a_jour": {
+      "valeur": "mise a jour reguliere, listes non exhaustives",
+      "unite": "frequence",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-noires-et-mises-en-garde",
+      "date_verifiee": "2026-08-17",
+      "note": "Le tableau AMF portait des entrees datees du 17/08/2026 le jour de la verification. Verbatim AMF : ce tableau et ces listes sont mis a jour regulierement mais ne peuvent etre exhaustifs. REGAFI, lui, est mis a jour quotidiennement."
+    },
+    "ou_consulter": {
+      "valeur": {
+        "abe_liste_commune": "https://www.abe-infoservice.fr/fr/liste-noire",
+        "amf_listes_et_mises_en_garde": "https://www.amf-france.org/fr/espace-epargnants/proteger-son-epargne/listes-noires-et-mises-en-garde",
+        "acpr_alertes_arnaques": "https://acpr.banque-france.fr/fr/particuliers/vos-moyens-daction/consulter-les-alertes-arnaques",
+        "amf_test_arnaque": "https://protectepargne.amf-france.org/verifier/suis-je-victime-dune-arnaque"
+      },
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/",
+      "date_verifiee": "2026-08-17",
+      "note": "ABE Info Service est le site commun a l ACPR, l AMF et la Banque de France. ⛔ Ne jamais recopier de nom de societe dans le depot : les listes sont vivantes."
+    }
+  },
+  "faux_livret_epargne": {
+    "rendement_annonce_typique": {
+      "valeur": {
+        "min": 4,
+        "max": 8
+      },
+      "unite": "% par an, annonce comme garanti",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/attention-aux-offres-de-livret-depargne-frauduleuses",
+      "date_verifiee": "2026-08-17",
+      "note": "Fourchette observee par l ACPR dans les fausses offres de livrets, presentees comme sans risque et comme une alternative au Livret A."
+    },
+    "aucune_garantie_par_les_autorites": {
+      "valeur": "l ACPR et la Banque de France ne garantissent aucun produit ni placement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/attention-aux-offres-de-livret-depargne-frauduleuses",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim ABE. ⇒ Toute mention d une garantie par une autorite publique est a elle seule la preuve de l arnaque. Ne pas confondre avec la garantie des depots bancaires, mecanisme distinct et plafonne."
+    },
+    "numero_enregistrement_biens_divers": {
+      "valeur": "numero d enregistrement AMF obligatoire sur le document d information",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/epargne/autres-placements-risque/autres-placements-atypiques-les-verifications-faire",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Les offres de biens divers doivent etre enregistrees aupres de l AMF AVANT tout demarchage ou publicite, et le numero doit figurer sur le document d information. Pas de numero = offre non autorisee. Critere : bien tangible identifiable que l on n achete pas directement, en contrepartie d un rendement."
+    }
+  },
+  "delais_contestation_paiement": {
+    "operation_non_autorisee_ue_eee": {
+      "valeur": 13,
+      "unite": "mois a compter de la date de debit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Delai de contestation d une operation non autorisee ou mal executee quand le compte du beneficiaire est dans l UE ou l EEE. Beaucoup de victimes se croient forcloses au bout de quelques jours. Regime complet dans moyens-de-paiement.md du role financement. Page du 29/07/2026."
+    },
+    "operation_non_autorisee_hors_ue_eee": {
+      "valeur": {
+        "delai": 70,
+        "delai_maximal_contractuel": 120
+      },
+      "unite": "jours a compter de la date de debit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "Hors UE/EEE : 70 jours, portes a 120 jours au maximum si le contrat le prevoit."
+    },
+    "montant_superieur_a_celui_autorise": {
+      "valeur": 8,
+      "unite": "semaines a compter de la date de debit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2384",
+      "date_verifiee": "2026-08-17",
+      "note": "Cas ou le montant debite depasse celui que le payeur avait autorise."
+    }
+  },
+  "sanctions_penales": {
+    "escroquerie_base": {
+      "valeur": {
+        "emprisonnement_ans": 5,
+        "amende_euros": 375000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/",
+      "date_verifiee": "2026-08-17",
+      "note": "Code penal art. 313-1, version en vigueur au 17/08/2026. ★ La TENTATIVE est punie des memes peines (art. 313-3) : il n est pas necessaire d avoir perdu de l argent pour porter plainte."
+    },
+    "escroquerie_aggravee": {
+      "valeur": {
+        "emprisonnement_ans": 7,
+        "amende_euros": 750000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 313-2 : usurpation d une autorite publique, vulnerabilite apparente de la victime, fausse collecte, etc."
+    },
+    "escroquerie_bande_organisee": {
+      "valeur": {
+        "emprisonnement_ans": 10,
+        "amende_euros": 1000000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006165331/",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 313-2. Le meme article prevoit un quantum criminel pour l escroquerie aux allocations en bande organisee, non repris dans le fichier."
+    },
+    "usurpation_identite": {
+      "valeur": {
+        "emprisonnement_ans": 1,
+        "amende_euros": 15000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34800",
+      "date_verifiee": "2026-08-17",
+      "note": "Qualification qui s ajoute souvent a l escroquerie quand le faux conseiller se presente sous le nom d une banque agreee. Page du 10/04/2026. ⚠ L articulation des qualifications releve du penaliste."
+    },
+    "abus_de_faiblesse_base": {
+      "valeur": {
+        "emprisonnement_ans": 3,
+        "amende_euros": 375000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "Personnes protegees : mineurs, personnes agees, malades, handicapees, femmes enceintes, personnes en etat de sujetion psychologique. Page du 03/10/2024, a recouper."
+    },
+    "abus_de_faiblesse_sujetion": {
+      "valeur": {
+        "emprisonnement_ans": 5,
+        "amende_euros": 750000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "Dirigeant d un groupement exercant une sujetion psychologique ou physique."
+    },
+    "abus_de_faiblesse_bande_organisee": {
+      "valeur": {
+        "emprisonnement_ans": 7,
+        "amende_euros": 1000000
+      },
+      "unite": "peine maximale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "Commis en bande organisee."
+    }
+  },
+  "prescription_et_nullite": {
+    "prescription_plainte_delit": {
+      "valeur": 6,
+      "unite": "ans a compter du jour de l infraction",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1435",
+      "date_verifiee": "2026-08-17",
+      "note": "Delits = 6 ans (contraventions 1 an, crimes 20 ans, non reprises dans le fichier). L escroquerie et l abus de faiblesse sont des delits. Page du 08/07/2026."
+    },
+    "nullite_contrat_abus_de_faiblesse": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35140",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Voie civile distincte de la plainte : demander la NULLITE du contrat, ce qui vise l acte et pas seulement l auteur. Pour un mineur le delai part de la majorite, pour un majeur protege du jugement de protection."
+    }
+  },
+  "demarchage_telephonique": {
+    "interdiction_de_principe": {
+      "valeur": "interdit par principe, tous secteurs, depuis le 11 aout 2026",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : a partir du 11 aout, le demarchage telephonique est interdit par principe, pour les entreprises de tous les secteurs d activite. Deux exceptions : appel portant sur un contrat deja conclu, ou accord prealable. ⇒ Un appel non sollicite proposant un placement est deja en infraction AVANT tout examen du produit. Article publie le 21/07/2026, mis a jour le 11/08/2026. Loi 2025-594 du 30/06/2025, decret 2026-662 du 23/07/2026."
+    },
+    "duree_maximale_du_consentement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : cette duree ne peut pas depasser, quoi qu il en soit, un an. Pas de reconduction automatique, revocable a tout moment, y compris oralement."
+    },
+    "plages_horaires_autorisees": {
+      "valeur": {
+        "jours": "du lundi au vendredi",
+        "matin_debut_heures": 10,
+        "matin_fin_heures": 13,
+        "apres_midi_debut_heures": 14,
+        "apres_midi_fin_heures": 20
+      },
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : le demarchage telephonique est permis uniquement du lundi au vendredi, de 10 heures a 13 heures et de 14 heures a 20 heures."
+    },
+    "fin_de_bloctel": {
+      "valeur": "Bloctel cesse d exister a compter du 11 aout 2026",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Ne plus renvoyer vers Bloctel. Le signalement passe par Signal Conso : https://signal.conso.gouv.fr/fr"
+    },
+    "services_financiers_a_distance_signature": {
+      "valeur": "engagement du consommateur seulement apres signature de l offre ecrite",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18754",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ PAS ENCORE EN VIGUEUR : entree en vigueur annoncee au 1er janvier 2027. Verbatim : le consommateur n est engage par cette offre qu apres l avoir signee sur papier ou tout autre support durable. Le reste du dispositif de vente a distance de services financiers s applique depuis le 19/06/2026. Ordonnance 2026-2 et decret 2026-3 du 05/01/2026."
+    },
+    "demarchage_bancaire_et_financier_l341_1": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE ICI : l article L341-1 du code monetaire et financier (definition du demarchage bancaire et financier), les interdits de demarchage sur certains produits et les sanctions n ont pas ete lus article par article. Le sujet appartient au role juriste, fichier activites-reglementees.md. Un trou assume vaut mieux qu une affirmation de memoire."
+    }
+  },
+  "signalement_et_aide": {
+    "amf_epargne_info_service": {
+      "valeur": {
+        "telephone": "01 53 45 62 00",
+        "jours": "du lundi au vendredi",
+        "debut_heures": 9,
+        "fin": "12 h 30"
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.amf-france.org/fr/espace-epargnants/lamf-et-vous/epargne-info-service",
+      "date_verifiee": "2026-08-17",
+      "note": "Produits financiers, marches, arnaques a l investissement. ⛔ Verbatim : l AMF ne pourra jamais vous delivrer un conseil en investissement. ★ Verbatim : l AMF ne contacte pas de sa propre initiative les epargnants par telephone ou messagerie privee. Signalement en ligne : https://www.amf-france.org/fr/signaler-une-arnaque-ou-une-anomalie"
+    },
+    "abe_infoservice_acpr": {
+      "valeur": {
+        "telephone": "34 14",
+        "telephone_etranger_outre_mer": "(+33) 01 73 03 34 04",
+        "jours": "du lundi au vendredi",
+        "debut_heures": 8,
+        "fin_heures": 18
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/qui-sommes-nous/nous-contacter",
+      "date_verifiee": "2026-08-17",
+      "note": "34 14 au prix d un appel local. Banque, credit, livrets, moyens de paiement, assurance : c est le bon guichet quand l AMF n est pas competente. Signaler une escroquerie financiere fait partie des motifs de saisine. Saisine ecrite possible via le portail des demandes en ligne de la Banque de France."
+    },
+    "info_escroqueries": {
+      "valeur": {
+        "telephone": "0 805 805 817",
+        "jours": "du lundi au vendredi",
+        "debut_heures": 9,
+        "fin": "18 h 30"
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1520",
+      "date_verifiee": "2026-08-17",
+      "note": "Service et appel gratuits. Numero confirme deux fois : fiche service-public Escroquerie et page ABE sur les faux livrets."
+    },
+    "aide_aux_victimes": {
+      "valeur": {
+        "telephone": "116 006",
+        "jours": "tous les jours de l annee",
+        "debut_heures": 9,
+        "fin_heures": 20
+      },
+      "unite": "contact",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1520",
+      "date_verifiee": "2026-08-17",
+      "note": "Appel gratuit. Utile aussi pour un proche : un tiers neutre est mieux entendu que la famille."
+    },
+    "plainte_en_ligne": {
+      "valeur": "https://www.masecurite.interieur.gouv.fr/fr/demarches-en-ligne/plainte-en-ligne",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.abe-infoservice.fr/fr/prevention-arnaques/savoir-detecter-une-arnaque/les-faux-produits-proposes/attention-aux-offres-de-livret-depargne-frauduleuses",
+      "date_verifiee": "2026-08-17",
+      "note": "Voie recommandee par l ACPR dans les meilleurs delais. Teleservice THESEE pour les escroqueries commises sur internet ; annuaire des commissariats : https://www.masecurite.interieur.gouv.fr/fr/trouver-un-commissariat-une-gendarmerie"
+    },
+    "signal_conso": {
+      "valeur": "https://signal.conso.gouv.fr/fr",
+      "unite": "url",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19003",
+      "date_verifiee": "2026-08-17",
+      "note": "Plateforme DGCCRF de signalement du demarchage abusif, qui remplace Bloctel."
     }
   }
 }

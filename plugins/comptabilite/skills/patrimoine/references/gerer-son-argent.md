@@ -349,10 +349,16 @@ dû et la réserve disponible.
 | **jusqu'à 3 000 €** | **36 mois** |
 | **plus de 3 000 €** | **60 mois** |
 
-★★ **Au-delà de 1 000 €, le prêteur doit vous proposer AUSSI une offre de crédit amortissable** :
-« Pour un achat supérieur à 1 000 €, une alternative en crédit amortissable doit être proposée pour
-permettre la comparaison. » **C'est un droit à la comparaison, et il est presque jamais mis en avant en
-caisse.** Le demander explicitement fait apparaître, côte à côte, le coût réel des deux formules.
+★★ **Au-delà de 1 000 €, le prêteur doit vous proposer AUSSI une offre de crédit amortissable.**
+
+> « Si le montant du crédit renouvelable est supérieur à 1 000 €, le prêteur doit vous proposer
+> également une offre de crédit amortissable. »
+
+La fiche sur le crédit renouvelable le redit dans les mêmes termes : « Pour un achat supérieur à
+1 000 €, une alternative en crédit amortissable doit être proposée pour permettre la comparaison. »
+
+**C'est un droit à la comparaison, et il n'est presque jamais mis en avant en caisse.** Le demander
+explicitement fait apparaître, côte à côte, le coût réel des deux formules.
 
 ★ **Sur une carte de crédit de magasin, « le paiement comptant doit être le mode de paiement proposé en
 priorité »**. Si l'option crédit s'affiche automatiquement ou par défaut, c'est une pratique
