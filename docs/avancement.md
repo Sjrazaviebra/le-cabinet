@@ -1,6 +1,6 @@
 # Avancement
 
-**211 valeurs vérifiées et datées**, 19 encore ouvertes. **7 rôles.**
+**214 valeurs vérifiées et datées**, 20 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -33,14 +33,14 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **4 vérifiée(s)**, 1 à vérifier |
+| `data/parametres.json` | **7 vérifiée(s)**, 2 à vérifier |
 | `references/actions-rsu-bspce.md` | À ÉCRIRE |
 | `references/assurance-vie.md` | À ÉCRIRE |
 | `references/declaration-annuelle.md` | **RÉDIGÉ** |
 | `references/epargne-retraite-per.md` | À ÉCRIRE |
 | `references/hauts-revenus-cehr-cdhr.md` | À ÉCRIRE |
 | `references/immobilier-fiscal.md` | À ÉCRIRE |
-| `references/impot-revenu.md` | À ÉCRIRE |
+| `references/impot-revenu.md` | **PARTIEL** |
 | `references/impots-locaux-et-ifi.md` | À ÉCRIRE |
 | `references/reclamation-et-controle.md` | À ÉCRIRE |
 | `references/revenus-financiers.md` | À ÉCRIRE |
@@ -125,7 +125,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 29 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
+**Rédigés** — 30 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `impots/impot-revenu` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
 
 **Prochains** :
 
