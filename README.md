@@ -21,6 +21,12 @@ Entreprise **et** vie privée.
 >
 > La rédaction se fait sur [`dev`](../../tree/dev) ; `main` porte les jalons taggés.
 > Utilisation avec un autre agent que Claude → [`AGENTS.md`](AGENTS.md).
+>
+> 🚧 **Un huitième rôle, `financement`, est cadré sur `dev` et pas encore rédigé** : banque, crédit,
+> rupture de crédit, caution du dirigeant, trésorerie, médiation du crédit, assurances obligatoires,
+> et la carte des leviers fiscaux légaux. Ses huit fichiers sont des **périmètres**, marqués
+> `À ÉCRIRE`. Il ne sera mergé sur `main` qu'une fois écrit — pour que la promesse de `main` reste
+> vraie.
 
 > ⚖️ **Ces skills ne remplacent ni un expert-comptable inscrit à l'Ordre, ni un avocat inscrit à
 > un barreau.** Ce sont des outils d'**aide à la décision** : ils structurent une question, posent

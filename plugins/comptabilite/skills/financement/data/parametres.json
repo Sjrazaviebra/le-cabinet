@@ -1,0 +1,9 @@
+{
+  "_lisez_moi": {
+    "role": "Valeurs volatiles du skill financement.",
+    "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
+    "peremption_mois": 6,
+    "etat": "VIDE - le role vient d etre cadre, aucun fichier n est encore redige.",
+    "avertissement": "⛔ Ce role ne recommande AUCUN placement : le conseil en investissement est une activite reglementee (L321-1, L541-1 ; sanction L573-1 : 3 ans d emprisonnement et 375 000 EUR). Voir le role juriste, activites-reglementees.md."
+  }
+}
