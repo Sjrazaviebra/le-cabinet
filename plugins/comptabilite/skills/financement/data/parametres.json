@@ -2005,5 +2005,71 @@
       "date_verifiee": null,
       "note": "⚠ TROU ASSUME. Aucun plafond legal n a ete identifie pour un pret professionnel, mais une ABSENCE ne se prouve pas en lisant un texte voisin. En pratique l indemnite est celle du contrat ⇒ point a negocier a la SIGNATURE, quand elle ne coute rien."
     }
+  },
+  "majoration_retard_declaration": {
+    "taux_absence_mise_en_demeure_ou_depot_dans_la_fenetre": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1728 a, version en vigueur au 21/02/2026, verbatim : 10 % en l absence de mise en demeure ou en cas de depot dans les trente jours suivant la reception d une mise en demeure. ★ C est le taux qu on conserve en deposant meme tres en retard. Detail et cumul avec l interet de retard dans cloture-et-liasse.md du role comptable et reclamation-et-controle.md du role impots."
+    },
+    "taux_au_dela_de_la_fenetre": {
+      "valeur": 40,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1728 b, verbatim : 40 % lorsque la declaration n a pas ete deposee dans les trente jours suivant la reception d une mise en demeure. ★★ La majoration quadruple au seul franchissement de la fenetre — c est le levier gratuit le plus rentable du fichier. ⚠ Le reflexe naturel (attendre d avoir un dossier propre) est exactement le mauvais."
+    },
+    "fenetre_apres_reception_mise_en_demeure": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1728. ★ Le delai court a compter de la RECEPTION de la mise en demeure, pas de son envoi ⇒ conserver l accuse de reception. ⚠ Deposer dans la fenetre ne supprime pas l interet de retard, qui se cumule avec la majoration."
+    }
+  },
+  "regularisation_spontanee": {
+    "reduction_interet_de_retard": {
+      "valeur": 50,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006133936/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1727 V, version en vigueur du 16/02/2025 au 01/01/2027, verbatim : Le montant du au titre de l interet de retard est reduit de 50 % en cas de depot spontane par le contribuable, avant l expiration du delai prevu pour l exercice par l administration de son droit de reprise, d une declaration rectificative. ⚠ Deux conditions dans le texte : la regularisation ne doit pas concerner une infraction exclusive de bonne foi, et le paiement des droits doit accompagner la declaration. ★ Rectifier de soi-meme AVANT tout courrier vaut donc la moitie de l interet. Detail : reclamation-et-controle.md du role impots."
+    }
+  },
+  "exoneration_zone_zfrr": {
+    "effectif_maximal": {
+      "valeur": 11,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31139",
+      "date_verifiee": "2026-08-17",
+      "note": "Fiche du 21/02/2026, verbatim : employer moins de 11 salaries. C est la condition qui disqualifie le plus vite. ⚠ Les autres conditions de fond ne sont pas chiffrees ici a dessein : implantation dans la zone de la direction effective ET de l ensemble de l activite et des moyens d exploitation, activite industrielle commerciale artisanale ou liberale, regime reel ou declaration controlee, et un plafond de chiffre d affaires realise hors zone — a lire sur la fiche. ⛔ Aucun fichier du depot ne traite encore les exonerations de zone."
+    }
+  },
+  "credit_impot_formation_dirigeant": {
+    "statut": {
+      "valeur": "supprime",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23460",
+      "date_verifiee": "2026-08-17",
+      "note": "Fiche du 21/02/2026, verbatim : Non, il n est plus possible de beneficier du credit d impot pour la formation des dirigeants d entreprise, pour les formations realisees apres le 31 decembre 2024. ★★ Un levier encore cite partout comme vivant. Une carte qui y envoie fait perdre du temps a son lecteur."
+    }
+  },
+  "supports_declaratifs": {
+    "annexe_reductions_et_credits_impot": {
+      "valeur": "2042-RICI",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/R1281",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 15/04/2026, intitule verbatim : Declaration des reductions d impot et credits d impot (2042-RICI ou cerfa n 15637). ★ C est l annexe la plus oubliee et c est elle qui fait baisser l impot ⇒ la premiere question utile a qui demande comment payer moins n est pas un montage, c est avez-vous rempli le RICI. Detail : declaration-annuelle.md du role impots."
+    }
   }
 }
