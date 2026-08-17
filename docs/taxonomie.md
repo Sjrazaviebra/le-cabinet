@@ -81,3 +81,35 @@ adversariale d'un contrôleur fiscal reste une bonne idée : elle deviendra un *
   nulle part ici.
 - **La consommation** reste un **fichier** de `/juriste` : même méthode, même posture, même issue —
   qualifier, mettre en demeure, saisir. Elle échoue au test 2.
+
+## Le format de restitution, commun à tous les rôles
+
+Emprunté à `paperasse`, qui le fait bien : une réponse utile se structure en six temps, et le
+cinquième est celui qu'on oublie.
+
+| | |
+|---|---|
+| **Faits** | ce qui est établi de la situation |
+| **Hypothèses** | ce qu'on suppose faute d'information — **nommé comme tel** |
+| **Analyse** | la règle, sa source, son application au cas |
+| **Risques** | ce qui peut mal tourner, et pour qui |
+| **Actions** | quoi faire, dans quel ordre, avant quelle date |
+| **Limites** | ce que cette réponse ne couvre pas, et quand voir un professionnel |
+
+★ **Les « Hypothèses » sont le poste le plus important.** Une réponse juridique donnée sans connaître
+le régime, la convention collective ou le foyer fiscal repose sur des hypothèses : les écrire permet
+à la personne de corriger celle qui est fausse. Les taire produit une réponse fausse d'apparence
+sûre.
+
+## Ce qu'on emprunte aux dépôts existants, et ce qu'on n'emprunte pas
+
+`romainsimon/paperasse` (MIT), `awesome-legal-skills`, `ai-legal-claude`.
+
+- ✅ **La cartographie des sujets** : quels thèmes existent, comment ils se découpent, quelles
+  postures ils inventent. Leur `controleur-fiscal` est une **posture adversariale** plutôt qu'un
+  sujet — bonne idée, qui deviendra un **fichier** `simulation-controle.md`.
+- ✅ **Le fichier de contexte utilisateur** : décrire une fois sa situation pour ne pas la redonner à
+  chaque question. À adapter par rôle.
+- ⛔ **Jamais les valeurs.** Leurs chiffres sont écrits **en dur dans les `.md`**, sans source ni date.
+  C'est précisément le défaut que ce dépôt existe pour corriger : recopier un chiffre non sourcé
+  détruirait la seule chose qui nous distingue.
