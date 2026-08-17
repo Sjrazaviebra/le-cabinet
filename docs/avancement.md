@@ -1,6 +1,6 @@
 # Avancement
 
-**214 valeurs vérifiées et datées**, 20 encore ouvertes. **7 rôles.**
+**758 valeurs vérifiées et datées**, 54 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -16,13 +16,13 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **15 vérifiée(s)**, 5 à vérifier |
+| `data/parametres.json` | **53 vérifiée(s)**, 16 à vérifier |
 | `references/cas-plateformes-etrangeres.md` | À ÉCRIRE |
 | `references/cas-prop-firm.md` | À ÉCRIRE |
 | `references/chomage-et-creation.md` | **RÉDIGÉ** |
 | `references/cloture-et-liasse.md` | À ÉCRIRE |
 | `references/comptabilite-generale.md` | À ÉCRIRE |
-| `references/facturation.md` | À ÉCRIRE |
+| `references/facturation.md` | **PARTIEL** |
 | `references/formes-juridiques.md` | **RÉDIGÉ** |
 | `references/micro-entreprise.md` | **RÉDIGÉ** |
 | `references/paie-et-embauche.md` | À ÉCRIRE |
@@ -52,11 +52,11 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **7 vérifiée(s)**, 0 à vérifier |
+| `data/parametres.json` | **225 vérifiée(s)**, 8 à vérifier |
 | `references/couple.md` | À ÉCRIRE |
 | `references/donation.md` | À ÉCRIRE |
-| `references/enfants.md` | À ÉCRIRE |
-| `references/protection-des-majeurs.md` | À ÉCRIRE |
+| `references/enfants.md` | **PARTIEL** |
+| `references/protection-des-majeurs.md` | **RÉDIGÉ** |
 | `references/separation-et-divorce.md` | À ÉCRIRE |
 | `references/succession.md` | À ÉCRIRE |
 | `references/violences-intrafamiliales.md` | **RÉDIGÉ** |
@@ -84,15 +84,15 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **12 vérifiée(s)**, 4 à vérifier |
+| `data/parametres.json` | **242 vérifiée(s)**, 18 à vérifier |
 | `references/activites-reglementees.md` | **RÉDIGÉ** |
 | `references/contrats-commerciaux.md` | **PARTIEL** |
-| `references/donnees-personnelles.md` | À ÉCRIRE |
+| `references/donnees-personnelles.md` | **PARTIEL** |
 | `references/droit-de-la-consommation.md` | À ÉCRIRE |
-| `references/droit-des-societes.md` | À ÉCRIRE |
-| `references/international.md` | À ÉCRIRE |
-| `references/litiges-courants.md` | À ÉCRIRE |
-| `references/procedure.md` | À ÉCRIRE |
+| `references/droit-des-societes.md` | **PARTIEL** |
+| `references/international.md` | **PARTIEL** |
+| `references/litiges-courants.md` | **PARTIEL** |
+| `references/procedure.md` | **PARTIEL** |
 | `references/propriete-intellectuelle.md` | **PARTIEL** |
 
 ### Rôle `/logement`
@@ -100,10 +100,10 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **21 vérifiée(s)**, 1 à vérifier |
-| `references/bail-et-location.md` | À ÉCRIRE |
-| `references/charges-et-travaux.md` | À ÉCRIRE |
-| `references/colocation-et-cohabitation.md` | À ÉCRIRE |
+| `data/parametres.json` | **79 vérifiée(s)**, 2 à vérifier |
+| `references/bail-et-location.md` | **RÉDIGÉ** |
+| `references/charges-et-travaux.md` | **RÉDIGÉ** |
+| `references/colocation-et-cohabitation.md` | **RÉDIGÉ** |
 | `references/conge-et-fin-de-bail.md` | **RÉDIGÉ** |
 | `references/copropriete.md` | À ÉCRIRE |
 | `references/depot-de-garantie.md` | **RÉDIGÉ** |
@@ -125,7 +125,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 30 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `impots/impot-revenu` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
+**Rédigés** — 41 fichiers : `comptable/chomage-et-creation` · `comptable/facturation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/enfants` · `famille/protection-des-majeurs` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `impots/impot-revenu` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/donnees-personnelles` · `juriste/droit-des-societes` · `juriste/international` · `juriste/litiges-courants` · `juriste/procedure` · `juriste/propriete-intellectuelle` · `logement/bail-et-location` · `logement/charges-et-travaux` · `logement/colocation-et-cohabitation` · `logement/conge-et-fin-de-bail` · `logement/depot-de-garantie` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
 
 **Prochains** :
 

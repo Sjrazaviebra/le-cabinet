@@ -72,12 +72,18 @@ def nombres(texte):
     #      sous re.I avalait le « n »), et le 462 survivait comme une valeur non sourcée.
     #   2. une énumération d'articles (« articles 54, 55 et 56 ») n'était consommée que
     #      jusqu'au premier numéro ; les suivants passaient pour des valeurs.
-    NUM = r"[LRD]?[\s.-]*\d[\d\s-]*(?-i:[A-Z])?"
+    NUM = r"[LRD]?[\s.\-]*\d[\d\s\-/]*(?-i:[A-Z])?"
     texte = re.sub(
         r"(?:articles?|art\.?|n°|décrets?|lois?|arrêtés?|ordonnances?|CERFA)"
         r"[\s.]*(?:n°)?[\s.]*" + NUM + r"(?:\s*(?:,|et|à)\s*" + NUM + r")*",
         " ", texte, flags=re.I)
     texte = re.sub(r"\b[LRD]\d[\d-]*\b", " ", texte)
+    # Référence de texte écrite en code inline : `L227-9`, `1843-4`, `D221-5`, `726`.
+    # ⚠️ Volontairement ÉTROIT : seul un contenu qui ressemble à une référence est retiré, pour
+    # qu'on ne puisse pas soustraire une vraie valeur au contrôle en l'entourant de backticks.
+    texte = re.sub(r"`\s*(?:art\.?\s*)?[LRDA]?\d[\d.\-]*\s*`", " ", texte)
+    # Numérotation européenne d'un règlement ou d'une directive : 2016/679.
+    texte = re.sub(r"\b\d{4}/\d{1,4}\b", " ", texte)
     texte = re.sub(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b", " ", texte)
     texte = re.sub(r"\b\d{1,2}\s+(?:janvier|février|mars|avril|mai|juin|juillet|"
                    r"août|septembre|octobre|novembre|décembre)\b", " ", texte, flags=re.I)

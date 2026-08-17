@@ -192,5 +192,529 @@
       "date_verifiee": null,
       "note": "NON VERIFIE : le plafond varie selon la zone geographique et la composition du foyer, et il est revalorise. ⛔ Ne citer aucun montant sans avoir lu le texte en vigueur."
     }
+  },
+  "colocation": {
+    "solidarite_extinction_apres_conge": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 8-1 VI loi 89-462, en vigueur depuis le 01/07/2021. DELAI MAXIMUM apres la DATE D EFFET du conge (= fin du preavis), pas apres l envoi. La solidarite tombe PLUS TOT si un nouveau colocataire figure au bail. Sans remplacant, le partant ET SA CAUTION paient jusqu a 6 mois de loyer d un logement qu ils n habitent plus. ⇒ le partant a un interet financier direct a trouver son remplacant."
+    },
+    "solidarite_extinction_evenement_alternatif": {
+      "valeur": "un nouveau colocataire figure au bail",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ le seul moyen d arreter la solidarite AVANT les 6 mois. Il faut que le remplacant soit AU BAIL (avenant signe), pas seulement dans le logement. Un accord verbal entre colocataires ne libere personne face au bailleur."
+    },
+    "solidarite_sans_clause": {
+      "valeur": "chaque colocataire et sa caution ne doivent que leur part de loyer et de charges",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34661",
+      "date_verifiee": "2026-08-17",
+      "note": "★ la clause de solidarite n est PAS automatique : elle doit figurer au bail. Premier reflexe = relire le bail avant de payer la part d un autre. Page service-public du 21/03/2025."
+    },
+    "surface_et_volume_minimaux_locaux_privatifs_baux_multiples": {
+      "valeur": {
+        "surface_m2": 9,
+        "volume_m3": 20
+      },
+      "unite": "m2 et m3",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "art. 8-1 II loi 89-462, par derogation aux art. L126-17 et L126-21 CCH. Ne s applique qu aux colocations en BAUX MULTIPLES, qui valent division du logement. Une chambre plus petite rend le bail attaquable."
+    },
+    "loyer_cumule_plafond_baux_multiples": {
+      "valeur": "somme des loyers percus de tous les colocataires inferieure ou egale au loyer applicable au logement entier",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ art. 8-1 II loi 89-462, par renvoi aux art. 17 et 25-9. C est l anti-abus de la colocation en baux individuels : decouper un logement ne permet pas d en augmenter le rendement. Le trop-percu est reclamable."
+    },
+    "depot_de_garantie_part_du_colocataire_partant": {
+      "valeur": "aucune restitution par le bailleur au colocataire partant",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34661",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ bail unique : le depot est indivisible et reste au bailleur jusqu a la fin du bail. Le partant ne peut que s adresser a ses colocataires a l amiable. ⇒ regler la part du depot AVANT de rendre les cles, par ecrit. Voir depot-de-garantie.md pour les delais et la penalite."
+    },
+    "apl_par_colocataire": {
+      "valeur": "une aide par colocataire, calculee sur la part de loyer versee par chacun",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ condition implicite mais decisive : figurer au contrat de bail. Un occupant hors bail ne percoit rien, meme s il paie sa part. Page APL du 01/07/2026."
+    }
+  },
+  "cotitularite_couple": {
+    "cotitularite_epoux": {
+      "valeur": "de plein droit, sans signature, meme si le bail est anterieur au mariage",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028806626/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 1751 code civil : le droit au bail est repute appartenir aux DEUX epoux, quel que soit le regime matrimonial et NONOBSTANT TOUTE CONVENTION CONTRAIRE. Aucune demande a faire."
+    },
+    "cotitularite_partenaires_pacses": {
+      "valeur": "seulement sur demande conjointe des deux partenaires",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028806626/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA fausse croyance a demonter : art. 1751 code civil traite le PACS AUTREMENT du mariage. Sans demande conjointe, le partenaire non signataire n a aucun droit sur le bail. Demande par lettre recommandee, le bailleur ne peut pas refuser."
+    },
+    "colocation_exclut_les_couples": {
+      "valeur": "location consentie exclusivement a des epoux ou a des partenaires pacses au moment de la conclusion initiale du contrat",
+      "unite": "exclusion legale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038834725/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 8-1 I loi 89-462 : un couple marie ou pacse N EST PAS une colocation ⇒ l extinction de solidarite a 6 mois NE S APPLIQUE PAS. C est le piege le plus couteux du fichier : celui qui part croit etre libere en 6 mois et reste tenu jusqu au divorce."
+    },
+    "fin_solidarite_epoux": {
+      "valeur": "mention du divorce sur les actes d etat civil",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1159",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ l epoux parti reste solidairement tenu du loyer et des charges jusqu a ce que le divorce soit note sur l acte d etat civil, ou jusqu au conge de celui qui reste. Duree potentielle : des annees. Page du 09/04/2025."
+    },
+    "fin_solidarite_partenaire_pacse": {
+      "valeur": "dissolution du PACS ou depart de l autre partenaire",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2565",
+      "date_verifiee": "2026-08-17",
+      "note": "pendant toute la duree du PACS les deux partenaires sont solidairement obliges de payer loyer et charges, meme si l un a quitte le logement. Page du 09/04/2025."
+    },
+    "condamnation_penale_anciennete_maximale_violences": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000509310",
+      "date_verifiee": "2026-08-17",
+      "note": "★ art. 8-2 loi 89-462 : la copie de condamnation penale doit avoir ete RENDUE DEPUIS MOINS DE 6 MOIS pour couper la solidarite. L ordonnance de protection du JAF n a pas cette condition d anciennete mais doit avoir ete notifiee a l autre membre du couple."
+    },
+    "fin_solidarite_violences_point_de_depart": {
+      "valeur": "lendemain de la premiere presentation de la lettre recommandee au domicile du bailleur",
+      "unite": "evenement",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000509310",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 8-2 loi 89-462 : la solidarite de la victime ET de sa caution cesse pour les dettes NEES A COMPTER de cette date. Ce n est pas la date des violences ni celle de l ordonnance : c est la date de PRESENTATION du courrier. ⇒ envoyer la LRAR sans attendre."
+    },
+    "notification_du_bailleur_aux_deux_epoux": {
+      "valeur": "chaque courrier doit etre adresse a chacun des epoux pour etre valide",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1159",
+      "date_verifiee": "2026-08-17",
+      "note": "★ un conge adresse a un seul epoux est inopposable a l autre. ⚠ exception : si le bailleur ignorait le mariage au moment de l envoi, le courrier devient automatiquement opposable a l epoux non destinataire ⇒ informer le bailleur du mariage, par ecrit, est ce qui active la protection."
+    }
+  },
+  "sous_location": {
+    "autorisation_du_bailleur": {
+      "valeur": "accord ecrit obligatoire, portant aussi sur le prix du loyer",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806569",
+      "date_verifiee": "2026-08-17",
+      "note": "art. 8 loi 89-462, en vigueur depuis le 27/03/2014. L accord doit couvrir DEUX choses : le fait de sous-louer et le montant. Un accord sur le principe seul ne suffit pas."
+    },
+    "plafond_du_loyer_de_sous_location": {
+      "valeur": "prix au metre carre de surface habitable inferieur ou egal a celui paye par le locataire principal",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806569",
+      "date_verifiee": "2026-08-17",
+      "note": "★ le plafond est AU METRE CARRE, pas au logement : sous-louer une chambre au prix du studio entier depasse le plafond. Interdit donc de se faire une marge."
+    },
+    "sanction_sous_location_non_autorisee": {
+      "valeur": "resiliation du bail du locataire et du bail de sous-location, condamnation a verser au bailleur le montant des sous-loyers percus, dommages et interets",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2449",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ le locataire ne perd pas seulement son bail : il rend les sous-loyers ENCAISSES au bailleur. L operation devient perdante a 100 %. Page du 24/07/2025."
+    },
+    "situation_du_sous_locataire_a_la_fin_du_bail_principal": {
+      "valeur": "aucun droit a l encontre du bailleur ni aucun titre d occupation",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000028806569",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ art. 8 loi 89-462 : les autres dispositions de la loi de 1989 ne sont PAS applicables au contrat de sous-location. Le sous-locataire n a donc ni preavis protege, ni droit au maintien : il est expulsable sans titre."
+    },
+    "apl_sous_locataire_age_maximum": {
+      "valeur": 30,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "date_verifiee": "2026-08-17",
+      "note": "★ un sous-locataire DECLARE au proprietaire peut percevoir l APL, mais seulement s il a moins de 30 ans ou s il est heberge chez un accueillant familial. C est un droit ignore, et il exige que la sous-location soit declaree."
+    },
+    "sous_location_logement_social": {
+      "valeur": "la sous-location d un logement social EN ENTIER est interdite",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36010/1_0?idFicheParent=F2449",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ interdiction verbatim, page du 24/07/2025. Sanction : le bailleur peut demander au tribunal la resiliation du bail du locataire ET de celui du sous-locataire. ⚠ des exceptions PARTIELLES existent (personne agee ou handicapee, cohabitation intergenerationnelle solidaire, personne de moins de 30 ans) mais leurs conditions exactes au CCH ne sont PAS verifiees ici : ne rien affirmer sur une exception sans lire le texte."
+    }
+  },
+  "hebergement_a_titre_gratuit": {
+    "fausse_attestation_peine": {
+      "valeur": {
+        "emprisonnement_ans": 1,
+        "amende_euros": 15000
+      },
+      "unite": "ans et euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037398925/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ art. 441-7 code penal, en vigueur depuis le 12/09/2018. Vise TROIS faits : etablir une attestation inexacte, la falsifier, ET EN FAIRE USAGE. L heberge qui produit une attestation de complaisance est punissable au meme titre que l hebergeur qui la signe."
+    },
+    "fausse_attestation_peine_aggravee": {
+      "valeur": {
+        "emprisonnement_ans": 3,
+        "amende_euros": 45000
+      },
+      "unite": "ans et euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037398925/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ art. 441-7 al. 2 code penal : peines triplees notamment lorsque l infraction est commise EN VUE D OBTENIR UN TITRE DE SEJOUR ou une protection contre l eloignement, ou de porter prejudice au Tresor public. ⇒ c est exactement l usage le plus frequent de l attestation d hebergement. Renvoyer au role immigration."
+    },
+    "apl_personne_hebergee": {
+      "valeur": "aucune aide au logement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "date_verifiee": "2026-08-17",
+      "note": "la liste des beneficiaires de l APL ne comprend que locataire, colocataire et sous-locataire declare. Une personne hebergee a titre gratuit ne paie pas de loyer et n ouvre aucun droit."
+    }
+  },
+  "location_courte_duree_residence_principale": {
+    "duree_minimale_occupation_residence_principale": {
+      "valeur": 8,
+      "unite": "mois par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "logement occupe au moins 8 mois par an, sauf obligation professionnelle, raison de sante ou force majeure. En dessous, ce n est plus une residence principale et le regime bien plus lourd de la residence secondaire s applique. Page du 21/05/2026."
+    },
+    "plafond_jours_location_par_annee_civile": {
+      "valeur": {
+        "minimum": 90,
+        "maximum": 120
+      },
+      "unite": "jours par annee civile",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "★ le plafond n est plus uniforme : selon la commune il varie entre 90 et 120 jours. ⇒ ne jamais annoncer 120 jours sans avoir verifie la deliberation de la commune."
+    },
+    "duree_maximale_meme_client": {
+      "valeur": 90,
+      "unite": "jours consecutifs par annee civile",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "un meme client ne peut pas totaliser plus de 90 jours consecutifs de location par annee civile. Limite distincte du plafond annuel global : les deux se cumulent."
+    },
+    "amende_depassement_nombre_de_jours": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "★ amende CIVILE, prononcee par le juge a la demande de la commune. Elle s ajoute a la resiliation du bail encourue par un locataire qui a sous-loue sans accord."
+    },
+    "amende_defaut_de_declaration": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "amende civile pouvant aller jusqu a 5000 euros lorsque la declaration en mairie est obligatoire et n a pas ete faite."
+    },
+    "accord_du_proprietaire_si_locataire": {
+      "valeur": "accord ecrit du proprietaire obligatoire",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ un locataire qui met sa residence principale en meuble de tourisme fait de la SOUS-LOCATION : sans accord ecrit du bailleur il cumule les sanctions de l art. 8 loi 89-462 et l amende civile de la commune."
+    }
+  },
+  "commandement_de_payer": {
+    "delai_pour_payer": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 I de la loi du 6 juillet 1989 : la clause resolutoire ne produit effet que six semaines apres un commandement de payer demeure infructueux. ★★ C etait deux mois avant la loi du 27 juillet 2023 : toute documentation qui dit encore deux mois est perimee et fait perdre deux semaines de reaction. Le delai figure a peine de nullite dans l acte."
+    },
+    "signification_a_la_caution": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 I : quand un cautionnement garantit le bail, le commandement est signifie a la caution dans les quinze jours suivant sa signification au locataire. ⚠ A defaut la caution n est pas tenue aux penalites ni aux interets de retard : c est un moyen de defense du garant."
+    },
+    "seuil_signalement_ccapex_bailleur_particulier": {
+      "valeur": {
+        "mois_impayes_consecutifs": 2,
+        "dette_en_mois_de_loyer_hors_charges": 2
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 I : pour les impayes de deux mois sans interruption ou une dette egale a deux fois le loyer mensuel hors charges, le commissaire de justice signale le commandement a la CCAPEX quand le bailleur est une personne physique ou une societe civile familiale. ★ Le signalement est automatique : le locataire est deja connu du dispositif de prevention sans avoir rien fait."
+    },
+    "diagnostic_social_anciennete_max_avant_audience": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19035",
+      "date_verifiee": "2026-08-17",
+      "note": "Si aucun diagnostic social et financier datant de moins de six semaines n existe un mois avant l audience, un nouvel entretien est propose. ★ Le diagnostic est desormais realise des le stade du commandement de payer pour les bailleurs particuliers et SCI familiales."
+    },
+    "diagnostic_social_delai_avant_audience": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A19035",
+      "date_verifiee": "2026-08-17",
+      "note": "Point de controle situe un mois avant l audience. ⚠ Le professionnel peut realiser le diagnostic a partir des informations dont il dispose meme si le locataire ne participe pas a l entretien : ne pas repondre ne bloque rien, cela prive seulement le locataire de sa voix."
+    }
+  },
+  "assignation_et_audience": {
+    "seuil_conciliation_ou_mediation_obligatoire": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31272",
+      "date_verifiee": "2026-08-17",
+      "note": "Lorsque le desaccord porte sur un montant ne depassant pas 5 000 euros, la tentative de conciliation est obligatoire avant de saisir le juge. ★ En dessous de ce seuil, une saisine directe du juge est attaquable : c est un moyen que le locataire peut soulever."
+    },
+    "saisine_ccapex_prealable_bailleur_personne_morale": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 II : les bailleurs personnes morales autres qu une societe civile familiale ne peuvent faire delivrer l assignation, sous peine d irrecevabilite, avant l expiration d un delai de deux mois suivant la saisine de la CCAPEX. ★★ Cette obligation ne pese PAS sur un bailleur particulier : la defense du locataire depend donc de l identite du bailleur."
+    },
+    "notification_assignation_au_prefet": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 III : a peine d irrecevabilite de la demande, l assignation est notifiee par le commissaire de justice au representant de l Etat dans le departement au moins six semaines avant l audience. ★ Irrecevabilite : c est une nullite de procedure a verifier systematiquement."
+    },
+    "delai_minimum_entre_assignation_et_audience": {
+      "valeur": 6,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31272",
+      "date_verifiee": "2026-08-17",
+      "note": "L audience a lieu au moins six semaines apres le jour ou le locataire a recu l assignation. ★★ C est la fenetre decisive : le juge ne peut accorder des delais de paiement que si le loyer courant a ete repris integralement AVANT l audience."
+    }
+  },
+  "delais_accordes_par_le_juge": {
+    "delais_de_paiement_maximum": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 V : le juge peut accorder des delais de paiement dans la limite de trois annees, a la double condition que le locataire soit en situation de regler sa dette et qu il ait repris le versement integral du loyer courant avant la date de l audience. ★★ La condition de reprise du loyer courant est le point le plus decisif de tout le dossier."
+    },
+    "suspension_clause_resolutoire_retablissement_personnel": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 VIII : en cas de retablissement personnel impose par la commission de surendettement ou prononce par le juge, le juge suspend les effets de la clause de resiliation de plein droit pendant un delai de deux ans. ★ Si le locataire paie regulierement pendant ces deux ans, la clause est reputee ne pas avoir joue : le bail survit."
+    },
+    "delai_supplementaire_resaisine_surendettement": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 24 VI 2 : en cas de suspension d exigibilite imposee par la commission de surendettement, un delai de trois mois supplementaires est accorde pour resaisir la commission. ⚠ Delai a ne pas laisser passer : la suspension ne se poursuit que s il y a resaisine."
+    },
+    "delai_de_grace_minimum": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900060",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-4 du code des procedures civiles d execution, version en vigueur depuis le 29 juillet 2023 : la duree des delais de l article L412-3 ne peut en aucun cas etre inferieure a un mois."
+    },
+    "delai_de_grace_maximum": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900060",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-4 : ni superieure a un an. ⚠ Ce plafond a ete abaisse par la loi du 27 juillet 2023 ; les documents anterieurs annoncent une duree beaucoup plus longue. ⛔ Ces delais ne s appliquent pas si le juge retient la mauvaise foi de l occupant, ni en cas d entree par manoeuvres, menaces, voies de fait ou contrainte."
+    },
+    "prorogation_exceptionnelle_durete": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000025024948/LEGISCTA000025026026/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-2 : lorsque l expulsion aurait des consequences d une exceptionnelle durete, notamment du fait de la periode de l annee ou des circonstances atmospheriques, le delai de l article L412-1 peut etre proroge par le juge pour une duree n excedant pas trois mois. ★ Levier distinct du delai de grace et cumulable avec lui."
+    }
+  },
+  "expulsion": {
+    "delai_commandement_de_quitter_les_lieux": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900004",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-1 : si l expulsion porte sur un lieu habite, elle ne peut avoir lieu qu a l expiration d un delai de deux mois qui suit le commandement. ⚠ Le juge peut reduire ou supprimer ce delai, notamment s il constate la mauvaise foi de la personne expulsee : le delai n est PAS automatique."
+    },
+    "prescription_dette_locative": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31267",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai de trois ans pour reclamer un impaye de loyers ou de charges. ★★ Une dette locative plus ancienne n est plus reclamable : le decompte joint au commandement de payer doit etre verifie ligne par ligne. Page du 10/04/2025, a recouper."
+    }
+  },
+  "treve_hivernale": {
+    "dates": {
+      "valeur": {
+        "debut": "1er novembre",
+        "fin": "31 mars de l annee suivante"
+      },
+      "unite": "periode",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900053",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L412-6 : il est sursis a toute mesure d expulsion non executee a la date du 1er novembre de chaque annee jusqu au 31 mars de l annee suivante. ★★ Elle suspend l EXECUTION, pas la PROCEDURE : commandement de payer, assignation, audience, jugement et commandement de quitter les lieux continuent pendant la treve, et l expulsion devient effective des le 31 mars passe. ⛔ Ne s applique pas si le relogement est assure dans des conditions suffisantes, ni en cas d introduction sans droit ni titre dans le domicile d autrui par manoeuvres, menaces, voies de fait ou contrainte, ni a l expulsion d un conjoint violent ordonnee par le juge aux affaires familiales."
+    }
+  },
+  "sanctions": {
+    "amende_maintien_apres_decision_expulsion": {
+      "valeur": 7500,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A16854",
+      "date_verifiee": "2026-08-17",
+      "note": "Loi du 27 juillet 2023 : un locataire qui reste plus de deux mois dans le logement apres une decision d expulsion definitive peut etre condamne a 7 500 euros d amende. ★★ La sanction ne s applique PAS pendant la treve hivernale ni si le locataire beneficie d une decision de sursis a expulsion : rester n est pas un delit tant qu on est protege. Page du 18/10/2023, a recouper ; l article du code penal n a pas pu etre lu directement."
+    },
+    "amende_bailleur_defaut_signalement_caf": {
+      "valeur": 8010,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Le bailleur risque une amende de 8 010 euros s il ne signale pas l impaye de loyer a la Caf ou a la MSA. ★ Chiffre confirme sur deux fiches officielles. Page du 01/01/2026, a recouper car le montant est susceptible d etre revalorise."
+    }
+  },
+  "aide_au_logement": {
+    "delai_signalement_impaye_caf": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Des que l impaye est etabli, le bailleur a deux mois pour le signaler a la Caf ou a la MSA. ★★ Le signalement ne coupe PAS l aide au logement du locataire : c est la croyance fausse la plus repandue, et elle pousse les deux parties a ne rien declarer."
+    },
+    "seuil_impaye_actuel": {
+      "valeur": 2,
+      "unite": "fois le loyer mensuel et les charges",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Impaye etabli a partir d une dette au moins egale a deux fois le montant mensuel du loyer et des charges : montant NET quand l aide est versee au bailleur, montant BRUT quand elle est versee au locataire. Page du 01/01/2026, a recouper."
+    },
+    "seuil_impaye_a_compter_du_1er_janvier_2027": {
+      "valeur": {
+        "dette_cumulee_euros": 450,
+        "mois_de_defaut_de_paiement": 3
+      },
+      "unite": "mixte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18832",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter du 1er janvier 2027, l impaye est etabli des que la dette cumulee de loyer et de charges depasse 450 euros OU des trois mois de defaut de paiement meme sous ce montant. ★ Le declenchement devient beaucoup plus precoce : l accompagnement social arrive plus tot."
+    },
+    "delai_plan_apurement_bailleur": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "La Caf ou la MSA peut demander au bailleur d etablir un plan d apurement de la dette dans un delai maximal de six mois. ★ L aide au logement est MAINTENUE si le plan est respecte et si le loyer courant est repris ; elle est suspendue en cas de mauvaise execution du plan."
+    },
+    "delai_plan_apurement_refus_tiers_payant": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai reduit a deux mois lorsque l aide est versee au locataire et que le bailleur a refuse le tiers-payant. ⚠ Refuser le versement direct raccourcit le delai contre soi-meme."
+    },
+    "delai_fsl_plan_apurement": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32037",
+      "date_verifiee": "2026-08-17",
+      "note": "Le fonds de solidarite pour le logement dispose d un delai de trois mois pour etablir un plan d apurement. Page du 01/01/2026, a recouper."
+    }
+  },
+  "interlocuteurs": {
+    "numero_sos_loyers_impayes": {
+      "valeur": "0 805 160 075",
+      "unite": "telephone",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31272",
+      "date_verifiee": "2026-08-17",
+      "note": "SOS loyers impayes, du lundi au vendredi. Numero lu sur la fiche service-public verifiee le 06/08/2026. ⛔ Ne jamais citer un autre numero non fetche."
+    }
+  },
+  "cote_bailleur": {
+    "visale_delai_declaration_impaye": {
+      "valeur": {
+        "mise_en_demeure_jours": 15,
+        "declaration_jours": 30
+      },
+      "unite": "jours",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33453",
+      "date_verifiee": null,
+      "note": "⚠ DIVERGENCE entre deux pages officielles : la fiche Visale indique une mise en demeure dans les quinze jours qui suivent l impaye, la fiche sur les impayes de loyer indique une declaration dans les trente jours. ★ Dans les deux cas le delai est tres court et son depassement fait perdre la garantie : a recouper directement aupres d Action Logement avant de s y fier."
+    },
+    "cumul_caution_et_assurance_loyers_impayes": {
+      "valeur": "interdit sauf locataire etudiant ou apprenti",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31267",
+      "date_verifiee": "2026-08-17",
+      "note": "Le proprietaire qui a deja une assurance privee contre les risques locatifs peut demander une caution seulement si son locataire est etudiant ou apprenti. ★★ Un bailleur qui cumule assurance loyers impayes et garant hors ce cas expose son cautionnement. Page du 10/04/2025, a recouper."
+    }
   }
 }

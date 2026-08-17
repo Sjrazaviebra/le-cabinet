@@ -207,5 +207,462 @@
       "a_verifier": true,
       "source": "https://www.impots.gouv.fr/particulier/questions/comment-sont-imposes-mes-revenus-de-capitaux-mobiliers"
     }
+  },
+  "cas_prop_firm": {
+    "amende_compte_etranger_non_declare": {
+      "valeur": 1500,
+      "unite": "EUR par compte non declare",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 IV. Amende PAR COMPTE et PAR ANNEE de defaut, pas par contribuable. ★★ Elle ne depend d une aucune qualification du revenu : elle frappe le seul manquement declaratif, meme si le compte est a zero et meme si aucun impot n etait du. C est le risque le plus probable pour un trader paye par une prop firm via un portefeuille en ligne etranger."
+    },
+    "amende_compte_etranger_etat_sans_convention": {
+      "valeur": 10000,
+      "unite": "EUR par compte non declare",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 IV, verbatim : montant porte a ce niveau lorsque l obligation declarative concerne un Etat ou un territoire qui n a pas conclu avec la France une convention d assistance administrative permettant l acces aux renseignements bancaires. ⚠ Beaucoup de prop firms et de prestataires de paiement sont domicilies dans des juridictions ou cette question se pose : verifier le pays REEL de l etablissement teneur du compte, pas celui affiche sur le site."
+    },
+    "amende_proportionnelle_comptes_etrangers_censuree": {
+      "valeur": {
+        "seuil_soldes_crediteurs": 50000,
+        "taux_pourcent": 5
+      },
+      "unite": "EUR de soldes crediteurs cumules au 31 decembre, et pourcentage du solde",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032929126",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CROYANCE FAUSSE A DEMONTER. Cette amende proportionnelle a ete DECLAREE CONTRAIRE A LA CONSTITUTION par la decision n° 2016-554 QPC du 22 juillet 2016 (disproportion manifeste), avec effet immediat y compris sur les amendes non definitives. Elle n apparait plus dans la version en vigueur de l article 1736 IV. Des contenus en ligne la citent encore : ne pas la reprendre."
+    },
+    "compte_repute_utilise_operations_minimum": {
+      "valeur": 1,
+      "unite": "operation de credit ou de debit sur la periode declaree",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162316/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Annexe III au CGI, art. 344 A, verbatim : un compte est repute avoir ete UTILISE des lors que la personne a effectue au moins une operation de credit ou de debit pendant la periode visee par la declaration. Consequence : un seul versement recu sur un portefeuille en ligne etranger rend ce compte declarable, meme s il a ete vide et ferme aussitot. Version en vigueur consultee au 17 aout 2026."
+    },
+    "formulaires_bnc_declaration_controlee": {
+      "valeur": "2035 avec annexes 2035-A et 2035-B, resultat reporte sur 2042-C-PRO",
+      "unite": "formulaires",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32105",
+      "date_verifiee": "2026-08-17",
+      "note": "Regime de la declaration controlee des BNC. Page mise a jour le 21/02/2026. ⚠ Ces formulaires supposent que la qualification BNC professionnelle est retenue : ils ne la creent pas. En micro-BNC, seule la declaration de revenus complementaire est deposee et AUCUN frais reel n est deductible."
+    },
+    "report_deficits_bnc_non_professionnels_duree": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE dans cette passe. Regle a lire au texte : CGI art. 156, I, 2° sur les deficits provenant d activites non commerciales exercees a titre non professionnel, non imputables sur le revenu global et reportables sur les seuls benefices de meme nature, dans une limite de duree a confirmer. Point DECISIF pour un trader qui a paye plusieurs droits d entree et resets sans jamais toucher de versement : c est cette regle qui dit si la perte est perdue."
+    },
+    "taux_de_change_revenus_source_etrangere": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Quel cours retenir pour convertir en euros un versement recu en devise : cours du jour de l encaissement, cours moyen annuel, ou bareme publie par l administration. Aucune page officielle n a pu etre confirmee dans cette passe. ⇒ ne pas affirmer de methode ; demander au service des impots et conserver la source du cours utilise."
+    },
+    "formulaire_declaration_comptes_etrangers": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Le numero de l annexe a la declaration de revenus servant a declarer les comptes ouverts, detenus, utilises ou clos a l etranger n a pas pu etre confirme sur une page officielle dans cette passe. L OBLIGATION elle-meme est verifiee (CGI art. 1649 A et annexe III art. 344 A) ; seul le support declaratif reste a confirmer sur impots.gouv.fr."
+    },
+    "imposition_mondiale_des_residents": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE dans cette passe. Principe a lire au texte : CGI art. 4 A, imposition des personnes domiciliees fiscalement en France sur l ensemble de leurs revenus, de source francaise comme etrangere, sous reserve des conventions fiscales. Enonce ici comme un point A VERIFIER et non comme un fait, conformement a la discipline du depot."
+    },
+    "amende_compte_etranger_non_declare_bis": {
+      "valeur": 1500,
+      "unite": "EUR par compte non declare",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 IV, confirme par service-public F34342 (verifie le 09/07/2026). Amende PAR COMPTE et par annee de defaut, pas par contribuable. ★★ Elle ne depend d aucune qualification du revenu : elle frappe le seul manquement declaratif, meme si le compte est a zero et meme si aucun impot n etait du. C est le risque le plus probable et le plus chiffrable pour un trader paye par une prop firm via un portefeuille en ligne etranger."
+    },
+    "amende_compte_etranger_etat_sans_convention_bis": {
+      "valeur": 10000,
+      "unite": "EUR par compte non declare",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 IV, verbatim : montant porte a ce niveau lorsque l obligation declarative concerne un Etat ou un territoire qui n a pas conclu avec la France une convention d assistance administrative permettant l acces aux renseignements bancaires. ⚠ Verifier le pays REEL de l etablissement teneur du compte, pas celui affiche sur le site de la firme."
+    },
+    "majoration_droits_dus_avoirs_etrangers_non_declares": {
+      "valeur": 80,
+      "unite": "pourcent des droits dus",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim service-public : Majoration de 80 % des droits dus. Elle s AJOUTE a l amende par compte, elle ne la remplace pas. Page verifiee le 09/07/2026. C est ce cumul, et non l amende seule, qui rend le manquement declaratif couteux."
+    },
+    "dispense_declaration_compte_en_ligne": {
+      "valeur": {
+        "plafond_encaissements_annuels": 10000,
+        "nombre_conditions_cumulatives": 3
+      },
+      "unite": "EUR encaisses dans l annee, et conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ PIEGE MAJEUR. Verbatim : vous n avez pas a declarer un compte que vous detenez a l etranger s il remplit les 3 conditions suivantes : Il sert a payer des achats en ligne ou encaisser des ventes de biens / Il est lie a un compte que vous avez deja en France / Vous avez encaisse sur ce compte une somme ne depassant pas 10 000 EUR dans l annee. ⇒ Un versement de prop firm n est PAS l encaissement d une vente de biens : la dispense ne couvre pas ce cas. Beaucoup s en croient dispenses a tort parce que les montants sont petits."
+    },
+    "amende_compte_actifs_numeriques_non_declare": {
+      "valeur": {
+        "amende_de_base": 750,
+        "amende_si_valeur_elevee": 1500,
+        "seuil_valeur_du_compte": 50000
+      },
+      "unite": "EUR par compte non declare, et seuil en EUR de valeur du compte",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim service-public : amende forfaitaire de 750 EUR par compte non declare ; 1 500 EUR par compte non declare si la valeur du compte d actifs numeriques depasse 50 000 EUR ; majoration de 80 % appliquee a tous les rappels d impot. ⚠ Concerne directement les traders payes en stablecoins sur une plateforme d echange etrangere. ⚠ Ne pas confondre ce seuil de 50 000 EUR avec le seuil de l ancienne amende proportionnelle censuree : ce sont deux dispositifs differents."
+    },
+    "amende_proportionnelle_comptes_etrangers_censuree_bis": {
+      "valeur": {
+        "seuil_soldes_crediteurs": 50000,
+        "taux_pourcent": 5
+      },
+      "unite": "EUR de soldes crediteurs cumules au 31 decembre, et pourcentage du solde",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032929126",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CROYANCE FAUSSE A DEMONTER. Amende proportionnelle DECLAREE CONTRAIRE A LA CONSTITUTION par la decision n° 2016-554 QPC du 22 juillet 2016 pour disproportion manifeste, avec effet immediat y compris sur les amendes non definitives. Elle n apparait plus dans la version en vigueur de l article 1736 IV. Des contenus en ligne la citent encore : ne pas la reprendre."
+    },
+    "compte_repute_utilise_operations_minimum_bis": {
+      "valeur": 1,
+      "unite": "operation de credit ou de debit sur la periode declaree",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162316/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Annexe III au CGI, art. 344 A, verbatim : un compte est repute avoir ete utilise des lors que la personne a effectue au moins une operation de credit ou de debit pendant la periode visee par la declaration. Consequence : un seul versement recu sur un portefeuille en ligne etranger rend ce compte declarable, meme s il a ete vide et ferme aussitot. Version en vigueur consultee au 17 aout 2026."
+    },
+    "formulaires_bnc_declaration_controlee_bis": {
+      "valeur": "2035 avec annexes 2035-A et 2035-B, resultat reporte sur 2042-C-PRO",
+      "unite": "formulaires",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32105",
+      "date_verifiee": "2026-08-17",
+      "note": "Regime de la declaration controlee des BNC. Page mise a jour le 21/02/2026. ⚠ Ces formulaires supposent que la qualification BNC professionnelle est retenue : ils ne la creent pas. En micro-BNC, seule la declaration de revenus complementaire est deposee et AUCUN frais reel n est deductible."
+    },
+    "report_deficits_bnc_non_professionnels_duree_bis": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE dans cette passe. Regle a lire au texte : CGI art. 156, I, 2° sur les deficits provenant d activites non commerciales exercees a titre non professionnel, non imputables sur le revenu global et reportables sur les seuls benefices de meme nature, dans une limite de duree a confirmer. Point DECISIF pour un trader qui a paye plusieurs droits d entree et resets sans jamais toucher de versement : c est cette regle qui dit si la perte est definitivement perdue."
+    },
+    "taux_de_change_revenus_source_etrangere_bis": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE, et cherche activement. Quel cours retenir pour convertir en euros un versement recu en devise : cours du jour de l encaissement, cours moyen annuel, ou bareme publie par l administration. La recherche service-public sur le taux de change des revenus en devise ne renvoie aucune fiche traitant le sujet. ⇒ ne pas affirmer de methode ; demander au service des impots et conserver par ecrit la source du cours utilise, date par date."
+    },
+    "formulaire_declaration_comptes_etrangers_bis": {
+      "valeur": "annexe annuelle Declaration des comptes ouverts, utilises ou clos a l etranger, une par compte, deposee avec la declaration de revenus",
+      "unite": "formulaire",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": null,
+      "note": "⚠ Le LIBELLE et l existence de l annexe sont confirmes par service-public, ainsi que la regle une declaration par compte et la teledeclaration obligatoire en cas d acces internet. Le NUMERO du formulaire n a pas ete lu sur une page officielle dans cette passe : reste a confirmer sur impots.gouv.fr. Marque a_verifier pour cette raison."
+    },
+    "domicile_fiscal_criteres": {
+      "valeur": {
+        "nombre_criteres_alternatifs": 4,
+        "seuil_sejour_principal_jours": 183
+      },
+      "unite": "criteres alternatifs, et jours de sejour dans l annee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F62",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim service-public, page verifiee le 01/01/2026 : le domicile fiscal en France est etabli si l UN des criteres est rempli - foyer, sejour au moins 183 jours dans l annee, activite principale, centre des interets economiques. ★ UN SEUL suffit : un trader qui voyage ne sort pas de la residence fiscale francaise par le seul fait de passer moins de la moitie de l annee en France. ⚠ Une convention internationale peut prevoir des regles differentes."
+    },
+    "imposition_mondiale_des_residents_bis": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE, et la fiche sur le domicile fiscal ne l enonce PAS explicitement. Principe a lire au texte : CGI art. 4 A, imposition des personnes domiciliees fiscalement en France sur l ensemble de leurs revenus, de source francaise comme etrangere, sous reserve des conventions. Enonce dans le fichier comme un point A VERIFIER et non comme un fait."
+    }
+  },
+  "facture_mentions": {
+    "seuil_dispense_mentions": {
+      "valeur": 150,
+      "unite": "EUR HT",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050811276",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 242 nonies A ann. II CGI, version en vigueur au 01/01/2025 : une facture d un montant inferieur ou egal a 150 EUR HT peut ne pas comporter les mentions des 2 et 12 (numero d identification a la TVA et reference a la disposition d exoneration). ⚠ Ce n est PAS une dispense generale de mentions : tout le reste reste du. ⛔ La dispense tombe pour les operations transfrontalieres et les regimes particuliers."
+    },
+    "note_prestation_service_particulier": {
+      "valeur": 25,
+      "unite": "EUR TTC",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23208",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 07/08/2026 : une note doit obligatoirement etre remise au particulier lorsque le montant d une prestation de services depasse ce seuil. ★ Beaucoup de prestataires croient qu aucun document n est du a un particulier : faux au-dela de ce montant."
+    },
+    "garantie_legale_conformite": {
+      "valeur": 2,
+      "unite": "annees minimum",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31808",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 11/08/2026 : la facture adressee a un PARTICULIER doit mentionner l existence et la duree de la garantie legale de conformite d au moins cette duree. ★ Mention propre au B2C, absente des modeles de facture B2B."
+    },
+    "nouvelles_mentions_facturation_electronique": {
+      "valeur": 4,
+      "unite": "mentions",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31808",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 11/08/2026 : numero SIREN du client entreprise · adresse de livraison si differente · nature des operations (biens, services ou les deux) · mention Option pour le paiement de la taxe d apres les debits. Applicables au 01/09/2026 pour grandes entreprises et ETI, au 01/09/2027 pour PME et micro. ⚠ Ces mentions s ajoutent a la liste existante, elles ne la remplacent pas."
+    }
+  },
+  "facture_emission": {
+    "delai_emission_differee": {
+      "valeur": 15,
+      "unite": "jour du mois suivant",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23208",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 07/08/2026 : principe = facture emise lors de la livraison du bien ou de la realisation de la prestation. Differe possible jusqu a ce jour du mois suivant pour une livraison de biens exoneree de TVA et pour une prestation dont la TVA est due par le client. La facture recapitulative peut etre emise au plus tard a la fin du mois."
+    }
+  },
+  "facture_sanctions": {
+    "amende_omission_ou_inexactitude": {
+      "valeur": 15,
+      "unite": "EUR par omission ou inexactitude et par facture",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 1737 II CGI, version en vigueur du 21/02/2026 au 01/01/2027 : « Toute omission ou inexactitude constatee dans les factures [...] donne lieu a l application d une amende de 15 EUR. » ★★ Le BOFiP BOI-CF-INF-10-40-40 confirme que chaque omission ou inexactitude est sanctionnee separement : l amende se multiplie par mention ET par facture. ⇒ un modele de facture faux fabrique une amende par facture emise."
+    },
+    "plafond_amende_par_facture": {
+      "valeur": 25,
+      "unite": "pourcent du montant de la facture",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 1737 II CGI : le total des amendes dues au titre de CHAQUE facture ne peut exceder le quart du montant qui y est ou aurait du y etre mentionne (BOFiP : 25 pourcent). ⚠ Le plafond est PAR FACTURE, il n existe aucun plafond global sur un lot de factures."
+    },
+    "amende_defaut_de_facturation": {
+      "valeur": {
+        "taux": 50,
+        "unite_taux": "pourcent du montant de la transaction",
+        "plafond_par_exercice": 375000,
+        "taux_reduit": 5,
+        "plafond_reduit": 37500
+      },
+      "unite": "EUR et pourcent",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 1737 I-3 CGI : ne pas delivrer de facture ou de note et ne pas comptabiliser l operation. Taux ramene au taux reduit si le fournisseur prouve que l operation a ete regulierement comptabilisee (BOFiP : dans les 30 jours d une mise en demeure). ⛔ Sans commune mesure avec l amende par mention : c est la sanction du travail au noir, pas de l erreur de forme."
+    },
+    "tolerance_premiere_infraction": {
+      "valeur": {
+        "delai_reparation_jours": 30,
+        "annees_sans_infraction_requises": 3
+      },
+      "unite": "jours et annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 1737 V CGI : « Les amendes mentionnees au 3 du I et aux II, III et IV du present article ne sont pas applicables en cas de premiere infraction commise au cours de l annee civile en cours et des trois annees precedentes lorsque l infraction a ete reparee spontanement ou dans les trente jours suivant une premiere demande de l administration. » ★★ C est le droit le plus utile du sujet et le plus ignore : reparer VITE annule l amende."
+    },
+    "amende_defaut_emission_electronique": {
+      "valeur": {
+        "par_facture": 50,
+        "plafond_annuel": 15000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 1737 III CGI : « Le non-respect par l assujetti de l obligation d emission d une facture sous une forme electronique dans les conditions prevues a l article 289 bis donne lieu a l application d une amende de 50 EUR par facture, sans que le total des amendes appliquees au titre d une meme annee civile puisse etre superieur a 15 000 EUR. »"
+    },
+    "amende_plateforme_agreee": {
+      "valeur": {
+        "par_facture": 50,
+        "plafond_annuel": 45000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. 1737 IV CGI : amende mise a la charge de la PLATEFORME AGREEE, pas de l entreprise, pour manquement aux obligations de transmission de donnees de l article 289 E. ★ A savoir avant de signer avec un prestataire : la loi le rend redevable."
+    },
+    "amende_defaut_plateforme_reception": {
+      "valeur": {
+        "premiere_amende": 500,
+        "amendes_suivantes": 1000,
+        "periode_mise_en_demeure_mois": 3
+      },
+      "unite": "EUR et mois",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": null,
+      "note": "Art. 1737 IV bis CGI : procedure de mise en demeure puis amendes progressives pour l entreprise qui ne se dote pas d une plateforme permettant de RECEVOIR les factures electroniques. ⚠ Montants et enchainement lus dans un resume de la page Legifrance, pas cites verbatim : a recouper sur le texte avant d etre affirmes."
+    },
+    "amende_administrative_facturation": {
+      "valeur": {
+        "personne_physique": 75000,
+        "personne_morale": 375000,
+        "recidive_personne_physique": 150000,
+        "recidive_personne_morale": 750000,
+        "delai_recidive_annees": 2
+      },
+      "unite": "EUR et annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000038411053",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. L441-9 code de commerce (section La facturation et les delais de paiement) : amende ADMINISTRATIVE, prononcee par la DGCCRF, doublee en cas de reiteration dans le delai indique a compter de la date a laquelle une precedente sanction est devenue definitive. ★★ Elle se cumule avec l amende fiscale de l art. 1737 CGI : deux administrations, deux sanctions, une seule facture incomplete."
+    }
+  },
+  "facture_conservation": {
+    "duree_fiscale": {
+      "valeur": 6,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F10029",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. L102 B du livre des procedures fiscales, via la fiche service-public du 01/07/2024 (page de plus de 6 mois, a recouper) : conservation a compter de la derniere operation ou de la date d etablissement du document. C est le delai du DROIT DE CONTROLE."
+    },
+    "duree_comptable": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F10029",
+      "date_verifiee": "2026-08-17",
+      "note": "Art. L123-22 code de commerce, via la fiche service-public du 01/07/2024 : pieces justificatives (bon de commande, de livraison, facture client et fournisseur) et livres et registres comptables, a partir de la CLOTURE DE L EXERCICE. ★ Deux horloges differentes ⇒ retenir la plus longue et le point de depart le plus tardif."
+    },
+    "piste_audit_fiable": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. La piste d audit fiable est la condition permettant de garantir l authenticite et l integrite d une facture qui n est ni electronique signee ni transmise en EDI. Aucune page officielle fetchee le 17/08/2026 ne la decrit : les pages impots.gouv.fr sur la facturation electronique ne la mentionnent pas et le guide pratique PDF n a pas pu etre extrait. ⛔ Ne pas l enoncer comme un fait tant que le BOFiP TVA-DECLA n a pas ete lu."
+    },
+    "archivage_electronique_forme": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Forme admise pour l archivage numerique d une facture recue sur papier (numerisation, conditions de fidelite et de durabilite, valeur de l original numerise). La fiche service-public F10029 donne les durees mais ne distingue pas les formats. A chercher dans le BOFiP et l arrete relatif a la numerisation des factures papier."
+    }
+  },
+  "facturation_electronique": {
+    "date_obligation_reception": {
+      "valeur": "2026-09-01",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
+      "date_verifiee": "2026-08-17",
+      "note": "Page impots.gouv.fr mise a jour le 16/01/2026 : a cette date TOUTES les entreprises doivent recevoir leurs factures sous forme electronique si le fournisseur les emet ainsi. ★★ Le micro-entrepreneur est concerne des cette date pour la RECEPTION, meme si son obligation d emission n arrive qu un an plus tard. ⚠ Calendrier deja reporte plusieurs fois : a revalider avant tout conseil."
+    },
+    "date_obligation_emission_grandes_entreprises_eti": {
+      "valeur": "2026-09-01",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 16/01/2026 : les grandes entreprises et les ETI doivent emettre leurs factures electroniquement ET transmettre a l administration les informations de transactions et les donnees de paiement. Confirme par la fiche entreprendre.service-public F39785 du 07/08/2026."
+    },
+    "date_obligation_emission_pme_micro": {
+      "valeur": "2027-09-01",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 16/01/2026 : les PME et micro-entreprises ont l obligation d emettre les factures au format electronique et de transmettre les informations de transactions et donnees de paiement. ⚠ A revalider : ce calendrier a deja ete decale."
+    },
+    "report_possible_par_decret": {
+      "valeur": "2026-12-01",
+      "unite": "date limite de report",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046869201",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Nota de l art. 1737 CGI : « Conformement au premier alinea du III de l article 91 de la loi n° 2023-1322 du 29 decembre 2023, ces dispositions s appliquent aux factures emises a compter du 1er septembre 2026. Un decret peut fixer une date ulterieure, qui ne peut etre posterieure au 1er decembre 2026. » ⇒ le report est PREVU DANS LA LOI ELLE-MEME : verifier si un decret est paru avant d annoncer une date a quiconque."
+    },
+    "seuils_micro_entreprise": {
+      "valeur": {
+        "effectif_max": 10,
+        "ca_annuel_ou_bilan_max_millions_eur": 2
+      },
+      "unite": "salaries et millions EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F39785",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 07/08/2026 : definition de la micro-entreprise AU SENS DE LA REFORME. ⛔ Ce n est PAS le regime fiscal de la micro-entreprise : voir micro-entreprise.md. Une SARL de 5 salaries est une micro-entreprise pour ce calendrier."
+    },
+    "seuils_pme": {
+      "valeur": {
+        "effectif_max": 250,
+        "ca_max_millions_eur": 50,
+        "bilan_max_millions_eur": 43
+      },
+      "unite": "salaries et millions EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F39785",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 07/08/2026 : au-dela de ces seuils l entreprise est ETI ou grande entreprise, donc concernee par l emission des 2026. ★ C est le seuil qui decide de l annee, pas le chiffre d affaires seul."
+    }
+  },
+  "devis": {
+    "seuil_services_a_la_personne": {
+      "valeur": 100,
+      "unite": "EUR TTC par mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31144",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/09/2022 (plus de 6 mois, a recouper) : devis obligatoire lorsque le prix mensuel de la prestation ou de l ensemble des prestations atteint ce montant."
+    },
+    "seuil_produits_compensation_autonomie": {
+      "valeur": 500,
+      "unite": "EUR TTC",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31144",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/09/2022 (a recouper) : devis obligatoire des que le prix du produit, de la prestation ou de l ensemble atteint ce montant."
+    },
+    "seuil_chirurgie_esthetique": {
+      "valeur": 300,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31144",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/09/2022 (a recouper) : devis obligatoire a partir de ce montant, ou des qu une anesthesie generale est necessaire quel que soit le montant."
+    },
+    "amende_defaut_de_devis": {
+      "valeur": {
+        "personne_physique": 3000,
+        "societe": 15000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31144",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 09/09/2022 (a recouper) : amende administrative pouvant aller jusqu a ces montants selon que le professionnel est un entrepreneur individuel ou une societe."
+    }
   }
 }
