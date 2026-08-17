@@ -16,17 +16,6 @@
     "etat": "EN COURS - certaines valeurs sont verifiees et datees, d autres restent marquees a_verifier."
   },
   "sejour": {
-    "delai_depot_renouvellement": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://www.service-public.fr/particuliers/vosdroits/N19806",
-      "note": "Fenetre de depot avant expiration du titre."
-    },
-    "duree_validite_recepisse": {
-      "valeur": null,
-      "a_verifier": true,
-      "source": "https://administration-etrangers-en-france.interieur.gouv.fr/"
-    },
     "oqtf_delai_depart_volontaire_jours": {
       "valeur": 30,
       "unite": "jours",
@@ -34,6 +23,34 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18362",
       "date_verifiee": "2026-08-16",
       "note": "Duree du delai de depart volontaire lorsqu il est accorde. Une OQTF peut etre prise SANS ce delai."
+    },
+    "fenetre_depot_renouvellement": {
+      "valeur": {
+        "en_ligne_anef": "au plus tot 4 mois et au plus tard 2 mois avant la fin de validite",
+        "en_prefecture": "dans les 2 mois precedant la fin de validite"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/R59398",
+      "date_verifiee": "2026-08-17",
+      "note": "LA FENETRE A DEUX BORDS : trop tot expose a un rejet pour demande prematuree, trop tard a une rupture de la regularite du sejour. Respecter la fenetre est ce qui ouvre droit a l attestation de prolongation d instruction."
+    },
+    "attestation_prolongation_instruction": {
+      "valeur": {
+        "duree_max_mois": 3,
+        "renouvelable": true,
+        "conditions": "demande COMPLETE deposee DANS LES DELAIS, et instruction se poursuivant au-dela de la validite du titre"
+      },
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36206",
+      "date_verifiee": "2026-08-17",
+      "note": "LE PREFET DOIT la delivrer via le service en ligne - c est une obligation, pas une faveur, mais elle est CONDITIONNEE a une demande complete et deposee dans les delais. Renouvelee tant que le prefet n a pas statue. Accompagnee du titre EXPIRE, elle prouve la regularite du sejour."
+    },
+    "recepisse": {
+      "valeur": "preuve de l enregistrement de la demande ; autorise le sejour pour la duree qu il indique",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15763",
+      "date_verifiee": "2026-08-17",
+      "note": "A NE PAS CONFONDRE avec l attestation de prolongation d instruction. ⚠️ NI L UN NI L AUTRE n autorise automatiquement a TRAVAILLER : le droit au travail depend du titre demande et de ce que le document mentionne expressement. Erreur couteuse pour la personne ET pour son employeur."
     }
   },
   "naturalisation": {

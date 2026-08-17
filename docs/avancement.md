@@ -1,6 +1,6 @@
 # Avancement
 
-**48 valeurs vérifiées et datées**, 11 encore ouvertes. **7 rôles.**
+**51 valeurs vérifiées et datées**, 9 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -62,9 +62,9 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **14 vérifiée(s)**, 2 à vérifier |
+| `data/parametres.json` | **17 vérifiée(s)**, 0 à vérifier |
 | `references/changement-de-statut.md` | À ÉCRIRE |
-| `references/demande-et-renouvellement.md` | À ÉCRIRE |
+| `references/demande-et-renouvellement.md` | **RÉDIGÉ** |
 | `references/documents-etat-civil.md` | À ÉCRIRE |
 | `references/droit-au-travail.md` | À ÉCRIRE |
 | `references/entreprendre-en-etant-etranger.md` | À ÉCRIRE |
@@ -121,7 +121,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 11 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
+**Rédigés** — 12 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 
