@@ -340,5 +340,63 @@
       "date_verifiee": "2026-08-17",
       "note": "Puis renouvellement selon la duree des droits au chomage."
     }
+  },
+  "changement_de_statut": {
+    "delai_depot_etudiant_vers_travail": {
+      "valeur": "dans les 2 mois precedant la fin de validite de la carte etudiant",
+      "unite": "fenetre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2229",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA PREMIERE INFORMATION A DONNER, quelle que soit la question. Le changement de statut se cale sur l EXPIRATION DU TITRE, pas sur la remise du diplome ni sur la signature du contrat. Page verifiee le 2026-06-01."
+    },
+    "seuil_remuneration_dispense_opposition_emploi": {
+      "valeur": 2800.53,
+      "unite": "EUR brut mensuel",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2229",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Franchir ce seuil, pour un diplome professionnel dont l emploi est en rapport avec la qualification, DISPENSE DE L OPPOSITION DE LA SITUATION DE L EMPLOI - autrement dit retire a l administration un motif de refus. Un salaire negocie 100 EUR sous le seuil ne coute pas 100 EUR, il rouvre une porte de refus. ⚠️ MONTANT REVISABLE : a reverifier avant de s appuyer dessus."
+    },
+    "carte_rece_duree": {
+      "valeur": 1,
+      "unite": "an, NON RENOUVELABLE",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Carte recherche d emploi ou creation d entreprise. « Un an, non renouvelable » est la phrase la plus importante : ce n est pas un titre de repli, c est un COMPTE A REBOURS. A son terme il faut un contrat, une entreprise, ou un depart."
+    },
+    "carte_rece_conditions_en_france": {
+      "valeur": "carte de sejour etudiant valide + licence professionnelle, master specialise, Master of Science ou master equivalent obtenu dans les 12 derniers mois",
+      "unite": "conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "carte_rece_conditions_depuis_l_etranger": {
+      "valeur": 4,
+      "unite": "ans suivant l obtention du diplome francais eligible",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": "Un diplome francais permet de demander la carte depuis l etranger dans ce delai."
+    },
+    "carte_rece_droit_au_travail": {
+      "valeur": "emploi en lien avec les etudes et remuneration mensuelle brute superieure a 2800,53 EUR ; aucun plafond d heures annuelles",
+      "unite": "conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": "L absence de plafond horaire est ce qui distingue nettement la RECE du statut etudiant."
+    },
+    "accord_bilateral_pays": {
+      "valeur": "Benin, Burkina Faso, Cap-Vert, Congo, Gabon, Georgie, Maurice, Senegal, Tunisie",
+      "unite": "liste de nationalites",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2229",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Acces a des listes de metiers ELARGIES sans opposition de la situation de l emploi. A VERIFIER SYSTEMATIQUEMENT avant de conclure qu un dossier est bloque : deux personnes au meme diplome et au meme poste n ont pas le meme dossier selon leur nationalite."
+    }
   }
 }
