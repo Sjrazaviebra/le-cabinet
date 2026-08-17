@@ -1,6 +1,6 @@
 # Avancement
 
-**1439 valeurs vérifiées et datées**, 102 encore ouvertes. **8 rôles.**
+**1439 valeurs vérifiées et datées**, 102 encore ouvertes. **9 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -59,6 +59,21 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | `references/impots-locaux-et-ifi.md` | **RÉDIGÉ** |
 | `references/reclamation-et-controle.md` | **RÉDIGÉ** |
 | `references/revenus-financiers.md` | **RÉDIGÉ** |
+
+### Rôle `/patrimoine`
+
+| Fichier | État |
+|---|---|
+| `SKILL.md` | **RÉDIGÉ** |
+| `data/parametres.json` | squelette, 0 à vérifier |
+| `references/arnaques-financieres.md` | À ÉCRIRE |
+| `references/enveloppes-et-supports.md` | À ÉCRIRE |
+| `references/epargne-reglementee-et-bancaire.md` | À ÉCRIRE |
+| `references/frais-et-performance.md` | À ÉCRIRE |
+| `references/gerer-son-argent.md` | À ÉCRIRE |
+| `references/immobilier-et-financier.md` | À ÉCRIRE |
+| `references/retraite-et-long-terme.md` | À ÉCRIRE |
+| `references/risque-et-horizon.md` | À ÉCRIRE |
 
 ## Domaine `juridique`
 

@@ -1,8 +1,8 @@
 {
   "name": "comptabilite",
   "displayName": "Comptabilité",
-  "description": "Comptabilite, fiscalite et financement en France. Trois roles : Comptable (/comptable) pour l entreprise - formes juridiques, micro-entreprise, TVA, comptabilite, cloture, facturation, paie ; Impots (/impots) pour le particulier - declaration de revenus, bareme, placements et crypto, immobilier, IFI, reclamation et controle ; Financement (/financement) pour l argent de l activite - banque et droit au compte, credit et rupture de credit, caution du dirigeant, tresorerie, mediation du credit, assurances obligatoires. Ce dernier ne recommande AUCUN placement : le conseil en investissement est une activite reglementee.",
-  "version": "0.3.0",
+  "description": "Comptabilite, fiscalite, financement et epargne en France. Quatre roles : Comptable (/comptable) pour l entreprise ; Impots (/impots) pour le particulier ; Financement (/financement) pour l argent de l activite - banque et droit au compte, credit et rupture de credit, caution du dirigeant, tresorerie, mediation du credit, assurances obligatoires, carte des leviers fiscaux legaux ; Patrimoine (/patrimoine) pour l argent personnel - reconnaitre une arnaque et verifier un agrement, enveloppes et supports, frais, risque et horizon, epargne reglementee, retraite, budget et surendettement. ⛔ Ces deux derniers INFORMENT : ils n emettent aucune recommandation personnalisee sur un instrument financier, service reglemente.",
+  "version": "0.4.0",
   "author": {
     "name": "Javad Razavi",
     "url": "https://javadrazavi.fr"
@@ -22,6 +22,10 @@
     "financement",
     "banque",
     "credit",
-    "tresorerie"
+    "tresorerie",
+    "patrimoine",
+    "epargne",
+    "arnaques",
+    "amf"
   ]
 }

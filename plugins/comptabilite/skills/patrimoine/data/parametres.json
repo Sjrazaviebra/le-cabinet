@@ -1,0 +1,9 @@
+{
+  "_lisez_moi": {
+    "role": "Valeurs volatiles du skill patrimoine.",
+    "regle": "Aucune valeur sans 'source' officielle ET 'date_verifiee'. Une entree 'a_verifier': true n'est PAS une valeur.",
+    "peremption_mois": 6,
+    "etat": "VIDE - le role vient d etre cadre, aucun fichier n est encore redige.",
+    "avertissement": "⛔ Ce role INFORME et PROTEGE, il ne recommande jamais un instrument financier a une personne : ce serait un conseil en investissement, service reglemente. Analyse de la frontiere dans docs/taxonomie-comptabilite.md. ⚠️ Les plafonds de livrets et les taux reglementes changent chaque annee."
+  }
+}
