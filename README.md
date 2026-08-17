@@ -7,11 +7,20 @@
 **Sept rôles pour agents IA, en droit, fiscalité et administration français.**
 Entreprise **et** vie privée.
 
-> 🚧 **En construction.** Les sept rôles sont écrits, sept fichiers de fond sont rédigés depuis les
-> textes officiels et **31 valeurs sont vérifiées et datées** — mais la majorité des fichiers de
-> référence est encore vide. Chacun porte son état en tête : `RÉDIGÉ`, `PARTIEL` ou `À ÉCRIRE`.
-> La rédaction se fait sur la branche [`dev`](../../tree/dev).
-> Voir [`docs/avancement.md`](docs/avancement.md) pour l'état fichier par fichier.
+[![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
+
+> ✅ **Les sept rôles sont complets** : chacun de leurs fichiers de référence est rédigé depuis les
+> textes officiels. Chaque fichier porte son état en tête — `RÉDIGÉ` ou `PARTIEL` — et **dit
+> lui-même ce qu'il ne couvre pas** : un fichier `PARTIEL` n'est pas un fichier inachevé qu'on
+> cache, c'est un périmètre annoncé.
+>
+> **Les compteurs ne sont pas recopiés ici.** Ils vivent dans
+> [`docs/avancement.md`](docs/avancement.md), qui est **généré** et dont la CI vérifie à chaque push
+> qu'il est à jour. Un README qui annonce un chiffre à la main est un README qui mentira dans deux
+> semaines.
+>
+> La rédaction se fait sur [`dev`](../../tree/dev) ; `main` porte les jalons taggés.
+> Utilisation avec un autre agent que Claude → [`AGENTS.md`](AGENTS.md).
 
 > ⚖️ **Ces skills ne remplacent ni un expert-comptable inscrit à l'Ordre, ni un avocat inscrit à
 > un barreau.** Ce sont des outils d'**aide à la décision** : ils structurent une question, posent
