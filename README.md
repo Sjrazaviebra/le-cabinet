@@ -1,19 +1,20 @@
 ![le-cabinet](assets/banner.jpg)
 
-<!-- ⚠️ Le logo est EN LIGNE dans le titre, et c est volontaire. Trois rendus possibles sur
-     GitHub, et un seul est propre :
-       1. logo FLOTTE (align="left") -> la bordure que GitHub dessine sous un <h1> reste a
-          hauteur de texte et TRAVERSE la plaque. Rejete.
-       2. logo dans une CELLULE de tableau -> le trait est confine, mais GitHub borde les
-          cellules et l en-tete se retrouve ENCADRE. On ne peut pas l enlever : les attributs
-          `style` sont supprimes par le bac a sable de GitHub. Rejete.
-       3. logo EN LIGNE dans le <h1> -> il est dans le flux, la boite du titre grandit, et la
-          bordure passe SOUS le logo. Retenu.
-     ⛔ Ne pas "simplifier" en remettant un flottant ou un tableau. -->
-# <img src="assets/logo.png" alt="" width="84"> le-cabinet
+<table>
+<tr>
+<td width="96" valign="top" style="border: 0;">
+<img src="assets/logo.png" width="96" height="96" alt="">
+</td>
+<td valign="top" style="border: 0;">
+
+# le-cabinet
 
 **Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
+
+</td>
+</tr>
+</table>
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
