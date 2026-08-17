@@ -340,5 +340,476 @@
       "date_verifiee": "2026-08-17",
       "note": "Puis renouvellement selon la duree des droits au chomage."
     }
+  },
+  "changement_de_statut": {
+    "delai_depot_etudiant_vers_travail": {
+      "valeur": "dans les 2 mois precedant la fin de validite de la carte etudiant",
+      "unite": "fenetre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2229",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA PREMIERE INFORMATION A DONNER, quelle que soit la question. Le changement de statut se cale sur l EXPIRATION DU TITRE, pas sur la remise du diplome ni sur la signature du contrat. Page verifiee le 2026-06-01."
+    },
+    "seuil_remuneration_dispense_opposition_emploi": {
+      "valeur": 2800.53,
+      "unite": "EUR brut mensuel",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2229",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Franchir ce seuil, pour un diplome professionnel dont l emploi est en rapport avec la qualification, DISPENSE DE L OPPOSITION DE LA SITUATION DE L EMPLOI - autrement dit retire a l administration un motif de refus. Un salaire negocie 100 EUR sous le seuil ne coute pas 100 EUR, il rouvre une porte de refus. ⚠️ MONTANT REVISABLE : a reverifier avant de s appuyer dessus."
+    },
+    "carte_rece_duree": {
+      "valeur": 1,
+      "unite": "an, NON RENOUVELABLE",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Carte recherche d emploi ou creation d entreprise. « Un an, non renouvelable » est la phrase la plus importante : ce n est pas un titre de repli, c est un COMPTE A REBOURS. A son terme il faut un contrat, une entreprise, ou un depart."
+    },
+    "carte_rece_conditions_en_france": {
+      "valeur": "carte de sejour etudiant valide + licence professionnelle, master specialise, Master of Science ou master equivalent obtenu dans les 12 derniers mois",
+      "unite": "conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "carte_rece_conditions_depuis_l_etranger": {
+      "valeur": 4,
+      "unite": "ans suivant l obtention du diplome francais eligible",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": "Un diplome francais permet de demander la carte depuis l etranger dans ce delai."
+    },
+    "carte_rece_droit_au_travail": {
+      "valeur": "emploi en lien avec les etudes et remuneration mensuelle brute superieure a 2800,53 EUR ; aucun plafond d heures annuelles",
+      "unite": "conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17319",
+      "date_verifiee": "2026-08-17",
+      "note": "L absence de plafond horaire est ce qui distingue nettement la RECE du statut etudiant."
+    },
+    "accord_bilateral_pays": {
+      "valeur": "Benin, Burkina Faso, Cap-Vert, Congo, Gabon, Georgie, Maurice, Senegal, Tunisie",
+      "unite": "liste de nationalites",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2229",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Acces a des listes de metiers ELARGIES sans opposition de la situation de l emploi. A VERIFIER SYSTEMATIQUEMENT avant de conclure qu un dossier est bloque : deux personnes au meme diplome et au meme poste n ont pas le meme dossier selon leur nationalite."
+    }
+  },
+  "droit_au_travail": {
+    "qui_demande_l_autorisation": {
+      "valeur": "l EMPLOYEUR, en ligne uniquement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Un candidat ne peut pas obtenir SON autorisation avant d etre recrute : la demarche n existe pas de son cote. La confirmation de depot ne permet PAS de travailler. Page verifiee le 2026-06-18."
+    },
+    "silence_prefecture_sur_autorisation": {
+      "valeur": "REFUS IMPLICITE au bout de 2 mois",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim de la page : « Si la prefecture n a pas repondu au bout de 2 mois, il s agit d un refus implicite. » ⇒ C EST L INVERSE de l homologation d une rupture conventionnelle ou le silence vaut acceptation. Une personne qui « attend toujours » depuis trois mois a ete REFUSEE et son delai de recours peut etre expire."
+    },
+    "delai_recours_contre_refus": {
+      "valeur": 2,
+      "unite": "mois a compter du refus",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "Court aussi a compter du refus IMPLICITE."
+    },
+    "verification_titre_par_employeur": {
+      "valeur": 2,
+      "unite": "jours ouvrables avant la date effective d embauche",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★ PROTECTION MECONNUE DE L EMPLOYEUR DE BONNE FOI. Verbatim : « Sans reponse dans les 2 jours ouvrables suivant la reception de la demande, l obligation de verification de l employeur est consideree comme etant accomplie. » ⇒ CONSERVER LA PREUVE DE LA DEMANDE : c est elle qui vaut decharge."
+    },
+    "titres_dispensant_d_autorisation": {
+      "valeur": "vie privee et familiale / talent / etudiant (dans la limite de 60 % du temps annuel) / recherche d emploi ou creation d entreprise / resident et resident de longue duree-UE / APS protection temporaire Ukraine / visa vacances-travail / certains contrats de moins de 3 mois en sport, culture et enseignement",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "etudiant_non_europeen_plafond_heures": {
+      "valeur": 964,
+      "unite": "heures par an, soit 60 % de la duree annuelle legale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2713",
+      "date_verifiee": "2026-08-17",
+      "note": "Sans autorisation de travail : l employeur doit seulement DECLARER l embauche a la prefecture. Au-dela, autorisation exigee AVANT le debut de l activite. Page verifiee le 2025-10-07."
+    },
+    "etudiant_sanction_depassement": {
+      "valeur": "retrait du titre de sejour et refus de renouvellement",
+      "unite": "sanction",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2713",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA SANCTION FRAPPE L ETUDIANT, PAS L EMPLOYEUR. Un employeur qui propose « quelques heures en plus, on ne compte pas » fait courir un risque qu il ne porte pas ⇒ le decompte annuel est l affaire de l etudiant."
+    },
+    "etudiant_algerien_regime": {
+      "valeur": 50,
+      "unite": "pourcentage de la duree annuelle pratiquee dans la profession ou le secteur",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2713",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ AUTRE REGIME : autorisation de travail exigee QUEL QUE SOIT le nombre d heures. Texte applicable : decret n° 2002-1500 du 20 decembre 2002. Une fois l autorisation obtenue pour un contrat d apprentissage ou de professionnalisation, le plafond peut etre depasse dans le cadre des etudes. ★ Appliquer les 964 heures a un etudiant algerien est une ERREUR DE REGIME : la question « quelle nationalite ? » precede la reponse sur les heures."
+    },
+    "sanctions_employeur_administratives_eur": {
+      "valeur": {
+        "amende_max": 21750,
+        "multiplicateur": "5000 fois le taux horaire du minimum garanti",
+        "recidive_max": 65250
+      },
+      "unite": "EUR PAR TRAVAILLEUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ « Par travailleur » change tout : trois personnes en situation irreguliere ne coutent pas une amende, elles en coutent trois."
+    },
+    "sanctions_employeur_penales": {
+      "valeur": {
+        "personne_physique_amende_eur": 30000,
+        "personne_morale_amende_eur": 150000,
+        "emprisonnement_ans_max": 5
+      },
+      "unite": "PAR ETRANGER EMPLOYE",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2728",
+      "date_verifiee": "2026-08-17",
+      "note": "S y ajoutent fermeture temporaire, exclusion des marches publics et confiscation de materiel. ⇒ Pour une petite structure, un seul recrutement mal verifie est un risque existentiel, alors que la verification prealable est gratuite et prend 2 jours ouvrables."
+    },
+    "recepisse_duree_et_travail": {
+      "valeur": {
+        "premiere_demande_mois": "4 ou 6",
+        "prorogation_exceptionnelle_mois": 3,
+        "renouvellement_ou_duplicata_mois": 3
+      },
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15763",
+      "date_verifiee": null,
+      "note": "NON RECOUPE : valeurs lues sur une page du 2023-11-17, anterieure a la peremption de 6 mois du depot. ⚠️ PAGE SOURCE DU 2023-11-17, anterieure a la peremption de 6 mois du depot : A RECOUPER. En premiere demande il autorise a travailler si la carte demandee est salarie ou travailleur temporaire (avec autorisation), RECE, vie privee et familiale (sauf exceptions), ICT detache salarie, travailleur saisonnier (avec autorisation), protection subsidiaire ou apatride, resident. En RENOUVELLEMENT il proroge les droits du titre precedent. ★ « Le recepisse permet-il de travailler ? » n a pas de reponse generale, seulement une reponse PAR TITRE DEMANDE."
+    }
+  },
+  "etudiants": {
+    "ressources_mensuelles_exigees_eur": {
+      "valeur": 877.5,
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Ne s applique pas a qui a reussi le concours d entree d un etablissement partenaire de l Etat. ⚠️ Montant revisable - a reverifier. Page verifiee le 2026-08-01."
+    },
+    "vls_ts_etudiant_duree": {
+      "valeur": "4 mois a 1 an",
+      "unite": "duree",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Delivre par le consulat. A valider en ligne dans les 3 mois suivant l arrivee, avec une taxe de 150 EUR."
+    },
+    "vls_ts_etudiant_taxe_validation_eur": {
+      "valeur": 150,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Payee lors de la validation en ligne du VLS-TS."
+    },
+    "carte_temporaire_cout_eur": {
+      "valeur": {
+        "taxe": 100,
+        "droit_de_timbre": 100,
+        "total": 200
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ ANOMALIE A CONNAITRE : la carte temporaire d UN AN coute PLUS CHER que la pluriannuelle. Un etudiant eligible a la pluriannuelle qui reprend une temporaire par habitude paie plus, pour moins, et refait la demarche chaque annee."
+    },
+    "carte_pluriannuelle_cout_eur": {
+      "valeur": {
+        "taxe": 100,
+        "droit_de_timbre": 50,
+        "total": 150
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Duree = celle du cycle d etudes restant, souvent 2 a 4 ans. ⇒ PREMIERE QUESTION a un etudiant en renouvellement : es-tu eligible a la pluriannuelle ?"
+    },
+    "depot_tardif_surcout_eur": {
+      "valeur": 180,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Droit de visa de regularisation qui s ajoute en cas de depot tardif. ★ Le retard a un PRIX AFFICHE, independamment du risque de rupture de regularite du sejour."
+    },
+    "conditions_cumulatives": {
+      "valeur": "inscription dans un etablissement + ressources de 877,50 EUR par mois + caractere reel et serieux des etudes",
+      "unite": "trois conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ « Reel et serieux » est la condition qui fait REFUSER les renouvellements, et ce n est pas une question de notes : c est la PROGRESSION qui est regardee. Redoubler deux fois le meme niveau ou changer de filiere chaque annee sans avancer se voit dans le dossier ⇒ la reponse utile porte sur la trajectoire, pas sur les pieces."
+    },
+    "renouvellement_canal": {
+      "valeur": "exclusivement en ligne apres la premiere annee",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2231",
+      "date_verifiee": "2026-08-17",
+      "note": "Service ANEF."
+    }
+  },
+  "famille_et_regroupement": {
+    "protection_victimes_violences": {
+      "valeur": "carte de RESIDENT delivree au benefice d une ordonnance de protection, et le prefet NE PEUT PAS la refuser pour rupture de la vie commune",
+      "unite": "regle de plein droit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L INFORMATION LA PLUS IMPORTANTE DU ROLE. Verbatim : « La carte de resident vous est delivree si vous etes beneficiaire d une ordonnance de protection en raison des violences commises par votre epoux, votre partenaire ou concubin. » et « Le prefet ne peut pas vous refuser cette carte pour rupture de la vie commune. » ⇒ Une personne dont le titre depend de son conjoint croit presque toujours que partir = perdre son droit au sejour. C EST FAUX, et cette croyance retient dans un domicile dangereux. Numero d ecoute 3919, gratuit et anonyme, 24h/24."
+    },
+    "vpf_condition_vie_commune_levee_si_violences": {
+      "valeur": "la condition de communaute de vie n est plus exigee lorsque la vie commune a cesse en raison de violences",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": "Vaut pour la carte de sejour temporaire vie privee et familiale. Voir aussi le role famille, fichier violences-intrafamiliales."
+    },
+    "regroupement_anciennete_sejour_mois": {
+      "valeur": 18,
+      "unite": "mois de residence reguliere avant le depot",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01."
+    },
+    "regroupement_ressources_mensuelles_eur": {
+      "valeur": {
+        "foyer_2_a_3_personnes": 1867,
+        "foyer_4_a_5_personnes": 2054,
+        "foyer_6_personnes_et_plus": 2240,
+        "periode_de_reference": "moyenne sur 12 mois"
+      },
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ SONT EXCLUES DU CALCUL : prestations familiales, RSA, Aspa, Ata, ASS, AER. C est cette exclusion qui fait echouer les dossiers : un foyer qui « touche » assez peut etre tres en dessous du seuil AU SENS DU REGROUPEMENT ⇒ commencer par RETIRER les revenus qui ne comptent pas, pas par les additionner. ⚠️ Montants revisables."
+    },
+    "regroupement_surface_logement": {
+      "valeur": {
+        "zones_A_et_Abis_couple_m2": 22,
+        "zone_C_couple_m2": 28,
+        "par_personne_supplementaire_m2": 10,
+        "au_dela_de_8_personnes_m2": 5
+      },
+      "unite": "metres carres",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "regroupement_delai_decision_prefet_mois": {
+      "valeur": 6,
+      "unite": "mois a compter du depot du dossier COMPLET",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « Complet » est le mot qui compte : une piece manquante DECALE le point de depart au lieu de laisser courir le delai ⇒ conserver la preuve du depot et de sa completude."
+    },
+    "vpf_duree": {
+      "valeur": 1,
+      "unite": "an, pluriannuelle possible dans certaines situations",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": "Autorise a travailler SANS que l employeur demande une autorisation de travail. Page verifiee le 2026-05-01."
+    },
+    "vpf_cas_de_delivrance": {
+      "valeur": "conjoint de Francais / parent d enfant francais contribuant a l entretien depuis la naissance ou depuis 2 ans au moins / liens personnels et familiaux intenses, anciens et stables / etranger malade necessitant une prise en charge medicale exceptionnelle / victime d infractions (violences conjugales, traite, proxenetisme, hebergement indigne) / jeune majeur, activites solidaires",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « Liens personnels et familiaux » n est PAS une categorie fourre-tout : intenses, anciennes et stables se DEMONTRENT avec des preuves de duree."
+    },
+    "conjoint_de_francais_conditions": {
+      "valeur": "communaute de vie effective + entree reguliere (visa long ou court sejour) + mariage avec un ressortissant francais ayant conserve la nationalite + absence de polygamie + vie commune de 6 mois minimum si entree avec un visa de COURT sejour",
+      "unite": "conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "numero_ecoute_3919": {
+      "valeur": 3919,
+      "unite": "numero national",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12544",
+      "date_verifiee": "2026-08-17",
+      "note": "Violences Femmes Info. Gratuit, anonyme, 24h/24. ⚠️ NUMERO CRITIQUE : un numero faux serait pire qu absent. Egalement source dans le role famille, verifie sur arretonslesviolences.gouv.fr."
+    }
+  },
+  "entrepreneur_profession_liberale": {
+    "duree_premiere_carte": {
+      "valeur": 1,
+      "unite": "an au maximum",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01."
+    },
+    "duree_pluriannuelle": {
+      "valeur": 4,
+      "unite": "ans, apres la premiere annee",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "moyens_existence_exiges_eur": {
+      "valeur": 1867.02,
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "★ A LIRE DANS LE BON SENS : ce ne sont pas les encaissements de l entreprise mais les MOYENS D EXISTENCE qu elle procure. Un chiffre d affaires eleve absorbe par les charges ne remplit pas la condition. ⚠️ Montant revisable."
+    },
+    "condition_qualifications": {
+      "valeur": "l activite doit correspondre aux qualifications ou a l experience professionnelle",
+      "unite": "condition de fond",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CONDITION OUBLIEE ET BLOQUANTE : un projet rentable mais etranger au parcours de la personne se heurte a un refus qui n a rien a voir avec sa qualite economique. La coherence du dossier est un CRITERE JURIDIQUE, pas une question de presentation."
+    },
+    "couts_eur": {
+      "valeur": {
+        "premiere_demande_total": 350,
+        "premiere_demande_timbre": 50,
+        "premiere_demande_taxe": 300,
+        "renouvellement_temporaire_total": 250,
+        "renouvellement_temporaire_taxe": 200,
+        "renouvellement_pluriannuelle_total": 350
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "depot": {
+      "valeur": "prefecture ou sous-prefecture du domicile, dans les 2 mois precedant l expiration du titre en cours",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "Si la demande change la MENTION du titre, c est un changement de statut : voir changement_de_statut."
+    },
+    "micro_entreprise_et_titre": {
+      "valeur": "la micro-entreprise est un REGIME, pas un titre : elle ne rend pas une activite autorisee si le titre ne l autorise pas",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35795",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Confusion la plus frequente du sujet, parce que l inscription en ligne est facile. Piece exigee comme pour une societe : promesse de bail ou contrat de domiciliation."
+    }
+  },
+  "ressortissants_ue": {
+    "titre_de_sejour_obligatoire": {
+      "valeur": "NON - la carte de sejour n est pas obligatoire pour un ressortissant UE/EEE/Suisse ; elle peut etre demandee pour ATTESTER du droit au sejour",
+      "unite": "regle",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "★★ Demander un titre de sejour a un candidat europeen n est pas une precaution, c est une exigence SANS BASE : le document qui prouve son droit au travail est sa PIECE D IDENTITE. ⚠️ PAGE SOURCE DU 2025-06-11, au-dela de la peremption de 6 mois : a recouper."
+    },
+    "conditions_sejour_plus_de_3_mois": {
+      "valeur": "citoyennete UE/EEE/Suisse + residence habituelle en France + activite professionnelle salariee ou independante",
+      "unite": "trois conditions cumulatives",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "⚠️ Page source du 2025-06-11 : a recouper."
+    },
+    "durees_cartes_si_demandees": {
+      "valeur": {
+        "cdi_ans": 5,
+        "cdd": "duree du contrat + 6 mois, maximum 5 ans",
+        "independant": "duree de l activite prevue + 6 mois, maximum 5 ans"
+      },
+      "unite": "duree",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "⚠️ Page source du 2025-06-11 : a recouper."
+    },
+    "sejour_permanent": {
+      "valeur": 10,
+      "unite": "ans apres 5 ans de residence reguliere et continue",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16003",
+      "date_verifiee": null,
+      "note": "★ LE SEUIL QUI CHANGE LA NATURE DU DROIT : avant 5 ans le sejour est adosse a une ACTIVITE, apres il est AUTONOME - plus aucune verification d activite. ⇒ Qui approche des 5 ans doit pouvoir PROUVER LA CONTINUITE de sa residence. ⚠️ Page source du 2025-06-11 : a recouper."
+    }
+  },
+  "etat_civil": {
+    "sens_de_circulation": {
+      "valeur": "acte ETRANGER produit en France = legalisation (sauf dispense) ; acte FRANCAIS produit a l etranger = legalisation ou apostille selon le pays",
+      "unite": "regle de lecture",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L APOSTILLE APPARTIENT AU SECOND CAS. « Comment apostiller mon acte de naissance etranger » est une question mal posee : l apostille se demande dans le pays qui a ETABLI l acte. Poser la question du sens de circulation evite des semaines d erreur de guichet."
+    },
+    "legalisation_acte_etranger": {
+      "valeur": "double legalisation : pre-legalisation par l autorite etrangere, puis legalisation par l ambassadeur ou le chef de poste consulaire francais",
+      "unite": "procedure",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": null,
+      "note": "★ « Double » = deux guichets, deux delais, deux pays. Qui decouvre cette etape trois semaines avant un rendez-vous en prefecture est deja en retard ⇒ premiere chose a anticiper dans un dossier reposant sur des actes etrangers. Page du 2025-10-30, a recouper."
+    },
+    "dispenses_de_legalisation": {
+      "valeur": "certains pays par convention internationale ; les documents de l Union europeenne se presentent sans formalite",
+      "unite": "regle",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": null,
+      "note": "⛔ NE JAMAIS conclure « il faut legaliser » ni « c est dispense » sans consulter le TABLEAU RECAPITULATIF PAR PAYS du ministere de l Europe et des Affaires etrangeres."
+    },
+    "traduction": {
+      "valeur": "traduction en francais par un traducteur habilite, AVANT les demarches de legalisation",
+      "unite": "regle",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1402",
+      "date_verifiee": null,
+      "note": "Exception : pas de traduction necessaire pour un EXTRAIT PLURILINGUE d acte de naissance ou de mariage dont l une des langues est le francais, pour un majeur. ★ Demander l extrait plurilingue a l etat civil etranger, quand il existe, supprime une traduction payante et un delai - personne ne le propose spontanement."
+    },
+    "apostille_actes_francais_autorite_competente": {
+      "valeur": "les NOTAIRES depuis le 2025-05-01, via 15 conseils regionaux ou chambres interdepartementales, en remplacement des procureurs generaux des 33 cours d appel",
+      "unite": "autorite competente",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/A18240",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ TOUT GUIDE ANTERIEUR A MAI 2025 ENVOIE AU MAUVAIS GUICHET. Type d information qui rend un dossier faux sans qu aucune regle de fond n ait change - raison d etre du datage des sources dans ce depot."
+    }
   }
 }
