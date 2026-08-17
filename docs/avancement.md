@@ -1,6 +1,6 @@
 # Avancement
 
-**51 valeurs vérifiées et datées**, 9 encore ouvertes. **7 rôles.**
+**61 valeurs vérifiées et datées**, 9 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -80,16 +80,16 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **2 vérifiée(s)**, 4 à vérifier |
+| `data/parametres.json` | **12 vérifiée(s)**, 4 à vérifier |
 | `references/activites-reglementees.md` | **RÉDIGÉ** |
-| `references/contrats-commerciaux.md` | À ÉCRIRE |
+| `references/contrats-commerciaux.md` | **PARTIEL** |
 | `references/donnees-personnelles.md` | À ÉCRIRE |
 | `references/droit-de-la-consommation.md` | À ÉCRIRE |
 | `references/droit-des-societes.md` | À ÉCRIRE |
 | `references/international.md` | À ÉCRIRE |
 | `references/litiges-courants.md` | À ÉCRIRE |
 | `references/procedure.md` | À ÉCRIRE |
-| `references/propriete-intellectuelle.md` | À ÉCRIRE |
+| `references/propriete-intellectuelle.md` | **PARTIEL** |
 
 ### Rôle `/logement`
 
@@ -121,7 +121,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 12 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
+**Rédigés** — 14 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 

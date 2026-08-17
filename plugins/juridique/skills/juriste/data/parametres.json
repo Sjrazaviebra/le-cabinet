@@ -77,5 +77,112 @@
       "date_verifiee": "2026-08-16",
       "note": "Article L321-1 CMF, version en vigueur au 03/01/2018. Deux conditions cumulatives : porter sur des instruments financiers (L211-1) ET etre exerce a titre de profession habituelle."
     }
+  },
+  "delais_de_paiement": {
+    "delai_a_defaut_d_accord_jours": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+      "date_verifiee": "2026-08-17",
+      "note": "A compter de la reception des marchandises ou de l execution de la prestation. C EST LE CHIFFRE QU ON OUBLIE : sans clause de reglement, le delai n est pas 'ce qui arrange le client', il est de 30 jours. Un client qui paie a 60 jours sans accord ecrit est en retard des le 31e jour."
+    },
+    "delais_maximaux_convenus": {
+      "valeur": {
+        "date_de_facture_jours": 60,
+        "fin_de_mois_jours": 45,
+        "export_hors_ue_fournisseur_exonere_tva_jours": 90
+      },
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafonds de ce qui PEUT etre convenu entre les parties."
+    },
+    "penalites_retard_taux_minimal": {
+      "valeur": {
+        "minimum_legal_pourcentage": 8.25,
+        "reference_recommandee": "taux de refinancement BCE + 10 points",
+        "bce_plus_10_s1_2026": 12.15,
+        "bce_plus_10_s2_2026": 12.4
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+      "date_verifiee": "2026-08-17",
+      "note": "Le minimum legal est de TROIS FOIS le taux d interet legal, soit 8,25 %. Le code de commerce recommande le taux BCE majore de 10 points, sensiblement plus eleve. ⚠️ CONSEIL DE REDACTION : ecrire 'taux BCE + 10 points' plutot qu un taux fixe evite de tomber sous le minimum legal quand les taux montent, et de reecrire ses CGV chaque semestre."
+    },
+    "indemnite_forfaitaire_recouvrement_eur": {
+      "valeur": 40,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+      "date_verifiee": "2026-08-17",
+      "note": "Due PAR FACTURE impayee, UNE SEULE FOIS - ce n est pas une somme journaliere. Due DE PLEIN DROIT, sans mise en demeure prealable. Complement possible sur justificatifs si les frais reels depassent 40 EUR."
+    },
+    "sanctions_non_respect_delais_eur": {
+      "valeur": {
+        "personne_physique": 75000,
+        "societe": 2000000,
+        "recidive_2_ans_personne_physique": 150000,
+        "recidive_2_ans_societe": 4000000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23211",
+      "date_verifiee": "2026-08-17",
+      "note": "Amendes administratives. Doublees en cas de recidive dans les deux ans. La DGCCRF publie les sanctions : le retard systematique est un risque d entreprise, pas un sujet de tresorerie."
+    }
+  },
+  "cgv": {
+    "obligation_de_communication": {
+      "valeur": {
+        "client_professionnel": "sur demande",
+        "client_consommateur": "avant la conclusion du contrat"
+      },
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33527",
+      "date_verifiee": "2026-08-17",
+      "note": "En B2B rien n oblige a PUBLIER ses CGV, mais il faut pouvoir les fournir des qu un client les demande. En B2C l information est PREALABLE et son absence est une infraction."
+    },
+    "sanctions_cgv_non_conformes_eur": {
+      "valeur": {
+        "entrepreneur_individuel": 15000,
+        "societe": 75000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33527",
+      "date_verifiee": "2026-08-17",
+      "note": "A NE PAS CONFONDRE avec les sanctions des delais de paiement, d un tout autre ordre. ⚠️ La sanction CIVILE est la plus couteuse des trois : des CGV non conformes font PERDRE LE BENEFICE des protections contractuelles principales - des CGV baclees ne protegent de rien."
+    }
+  },
+  "propriete_intellectuelle": {
+    "logiciel_devolution_salarie": {
+      "valeur": "devolution AUTOMATIQUE des droits patrimoniaux a l employeur",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039279818",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L113-9 CPI. Sauf dispositions statutaires ou stipulations contraires, les droits patrimoniaux sur les LOGICIELS et leur documentation crees par des employes dans l exercice de leurs fonctions ou d apres les instructions de l employeur lui sont devolus, seul habilite a les exercer. C est une EXCEPTION au droit commun du droit d auteur : aucune cession n est necessaire, aucune remuneration supplementaire n est due de ce seul fait. Applicable aussi aux agents de l Etat et des etablissements publics administratifs. Litiges : tribunal judiciaire du siege social de l employeur."
+    },
+    "logiciel_absence_de_devolution_hors_salariat": {
+      "valeur": "aucune devolution automatique pour un independant, freelance, stagiaire non salarie ou associe non employe",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039279818",
+      "date_verifiee": "2026-08-17",
+      "note": "LE MIROIR, et c est la que l argent se perd : sans cession ECRITE, ces personnes restent titulaires des droits sur le code qu elles ont ecrit, meme facture payee, meme code en production depuis des annees. Une entreprise qui a fait developper son produit par des freelances sans cession valable NE DETIENT PAS son produit - c est ce qui fait echouer les audits juridiques lors d une levee de fonds ou d un rachat."
+    },
+    "cession_mentions_obligatoires": {
+      "valeur": [
+        "mention DISTINCTE de chacun des droits cedes",
+        "domaine d exploitation delimite quant a son ETENDUE",
+        "quant a sa DESTINATION",
+        "quant au LIEU",
+        "quant a la DUREE"
+      ],
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278958",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L131-3 CPI. Une clause du type « le prestataire cede tous ses droits sur les livrables » ne remplit AUCUNE de ces conditions - c est la formule la plus repandue dans les contrats de prestation informatique et la plus exposee. Elle coupe dans les deux sens : le client croit avoir acquis des droits qu il n a peut-etre pas, le prestataire croit s etre depouille et en detient peut-etre encore. ⚠️ Le DROIT MORAL n est pas cessible : on peut amenager son exercice, pas l acheter."
+    }
   }
 }
