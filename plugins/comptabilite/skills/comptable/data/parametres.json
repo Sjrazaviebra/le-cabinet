@@ -892,5 +892,707 @@
       "date_verifiee": null,
       "note": "★★ NON VERIFIE et pourtant decisif. Selon que la plateforme vend en son nom propre au client final ou agit comme simple intermediaire, on percoit soit UNE remuneration B2B de la plateforme, soit une multitude de ventes B2C dont on doit la TVA dans l Etat du client. Le regime des interfaces electroniques pour les services fournis par voie electronique n a pas pu etre verifie : eur-lex n etait pas exploitable a la date de verification. ⇒ lire le contrat de la plateforme ET faire confirmer."
     }
+  },
+  "cloture_exercice": {
+    "duree_exercice_standard": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32069",
+      "date_verifiee": "2026-08-17",
+      "note": "La date de cloture est LIBRE pour une entreprise individuelle comme pour une societe. ⛔ Exception : micro-entrepreneur et professions liberales en BNC = cloture au 31 decembre imposee. Page du 03/10/2024, a recouper."
+    },
+    "premier_exercice_duree_maximale": {
+      "valeur": 24,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32069",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le premier exercice peut etre plus court OU plus long que 12 mois, dans la limite de 24 mois. Verbatim : « La premiere annee, il peut etre d une duree inferieure ou superieure a 12 mois, dans la limite de 24 mois. » Permet de repousser la premiere liasse."
+    },
+    "inventaire_periodicite_maximale": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006219304",
+      "date_verifiee": "2026-08-17",
+      "note": "Code de commerce L123-12 : « Elle doit controler par inventaire, au moins une fois tous les douze mois, l existence et la valeur des elements actifs et passifs du patrimoine de l entreprise. » ⚠ L inventaire est une obligation LEGALE, pas une bonne pratique."
+    },
+    "conditions_deduction_charge": {
+      "valeur": 4,
+      "unite": "conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31973",
+      "date_verifiee": "2026-08-17",
+      "note": "Interet de l entreprise + diminution de l actif net + comptabilisation dans l exercice ou la charge est engagee + justification par facture ou quittance. ⚠ Page du 02/06/2023, plus ancienne que six mois : a recouper avant de s appuyer sur la liste des exclusions."
+    }
+  },
+  "comptes_annuels": {
+    "regle_des_seuils": {
+      "valeur": "2 criteres non depasses sur 3",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "date_verifiee": "2026-08-17",
+      "note": "★ On appartient a une categorie quand on ne depasse pas les seuils d au moins DEUX des TROIS criteres. Un seul depassement ne fait donc pas sortir de la categorie. Seuils fixes par decret (code de commerce L230-1 renvoie explicitement au decret) : ils bougent."
+    },
+    "micro_entreprise_comptable": {
+      "valeur": {
+        "total_bilan_euros": 450000,
+        "ca_net_euros": 900000,
+        "salaries": 10
+      },
+      "unite": "euros et salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Categorie COMPTABLE, sans aucun rapport avec le regime fiscal de la micro-entreprise. Consequence : bilan et compte de resultat simplifies ET dispense d annexe (code de commerce L123-16-1). ⛔ Sauf societes dont l activite est de gerer des titres de participation. Valeurs recoupees sur F31214."
+    },
+    "petite_entreprise_comptable": {
+      "valeur": {
+        "total_bilan_euros": 7500000,
+        "ca_net_euros": 15000000,
+        "salaries": 50
+      },
+      "unite": "euros et salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "date_verifiee": "2026-08-17",
+      "note": "Presentation simplifiee des comptes annuels autorisee (code de commerce L123-16, conditions fixees par reglement de l Autorite des normes comptables). Valeurs recoupees sur F31214 et F21852."
+    },
+    "moyenne_entreprise_comptable": {
+      "valeur": {
+        "total_bilan_euros": 25000000,
+        "ca_net_euros": 50000000,
+        "salaries": 250
+      },
+      "unite": "euros et salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F37169",
+      "date_verifiee": "2026-08-17",
+      "note": "Compte de resultat presentable en forme simplifiee. Au-dela = grande entreprise, aucun allegement."
+    },
+    "depot_greffe_delai_apres_approbation": {
+      "valeur": {
+        "depot_papier_mois": 1,
+        "depot_electronique_mois": 2
+      },
+      "unite": "mois apres l approbation des comptes",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31214",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le depot electronique via le guichet des formalites double le delai. Le point de depart est l APPROBATION, pas la cloture. Approbation, confidentialite et amende de non-depot = traites par le role juriste dans droit-des-societes.md. Page du 11/06/2025, a recouper."
+    }
+  },
+  "commissaire_aux_comptes": {
+    "seuils_designation_obligatoire": {
+      "valeur": {
+        "total_bilan_euros": 5000000,
+        "ca_ht_euros": 10000000,
+        "salaries": 50
+      },
+      "unite": "euros et salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31440",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Obligation des que DEUX des TROIS seuils sont DEPASSES, avec effet a l exercice suivant le depassement. ⛔ Ne pas confondre avec les seuils des categories comptables : ce sont des chiffres differents. Page du 10/04/2025, a recouper."
+    },
+    "seuils_filiale_dans_un_groupe": {
+      "valeur": {
+        "total_bilan_euros": 2500000,
+        "ca_ht_euros": 5000000,
+        "salaries": 25
+      },
+      "unite": "euros et salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31440",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le piege : une filiale controlee dans un petit groupe basculle a des seuils MOITIE plus bas. Une petite societe qui se croit hors obligation peut y etre a cause de sa maison mere. Page du 10/04/2025, a recouper."
+    },
+    "duree_mandat": {
+      "valeur": 6,
+      "unite": "exercices",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31440",
+      "date_verifiee": "2026-08-17",
+      "note": "Mandat de six exercices renouvelable pour une designation obligatoire. Page du 10/04/2025, a recouper."
+    }
+  },
+  "liasse_fiscale": {
+    "formulaires_par_regime": {
+      "valeur": {
+        "is": "2065",
+        "bic_impot_sur_le_revenu": "2031",
+        "bnc_declaration_controlee": "2035 avec annexes 2035 A et 2035 B",
+        "reel_simplifie_tableaux": "2033-A a 2033-G",
+        "reel_normal_tableaux": "2050 a 2059"
+      },
+      "unite": "numeros de formulaires",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La liasse n est pas un document mais un JEU de tableaux annexes a une declaration de resultat. Le formulaire de tete depend de l impot (IS ou IR), les tableaux dependent du regime (simplifie ou normal). Recoupe sur F32919 et F32105."
+    },
+    "seuil_reel_simplifie_bic_vente_hebergement": {
+      "valeur": 945000,
+      "unite": "euros de chiffre d affaires",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32919",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond du reel SIMPLIFIE pour les activites de vente et d hebergement hors meuble de tourisme. Au-dela = reel NORMAL, donc tableaux 2050 a 2059."
+    },
+    "seuil_reel_simplifie_bic_services": {
+      "valeur": 286000,
+      "unite": "euros de chiffre d affaires",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32919",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond du reel SIMPLIFIE pour les prestations de services. Au-dela = reel NORMAL."
+    },
+    "seuil_declaration_controlee_bnc": {
+      "valeur": 83600,
+      "unite": "euros de recettes",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F32105",
+      "date_verifiee": "2026-08-17",
+      "note": "Au-dela de ce montant sur les deux annees precedentes, la declaration controlee (formulaire 2035) s applique. ⚠ Il n existe pas de reel normal en BNC : un seul regime reel. Seuils micro detailles dans micro-entreprise.md."
+    },
+    "date_limite_cloture_au_31_decembre": {
+      "valeur": "2e jour ouvre suivant le 1er mai",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La date limite n est pas une date fixe : elle se recalcule chaque annee selon les jours ouvres. Meme regle en l absence de cloture au cours de l annee civile."
+    },
+    "delai_supplementaire_teletransmission": {
+      "valeur": 15,
+      "unite": "jours calendaires",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : « L administration fiscale accorde un delai supplementaire de 15 jours calendaires pour realiser cette teleprocedure. » ⚠ Les pages officielles ne le rattachent explicitement qu au cas de la cloture au 31 decembre ; rien ne dit qu il s applique au delai de 3 mois."
+    },
+    "date_limite_cloture_en_cours_annee": {
+      "valeur": 3,
+      "unite": "mois apres la cloture",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Choisir une cloture ailleurs qu au 31 decembre remplace la date collective de mai par une horloge PERSONNELLE de trois mois, plus courte en pratique."
+    }
+  },
+  "penalites_declaratives": {
+    "majoration_retard_sans_mise_en_demeure": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI 1728 a, version en vigueur au 21/02/2026. Verbatim : « 10 % en l absence de mise en demeure ou en cas de depot dans les trente jours suivant la reception d une mise en demeure »."
+    },
+    "majoration_defaut_apres_mise_en_demeure": {
+      "valeur": 40,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI 1728 b : « 40 % lorsque la declaration n a pas ete deposee dans les trente jours suivant la reception d une mise en demeure ». La majoration QUADRUPLE au 31e jour : deposer meme tard et meme incomplet divise la sanction par quatre."
+    },
+    "majoration_activite_occulte": {
+      "valeur": 80,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI 1728 c : decouverte d une activite occulte, ou taxe d amenagement. Ne concerne pas un simple retard."
+    },
+    "delai_de_reaction_a_la_mise_en_demeure": {
+      "valeur": 30,
+      "unite": "jours a compter de la reception",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179995/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ La seule fenetre qui compte dans tout le dossier penalites. Le point de depart est la RECEPTION de la mise en demeure, pas son envoi."
+    },
+    "interet_de_retard": {
+      "valeur": "0,20 % par mois",
+      "unite": "% par mois de retard",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006133936/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI 1727 III, version en vigueur du 16/02/2025 au 01/01/2027 : « Le taux de l interet de retard est de 0,20 % par mois. » ⚠ Il s ajoute a la majoration, il ne la remplace pas. Calcul a compter du premier jour du mois suivant celui ou l impot devait etre acquitte."
+    },
+    "tolerance_interet_de_retard_is_et_ir": {
+      "valeur": "un vingtieme de la base d imposition",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006133936/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI 1727 II : l interet de retard n est pas du si l insuffisance de declaration n excede pas un vingtieme de la base pour l impot sur le revenu et l impot sur les societes, ⛔ sauf manquement DELIBERE. Tolerance sur l assiette, pas sur le retard de depot."
+    },
+    "amende_defaut_de_production_de_document": {
+      "valeur": 150,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982240",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI 1729 B, version en vigueur du 26/08/2021 au 01/01/2027. S applique au document qui n entraine pas de droits, donc la ou la majoration en pourcentage donnerait zero."
+    },
+    "amende_omission_ou_inexactitude": {
+      "valeur": {
+        "par_omission_euros": 15,
+        "minimum_euros": 60,
+        "plafond_par_ensemble_de_documents_euros": 10000
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982240",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI 1729 B 2. Dispense possible en cas de PREMIERE infraction sur l annee civile et les trois annees precedentes, si la situation est reparee spontanement ou dans les trente jours d une demande. Ce droit est presque jamais reclame."
+    },
+    "majoration_depot_papier_au_lieu_de_teleprocedure": {
+      "valeur": "0,2 % de l impot du, minimum 60 euros",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23575",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Sanction distincte du retard : elle punit le CANAL, pas la date. La teledeclaration est obligatoire pour la plupart des impots professionnels."
+    }
+  },
+  "resultat_fiscal": {
+    "report_du_deficit_en_avant": {
+      "valeur": {
+        "plafond_annuel_euros": 1000000,
+        "majoration_de_la_fraction_excedentaire_pourcent": 50
+      },
+      "unite": "euros et %",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23628",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Report en avant SANS limitation de duree, mais plafonne par exercice : « limite a 1 million euros par an, majore de 50 % de la fraction du benefice superieure a ce plafond ». Le deficit ne se perd pas dans le temps, il s impute lentement."
+    },
+    "report_du_deficit_en_arriere": {
+      "valeur": {
+        "plafond_euros": 1000000,
+        "exercices_concernes": 1
+      },
+      "unite": "euros et exercices",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23628",
+      "date_verifiee": "2026-08-17",
+      "note": "Carry-back limite a l exercice precedent, dans la limite du plus petit montant entre le benefice precedent et 1 000 000 euros. Genere une creance sur le Tresor."
+    }
+  },
+  "dpae": {
+    "fenetre_anticipation_maximum": {
+      "valeur": 8,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23107",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : la DPAE est transmise  avant la prise de fonction ou le debut de la periode d essai, au plus tot dans les 8 jours precedant la date de l embauche . ⚠ c est une FENETRE, pas un delai : envoyer trop tot est aussi irregulier que trop tard. ★ la periode d essai compte comme prise de fonction."
+    },
+    "seuil_dematerialisation_obligatoire": {
+      "valeur": 50,
+      "unite": "declarations l annee precedente",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23107",
+      "date_verifiee": "2026-08-17",
+      "note": "Au-dela de 50 DPAE l annee precedente, la declaration en ligne (net-entreprises ou urssaf.fr) devient obligatoire. En dessous, elle reste possible et recommandee : elle horodate la preuve."
+    },
+    "penalite_administrative_par_salarie": {
+      "valeur": 1305,
+      "unite": "EUR par salarie",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23107",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  1 305 EUR par salarie concerne . ⚠ montant INDEXE : il vaut 300 fois le taux horaire du minimum garanti (article L1221-11), donc il bouge des que le minimum garanti bouge."
+    },
+    "penalite_base_legale_multiplicateur": {
+      "valeur": 300,
+      "unite": "fois le taux horaire du minimum garanti",
+      "a_verifier": false,
+      "source": "https://code.travail.gouv.fr/code-du-travail/l1221-11",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM article L1221-11 :  Le non-respect de l obligation de declaration prealable a l embauche (...) entraine une penalite dont le montant est egal a trois cents fois le taux horaire du minimum garanti prevu a l article L. 3231-12 . ★ c est la formule qui fait foi, pas le montant affiche."
+    },
+    "amende_omission_non_intentionnelle": {
+      "valeur": 1500,
+      "unite": "EUR",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23107",
+      "date_verifiee": null,
+      "note": "⚠ montant de 1 500 EUR LU sur la fiche officielle mais NON confirme verbatim, et l article de rattachement n a pas ete identifie. A recouper avant de l annoncer. L enjeu reel n est pas cette amende mais la requalification en travail dissimule."
+    }
+  },
+  "sante_au_travail": {
+    "delai_visite_information_prevention": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://code.travail.gouv.fr/code-du-travail/r4624-10",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM article R4624-10 :  Tout travailleur beneficie d une visite d information et de prevention (...) dans un delai qui n excede pas trois mois a compter de la prise effective du poste de travail . ★ la DEMANDE de visite se declenche dans la DPAE elle-meme : ne pas la refaire a part."
+    }
+  },
+  "protection_sociale_complementaire": {
+    "part_minimale_employeur_complementaire_sante": {
+      "valeur": 50,
+      "unite": "pourcent de la cotisation",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33754",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  La participation financiere de l employeur doit etre au moins egale a 50 pourcent de la cotisation . ⛔ un accord de branche peut imposer PLUS : 50 pourcent est un plancher legal, pas le taux applicable."
+    },
+    "dispense_cdd_duree_maximale": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33754",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Contrat de travail a duree determinee (CDD) de moins de 3 mois  = cas de dispense d adhesion. ⚠ la dispense appartient au SALARIE et doit etre ecrite : l employeur qui l applique d office reste en faute."
+    },
+    "dispense_temps_partiel_seuil_horaire": {
+      "valeur": 15,
+      "unite": "heures par semaine",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33754",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Temps partiel (jusqu a 15 heures par semaine)  = cas de dispense d adhesion possible."
+    },
+    "seuil_effectif_forfait_social_sur_contribution_sante": {
+      "valeur": 11,
+      "unite": "salaries",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F33754",
+      "date_verifiee": null,
+      "note": "⚠ lu sur la fiche officielle sans citation verbatim : la contribution patronale sante serait soumise au forfait social a partir de 11 salaries. A recouper sur urssaf.fr avant de chiffrer un cout."
+    },
+    "prevoyance_cadres_taux_minimal_employeur": {
+      "valeur": null,
+      "unite": "pourcent de la tranche 1",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⚠ TROU ASSUME. La cotisation patronale minimale de prevoyance des cadres vient d un accord national interprofessionnel, pas d une fiche service-public : aucune source admise n a pu etre fetchee. Ne pas annoncer de taux. A verifier sur urssaf.fr ou aupres de l organisme de prevoyance."
+    }
+  },
+  "dsn_et_cotisations": {
+    "periodicite_dsn": {
+      "valeur": 1,
+      "unite": "declaration par mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  La DSN est une declaration en ligne qui doit etre produite tous les mois . ★ elle est due meme sans salaire verse le mois concerne, tant que l etablissement est employeur : le silence n est pas une option, la DSN  neant  existe."
+    },
+    "echeance_dsn_selon_effectif": {
+      "valeur": {
+        "moins_de_50_salaries": "le 15 du mois suivant",
+        "50_salaries_et_plus": "le 5 du mois suivant"
+      },
+      "unite": "jour du mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  au plus tard le 15 du mois qui suit la periode de travail  (moins de 50 salaries) et  au plus tard le 5 du mois  (50 salaries et plus). ⚠ franchir 50 salaries AVANCE l echeance de 10 jours : c est un effet de seuil que personne n annonce au guichet."
+    },
+    "seuil_effectif_echeance_avancee": {
+      "valeur": 50,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F24013",
+      "date_verifiee": "2026-08-17",
+      "note": "A 50 salaries et plus, le versement des cotisations passe au 5 du mois au lieu du 15."
+    },
+    "seuil_effectif_paiement_trimestriel": {
+      "valeur": 11,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F24013",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Les entreprises de moins de 11 salaries peuvent payer trimestriellement . ★ le PAIEMENT peut etre trimestriel, la DSN reste MENSUELLE : confondre les deux est l erreur classique du premier employeur."
+    },
+    "penalite_absence_de_dsn": {
+      "valeur": 20.02,
+      "unite": "EUR par salarie",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  S il ne transmet pas la DSN, l employeur s expose a une penalite de 20,02 EUR par salarie ."
+    },
+    "penalite_retard_dsn": {
+      "valeur": 60,
+      "unite": "EUR par salarie et par mois de retard",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Un retard dans la transmission de la DSN dans les delais obligatoires entraine une penalite de 60 EUR par salarie et par mois de retard (ou par fraction de mois de retard) . ⚠ une fraction de mois compte pour un mois entier."
+    },
+    "plafond_penalite_retard_court": {
+      "valeur": {
+        "retard_maximal": 5,
+        "unite_retard": "jours",
+        "plafond": 6008,
+        "unite_plafond": "EUR par entreprise et par an"
+      },
+      "unite": "objet",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Si le retard est inferieur ou egal a 5 jours, la penalite ne peut pas depasser 6 008 EUR par entreprise et par an . ★★ c est le seul plafond du dispositif : au-dela de 5 jours de retard la penalite redevient proportionnelle a l effectif, donc NON plafonnee. Rattraper une DSN dans les 5 jours change l ordre de grandeur du risque."
+    },
+    "penalite_fausses_remunerations": {
+      "valeur": 40.05,
+      "unite": "EUR par salarie",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Si l employeur declare de fausses remunerations, il encourt une penalite de 40,05 EUR par salarie ."
+    },
+    "penalite_fausses_informations_salaries": {
+      "valeur": 13.22,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F34059",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  S il declare de fausses informations sur ses salaries, il risque une penalite egale a 13,22 EUR ."
+    },
+    "repartition_retraite_complementaire": {
+      "valeur": {
+        "part_employeur": 60,
+        "part_salarie": 40
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F24013",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  La retraite complementaire suit un partage 60 pourcent par l employeur et 40 pourcent par le salarie . ★ l affiliation Agirc-Arrco n exige AUCUNE demarche separee : elle passe par la DSN."
+    }
+  },
+  "bulletin_de_paie": {
+    "conservation_par_employeur_sur_place": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F559",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  5 ans  dans les locaux de l entreprise. ⚠ 5 ans est la duree de conservation SUR PLACE, ce n est PAS la fin de l obligation : voir l entree accessibilite_longue_duree."
+    },
+    "accessibilite_longue_duree": {
+      "valeur": {
+        "depuis_emission": 50,
+        "apres_depart_retraite": 6
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F559",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM :  50 ans a compter de son emission  ou  6 ans apres le depart a la retraite  pour le bulletin remis sous forme electronique. C est la duree que TOUT LE MONDE ignore : on archive 5 ans et on detruit, alors que l accessibilite reste due bien au-dela. Un salarie qui reconstitue sa carriere vient reclamer 20 ans plus tard."
+    },
+    "mentions_interdites": {
+      "valeur": "exercice du droit de greve et fonctions de representant du personnel",
+      "unite": "texte",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F559",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  L employeur ne doit pas faire figurer sur la fiche de paie du salarie l exercice du droit de greve ou les fonctions de representant du personnel . La remuneration liee au mandat va sur une fiche ANNEXEE."
+    }
+  },
+  "allegements_et_aides": {
+    "rgdu_plafond_remuneration": {
+      "valeur": 3,
+      "unite": "SMIC",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F24542",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : la reduction joue  pour une remuneration comprise entre le Smic et moins de 3 Smic  et cesse  a partir d une remuneration egale a 3 Smic . ★ dispositif renomme RGDU (reduction generale degressive unique) : il ABSORBE les anciens taux reduits maladie et allocations familiales, qui sont supprimes."
+    },
+    "rgdu_coefficients": {
+      "valeur": {
+        "moins_de_50_salaries": {
+          "Tmin": 0.02,
+          "Tdelta": 0.3781
+        },
+        "50_salaries_et_plus": {
+          "Tmin": 0.02,
+          "Tdelta": 0.3821
+        }
+      },
+      "unite": "coefficient",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F24542",
+      "date_verifiee": null,
+      "note": "⚠ coefficients lus sur la fiche officielle mais NON cites verbatim : Tmin 0,0200 dans les deux cas, Tdelta 0,3781 sous 50 salaries et 0,3821 a 50 et plus. Valeurs annuelles hautement volatiles. ⛔ ne JAMAIS calculer une paie dessus sans les recouper sur urssaf.fr."
+    },
+    "seuil_effectif_coefficient_rgdu": {
+      "valeur": 50,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F24542",
+      "date_verifiee": "2026-08-17",
+      "note": "Le coefficient de la RGDU differe selon que l effectif est inferieur a 50 salaries ou egal ou superieur a 50."
+    },
+    "aide_apprenti_moins_de_250_salaries": {
+      "valeur": {
+        "diplome_niveau_4_ou_inferieur": 5000,
+        "diplome_niveau_5": 4500,
+        "diplome_jusqu_au_niveau_7": 2000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23556",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  5 000 EUR, au titre de l aide unique, si l apprenti prepare un diplome inferieur ou egal au niveau 4  ;  4 500 EUR, au titre de l aide exceptionnelle  ;  2 000 EUR, au titre de l aide exceptionnelle . ★★ VERBATIM :  L aide est octroyee uniquement pour la premiere annee du contrat  - l aide n est PAS annuelle, ce qui change tout dans un plan de tresorerie a trois ans."
+    },
+    "aide_apprenti_250_salaries_et_plus": {
+      "valeur": {
+        "montants": [
+          2000,
+          1500,
+          750
+        ]
+      },
+      "unite": "EUR selon le niveau de diplome",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23556",
+      "date_verifiee": null,
+      "note": "⚠ montants lus sans citation verbatim par niveau : 2 000 EUR, 1 500 EUR ou 750 EUR selon le niveau de diplome. Sujets a une CONDITION supplementaire d effectif d alternants, voir condition_alternants_grandes_entreprises."
+    },
+    "seuil_effectif_aide_apprenti": {
+      "valeur": 250,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23556",
+      "date_verifiee": "2026-08-17",
+      "note": "En dessous de 250 salaries : montants pleins et sans condition d effectif d alternants. A 250 et plus : montants reduits ET condition a remplir."
+    },
+    "condition_alternants_grandes_entreprises": {
+      "valeur": {
+        "contrats_favorisant_l_insertion": 5,
+        "alternants": 3,
+        "progression": 10
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23556",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  au moins 5 pourcent de contrats favorisant l insertion professionnelle  ou  au moins 3 pourcent d alternants  avec  une progression de 10 pourcent . ⚠ condition appreciee a une date de reference : une entreprise de 250 salaries et plus peut toucher l aide puis devoir la rendre si le ratio n est pas atteint."
+    }
+  },
+  "registres_et_affichages": {
+    "registre_unique_du_personnel_amende": {
+      "valeur": 750,
+      "unite": "EUR par salarie concerne",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F1784",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  L absence de registre, l absence de mise a jour ou l oubli de mentions obligatoires peuvent entrainer jusqu a 750 EUR d amende par salarie concerne . ★ l OUBLI D UNE MENTION est sanctionne comme l absence de registre : un registre incomplet ne protege pas."
+    },
+    "registre_unique_du_personnel_conservation": {
+      "valeur": 5,
+      "unite": "ans apres le depart",
+      "a_verifier": false,
+      "source": "https://code.travail.gouv.fr/code-du-travail/r1221-26",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM article R1221-26 :  Les mentions portees sur le registre unique du personnel sont conservees pendant cinq ans a compter de la date a laquelle le salarie ou le stagiaire a quitte l etablissement . ★ les STAGIAIRES y figurent aussi."
+    },
+    "duerp_conservation": {
+      "valeur": 40,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F35360",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM : le DUERP  est conserve par l employeur pendant une periode de 40 ans a compter de son elaboration . ★★ 40 ans : c est la duree d archivage la plus longue de tout le dossier employeur, et elle demarre des le premier salarie."
+    },
+    "duerp_amende_administrative": {
+      "valeur": 4000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F35360",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  4 000 EUR  d amende administrative maximale en l absence de DUERP. Le montant en cas de recidive et les sanctions penales existent aussi mais n ont pas ete confirmes verbatim."
+    },
+    "duerp_seuil_mise_a_jour_annuelle": {
+      "valeur": 11,
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F35360",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  Au moins 1 fois par an  a partir de 11 salaries. En dessous de 11 salaries, la mise a jour est declenchee par une modification des conditions de travail, pas par le calendrier."
+    },
+    "seuils_effectif_affichage": {
+      "valeur": {
+        "premier_palier": "jusqu a 10 salaries",
+        "deuxieme_palier": "de 11 a 49 salaries",
+        "troisieme_palier": "50 salaries et plus"
+      },
+      "unite": "salaries",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23106",
+      "date_verifiee": "2026-08-17",
+      "note": "Trois paliers d obligations d affichage : jusqu a 10, de 11 a 49, et 50 et plus. ★ une partie des informations peut etre diffusee  par tout moyen  (intranet, courriel) et n a plus a etre affichee physiquement : le panneau mural n est plus la seule voie."
+    }
+  },
+  "travail_dissimule_et_solidarite": {
+    "seuil_contrat_verification_obligatoire": {
+      "valeur": 5000,
+      "unite": "EUR hors taxes",
+      "a_verifier": false,
+      "source": "https://code.travail.gouv.fr/code-du-travail/r8222-1",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM article R8222-1 :  Les verifications a la charge de la personne qui conclut un contrat, prevues a l article L. 8222-1, sont obligatoires pour toute operation d un montant au moins egal a 5 000 euros hors taxes . ⚠ le seuil porte sur l OPERATION, pas sur une facture : decouper en tranches de moins de 5 000 EUR ne fait pas disparaitre l obligation."
+    },
+    "periodicite_verification": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://code.travail.gouv.fr/code-du-travail/d8222-5",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article D8222-5 : les documents sont remis a la conclusion du contrat ET TOUS LES SIX MOIS jusqu a la fin de l execution. ★ c est l erreur la plus repandue : on demande l attestation une fois, a la signature, et on ne la redemande jamais. La vigilance devient alors juridiquement inexistante."
+    },
+    "duree_validite_attestation_vigilance": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31422",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM :  L attestation est valable 6 mois : elle doit donc etre renouvelee periodiquement, pendant toute la duree de la prestation . D8222-5 exige une attestation  datant de moins de six mois ."
+    },
+    "sanction_travail_dissimule_personne_physique": {
+      "valeur": {
+        "emprisonnement": 3,
+        "unite_emprisonnement": "ans",
+        "amende": 45000,
+        "unite_amende": "EUR"
+      },
+      "unite": "objet",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31490",
+      "date_verifiee": "2026-08-17",
+      "note": "Jusqu a 3 ans d emprisonnement et 45 000 EUR d amende pour une personne physique. Circonstances aggravantes : peines fortement majorees, montants non repris ici faute de citation verbatim."
+    },
+    "sanction_travail_dissimule_personne_morale": {
+      "valeur": 225000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31490",
+      "date_verifiee": "2026-08-17",
+      "note": "225 000 EUR d amende pour une personne morale."
+    },
+    "suppression_aides_publiques": {
+      "valeur": {
+        "duree_suppression": 5,
+        "unite_suppression": "ans maximum",
+        "remboursement_retroactif": 12,
+        "unite_remboursement": "derniers mois"
+      },
+      "unite": "objet",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F31490",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM :  Suppression des aides publiques (par exemple les exonerations de charges sociales ou les aides a l embauche) pendant 5 ans maximum  et  Remboursement des aides publiques deja percues sur les 12 derniers mois . C est souvent PLUS LOURD que l amende : cela touche la RGDU et les aides apprentissage, donc la tresorerie courante."
+    }
   }
 }

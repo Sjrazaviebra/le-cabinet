@@ -1,6 +1,6 @@
 # Avancement
 
-**1034 valeurs vérifiées et datées**, 80 encore ouvertes. **7 rôles.**
+**1219 valeurs vérifiées et datées**, 93 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -16,16 +16,16 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **75 vérifiée(s)**, 20 à vérifier |
-| `references/cas-plateformes-etrangeres.md` | À ÉCRIRE |
+| `data/parametres.json` | **143 vérifiée(s)**, 25 à vérifier |
+| `references/cas-plateformes-etrangeres.md` | **PARTIEL** |
 | `references/cas-prop-firm.md` | **PARTIEL** |
 | `references/chomage-et-creation.md` | **RÉDIGÉ** |
-| `references/cloture-et-liasse.md` | À ÉCRIRE |
+| `references/cloture-et-liasse.md` | **PARTIEL** |
 | `references/comptabilite-generale.md` | À ÉCRIRE |
 | `references/facturation.md` | **PARTIEL** |
 | `references/formes-juridiques.md` | **RÉDIGÉ** |
 | `references/micro-entreprise.md` | **RÉDIGÉ** |
-| `references/paie-et-embauche.md` | À ÉCRIRE |
+| `references/paie-et-embauche.md` | **PARTIEL** |
 | `references/tva.md` | **RÉDIGÉ** |
 
 ### Rôle `/impots`
@@ -33,17 +33,17 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **7 vérifiée(s)**, 2 à vérifier |
+| `data/parametres.json` | **124 vérifiée(s)**, 10 à vérifier |
 | `references/actions-rsu-bspce.md` | À ÉCRIRE |
 | `references/assurance-vie.md` | À ÉCRIRE |
 | `references/declaration-annuelle.md` | **RÉDIGÉ** |
-| `references/epargne-retraite-per.md` | À ÉCRIRE |
+| `references/epargne-retraite-per.md` | **RÉDIGÉ** |
 | `references/hauts-revenus-cehr-cdhr.md` | À ÉCRIRE |
-| `references/immobilier-fiscal.md` | À ÉCRIRE |
+| `references/immobilier-fiscal.md` | **PARTIEL** |
 | `references/impot-revenu.md` | **PARTIEL** |
 | `references/impots-locaux-et-ifi.md` | À ÉCRIRE |
 | `references/reclamation-et-controle.md` | À ÉCRIRE |
-| `references/revenus-financiers.md` | À ÉCRIRE |
+| `references/revenus-financiers.md` | **RÉDIGÉ** |
 
 ## Domaine `juridique`
 
@@ -125,7 +125,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 49 fichiers : `comptable/cas-prop-firm` · `comptable/chomage-et-creation` · `comptable/facturation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/couple` · `famille/donation` · `famille/enfants` · `famille/protection-des-majeurs` · `famille/separation-et-divorce` · `famille/succession` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `impots/impot-revenu` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/donnees-personnelles` · `juriste/droit-de-la-consommation` · `juriste/droit-des-societes` · `juriste/international` · `juriste/litiges-courants` · `juriste/procedure` · `juriste/propriete-intellectuelle` · `logement/bail-et-location` · `logement/charges-et-travaux` · `logement/colocation-et-cohabitation` · `logement/conge-et-fin-de-bail` · `logement/copropriete` · `logement/depot-de-garantie` · `logement/impayes-et-expulsion` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
+**Rédigés** — 55 fichiers : `comptable/cas-plateformes-etrangeres` · `comptable/cas-prop-firm` · `comptable/chomage-et-creation` · `comptable/cloture-et-liasse` · `comptable/facturation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/paie-et-embauche` · `comptable/tva` · `famille/couple` · `famille/donation` · `famille/enfants` · `famille/protection-des-majeurs` · `famille/separation-et-divorce` · `famille/succession` · `famille/violences-intrafamiliales` · `immigration/changement-de-statut` · `immigration/demande-et-renouvellement` · `immigration/documents-etat-civil` · `immigration/droit-au-travail` · `immigration/entreprendre-en-etant-etranger` · `immigration/etudiants` · `immigration/famille` · `immigration/naturalisation` · `immigration/refus-et-recours` · `immigration/ressortissants-ue` · `immigration/titres-de-sejour` · `impots/declaration-annuelle` · `impots/epargne-retraite-per` · `impots/immobilier-fiscal` · `impots/impot-revenu` · `impots/revenus-financiers` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/donnees-personnelles` · `juriste/droit-de-la-consommation` · `juriste/droit-des-societes` · `juriste/international` · `juriste/litiges-courants` · `juriste/procedure` · `juriste/propriete-intellectuelle` · `logement/bail-et-location` · `logement/charges-et-travaux` · `logement/colocation-et-cohabitation` · `logement/conge-et-fin-de-bail` · `logement/copropriete` · `logement/depot-de-garantie` · `logement/impayes-et-expulsion` · `travail/conges-et-absences` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/harcelement-et-discrimination` · `travail/prudhommes` · `travail/remuneration-et-temps` · `travail/rupture`
 
 **Prochains** :
 

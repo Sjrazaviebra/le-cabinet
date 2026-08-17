@@ -101,5 +101,1161 @@
       "date_verifiee": null,
       "note": "⚠️ NON CONFIRME : le montant de 1807 EUR a bien ete lu sur la page, mais l ASSIETTE exacte - par DEMI-PART ou par ENFANT - n a pas ete confirmee, et la page le presentait comme « par enfant ». ⛔ NE PAS ANNONCER comme un chiffre acquis : c est le genre de valeur qu on croit connaitre et qu on enonce de travers. A recouper sur impots.gouv.fr ou au BOFiP."
     }
+  },
+  "per_plafond_deduction": {
+    "taux_revenus_activite": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542827",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 163 quatervicies I.2.a : une fraction egale a 10 % des revenus d activite professionnelle de l annee precedente. Le plafond se calcule sur les revenus de l annee PRECEDENTE, pas de l annee du versement."
+    },
+    "multiple_pass": {
+      "valeur": 8,
+      "unite": "fois le plafond annuel de la securite sociale",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542827",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim CGI : revenus retenus dans la limite de huit fois le montant annuel du plafond mentionne a l article L. 241-3 du code de la securite sociale. ⚠ un premier fetch resume avait lu SMIC au lieu de PASS - la lecture litterale a corrige."
+    },
+    "plafond_max_versements_2026": {
+      "valeur": 37680,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Versements de 2026 : 10 % des revenus d activite de 2025, maximum 37 680 euros. ⚠ millesime a ne pas confondre avec celui des versements 2025."
+    },
+    "plancher_versements_2026": {
+      "valeur": 4710,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Plancher pour les versements 2026, acquis meme sans aucun revenu d activite : un conjoint sans profession ou un retraite a donc une capacite de deduction."
+    },
+    "plafond_max_versements_2025": {
+      "valeur": 37094,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice 2041-GX millesime 2026 (declaration deposee en 2026) : 10 % de 8 fois le PASS 2024 = 37 094 euros pour les cotisations versees en 2025."
+    },
+    "plancher_versements_2025": {
+      "valeur": 4637,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice 2041-GX millesime 2026 : 10 % du PASS 2024 = 4 637 euros, plancher pour les cotisations versees en 2025."
+    },
+    "pass_2024": {
+      "valeur": 46368,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond annuel de la securite sociale 2024, base de calcul du plafond des versements 2025 (37 094 = 10 % de 46 368 x 8)."
+    },
+    "age_limite_deductibilite": {
+      "valeur": 70,
+      "unite": "ans",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": null,
+      "note": "⚠ CONFLIT DE SOURCES ASSUME. service-public (page du 18/06/2026) ecrit : Depuis le 1er janvier 2026, les versements effectues sur votre PER apres vos 70 ans sont toujours possibles, mais ne sont plus deductibles. Or l article 163 quatervicies du CGI dans sa version en vigueur au 21/02/2026 ne contient NI soixante-dix NI 70 ans (verifie par lecture litterale), et la page impots.gouv.fr du 07/04/2026 ne le mentionne pas. Base legale NON localisee ⇒ a confirmer avant tout versement apres 70 ans."
+    }
+  },
+  "per_report_plafonds": {
+    "duree_regime_transitoire": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice 2041-GX millesime 2026 : la difference constatee au titre d une annee N est reportable sur les trois annees suivantes. S applique encore aux plafonds 2024 et 2025 - utilisables jusqu en 2027 et 2028."
+    },
+    "duree_nouveau_regime": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053542827",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI art. 163 quatervicies I.2.b, version en vigueur au 21/02/2026 (loi 2026-103 du 19 fevrier 2026) : la difference peut etre utilisee au cours de l une des cinq annees suivantes. Le report passe donc de 3 a 5 ans a partir du plafond 2026. ⚠ la page impots.gouv.fr du 07/04/2026 et la notice 2041-GX millesime 2026 disent encore trois ans : elles portent sur les versements 2025."
+    },
+    "exces_de_versement": {
+      "valeur": "non deductible et non reportable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim notice 2041-GX : la fraction excedentaire des cotisations versees n est pas deductible du revenu global. Il en est ainsi meme si un autre membre du foyer fiscal n a pas utilise ses propres capacites de deduction. Cette fraction excedentaire n est pas non plus reportable sur une annee ulterieure. ⇒ c est le PLAFOND qui se reporte, jamais le versement en trop : il est perdu definitivement."
+    }
+  },
+  "per_mutualisation_conjoints": {
+    "case_a_cocher": {
+      "valeur": "6QR",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Notice 2041-GX : pour beneficier de la mutualisation de leurs plafonds de deduction, les interesses doivent cocher la case 6QR de la rubrique 6 de la declaration n. 2042. L option est ANNUELLE. Sans la case, le plafond inutilise du conjoint est inutilisable, meme en declaration commune. Base legale : CGI art. 163 quatervicies, membres d un couple marie ou partenaires de Pacs soumis a imposition commune."
+    },
+    "perimetre": {
+      "valeur": "couple marie ou pacse soumis a imposition commune, hors enfants rattaches",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice 2041-GX : cette disposition ne concerne pas les autres membres du foyer fiscal (rattaches de droit ou sur option), tels que les enfants. S applique aussi l annee du mariage ou du Pacs et celle du deces."
+    }
+  },
+  "per_cases_declaration": {
+    "rubrique": {
+      "valeur": "rubrique 6 Charges deductibles de la declaration 2042",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice 2041-GX millesime 2026. L attestation de l organisme gestionnaire ne se joint pas a la declaration mais doit etre conservee pour etre produite a la demande de l administration."
+    },
+    "codes": {
+      "valeur": {
+        "versements_volontaires_per": "6NS / 6NT / 6NU",
+        "cotisations_perp_assimiles": "6RS / 6RT / 6RU",
+        "epargne_retraite_entreprise": "6QS / 6QT / 6QU",
+        "versements_non_salaries_deduits_du_resultat": "6OS / 6OT / 6OU",
+        "plafond_recalcule_par_le_contribuable": "6PS / 6PT / 6PU",
+        "mutualisation_du_plafond_du_couple": "6QR",
+        "premiere_domiciliation_fiscale_en_france": "6QW"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim notice 2041-GX : lignes 6 NS, 6 NT, 6 NU : cotisations volontaires versees sur le PERIN, le PERECO ou le PERO. ⚠ Les montants portes en 6QS a 6QU et 6OS a 6OT DIMINUENT le plafond de deduction de l annee suivante. ⛔ Ne rien porter en 6PS ou 6PT si on mutualise ou si on est nouvellement domicilie : l administration calcule le plafond automatiquement."
+    }
+  },
+  "per_prelevements_sociaux": {
+    "taux_placement_2025": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "Revenus de placement 2025 : CSG 9,2 + CRDS 0,5 + prelevement de solidarite 7,5."
+    },
+    "taux_placement_2026": {
+      "valeur": 18.6,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Revenus de placement 2026, cas general : CSG 10,6 + CRDS 0,5 + prelevement de solidarite 7,5 = 18,6 %. La CSG passe de 9,2 a 10,6 pour les placements. Page service-public du 30/06/2026. ⚠ les revenus fonciers et plus-values immobilieres restent a 17,2 %."
+    },
+    "detail_2026": {
+      "valeur": {
+        "csg": 10.6,
+        "crds": 0.5,
+        "prelevement_de_solidarite": 7.5
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "Decomposition du 18,6 % applicable aux produits de placement a compter du 1er janvier 2026."
+    }
+  },
+  "per_sortie_capital": {
+    "pfu_taux_impot_revenu": {
+      "valeur": 12.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Part impot sur le revenu du prelevement forfaitaire unique appliquee aux GAINS du PER. Option pour le bareme progressif possible."
+    },
+    "pfu_global_2025": {
+      "valeur": 30,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "12,8 % impot sur le revenu + 17,2 % prelevements sociaux, pour les sorties de 2025."
+    },
+    "pfu_global_2026": {
+      "valeur": 31.4,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★ 12,8 % impot sur le revenu + 18,6 % prelevements sociaux a compter de 2026. Verbatim : le taux global du prelevement forfaitaire applique par la banque est de 31,4 %."
+    },
+    "abattement_pensions_non_applicable": {
+      "valeur": 10,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : la part du capital debloque correspondant aux versements est imposee a l impot sur le revenu SANS abattement de 10 %. L abattement des pensions joue sur la RENTE mais pas sur le CAPITAL ⇒ a TMI egal, la sortie en capital est plus chere que la rente sur ce point precis."
+    }
+  },
+  "per_sortie_rente": {
+    "fractions_rente_viagere_a_titre_onereux": {
+      "valeur": {
+        "moins_de_50_ans": 70,
+        "de_50_a_59_ans": 50,
+        "de_60_a_69_ans": 40,
+        "plus_de_69_ans": 30
+      },
+      "unite": "% de la rente imposable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3173",
+      "date_verifiee": "2026-08-17",
+      "note": "Fraction imposable selon l age du beneficiaire lors du PREMIER versement de la rente. Regime applique aux rentes issues de versements NON deduits. Ces memes fractions servent d assiette aux prelevements sociaux sur les rentes issues de versements deduits. ★ plus on percoit tard, plus la fraction imposable est faible."
+    },
+    "bornes_d_age_des_fractions": {
+      "valeur": {
+        "borne_1": 50,
+        "borne_2": 59,
+        "borne_3": 60,
+        "borne_4": 69
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3173",
+      "date_verifiee": "2026-08-17",
+      "note": "Tranches d age du tableau des rentes viageres a titre onereux : moins de 50 ans, de 50 a 59 ans, de 60 a 69 ans, 69 ans et plus. Page service-public verifiee le 15/04/2026."
+    }
+  },
+  "per_deblocage_anticipe": {
+    "nombre_de_cas": {
+      "valeur": 7,
+      "unite": "cas",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "6 accidents de la vie + achat de la residence principale. Liste identique pour PER individuel, PER d entreprise collectif et PER d entreprise obligatoire. ⚠ liste relevee sur service-public : le texte du code monetaire et financier n a pas ete lu directement."
+    },
+    "invalidite_categories": {
+      "valeur": "2e ou 3e categorie",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Invalidite du titulaire, de ses enfants, de son epoux ou epouse, ou de son partenaire de Pacs."
+    },
+    "mandataire_social_duree": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Cessation de la fonction de mandataire social depuis au moins 2 ans sans contrat de travail et sans liquidation de pension dans un regime obligatoire d assurance vieillesse."
+    },
+    "residence_principale_versements_obligatoires": {
+      "valeur": "restent bloques",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : achat de la residence principale (mais, dans ce cas, les droits issus de versements obligatoires restent bloques). Le compartiment obligatoire est le seul exclu."
+    }
+  },
+  "per_deces": {
+    "abattement_deces_avant_70_ans": {
+      "valeur": 152500,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "PER assurantiel, deces du titulaire avant 70 ans : abattement par beneficiaire. ⛔ le PER bancaire n y a pas droit, les sommes entrent dans l actif successoral."
+    },
+    "abattement_deces_apres_70_ans": {
+      "valeur": 30500,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ PER assurantiel, deces apres 70 ans : abattement GLOBAL partage entre les beneficiaires, puis droits de succession. Le pivot est l AGE AU DECES, pas l age aux versements - contrairement a l assurance-vie."
+    },
+    "age_pivot": {
+      "valeur": 70,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Age au deces du titulaire qui commande le regime de transmission du PER assurantiel."
+    }
+  },
+  "per_entreprise": {
+    "abondement_multiple_du_versement_salarie": {
+      "valeur": 3,
+      "unite": "fois le versement du salarie",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : l abondement ne peut pas depasser 3 fois le montant que vous avez vous-meme verse."
+    },
+    "abondement_plafond_annuel": {
+      "valeur": 7690,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : ni etre superieur a 7 690 euros. ⚠ millesime non precise par la page - a recouper avant de le citer comme le montant d une annee donnee."
+    },
+    "abondement_exonere_part_du_pass": {
+      "valeur": 16,
+      "unite": "% du plafond annuel de la securite sociale",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Notice 2041-GX : abondement de l employeur exonere d impot sur le revenu dans la limite de 16 % du plafond annuel de la securite sociale, soit 7 419 euros en 2024. ⚠ ce montant exonere VIENT EN DEDUCTION du plafond d epargne retraite de l annee suivante."
+    },
+    "abondement_exonere_montant_2024": {
+      "valeur": 7419,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "16 % du PASS 2024, plafond d exoneration de l abondement retenu pour le calcul du 2e terme du plafond des versements 2025."
+    },
+    "cet_jours_exoneres": {
+      "valeur": 10,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/2041-gx/epargne-retraite",
+      "date_verifiee": "2026-08-17",
+      "note": "Jours de conge monetises verses sur un PERCO ou un regime article 83, dans la limite du nombre de jours exoneres d impot sur le revenu."
+    },
+    "seuil_conversion_rente_en_capital": {
+      "valeur": 110,
+      "unite": "euros par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : mais si le montant mensuel de la rente ne depasse pas 110 euros, la rente peut etre convertie en capital. Seule echappatoire a la sortie en rente OBLIGATOIRE du compartiment des versements obligatoires."
+    }
+  },
+  "revenus_fonciers_micro": {
+    "seuil_micro_foncier": {
+      "valeur": 15000,
+      "unite": "euros de revenus fonciers bruts par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 15/04/2026, verbatim : Si vos revenus ne depassent pas 15 000 EUR, vous serez automatiquement soumis au regime micro-foncier. ⚠ Le regime est AUTOMATIQUE, il ne se demande pas. ⚠ NE PAS CONFONDRE avec les 15 000 EUR du micro-BIC des meubles de tourisme non classes : meme chiffre, regime totalement different."
+    },
+    "abattement_micro_foncier": {
+      "valeur": 30,
+      "unite": "% des revenus fonciers bruts",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Vous avez droit a un abattement forfaitaire de 30 %, representatif de frais, sur vos revenus fonciers. ★ Cet abattement REMPLACE toutes les charges reelles : sous micro-foncier on ne deduit ni travaux ni interets d emprunt, et on ne peut PAS creer de deficit foncier. Verbatim de la meme page : Vous ne pouvez pas deduire vos travaux et charges."
+    },
+    "prelevements_sociaux_revenus_fonciers": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : les prelevements sociaux (au taux de 17,2 %). ★ Ils s ajoutent a l impot sur le revenu au taux marginal du foyer : un revenu foncier n est jamais taxe au seul bareme. Preleves a la source sous forme d acompte."
+    }
+  },
+  "revenus_fonciers_reel": {
+    "duree_irrevocabilite_option_reel": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : Si vous choisissez le regime reel, cette option sera irrevocable pendant 3 ans. C est LE point que personne ne dit au guichet : on ne compare pas les deux regimes chaque printemps, on s engage. A l issue des 3 ans l option se reconduit tacitement si rien n est fait."
+    },
+    "formulaires_revenus_fonciers": {
+      "valeur": {
+        "declaration_ensemble": "2042",
+        "regime_reel": "2044",
+        "regime_reel_special": "2044-SPE"
+      },
+      "unite": "numero de formulaire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Micro-foncier : report direct sur la 2042, aucune annexe. Reel : 2044, ou 2044-SPE pour les dispositifs speciaux et les monuments historiques, annexee a la 2042."
+    }
+  },
+  "deficit_foncier": {
+    "plafond_imputation_revenu_global": {
+      "valeur": 10700,
+      "unite": "euros par an et par foyer fiscal",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : La part du deficit qui resulte des depenses autres que les interets d emprunt est deductible de votre revenu global dans la limite de 10 700 EUR. ★ Les INTERETS D EMPRUNT sont exclus de cette imputation : ils ne se deduisent que des revenus fonciers. Une operation financee a credit ne cree donc pas le deficit imputable qu on imagine."
+    },
+    "plafond_majore_renovation_energetique": {
+      "valeur": 21400,
+      "unite": "euros par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : La limite de deduction sur le revenu global est portee jusqu a 21 400 EUR pour les depenses de travaux de renovation energetique permettant a un bien de passer d une classe energetique E, F ou G, a une classe A, B, C ou D, au plus tard le 31 decembre 2027. Devis accepte a compter du 5 novembre 2022, depenses payees entre le 1er janvier 2023 et le 31 decembre 2027. ★ Le doublement est CONDITIONNE au saut de classe effectivement atteint, pas a la nature des travaux."
+    },
+    "report_sur_revenu_global": {
+      "valeur": 6,
+      "unite": "annees suivantes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : vous pouvez le reporter sur votre revenu global des 6 annees suivantes. Concerne la fraction du deficit imputable qui n a pas pu etre absorbee par le revenu global de l annee."
+    },
+    "report_sur_revenus_fonciers": {
+      "valeur": 10,
+      "unite": "annees suivantes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : La part du deficit foncier qui depasse 10 700 EUR et celle liee aux interets d emprunt sont deductibles de vos revenus fonciers des 10 annees suivantes. ⚠ DEUX horloges differentes : 6 ans sur le revenu global, 10 ans sur les seuls revenus fonciers. Un deficit reporte se perd s il n y a plus de revenu foncier a absorber."
+    },
+    "engagement_location_apres_imputation": {
+      "valeur": 3,
+      "unite": "ans suivant l annee de la deduction",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1991",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : La deduction du revenu global est remise en cause si l immeuble cesse d etre loue dans les 3 ans qui suivent l annee pour laquelle la deduction a ete effectuee. C est le piege classique : on impute un gros deficit de travaux, puis on vend, on reprend le logement pour soi ou on le passe en meuble - et l administration reprend la deduction. Vendre ou changer d usage trop tot annule l avantage."
+    }
+  },
+  "dispositif_relance_logement": {
+    "plafond_deduction_annuel": {
+      "valeur": 8000,
+      "unite": "euros par an et par foyer fiscal",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35782",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 15/04/2026, verbatim du tableau : Plafond de deduction annuel par foyer fiscal (8 000 EUR en general). Dispositif dit Relance Logement ou statut fiscal du bailleur prive, loi n° 2026-103 du 19 fevrier 2026 de finances pour 2026, article 47. Mecanisme : Deduction des revenus fonciers (en cas de deficit foncier, imputation dans les limites habituelles)."
+    },
+    "plafond_deduction_majore_logement_tres_social": {
+      "valeur": 12000,
+      "unite": "euros par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18817",
+      "date_verifiee": "2026-08-17",
+      "note": "Actualite du 24/02/2026 : deduction annuelle maximale portee a 12 000 EUR des revenus locatifs si au moins 50 % des logements relevent du logement tres social. ⚠ Le chiffre de 8 000 EUR vient de la fiche F35782, celui de 12 000 EUR de l actualite : les deux sont officiels mais je n ai PAS trouve une page unique qui les presente ensemble avec leurs conditions exactes."
+    },
+    "quota_logement_tres_social": {
+      "valeur": 50,
+      "unite": "% des logements",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/actualites/A18817",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition annoncee pour le plafond majore de deduction. Plafonds de loyers et de ressources du locataire applicables selon la localisation."
+    },
+    "duree_engagement_location": {
+      "valeur": 9,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35782",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Duree d engagement de location du tableau F35782. Acquisitions eligibles entre le 21 fevrier 2026 et le 31 decembre 2028 (actualite du 24/02/2026), logement neuf ou ancien avec rehabilitation lourde dans un immeuble collectif, location NON MEUBLEE. ⛔ Ce fichier decrit le mecanisme fiscal, il ne dit pas si l operation est un bon investissement."
+    }
+  },
+  "location_meublee_statut": {
+    "seuil_recettes_lmp": {
+      "valeur": 23000,
+      "unite": "euros de recettes annuelles du foyer fiscal",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Page du 15/04/2026. On est loueur NON professionnel si AU MOINS UNE des 2 conditions est remplie : recettes inferieures a 23 000 EUR, OU recettes inferieures au montant total des autres revenus d activite du foyer. ⇒ Le LMP suppose donc les DEUX conditions reunies : plus de 23 000 EUR ET plus que les autres revenus d activite. Un salarie bien paye reste LMNP meme avec des recettes elevees. Le meme seuil de 23 000 EUR declenche par ailleurs les COTISATIONS sociales (F34102, page du 20/02/2026)."
+    }
+  },
+  "location_meublee_micro_bic": {
+    "seuil_micro_bic_revenus_2025": {
+      "valeur": 77700,
+      "unite": "euros de recettes, revenus 2025 declares en 2026",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "Location meublee de longue duree, chambres d hotes et meubles de tourisme CLASSES : ne depassent pas 77 700 EUR. Confirme par impots.gouv.fr page du 08/04/2026 : 77 700 EUR pour les locations de chambres d hote et de meubles de tourisme classes ainsi que les autres activites de location meublee."
+    },
+    "seuil_micro_bic_revenus_2026": {
+      "valeur": 83600,
+      "unite": "euros de recettes, revenus 2026 declares en 2027",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Seuil revalorise pour les revenus 2026 : ne depassent pas 83 600 EUR (longue duree, chambres d hotes, meubles classes). ⚠ DEUX seuils coexistent donc selon l annee des revenus : 77 700 EUR pour 2025, 83 600 EUR pour 2026. Citer le mauvais millesime est l erreur la plus facile a commettre ici. Confirme par l actualite service-public du 27/07/2026."
+    },
+    "abattement_micro_bic_classique_et_classe": {
+      "valeur": 50,
+      "unite": "% des recettes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "Abattement forfaitaire pour frais de 50 % : location meublee de longue duree, chambres d hotes, meubles de tourisme classes. Un minimum d abattement existe pour les tres petites recettes, non verifie ici."
+    },
+    "seuil_micro_bic_meuble_tourisme_non_classe": {
+      "valeur": 15000,
+      "unite": "euros de recettes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Meubles de tourisme NON classes : ne depassent pas 15 000 EUR, pour les revenus 2025 comme pour les revenus 2026 (ce seuil n a pas ete revalorise). Issu de la loi n° 2024-1039 du 19 novembre 2024 dite loi Le Meur, applicable au 1er janvier 2025."
+    },
+    "abattement_micro_bic_meuble_tourisme_non_classe": {
+      "valeur": 30,
+      "unite": "% des recettes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Abattement forfaitaire pour frais de 30 % pour un meuble de tourisme non classe, contre 50 % s il est classe. Le CLASSEMENT est donc un acte fiscal a lui seul : il change l abattement ET le seuil (15 000 EUR contre 83 600 EUR pour 2026). C est la trouvaille la plus actionnable du sujet."
+    },
+    "formulaires_location_meublee": {
+      "valeur": {
+        "micro_bic": "2042-C-PRO",
+        "regime_reel": "2031-SD"
+      },
+      "unite": "numero de formulaire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32744",
+      "date_verifiee": "2026-08-17",
+      "note": "Micro-BIC : 2042-C-PRO. Reel : liasse 2031-SD. ⚠ Un numero SIRET est obligatoire dans les deux cas : la location meublee est une activite, elle se declare aupres du guichet des formalites des entreprises. Le volet entreprise vit dans le skill comptable."
+    }
+  },
+  "location_meublee_reel": {
+    "reintegration_amortissements_plus_value": {
+      "valeur": "prix d acquisition MINORE du montant des amortissements admis en deduction",
+      "unite": "regle de calcul",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544785",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 150 VB III du CGI, version en vigueur au 21 fevrier 2026 (LOI n° 2026-103 du 19 fevrier 2026 art. 47), verbatim : Le prix d acquisition est minore du montant des amortissements admis en deduction en application des i et j du 1° du I de l article 31 ou de l article 39 C, a l exception de ceux de ces amortissements constitutifs de depenses prises en compte pour la determination de l impot sur le revenu en application de la premiere phrase du 4° du II du present article. Exceptions pour certains etablissements sociaux et medico-sociaux. Applicable aux ventes realisees depuis le 15 fevrier 2025 (service-public F10864). ⚠ La fiche service-public dit amortissements REINTEGRES dans le prix d acquisition, ce qui se lit a tort comme une majoration : le code dit MINORE. La plus-value imposable AUGMENTE."
+    }
+  },
+  "meuble_de_tourisme": {
+    "duree_maximale_location_residence_principale": {
+      "valeur": {
+        "plafond_annuel_bas": 90,
+        "plafond_annuel_haut": 120,
+        "par_client_consecutifs": 90
+      },
+      "unite": "jours par annee civile",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 21/05/2026, verbatim : un meme client ne peut pas totaliser plus de 90 jours consecutifs par annee civile ; plafond total entre 90 et 120 jours par annee civile selon la commune. ⚠ Ce n est pas de la fiscalite mais une regle locale d urbanisme : elle plafonne pourtant les recettes, donc l arbitrage de regime. Voir le role logement."
+    },
+    "amende_defaut_declaration": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33175",
+      "date_verifiee": "2026-08-17",
+      "note": "Amende civile de 10 000 EUR encourue en cas de non-respect des obligations declaratives locales du meuble de tourisme. ⚠ Sanction locale, distincte de toute sanction fiscale. L enregistrement devient obligatoire dans TOUTES les communes via un teleservice national a partir du quatrieme trimestre 2026 (actualite service-public du 27/07/2026)."
+    }
+  },
+  "plus_value_immobiliere": {
+    "taux_impot_revenu": {
+      "valeur": 19,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Page du 15/04/2026, verbatim : La plus-value immobiliere, apres deduction du ou des abattements, est imposee a l impot sur le revenu au taux de 19 %. ★ Taux PROPORTIONNEL : la plus-value immobiliere echappe au bareme progressif, elle n est pas taxee au taux marginal du foyer."
+    },
+    "taux_prelevements_sociaux": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Vous devez payer des prelevements sociaux au taux de 17,2 %."
+    },
+    "taux_global": {
+      "valeur": 36.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "19 % + 17,2 % = 36,2 % avant abattements et avant surtaxe. ⚠ Les abattements pour duree de detention ne s appliquent PAS a la meme cadence sur les deux composantes : le taux effectif n est presque jamais 36,2 %."
+    },
+    "seuil_surtaxe_plus_values_elevees": {
+      "valeur": 50000,
+      "unite": "euros de plus-value imposable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Une taxe supplementaire s applique en cas de plus-value imposable superieure a 50 000 EUR. ★ Le seuil porte sur la plus-value IMPOSABLE, c est-a-dire APRES abattements : une plus-value brute bien plus elevee peut rester sous le seuil apres 15 ou 20 ans de detention."
+    },
+    "taux_surtaxe_plus_values_elevees": {
+      "valeur": {
+        "taux_minimum": 2,
+        "taux_maximum": 6
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Le taux varie de 2 % a 6 % selon le montant de la plus-value realisee. Bareme detaille porte par le formulaire 2048-IMM, non reproduit ici."
+    },
+    "forfait_frais_acquisition": {
+      "valeur": 7.5,
+      "unite": "% du prix d acquisition",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544785",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 150 VB II du CGI, version en vigueur au 21 fevrier 2026 : forfait de 7,5 % du prix d acquisition au titre des frais d acquisition a titre onereux. ★ C est un FORFAIT au choix : on peut retenir les frais reels s ils sont plus eleves et justifies."
+    },
+    "forfait_travaux": {
+      "valeur": 15,
+      "unite": "% du prix d acquisition",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544785",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 150 VB II du CGI : majoration de 15 % du prix d acquisition au titre des depenses de construction, reconstruction, agrandissement ou amelioration, a defaut de justifications, si le bien est detenu depuis plus de cinq ans. ★ Ce forfait s obtient SANS aucune facture : il vaut mieux que rien quand les justificatifs de travaux ont disparu."
+    },
+    "duree_detention_pour_forfait_travaux": {
+      "valeur": 5,
+      "unite": "ans de detention",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition du forfait travaux de 15 % : si le bien est detenu depuis plus de 5 ans."
+    },
+    "formulaires_plus_value": {
+      "valeur": {
+        "declaration_plus_value": "2048-IMM",
+        "report_declaration_revenus": "2042-C"
+      },
+      "unite": "numero de formulaire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le NOTAIRE etablit la 2048-IMM, calcule la plus-value et paie l impot lors de la vente. Le vendeur ne remplit rien lui-meme, il reporte ensuite le montant sur sa declaration de revenus. ⇒ La consequence pratique est qu une erreur se detecte APRES l acte : la voie de correction est la reclamation, voir reclamation-et-controle.md."
+    }
+  },
+  "plus_value_abattements": {
+    "abattement_impot_revenu": {
+      "valeur": {
+        "jusqu_a_5_ans": 0,
+        "de_la_6e_a_la_21e_annee_par_an": 6,
+        "22e_annee_revolue": 4,
+        "exoneration_totale_apres": 22
+      },
+      "unite": "% par annee de detention, annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006197216",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 150 VC I du CGI, version en vigueur depuis le 01/01/2014, verbatim : La plus-value brute [...] est reduite d un abattement fixe a : 6 % pour chaque annee de detention au-dela de la cinquieme ; 4 % au titre de la vingt-deuxieme annee de detention. ⇒ Exoneration totale d impot sur le revenu au-dela de la 22e annee. Concorde avec le tableau de service-public F10864."
+    },
+    "abattement_prelevements_sociaux": {
+      "valeur": {
+        "jusqu_a_5_ans": 0,
+        "de_la_6e_a_la_21e_annee_par_an": 1.65,
+        "22e_annee_revolue": 1.6,
+        "de_la_23e_a_la_30e_annee_par_an": 9,
+        "exoneration_totale_apres": 30
+      },
+      "unite": "% par annee de detention, annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Tableau de la page du 15/04/2026 : 1,65 % par an de la 6e a la 21e annee, 1,6 % la 22e annee revolue, 9 % par an au-dela de la 22e annee, exoneration totale au-dela de la 30e annee. ⇒ HUIT ANNEES separent les deux exonerations : a 23 ans de detention on ne paie plus d impot sur le revenu mais on paie encore des prelevements sociaux. C est le decalage que presque personne n anticipe."
+    }
+  },
+  "plus_value_exonerations": {
+    "residence_principale": {
+      "valeur": "exoneration totale",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Vous etes totalement exonere si vous realisez une plus-value sur la vente de votre residence principale et de ses dependances (cave, garage, place de stationnement, cour, etc.). ⚠ Le bien doit etre la residence principale AU MOMENT DE LA VENTE. Apres separation ou divorce, il suffit que l un des ex-conjoints l ait occupee jusqu a la vente. ⚠ Je n ai PAS pu verifier sur cette page le delai de tolerance admis entre le demenagement et la vente : ne pas l annoncer."
+    },
+    "premiere_cession_autre_logement": {
+      "valeur": {
+        "delai_remploi_pour_habitation_principale": 2,
+        "duree_de_non_propriete_prealable": 4
+      },
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : Vous etes aussi exonere en cas de vente d un logement autre que la residence principale si vous respectez les 2 conditions suivantes : Vous utilisez le prix de la vente pour acheter ou construire votre habitation principale dans un delai de 2 ans ; Vous n avez pas ete proprietaire de votre residence principale dans les 4 annees precedant la vente. Exoneration utilisable UNE SEULE FOIS et sur DEMANDE dans l acte de vente. ⛔ Si la demande n est pas formulee dans l acte, l avantage est perdu : c est un droit qui se perd faute d etre connu au bon moment, chez le notaire."
+    },
+    "petites_cessions": {
+      "valeur": 15000,
+      "unite": "euros de prix de vente",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Bien dont le prix de vente ne depasse pas 15 000 EUR. ⚠ Le seuil porte sur le PRIX DE VENTE, pas sur la plus-value. Il s apprecie bien par bien."
+    },
+    "duree_de_detention_longue": {
+      "valeur": {
+        "exoneration_impot_revenu": 22,
+        "exoneration_prelevements_sociaux": 30
+      },
+      "unite": "ans de detention",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim : Vous etes exonere d impot sur la plus-value immobiliere pour tout bien detenu depuis plus de 22 ans. Exoneration de prelevements sociaux au-dela de 30 ans."
+    },
+    "autres_exonerations": {
+      "valeur": {
+        "delai_vente_apres_entree_en_etablissement": 2
+      },
+      "unite": "ans",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10864",
+      "date_verifiee": null,
+      "note": "⚠ a_verifier : la page F10864 cite d autres exonerations (expropriation avec remploi, personnes agees ou handicapees entrees en etablissement dans un delai de 2 ans et sous conditions de revenus, non-residents sous conditions, droit de surelevation jusqu au 31 decembre 2026, cessions au profit du logement social jusqu au 31 decembre 2027) mais je n ai PAS obtenu le texte verbatim de chaque condition. Le delai de 2 ans et les plafonds de revenus doivent etre recoupes avant d etre cites a quelqu un."
+    }
+  },
+  "textes_de_reference": {
+    "articles_cites": {
+      "valeur": {
+        "prix_acquisition_et_amortissements": "CGI art. 150 VB",
+        "abattement_duree_detention": "CGI art. 150 VC",
+        "charges_deductibles_revenus_fonciers": "CGI art. 31",
+        "amortissement_bic": "CGI art. 39 C",
+        "loi_de_finances_2026": "loi n° 2026-103 du 19 fevrier 2026, art. 47",
+        "loi_meubles_de_tourisme": "loi n° 2024-1039 du 19 novembre 2024"
+      },
+      "unite": "reference de texte",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053544785",
+      "date_verifiee": "2026-08-17",
+      "note": "Entree technique : liste des textes effectivement consultes sur Legifrance ou cites par une page officielle fetchee. Sert de tracabilite, ne contient aucune valeur chiffree a utiliser telle quelle."
+    }
+  },
+  "prelevement_forfaitaire_unique": {
+    "taux_impot_sur_le_revenu": {
+      "valeur": 12.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "part IMPOT du PFU  elle n a pas bouge  ★★ c est la SEULE ligne sur laquelle porte l arbitrage PFU / bareme  les prelevements sociaux sont dus dans les deux cas"
+    },
+    "prelevements_sociaux_revenus_2025": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "taux applicable aux revenus de placement encaisses en 2025  declares au printemps 2026"
+    },
+    "prelevements_sociaux_revenus_2026": {
+      "valeur": 18.6,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21618",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ hausse a compter de 2026  la CSG passe de 9,2 a 10,6  tout calcul fait aujourd hui sur un gain 2026 doit utiliser ce taux"
+    },
+    "taux_global_revenus_2025": {
+      "valeur": 30,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "12,8 + 17,2  c est le fameux  flat tax a 30 %   il ne vaut QUE pour les revenus 2025 et anterieurs"
+    },
+    "taux_global_revenus_2026": {
+      "valeur": 31.4,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21618",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM  La plus-value realisee est soumise au prelevement forfaitaire unique au taux de 31,4 % (12,8 % d impot sur le revenu et 18,6 % de prelevements sociaux)   confirme par impots.gouv.fr pour les actifs numeriques"
+    },
+    "decomposition_prelevements_sociaux_2026": {
+      "valeur": {
+        "csg": 10.6,
+        "crds": 0.5,
+        "prelevement_de_solidarite": 7.5
+      },
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "cas general 2026 des revenus du patrimoine et de placement  page du 30/06/2026"
+    },
+    "csg_revenus_2025": {
+      "valeur": 9.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "ancien taux de CSG dans les 17,2 % de 2025"
+    },
+    "prelevements_sociaux_revenus_fonciers_et_plus_values_immobilieres": {
+      "valeur": 17.2,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2329",
+      "date_verifiee": "2026-08-17",
+      "note": "★ l immobilier RESTE a 17,2 % (CSG 9,2) alors que les placements financiers passent a 18,6  ne pas appliquer un taux unique a tout le patrimoine  voir immobilier-fiscal.md"
+    },
+    "csg_deductible_si_option_bareme": {
+      "valeur": 6.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM  une fraction de la CSG afferente aux RCM imposes au bareme est deductible de votre revenu imposable ... a hauteur de 6,8 %   ⛔ perdue si on reste au PFU"
+    }
+  },
+  "option_bareme": {
+    "case_a_cocher": {
+      "valeur": "2OP",
+      "unite": "case de la declaration 2042",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ UNE case pour TOUT le foyer  l option est GLOBALE  elle couvre l ensemble des revenus de capitaux mobiliers et des plus-values de cession de valeurs mobilieres  on ne choisit pas placement par placement"
+    },
+    "caractere_irrevocable_supprime": {
+      "valeur": "supprime a compter des revenus 2026",
+      "unite": "regime de l option",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM impots.gouv  a partir de 2026 le caractere irrevocable de cette option a ete supprime   et service-public F2613  vous pourrez renoncer a votre option pour le bareme progressif (dans le delai de reclamation ou en cours de controle) si celle-ci vous est finalement defavorable   ⛔ le stub du depot decrivait encore l option comme irrevocable  c etait vrai jusqu aux revenus 2025"
+    },
+    "point_equilibre_dividendes": {
+      "valeur": 24,
+      "unite": "% de TMI",
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": null,
+      "note": "★ CALCUL DERIVE des taux officiels  pas un chiffre publie  12,8 / 0,532 = 24,06  la source ne donne que les taux 12,8 / 40 / 6,8 qui l alimentent"
+    },
+    "point_equilibre_interets": {
+      "valeur": 13.7,
+      "unite": "% de TMI",
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": null,
+      "note": "★ CALCUL DERIVE  12,8 / 0,932 = 13,73  pas de chiffre publie  les deux points d equilibre tombent dans le TROU du bareme entre 11 et 30 donc la reponse est binaire"
+    },
+    "base_imposable_dividende_au_bareme": {
+      "valeur": 53.2,
+      "unite": "% du dividende brut",
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": null,
+      "note": "CALCUL DERIVE  100 - 40 d abattement - 6,8 de CSG deductible"
+    },
+    "base_imposable_interets_au_bareme": {
+      "valeur": 93.2,
+      "unite": "% des interets bruts",
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": null,
+      "note": "CALCUL DERIVE  100 - 6,8 de CSG deductible  aucun abattement sur les interets"
+    },
+    "tranches_de_bareme_encadrant_la_decision": {
+      "valeur": {
+        "tranche_basse": 11,
+        "tranche_suivante": 30,
+        "premiere_tranche": 0
+      },
+      "unite": "% de TMI",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1419",
+      "date_verifiee": "2026-08-17",
+      "note": "bareme revenus 2025 imposition 2026  ★ aucun taux du bareme ne se situe entre 13,7 et 24 donc la frontiere passe nettement entre la tranche a 11 et celle a 30  voir impot-revenu.md pour TMI vs taux moyen"
+    }
+  },
+  "dividendes": {
+    "abattement_option_bareme": {
+      "valeur": 40,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM  vos dividendes d actions ou autres revenus distribues sont soumis au bareme apres deduction d un abattement forfaitaire de 40 %   ⛔ perdu si on reste au PFU"
+    },
+    "prelevement_forfaitaire_non_liberatoire": {
+      "valeur": 12.8,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "★ retenu a la source par la banque  VERBATIM  constitue une avance d impot sur le revenu   ce n est PAS un impot definitif  il s impute et l excedent est restitue"
+    },
+    "dispense_seuils_revenus_distribues": {
+      "valeur": {
+        "celibataire": 50000,
+        "couple_marie_ou_pacse": 75000
+      },
+      "unite": "EUR de revenu fiscal de reference de l avant-derniere annee",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "★ seuils propres aux DIVIDENDES  differents de ceux des interets  RFR de N-2  piege classique  appliquer un seul seuil aux deux categories"
+    },
+    "dispense_seuils_placements_a_revenu_fixe": {
+      "valeur": {
+        "celibataire": 25000,
+        "couple_marie_ou_pacse": 50000
+      },
+      "unite": "EUR de revenu fiscal de reference de l avant-derniere annee",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-revenus-mobiliers",
+      "date_verifiee": "2026-08-17",
+      "note": "★ seuils propres aux INTERETS  deux fois plus bas que pour les dividendes"
+    },
+    "dispense_date_limite": {
+      "valeur": "30 novembre de l annee precedant l encaissement",
+      "unite": "date limite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2613",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ VERBATIM  la demande est a adresser a l etablissement financier qui vous verse les revenus au plus tard le 30 novembre de l annee precedant celle du paiement   ⛔ demande a la BANQUE  pas au fisc  et rien ne rattrape la date passee"
+    }
+  },
+  "plus_values_valeurs_mobilieres": {
+    "report_moins_values": {
+      "valeur": 10,
+      "unite": "annees suivantes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21618",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM  s il vous reste un excedent de moins-value vous pourrez le deduire des plus-values que vous realiserez au cours des 10 annees suivantes   la page precise qu une declaration est necessaire pour conserver ce droit  ⛔ moins-value non declaree = droit perdu"
+    },
+    "abattement_duree_detention": {
+      "valeur": "reserve aux titres acquis avant le 1er janvier 2018 et a la seule option bareme",
+      "unite": "condition",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21618",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ l abattement reduit la base de l IMPOT SUR LE REVENU seulement  VERBATIM  les prelevements sociaux s appliqueront sur la totalite de la plus-value abattement inclus"
+    }
+  },
+  "pea": {
+    "plafond_versements": {
+      "valeur": 150000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM  le plafond des versements sur le PEA bancaire est de 150 000 EUR   plafond de VERSEMENTS  les gains peuvent le depasser"
+    },
+    "plafond_pea_pme_eti": {
+      "valeur": 225000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM  la somme totale versee sur ces 2 plans par un meme titulaire ne peut pas depasser 225 000 EUR   le PEA-PME n AJOUTE donc pas 225 000 au PEA  il partage la meme enveloppe"
+    },
+    "plafond_pea_jeune": {
+      "valeur": 20000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM  une personne majeure rattachee au foyer fiscal de ses parents peut ouvrir un PEA avec un plafond specifique limite a 20 000 EUR"
+    },
+    "duree_exoneration_impot_sur_le_revenu": {
+      "valeur": 5,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22449",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM  si vous retirez de l argent de votre PEA apres 5 ans les gains de votre PEA sont exoneres d impot sur le revenu   exoneration d IR SEULEMENT  les prelevements sociaux restent dus"
+    },
+    "retrait_avant_5_ans": {
+      "valeur": "gain net impose a 12,8 % ou au bareme sur option ET cloture du plan",
+      "unite": "consequence",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2385",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ VERBATIM  tout retrait (total ou partiel) avant la fin de la 5eme annee du PEA entraine la cloture du plan   exceptions citees  licenciement  invalidite  mise a la retraite anticipee du titulaire ou de son conjoint ou partenaire de PACS"
+    },
+    "titres_non_cotes_seuil": {
+      "valeur": 10,
+      "unite": "% de la valeur d acquisition",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22449",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ les revenus de titres NON COTES loges dans le PEA qui depassent 10 % de leur valeur d acquisition sont imposes a 12,8 %  l enveloppe PEA ne les protege pas"
+    },
+    "prelevements_sociaux_taux": {
+      "valeur": null,
+      "unite": "%",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F22449",
+      "date_verifiee": null,
+      "note": "TROU ASSUME  la fiche PEA dit seulement  les gains du PEA sont soumis aux prelevements sociaux (CSG CRDS)  sans donner le taux ni la date de son appreciation  ⛔ ne pas affirmer 18,6 sur cette base"
+    }
+  },
+  "livrets_reglementes": {
+    "livret_a_plafond": {
+      "valeur": 22950,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "particulier  exoneration d impot sur le revenu ET de prelevements sociaux  page du 01/08/2026"
+    },
+    "ldds_plafond": {
+      "valeur": 12000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "livret de developpement durable et solidaire  exonere d IR et de prelevements sociaux"
+    },
+    "lep_plafond": {
+      "valeur": 10000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "livret d epargne populaire  exonere d IR et de prelevements sociaux  soumis a une condition de revenu non traitee ici"
+    },
+    "livret_jeune_plafond": {
+      "valeur": 1600,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "exonere d IR et de prelevements sociaux"
+    },
+    "pel_plafond": {
+      "valeur": 61200,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM  taxation a l impot sur le revenu (PEL ouvert a partir de 2018) et aux prelevements sociaux  ⛔ le PEL n est PAS un livret exonere  croyance fausse tres repandue"
+    },
+    "cel_plafond": {
+      "valeur": 15300,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34393",
+      "date_verifiee": "2026-08-17",
+      "note": "★ impose a l impot sur le revenu depuis 2018 et aux prelevements sociaux  comme le PEL"
+    }
+  },
+  "actifs_numeriques": {
+    "taux_pfu": {
+      "valeur": 31.4,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques",
+      "date_verifiee": "2026-08-17",
+      "note": "VERBATIM  prelevement forfaitaire unique (PFU) de 31,4 %  soit 12,8 % d impot + 18,6 % de prelevements sociaux  page du 17/07/2026"
+    },
+    "seuil_exoneration_annuel": {
+      "valeur": 305,
+      "unite": "EUR de somme des prix de cession sur l annee",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/les-cessions-mobilieres",
+      "date_verifiee": "2026-08-17",
+      "note": "★ VERBATIM  les operations portant sur des cessions d actifs numeriques dont la somme des prix n excede pas 305 EUR au cours d une annee d imposition sont exonerees   c est la somme des PRIX DE CESSION  pas celle des gains"
+    },
+    "option_bareme_case": {
+      "valeur": "3CN",
+      "unite": "case de la declaration",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ option PROPRE aux actifs numeriques  ouverte depuis l imposition des revenus 2023  VERBATIM  cette option est definitive   ⚠ elle n a donc PAS suivi la suppression de l irrevocabilite du 2OP"
+    },
+    "moins_values": {
+      "valeur": "imputables uniquement sur les plus-values de meme nature de la MEME annee  aucun report",
+      "unite": "regime",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ VERBATIM  elle n est pas imputable sur les plus-values de cession d autres biens et elle ne se reporte pas sur les annees suivantes   ⛔ asymetrie majeure avec les valeurs mobilieres qui se reportent 10 ans"
+    },
+    "activite_habituelle": {
+      "valeur": "BIC si activite commerciale d achat-revente  BNC si operations s apparentant a une activite professionnelle sans en etre l activite principale",
+      "unite": "categorie de revenu",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ le PFU de l article 150 VH bis ne couvre que les cessions a TITRE OCCASIONNEL par une personne physique  franchir la limite fait sortir du regime forfaitaire et entrer dans un regime professionnel  ⛔ la frontiere n est pas chiffree par la source  ne jamais la trancher soi-meme"
+    },
+    "amende_compte_actifs_numeriques_non_declare": {
+      "valeur": 750,
+      "unite": "EUR par compte non declare",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ VERBATIM  amende forfaitaire de 750 EUR par compte non declare   PAR COMPTE  dix plateformes oubliees = dix amendes  article 1649 bis C du CGI"
+    },
+    "amende_majoree_valeur_elevee": {
+      "valeur": {
+        "amende": 1500,
+        "seuil_de_valeur_du_compte": 50000
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ VERBATIM  amende forfaitaire de 1 500 EUR par compte non declare si la valeur du compte d actifs numeriques depasse 50 000 EUR a un moment quelconque de l annee   ⚠ un PIC en cours d annee suffit  meme si le compte est vide au 31 decembre"
+    },
+    "majoration_rappels_impot": {
+      "valeur": 80,
+      "unite": "%",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ VERBATIM  majoration de 80 % appliquee a tous les rappels d impot resultant du defaut de declaration"
+    },
+    "amende_compte_bancaire_etranger_non_declare": {
+      "valeur": {
+        "cas_general": 1500,
+        "etat_sans_convention_fiscale_avec_la_france": 10000
+      },
+      "unite": "EUR par compte non declare",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34342",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ regime des comptes BANCAIRES  distinct de celui des comptes d actifs numeriques  ne pas confondre les deux baremes"
+    }
+  },
+  "declaratif": {
+    "formulaires_et_cases": {
+      "valeur": {
+        "declaration_principale": "2042",
+        "declaration_complementaire": "2042-C",
+        "plus_values_valeurs_mobilieres_calculees_par_le_contribuable": "2074",
+        "plus_moins_values_cessions_actifs_numeriques": "2086",
+        "plus_moins_values_actifs_numeriques_autre_imprime": "2087",
+        "comptes_d_actifs_numeriques_a_l_etranger": "3916-bis",
+        "case_option_bareme_globale": "2OP",
+        "case_option_bareme_actifs_numeriques": "3CN",
+        "ligne_plus_value_actifs_numeriques": "3AN",
+        "ligne_moins_value_actifs_numeriques": "3BN"
+      },
+      "unite": "numeros de formulaires et de cases",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-plus-ou-moins-values-sur-cessions-dactifs-numeriques",
+      "date_verifiee": "2026-08-17",
+      "note": "2074 et 2042 confirmes par impots.gouv.fr/particulier/les-cessions-mobilieres  3916-bis par l actualite du 06/05/2024  ⚠ les numeros de cases changent d une annee sur l autre  a relire sur la notice du millesime"
+    },
+    "imprime_fiscal_unique": {
+      "valeur": "recapitulatif annuel remis par l etablissement payeur",
+      "unite": "justificatif",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2613",
+      "date_verifiee": null,
+      "note": "★ VERBATIM de la fiche  justificatifs remis par les etablissements payeurs (formulaire IFU)   ⛔ le NUMERO de formulaire de l IFU n a pas ete confirme sur une page officielle  il n est donc pas ecrit dans le fichier"
+    }
   }
 }
