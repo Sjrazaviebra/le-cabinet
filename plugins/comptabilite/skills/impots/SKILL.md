@@ -54,7 +54,7 @@ titre habituel relève du **monopole de l'ordre des experts-comptables**. Gardez
 ⚠️ **Et une seconde ligne rouge, propre aux revenus financiers** : ce skill traite la **fiscalité**
 d'un placement, **jamais son opportunité**. Recommander un placement adapté à la situation d'une
 personne est un **conseil en investissement**, activité réglementée. Voir `activites-reglementees.md`
-du skill `avocat`.
+du skill `juriste`.
 
 ## Où aller ensuite
 

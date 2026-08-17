@@ -83,7 +83,7 @@ où on n'est pas dans l'urgence.
 À dire tôt, parce que beaucoup de gens choisissent une forme en espérant régler ces points-là :
 
 - **L'objet social ne protège de rien** s'il décrit une activité réglementée. → `activites-reglementees.md`
-  du skill `avocat`.
+  du skill `juriste`.
 - **La TVA** suit ses propres seuils et ses propres règles. → `tva.md`.
 - **La responsabilité** : depuis la réforme du statut de l'entrepreneur individuel, le patrimoine
   personnel est en principe séparé du patrimoine professionnel — la protection ne dépend donc plus
@@ -95,7 +95,7 @@ où on n'est pas dans l'urgence.
 - Seuils, abattements, cotisations et obligations du régime micro → `micro-entreprise.md`
 - Articulation avec le chômage et les aides → `chomage-et-creation.md`
 - TVA et clients étrangers → `tva.md`
-- Rédaction de l'objet social et des statuts → skill `avocat`, `droit-des-societes.md`
+- Rédaction de l'objet social et des statuts → skill `juriste`, `droit-des-societes.md`
 
 ## Sources
 

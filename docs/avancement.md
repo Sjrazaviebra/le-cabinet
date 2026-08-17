@@ -4,7 +4,7 @@
 
 Verifiable : `python scripts/verifier-parametres.py` (0 erreur exige).
 
-Un plugin = un **domaine**, un skill = un **role**. Critere de decoupage : [taxonomie.md](taxonomie.md).
+Un plugin = un **domaine**, un skill = un **role**. Critere : [taxonomie.md](taxonomie.md).
 
 ## Domaine `comptabilite`
 
@@ -40,22 +40,6 @@ Un plugin = un **domaine**, un skill = un **role**. Critere de decoupage : [taxo
 
 ## Domaine `juridique`
 
-### Role `/avocat`
-
-| Fichier | Etat |
-|---|---|
-| `SKILL.md` | **REDIGE** |
-| `data/parametres.json` | **2 verifiee(s)**, 4 a verifier |
-| `references/activites-reglementees.md` | **RÉDIGÉ** |
-| `references/contrats-commerciaux.md` | À ÉCRIRE |
-| `references/donnees-personnelles.md` | À ÉCRIRE |
-| `references/droit-de-la-consommation.md` | À ÉCRIRE |
-| `references/droit-des-societes.md` | À ÉCRIRE |
-| `references/international.md` | À ÉCRIRE |
-| `references/litiges-courants.md` | À ÉCRIRE |
-| `references/procedure.md` | À ÉCRIRE |
-| `references/propriete-intellectuelle.md` | À ÉCRIRE |
-
 ### Role `/famille`
 
 | Fichier | Etat |
@@ -87,6 +71,22 @@ Un plugin = un **domaine**, un skill = un **role**. Critere de decoupage : [taxo
 | `references/refus-et-recours.md` | **RÉDIGÉ** |
 | `references/ressortissants-ue.md` | À ÉCRIRE |
 | `references/titres-de-sejour.md` | À ÉCRIRE |
+
+### Role `/juriste`
+
+| Fichier | Etat |
+|---|---|
+| `SKILL.md` | **REDIGE** |
+| `data/parametres.json` | **2 verifiee(s)**, 4 a verifier |
+| `references/activites-reglementees.md` | **RÉDIGÉ** |
+| `references/contrats-commerciaux.md` | À ÉCRIRE |
+| `references/donnees-personnelles.md` | À ÉCRIRE |
+| `references/droit-de-la-consommation.md` | À ÉCRIRE |
+| `references/droit-des-societes.md` | À ÉCRIRE |
+| `references/international.md` | À ÉCRIRE |
+| `references/litiges-courants.md` | À ÉCRIRE |
+| `references/procedure.md` | À ÉCRIRE |
+| `references/propriete-intellectuelle.md` | À ÉCRIRE |
 
 ### Role `/logement`
 
@@ -122,7 +122,7 @@ Redige : `activites-reglementees` · `chomage-et-creation` · `formes-juridiques
 
 Prochains :
 
-1. `travail/rupture.md` et `travail/conventions-collectives.md`.
-2. `impots/declaration-annuelle.md` - avant la saison declarative.
+1. `travail/conventions-collectives.md` puis `travail/rupture.md`.
+2. `impots/declaration-annuelle.md`.
 3. `logement/depot-de-garantie.md`.
 4. `immigration/titres-de-sejour.md`.

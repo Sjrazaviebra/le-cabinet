@@ -23,7 +23,7 @@
       "name": "juridique",
       "source": "juridique",
       "version": "0.2.0",
-      "description": "Droit francais, entreprise et vie privee. Cinq roles : Avocat (/avocat) societes, contrats, activites reglementees, RGPD, consommation, procedure ; Travail (/travail) contrat, rupture, prud hommes ; Logement (/logement) bail, conge, impayes, copropriete ; Famille (/famille) couple, separation, enfants, succession, protection des majeurs ; Immigration (/immigration) titres de sejour, travail, famille, recours, naturalisation.",
+      "description": "Droit francais, entreprise et vie privee. Cinq roles : Juriste (/juriste) societes, contrats, activites reglementees, RGPD, consommation, procedure ; Travail (/travail) contrat, rupture, prud hommes ; Logement (/logement) bail, conge, impayes, copropriete ; Famille (/famille) couple, separation, enfants, succession, protection des majeurs ; Immigration (/immigration) titres de sejour, travail, famille, recours, naturalisation.",
       "author": {
         "name": "Javad Razavi"
       }

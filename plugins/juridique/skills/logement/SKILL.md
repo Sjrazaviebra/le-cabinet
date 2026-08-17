@@ -14,7 +14,7 @@ La loi du 6 juillet 1989 sur les rapports locatifs est très largement **d'ordre
 s'impose aux parties, et **une clause contraire est réputée non écrite** — c'est-à-dire qu'elle ne
 produit aucun effet, **même signée, même paraphée, même acceptée en connaissance de cause**.
 
-★ C'est l'inverse du réflexe de `/avocat`, où l'on commence par lire le contrat. Ici, on commence
+★ C'est l'inverse du réflexe de `/juriste`, où l'on commence par lire le contrat. Ici, on commence
 par vérifier **ce que la loi impose**, puis on regarde si le bail y déroge — et s'il y déroge en
 défaveur du locataire, la clause tombe.
 
@@ -75,7 +75,7 @@ commerciales. ⛔ Jamais un site d'agence, un forum, ni un modèle de bail gratu
 **Ce qui vit ailleurs** — renvoyez plutôt que de traiter :
 
 - **La fiscalité des revenus fonciers, le LMNP, la plus-value immobilière** → skill `impots`.
-- **L'achat, la vente, les frais de notaire, la SCI** → skill `avocat` puis un notaire.
+- **L'achat, la vente, les frais de notaire, la SCI** → skill `juriste` puis un notaire.
 - **Un logement lié à un titre de séjour ou une attestation d'hébergement pour une démarche
   préfectorale** → skill `immigration`.
 

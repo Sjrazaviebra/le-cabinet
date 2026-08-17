@@ -18,9 +18,9 @@
       "description": "Particulier : declaration de revenus, bareme, foyer fiscal, revenus financiers et crypto, immobilier, IFI, reclamation et controle."
     },
     {
-      "slug": "avocat",
-      "name": "Avocat",
-      "path": "plugins/juridique/skills/avocat/SKILL.md",
+      "slug": "juriste",
+      "name": "Juriste",
+      "path": "plugins/juridique/skills/juriste/SKILL.md",
       "description": "Societes et objet social, contrats et CGV, international, propriete intellectuelle, activites reglementees, consommation, RGPD, procedure."
     },
     {

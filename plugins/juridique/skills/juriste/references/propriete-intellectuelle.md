@@ -21,5 +21,5 @@ Le texte fait foi. Toute valeur chiffrée tirée d'ici doit aller dans
 
 ## Rappel de cadrage
 
-Ce fichier alimente le skill `avocat`, qui est un outil d'**aide à la décision**.
+Ce fichier alimente le skill `juriste`, qui est un outil d'**aide à la décision**.
 Il ne remplace ni un expert-comptable inscrit à l'Ordre, ni un avocat inscrit à un barreau.

@@ -190,7 +190,7 @@ mise à disposition de personnel, activités de sécurité privée, santé, form
 
 ## Rappel de cadrage
 
-Ce fichier alimente le skill `avocat`, un outil d'**aide à la décision**. Sur ce sujet précis, il
+Ce fichier alimente le skill `juriste`, un outil d'**aide à la décision**. Sur ce sujet précis, il
 n'a qu'un objectif : **vous faire poser la question à temps**, c'est-à-dire avant le dépôt des
 statuts, avant la première facture, avant la première publicité. La réponse, elle, appartient à un
 avocat inscrit à un barreau, qui engage sa responsabilité — ce que ce skill ne fait pas.

@@ -67,7 +67,7 @@ Sources admises : **Légifrance** (code civil) · **service-public.fr** · **jus
 - **Le conjoint étranger, le mariage avec un ressortissant étranger, la nationalité par mariage**
   → skill `immigration`.
 - **Le logement du couple, le bail, la répartition d'un loyer après séparation** → skill `logement`.
-- **La protection du patrimoine d'un entrepreneur marié** → skill `comptable` et skill `avocat`.
+- **La protection du patrimoine d'un entrepreneur marié** → skill `comptable` et skill `juriste`.
 
 ## Comment répondre
 
