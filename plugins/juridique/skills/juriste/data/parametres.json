@@ -155,5 +155,34 @@
       "date_verifiee": "2026-08-17",
       "note": "A NE PAS CONFONDRE avec les sanctions des delais de paiement, d un tout autre ordre. ⚠️ La sanction CIVILE est la plus couteuse des trois : des CGV non conformes font PERDRE LE BENEFICE des protections contractuelles principales - des CGV baclees ne protegent de rien."
     }
+  },
+  "propriete_intellectuelle": {
+    "logiciel_devolution_salarie": {
+      "valeur": "devolution AUTOMATIQUE des droits patrimoniaux a l employeur",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039279818",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L113-9 CPI. Sauf dispositions statutaires ou stipulations contraires, les droits patrimoniaux sur les LOGICIELS et leur documentation crees par des employes dans l exercice de leurs fonctions ou d apres les instructions de l employeur lui sont devolus, seul habilite a les exercer. C est une EXCEPTION au droit commun du droit d auteur : aucune cession n est necessaire, aucune remuneration supplementaire n est due de ce seul fait. Applicable aussi aux agents de l Etat et des etablissements publics administratifs. Litiges : tribunal judiciaire du siege social de l employeur."
+    },
+    "logiciel_absence_de_devolution_hors_salariat": {
+      "valeur": "aucune devolution automatique pour un independant, freelance, stagiaire non salarie ou associe non employe",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039279818",
+      "date_verifiee": "2026-08-17",
+      "note": "LE MIROIR, et c est la que l argent se perd : sans cession ECRITE, ces personnes restent titulaires des droits sur le code qu elles ont ecrit, meme facture payee, meme code en production depuis des annees. Une entreprise qui a fait developper son produit par des freelances sans cession valable NE DETIENT PAS son produit - c est ce qui fait echouer les audits juridiques lors d une levee de fonds ou d un rachat."
+    },
+    "cession_mentions_obligatoires": {
+      "valeur": [
+        "mention DISTINCTE de chacun des droits cedes",
+        "domaine d exploitation delimite quant a son ETENDUE",
+        "quant a sa DESTINATION",
+        "quant au LIEU",
+        "quant a la DUREE"
+      ],
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278958",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L131-3 CPI. Une clause du type « le prestataire cede tous ses droits sur les livrables » ne remplit AUCUNE de ces conditions - c est la formule la plus repandue dans les contrats de prestation informatique et la plus exposee. Elle coupe dans les deux sens : le client croit avoir acquis des droits qu il n a peut-etre pas, le prestataire croit s etre depouille et en detient peut-etre encore. ⚠️ Le DROIT MORAL n est pas cessible : on peut amenager son exercice, pas l acheter."
+    }
   }
 }
