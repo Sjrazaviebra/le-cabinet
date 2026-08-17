@@ -177,5 +177,168 @@
       "date_verifiee": "2026-08-16",
       "note": "BLOCAGE N°1 de cette voie : sans transcription prealable sur les registres d etat civil francais, la declaration ne peut pas aboutir. La transcription prend elle-meme des mois."
     }
+  },
+  "titres_de_sejour": {
+    "vls_ts_duree": {
+      "valeur": "celle du visa, inferieure a 12 mois",
+      "unite": "duree",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16922",
+      "date_verifiee": "2026-08-17",
+      "note": "Delivre par le consulat AVANT l arrivee."
+    },
+    "vls_ts_delai_validation_en_ligne": {
+      "valeur": 3,
+      "unite": "mois a compter de l arrivee en France",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16922",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Un VLS-TS n est pleinement un titre de sejour QU APRES validation sur internet. Demarche ignoree parce que le visa est deja dans le passeport - elle n est pas facultative."
+    },
+    "carte_temporaire_duree": {
+      "valeur": 1,
+      "unite": "an, renouvelable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15898",
+      "date_verifiee": "2026-08-17",
+      "note": "Premier titre en prefecture, ou apres un VLS-TS. Page verifiee le 2026-05-01."
+    },
+    "carte_pluriannuelle_duree": {
+      "valeur": 4,
+      "unite": "ans dans le cas general",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35799",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Accessible UNIQUEMENT apres une carte temporaire ou un VLS-TS : on ne saute pas de marche. Page verifiee le 2026-05-01."
+    },
+    "carte_pluriannuelle_cout": {
+      "valeur": {
+        "total_eur": 350,
+        "taxe_eur": 300,
+        "droit_de_timbre_eur": 50,
+        "tarif_reduit_eur": 150
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35799",
+      "date_verifiee": "2026-08-17",
+      "note": "Tarif reduit notamment pour les etudiants."
+    },
+    "carte_pluriannuelle_depot_renouvellement": {
+      "valeur": "dans les 2 mois precedant la fin de validite",
+      "unite": "fenetre",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35799",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ La fenetre depend du CANAL : en ligne sur l ANEF, au plus tot 4 mois et au plus tard 2 mois avant l expiration. Voir sejour.fenetre_depot_renouvellement."
+    },
+    "carte_resident_duree": {
+      "valeur": 10,
+      "unite": "ans, renouvelable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "date_verifiee": "2026-08-17",
+      "note": "Autorise a travailler sans autorisation supplementaire."
+    },
+    "carte_resident_perte_par_absence": {
+      "valeur": 3,
+      "unite": "annees consecutives hors de France",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ PERTE DE DROIT QUI NE S ANNONCE PAS : la carte de 10 ans n est plus valable au-dela de 3 annees consecutives d absence. A verifier AVANT un depart long - avant le billet d avion."
+    },
+    "carte_resident_permanent": {
+      "valeur": 10,
+      "unite": "ans, renouvelable",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11201",
+      "date_verifiee": "2026-08-17",
+      "note": "PROPOSEE d office - pas a demander - apres 2 cartes de resident consecutives. Meme niveau B1 exige, sauf 65 ans et plus ou certificat medical."
+    },
+    "integration_republicaine_pluriannuelle": {
+      "valeur": "assiduite et serieux aux formations du contrat d integration republicaine (CIR) + reussite a l examen civique mention carte de sejour pluriannuelle + signature du contrat d engagement",
+      "unite": "criteres cumulatifs",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35799",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L assiduite au CIR est un CRITERE, pas une formalite : manquer les formations peut couter la pluriannuelle, et rien dans la convocation ne le dit aussi nettement."
+    }
+  },
+  "niveaux_de_langue_par_titre": {
+    "premiere_carte_pluriannuelle": {
+      "valeur": "A2",
+      "unite": "niveau CECRL",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501",
+      "date_verifiee": "2026-08-17",
+      "note": "En vigueur depuis le 2026-01-01. Concerne les ressortissants non europeens de moins de 65 ans. Page verifiee le 2026-02-10."
+    },
+    "carte_de_resident": {
+      "valeur": "B1",
+      "unite": "niveau CECRL",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501",
+      "date_verifiee": "2026-08-17",
+      "note": "En vigueur depuis le 2026-01-01, premiere delivrance. Meme exigence pour la carte de resident permanent."
+    },
+    "naturalisation_rappel": {
+      "valeur": "B2",
+      "unite": "niveau CECRL",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ TROIS TITRES, TROIS NIVEAUX, tous changes le 2026-01-01 par la meme reforme ⇒ une source qui parle encore des anciens niveaux est perimee EN BLOC, pas seulement sur un titre. Detail et decret : voir naturalisation.niveau_langue_cecrl."
+    },
+    "justificatifs_acceptes": {
+      "valeur": "test TCF ou TEF valable 2 ans passe en presentiel avec verification d identite / diplome DUEF DELF DALF DELF Pro ou DCL au niveau requis / certification professionnelle enregistree au RNCP de niveau 3 ou superieur / diplome national CAP BEP CFG ou brevet",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501",
+      "date_verifiee": "2026-08-17",
+      "note": "⛔ REFUSE : un diplome obtenu a l ETRANGER, meme dans un pays francophone. ★ Refus le plus mal vecu et le plus previsible : une personne scolarisee en francais hors de France devra quand meme passer un test en France."
+    },
+    "dispenses": {
+      "valeur": "65 ans et plus ; amenagement ou dispense possible sur certificat medical en cas de handicap ou de maladie chronique, examine par la prefecture",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    }
+  },
+  "mentions_salarie_et_temporaire": {
+    "salarie_contrat": {
+      "valeur": "CDI",
+      "unite": "type de contrat",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15898",
+      "date_verifiee": "2026-08-17",
+      "note": "1 an renouvelable, PUIS carte pluriannuelle de 4 ans si le CDI est maintenu."
+    },
+    "travailleur_temporaire_contrat": {
+      "valeur": "CDD",
+      "unite": "type de contrat",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15898",
+      "date_verifiee": "2026-08-17",
+      "note": "1 an renouvelable, puis duree du CDD restant a courir ou du nouveau contrat. ★★ Deux personnes au MEME poste, l une en CDI l autre en CDD, ne sont pas sur le meme escalier : le CDD multiplie les demarches et fragilise chaque renouvellement."
+    },
+    "changement_employeur": {
+      "valeur": "possible dans les deux cas",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15898",
+      "date_verifiee": "2026-08-17",
+      "note": "Pour le travailleur temporaire : nouvelle autorisation de travail dematerialisee delivree au NOUVEL employeur."
+    },
+    "perte_emploi_cdi": {
+      "valeur": "nouvelle carte salarie d un an si la personne est indemnisee par France Travail",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15898",
+      "date_verifiee": "2026-08-17",
+      "note": "Puis renouvellement selon la duree des droits au chomage."
+    }
   }
 }
