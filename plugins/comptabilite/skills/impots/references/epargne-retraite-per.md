@@ -264,17 +264,17 @@ fiscalité est traitée.
 
 Ce que le rôle `impots` peut faire, c'est **rendre le calcul visible** :
 
-1. **Quel est le taux marginal de l'année du versement ?** C'est lui, et pas le taux moyen, qui mesure
-   l'économie d'entrée (`impot-revenu.md`).
-2. **Quel plafond est réellement disponible ?** Celui de l'avis d'imposition, plus les reliquats
-   reportables, plus le plafond du conjoint **si 6QR est cochée**.
-3. **Quel serait le taux marginal de l'année de sortie, retrait inclus ?** Pas le taux marginal actuel :
-   celui que le retrait fabrique.
-4. **Quelle sortie est envisagée ?** Capital sans abattement, rente avec abattement, déblocage anticipé
-   exonéré, résidence principale au plein tarif : quatre fiscalités différentes.
-5. **Quel est le coût de l'immobilisation ?** L'argent est bloqué jusqu'à la retraite hors cas de
-   déblocage. **Ce n'est pas un paramètre fiscal**, mais il pèse plus que l'écart de taux marginal dans
-   beaucoup de situations — et le signaler est de l'information, pas du conseil.
+- **Quel est le taux marginal de l'année du versement ?** C'est lui, et pas le taux moyen, qui mesure
+  l'économie d'entrée (`impot-revenu.md`).
+- **Quel plafond est réellement disponible ?** Celui de l'avis d'imposition, plus les reliquats
+  reportables, plus le plafond du conjoint **si 6QR est cochée**.
+- **Quel serait le taux marginal de l'année de sortie, retrait inclus ?** Pas le taux marginal actuel :
+  celui que le retrait fabrique.
+- **Quelle sortie est envisagée ?** Capital sans abattement, rente avec abattement, déblocage anticipé
+  exonéré, résidence principale au plein tarif : quatre fiscalités différentes.
+- **Quel est le coût de l'immobilisation ?** L'argent est bloqué jusqu'à la retraite hors cas de
+  déblocage. **Ce n'est pas un paramètre fiscal**, mais il pèse plus que l'écart de taux marginal dans
+  beaucoup de situations — et le signaler est de l'information, pas du conseil.
 
 ⛔ **Là où il faut s'arrêter** : dès que la question devient « est-ce que je devrais ? », « combien
 verser ? », « quel contrat ? », ou dès qu'un rendement est comparé. C'est du **conseil en
@@ -325,9 +325,10 @@ versement après 70 ans**.
 - ★★ Le **plafond de l'abattement de 10 %** sur les pensions (montant annuel par foyer fiscal) : il
   manque, et **sans lui l'arbitrage capital / rente ne se chiffre pas** jusqu'au bout. C'est le trou le
   plus gênant de ce fichier.
-- ★★ Le **cas des travailleurs indépendants** : le plafond **Madelin** et la fraction de **15 %** de la
-  quote-part de bénéfice, entrevus dans la notice 2041-GX mais non vérifiés ici. Le calcul du plafond
-  n'est pas le même que pour un salarié, et c'est la population qui verse le plus.
+- ★★ Le **cas des travailleurs indépendants** : le plafond **Madelin** et la fraction de la quote-part de
+  bénéfice qui en est neutralisée, entrevus dans la notice 2041-GX mais **non vérifiés ici** — le
+  pourcentage n'est donc volontairement pas cité. Le calcul du plafond n'est pas le même que pour un
+  salarié, et c'est la population qui verse le plus.
 - ★ Le **texte du code monétaire et financier** sur les cas de déblocage (article L224-4) : la liste
   utilisée ici vient de service-public, **pas du texte lui-même** — à confirmer pour l'exhaustivité.
 - ★ Le **plafond complémentaire des personnes nouvellement domiciliées en France** (case 6QW) : la

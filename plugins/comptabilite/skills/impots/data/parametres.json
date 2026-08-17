@@ -1257,5 +1257,895 @@
       "date_verifiee": null,
       "note": "★ VERBATIM de la fiche  justificatifs remis par les etablissements payeurs (formulaire IFU)   ⛔ le NUMERO de formulaire de l IFU n a pas ete confirme sur une page officielle  il n est donc pas ecrit dans le fichier"
     }
+  },
+  "taxe_fonciere": {
+    "date_appreciation": {
+      "valeur": "1er janvier de l'annee d'imposition",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le redevable est le proprietaire ou usufruitier au 1er janvier. Une vente en fevrier ne change rien pour l annee en cours : l avis part au nom du vendeur. La clause de prorata temporis de l acte notarie ne joue qu entre les parties, pas envers l administration."
+    },
+    "base_imposition_part_valeur_locative": {
+      "valeur": 50,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "« La base d imposition de la TFPB est egale a la moitie de la valeur locative cadastrale. » Abattement forfaitaire de 50 pourcent pour frais. Le taux vote par les collectivites s applique a cette moitie, pas a la valeur locative brute."
+    },
+    "exoneration_construction_neuve_duree": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "« exoneree de TFPB pendant 2 ans, a partir du 1er janvier de l annee qui suit la fin des travaux ». ⚠ Les communes peuvent supprimer la part communale de cette exoneration ; elle ne couvre jamais la TEOM."
+    },
+    "delai_declaration_travaux": {
+      "valeur": 90,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Declaration a deposer « au plus tard 90 jours apres la fin des travaux ». C est cette declaration qui declenche l exoneration de 2 ans : hors delai, l exoneration est perdue alors que l imposition, elle, arrive."
+    },
+    "exoneration_age_total": {
+      "valeur": 75,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "Exoneration totale de TFPB sur l habitation principale a partir de plus de 75 ans, sous condition de revenu fiscal de reference."
+    },
+    "reduction_65_75_ans": {
+      "valeur": {
+        "montant": 100,
+        "age_minimum": 65,
+        "age_maximum": 75
+      },
+      "unite": "euros et ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "« Reduction de 100 € de votre taxe fonciere si vous aviez plus de 65 ans et moins de 75 ans », memes plafonds de revenu que l exoneration totale."
+    },
+    "rfr_plafond_exoneration_personnes_agees": {
+      "valeur": {
+        "une_part": 12793,
+        "majoration_par_demi_part": 3416
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "Millesime 2026 sur les revenus 2025, metropole. ⚠ Montants revalorises chaque annee et differents en outre-mer : a re-verifier a chaque campagne."
+    },
+    "plafonnement_part_revenus": {
+      "valeur": 50,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le plafonnement « consiste a supprimer la partie de la TFPB qui depasse 50 pourcent des revenus » du foyer. Droit tres peu utilise. ⚠ Verifier s il faut le demander par formulaire ou s il est applique d office."
+    },
+    "rfr_plafond_plafonnement": {
+      "valeur": 30083,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "Revenu fiscal de reference maximal pour une part, metropole, millesime 2026. Bien plus eleve que le plafond des exonerations liees a l age : le plafonnement touche donc des foyers de classe moyenne."
+    },
+    "teom_exoneration": {
+      "valeur": "aucune exoneration de taxe fonciere ne s applique a la TEOM",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F59",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « L exoneration ne s applique pas a la taxe d enlevement des ordures menageres ». Consequence pratique : etre exonere de taxe fonciere ne veut pas dire recevoir un avis a zero."
+    },
+    "teom_recuperable_sur_locataire": {
+      "valeur": "oui, charge recuperable",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F947",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La « taxe ou redevance d enlevement des ordures menageres » figure dans la liste des charges recuperables du decret 87-713, logement vide comme meuble. ⛔ La taxe fonciere elle-meme n y figure PAS : la refacturer au locataire d un bail d habitation est hors du decret. Voir le skill logement. Page du 15/04/2025, a recouper."
+    },
+    "majoration_retard_paiement": {
+      "valeur": 10,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F110",
+      "date_verifiee": "2026-08-17",
+      "note": "Majoration de 10 pourcent pour retard de paiement, y compris quand une reclamation avec sursis de paiement est finalement rejetee."
+    },
+    "seuil_paiement_en_ligne_obligatoire": {
+      "valeur": 300,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31444",
+      "date_verifiee": "2026-08-17",
+      "note": "Au-dela de 300 euros, « Le paiement doit obligatoirement etre effectue en ligne ». Seuil constate sur la page IFI ; il vaut pour les impots recouvres par avis. A recouper pour la taxe fonciere specifiquement."
+    }
+  },
+  "taxe_habitation_residences_secondaires": {
+    "champ_apres_reforme": {
+      "valeur": "supprimee sur la residence principale, maintenue sur les residences secondaires et les logements vacants",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/la-declaration-doccupation",
+      "date_verifiee": "2026-08-17",
+      "note": "La suppression ne vaut que pour la residence principale. C est precisement pourquoi la declaration d occupation existe : sans elle, l administration ne sait plus quel local est une residence principale."
+    },
+    "date_appreciation": {
+      "valeur": "1er janvier de l'annee d'imposition",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F42",
+      "date_verifiee": "2026-08-17",
+      "note": "Redevable : proprietaire, usufruitier ou locataire a l annee de la residence secondaire au 1er janvier. Les dependances immediates (parking privatif, garage) suivent le logement."
+    },
+    "majoration_zone_tendue": {
+      "valeur": {
+        "minimum": 5,
+        "maximum": 60
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546033/2026-08-17",
+      "note": "★★ CGI art. 1407 ter, version en vigueur au 21/02/2026 : le conseil municipal « peut [...] majorer d un pourcentage compris entre 5 pourcent et 60 pourcent la part lui revenant » de la THRS. Porte sur la seule part communale.",
+      "date_verifiee": "2026-08-17"
+    },
+    "degrevement_majoration_sur_reclamation": {
+      "valeur": "trois cas de degrevement, sur reclamation uniquement",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053546033/2026-08-17",
+      "note": "★★ CGI art. 1407 ter II : degrevement de la majoration « sur reclamation » pour (a) qui est contraint de resider ailleurs pour son activite professionnelle, (b) l ancien logement principal d une personne hebergee durablement en etablissement, (c) qui ne peut affecter le logement a l habitation principale « pour une cause etrangere a sa volonte ». ⛔ Rien n est automatique : sans reclamation dans le delai, la majoration reste due.",
+      "date_verifiee": "2026-08-17"
+    }
+  },
+  "declaration_occupation": {
+    "echeance_annuelle": {
+      "valeur": "avant le 1er juillet de chaque annee",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041414402",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI art. 1418 I, version en vigueur au 21/02/2026 : les proprietaires de locaux d habitation « doivent declarer a l administration fiscale, avant le 1er juillet de chaque annee » les informations d occupation. Ce n est PAS une operation unique de 2023 : l obligation est annuelle."
+    },
+    "dispense_absence_changement": {
+      "valeur": "dispense si aucun changement depuis la derniere declaration",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041414402",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI art. 1418 : « Les proprietaires sont dispenses de declaration si aucun changement n est intervenu depuis la derniere declaration. » C est ce qui rend l obligation supportable, et c est ce que beaucoup ignorent dans les deux sens : ni declaration a refaire a vide, ni silence permis apres un changement."
+    },
+    "amende_defaut": {
+      "valeur": 150,
+      "unite": "euros par local",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162919",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI art. 1770 terdecies, version en vigueur au 16/02/2025, verbatim : « La meconnaissance de l obligation prevue au I de l article 1418 entraine l application d une amende de 150 € par local pour lequel les informations requises n ont pas ete communiquees a l administration. La meme amende est due en cas d omission ou d inexactitude. » ⚠ PAR LOCAL, et l inexactitude est sanctionnee comme le silence."
+    },
+    "declaration_par_voie_electronique": {
+      "valeur": "obligatoire si acces internet a la residence principale",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041414402",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1418 II. Service en ligne « Gerer mes biens immobiliers » (GMBI). Formulaire papier 1082-OD-SD pour ceux qui n ont pas d acces internet."
+    },
+    "delegation_au_gestionnaire": {
+      "valeur": "le proprietaire peut deleguer la mise a jour au gestionnaire de location",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041414402",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI art. 1418 I : en cas de location ou de sous-location, le proprietaire demande les informations au gestionnaire ou « peut lui deleguer la mise a jour de la declaration ». Utile en gestion locative deleguee. ⚠ La delegation ne fait pas disparaitre l amende du proprietaire : a verifier avant de s en reposer."
+    }
+  },
+  "logements_vacants": {
+    "tlv_duree_vacance": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162934",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 232, version en vigueur au 17/08/2026 : logement « vacant depuis au moins une annee, au 1er janvier de l annee d imposition »."
+    },
+    "tlv_taux": {
+      "valeur": {
+        "premiere_annee": 17,
+        "annees_suivantes": 34
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162934",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI art. 232 : 17 pourcent la premiere annee d imposition, 34 pourcent ensuite. Assis sur la valeur locative de l article 1409. Le doublement automatique rend l inaction tres couteuse."
+    },
+    "tlv_seuil_habitants_zone": {
+      "valeur": 50000,
+      "unite": "habitants",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162934",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI art. 232 retient DEUX categories : les communes d une zone d urbanisation continue de plus de cinquante mille habitants avec desequilibre offre-demande, ET des communes sous ce seuil presentant « une proportion elevee de logements affectes a l habitation autres que ceux affectes a l habitation principale » (communes touristiques). La liste est fixee par decret : le seuil d habitants ne suffit pas a conclure."
+    },
+    "tlv_exoneration_occupation": {
+      "valeur": 90,
+      "unite": "jours consecutifs",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162934",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI art. 232 : hors champ le « logement dont la duree d occupation est superieure a quatre-vingt-dix jours consecutifs » sur la periode de reference. Une occupation reelle de trois mois d affilee sort le logement de la TLV."
+    },
+    "tlv_exoneration_travaux": {
+      "valeur": 25,
+      "unite": "pourcent de la valeur du logement",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17293",
+      "date_verifiee": null,
+      "note": "⚠ Seuil de travaux de 25 pourcent de la valeur du logement pour echapper a la TLV : lu sur la fiche service-public du 11/06/2025, ABSENT du texte de l article 232 tel que fetche. A recouper sur le BOFiP avant de l affirmer."
+    },
+    "tlv_vacance_involontaire": {
+      "valeur": "hors champ si la vacance est independante de la volonte du contribuable",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006162934",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CGI art. 232 : « vacance independante de la volonte du contribuable ». Exemple donne par service-public : bien mis en vente ou en location au prix du marche sans trouver preneur. C est la defense principale, et elle se documente (mandats, annonces, baisses de prix)."
+    },
+    "thlv_duree_vacance": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17293",
+      "date_verifiee": "2026-08-17",
+      "note": "Taxe d habitation sur les logements vacants (CGI art. 1407 bis), instituee sur deliberation par les communes HORS zonage TLV : vacance de plus de 2 ans exigee. Page du 11/06/2025, a recouper."
+    }
+  },
+  "ifi": {
+    "seuil_assujettissement": {
+      "valeur": 1300000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F563",
+      "date_verifiee": "2026-08-17",
+      "note": "« Vous etes soumis a l IFI lorsque la valeur nette taxable de votre patrimoine immobilier non professionnel est superieure a 1 300 000 € au 1er janvier 2026. » Millesime 2026. Apprecie au niveau du foyer fiscal IFI."
+    },
+    "abattement_residence_principale": {
+      "valeur": 30,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F563",
+      "date_verifiee": "2026-08-17",
+      "note": "« Votre residence principale fait l objet d un abattement de 30 pourcent sur sa valeur au 1er janvier 2026. » ★ L abattement s applique AVANT le test du seuil : il peut faire sortir un foyer de l IFI."
+    },
+    "bareme": {
+      "valeur": {
+        "jusqu_a_800000": 0,
+        "de_800001_a_1300000": 0.5,
+        "de_1300001_a_2570000": 0.7,
+        "de_2570001_a_5000000": 1,
+        "de_5000001_a_10000000": 1.25,
+        "au_dela_de_10000000": 1.5
+      },
+      "unite": "pourcent par tranche",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F138",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Le bareme demarre a 800 000 euros alors que le seuil d assujettissement est a 1 300 000 euros. Des qu on franchit le seuil, on est taxe DEPUIS 800 000 euros, pas depuis 1 300 000. C est l erreur de raisonnement la plus frequente sur l IFI. Millesime 2026."
+    },
+    "decote": {
+      "valeur": {
+        "formule": "17500 - 1,25 % de la valeur nette taxable",
+        "plancher": 1300000,
+        "plafond": 1400000
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F138",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Decote pour un patrimoine entre 1 300 000 et 1 400 000 euros : « 17 500 € - 1,25 pourcent de la valeur nette taxable du patrimoine ». Elle amortit l effet de seuil decrit ci-dessus, mais ne l annule pas."
+    },
+    "plafonnement": {
+      "valeur": 75,
+      "unite": "pourcent des revenus",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F138",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Le total IFI + impots sur le revenu dus en France et a l etranger ne peut exceder 75 pourcent du cumul des revenus de l annee precedente. Determinant pour un patrimoine immobilier important a faible rendement (residence principale de grande valeur, terres, retraite modeste)."
+    },
+    "reduction_dons": {
+      "valeur": {
+        "taux": 75,
+        "plafond_annuel": 50000
+      },
+      "unite": "pourcent et euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F138",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « 75 pourcent des dons realises, dans la limite de 50 000 € » de reduction. Taux et plafond distincts de la reduction d impot sur le revenu pour dons : ne pas confondre les deux dispositifs ni les cumuler sur le meme versement."
+    },
+    "exoneration_bois_et_forets": {
+      "valeur": 75,
+      "unite": "pourcent de la valeur imposable",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000036385033/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 975-976, version en vigueur au 17/08/2026 : bois et forets et parts de groupements forestiers « exoneres a concurrence des trois quarts de leur valeur imposable », sous engagement d exploitation."
+    },
+    "exoneration_biens_ruraux_bail_long_terme": {
+      "valeur": {
+        "taux_jusqu_au_seuil": 75,
+        "seuil": 101897,
+        "taux_au_dela": 50
+      },
+      "unite": "pourcent et euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000036385033/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 976 : biens ruraux loues par bail a long terme et parts de GFA exoneres « a concurrence des trois quarts de leur valeur » jusqu a 101 897 euros, « pour moitie au dela de cette limite »."
+    },
+    "dettes_non_deductibles": {
+      "valeur": "impositions incombant a l occupant et part d impot sur les revenus immobiliers",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F563",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « Les impositions incombant a l occupant ne sont pas deductibles (par exemple, taxe d habitation). La part de votre impot correspondant aux revenus de vos biens immobiliers n est pas non plus deductible. » La taxe fonciere, elle, est deductible car elle incombe au proprietaire."
+    },
+    "non_residents_exoneration_temporaire": {
+      "valeur": {
+        "anciennete_domicile_etranger": 5,
+        "duree_exoneration": 5
+      },
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F563",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Qui transfere son domicile fiscal en France apres avoir ete domicilie a l etranger pendant les 5 annees civiles precedentes n est impose que sur ses biens situes en France, et « cette imposition perdure pendant 5 ans ». Fenetre decisive pour un impatrie proprietaire a l etranger."
+    },
+    "formulaire": {
+      "valeur": "2042-IFI, et 2042-IFI-COV pour qui ne depose pas de declaration de revenus",
+      "unite": "formulaire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31444",
+      "date_verifiee": "2026-08-17",
+      "note": "★ L IFI se declare AVEC la declaration de revenus, pas separement : meme calendrier, memes dates limites par zone. Le 2042-IFI-COV sert a s identifier quand on n a pas de revenus a declarer."
+    },
+    "seuil_paiement_dematerialise": {
+      "valeur": 300,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31444",
+      "date_verifiee": "2026-08-17",
+      "note": "Au-dela de 300 euros d impot, « Le paiement doit obligatoirement etre effectue en ligne »."
+    }
+  },
+  "contribution_audiovisuel": {
+    "suppression": {
+      "valeur": "supprimee pour tous les contribuables depuis 2022",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F88",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : « La redevance tele (contribution a l audiovisuel public) est supprimee pour tous les contribuables depuis l annee 2022. » Page du 20/11/2025. Elle n a donc pas ete transferee sur l avis de taxe fonciere ni sur la THRS : une ligne d avis presentee comme telle est une erreur de lecture."
+    }
+  },
+  "contestation": {
+    "delai_reclamation_impots_locaux": {
+      "valeur": "31 decembre de l'annee suivant celle de la mise en recouvrement",
+      "unite": "date limite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1064",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : « La reclamation doit intervenir avant le 31 decembre de l annee qui suit celle de la mise en recouvrement de l impot. » ⚠ C est DEUX FOIS PLUS COURT que pour l impot sur le revenu. Le piege classique : appliquer aux impots locaux le delai qu on connait pour l IR et arriver trop tard."
+    },
+    "delai_reclamation_impot_revenu": {
+      "valeur": "31 decembre de la 2e annee suivant la mise en recouvrement",
+      "unite": "date limite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1064",
+      "date_verifiee": "2026-08-17",
+      "note": "Donne ici seulement pour la comparaison avec le delai raccourci des impots locaux. Detail dans reclamation-et-controle.md."
+    },
+    "delai_reclamation_apres_reprise": {
+      "valeur": "31 decembre de la 3e annee suivant la mise en recouvrement",
+      "unite": "date limite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1064",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai etendu en cas de procedure de reprise de l administration."
+    },
+    "delai_reponse_administration": {
+      "valeur": {
+        "delai_initial": 6,
+        "prolongation_maximale": 3
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F110",
+      "date_verifiee": "2026-08-17",
+      "note": "« L administration a 6 mois pour vous repondre, en motivant sa decision », plus une prolongation de 3 mois maximum. Page du 30/07/2026."
+    },
+    "delai_saisine_tribunal_administratif": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F110",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Saisine du tribunal administratif « dans un delai de 2 mois a partir de la reception de la decision » de rejet. Tribunal du lieu d imposition. La reclamation prealable est obligatoire : pas de saisine directe du juge."
+    },
+    "sursis_de_paiement": {
+      "valeur": "differe le paiement jusqu'a decision definitive",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F110",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ La reclamation « ne vous dispense pas de payer l impot » : il faut demander expressement le sursis. Et en cas de rejet, l impot conteste est du avec la majoration de retard de 10 pourcent."
+    }
+  },
+  "reclamation_contentieuse": {
+    "delai_general_impot_sur_le_revenu": {
+      "valeur": {
+        "annees": 2,
+        "libelle": "31 decembre de la 2e annee suivant la mise en recouvrement"
+      },
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006180177/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF R*196-1 : le point de depart est le 31 decembre de la 2e annee suivant, selon le cas, a) la mise en recouvrement du role ou la notification d un avis de mise en recouvrement, b) le versement de l impot conteste, c) la realisation de l evenement qui motive la reclamation. ★ c est le c) qu on oublie : un evenement posterieur rouvre un delai."
+    },
+    "delai_impots_locaux": {
+      "valeur": {
+        "libelle": "31 decembre de l annee qui suit la mise en recouvrement"
+      },
+      "unite": "annee",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006180177/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF R*196-2 : taxe fonciere, taxe d habitation residuelle. ⚠ deux fois plus court que pour l impot sur le revenu, c est le piege de calendrier le plus courant."
+    },
+    "delai_special_apres_proposition_de_rectification": {
+      "valeur": {
+        "annees": 3,
+        "libelle": "31 decembre de la 3e annee suivant la proposition de rectification"
+      },
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/quand-reclamer",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF R*196-3 : delai egal a celui de l administration. impots.gouv.fr : « L usager peut donc reclamer, en general, jusqu au 31 decembre de la troisieme annee qui suit celle au cours de laquelle est intervenue la proposition de rectification »."
+    },
+    "reclamation_prematuree": {
+      "valeur": "irrecevable car faite trop tot, mais renouvelable",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/quand-reclamer",
+      "date_verifiee": "2026-08-17",
+      "note": "★ une reclamation deposee avant la mise en recouvrement est rejetee sur la FORME, pas sur le fond : il faut la redeposer. Ne pas la lire comme un refus."
+    }
+  },
+  "sursis_de_paiement": {
+    "effet": {
+      "valeur": "suspension de l exigibilite de la creance et de la prescription de l action en recouvrement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147340/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF L277 : la reclamation seule ne dispense PAS de payer. Le sursis doit etre demande EXPRESSEMENT dans la reclamation ET preciser le montant ou les bases du degrevement demande. Sans ces deux elements, pas de sursis."
+    },
+    "seuil_garanties": {
+      "valeur": {
+        "montant_euros": 4500,
+        "libelle": "4 500 euros de droits contestes"
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147392/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF R*277-7 verbatim : « En cas de reclamation relative a l assiette d imposition et portant sur un montant de droits superieur a 4 500 €, le debiteur doit constituer des garanties portant sur le montant des droits contestes. » En dessous, aucune garantie exigee."
+    },
+    "delai_pour_proposer_les_garanties": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147392/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF R*277-1 : 15 jours a compter de la reception de l invitation du comptable pour faire connaitre les garanties. ⚠ delai tres court, il court sur une lettre qu on peut prendre pour une simple formalite."
+    },
+    "delai_de_refus_du_comptable": {
+      "valeur": 45,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147392/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF R*277-1 verbatim : « A defaut de reponse par le comptable dans ce delai, les garanties offertes sont reputees acceptees. » Ici le silence joue POUR le contribuable — l inverse de la regle generale."
+    },
+    "garanties_admises": {
+      "valeur": "versement en especes au Tresor, creances sur le Tresor, caution, valeurs mobilieres, marchandises en magasin agree sous warrant, affectations hypothecaires, nantissement de fonds de commerce",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147392/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF R*277-1. impots.gouv.fr cite aussi le nantissement et la consignation. A defaut de garanties ou si elles sont jugees insuffisantes, le comptable peut prendre des MESURES CONSERVATOIRES."
+    }
+  },
+  "delais_administration_et_juge": {
+    "delai_de_reponse_de_l_administration": {
+      "valeur": {
+        "mois": 6,
+        "delai_supplementaire_mois": 3
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/les-suites-de-la-reclamation",
+      "date_verifiee": "2026-08-17",
+      "note": "verbatim : « L administration doit en principe statuer dans un delai de 6 mois suivant la date de presentation de la reclamation. Si un delai supplementaire est necessaire, elle en informe l usager. Ce delai supplementaire ne peut exceder 3 mois. »"
+    },
+    "valeur_du_silence": {
+      "valeur": "rejet implicite",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/les-suites-de-la-reclamation",
+      "date_verifiee": "2026-08-17",
+      "note": "verbatim : « Tout silence de l administration est consideree comme une decision implicite de rejet de sa reclamation. » ⛔ le silence ne vaut JAMAIS acceptation en matiere de reclamation fiscale."
+    },
+    "delai_de_saisine_du_juge": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006180164/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF R*199-1 verbatim : « L action doit etre introduite devant le tribunal competent dans le delai de deux mois a partir du jour de la reception de l avis par lequel l administration notifie au contribuable la decision prise sur la reclamation ». Les 2 mois courent donc d une decision RECUE, pas de l expiration des 6 mois."
+    },
+    "silence_ouvre_la_saisine_sans_delai_de_deux_mois": {
+      "valeur": "saisine possible des l expiration des 6 mois",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006180164/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF R*199-1 verbatim : « le contribuable qui n a pas recu la decision de l administration dans un delai de six mois mentionne au premier alinea peut saisir le tribunal des l expiration de ce delai ». Le texte OUVRE la voie sans fixer ici de date de fermeture. ⚠ ne pas en conclure qu on peut attendre indefiniment : faire verifier avant de laisser filer."
+    },
+    "juridiction_competente": {
+      "valeur": {
+        "tribunal_administratif": "impot sur le revenu, impots locaux",
+        "tribunal_judiciaire": "droits d enregistrement, droit de timbre, taxe de publicite fonciere, impot sur la fortune immobiliere"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F110",
+      "date_verifiee": "2026-08-17",
+      "note": "★ l IFI va au tribunal JUDICIAIRE, pas administratif — se tromper de juridiction fait perdre le delai. Page du 30/07/2026."
+    }
+  },
+  "recours_amiables": {
+    "conciliateur_delai_de_reponse": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/le-conciliateur-departemental",
+      "date_verifiee": "2026-08-17",
+      "note": "verbatim : « Il s engage a vous repondre dans les 30 jours pour vous informer soit de sa decision, soit de l etat du traitement de votre demande. » ⚠ verbatim aussi : « La saisine du conciliateur ne dispense pas du paiement des sommes reclamees et n interrompt pas les delais de reclamation aupres de l administration fiscale ou les delais de saisine du juge. »"
+    },
+    "conciliateur_exclusions": {
+      "valeur": "procedures de verification ou d examen de comptabilite, examen de situation fiscale personnelle, controle sur pieces avant mise en recouvrement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/le-conciliateur-departemental",
+      "date_verifiee": "2026-08-17",
+      "note": "★ le conciliateur ne touche PAS a un controle en cours. Il traite le calcul et le montant de l impot, le rejet ou l admission partielle d une reclamation, le rejet d une remise gracieuse, le refus de delais de paiement."
+    },
+    "recours_hierarchique_et_interlocuteur_delai": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/236-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "BOI-CF-PGR-20-10 du 15/11/2023, verbatim : « La demande de ces recours doit etre formulee dans un delai de trente jours a compter de la reception ». La charte est opposable a l administration (LPF L10)."
+    },
+    "interlocuteur_departemental_exclu_en_controle_sur_pieces": {
+      "valeur": "non saisissable en controle sur pieces",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/242-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★ BOI-CF-PGR-30-10 du 30/10/2019, verbatim : « Dans le cadre d un controle sur pieces, le contribuable ne peut pas saisir l interlocuteur prevu par la charte des droits et obligations du contribuable verifie. » Le recours hierarchique reste possible."
+    },
+    "commission_departementale_delai_de_saisine": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/4355-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "BOI-CF-CMSS-20-30 du 24/11/2014, verbatim : « le contribuable dispose d un delai de trente jours a compter de la reception de la reponse de l administration a ses observations pour presenter la demande ». Aucune forme particuliere : une simple lettre suffit."
+    },
+    "remise_gracieuse_silence": {
+      "valeur": {
+        "mois": 2,
+        "cas_complexes_mois": 4
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34392",
+      "date_verifiee": "2026-08-17",
+      "note": "verbatim : « Si l administration ne vous a pas repondu dans un delai de 2 mois, votre demande est consideree comme rejetee ». ⚠ ne pas confondre avec les 6 mois de la reclamation contentieuse : le gracieux et le contentieux n ont pas la meme horloge. Page du 13/02/2026."
+    },
+    "remise_gracieuse_perimetre": {
+      "valeur": {
+        "admis": "impot sur le revenu, taxe d habitation sur residence secondaire, taxe fonciere, penalites et interets de retard",
+        "exclus": "impot sur la fortune immobiliere, droits de succession"
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34392",
+      "date_verifiee": "2026-08-17",
+      "note": "★ formulaire 4805-SD. Le gracieux porte sur les impots DIRECTS ; l IFI et les droits de succession en sont exclus. Les penalites, elles, sont toujours graciables meme quand les droits ne le sont pas."
+    }
+  },
+  "delai_de_reprise": {
+    "impot_sur_le_revenu": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006191974/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF L169 (version en vigueur au 01/07/2026) verbatim : « Pour l impot sur le revenu et l impot sur les societes, le droit de reprise de l administration des impots s exerce jusqu a la fin de la troisieme annee qui suit celle au titre de laquelle l imposition est due. »"
+    },
+    "activite_occulte_et_comptes_a_l_etranger": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006191974/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF L169 : 10 ans en cas d activite occulte, et 10 ans lorsque les obligations declaratives des articles 123 bis, 209 B, 1649 A, 1649 AA, 1649 AB et 1649 bis C du CGI n ont pas ete respectees (comptes, contrats d assurance-vie, actifs numeriques a l etranger). Egalement 10 ans en cas de domiciliation faussement declaree a l etranger et de flagrance fiscale."
+    },
+    "exception_seuil_comptes_a_l_etranger": {
+      "valeur": {
+        "montant_euros": 50000,
+        "libelle": "50 000 euros de soldes crediteurs cumules"
+      },
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006191974/",
+      "date_verifiee": null,
+      "note": "★ LPF L169 : le delai de 10 ans ne s applique pas si le total des soldes crediteurs des comptes a l etranger n a pas depasse ce montant a un moment quelconque de l annee. Chiffre restitue par la lecture de l article mais NON obtenu en verbatim complet — a recouper sur l alinea exact avant de s en servir."
+    },
+    "delai_de_droit_commun": {
+      "valeur": 6,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006163105/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LPF L186 verbatim : « Lorsqu il n est pas expressement prevu de delai de prescription plus court ou plus long, le droit de reprise de l administration s exerce jusqu a l expiration de la sixieme annee suivant celle du fait generateur de l impot. » C est le delai qui s applique quand aucun texte special ne joue — souvent oublie."
+    },
+    "assistance_administrative_internationale": {
+      "valeur": 2,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006163105/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF L188 A : si l administration a interroge un autre Etat dans le delai initial de reprise, elle peut rectifier jusqu a la fin de la 2e annee qui suit celle de la reception de la reponse, meme si le delai initial est ecoule."
+    },
+    "interruption_par_la_proposition_de_rectification": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F417",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ une proposition de rectification INTERROMPT la prescription et fait repartir un nouveau delai de 3 ans au profit de l administration. Croire qu on approche de la fin du delai est donc faux des lors qu une proposition a ete notifiee. Page du 01/01/2026."
+    }
+  },
+  "controle_et_procedure": {
+    "delai_de_reponse_a_la_proposition_de_rectification": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006163088/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF L11 verbatim : « Le delai accorde aux contribuables pour repondre aux demandes de renseignements [...] est fixe a trente jours a compter de la reception de cette notification. » C est LE delai a ne pas laisser passer."
+    },
+    "prorogation_du_delai_de_reponse": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006180034/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF L57 verbatim : « Sur demande du contribuable recue par l administration avant l expiration du delai mentionne a l article L. 11, ce delai est proroge de trente jours. » ⚠ la demande doit etre RECUE avant l expiration — l envoyer le 30e jour ne suffit pas. C est de droit, il n y a pas a la justifier."
+    },
+    "demande_d_eclaircissements_ou_de_justifications": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006180026/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF L16 A verbatim : « Les demandes d eclaircissements et de justifications fixent au contribuable un delai de reponse qui ne peut etre inferieur a deux mois. » ★ c est un PLANCHER, pas un plafond : on peut demander plus."
+    },
+    "mise_en_demeure_de_completer_la_reponse": {
+      "valeur": 30,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006180026/",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF L16 A : si la reponse est insuffisante, l administration met en demeure de la completer dans un delai de 30 jours. ⚠ une reponse partielle vaut mieux que rien : elle declenche cette seconde chance."
+    },
+    "duree_maximale_esfp": {
+      "valeur": {
+        "annees": 1,
+        "porte_a_annees": 2
+      },
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006163088/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF L12 verbatim : « Sous peine de nullite de l imposition, un examen contradictoire de la situation fiscale personnelle ne peut s etendre sur une periode superieure a un an a compter de la reception de l avis de verification. » Portee a 2 ans si activite occulte decouverte ou mise en oeuvre des articles L82 C ou L101 du LPF (BOI-CF-PGR-20-30 du 20/12/2017)."
+    },
+    "competence_de_la_commission_departementale": {
+      "valeur": "questions de fait, non les questions de droit",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/873-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "BOI-CF-CMSS-20-10 du 05/08/2013 : la commission se prononce sur des questions de fait ; verbatim : « la commission reste incompetente pour qualifier juridiquement une operation de charge ou d immobilisation ». Le II alinea 2 de l article L59 A du LPF etend sa competence a certaines qualifications juridiques."
+    },
+    "charge_de_la_preuve_en_taxation_d_office": {
+      "valeur": "au contribuable pour le montant, a l administration pour le bien-fonde du recours a la procedure",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://bofip.impots.gouv.fr/doctrine/pgp/863-PGP",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ BOI-CF-IOR-40 du 12/09/2012, verbatim : la charge incombe « a l administration, dans la mesure ou celle-ci est tenue d etablir au prealable, le bien-fonde du recours a la procedure suivie ; au contribuable en tant que ce dernier conteste le principe ou le montant de l evaluation d office operee ». Laisser passer un delai fait donc BASCULER la preuve sur soi. Doctrine ancienne (2012) — a recouper."
+    },
+    "charte_opposable": {
+      "valeur": "opposable a l administration",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069583/LEGISCTA000006163088/",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LPF L10 verbatim : « Les dispositions contenues dans la charte des droits et obligations du contribuable verifie mentionnee au troisieme alinea de l article L. 47 sont opposables a l administration. » Une garantie de la charte non respectee est donc invocable comme un texte."
+    }
+  },
+  "interets_et_majorations": {
+    "interet_de_retard": {
+      "valeur": {
+        "taux_mensuel_pourcent": "0,20",
+        "taux_annuel_pourcent": "2,4"
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147309/",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI 1727 III verbatim : « Le taux de l interet de retard est de 0,20 % par mois. » service-public et impots.gouv.fr traduisent : 0,20 % par mois soit 2,4 % sur 1 an. Ce n est pas une sanction mais le prix du temps : il s ajoute a toute majoration."
+    },
+    "reduction_pour_depot_spontane": {
+      "valeur": 50,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147309/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI 1727 V verbatim : « Le montant du au titre de l interet de retard est reduit de 50 % en cas de depot spontane par le contribuable, avant l expiration du delai prevu pour l exercice par l administration de son droit de reprise ». Condition : le paiement des droits accompagne la declaration rectificative ou intervient au plus tard a la date limite de l avis."
+    },
+    "mention_expresse": {
+      "valeur": "aucun interet de retard",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006147309/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI 1727 II : l interet n est pas du « Au titre des elements d imposition pour lesquels un contribuable fait connaitre, par une indication expresse portee sur la declaration ou l acte, ou dans une note annexee, les motifs de droit ou de fait ». service-public F34176 le dit autrement : « Vous n aurez pas d interets de retard si vous avez alerte par ecrit l administration fiscale de vos interrogations lors du depot de votre declaration. » ⇒ signaler son doute EN DECLARANT est gratuit et protecteur."
+    },
+    "majoration_erreur_ou_insuffisance": {
+      "valeur": 10,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34176",
+      "date_verifiee": "2026-08-17",
+      "note": "★ majoration de 10 % sur l impot supplementaire, evitee en regularisant spontanement par declaration rectificative OU en repondant dans les 30 jours a une relance de l administration. Page du 01/01/2026."
+    },
+    "majorations_declaration_tardive": {
+      "valeur": {
+        "depot_tardif_spontane_pourcent": 10,
+        "depot_dans_30_jours_apres_mise_en_demeure_pourcent": 20,
+        "absence_de_depot_30_jours_apres_mise_en_demeure_pourcent": 40,
+        "activite_occulte_pourcent": 80
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34175",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ l ecart 20 % / 40 % se joue sur 30 jours apres la mise en demeure : deposer meme tres tard DIVISE la majoration par deux. verbatim : « Les penalites pour retard de declaration sont calculees sur le montant total de l impot du, sans prise en compte des acomptes et prelevements » — donc l assiette de la penalite ignore ce qui a deja ete preleve a la source. Page du 05/06/2026."
+    },
+    "majorations_cgi_1729": {
+      "valeur": {
+        "manquement_delibere_pourcent": 40,
+        "abus_de_droit_pourcent": 80,
+        "abus_de_droit_ramene_pourcent": 40,
+        "manoeuvres_frauduleuses_pourcent": 80
+      },
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006179987/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CGI 1729 verbatim : « a. 40 % en cas de manquement delibere ; b. 80 % en cas d abus de droit ; elle est ramenee a 40 % lorsqu il n est pas etabli que le contribuable a eu l initiative principale du ou des actes constitutifs de l abus de droit ou en a ete le principal beneficiaire ; c. 80 % en cas de manoeuvres frauduleuses ou de dissimulation d une partie du prix stipule dans un contrat. » La BONNE FOI est presumee : c est a l administration d etablir le manquement delibere."
+    }
+  },
+  "sanctions_penales_fraude": {
+    "peines_de_base": {
+      "valeur": {
+        "amende_euros": 500000,
+        "amende_libelle": "500 000 euros",
+        "emprisonnement_annees": 5
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31451",
+      "date_verifiee": "2026-08-17",
+      "note": "fraude fiscale. Page du 02/07/2026. Privation possible des droits civiques et electoraux."
+    },
+    "peines_aggravees": {
+      "valeur": {
+        "amende_euros": 3000000,
+        "amende_libelle": "3 000 000 euros",
+        "emprisonnement_annees": 7
+      },
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31451",
+      "date_verifiee": "2026-08-17",
+      "note": "circonstances aggravantes : bande organisee, comptes a l etranger, faux documents."
+    },
+    "prescription_penale": {
+      "valeur": 6,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31451",
+      "date_verifiee": "2026-08-17",
+      "note": "★ le penal a sa propre horloge, distincte du delai de reprise fiscal. Poursuites possibles pendant 6 ans a partir de l annee suivant l infraction."
+    }
+  },
+  "regularisation_et_rescrit": {
+    "droit_a_l_erreur_conditions": {
+      "valeur": "premiere erreur ou ignorance de la regle, regularisation, bonne foi",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34677",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ EXCLUSION decisive, verbatim : « Erreur ne pouvant pas etre regularisee (par exemple, absence ou retard de declaration) ». ⇒ le droit a l erreur ne couvre PAS le retard, seulement l inexactitude. Croire le contraire coute la majoration de retard. Page du 05/08/2026."
+    },
+    "rescrit_delai_de_reponse": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13551",
+      "date_verifiee": "2026-08-17",
+      "note": "verbatim : « L administration vous repond dans un delai de 3 mois maximum a partir de la reception de votre demande. » ⚠ la page ne dit PAS que le silence vaut accord dans le cas general — ne pas le supposer. Page du 01/05/2025, plus de 6 mois : a recouper."
+    },
+    "rescrit_second_examen": {
+      "valeur": {
+        "demande_mois": 2,
+        "reexamen_mois": 3
+      },
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13551",
+      "date_verifiee": "2026-08-17",
+      "note": "second examen a demander dans les 2 mois suivant la reception de la reponse ; l administration reexamine dans les 3 mois. Le rescrit engage l administration si on suit la position, qu on est de bonne foi et que la situation reste identique."
+    },
+    "droit_au_controle_opposabilite": {
+      "valeur": "conclusions du controle opposables a l administration",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34678",
+      "date_verifiee": "2026-08-17",
+      "note": "★ verbatim : « vous pouvez utiliser les conclusions de ce controle si l administration change de position par la suite ». Demander un controle est donc une facon d obtenir de la securite. Page du 22/06/2021, ancienne : a recouper."
+    }
   }
 }

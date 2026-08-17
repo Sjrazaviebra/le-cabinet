@@ -27,7 +27,7 @@
 `juriste`, fichier `droit-des-societes.md`.
 *(Page dépôt des comptes du 11/06/2025, à recouper.)*
 
-## 1. La date de clôture
+## La date de clôture
 
 **Le choix est libre.** Verbatim : « Le choix de la date de fin de l'exercice comptable est
 **libre** » — pour l'entrepreneur individuel comme pour la société.
@@ -62,7 +62,7 @@ gonfle les stocks et les créances au bilan — donc l'image donnée au banquier
 
 *Page du 03/10/2024, à recouper.*
 
-## 2. Les travaux de clôture — ★★ ce qui se prépare AVANT
+## Les travaux de clôture — ★★ ce qui se prépare AVANT
 
 Trois articles du code de commerce commandent tout le reste. Ils sont courts et ils sont durs.
 
@@ -109,7 +109,7 @@ bénéfices réalisés (L123-21) et le rattachement de la charge à son exercice
 **comptes de régularisation** et des **méthodes de provision** reste à écrire sur BOFiP (voir *Ce qui
 reste à écrire*).
 
-## 3. Les comptes annuels, et qui a droit aux allégements
+## Les comptes annuels, et qui a droit aux allégements
 
 **L123-12** : « Ces comptes annuels comprennent le **bilan**, le **compte de résultat** et une
 **annexe**, qui forment un **tout indissociable**. »
@@ -153,7 +153,7 @@ ANC). ⛔ Et la holding patrimoniale est expressément **exclue** de la dispense
 « Le commerçant soumis au **régime simplifié d'imposition** n'est pas obligé d'établir l'annexe qui
 compose normalement les comptes annuels. »
 
-## 4. La liasse fiscale
+## La liasse fiscale
 
 **La « liasse » n'est pas un document : c'est un jeu de tableaux annexés à une déclaration de
 résultat.** Le formulaire de tête dépend de **l'impôt**, les tableaux dépendent du **régime**.
@@ -205,7 +205,7 @@ la plupart des impôts professionnels. » Deux canaux : **EFI** (l'entreprise sa
 professionnel) et **EDI** (un partenaire habilité — expert-comptable, organisme de gestion agréé —
 transmet pour elle). *(Page EDI/EFI du 01/03/2024, à recouper.)*
 
-## 5. Les pénalités — ★★ la fenêtre de 30 jours change tout
+## Les pénalités — ★★ la fenêtre de 30 jours change tout
 
 Deux sanctions se **cumulent** : une **majoration** (elle punit le retard) et un **intérêt de retard**
 (il rémunère le temps). Ce ne sont pas des alternatives.
@@ -252,7 +252,7 @@ guichet** — il faut la demander.
 lieu de télétransmettre entraîne une majoration de **0,2 %** du montant de l'impôt, qui « ne peut pas
 être inférieure à **60 €** ». Une déclaration à l'heure mais mal transmise est quand même sanctionnée.
 
-## 6. Le commissaire aux comptes
+## Le commissaire aux comptes
 
 La désignation est **obligatoire** dès que **deux des trois** seuils sont **dépassés** (effet à
 l'exercice suivant le dépassement) :
@@ -274,7 +274,7 @@ simplifiée **et** imposer un commissaire aux comptes.
 
 *Page du 10/04/2025, à recouper.*
 
-## 7. L'expert-comptable
+## L'expert-comptable
 
 ### ★★ Son intervention n'est PAS obligatoire
 
@@ -304,7 +304,7 @@ compte de tiers) : le principe est réel, sa formulation précise reste à recou
 conséquence pratique, elle, ne change pas : **seul un professionnel inscrit et assuré peut prendre en
 charge cette mission — ni un prestataire non inscrit, ni ce skill.**
 
-## 8. Résultat comptable → résultat fiscal
+## Résultat comptable → résultat fiscal
 
 **La formule est la charnière de toute la liasse :**
 
@@ -418,9 +418,10 @@ Toutes fetchées le **2026-08-17**.
   <https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043982240>
 
 ⛔ **Non vérifié** : le texte de l'ordonnance n° 45-2138 du 19 septembre 1945 définissant le périmètre
-du monopole de l'Ordre des experts-comptables (§7), et la page impots.gouv.fr « déclaration de
-résultats » (la page renvoyait une erreur au moment de la vérification). Les échéances données ici viennent donc de
-service-public, pas d'impots.gouv.fr : **à recouper chaque année**, la date limite se recalcule.
+du monopole de l'Ordre des experts-comptables (section *L'expert-comptable*), et la page
+impots.gouv.fr « déclaration de résultats », qui renvoyait une erreur au moment de la vérification.
+Les échéances données ici viennent donc de service-public, pas d'impots.gouv.fr : **à recouper chaque
+année**, la date limite se recalcule.
 
 ## Rappel de cadrage
 
