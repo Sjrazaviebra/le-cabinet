@@ -281,5 +281,433 @@
       "date_verifiee": "2026-08-17",
       "note": "★ 2 ans, PAS 12 mois : action portant sur l EXECUTION du contrat et non sur sa rupture. Conclure trop tard sur la base des 12 mois serait une erreur."
     }
+  },
+  "harcelement_et_discrimination": {
+    "charge_de_la_preuve_amenagee": {
+      "valeur": "le salarie PRESENTE des elements de fait laissant supposer un harcelement ; il incombe alors au DEFENDEUR de prouver que les agissements ne sont pas constitutifs de harcelement et que sa decision est justifiee par des elements objectifs etrangers a tout harcelement",
+      "unite": "regle de preuve",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033019902",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE POINT DECISIF, article L1154-1 du code du travail. Le salarie n a pas a PROUVER le harcelement, il a a le rendre PLAUSIBLE. Regle la plus mal connue du sujet, celle qui fait renoncer le plus de monde a tort. ⇒ Ce qui compte est l ACCUMULATION D ELEMENTS DATES : courriels, comptes rendus, attestations, arrets de travail, visites au medecin du travail. Chaque element vaut moins que la serie. ⚠️ Ce n est PAS une presomption automatique : le juge apprecie."
+    },
+    "harcelement_moral_definition": {
+      "valeur": "propos ou comportements REPETES ayant pour objet OU POUR EFFET une degradation des conditions de travail susceptible d entrainer L UNE de ces consequences : atteinte aux droits et a la dignite, alteration de la sante physique ou mentale, menace pour l evolution professionnelle",
+      "unite": "definition legale",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « L UNE » et non « toutes ». Et « avoir pour EFFET » suffit : l INTENTION DE NUIRE n a pas a etre demontree - un management qui degrade sans le vouloir entre dans la definition. Page verifiee le 2025-10-31."
+    },
+    "harcelement_moral_au_travail_peines": {
+      "valeur": {
+        "emprisonnement_ans": 2,
+        "amende_eur": 30000
+      },
+      "unite": "peines de l article 222-33-2 du code penal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029336939",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ NE PAS CONFONDRE : les pages generales presentent des peines echelonnees (1 an / 15 000 EUR, 2 ans / 30 000 EUR, 3 ans / 45 000 EUR) qui relevent du harcelement moral HORS TRAVAIL et de ses circonstances aggravantes. Pour le harcelement moral AU TRAVAIL, le texte est l article 222-33-2. La QUALIFICATION RETENUE commande la peine - point a laisser au penaliste. Version en vigueur affichee : 2014-08-06."
+    },
+    "harcelement_moral_obligations_employeur": {
+      "valeur": "informer les salaries des textes applicables + MENER UNE ENQUETE DES LE SIGNALEMENT + sanctionner l auteur + prevention et formations",
+      "unite": "obligations",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L ABSENCE D ENQUETE EST EN SOI UN MANQUEMENT : un employeur qui n a rien fait apres un signalement ECRIT s expose de ce seul fait, independamment de l issue sur le harcelement. ⇒ SIGNALER PAR ECRIT est l acte le plus utile, meme sans rien attendre de la hierarchie : il fait naitre l obligation."
+    },
+    "harcelement_sexuel_definition": {
+      "valeur": "imposer a une personne, de facon REPETEE, des propos ou comportements a connotation sexuelle ou sexiste portant atteinte a sa dignite ou creant une situation intimidante, hostile ou offensante ; EGALEMENT constitue SANS repetition en cas de pression grave exercee dans le but reel ou apparent d obtenir un acte de nature sexuelle",
+      "unite": "definition de l article 222-33 du code penal",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037289662",
+      "date_verifiee": "2026-08-17",
+      "note": "★ UN SEUL FAIT PEUT SUFFIRE, contrairement a l idee recue. Version en vigueur affichee : 2018-08-06."
+    },
+    "harcelement_sexuel_peines": {
+      "valeur": {
+        "base_emprisonnement_ans": 2,
+        "base_amende_eur": 30000,
+        "aggrave_emprisonnement_ans": 3,
+        "aggrave_amende_eur": 45000
+      },
+      "unite": "peines",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037289662",
+      "date_verifiee": "2026-08-17",
+      "note": "Circonstances aggravantes : abus de l autorite conferee par les fonctions, victime mineure de 15 ans, vulnerabilite apparente (age, maladie, handicap, grossesse, precarite), pluralite d auteurs, moyens numeriques, presence d un mineur. ★ « ABUS D AUTORITE » est la premiere citee et c est celle du cadre professionnel : dans une relation hierarchique, le harcelement sexuel est PAR CONSTRUCTION aggrave."
+    },
+    "discrimination_criteres": {
+      "valeur": 25,
+      "unite": "criteres prohibes",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1642",
+      "date_verifiee": "2026-08-17",
+      "note": "Parmi eux : origine, sexe, situation de famille, grossesse, apparence physique, etat de sante, handicap, age, opinions politiques, activites syndicales, orientation sexuelle, identite de genre, religion. Page verifiee le 2025-10-20."
+    },
+    "discrimination_peines_secteur_prive": {
+      "valeur": {
+        "personne_physique_emprisonnement_ans": 3,
+        "personne_physique_amende_eur": 45000,
+        "personne_morale_amende_eur": 225000
+      },
+      "unite": "peines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1642",
+      "date_verifiee": "2026-08-17",
+      "note": "Peines complementaires possibles dont la PUBLICATION DU JUGEMENT DANS LA PRESSE."
+    },
+    "delais_pour_agir": {
+      "valeur": {
+        "prudhommes_ans": 5,
+        "plainte_penale_ans": 6,
+        "point_de_depart": "a compter des DERNIERS faits"
+      },
+      "unite": "delais",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1642",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CES DELAIS ECHAPPENT AUX 12 MOIS de la contestation du licenciement : quelqu un parti depuis deux ans peut croire que tout est ferme alors que cette voie reste ouverte. La question n est jamais « quand etes-vous parti ? » mais « que reprochez-vous ? ». ★ « A compter des DERNIERS faits » : dans une situation qui dure, le point de depart se DEPLACE."
+    },
+    "protection_contre_licenciement": {
+      "valeur": "les VICTIMES et les TEMOINS sont proteges contre le licenciement",
+      "unite": "protection",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA PROTECTION DU TEMOIN est decisive et presque toujours ignoree : c est elle qui permet a un collegue d attester, et sans attestation le dossier de la victime repose souvent sur sa seule parole. Le dire a la personne qui hesite a temoigner change des dossiers."
+    },
+    "interlocuteurs": {
+      "valeur": "inspection du travail (DREETS) / medecin du travail / CSE (saisine du juge en procedure acceleree) / Defenseur des droits (gratuit et confidentiel) / organisations syndicales / police ou gendarmerie / conseil de prud hommes",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2354",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LE MEDECIN DU TRAVAIL est le plus sous-utilise : independant de l employeur, tenu au secret medical, et une visite peut etre demandee A TOUT MOMENT SANS PASSER PAR LA HIERARCHIE. C est souvent la premiere trace datee de la situation."
+    }
+  },
+  "smic": {
+    "en_vigueur_depuis": {
+      "valeur": "2026-06-01",
+      "unite": "date",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01. ⚠️ MONTANT REVALORISE : a reverifier avant toute annonce."
+    },
+    "horaire_brut_eur": {
+      "valeur": 12.31,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": "France metropolitaine."
+    },
+    "mensuel_35h_eur": {
+      "valeur": {
+        "brut": 1867.02,
+        "net": 1477.93,
+        "base_horaire": 151.67
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ CE MONTANT REVIENT AILLEURS DANS LE DEPOT : seuil de « moyens d existence suffisants » de la carte entrepreneur / profession liberale, et ordre de grandeur du seuil de ressources du regroupement familial (role immigration). CES SEUILS SONT INDEXES SUR LE SMIC ⇒ quand le SMIC bouge, ils bougent, et un guide qui donne l ancien montant se trompe sur les trois sujets a la fois."
+    },
+    "annuel_eur": {
+      "valeur": {
+        "brut": 22404.2,
+        "net": 17735.19
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "mayotte_eur": {
+      "valeur": {
+        "horaire_brut": 9.56,
+        "mensuel_brut": 1449.93,
+        "annuel_brut": 17399.2
+      },
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "mineurs_moins_de_6_mois_experience_eur": {
+      "valeur": {
+        "a_17_ans": 11.08,
+        "a_16_ans_et_moins": 9.85
+      },
+      "unite": "EUR horaire brut",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "sanction_paiement_sous_le_smic_eur": {
+      "valeur": 1500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "smic_ou_minimum_conventionnel": {
+      "valeur": "le plus favorable des deux s applique",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2300",
+      "date_verifiee": "2026-08-17",
+      "note": "★ La question utile n est jamais « suis-je au SMIC ? » mais « quel est le minimum de ma CLASSIFICATION dans ma convention ? ». Beaucoup de conventions prevoient des minima par coefficient superieurs au SMIC. Rappel de salaire prescrit par 3 ans."
+    }
+  },
+  "temps_de_travail": {
+    "duree_legale": {
+      "valeur": {
+        "hebdomadaire_h": 35,
+        "mensuelle_h": 151.67,
+        "annuelle_h": 1607
+      },
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LA DUREE LEGALE N EST PAS UN MAXIMUM : c est le seuil au-dela duquel les heures deviennent SUPPLEMENTAIRES et MAJOREES. Confondre les deux fait croire a une infraction la ou il n y a qu un rappel de majoration a reclamer. Page verifiee le 2025-09-25."
+    },
+    "maximum_quotidien_h": {
+      "valeur": 10,
+      "unite": "heures de travail effectif",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911",
+      "date_verifiee": "2026-08-17",
+      "note": "Jusqu a 12 heures par convention ou accord d entreprise, d etablissement ou de branche, en cas d activite accrue ou pour des motifs d organisation - article L3121-19."
+    },
+    "maximum_hebdomadaire_absolu_h": {
+      "valeur": 48,
+      "unite": "heures sur une semaine",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911",
+      "date_verifiee": "2026-08-17",
+      "note": "Jusqu a 60 heures en circonstances exceptionnelles, sur autorisation de l inspection du travail."
+    },
+    "maximum_hebdomadaire_moyen_h": {
+      "valeur": 44,
+      "unite": "heures en moyenne sur 12 semaines consecutives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "pause_obligatoire": {
+      "valeur": 20,
+      "unite": "minutes consecutives apres 6 heures de travail continu",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1911",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "repos_quotidien_h": {
+      "valeur": 11,
+      "unite": "heures consecutives",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033020918",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA LIMITE LA PLUS OPERATIONNELLE du droit du temps de travail, et la plus facile a verifier : elle se lit sur DEUX HORAIRES, fin de poste et reprise. Une fermeture a 23 h suivie d une ouverture a 8 h est illicite, et cela se demontre avec un planning, sans expertise. Article L3131-1, version en vigueur du 2016-08-10, sauf derogations des articles L3131-2 et L3131-3 et cas d urgence."
+    }
+  },
+  "heures_supplementaires": {
+    "majoration_sans_accord": {
+      "valeur": {
+        "huit_premieres_heures_pourcentage": 25,
+        "au_dela_pourcentage": 50
+      },
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2391",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-08."
+    },
+    "majoration_minimale_par_accord_pourcentage": {
+      "valeur": 10,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2391",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ DISPOSITION LA PLUS CONTRE-INTUITIVE : LES 25 % NE SONT PAS GARANTIS. Verbatim : « Chaque taux est au minimum fixe a 10 % ». Un accord d entreprise ou de branche peut donc fixer 10 % ⇒ AVANT de calculer un rappel d heures supplementaires, LIRE L ACCORD APPLICABLE, sinon on annonce un montant qui n existe pas."
+    },
+    "contingent_annuel_sans_accord_h": {
+      "valeur": 220,
+      "unite": "heures par salarie et par an",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2391",
+      "date_verifiee": "2026-08-17",
+      "note": "En l absence d accord dans l entreprise."
+    },
+    "contrepartie_obligatoire_en_repos_au_dela_du_contingent": {
+      "valeur": {
+        "jusqu_a_20_salaries_pourcentage": 50,
+        "plus_de_20_salaries_pourcentage": 100
+      },
+      "unite": "pourcentage des heures excedentaires",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2391",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LE SEUIL DE 20 SALARIES DOUBLE LA CONTREPARTIE - un des rares endroits ou l effectif change directement un droit individuel. A verifier avant toute estimation."
+    },
+    "repos_compensateur_equivalence": {
+      "valeur": "une heure majoree a 50 % ouvre droit a 1 h 30 de repos",
+      "unite": "equivalence",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2391",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    }
+  },
+  "conges_payes": {
+    "acquisition_travail_effectif": {
+      "valeur": 2.5,
+      "unite": "jours ouvrables par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "date_verifiee": "2026-08-17",
+      "note": "Soit 30 jours ouvrables - 5 semaines - sur une annee complete. Page verifiee le 2026-04-30."
+    },
+    "acquisition_pendant_arret_maladie": {
+      "valeur": {
+        "non_professionnel_jours_par_mois": 2,
+        "origine_professionnelle_jours_par_mois": 2,
+        "plafond_annuel_jours": 24,
+        "periode_de_reference": "du 1er juin au 31 mai"
+      },
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA REGLE A CHANGE : pendant des decennies un arret pour maladie ordinaire n ouvrait AUCUN droit a conges. Ce n est plus le cas ⇒ quiconque a ete en arret long a probablement des jours qu il ignore, et l employeur ne les a pas forcement decomptes. ⚠️ Le rythme est de 2 jours, PAS 2,5 : annoncer 2,5 serait une erreur au benefice apparent du salarie, donc une erreur quand meme."
+    },
+    "report_apres_arret_mois": {
+      "valeur": 15,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2258",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LE POINT DECISIF : le delai de 15 mois NE COURT QU A COMPTER DE L INFORMATION donnee par l employeur au retour du salarie, information qu il DOIT donner. ⇒ Un employeur qui n a pas informe n a PAS fait courir le delai : « vos conges sont perdus » est une affirmation A VERIFIER. Se regle souvent par un courriel, sans juge."
+    }
+  },
+  "conge_maternite": {
+    "durees_semaines": {
+      "valeur": {
+        "premier_ou_deuxieme_enfant": {
+          "prenatal": 6,
+          "postnatal": 10,
+          "total": 16
+        },
+        "troisieme_enfant_ou_plus": {
+          "prenatal": 8,
+          "postnatal": 18,
+          "total": 26
+        },
+        "jumeaux": {
+          "prenatal": 12,
+          "postnatal": 22,
+          "total": 34
+        },
+        "triples_ou_plus": {
+          "prenatal": 24,
+          "postnatal": 22,
+          "total": 46
+        }
+      },
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01."
+    },
+    "minimum_obligatoire_semaines": {
+      "valeur": {
+        "total": 8,
+        "dont_apres_accouchement": 6
+      },
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "date_verifiee": "2026-08-17",
+      "note": "★ CE N EST PAS UN DROIT QU ON PEUT DECLINER, c est une INTERDICTION D EMPLOI : l employeur ne peut pas faire travailler la salariee pendant cette periode, meme avec son accord."
+    },
+    "protection_licenciement": {
+      "valeur": {
+        "pendant_le_conge": "absolue - aucun licenciement possible, y compris pendant les conges payes pris immediatement apres",
+        "apres_le_conge_semaines": 10,
+        "nature_apres": "relative - licenciement possible seulement pour faute grave ou cessation d activite"
+      },
+      "unite": "protection",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2265",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LA PROTECTION NE S ARRETE PAS AU RETOUR : dix semaines de protection relative suivent. Un licenciement notifie trois semaines apres la reprise pour un motif ordinaire est NUL."
+    }
+  },
+  "conge_paternite": {
+    "decomposition": {
+      "valeur": {
+        "conge_de_naissance_jours_ouvrables": 3,
+        "premiere_periode_obligatoire_jours_calendaires": 4,
+        "solde_fractionnable_jours_calendaires": 21,
+        "solde_naissances_multiples_jours_calendaires": 28
+      },
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": "Les deux premiers blocs sont OBLIGATOIRES, la 1re periode suivant IMMEDIATEMENT le conge de naissance. Interdiction d emploi et protection pendant la periode obligatoire. Page verifiee le 2026-06-01."
+    },
+    "pourquoi_25_ou_28_jours": {
+      "valeur": {
+        "paternite_seule": 25,
+        "total_conge_de_naissance_inclus": 28,
+        "naissances_multiples_paternite_seule": 32,
+        "naissances_multiples_total": 35
+      },
+      "unite": "jours calendaires",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LES DEUX CHIFFRES CIRCULENT ET NE SE CONTREDISENT PAS : 25 = paternite seule (4 + 21), 28 = total conge de naissance inclus. ⇒ Verifier de quel PERIMETRE parle l interlocuteur (employeur, CPAM, convention). C EST LA DECOMPOSITION QUI EST FIABLE, PAS LE TOTAL : 3 + 4 + 21."
+    },
+    "delai_de_prise_du_solde_mois": {
+      "valeur": 6,
+      "unite": "mois suivant la naissance",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": "En une fois ou en 2 periodes de 5 jours minimum."
+    },
+    "prevenance_employeur_mois": {
+      "valeur": 1,
+      "unite": "mois avant les dates souhaitees",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "conditions_indemnisation": {
+      "valeur": {
+        "heures_travaillees_sur_3_mois": 150,
+        "affiliation_continue_mois": 6
+      },
+      "unite": "conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3156",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    }
   }
 }
