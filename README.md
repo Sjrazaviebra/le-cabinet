@@ -1,19 +1,19 @@
-<!-- ⚠️ EN-TETE : logo FLOTTE + titre en ### + ligne DESSINEE EN TEXTE.
-     Pourquoi ce montage et pas un autre, apres trois essais mesures :
-       - un titre en # ou ## porte une bordure que GitHub dessine sur TOUTE la largeur :
-         avec un logo flottant, elle le TRAVERSE. Le ### n en a pas.
-       - un <hr> ne convient pas non plus : c est un bloc, sa bordure reprend toute la
-         largeur et retraverse le logo. La seule ligne qui RESPECTE le flottant est du
-         TEXTE, parce que le texte s ecoule dans la colonne restante.
-       - un tableau donnerait un encadrement : style="border:0" est supprime par GitHub.
-     ⚠️ La longueur de la ligne est FIXE (56 caracteres) : trop longue, elle se replierait
-     sur deux rangees. Ne pas l allonger sans verifier le rendu. -->
-<img src="assets/logo.png" align="left" width="96" alt="">
+![le-cabinet — droit, fiscalité, entreprise et patrimoine français](assets/banner.jpg)
 
-### le-cabinet
+<!-- ⚠️ EN-TETE : banniere, puis logo FLOTTE DANS le titre ###, puis ligne DESSINEE EN TEXTE.
+     Quatre impasses mesurees sur le moteur de rendu de GitHub avant d arriver la :
+       - un titre en # ou ## porte une bordure dessinee sur TOUTE la largeur : avec un logo
+         flottant, elle le TRAVERSE. Le ### n en a pas.
+       - un <hr> ne sauve pas : c est un BLOC, sa bordure reprend toute la largeur et
+         retraverse le logo. La seule ligne qui RESPECTE un flottant est du TEXTE, parce que
+         le texte s ecoule dans la colonne restante.
+       - un tableau donne un encadrement : GitHub borde les cellules et SUPPRIME style="border:0".
+       - supprimer le titre marche, mais le README perd son plan.
+     ⚠️ Longueur de la ligne FIXE (56 caracteres) : plus longue, elle se replie sur deux rangees.
+     ⛔ Verifier a l ecran avant de toucher a ce bloc. -->
+### <img src="assets/logo.png" align="left" width="96" alt=""> le-cabinet
 
-────────────────────────────────────────────────────────
-
+────────────────────────────────────────────────────────<br>
 **Neuf rôles pour agents IA, en droit, fiscalité, financement et patrimoine français.**
 Entreprise **et** vie privée.
 
