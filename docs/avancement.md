@@ -1,6 +1,6 @@
 # Avancement
 
-**38 valeurs vérifiées et datées**, 11 encore ouvertes. **7 rôles.**
+**42 valeurs vérifiées et datées**, 11 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -110,18 +110,18 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **7 vérifiée(s)**, 0 à vérifier |
+| `data/parametres.json` | **11 vérifiée(s)**, 0 à vérifier |
 | `references/conges-et-absences.md` | À ÉCRIRE |
 | `references/contrat-et-embauche.md` | À ÉCRIRE |
 | `references/conventions-collectives.md` | **RÉDIGÉ** |
 | `references/harcelement-et-discrimination.md` | À ÉCRIRE |
-| `references/prudhommes.md` | À ÉCRIRE |
+| `references/prudhommes.md` | **RÉDIGÉ** |
 | `references/remuneration-et-temps.md` | À ÉCRIRE |
 | `references/rupture.md` | **PARTIEL** |
 
 ## Ordre de rédaction
 
-**Rédigés** — 9 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `travail/conventions-collectives` · `travail/rupture`
+**Rédigés** — 10 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `immigration/naturalisation` · `immigration/refus-et-recours` · `juriste/activites-reglementees` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 
