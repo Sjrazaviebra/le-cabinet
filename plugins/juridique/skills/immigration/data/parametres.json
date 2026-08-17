@@ -574,5 +574,97 @@
       "date_verifiee": "2026-08-17",
       "note": "Service ANEF."
     }
+  },
+  "famille_et_regroupement": {
+    "protection_victimes_violences": {
+      "valeur": "carte de RESIDENT delivree au benefice d une ordonnance de protection, et le prefet NE PEUT PAS la refuser pour rupture de la vie commune",
+      "unite": "regle de plein droit",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L INFORMATION LA PLUS IMPORTANTE DU ROLE. Verbatim : « La carte de resident vous est delivree si vous etes beneficiaire d une ordonnance de protection en raison des violences commises par votre epoux, votre partenaire ou concubin. » et « Le prefet ne peut pas vous refuser cette carte pour rupture de la vie commune. » ⇒ Une personne dont le titre depend de son conjoint croit presque toujours que partir = perdre son droit au sejour. C EST FAUX, et cette croyance retient dans un domicile dangereux. Numero d ecoute 3919, gratuit et anonyme, 24h/24."
+    },
+    "vpf_condition_vie_commune_levee_si_violences": {
+      "valeur": "la condition de communaute de vie n est plus exigee lorsque la vie commune a cesse en raison de violences",
+      "unite": "regle",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": "Vaut pour la carte de sejour temporaire vie privee et familiale. Voir aussi le role famille, fichier violences-intrafamiliales."
+    },
+    "regroupement_anciennete_sejour_mois": {
+      "valeur": 18,
+      "unite": "mois de residence reguliere avant le depot",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": "Page verifiee le 2026-06-01."
+    },
+    "regroupement_ressources_mensuelles_eur": {
+      "valeur": {
+        "foyer_2_a_3_personnes": 1867,
+        "foyer_4_a_5_personnes": 2054,
+        "foyer_6_personnes_et_plus": 2240,
+        "periode_de_reference": "moyenne sur 12 mois"
+      },
+      "unite": "EUR par mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ SONT EXCLUES DU CALCUL : prestations familiales, RSA, Aspa, Ata, ASS, AER. C est cette exclusion qui fait echouer les dossiers : un foyer qui « touche » assez peut etre tres en dessous du seuil AU SENS DU REGROUPEMENT ⇒ commencer par RETIRER les revenus qui ne comptent pas, pas par les additionner. ⚠️ Montants revisables."
+    },
+    "regroupement_surface_logement": {
+      "valeur": {
+        "zones_A_et_Abis_couple_m2": 22,
+        "zone_C_couple_m2": 28,
+        "par_personne_supplementaire_m2": 10,
+        "au_dela_de_8_personnes_m2": 5
+      },
+      "unite": "metres carres",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "regroupement_delai_decision_prefet_mois": {
+      "valeur": 6,
+      "unite": "mois a compter du depot du dossier COMPLET",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F11166",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « Complet » est le mot qui compte : une piece manquante DECALE le point de depart au lieu de laisser courir le delai ⇒ conserver la preuve du depot et de sa completude."
+    },
+    "vpf_duree": {
+      "valeur": 1,
+      "unite": "an, pluriannuelle possible dans certaines situations",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": "Autorise a travailler SANS que l employeur demande une autorisation de travail. Page verifiee le 2026-05-01."
+    },
+    "vpf_cas_de_delivrance": {
+      "valeur": "conjoint de Francais / parent d enfant francais contribuant a l entretien depuis la naissance ou depuis 2 ans au moins / liens personnels et familiaux intenses, anciens et stables / etranger malade necessitant une prise en charge medicale exceptionnelle / victime d infractions (violences conjugales, traite, proxenetisme, hebergement indigne) / jeune majeur, activites solidaires",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « Liens personnels et familiaux » n est PAS une categorie fourre-tout : intenses, anciennes et stables se DEMONTRENT avec des preuves de duree."
+    },
+    "conjoint_de_francais_conditions": {
+      "valeur": "communaute de vie effective + entree reguliere (visa long ou court sejour) + mariage avec un ressortissant francais ayant conserve la nationalite + absence de polygamie + vie commune de 6 mois minimum si entree avec un visa de COURT sejour",
+      "unite": "conditions",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "date_verifiee": "2026-08-17",
+      "note": ""
+    },
+    "numero_ecoute_3919": {
+      "valeur": 3919,
+      "unite": "numero national",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12544",
+      "date_verifiee": "2026-08-17",
+      "note": "Violences Femmes Info. Gratuit, anonyme, 24h/24. ⚠️ NUMERO CRITIQUE : un numero faux serait pire qu absent. Egalement source dans le role famille, verifie sur arretonslesviolences.gouv.fr."
+    }
   }
 }
