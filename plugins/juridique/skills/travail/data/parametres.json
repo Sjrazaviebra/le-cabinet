@@ -113,5 +113,173 @@
       "date_verifiee": "2026-08-17",
       "note": "L AVOCAT N EST PAS OBLIGATOIRE aux prud hommes. Beaucoup de salaries renoncent a agir en croyant devoir en payer un. Entre le defenseur syndical gratuit et l aide juridictionnelle, le cout n est presque jamais le vrai obstacle - mais il le devient si personne ne le dit."
     }
+  },
+  "periode_essai_cdi": {
+    "ouvriers_employes_initiale": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Page source mise a jour le 2026-08-12. DUREE MAXIMALE LEGALE : une convention collective peut prevoir plus court."
+    },
+    "ouvriers_employes_renouvelee": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Total maximum apres un renouvellement unique. Page source mise a jour le 2026-08-12. DUREE MAXIMALE LEGALE : une convention collective peut prevoir plus court."
+    },
+    "etam_initiale": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Techniciens et agents de maitrise. Page source mise a jour le 2026-08-12. DUREE MAXIMALE LEGALE : une convention collective peut prevoir plus court."
+    },
+    "etam_renouvelee": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Total maximum apres un renouvellement unique. Page source mise a jour le 2026-08-12. DUREE MAXIMALE LEGALE : une convention collective peut prevoir plus court."
+    },
+    "cadres_initiale": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Page source mise a jour le 2026-08-12. DUREE MAXIMALE LEGALE : une convention collective peut prevoir plus court."
+    },
+    "cadres_renouvelee": {
+      "valeur": 8,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Total maximum apres un renouvellement unique. Page source mise a jour le 2026-08-12. DUREE MAXIMALE LEGALE : une convention collective peut prevoir plus court."
+    },
+    "renouvellement_conditions": {
+      "valeur": "accord de branche etendu + mention au contrat + accord ecrit du salarie durant la periode initiale",
+      "unite": "trois conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "★ C est la premiere qui fait tomber le plus de renouvellements et personne ne la verifie : sans accord de branche etendu, une clause du contrat NE SUFFIT PAS. Un renouvellement irregulier place la rupture HORS periode d essai. ★★ Un accord donne apres la fin de la periode initiale, ou tacite, ne vaut rien."
+    },
+    "prevenance_moins_8_jours": {
+      "valeur": 24,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai de prevenance a la charge de l employeur qui rompt. Presence du salarie inferieure a 8 jours."
+    },
+    "prevenance_8_jours_a_1_mois": {
+      "valeur": 48,
+      "unite": "heures",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Presence entre 8 jours et 1 mois."
+    },
+    "prevenance_1_a_3_mois": {
+      "valeur": 2,
+      "unite": "semaines",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Presence entre 1 et 3 mois."
+    },
+    "prevenance_plus_3_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1643",
+      "date_verifiee": "2026-08-17",
+      "note": "Presence superieure a 3 mois. Le non-respect n annule pas la rupture mais ouvre droit a indemnisation."
+    }
+  },
+  "clause_non_concurrence": {
+    "conditions_validite": {
+      "valeur": "indispensable aux interets legitimes de l entreprise + limitee dans le temps + limitee dans l espace + contrepartie financiere proportionnee a l atteinte a la liberte de travailler",
+      "unite": "quatre conditions cumulatives",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1910",
+      "date_verifiee": "2026-08-17",
+      "note": "A PEINE DE NULLITE. ★ Sans contrepartie financiere la clause est nulle : beaucoup de contrats en contiennent une sans contrepartie, elle ne s applique alors pas."
+    },
+    "moment_versement_contrepartie": {
+      "valeur": "apres la rupture du contrat de travail",
+      "unite": "date d exigibilite",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1910",
+      "date_verifiee": "2026-08-17",
+      "note": "Elle n est PAS due pendant l execution du contrat. Un employeur qui pretend l avoir incluse dans le salaire ne respecte pas la regle."
+    },
+    "plancher_conventionnel_exemple": {
+      "valeur": 25,
+      "unite": "pourcentage du salaire moyen des 12 derniers mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1910",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ DEPEND DE LA CONVENTION COLLECTIVE - certaines branches imposent ce plancher, ce N EST PAS une regle generale. Ne jamais citer un pourcentage sans avoir identifie la convention."
+    }
+  },
+  "fin_de_cdd": {
+    "prime_precarite_taux": {
+      "valeur": 10,
+      "unite": "pourcentage minimum de la remuneration brute totale versee pendant le contrat",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F803",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠️ PAGE SOURCE MISE A JOUR LE 2023-09-21, soit pres de 3 ans : a recouper avant de s y fier (regle de peremption 6 mois)."
+    },
+    "prime_precarite_cas_ou_elle_n_est_pas_due": {
+      "valeur": "faute grave du salarie / rupture anticipee a son initiative / refus du CDI propose par l employeur / interim en cas de faute grave",
+      "unite": "liste",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F803",
+      "date_verifiee": "2026-08-17",
+      "note": "Generalement pas due non plus pour professionnalisation, apprentissage, saisonnier, etudiant, CUI-PEC, CAE et contrat d usage - SAUF si la convention collective la prevoit. ⚠️ PAGE SOURCE MISE A JOUR LE 2023-09-21, soit pres de 3 ans : a recouper avant de s y fier (regle de peremption 6 mois)."
+    },
+    "carence_cdd_moins_de_14_jours": {
+      "valeur": "la moitie de la duree du contrat precedent",
+      "unite": "regle de calcul",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai de carence avant de reconclure un CDD sur le meme poste."
+    },
+    "carence_cdd_14_jours_et_plus": {
+      "valeur": "le tiers de la duree du contrat precedent",
+      "unite": "regle de calcul",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F38",
+      "date_verifiee": "2026-08-17",
+      "note": "Delai de carence avant de reconclure un CDD sur le meme poste."
+    }
+  },
+  "requalification_cdd_en_cdi": {
+    "indemnite_minimum": {
+      "valeur": 1,
+      "unite": "mois de salaire",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34572",
+      "date_verifiee": "2026-08-17",
+      "note": "Indemnite de requalification prononcee par le conseil de prud hommes, qui s ajoute aux autres consequences."
+    },
+    "delai_pour_agir": {
+      "valeur": 2,
+      "unite": "ans a compter de la fin du dernier CDD",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34572",
+      "date_verifiee": "2026-08-17",
+      "note": "★ 2 ans, PAS 12 mois : action portant sur l EXECUTION du contrat et non sur sa rupture. Conclure trop tard sur la base des 12 mois serait une erreur."
+    }
   }
 }

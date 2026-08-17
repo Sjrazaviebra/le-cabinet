@@ -15,7 +15,8 @@ Ce sont **deux régimes totalement indépendants**, avec des seuils différents.
 | Seuil de la **franchise en base de TVA** | **37 500 €** |
 
 ★ **On devient redevable de la TVA à moins de la moitié du plafond de la micro.** Un
-micro-entrepreneur qui facture 45 000 € reste micro — et doit facturer la TVA. C'est la
+micro-entrepreneur dont le chiffre d'affaires tombe **entre les deux** reste micro — et doit
+facturer la TVA. C'est la
 mauvaise surprise la plus fréquente du régime, et elle se découvre souvent après coup, quand il
 faut réclamer 20 % à des clients déjà facturés.
 
