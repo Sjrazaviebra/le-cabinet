@@ -122,9 +122,12 @@ En revanche, **le droit français dit la même chose en miroir**, et lui est vé
 
 > « Nonobstant toute stipulation contraire, le consommateur ne peut être privé de la protection que
 > lui assurent les dispositions prises par un Etat membre de l'Union européenne en application de la
-> directive 93/13/CEE du Conseil, du 5 avril 1993 concernant les clauses abusives dans les contrats
-> conclus avec les consommateurs, lorsque le contrat présente un lien étroit avec le territoire d'un
-> Etat membre. »
+> directive […] concernant les clauses abusives dans les contrats conclus avec les consommateurs,
+> lorsque le contrat présente un lien étroit avec le territoire d'un Etat membre. »
+
+(La directive visée, dont la référence est élidée ici, est la **directive sur les clauses abusives
+dans les contrats conclus avec les consommateurs** ; son numéro se lit dans le texte de l'article sur
+Légifrance.)
 
 ★★ **Lisez « Nonobstant toute stipulation contraire ».** C'est la formule qui neutralise votre
 contrat : **ce que vous avez écrit ne compte pas** contre cette protection. Et lisez la fin — « **un
@@ -410,9 +413,11 @@ quelqu'un engager une procédure qui n'existe pas.
   <https://www.impots.gouv.fr/professionnel/prestations-aux-non-assujettis>
 - service-public.gouv.fr, « Salarié détaché à l'étranger » (A1, durée) — ⚠️ vérifiée le 22 mai 2024 —
   <https://www.service-public.gouv.fr/particuliers/vosdroits/F3155>
-- entreprendre.service-public.gouv.fr, « Développer son entreprise à l'international » (Team France
-  Export, Business France, CCI France International) — ⚠️ vérifiée le 6 février 2024 —
-  <https://entreprendre.service-public.gouv.fr/vosdroits/F36220>
+- entreprendre.service-public.gouv.fr, fiche « Développer son entreprise à l'international »
+  (consultée : elle oriente vers **Team France Export**, **Business France** et **CCI France
+  International**, mais ⚠️ **elle ne dit rien** sur la loi applicable, la juridiction compétente ni
+  l'arbitrage — d'où l'état `PARTIEL` de ce fichier) — ⚠️ vérifiée en février 2024, à rechercher
+  depuis <https://entreprendre.service-public.gouv.fr/>
 - ⛔ EUR-Lex, <https://eur-lex.europa.eu/> — **non consultable en accès automatisé** (challenge
   anti-robot sur toutes les formes d'URL testées). **C'est là que se lisent Rome I et Bruxelles I
   bis** : à ouvrir à la main avant toute affirmation sur leur contenu.

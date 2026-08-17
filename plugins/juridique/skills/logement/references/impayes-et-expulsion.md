@@ -11,7 +11,7 @@
 > depuis le 29/07/2023**.
 > ⚠️ **Pages sources de plus de six mois, à recouper** : trêve hivernale (**01/12/2025**), aide au
 > logement (**01/01/2026**), garantie Visale (**23/01/2026**), caution (**10/04/2025**), et surtout
-> l'actualité sur la loi du 27 juillet 2023 (**18/10/2023**). La fiche principale sur les impayés est
+> l'actualité sur la loi du 27/07/2023 (**18/10/2023**). La fiche principale sur les impayés est
 > à jour (**06/08/2026**), et l'accompagnement social a été modifié tout récemment (**12/08/2026**).
 
 ## ⏱️ D'abord : vers qui se tourner, et à quel moment
@@ -21,7 +21,7 @@
 | Quand | Interlocuteur | Ce qu'il peut faire |
 |---|---|---|
 | **Dès le premier loyer non payé** | **ADIL de son département** | information juridique **gratuite, neutre et personnalisée** sur le logement |
-| **Dès le premier loyer non payé** | **SOS loyers impayés — 0 805 160 075** (du lundi au vendredi) | orienter, expliquer la procédure |
+| **Dès le premier loyer non payé** | **SOS loyers impayés — 0-805-160-075** (du lundi au vendredi) | orienter, expliquer la procédure |
 | **Dès le premier loyer non payé** | **CAF ou MSA** | maintenir l'aide au logement, la verser directement au bailleur, exiger un plan d'apurement |
 | Avant l'audience | **FSL** (fonds de solidarité pour le logement) | aide financière, plan d'apurement — son adresse figure **dans le commandement de payer** |
 | Avant l'audience | **CCAPEX** | coordonne la prévention des expulsions, peut demander un diagnostic social |
@@ -72,17 +72,17 @@ expulsable pour autant : le bailleur doit d'abord obtenir une décision de justi
 
 ## Le commandement de payer et la clause résolutoire
 
-**Article 24 I de la loi du 6 juillet 1989** :
+**Loi du 06/07/1989, article 24 I** :
 
 > « Tout contrat de bail d'habitation contient une clause prévoyant la résiliation de plein droit du
 > contrat de location pour défaut de paiement du loyer ou des charges aux termes convenus ou pour
 > non-versement du dépôt de garantie. Cette clause ne produit effet que **six semaines** après un
 > commandement de payer demeuré infructueux. »
 
-★★ **Deux changements de la loi du 27 juillet 2023 qu'il faut avoir en tête** :
+★★ **Deux changements de la loi du 27/07/2023 qu'il faut avoir en tête** :
 
 1. **La clause est désormais obligatoire dans tout bail d'habitation.** Chercher si le bail en
-   contient une n'a plus de sens pour un bail signé depuis le **29 juillet 2023** — elle y est.
+   contient une n'a plus de sens pour un bail signé depuis le **29/07/2023** — elle y est.
 2. **Le délai est passé de deux mois à 6 semaines.** ⚠️ **Toute documentation, tout modèle de
    courrier, tout souvenir qui annonce « deux mois » est périmé** et fait perdre deux semaines de
    réaction. C'est l'erreur la plus coûteuse du sujet.
@@ -245,7 +245,7 @@ Perdre à l'audience ne ferme pas cette porte.
 **Article L412-4** : « La durée des délais prévus à l'article L. 412-3 ne peut, en aucun cas, être
 **inférieure à un mois** ni **supérieure à un an**. »
 
-⚠️ **Ce plafond de 1 an résulte de la loi du 27 juillet 2023** : les documents antérieurs annoncent
+⚠️ **Ce plafond de 1 an résulte de la loi du 27/07/2023** : les documents antérieurs annoncent
 une durée beaucoup plus longue. **Ne promettez jamais un délai lu dans une source non datée.**
 
 **Ce dont le juge tient compte** (texte de l'article) : la bonne ou mauvaise volonté de l'occupant,
@@ -269,7 +269,7 @@ par le juge pour une durée n'excédant pas **trois mois**. »
 
 ## Rester après le jugement : ce qui est puni, et ce qui ne l'est pas
 
-Depuis la loi du 27 juillet 2023, un locataire qui reste **plus de 2 mois** dans le logement après une
+Depuis la loi du 27/07/2023, un locataire qui reste **plus de 2 mois** dans le logement après une
 **décision d'expulsion définitive** peut être condamné à **7 500 €** d'amende.
 
 ★★ **Mais la sanction « ne s'applique pas durant la trêve hivernale, ni si le locataire bénéficie
@@ -326,7 +326,7 @@ impayé traité au premier mois se règle presque toujours hors du tribunal.**
 ## Ce qui reste à écrire
 
 - ★ **La résiliation judiciaire à défaut de clause résolutoire** — le cas des baux signés **avant le
-  29 juillet 2023** qui n'en contiennent pas. Le bailleur doit alors demander au juge de **prononcer**
+  29/07/2023** qui n'en contiennent pas. Le bailleur doit alors demander au juge de **prononcer**
   la résiliation, et non de la **constater** : le juge apprécie la gravité du manquement, ce qui est
   bien plus favorable au locataire. **Aucune source officielle admise n'a pu être lue sur ce régime
   dans cette passe : il n'est volontairement pas décrit ici.** C'est **le manque le plus utile à
@@ -359,13 +359,13 @@ impayé traité au premier mois se règle presque toujours hors du tribunal.**
   <https://www.service-public.gouv.fr/particuliers/actualites/A18832>
 - Impayés de loyer : un accompagnement social déclenché plus tôt (page du 12/08/2026) —
   <https://www.service-public.gouv.fr/particuliers/actualites/A19035>
-- Protections des bailleurs, loi du 27 juillet 2023 (page du 18/10/2023, **à recouper**) —
+- Protections des bailleurs, loi du 27/07/2023 (page du 18/10/2023, **à recouper**) —
   <https://www.service-public.gouv.fr/particuliers/actualites/A16854>
 - Garantie Visale (page du 23/01/2026) —
   <https://www.service-public.gouv.fr/particuliers/vosdroits/F33453>
 - Caution du locataire (page du 10/04/2025) —
   <https://www.service-public.gouv.fr/particuliers/vosdroits/F31267>
-- Loi n° 89-462 du 6 juillet 1989, article 24 (version en vigueur depuis le 29/07/2023) —
+- Loi n° 89-462 du 06/07/1989, article 24 (version en vigueur depuis le 29/07/2023) —
   <https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047900019>
 - Code des procédures civiles d'exécution, article L412-1 —
   <https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047900004>

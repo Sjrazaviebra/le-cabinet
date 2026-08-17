@@ -54,23 +54,23 @@ présentant un caractère de stabilité et de continuité » — et **s'arrête 
 
 Ce qu'il ne donne pas, dans l'ordre de ce qui fait le plus de dégâts :
 
-1. ⛔ **Aucun droit dans la succession.** Verbatim service-public : « **Vous n'avez aucun droit sur
-   l'héritage de votre concubin en cas de décès.** » Sans testament, le concubin survivant ne reçoit
-   rien — les enfants, les parents, les frères et sœurs du défunt passent avant lui.
-2. ⛔ **Aucune pension de réversion.** « **Vous n'avez pas droit à une pension de réversion en cas de
-   décès de votre concubin.** » ★★ **C'est l'écart le plus lourd, et il ne se découvre qu'au décès,
-   quand plus rien n'est réparable.** Une personne qui a réduit son activité pendant vingt ans pour
-   élever les enfants du couple ne touchera rien sur la retraite du défunt.
-3. ⛔ **Aucun droit sur le logement.** Ni pendant la vie commune (le propriétaire vend seul, le
-   signataire du bail part quand il veut), ni après le décès — sauf le transfert du bail, qui exige
-   d'avoir vécu **1 an** au moins avec le signataire à la date du décès.
-4. ⚠️ **Une fiscalité de tiers.** Même avec un testament : **60 %** de droits de succession après un
-   abattement de **1 594 €**, et **60 %** sans aucun abattement en donation. ★ **Léguer son logement
-   à son concubin peut l'obliger à le vendre pour payer l'impôt.** Le testament est nécessaire mais
-   il ne suffit pas.
-5. ⚠️ **Aucune obligation d'entraide.** Pas de devoir de secours, pas de contribution aux charges,
-   donc **aucun recours** contre celui qui part sans rien payer. Et symétriquement : pas de
-   prestation compensatoire, pas de partage. → `separation-et-divorce.md`
+- ⛔ **Aucun droit dans la succession.** Verbatim service-public : « **Vous n'avez aucun droit sur
+  l'héritage de votre concubin en cas de décès.** » Sans testament, le concubin survivant ne reçoit
+  rien — les enfants, les parents, les frères et sœurs du défunt passent avant lui.
+- ⛔ **Aucune pension de réversion.** « **Vous n'avez pas droit à une pension de réversion en cas de
+  décès de votre concubin.** » ★★ **C'est l'écart le plus lourd, et il ne se découvre qu'au décès,
+  quand plus rien n'est réparable.** Une personne qui a réduit son activité pendant des années pour
+  élever les enfants du couple ne touchera rien sur la retraite du défunt.
+- ⛔ **Aucun droit sur le logement.** Ni pendant la vie commune (le propriétaire vend seul, le
+  signataire du bail part quand il veut), ni après le décès — sauf le transfert du bail, qui exige
+  d'avoir vécu **1 an** au moins avec le signataire à la date du décès.
+- ⚠️ **Une fiscalité de tiers.** Même avec un testament : **60 %** de droits de succession après un
+  abattement de **1 594 €**, et **60 %** sans aucun abattement en donation. ★ **Léguer son logement
+  à son concubin peut l'obliger à le vendre pour payer l'impôt.** Le testament est nécessaire mais
+  il ne suffit pas.
+- ⚠️ **Aucune obligation d'entraide.** Pas de devoir de secours, pas de contribution aux charges,
+  donc **aucun recours** contre celui qui part sans rien payer. Et symétriquement : pas de
+  prestation compensatoire, pas de partage. → `separation-et-divorce.md`
 
 ★ **La seule contrepartie réelle** : l'absence de solidarité des dettes. Le concubin n'est pas tenu
 des dettes de l'autre — **sauf s'il s'est engagé expressément**, et c'est précisément ce que fait un
@@ -158,7 +158,7 @@ s'il a été fait fraude à leurs droits, peuvent attaquer le changement de rég
 
 C'est le point qui surprend le plus, et il se joue sur deux étages qu'on confond tout le temps.
 
-### Étage 1 — la solidarité, qui ne dépend PAS du régime
+### Premier étage — la solidarité, qui ne dépend PAS du régime
 
 **Article 220, alinéa 1** : « **Chacun des époux a pouvoir pour passer seul les contrats qui ont pour
 objet l'entretien du ménage ou l'éducation des enfants : toute dette ainsi contractée par l'un oblige
@@ -169,7 +169,7 @@ des régimes matrimoniaux.** Il s'applique donc **quel que soit le régime — s
 comprise**. C'est l'erreur la plus fréquente : on se marie en séparation de biens en croyant être à
 l'abri des dettes de l'autre, et on reste solidaire de tout ce qui touche au ménage et aux enfants.
 
-**Les deux échappatoires, alinéas 2 et 3 :**
+**Les deux échappatoires, aux alinéas suivants :**
 
 - pas de solidarité « pour des **dépenses manifestement excessives**, eu égard au train de vie du
   ménage, à l'utilité ou à l'inutilité de l'opération, à la bonne ou mauvaise foi du tiers
@@ -182,7 +182,7 @@ l'abri des dettes de l'autre, et on reste solidaire de tout ce qui touche au mé
 l'un d'eux **pour les besoins de la vie courante** », avec les mêmes exceptions. **L'éducation des
 enfants n'y figure pas** — l'article 220 la vise, l'article 515-4 non.
 
-### Étage 2 — l'assiette saisissable, qui dépend du régime
+### Second étage — l'assiette saisissable, qui dépend du régime
 
 **Article 1413** : « **Le paiement des dettes dont chaque époux est tenu, pour quelque cause que ce
 soit, pendant la communauté, peut toujours être poursuivi sur les biens communs**, à moins qu'il n'y
@@ -226,8 +226,8 @@ Trois articles, très courts, et qui portent tout le reste :
 - **Article 214** — à défaut de conventions matrimoniales, les époux contribuent aux charges du
   mariage « **à proportion de leurs facultés respectives** », et « si l'un des époux ne remplit pas
   ses obligations, **il peut y être contraint par l'autre** ».
-- **Article 215, alinéas 1 et 2** — communauté de vie ; la résidence de la famille est au lieu choisi
-  d'un commun accord.
+- **Article 215, premiers alinéas** — communauté de vie ; la résidence de la famille est au lieu
+  choisi d'un commun accord.
 
 ★ **L'article 214 est une action en justice, pas un principe décoratif.** Un époux qui cesse de
 contribuer aux charges du ménage **pendant** le mariage peut y être contraint — sans divorcer et sans

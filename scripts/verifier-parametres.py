@@ -85,6 +85,10 @@ def nombres(texte):
     # Numérotation européenne d'un règlement ou d'une directive : 2016/679.
     texte = re.sub(r"\b\d{4}/\d{1,4}\b", " ", texte)
     texte = re.sub(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b", " ", texte)
+    # Numéro de téléphone français : 10 chiffres commençant par 0, quel que soit le séparateur.
+    # ⚠️ Un numéro reste une valeur À SOURCER — il vit dans le JSON comme les autres — mais il ne
+    # doit pas être découpé en morceaux par le contrôle (« 0-805-160-075 » → « 805 » et « 075 »).
+    texte = re.sub(r"\b0[\s.\-]*(?:\d[\s.\-]*){9}", " ", texte)
     texte = re.sub(r"\b\d{1,2}\s+(?:janvier|février|mars|avril|mai|juin|juillet|"
                    r"août|septembre|octobre|novembre|décembre)\b", " ", texte, flags=re.I)
     trouves = set()

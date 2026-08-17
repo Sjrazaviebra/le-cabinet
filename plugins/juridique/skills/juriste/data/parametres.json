@@ -1607,6 +1607,62 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
       "date_verifiee": null,
       "note": "Montants tarifes non retenus faute de lecture fiable de la page. Un tarif invente ferait plus de degats qu un blanc. A chiffrer sur le tarif officiel des commissaires de justice."
+    },
+    "frais_greffe_tribunal_de_commerce_euros": {
+      "valeur": 33.47,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "Creance commerciale hors Alsace Moselle. Page service public verifiee le 6 fevrier 2026 soit plus de six mois : a recontroler."
+    },
+    "frais_greffe_tribunal_judiciaire_euros": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "La requete est gratuite devant le tribunal judiciaire. Page verifiee le 6 fevrier 2026 soit plus de six mois : a recontroler."
+    },
+    "frais_greffe_tribunal_de_commerce_euros_bis": {
+      "valeur": 33.47,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "Creance commerciale hors Alsace Moselle. Page verifiee le 6 fevrier 2026 soit plus de six mois : a recontroler."
+    },
+    "delai_signification_ordonnance_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006149784/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1411 du code de procedure civile, version en vigueur depuis le 1er avril 2026 : l ordonnance est non avenue si elle n a pas ete signifiee dans les trois mois de sa date. VALEUR RETENUE, le texte fait foi."
+    },
+    "delai_signification_ordonnance_valeur_perimee_fiche_service_public_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1746",
+      "date_verifiee": null,
+      "note": "NE PAS UTILISER. Valeur annoncee par la fiche service public verifiee le 6 fevrier 2026, anterieure a la version de l article 1411 entree en vigueur le 1er avril 2026 qui dit trois mois. Conservee ici pour signaler la contradiction."
+    },
+    "delai_opposition_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006412571",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1416 du code de procedure civile, version en vigueur depuis le 1er janvier 1982. Si la signification n a pas ete faite a personne le delai ne court qu a compter du premier acte signifie a personne ou de la premiere mesure d execution rendant les biens indisponibles."
+    },
+    "delai_opposition_suspensif_execution": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006149784/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1422 du code de procedure civile, version en vigueur depuis le 1er avril 2026 : quelles que soient les modalites de la signification le delai d opposition est suspensif d execution, et l opposition formee dans ce delai l est aussi."
     }
   },
   "voies_de_recours": {
@@ -1731,6 +1787,102 @@
       "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
       "date_verifiee": "2026-08-17",
       "note": "Hors residence principale. Critere eliminatoire comme le patrimoine mobilier."
+    },
+    "plafond_rfr_aide_totale_personne_seule_euros": {
+      "valeur": 12957,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Revenu fiscal de reference, personne seule, bareme 2026. Page verifiee le 12 juin 2026."
+    },
+    "taux_aide_totale_pourcent": {
+      "valeur": 100,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge integrale en aide totale."
+    },
+    "borne_basse_aide_partielle_55_euros": {
+      "valeur": 12958,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Debut de la tranche a cinquante cinq pour cent, personne seule, bareme 2026."
+    },
+    "borne_haute_aide_partielle_55_euros": {
+      "valeur": 15316,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Fin de la tranche a cinquante cinq pour cent, personne seule, bareme 2026."
+    },
+    "taux_aide_partielle_haute_pourcent": {
+      "valeur": 55,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge pour la premiere tranche d aide partielle."
+    },
+    "borne_basse_aide_partielle_25_euros": {
+      "valeur": 15317,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Debut de la tranche a vingt cinq pour cent, personne seule, bareme 2026."
+    },
+    "borne_haute_aide_partielle_25_euros": {
+      "valeur": 19433,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond d admission a l aide juridictionnelle partielle, personne seule, bareme 2026."
+    },
+    "taux_aide_partielle_basse_pourcent": {
+      "valeur": 25,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Prise en charge pour la seconde tranche d aide partielle."
+    },
+    "plafond_patrimoine_mobilier_personne_seule_euros": {
+      "valeur": 12957,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de patrimoine mobilier, personne seule, bareme 2026."
+    },
+    "plafond_patrimoine_immobilier_personne_seule_euros": {
+      "valeur": 38866,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Plafond de patrimoine immobilier hors residence principale, personne seule, bareme 2026."
+    },
+    "droit_de_plaidoirie_non_couvert_euros": {
+      "valeur": 13,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18074",
+      "date_verifiee": "2026-08-17",
+      "note": "Le droit de plaidoirie reste du malgre l aide juridictionnelle, comme les honoraires d expert et les sommes auxquelles on est condamne."
+    },
+    "correctifs_par_personne_a_charge_euros": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "NON RELEVE. Les seuils sont corriges selon la composition du foyer mais le montant par personne a charge n a pas ete verifie. Passer par le simulateur officiel."
     }
   },
   "societes_assemblees_et_comptes": {
@@ -2223,6 +2375,378 @@
       "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
       "date_verifiee": null,
       "note": "La mention autoliquidation pour un preneur assujetti etabli dans l Union est attestee. La mention exacte a porter pour un preneur assujetti etabli HORS Union n a ete relevee qu en reformulation, pas en citation exacte : a confirmer avec le role comptable."
+    }
+  },
+  "interet_legal": {
+    "taux_simple_creancier_particulier_pourcent": {
+      "valeur": 6.84,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026, page service public verifiee le 1er juillet 2026. Le taux depend de la qualite du CREANCIER et change chaque semestre."
+    },
+    "taux_simple_autres_cas_pourcent": {
+      "valeur": 2.75,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Cas ou le creancier n est pas un particulier. Change chaque semestre."
+    },
+    "taux_majore_creancier_particulier_pourcent": {
+      "valeur": 11.67,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela de deux mois suivant la date d application du jugement."
+    },
+    "taux_majore_autres_cas_pourcent": {
+      "valeur": 7.62,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela de deux mois suivant la date d application du jugement."
+    },
+    "taux_simple_creancier_particulier_pourcent_bis": {
+      "valeur": 6.84,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026, page verifiee le 1er juillet 2026. Le taux depend de la qualite du CREANCIER et change chaque semestre."
+    },
+    "taux_majore_creancier_particulier_pourcent_bis": {
+      "valeur": 11.67,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela du delai suivant une decision de justice."
+    },
+    "taux_majore_autres_cas_pourcent_bis": {
+      "valeur": 7.62,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Second semestre 2026. Taux majore applicable au dela du delai suivant une decision de justice."
+    },
+    "majoration_points": {
+      "valeur": 5,
+      "unite": "points",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Depuis 2015 le taux majore correspond au taux d interet legal simple augmente de cinq points."
+    },
+    "delai_avant_majoration_apres_jugement_mois": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20688",
+      "date_verifiee": "2026-08-17",
+      "note": "Interets simples sur les deux premiers mois suivant la date d application du jugement puis interets majores au dela."
+    }
+  },
+  "cout_procedure": {
+    "timbre_fiscal_appel_euros": {
+      "valeur": 225,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre fiscal du en appel, contre cinquante euros en premiere instance. Page service public verifiee le 10 avril 2026."
+    },
+    "timbre_fiscal_premiere_instance_euros": {
+      "valeur": 50,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Contribution due pour les procedures engagees a compter du 1er mars 2026, condition de recevabilite. Page verifiee le 10 avril 2026. Non due par le beneficiaire de l aide juridictionnelle ni pour une injonction de payer."
+    },
+    "timbre_fiscal_appel_euros_bis": {
+      "valeur": 225,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Timbre du en appel. Page verifiee le 10 avril 2026."
+    },
+    "validite_timbre_mois": {
+      "valeur": 12,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Valable douze mois a compter de la date d achat. Achat uniquement en ligne."
+    },
+    "delai_remboursement_timbre_mois": {
+      "valeur": 18,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33227",
+      "date_verifiee": "2026-08-17",
+      "note": "Remboursement possible dix huit mois a compter de la date d achat si le timbre n a pas ete utilise."
+    },
+    "frais_execution_forcee_a_la_charge_du_debiteur": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028747701",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-8 du code des procedures civiles d execution, version en vigueur depuis le 19 mars 2014. Exception des droits proportionnels de recouvrement ou d encaissement mis partiellement a la charge des creanciers."
+    },
+    "frais_recouvrement_sans_titre_a_la_charge_du_creancier": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028747701",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-8 : les frais de recouvrement entrepris sans titre executoire restent a la charge du creancier et toute stipulation contraire est reputee non ecrite. La ligne de partage est le titre."
+    },
+    "tarif_commissaire_de_justice_euros": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "NON VERIFIE. Tarif reglemente de la signification, de l assignation et des actes d execution non releve dans cette passe. Ne pas avancer de montant."
+    },
+    "honoraires_avocat_euros": {
+      "valeur": null,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "NON CHIFFRABLE. Honoraires libres, aucun bareme officiel a citer."
+    }
+  },
+  "prescription": {
+    "delai_droit_commun_annees": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017112",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2224 du code civil, version en vigueur depuis le 19 juin 2008. Point de depart au jour ou le titulaire du droit a connu ou aurait du connaitre les faits."
+    },
+    "delai_professionnel_contre_consommateur_annees": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032226897",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L218-2 du code de la consommation, version en vigueur depuis le 1er juillet 2016. Contre intuitif : le professionnel a MOINS de temps que le droit commun."
+    },
+    "reprise_minimale_apres_mediation_ou_conciliation_mois": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032042671",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2238 du code civil, version en vigueur depuis le 1er octobre 2016. La mediation ou la conciliation suspend la prescription et le delai reprend pour une duree qui ne peut etre inferieure a six mois."
+    },
+    "mise_en_demeure_interrompt_la_prescription": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136436/",
+      "date_verifiee": "2026-08-17",
+      "note": "Les causes d interruption sont limitativement enumerees aux articles 2240 a 2246 du code civil : reconnaissance du debiteur, demande en justice meme en refere, mesure conservatoire ou acte d execution forcee. Ni mise en demeure ni lettre recommandee n y figurent."
+    },
+    "duree_execution_titre_executoire_annees": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000025025648",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-4 du code des procedures civiles d execution, version en vigueur depuis le 1er juin 2012. Vaut pour les titres des 1 a 3 de l article L111-3."
+    }
+  },
+  "mise_en_demeure": {
+    "forme_imposee": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000032035271/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1344 du code civil, version en vigueur depuis le 1er octobre 2016 : sommation ou acte portant interpellation suffisante, ou seule exigibilite si le contrat le prevoit. Le recommande avec avis de reception est une preuve de date, pas une condition de validite."
+    },
+    "declenche_interet_moratoire_sans_preuve_de_prejudice": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000032035271/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 1344-1 du code civil, version en vigueur depuis le 1er octobre 2016. L article 1344-2 met en outre les risques de la chose a livrer a la charge du debiteur."
+    }
+  },
+  "amiable_obligatoire": {
+    "seuil_tentative_amiable_prealable_euros": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 750-1 du code de procedure civile, version en vigueur depuis le 13 mai 2023, applicable aux instances introduites a compter du 1er octobre 2023. Somme n excedant pas cinq mille euros. Sanction : irrecevabilite que le juge peut prononcer d office."
+    },
+    "trouble_anormal_de_voisinage_soumis_sans_condition_de_montant": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 750-1 vise le trouble anormal de voisinage sans plafond de montant, a la difference des demandes en paiement."
+    },
+    "dispense_indisponibilite_conciliateur_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039501708/",
+      "date_verifiee": "2026-08-17",
+      "note": "Motif legitime si l indisponibilite des conciliateurs de justice conduit a une premiere reunion dans un delai superieur a trois mois a compter de la saisine."
+    }
+  },
+  "conciliation_mediation": {
+    "cout_conciliateur_de_justice_euros": {
+      "valeur": 0,
+      "unite": "euros",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1736",
+      "date_verifiee": null,
+      "note": "Le recours au conciliateur de justice est gratuit. Page service-public verifiee le 1er septembre 2025 soit pres d un an : a recontroler."
+    },
+    "mediateur_civil_payant": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1822",
+      "date_verifiee": null,
+      "note": "Le recours a un mediateur est payant. Frais repartis a parts egales entre les parties a defaut d accord, le juge pouvant corriger. Page verifiee le 1er septembre 2025 : a recontroler."
+    },
+    "duree_initiale_mission_judiciaire_mois": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1822",
+      "date_verifiee": null,
+      "note": "Duree maximale initiale de la mediation ou de la conciliation ordonnee par un juge. Pages verifiees le 1er septembre 2025 : a recontroler."
+    },
+    "prolongation_mission_judiciaire_mois": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": true,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1822",
+      "date_verifiee": null,
+      "note": "Prolongation possible une fois. Pages verifiees le 1er septembre 2025 : a recontroler."
+    },
+    "accord_amiable_peut_devenir_titre_executoire": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036891163",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-3 du code des procedures civiles d execution, version en vigueur depuis le 25 avril 2026 : accords auxquels une juridiction a confere force executoire, extraits de proces verbaux de conciliation signes par le juge et les parties, transactions et accords de mediation contresignes par avocats et revetus de la formule executoire."
+    }
+  },
+  "procedure_simplifiee_petites_creances": {
+    "plafond_creance_euros": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039624858",
+      "date_verifiee": "2026-08-17",
+      "note": "Article R125-1 du code des procedures civiles d execution, version en vigueur depuis le 1er janvier 2020 : le montant en principal et interets ne doit pas exceder cinq mille euros."
+    },
+    "duree_procedure_mois": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038310700",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L125-1 du code des procedures civiles d execution, version en vigueur depuis le 25 avril 2026. Se deroule dans un delai d un mois a compter de l envoi du courrier du commissaire de justice."
+    },
+    "frais_a_la_charge_exclusive_du_creancier": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038310700",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L125-1 : les frais de toute nature qu occasionne la procedure sont a la charge exclusive du creancier. La procedure exige l accord du debiteur, lequel suspend la prescription."
+    }
+  },
+  "refere": {
+    "urgence_exigee_pour_refere_provision": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": true,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F38405",
+      "date_verifiee": null,
+      "note": "Il n est pas necessaire de justifier d une situation d urgence mais la creance ne doit pas etre serieusement contestable et son montant doit etre determine. Page verifiee le 27 novembre 2024 : a recontroler."
+    },
+    "refere_interrompt_la_prescription": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017098",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 2241 du code civil, version en vigueur depuis le 19 juin 2008 : la demande en justice meme en refere interrompt le delai de prescription ainsi que le delai de forclusion."
+    }
+  },
+  "competence_juridictionnelle": {
+    "seuil_avocat_obligatoire_euros": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1378",
+      "date_verifiee": "2026-08-17",
+      "note": "Avocat obligatoire au dela de dix mille euros. Page verifiee le 1er mars 2026. Meme seuil confirme par la fiche injonction de payer et la fiche refere provision."
+    },
+    "seuil_tribunal_de_proximite_euros": {
+      "valeur": 10000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20851",
+      "date_verifiee": "2026-08-17",
+      "note": "Litiges d un montant inferieur ou egal a dix mille euros hors matieres specialisees. Page verifiee le 1er mars 2026."
+    },
+    "seuil_saisine_par_requete_euros": {
+      "valeur": 5000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F20851",
+      "date_verifiee": "2026-08-17",
+      "note": "Requete pour les demandes inferieures ou egales a cinq mille euros, assignation au dela. Page verifiee le 1er mars 2026. Ne pas confondre avec le seuil de dix mille euros de l avocat obligatoire."
+    }
+  },
+  "titre_executoire": {
+    "liste_limitative": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036891163",
+      "date_verifiee": "2026-08-17",
+      "note": "Article L111-3 du code des procedures civiles d execution, version en vigueur depuis le 25 avril 2026 : Seuls constituent des titres executoires. Une reconnaissance de dette signee ou un courriel d aveu sont des preuves, pas des titres."
+    },
+    "acte_notarie_vaut_titre_executoire": {
+      "valeur": true,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036891163",
+      "date_verifiee": "2026-08-17",
+      "note": "Les actes notaries revetus de la formule executoire figurent dans la liste de l article L111-3 : un titre s obtient sans juge."
+    },
+    "solvabilite_du_debiteur_garantie_par_un_texte": {
+      "valeur": false,
+      "unite": "booleen",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028747701",
+      "date_verifiee": "2026-08-17",
+      "note": "Aucun des textes consultes ne garantit l existence d un bien ou d un revenu saisissable. Gagner et etre paye sont deux procedures distinctes."
     }
   }
 }

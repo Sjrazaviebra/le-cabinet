@@ -2098,5 +2098,429 @@
       "date_verifiee": "2026-08-17",
       "note": "Decouverte d une activite occulte, sans mise en demeure prealable. Rare en succession mais la page service-public annonce une fourchette de majoration allant jusqu a ce taux. Document du 08/03/2017, a recouper."
     }
+  },
+  "famille_filiation_etablissement": {
+    "presomption_paternite_ecartee_naissance_apres_demande_de_divorce": {
+      "valeur": 300,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15393",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption de paternite du mari est ECARTEE si l enfant nait plus de 300 jours apres la demande de divorce ou le depot de la convention chez le notaire  Page verifiee le 08/07/2026  ★ la presomption peut etre RETABLIE par la possession d etat ou en justice  donc un pere marie a qui l on refuse l inscription n est pas sans recours"
+    },
+    "presomption_paternite_ecartee_naissance_apres_reconciliation": {
+      "valeur": 180,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15393",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption est aussi ecartee si l enfant nait MOINS de 180 jours apres un rejet definitif de la demande de divorce ou une reconciliation  Page verifiee le 08/07/2026  Autres cas d exclusion  mere qui ne mentionne pas le mariage a la declaration de naissance  enfant deja reconnu par un autre homme avant la naissance"
+    },
+    "reconnaissance_cout_devant_notaire": {
+      "valeur": 75.46,
+      "unite": "EUR HT",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F887",
+      "date_verifiee": "2026-08-17",
+      "note": "★ En MAIRIE la reconnaissance est GRATUITE  n importe quelle mairie  avant la naissance a la declaration de naissance ou apres  Chez un notaire elle coute 75,46 EUR HT  ⚠ page du 27/01/2026 donc plus de 6 mois  a recouper  ⛔ pour un couple non marie la reconnaissance par le pere est OBLIGATOIRE pour etablir la filiation  pas de reconnaissance = pas de filiation = pas de pension"
+    },
+    "reconnaissance_tardive_delai_perte_exercice_autorite_parentale": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043895534",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 372 alinea 2 en vigueur depuis le 04/08/2021  reconnaitre son enfant PLUS D UN AN apres la naissance alors que la filiation est deja etablie a l egard de l autre parent  celui-ci reste SEUL investi de l exercice de l autorite parentale  La filiation est bien etablie  nom pension succession  mais pas l EXERCICE  ⚠ personne ne le dit au guichet  Sortie prevue par le meme article  declaration conjointe au directeur des services de greffe judiciaires du tribunal judiciaire  sans juge et sans avocat  ou decision du juge aux affaires familiales si l autre parent refuse"
+    },
+    "presomption_paternite_ecartee_naissance_apres_demande_de_divorce_bis": {
+      "valeur": 300,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15393",
+      "date_verifiee": "2026-08-17",
+      "note": "La presomption de paternite du mari est ECARTEE si l enfant nait plus de 300 jours apres la demande de divorce ou le depot de la convention chez le notaire  Page verifiee le 08/07/2026  ★ la presomption peut etre RETABLIE par la possession d etat ou en justice  donc un pere marie qui se voit refuser l inscription n est pas sans recours"
+    },
+    "acte_de_notoriete_delai_de_demande": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15395",
+      "date_verifiee": "2026-08-17",
+      "note": "Constatation de la possession d etat par acte de notoriete devant notaire  demande dans les 5 ans a compter de la cessation de la possession d etat ou du deces du parent pretendu  ⚠ date de mise a jour de la page non relevee  a recouper  ★ c est la voie quand la vie de famille a existe mais qu aucun titre n a jamais ete etabli"
+    },
+    "acte_de_notoriete_nombre_minimal_de_temoins": {
+      "valeur": 3,
+      "unite": "temoins",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15395",
+      "date_verifiee": "2026-08-17",
+      "note": "Le notaire recueille au moins 3 temoignages plus des pieces  photos documents medicaux justificatifs d achats  La possession d etat doit etre constante continue et non equivoque  vie de famille reelle  participation a l entretien et a l education  lien reconnu par l entourage"
+    }
+  },
+  "famille_autorite_parentale": {
+    "amende_civile_maximale": {
+      "valeur": 10000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041595401/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 373-2-6 dernier alinea en vigueur depuis le 21/02/2024  amende civile d un montant qui ne peut exceder 10 000 EUR contre le parent qui fait deliberement obstacle de facon GRAVE OU RENOUVELEE a l execution d un des titres de l article 373-2-2 I 1° a 6°  Levier reel quand la plainte penale parait disproportionnee ou trop lente  Le meme montant est indique par service-public F34355 comme sanction du non-respect d une injonction de rencontrer un mediateur familial  ★ le meme article permet aussi une ASTREINTE meme d office  y compris greffee sur une decision rendue par UN AUTRE JUGE ou sur un simple accord parental"
+    }
+  },
+  "famille_pension_impayee": {
+    "abandon_de_famille_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-3 du code penal version en vigueur depuis le 01/03/2022  15 000 euros d amende  assortis de deux ans d emprisonnement apres plus de deux mois sans s acquitter INTEGRALEMENT  Meme montant d amende que la non-representation d enfant de l article 227-5  ⚠ ce sont deux infractions DISTINCTES  aucun des textes ne fait de l impaye une excuse de la non-representation ni l inverse  ⇒ deux torts ne s annulent pas  ils s additionnent"
+    },
+    "ifpa_frais_de_gestion_recouvrement_amiable": {
+      "valeur": 7.5,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Frais de gestion de 7,5 pourcent en cas d impaye traite en recouvrement amiable par l Aripa  a la charge du debiteur defaillant  pas du creancier  Le service d intermediation lui-meme est gratuit pour les deux parents  Page du 01/04/2026"
+    },
+    "asf_montant_mensuel_par_enfant": {
+      "valeur": 200.78,
+      "unite": "EUR par mois et par enfant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Allocation de soutien familial  200,78 EUR par mois et par enfant  montants au 01/04/2026  Meme valeur que le SEUIL  si l autre parent verse une pension INFERIEURE a 200,78 EUR l ASF differentielle comble la difference  sauf si cette difference est inferieure a 15 EUR  ★ la Caf ou la MSA peut agir A VOTRE PLACE ET POUR VOTRE COMPTE pour recuperer la pension  ⚠ montant a re-verifier chaque annee au 1er avril"
+    },
+    "abandon_de_famille_duree_de_non_paiement": {
+      "valeur": 2,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 227-3 du code penal version en vigueur depuis le 01/03/2022  en demeurant PLUS DE DEUX MOIS sans s acquitter INTEGRALEMENT de cette obligation  Deux mois  pas six  pas un an  ⚠ integralement compte  payer une partie ne fait pas disparaitre le delit  ★ le delit vise aussi les titres NON judiciaires  article 373-2-2 I 2° a 6°  convention homologuee  convention de divorce par consentement mutuel  acte notarie  convention validee par la Caf  accord de mediation revetu de la formule executoire  ⇒ pas besoin d un jugement pour porter plainte  ★★ 2e alinea  le non-paiement entre les mains de l organisme assurant l intermediation est puni des MEMES peines"
+    },
+    "abandon_de_famille_emprisonnement": {
+      "valeur": 2,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-3 du code penal  deux ans d emprisonnement  ⚠ s applique aussi au parent qui cesse de payer le jour de la majorite de l enfant alors qu un titre executoire court toujours  article 371-2 alinea 2  l obligation ne cesse PAS de plein droit a la majorite  ⛔ une decision de justice ne se corrige pas en arretant de l executer  il faut faire MODIFIER le titre"
+    },
+    "abandon_de_famille_amende_bis": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041398585/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-3 du code penal  15 000 euros d amende  Meme montant que la non-representation d enfant de l article 227-5  ⚠ ce sont deux infractions DISTINCTES  aucun des textes ne fait de l impaye une excuse de la non-representation ni l inverse  ⇒ deux torts ne s annulent pas  ils s additionnent"
+    },
+    "organisation_frauduleuse_insolvabilite_emprisonnement": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "Cas aggrave signale par service-public  organisation frauduleuse d insolvabilite  3 ans d emprisonnement  ⚠ la qualification retenue commande la peine  point a laisser au penaliste et non a trancher dans une reponse  Page du 30/01/2026 donc plus de 6 mois  a recouper"
+    },
+    "organisation_frauduleuse_insolvabilite_amende": {
+      "valeur": 45000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "Cas aggrave signale par service-public  organisation frauduleuse d insolvabilite  45 000 EUR d amende  ⚠ qualification a laisser au penaliste  Page du 30/01/2026  a recouper"
+    },
+    "arrieres_recuperables_duree_generale": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "Les arrieres de pension sont recuperables jusqu a 5 ans en arriere  ★ inclut les REVALORISATIONS ANNUELLES non appliquees  qui sont une dette comme le reste et que presque personne ne reclame  Page du 30/01/2026  a recouper"
+    },
+    "paiement_direct_arrieres_duree": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1249",
+      "date_verifiee": "2026-08-17",
+      "note": "★ ⚠ La procedure de paiement direct par commissaire de justice ne porte que sur les 6 DERNIERS MOIS d arrieres  c est la voie la plus rapide et la plus COURTE  la confondre avec un recouvrement general fait perdre les arrieres plus anciens  ⇒ il faut la CUMULER avec une autre voie  intermediation Aripa  saisie  recouvrement public par le Tresor apres echec des autres procedures  et non s en contenter"
+    },
+    "ifpa_cout_pour_les_parents": {
+      "valeur": 0,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ L intermediation financiere des pensions alimentaires est GRATUITE pour les 2 parents  aucun frais de mise en place  Aripa geree par la Caf ou la MSA  ★★ LA PHRASE DECISIVE  la demarche est possible MEME SANS L ACCORD DE L AUTRE PARENT  le reflexe il faudra bien qu il signe quelque chose est FAUX  IFPA systematique quand un titre executoire fixe une pension  loi du 23/12/2021  ecartee seulement si les 2 parents la refusent  ⛔ IMPOSEE en cas de violences intrafamiliales  Page du 01/04/2026"
+    },
+    "ifpa_arrieres_recouvrables": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "L intervention de l Aripa va jusqu au recouvrement des arrieres des 5 ans qui precedent la mise en place de l intermediation  ⚠ EXCLUSIONS de l IFPA  pension versee DIRECTEMENT A L ENFANT  pension due a ses propres parents  devoir de secours entre epoux  ★ consequence contre-intuitive  faire verser la pension d un enfant majeur entre ses mains article 373-2-5 fait SORTIR la creance du dispositif  plus digne mais moins protecteur  a arbitrer consciemment"
+    },
+    "ifpa_delai_premier_versement": {
+      "valeur": 60,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Premier versement au plus tard 60 jours apres reception des informations  ensuite reversement au creancier le lendemain de la reception du paiement du debiteur  ★ autre avantage jamais mis en avant  quand l IFPA est en place la Caf applique la REVALORISATION ANNUELLE automatiquement  alors qu autrement c est au debiteur de la calculer spontanement"
+    },
+    "ifpa_frais_de_gestion_recouvrement_amiable_bis": {
+      "valeur": 7.5,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Frais de gestion de 7,5 pourcent en cas d impaye traite en recouvrement amiable  a la charge du debiteur defaillant  pas du creancier  Page du 01/04/2026"
+    },
+    "ifpa_frais_de_gestion_recouvrement_force": {
+      "valeur": 10,
+      "unite": "pourcent",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36407",
+      "date_verifiee": "2026-08-17",
+      "note": "Frais de gestion de 10 pourcent en recouvrement force  a la charge du debiteur defaillant  Moyens du recouvrement force  paiement direct aupres de l employeur de la banque d une caisse de retraite ou de France Travail  recouvrement public par l administration fiscale notamment pour les debiteurs independants"
+    },
+    "asf_montant_mensuel_par_enfant_bis": {
+      "valeur": 200.78,
+      "unite": "EUR par mois et par enfant",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Allocation de soutien familial  200,78 EUR par mois et par enfant  montants au 01/04/2026  Meme valeur que le SEUIL  si l autre parent verse une pension INFERIEURE a 200,78 EUR l ASF differentielle comble la difference  ★ la Caf ou la MSA peut agir A VOTRE PLACE ET POUR VOTRE COMPTE pour recuperer la pension  ⚠ montant a re-verifier chaque annee au 1er avril"
+    },
+    "asf_seuil_de_non_versement_du_differentiel": {
+      "valeur": 15,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "Si la difference entre la pension versee et le montant de l ASF est inferieure a 15 EUR l ASF differentielle n est PAS versee  Piege a connaitre avant de promettre un complement"
+    },
+    "asf_duree_minimale_de_non_participation": {
+      "valeur": 1,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "Condition  au moins un enfant a charge pour lequel l autre parent ne participe plus a l entretien depuis au moins 1 mois  Il faut aussi vivre seul et resider en France  ★ un seul mois suffit  beaucoup de gens attendent des annees en croyant qu il faut un long historique"
+    },
+    "asf_delai_pour_engager_une_action": {
+      "valeur": 4,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F815",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ ★ CONTREPARTIE DE L ASF  quand aucune pension n est fixee le beneficiaire a 4 mois pour engager une action devant le juge aux affaires familiales afin de faire fixer ou reviser la pension  ⛔ delai decouvert trop tard dans la pratique  le DIRE AVANT  L ASF n est pas un cadeau sans obligation"
+    }
+  },
+  "famille_atteintes_penales_autorite_parentale": {
+    "defaut_notification_changement_domicile_amende": {
+      "valeur": 7500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-6 du code penal  7 500 EUR d amende et six mois d emprisonnement pour defaut de notification d un changement de domicile  ⚠ cote civil l article 373-2 exige une information prealable et EN TEMPS UTILE  ⛔ CROYANCE FAUSSE A DEMONTER  il n existe AUCUN preavis chiffre  ni un mois ni deux ni quinze jours  ce qui compte est la PREUVE d avoir informe  un ecrit date  ⛔ exception  cet alinea ne s applique pas au parent autorise a dissimuler son domicile dans le cadre d une ordonnance de protection requise contre l autre parent"
+    },
+    "non_representation_enfant_emprisonnement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-5 du code penal verbatim  Le fait de refuser INDUMENT de representer un enfant mineur a la personne qui a le droit de le reclamer est puni d un an d emprisonnement  ⚠ retenir l enfant parce que la pension n est pas versee expose a ce texte SANS effacer la dette"
+    },
+    "non_representation_enfant_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-5 du code penal  15 000 EUR d amende"
+    },
+    "soustraction_enfant_par_ascendant_emprisonnement": {
+      "valeur": 1,
+      "unite": "an",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-7 du code penal  soustraction d un enfant mineur des mains de ceux qui exercent l autorite parentale par un ASCENDANT  un an d emprisonnement"
+    },
+    "soustraction_enfant_par_ascendant_amende": {
+      "valeur": 15000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-7 du code penal  15 000 EUR d amende  La tentative est punie des memes peines  article 227-11"
+    },
+    "soustraction_aggravee_emprisonnement": {
+      "valeur": 3,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 227-9 du code penal  les faits des articles 227-5 et 227-7 passent a trois ans d emprisonnement si l enfant est retenu au-dela de cinq jours sans qu on sache ou il se trouve OU s il est retenu indument HORS DU TERRITOIRE DE LA REPUBLIQUE  ⇒ hors de France aggrave IMMEDIATEMENT sans condition de duree  un non-retour de vacances a l etranger n est pas la meme infraction qu un non-retour de week-end  on passe de 1 an a 3 ans"
+    },
+    "soustraction_aggravee_amende": {
+      "valeur": 45000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-9 du code penal  45 000 EUR d amende dans les cas aggraves  Article 227-10  memes peines lorsque l auteur a ete dechu de l autorite parentale"
+    },
+    "soustraction_aggravee_duree_de_retention": {
+      "valeur": 5,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-9 1°  enfant mineur retenu AU-DELA DE CINQ JOURS sans que les detenteurs du droit de le reclamer sachent ou il se trouve  ⚠ ce seuil ne s applique PAS au cas hors du territoire qui est aggrave sans condition de duree"
+    },
+    "soustraction_par_non_ascendant_emprisonnement": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-8 du code penal  soustraction d un enfant mineur par une personne AUTRE qu un ascendant  cinq ans d emprisonnement  ⇒ la peine est bien plus lourde que pour un ascendant"
+    },
+    "soustraction_par_non_ascendant_amende": {
+      "valeur": 75000,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-8 du code penal  75 000 EUR d amende  La tentative est punie des memes peines  article 227-11"
+    },
+    "defaut_notification_changement_domicile_emprisonnement": {
+      "valeur": 6,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Article 227-6 du code penal  defaut de notification d un changement de domicile  six mois d emprisonnement  Pendant PENAL de l obligation civile de l article 373-2  presque personne ne le connait  ⇒ dire que le silence de l autre parent sur son demenagement est une INFRACTION et pas seulement une incorrection change la facon d agir"
+    },
+    "defaut_notification_changement_domicile_amende_bis": {
+      "valeur": 7500,
+      "unite": "EUR",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070719/LEGISCTA000006165319",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 227-6 du code penal  7 500 EUR d amende  ⚠ cote civil l article 373-2 exige une information prealable et EN TEMPS UTILE  ⛔ CROYANCE FAUSSE A DEMONTER  il n existe AUCUN preavis chiffre  ni un mois ni deux ni quinze jours  ce qui compte est la PREUVE d avoir informe  un ecrit date  ⛔ exception  cet alinea ne s applique pas au parent autorise a dissimuler son domicile dans le cadre d une ordonnance de protection requise contre l autre parent"
+    }
+  },
+  "famille_filiation_contestation": {
+    "possession_etat_duree_rendant_filiation_incontestable": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150526/",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Article 333 alinea 2 verbatim  Nul a l exception du ministere public ne peut contester la filiation lorsque la possession d etat conforme au titre a dure au moins cinq ans depuis la naissance ou la reconnaissance  ⇒ celui qui a eleve l enfant cinq ans ne peut plus etre delie de cette paternite  et le pere biologique ne peut plus rien reclamer  ⛔ le temps qui passe VERROUILLE  c est la regle qui surprend le plus"
+    },
+    "contestation_delai_avec_possession_etat": {
+      "valeur": 5,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 333 alinea 1  possession d etat conforme au titre depuis moins de 5 ans  seuls peuvent agir l enfant l un des parents ou celui qui se pretend le parent veritable  prescription de 5 ans a compter du jour ou la possession d etat a CESSE ou du deces du parent dont le lien est conteste  ★ le point de depart n est pas la naissance"
+    },
+    "contestation_delai_sans_possession_etat": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Articles 334 et 321  a defaut de possession d etat conforme au titre l action est ouverte a TOUTE PERSONNE QUI Y A INTERET  y compris un heritier  dans le delai de l article 321  dix ans a compter du jour ou la personne a ete privee de l etat qu elle reclame ou a commence a jouir de l etat qui lui est conteste  ★ a l egard de l enfant ce delai est SUSPENDU pendant sa minorite"
+    },
+    "contestation_par_enfant_age_limite_avec_possession_etat": {
+      "valeur": 23,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F940",
+      "date_verifiee": "2026-08-17",
+      "note": "L enfant qui conteste sa filiation dans un cas a possession d etat de moins de 5 ans peut agir jusqu a ses 23 ans  ⚠ page du 25/03/2025 donc plus de 6 mois  a recouper  Tribunal judiciaire et ⛔ AVOCAT OBLIGATOIRE  contrairement a la saisine du JAF sur l autorite parentale ou la pension"
+    },
+    "contestation_par_enfant_age_limite_sans_possession_etat": {
+      "valeur": 28,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F940",
+      "date_verifiee": "2026-08-17",
+      "note": "Sans possession d etat conforme au titre l enfant peut agir jusqu a ses 28 ans  dix ans apres sa majorite  effet de la suspension du delai pendant la minorite  ⚠ page du 25/03/2025  a recouper"
+    },
+    "contestation_filiation_etablie_par_acte_de_notoriete": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006150526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 335  la filiation etablie par la possession d etat constatee par un acte de notoriete peut etre contestee par toute personne qui y a interet en rapportant la preuve contraire dans le delai de dix ans a compter de la DELIVRANCE DE L ACTE  ⚠ point de depart different des autres cas"
+    },
+    "constatation_judiciaire_possession_etat_delai": {
+      "valeur": 10,
+      "unite": "ans",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000006136526/",
+      "date_verifiee": "2026-08-17",
+      "note": "Article 330  la possession d etat peut etre constatee a la demande de toute personne qui y a interet dans le delai de dix ans a compter de sa cessation ou du deces du parent pretendu  ★ voie judiciaire alternative a l acte de notoriete  delai plus long  10 ans contre 5 ans"
+    }
+  },
+  "famille_contribution_entretien_education": {
+    "bareme_indicatif_minimum_vital_laisse_au_debiteur": {
+      "valeur": null,
+      "unite": "EUR par mois",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE  la table de reference des pensions alimentaires est hebergee sur justice.fr qui n a pas pu etre atteint  echec de verification du certificat TLS  trois tentatives sur https://www.justice.fr/simulateurs/pension-alimentaire/bareme  et AUCUNE page service-public ne reproduit la table  ⛔ ne pas deviner cette valeur  ★ ce qui EST verifie  service-public R45945 du 12/12/2025  Il s agit d une simple estimation  Seul le juge s il est saisi peut prononcer le montant definitif  donc le bareme n oblige ni le juge ni les parents"
+    },
+    "bareme_indicatif_pourcentages_par_enfant_et_mode_de_residence": {
+      "valeur": null,
+      "unite": "pourcentage du revenu du debiteur",
+      "a_verifier": true,
+      "source": "",
+      "date_verifiee": null,
+      "note": "⛔ NON VERIFIE  pourcentages appliques au revenu du parent debiteur selon le nombre d enfants et le mode de residence  visite reduite  classique  alternee  ainsi que l annee de la table  Meme cause  justice.fr injoignable  ⚠ c est la premiere question que les gens posent  donc le trou le plus utile a combler  ⛔ ne jamais citer ces pourcentages de memoire"
+    }
+  },
+  "famille_sortie_du_territoire": {
+    "ost_duree_de_validite": {
+      "valeur": 15,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1774",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Opposition a sortie du territoire  La mesure d OST est valable 15 jours maximum  Vous ne pouvez pas demander la prolongation de la mesure  ⇒ c est un PONT de 15 jours pas une protection  le jour ou l on depose une OST on saisit le JAF pour une INTERDICTION de sortie du territoire  article 373-2-6  qui empeche l enfant de quitter la France sans l autorisation des DEUX parents et s inscrit au fichier des personnes recherchees  ⛔ croire qu on est protege et attendre est l erreur qui coute l enfant  ★ une autorisation de sortie du territoire AST ne sert a rien contre une OST ou une IST  l interdiction prime  ⚠ page du 29/04/2025 donc plus de 6 mois  a recouper"
+    }
+  },
+  "famille_mediation_familiale": {
+    "mediation_judiciaire_duree_maximale": {
+      "valeur": 5,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34355",
+      "date_verifiee": "2026-08-17",
+      "note": "Mediation judiciaire  5 mois maximum  ★ la mediation familiale N EST PAS OBLIGATOIRE avant de saisir le juge  L entretien d information est GRATUIT  les entretiens suivants sont a tarif libre ou a tarif conventionne proportionnel aux revenus dans les associations agreees par la Caf  Un accord HOMOLOGUE a la meme force executoire qu un jugement  ⚠ page du 01/10/2025 donc plus de 6 mois  a recouper"
+    },
+    "mediation_judiciaire_renouvellement": {
+      "valeur": 3,
+      "unite": "mois",
+      "a_verifier": false,
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34355",
+      "date_verifiee": "2026-08-17",
+      "note": "Renouvelable une fois pour 3 mois  ⛔ INTERDIT  la mediation est ECARTEE si des violences sont alleguees par un parent sur l autre ou sur l enfant  et en cas d EMPRISE MANIFESTE d un parent sur l autre  article 373-2-10 du code civil  ⇒ proposer une mediation dans une situation d emprise est une faute d orientation  pas une maladresse  voir violences-intrafamiliales.md"
+    }
   }
 }

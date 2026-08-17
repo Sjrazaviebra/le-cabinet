@@ -664,5 +664,233 @@
       "date_verifiee": "2026-08-17",
       "note": "Page du 09/09/2022 (a recouper) : amende administrative pouvant aller jusqu a ces montants selon que le professionnel est un entrepreneur individuel ou une societe."
     }
+  },
+  "comptes_detenus_a_l_etranger": {
+    "amende_par_compte_non_declare": {
+      "valeur": 1500,
+      "unite": "euros par compte",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 IV-2, version en vigueur au 01/07/2026 : amende de 1 500 EUR par compte non declare (obligation de l art. 1649 A). ★★ Elle est due PAR COMPTE ET PAR ANNEE non declaree, donc elle se multiplie vite quand un compte de paiement de plateforme dort depuis plusieurs annees. Chiffre confirme aussi sur impots.gouv.fr, page mise a jour le 10/03/2026."
+    },
+    "amende_par_compte_etat_sans_convention": {
+      "valeur": 10000,
+      "unite": "euros par compte",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 IV-2 : montant porte a 10 000 EUR par compte non declare lorsque l obligation declarative concerne un Etat ou territoire qui n a pas conclu avec la France une convention d assistance administrative permettant l acces aux renseignements bancaires. ⚠ C est le cas typique d un prestataire de paiement etabli dans une juridiction exotique."
+    },
+    "majoration_revenus_presumes": {
+      "valeur": 40,
+      "unite": "pourcentage",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/international-particulier/questions/je-viens-ou-je-reviens-en-france-et-je-ne-conserve-pas-dinterets",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim impots.gouv.fr (page du 10/03/2026) : « Taxation des revenus presumes en vertu de l article 1649 A du CGI, assortie d une majoration de 40 % ». Se cumule avec l amende par compte. Le fondement est le CGI art. 1649 A : les sommes transferees par l intermediaire de comptes non declares constituent, sauf preuve contraire, des revenus imposables."
+    },
+    "amende_par_portefeuille_crypto_non_declare": {
+      "valeur": 750,
+      "unite": "euros par portefeuille ou par crypto-actif non fongible",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 X, version au 01/07/2026 : infractions a l art. 1649 bis C. ⚠ Le regime des portefeuilles de crypto-actifs est DISTINCT de celui des comptes bancaires : montant plus faible mais plafonne, et une declaration separee."
+    },
+    "amende_omission_inexactitude_crypto": {
+      "valeur": 125,
+      "unite": "euros par omission ou inexactitude",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 X. A distinguer de l absence totale de declaration du portefeuille."
+    },
+    "plafond_amendes_crypto_par_declaration": {
+      "valeur": 10000,
+      "unite": "euros par declaration",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 X : « dans la limite de 10 000 EUR par declaration ». ★ Ce plafond n existe PAS pour les comptes bancaires ou de paiement de l art. 1649 A, ou l amende est purement multiplicative."
+    },
+    "amendes_crypto_majorees_valeur_elevee": {
+      "valeur": {
+        "par_portefeuille": 1500,
+        "par_omission_ou_inexactitude": 250,
+        "seuil_de_valeur_venale": 50000
+      },
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051215709",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1736 X : les montants de 750 EUR et 125 EUR sont portes a 1 500 EUR et 250 EUR lorsque la valeur venale des crypto-actifs uniques et non fongibles ou celle des portefeuilles ouverts, detenus, utilises ou clos a l etranger est superieure a 50 000 EUR."
+    }
+  },
+  "delai_de_reprise": {
+    "droit_commun": {
+      "valeur": 3,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051759330",
+      "date_verifiee": "2026-08-17",
+      "note": "LPF art. L169, version en vigueur au 01/07/2026 : « jusqu a la fin de la troisieme annee qui suit celle au titre de laquelle l imposition est due »."
+    },
+    "allonge_defaut_declaration_comptes_etranger": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051759330",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ LPF art. L169 : « jusqu a la fin de la dixieme annee » lorsque les obligations declaratives des art. 123 bis, 209 B, 1649 A, 1649 AA, 1649 AB et 1649 bis C du CGI n ont pas ete respectees. Un compte de paiement de plateforme oublie ouvre donc l annee entiere au controle, pas seulement le compte."
+    },
+    "seuil_exception_soldes_crediteurs": {
+      "valeur": 50000,
+      "unite": "euros",
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051759330",
+      "date_verifiee": "2026-08-17",
+      "note": "★ LPF art. L169 : l extension a dix ans ne s applique pas si le contribuable apporte la preuve que le total des soldes crediteurs de ses comptes a l etranger n a pas excede 50 000 EUR a un moment quelconque de l annee. La charge de la preuve pese sur le contribuable ⇒ conserver les releves est ce qui permet de refermer le delai."
+    }
+  },
+  "tva_operations_avec_une_plateforme_etrangere": {
+    "seuil_guichet_unique_oss": {
+      "valeur": 10000,
+      "unite": "euros de chiffre d affaires",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/suis-je-concerne-0",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim impots.gouv.fr (page du 22/03/2024) : « un seuil de 10 000 EUR a ete instaure, en deca duquel la TVA sur les prestations de services et les ventes a distance intracommunautaire de biens, reste due dans l Etat membre d etablissement du prestataire ». Au-dela : TVA due dans l Etat du consommateur, d ou le guichet unique OSS. ⚠ Ne concerne que les clients NON assujettis etablis dans l UE."
+    },
+    "delai_declaration_europeenne_de_services": {
+      "valeur": 10,
+      "unite": "jours",
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim impots.gouv.fr (page du 14/02/2025) : « Une declaration europeenne de services (DES) doit etre transmise dans les dix jours du mois qui suit l exigibilite de la TVA ». Deja porte par tva.md, repris ici pour le cas plateforme."
+    },
+    "cout_numero_tva_intracommunautaire": {
+      "valeur": "gratuite",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/professionnel/questions/lattribution-dun-numero-de-tva-intracommunautaire-est-elle-payante",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim impots.gouv.fr (page du 16/06/2026) : l attribution d un numero de TVA intracommunautaire « releve de la competence de votre service des impots des entreprises (SIE) et [...] elle est entierement gratuite ». Demande depuis l espace professionnel, apres obtention du SIRET. Des prestataires payants font croire le contraire."
+    },
+    "autoliquidation_par_le_preneur_en_franchise_en_base": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/professionnel/prestations-entre-assujettis",
+      "date_verifiee": null,
+      "note": "⚠ NON TRANCHE. La page impots.gouv.fr dit d une part que « le redevable de la TVA est le preneur de la prestation (le client) » et que « la taxe est acquittee par le client assujetti ayant un numero intracommunautaire francais », d autre part qu un « micro-entrepreneur beneficiant de la franchise en base en matiere de TVA est assujetti a la TVA mais n est pas redevable de la TVA ». Aucune page officielle trouvee tranchant explicitement le cas du preneur en franchise en base qui achete une prestation hors de France (commission de marketplace, publicite, hebergement). ⇒ question a poser au SIE avant le premier achat."
+    }
+  },
+  "retenue_a_la_source_etrangere": {
+    "attestation_de_residence_fiscale_francaise": {
+      "valeur": "formulaire 730-SD",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/formulaire/730-sd/attestation-de-residence-fiscale-en-france",
+      "date_verifiee": "2026-08-17",
+      "note": "★ « Attestation de residence fiscale en France », millesime 2026, versions franco-anglaise et franco-espagnole. C est le document a produire a une plateforme ou a une administration ETRANGERE. ⛔ Ne pas confondre avec le formulaire 5000-SD, qui sert au cas INVERSE : un non-resident qui percoit des revenus de source francaise."
+    },
+    "taux_de_retenue_conventionnel": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": "https://www.impots.gouv.fr/les-conventions-internationales",
+      "date_verifiee": null,
+      "note": "⛔ Aucun taux generique n existe : il depend de la convention bilaterale et de la qualification du revenu (redevance, benefice d entreprise, service). Les textes sont publies pays par pays sur impots.gouv.fr, rubrique « Conventions par pays ». Toute reponse doit ouvrir la convention du pays concerne."
+    },
+    "mecanismes_d_elimination_de_la_double_imposition": {
+      "valeur": "credit d impot egal a l impot paye a l etranger, ou exoneration avec prise en compte pour le taux effectif",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/international-particulier/imposition-des-revenus-de-source-etrangere",
+      "date_verifiee": "2026-08-17",
+      "note": "⚠ Page ancienne (12/03/2021), a recouper. Deux mecanismes : « neutralisation par application d un credit d impot egal a l impot paye a l etranger » ou declaration de revenus exoneres « simplement pris en compte afin de determiner le montant d impot ». Le vehicule declaratif est la declaration n° 2047."
+    }
+  },
+  "obligations_declaratives_de_la_plateforme": {
+    "date_limite_declaration_de_l_operateur": {
+      "valeur": "31 janvier de l annee suivante",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044936377",
+      "date_verifiee": "2026-08-17",
+      "note": "CGI art. 1649 ter A, version en vigueur au 01/01/2023 : « La declaration prevue au I est souscrite par voie electronique au plus tard le 31 janvier de l annee suivant celle au cours de laquelle les operations ont ete realisees »."
+    },
+    "recapitulatif_annuel_adresse_au_vendeur": {
+      "valeur": "janvier",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/particulier/questions/comment-declarer-mes-revenus-issus-de-leconomie-collaborative",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim impots.gouv.fr (page du 22/08/2025) : « Le dispositif DAC7 prevoit egalement l obligation pour l operateur de plateforme de vous adresser en janvier un recapitulatif des operations realisees au cours de l annee precedente. » C est la piece a rapprocher de sa propre comptabilite AVANT de declarer."
+    },
+    "echange_automatique_entre_administrations": {
+      "valeur": "dernier jour de fevrier de l annee suivante",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/transfert-dinformations-en-application-des-dispositifs-dpi-dac7-plateformes-deconomie-collaborative",
+      "date_verifiee": "2026-08-17",
+      "note": "★★ Verbatim : les informations transmises par les operateurs a leur administration de rattachement « font ensuite l objet d echanges automatiques entre ces memes administrations au plus tard le dernier jour du mois de fevrier de l annee qui suit celle au titre de laquelle les operations ont ete realisees ». ⇒ une plateforme etrangere n est pas un ecran : la DGFiP recoit le chiffre."
+    }
+  },
+  "facturation_et_justificatifs": {
+    "duree_conservation_des_factures": {
+      "valeur": 10,
+      "unite": "annees",
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23208",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim (fiche verifiee le 07/08/2026) : « Les factures emises ou recues par une entreprise doivent etre conservees pendant 10 ans. » ⚠ Ce n est pas la meme horloge que le delai de reprise : conserver dix ans ne protege pas si le delai allonge court aussi."
+    },
+    "traduction_certifiee_d_une_facture_en_langue_etrangere": {
+      "valeur": "peut etre exigee",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23208",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : « Lorsque la facture est redigee en langue etrangere, il peut etre exige une traduction certifiee. » Concerne directement les releves et rapports de vente des marketplaces, presque toujours en anglais."
+    },
+    "mandat_de_facturation": {
+      "valeur": "autorise par mandat",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://entreprendre.service-public.gouv.fr/vosdroits/F23208",
+      "date_verifiee": "2026-08-17",
+      "note": "★ Verbatim : « Le vendeur ou le prestataire autorise son client (auto-facturation) ou un tiers (sous-traitance de la facturation) a facturer pour son compte par un mandat de facturation. » ⚠ La fiche ne dit PAS explicitement qui reste responsable des obligations ⇒ ne pas affirmer que le mandat transfere la responsabilite."
+    }
+  },
+  "taux_de_change": {
+    "cours_a_retenir_pour_convertir_en_euros": {
+      "valeur": "cours du change a Paris au jour de l encaissement",
+      "unite": null,
+      "a_verifier": false,
+      "source": "https://www.impots.gouv.fr/international-particulier/questions/quel-taux-de-change-dois-je-utiliser-pour-la-declaration",
+      "date_verifiee": "2026-08-17",
+      "note": "Verbatim impots.gouv.fr (page du 09/03/2026) : « En principe, il faut utiliser le cours du change a Paris au jour de l encaissement ». ⚠ La page est redigee pour les revenus suisses et prevoit un taux moyen annuel calcule par l administration reserve aux frontaliers franco-suisses : ce taux moyen n est PAS transposable a des recettes de plateforme."
+    }
+  },
+  "qualification_du_revenu": {
+    "categorie_fiscale_d_une_licence_de_logiciel_vendue_sur_une_marketplace": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "⚠ NON VERIFIE. Aucune page officielle trouvee tranchant si la remuneration percue d une marketplace logicielle est une prestation de services (BIC) ou une redevance de propriete intellectuelle (BNC). L enjeu est concret : l abattement micro n est pas le meme ⇒ voir micro-entreprise.md. ⇒ question a poser au SIE ou a un expert-comptable, avec le contrat de la plateforme."
+    },
+    "qui_est_le_vendeur_dans_une_marketplace": {
+      "valeur": null,
+      "unite": null,
+      "a_verifier": true,
+      "source": null,
+      "date_verifiee": null,
+      "note": "★★ NON VERIFIE et pourtant decisif. Selon que la plateforme vend en son nom propre au client final ou agit comme simple intermediaire, on percoit soit UNE remuneration B2B de la plateforme, soit une multitude de ventes B2C dont on doit la TVA dans l Etat du client. Le regime des interfaces electroniques pour les services fournis par voie electronique n a pas pu etre verifie : eur-lex n etait pas exploitable a la date de verification. ⇒ lire le contrat de la plateforme ET faire confirmer."
+    }
   }
 }
