@@ -1,6 +1,6 @@
 # Avancement
 
-**72 valeurs vérifiées et datées**, 10 encore ouvertes. **7 rôles.**
+**92 valeurs vérifiées et datées**, 10 encore ouvertes. **7 rôles.**
 
 Ce fichier est **généré** : `python scripts/generer-avancement.py`. Il ne peut donc pas
 se désynchroniser du dépôt.
@@ -114,9 +114,9 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 | Fichier | État |
 |---|---|
 | `SKILL.md` | **RÉDIGÉ** |
-| `data/parametres.json` | **11 vérifiée(s)**, 0 à vérifier |
+| `data/parametres.json` | **31 vérifiée(s)**, 0 à vérifier |
 | `references/conges-et-absences.md` | À ÉCRIRE |
-| `references/contrat-et-embauche.md` | À ÉCRIRE |
+| `references/contrat-et-embauche.md` | **PARTIEL** |
 | `references/conventions-collectives.md` | **RÉDIGÉ** |
 | `references/harcelement-et-discrimination.md` | À ÉCRIRE |
 | `references/prudhommes.md` | **RÉDIGÉ** |
@@ -125,7 +125,7 @@ Un plugin = un **domaine**, un skill = un **rôle**. Critère : [taxonomie.md](t
 
 ## Ordre de rédaction
 
-**Rédigés** — 16 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/depot-de-garantie` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
+**Rédigés** — 17 fichiers : `comptable/chomage-et-creation` · `comptable/formes-juridiques` · `comptable/micro-entreprise` · `comptable/tva` · `famille/violences-intrafamiliales` · `immigration/demande-et-renouvellement` · `immigration/naturalisation` · `immigration/refus-et-recours` · `impots/declaration-annuelle` · `juriste/activites-reglementees` · `juriste/contrats-commerciaux` · `juriste/propriete-intellectuelle` · `logement/depot-de-garantie` · `travail/contrat-et-embauche` · `travail/conventions-collectives` · `travail/prudhommes` · `travail/rupture`
 
 **Prochains** :
 
