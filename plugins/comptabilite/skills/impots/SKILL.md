@@ -62,7 +62,11 @@ du skill `juriste`.
 |---|---|
 | La déclaration annuelle comme un parcours : calendrier, formulaires, correction | `references/declaration-annuelle.md` |
 | Barème, foyer, quotient, réductions et crédits, prélèvement à la source | `references/impot-revenu.md` |
-| PFU, PEA, assurance-vie, dividendes, crypto-actifs | `references/revenus-financiers.md` |
+| PFU, PEA, dividendes, plus-values de cession, crypto-actifs | `references/revenus-financiers.md` |
+| **Assurance-vie** : rachats, seuil des 8 ans, abattement, clause bénéficiaire | `references/assurance-vie.md` |
+| **PER et épargne retraite** : plafond de déduction, report, et la fiscalité **à la sortie** | `references/epargne-retraite-per.md` |
+| **Actionnariat salarié** : actions gratuites, RSU, BSPCE, stock-options, plans étrangers | `references/actions-rsu-bspce.md` |
+| **CEHR et CDHR** : les contributions qui s'ajoutent au barème pour les hauts revenus | `references/hauts-revenus-cehr-cdhr.md` |
 | Revenus fonciers, LMNP, plus-value immobilière, SCI | `references/immobilier-fiscal.md` |
 | Taxe foncière, taxe d'habitation résiduelle, IFI | `references/impots-locaux-et-ifi.md` |
 | ⏱️ Réclamation, contrôle, proposition de rectification | `references/reclamation-et-controle.md` |
