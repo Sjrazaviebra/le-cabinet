@@ -9,7 +9,7 @@ La promesse du dépôt n'a de valeur que si elle est vérifiable. Ce script la v
   4. chaque nombre cité dans un fichier .md se retrouve dans le parametres.json du rôle ;
   5. chaque fichier de `references/` est bien routé par le `SKILL.md` de son rôle ;
   6. chaque image citée par un `.md` de la racine existe bien sur le disque ;
-  7. chaque rôle du dépôt est déclaré dans `marketplace.json` — donc installable.
+  7. chaque rôle du dépôt est déclaré dans `catalogue.json` — l index portable des rôles.
 
 Le point 4 est le garde-fou contre la dérive : un chiffre écrit dans un .md et nulle part
 ailleurs est exactement la faille par laquelle une valeur périmée survit.
@@ -220,14 +220,19 @@ def main():
     for dom, role, chemin in roles():
         if os.path.isfile(os.path.join(chemin, "SKILL.md")):
             roles_reels.add(role)
-    mkt = os.path.join(RACINE, "marketplace.json")
-    if os.path.isfile(mkt):
+    mkt = os.path.join(RACINE, "catalogue.json")
+    # ⛔ Un `if os.path.isfile(...)` seul rendrait ce controle MUET si le fichier disparait ou
+    # est renomme : le gate resterait vert en n ayant rien verifie. Le manque est une ERREUR.
+    if not os.path.isfile(mkt):
+        erreurs.append("catalogue.json est introuvable : le controle des roles declares n a pas "
+                       "pu s executer")
+    else:
         declares = {s.get("slug") for s in json.load(open(mkt, encoding="utf-8")).get("skills", [])}
         for absent in sorted(roles_reels - declares):
-            erreurs.append("marketplace.json : le role %s existe mais n est pas declare "
+            erreurs.append("catalogue.json : le role %s existe mais n est pas declare "
                            "(donc pas installable)" % absent)
         for fantome in sorted(declares - roles_reels):
-            erreurs.append("marketplace.json : le role %s est declare mais n existe pas" % fantome)
+            erreurs.append("catalogue.json : le role %s est declare mais n existe pas" % fantome)
 
     print("  %d valeurs vérifiées · %d ouvertes" % (verifiees, ouvertes))
     for a in alertes:
