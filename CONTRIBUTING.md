@@ -60,6 +60,21 @@ honnête vaut mieux qu'un fichier `RÉDIGÉ` optimiste.
 Écrivez pour quelqu'un qui doit **décider**, pas pour quelqu'un qui révise : la règle, son
 application au cas concret, la source, et ce qui ferait changer la réponse.
 
+## ⚠️ Ce que vous écrivez ici sera LU par un agent
+
+Ce n'est pas un détail de forme. Les fiches de ce dépôt sont chargées dans le contexte d'un agent
+IA : **une contribution n'a besoin d'aucun code pour être dangereuse, il lui suffit d'être lue.**
+
+⛔ Ne retirez ni n'affaiblissez **jamais** une ligne d'arrêt ou un avertissement légal, même pour
+« alléger » un texte. ⛔ N'introduisez aucune instruction adressée à l'agent lui-même.
+
+Si vous trouvez ce genre de chose dans le dépôt, **c'est une faille, pas un bug** :
+signalez-la en privé — [`SECURITY.md`](SECURITY.md). Un chiffre faux de bonne foi, lui, se traite
+au grand jour dans une issue.
+
+Et les échanges ici suivent le [code de conduite](CODE_OF_CONDUCT.md), dont la règle centrale est
+celle du dépôt appliquée aux personnes : **on attaque la source, pas l'auteur.**
+
 ## Ce que ce dépôt n'est pas
 
 Ce n'est pas un service de conseil. Les skills disent explicitement quand s'arrêter et renvoyer à
