@@ -1,19 +1,16 @@
 {
   "name": "le-cabinet",
   "description": "Neuf roles pour agents IA en droit, fiscalite, financement et patrimoine francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source, date, et verifie par une CI.",
-  "version": "1.10.1",
+  "version": "1.10.2",
   "owner": {
     "name": "Javad Razavi",
     "url": "https://github.com/Sjrazaviebra"
   },
-  "metadata": {
-    "pluginRoot": "./plugins"
-  },
   "plugins": [
     {
       "name": "comptabilite",
-      "source": "comptabilite",
-      "version": "1.10.1",
+      "source": "./plugins/comptabilite",
+      "version": "1.10.2",
       "description": "Comptabilite, fiscalite, financement et epargne en France. 4 roles : Comptable (/comptable) entreprise : formes juridiques, micro-entreprise, tva, comptabilite, cloture, facturation, paie, chomage et creation. ; Financement (/financement) argent de l activite : compte pro et droit au compte, credit et rupture de credit, caution du dirigeant, tresorerie, mediation du credit, assurances obligatoires, leviers fiscaux legaux. ; Impots (/impots) particulier : declaration de revenus, bareme, foyer fiscal, placements et crypto, immobilier, ifi, reclamation et controle. ; Patrimoine (/patrimoine) argent personnel : reconnaitre une arnaque et verifier un agrement, enveloppes et supports, frais, risque et horizon, epargne reglementee, retraite, budget et surendettement..",
       "author": {
         "name": "Javad Razavi"
@@ -62,8 +59,8 @@
     },
     {
       "name": "juridique",
-      "source": "juridique",
-      "version": "1.10.1",
+      "source": "./plugins/juridique",
+      "version": "1.10.2",
       "description": "Droit francais, entreprise et vie privee. 5 roles : Famille (/famille) couple et regimes, separation, enfants et pension, succession, donation, protection des majeurs, violences. ; Immigration (/immigration) titres de sejour, renouvellement, changement de statut, droit au travail, famille, refus et recours, naturalisation. ; Juriste (/juriste) societes, contrats et cgv, international, propriete intellectuelle, activites reglementees, consommation, rgpd, procedure. ; Logement (/logement) bail, depot de garantie, conge, charges et travaux, impayes et expulsion, colocation, copropriete. ; Travail (/travail) convention collective, contrat, remuneration et heures, rupture et indemnites, prud hommes, harcelement et discrimination..",
       "author": {
         "name": "Javad Razavi"

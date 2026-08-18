@@ -2,7 +2,7 @@
   "name": "juridique",
   "displayName": "Juridique",
   "description": "Droit francais, entreprise et vie privee. Cinq roles : Juriste (/juriste) societes, contrats, activites reglementees, RGPD, consommation, procedure ; Travail (/travail) contrat, rupture, prud hommes ; Logement (/logement) bail, conge, impayes, copropriete ; Famille (/famille) couple, separation, enfants, succession, protection des majeurs ; Immigration (/immigration) titres de sejour, travail, famille, recours, naturalisation.",
-  "version": "1.10.1",
+  "version": "1.10.2",
   "author": {
     "name": "Javad Razavi",
     "url": "https://javadrazavi.fr"

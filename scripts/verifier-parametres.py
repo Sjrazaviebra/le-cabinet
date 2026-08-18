@@ -10,6 +10,7 @@ La promesse du dépôt n'a de valeur que si elle est vérifiable. Ce script la v
   5. chaque fichier de `references/` est bien routé par le `SKILL.md` de son rôle ;
   6. chaque image citée par un `.md` de la racine existe bien sur le disque ;
   7. chaque rôle du dépôt est déclaré dans `catalogue.json` — l index portable des rôles.
+  8. chaque `source` du manifeste est un chemin ./ qui mene a un plugin.json — donc INSTALLABLE.
 
 Le point 4 est le garde-fou contre la dérive : un chiffre écrit dans un .md et nulle part
 ailleurs est exactement la faille par laquelle une valeur périmée survit.
@@ -233,6 +234,32 @@ def main():
                            "(donc pas installable)" % absent)
         for fantome in sorted(declares - roles_reels):
             erreurs.append("catalogue.json : le role %s est declare mais n existe pas" % fantome)
+
+    # ⛔ CONTROLE 8 - le depot est-il INSTALLABLE ?
+    # Vecu le 18/08 : le manifeste ecrivait "source": "comptabilite" en s appuyant sur
+    # metadata.pluginRoot. La doc annonce ce raccourci, le client le REFUSE au champ source
+    # ("marketplace entry is invalid: source: Invalid input") et l installation echouait pour
+    # tout le monde, sur un depot publie. Le marketplace d Anthropic lui-meme n utilise que la
+    # forme explicite "./plugins/<nom>". Le gate verifiait les chiffres, jamais l installabilite.
+    manifeste = os.path.join(RACINE, ".claude-plugin", "marketplace.json")
+    if not os.path.isfile(manifeste):
+        erreurs.append(".claude-plugin/marketplace.json est introuvable : le depot n est pas "
+                       "installable")
+    else:
+        mf = json.load(open(manifeste, encoding="utf-8"))
+        for entree in mf.get("plugins", []):
+            src = entree.get("source")
+            nom = entree.get("name", "?")
+            if not isinstance(src, str):
+                continue  # une source objet (github, git-subdir...) ne se verifie pas localement
+            if not src.startswith("./"):
+                erreurs.append("marketplace.json : la source du plugin %s doit commencer par "
+                               "./ (trouve %r) - sinon le client refuse l installation" % (nom, src))
+                continue
+            cible = os.path.join(RACINE, src.replace("/", os.sep))
+            if not os.path.isfile(os.path.join(cible, ".claude-plugin", "plugin.json")):
+                erreurs.append("marketplace.json : la source du plugin %s pointe vers %s, ou il n y "
+                               "a pas de .claude-plugin/plugin.json" % (nom, src))
 
     print("  %d valeurs vérifiées · %d ouvertes" % (verifiees, ouvertes))
     for a in alertes:
