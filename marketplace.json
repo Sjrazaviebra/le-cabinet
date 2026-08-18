@@ -1,7 +1,7 @@
 {
   "name": "le-cabinet",
   "description": "Neuf roles pour agents IA en droit, fiscalite, financement et patrimoine francais. Entreprise et vie privee. Aucun chiffre ecrit de memoire : tout est source, date, et verifie par une CI.",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "author": "Sjrazaviebra",
   "license": "MIT",
   "skills": [
