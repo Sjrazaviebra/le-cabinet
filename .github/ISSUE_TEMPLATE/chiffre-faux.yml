@@ -1,0 +1,57 @@
+name: "💶 Un chiffre est faux ou périmé"
+description: "Un taux, un seuil, un plafond, un barème ou un délai ne correspond plus au texte en vigueur."
+title: "[chiffre] "
+labels: ["chiffre", "à vérifier"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **C'est la contribution la plus utile de ce dépôt.** Merci.
+
+        ⚠️ La règle du projet : aucun chiffre n'est écrit de mémoire. Votre signalement suit la
+        même règle — c'est pourquoi la source officielle est obligatoire ci-dessous.
+  - type: input
+    id: ou
+    attributes:
+      label: Où
+      description: "Le fichier, ou à défaut le rôle et la question que vous aviez posée."
+      placeholder: "plugins/comptabilite/skills/impots/data/parametres.json — ou : /impots, question sur le PFU"
+    validations:
+      required: true
+  - type: input
+    id: valeur_affichee
+    attributes:
+      label: La valeur affichée
+      placeholder: "30 %"
+    validations:
+      required: true
+  - type: input
+    id: valeur_correcte
+    attributes:
+      label: La valeur correcte
+      placeholder: "31,4 %"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: La source officielle
+      description: "URL sur un domaine officiel (legifrance, service-public, impots.gouv, urssaf, amf-france, banque-france…). ⚠️ Un article de presse ou un blog de cabinet ne suffit pas, même s'il a raison."
+      placeholder: "https://www.legifrance.gouv.fr/codes/article_lc/…"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date d'entrée en vigueur de la valeur correcte
+      description: "⚠️ Légifrance affiche par défaut une version ancienne — vérifiez la date de la version en vigueur."
+      placeholder: "01/01/2026"
+    validations:
+      required: false
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Autre chose à savoir
+      description: "Par exemple : la valeur diffère selon les cas, ou la page officielle contredit l'article qu'elle cite elle-même."
+    validations:
+      required: false

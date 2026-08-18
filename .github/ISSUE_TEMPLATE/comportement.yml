@@ -1,0 +1,44 @@
+name: "🤖 Le rôle s'est mal comporté"
+description: "La réponse n'a pas suivi les règles du dépôt : chiffre non sourcé, ligne d'arrêt franchie, mauvaise orientation."
+title: "[comportement] "
+labels: ["comportement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⛔ **Ne collez pas de données personnelles** (nom, adresse, numéro de sécurité sociale,
+        numéro de titre de séjour, relevé bancaire). Reformulez votre situation en la rendant
+        anonyme — le problème restera compréhensible.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Ce qui s'est passé
+      options:
+        - "Un chiffre a été affirmé sans source ni date"
+        - "Une valeur périmée a été affirmée comme actuelle"
+        - "Le rôle a donné un conseil personnalisé au lieu d'informer"
+        - "Le rôle a répondu pour un autre pays que la France"
+        - "Le rôle n'a pas dit qu'il fallait un professionnel alors qu'il le fallait"
+        - "Le rôle m'a orienté vers le mauvais interlocuteur"
+        - "Autre"
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Quel rôle
+      placeholder: "/comptabilite:impots"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Votre question (anonymisée)
+    validations:
+      required: true
+  - type: textarea
+    id: reponse
+    attributes:
+      label: Ce que le rôle a répondu, et ce qu'il aurait dû faire
+    validations:
+      required: true
