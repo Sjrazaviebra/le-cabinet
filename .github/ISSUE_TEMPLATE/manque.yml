@@ -1,0 +1,42 @@
+name: "📄 Un sujet manque"
+description: "Une situation courante n'est traitée par aucun rôle, ou l'est trop peu."
+title: "[manque] "
+labels: ["contenu"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Le dépôt nomme lui-même ses trous plutôt que de les laisser deviner
+        ([`docs/avancement.md`](https://github.com/Sjrazaviebra/le-cabinet/blob/main/docs/avancement.md)).
+        Vérifiez d'abord si le vôtre y figure déjà.
+  - type: textarea
+    id: situation
+    attributes:
+      label: La situation concrète
+      description: "Décrivez le cas réel, pas le thème. « Je suis en micro-entreprise et un client étranger ne paie pas » est plus utile que « recouvrement »."
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Quel rôle devrait s'en charger, à votre avis ?
+      options:
+        - comptable
+        - impots
+        - financement
+        - patrimoine
+        - juriste
+        - travail
+        - logement
+        - famille
+        - immigration
+        - "aucun des neuf — il faudrait autre chose"
+        - "je ne sais pas"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources officielles si vous en avez
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Le wiki
+    url: https://github.com/Sjrazaviebra/le-cabinet/wiki
+    about: Installation, les neuf rôles et par où chacun entre, la règle des chiffres, les limites.
+  - name: 🔒 Signaler un problème de sécurité
+    url: https://github.com/Sjrazaviebra/le-cabinet/security/policy
+    about: "⚠️ Une instruction cachée dans une fiche ou une ligne d'arrêt affaiblie se signalent en PRIVÉ, pas ici."
+  - name: ⚖️ Besoin d'un conseil sur VOTRE situation
+    url: https://github.com/Sjrazaviebra/le-cabinet/blob/main/README.md#%EF%B8%8F-ce-que-ces-r%C3%B4les-ne-sont-pas
+    about: Ce dépôt ne donne pas de consultation. Pour un cas personnel qui engage, consultez un professionnel assuré.
