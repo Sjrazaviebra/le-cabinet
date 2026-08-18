@@ -9,7 +9,7 @@ ailleurs — Cursor, Copilot, Windsurf, un GPT personnalisé, un RAG maison, un 
 | Portable partout | Propre à Claude Code |
 |---|---|
 | Les **61 fichiers `references/*.md`** — aucune syntaxe spécifique à l'intérieur | Le frontmatter YAML de `SKILL.md` (`name`, `description`) |
-| Les **7 `data/parametres.json`** — sources et dates lisibles par n'importe quel outil | `.claude-plugin/plugin.json` et `marketplace.json` |
+| Les **7 `data/parametres.json`** — sources et dates lisibles par n'importe quel outil, et `catalogue.json` — l'index des neuf rôles, sans syntaxe propriétaire | `.claude-plugin/plugin.json` et `.claude-plugin/marketplace.json` |
 | Les **scripts de `scripts/`** — Python standard, aucune dépendance | Le **routage automatique** : Claude lit la `description` et charge le bon rôle seul |
 
 ⇒ Ailleurs, **le contenu marche tel quel ; c'est l'aiguillage qu'il faut refaire à la main.** Le

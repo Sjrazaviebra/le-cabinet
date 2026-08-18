@@ -167,7 +167,8 @@ professions.
 
 ```
 le-cabinet/
-├── .claude-plugin/marketplace.json      ← le catalogue
+├── .claude-plugin/marketplace.json      ← le manifeste lu par Claude Code
+├── catalogue.json                      ← l'index des neuf rôles, portable
 └── plugins/
     ├── comptabilite/                    ← le DOMAINE
     │   ├── .claude-plugin/plugin.json
