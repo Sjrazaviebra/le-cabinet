@@ -23,6 +23,9 @@ Pour l'entreprise *et* pour la vie privée.
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
+📖 **[Le wiki](https://github.com/Sjrazaviebra/le-cabinet/wiki)** — installation pas à pas, les neuf rôles et **par où chacun entre**,
+la règle des chiffres, comment contribuer, et ce que ce dépôt ne fait pas.
+
 > ✅ **Les neuf rôles sont complets** : chacun de leurs fichiers de référence est rédigé depuis les
 > textes officiels. Chaque fichier porte son état en tête — `RÉDIGÉ` ou `PARTIEL` — et **dit
 > lui-même ce qu'il ne couvre pas** : un fichier `PARTIEL` n'est pas un fichier inachevé qu'on

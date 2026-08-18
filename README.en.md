@@ -16,6 +16,10 @@ For your business *and* your private life.
 
 [![gate](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml/badge.svg)](https://github.com/Sjrazaviebra/le-cabinet/actions/workflows/gate.yml)
 
+📖 **[The wiki](https://github.com/Sjrazaviebra/le-cabinet/wiki)** — step-by-step install, the nine roles and **where each one enters
+from**, the rule on figures, how to contribute, and what this repository does not do.
+(In French; the [English page](https://github.com/Sjrazaviebra/le-cabinet/wiki/English) points you to what matters.)
+
 > ⚠️ **The reference files are written in French, and that is deliberate** — French law is written
 > in French, and so are the forms, the counters and the letters you will receive. **But every role
 > answers in your language**, and keeps the French term with a short gloss: *« a récépissé (the
