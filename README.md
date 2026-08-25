@@ -117,6 +117,14 @@ sinon.
 > ci-dessus est né de cet épisode. Une promesse d'exactitude qui ne documente pas ses erreurs n'est
 > pas une promesse.
 
+> ⚠️ **Ce que le gate ne dit PAS.** Il vérifie qu'une valeur porte une source et une date, et
+> qu'elle n'a pas dépassé six mois. **Il ne vérifie pas qu'elle est juste.** Une valeur
+> revérifiée hier et fausse passe au vert : le gate attrape le **vieillissement**, il faut un
+> humain pour attraper l'**erreur**. C'est pour ça que l'invitation à ouvrir une issue n'est
+> pas une politesse.
+> Et une fois le plugin installé, vous avez un **instantané** : la CI de ce dépôt ne vous dit
+> plus rien tant que vous ne mettez pas à jour.
+
 Sources admises, par ordre d'autorité : **Légifrance** · **BOFiP** · **impots.gouv.fr** ·
 **urssaf.fr** · **service-public.fr** / **entreprendre.service-public.fr** · **France Travail** ·
 **BPI Création** · les autorités compétentes (**AMF**, **ACPR**, **CNIL**, **DGCCRF**, **INPI**).

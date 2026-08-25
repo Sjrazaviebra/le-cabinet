@@ -94,6 +94,13 @@ every push.**
 > are corrected, the JSON notes keep the trace, and the script above was born from that episode.
 > **A claim of accuracy that hides its own errors is not a claim.**
 
+> ⚠️ **What the gate does NOT tell you.** It checks that a value carries a source and a date,
+> and that it is less than six months old. **It does not check that the value is correct.** A
+> figure re-verified yesterday and wrong still passes: the gate catches **ageing**, a human is
+> needed to catch **error**. That is why the invitation to open an issue is not a courtesy.
+> And once the plugin is installed you hold a **snapshot**: this repository's CI tells you
+> nothing until you update.
+
 ## Install
 
 ```bash
